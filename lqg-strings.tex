@@ -1,0 +1,167 @@
+\RequirePackage{snapshot}
+\RequirePackage[final]{graphicx}
+\documentclass[twocolumn,final,aps,nofootinbib,nobibnotes]{revtex4-2}
+
+% revtex4 imports the natbib package which conflicts with biblatex. To remedy the resulting name conflicts the following recipe is taken from https://tex.stackexchange.com/a/37077
+% Start of 'ignore natbib' hack
+%\let\bibhang\relax
+%\let\citename\relax
+%\let\bibfont\relax
+%\let\Citeauthor\relax
+%\let\textcite\relax
+%\makeatletter
+%\DeclareRobustCommand{\MakeUppercase}[1]{{%
+%      \def\i{I}\def\j{J}%
+%      \def\reserved@a##1##2{\let##1##2\reserved@a}%
+%      \expandafter\reserved@a\@uclclist\reserved@b{\reserved@b\@gobble}%
+%      \protected@edef\reserved@a{\uppercase{#1}}%
+%      \reserved@a
+%   }}
+%\DeclareRobustCommand{\MakeLowercase}[1]{{%
+%      \def\reserved@a##1##2{\let##2##1\reserved@a}%
+%      \expandafter\reserved@a\@uclclist\reserved@b{\reserved@b\@gobble}%
+%      \protected@edef\reserved@a{\lowercase{#1}}%
+%      \reserved@a
+%   }}
+%\makeatother
+%\expandafter\let\csname ver@natbib.sty\endcsname\relax
+% End of 'ignore natbib' hack
+
+%\usepackage{graphicx}
+
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+%\usepackage[sort&compress,numbers]{natbib}
+%\usepackage[english]{babel}
+
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{epsfig}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage[colorinlistoftodos, shadow, textsize=small, obeyDraft]{todonotes}
+
+\usepackage[colorlinks=true,citecolor=blue,linkcolor=blue,final]{hyperref}
+%\usepackage{hyperref}
+
+%\usepackage{hypernat}
+
+\usepackage{comment}
+
+% Biblatex setup
+% The default is the 'numerical' style.
+%\usepackage[backend=biber,url=true,eprint=true,doi=true,sorting=none,backref=true,style=phys]{biblatex}
+% We use the following bibliography databases:
+%\usepackage{bibtex}
+%\addbibresource{../bib_library.bib}
+% End biblatex
+
+
+%%% BEGIN Custom commands %%%
+\newcommand{\bite}{\begin{itemize}}
+	\newcommand{\eat}{\end{itemize}}
+\newcommand{\beq}{\begin{equation}}
+	\newcommand{\eeq}{\end{equation}}
+\newcommand{\rarrow}{\rightarrow}
+\newcommand{\beqa}{\begin{align}}
+	\newcommand{\eeqa}{\end{align}}
+\newcommand{\barr}{\begin{array}}
+	\newcommand{\earr}{\end{array}}
+\newcommand{\del}{\partial}
+\newcommand{\de}{\mathrm{d}}
+%\newcommand{\mu\nu}{{\mu\nu}}
+\renewcommand{\th}{\mathrm{th}}
+\newcommand{\com}[1]{\begin{itemize}\color{RED}{{#1}}\end{itemize}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\btw}[1]{\color{PURPLE}{{#1}}\color{BLACK}}
+\newcommand{\cut}[1]{\color{RED}{{#1}}\color{BLACK}}
+
+%text
+\newcommand{\ie}{\textit{i.e.}~}
+\newcommand{\eg}{\textit{e.g.}~}
+\newcommand{\wrt}{\textit{w.r.t.}~}
+\newcommand{\etc}{\textit{etc.}~}
+
+
+\newcommand{\M}{\mathcal{M}}
+\newcommand{\N}{\mathcal{N}}
+% \newcommand{\H}{\mathcal{H}}
+
+\newcommand{\bz}{\mathbf{z}}
+
+\newcommand{\mb}[1]{\mathbf{#1}}
+\newcommand{\mc}[1]{\mathcal{#1}}
+\newcommand{\mbb}[1]{\mathbb{#1}}
+\newcommand{\mf}[1]{\mathfrak{#1}}
+
+\newcommand{\unit}[1]{\mathbf{\hat{#1}}}
+
+%% Package bbold for bold identity symbol
+\usepackage{bbold}
+
+\newcommand{\id}{\mathbb{1}}
+
+\newcommand{\utilde}[1]{\underaccent{\tilde}{#1}}
+
+\newcommand{\vect}[1]{\boldsymbol{#1}}
+\newcommand{\bvec}[1]{\boldsymbol{\vec #1}}
+\newcommand{\expect}[1]{\langle #1\rangle}
+\newcommand{\innerp}[2]{\langle #1 \vert #2 \rangle}
+\newcommand{\expectop}[3]{\langle #1 \vert #2 \vert #3 \rangle}
+\newcommand{\bra}[1]{\langle #1 \vert}
+\newcommand{\ket}[1]{\vert #1 \rangle}
+\newcommand{\supersc}[1]{$^{\textrm{#1}}$}
+\newcommand{\subsc}[1]{$_{\textrm{#1}}$}
+\newcommand{\sltwoc}{\mathfrak{sl}(2,\mathbb{C})}
+
+\newcommand{\norm}[1]{\lVert #1 \rVert}
+
+\newcommand{\rket}[1]{\vert #1 ]}
+\newcommand{\rbra}[1]{[ #1 \vert}
+
+\newcommand{\rinnerp}[2]{[ #1 \vert #2 ]}
+
+\newcommand{\bket}[1]{\vert #1 )}
+\newcommand{\bbra}[1]{( #1 \vert}
+
+\newcommand{\binnerp}[2]{( #1 \vert #2 )}
+
+\newcommand{\innerpA}[2]{\langle #1 \vert #2 ]}
+\newcommand{\innerpB}[2]{[ #1 \vert #2 \rangle}
+
+\newcommand{\onehalf}{\frac{1}{2}}
+
+\newcommand{\Tr}{\mathrm{Tr}}
+
+\newcommand{\Cyl}{\mathrm{Cyl}}
+%%% END Custom commands %%%
+
+\graphicspath{{figures/}}
+
+%opening
+\begin{document}
+
+\preprint{This line only printed with preprint option}
+
+\title{Quantizing the Bosonic String on a Loop Quantum Gravity Background}
+
+\author{Deepak Vaid}
+\email{dvaid79@gmail.com}
+\affiliation{National Institute of Technology, Karnataka, India}
+\author{Luigi Teixeira de Sousa}
+\email{luigits@estudante.ufscar.br}
+\affiliation{Universidade Federal de São Carlos, Brasil}
+
+\date{\today}
+
+\begin{abstract}
+	We write down an action for a bosonic string propagating in a bulk background whose geometry is specified in terms of connection and tetrad (or ``vierbein'') variables
+\end{abstract}
+
+\maketitle
+
+\tableofcontents
+
+\listoftodos
+
+\end{document}
