@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"latex-workshop.synctex.afterBuild.enabled": true,
+		"latex-workshop.view.pdf.viewer": "tab",
+		"latex-workshop.view.pdf.color.dark.pageColorsBackground": "#171717",
+		"latex-workshop.view.pdf.color.dark.pageColorsForeground": "#FFFFFF",
+		"latex-workshop.view.pdf.color.dark.backgroundColor": "#171717",
+		"latex-workshop.codespaces.portforwarding.openDelay": 20000
+	}
+}
