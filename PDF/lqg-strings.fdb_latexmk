@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex PDF/lqg-strings"] 1697715671 "PDF/lqg-strings.aux" "PDF/lqg-strings.bbl" "PDF/lqg-strings" 1698055343 0
+["bibtex PDF/lqg-strings"] 1698068322 "PDF/lqg-strings.aux" "PDF/lqg-strings.bbl" "PDF/lqg-strings" 1698069056 0
   "./JHEP3.bst" 1697715651 19999 c86b5f93a8c5d838a263135b613681a4 ""
-  "./lqg-strings.bib" 1697434154 141797 46cbebd2877f7078ccc738c54bfe3a45 ""
-  "PDF/lqg-strings.aux" 1698055342 2275 27704b0a0084f2798bb92e5a62db6798 "pdflatex"
-  "PDF/lqg-stringsNotes.bib" 1698055342 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "./lqg-strings.bib" 1698068092 160839 93bcb52e7d32c8e34d40d1722a306aa8 ""
+  "PDF/lqg-strings.aux" 1698069055 2275 66a3f2cb3d45737817c98350ac666fe0 "pdflatex"
+  "PDF/lqg-stringsNotes.bib" 1698069055 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "PDF/lqg-strings.bbl"
   "PDF/lqg-strings.blg"
   (rewritten before read)
-["pdflatex"] 1698055341 "/workspaces/lqg-string/lqg-strings.tex" "PDF/lqg-strings.pdf" "lqg-strings" 1698055343 0
+["pdflatex"] 1698069055 "/workspaces/lqg-string/lqg-strings.tex" "PDF/lqg-strings.pdf" "lqg-strings" 1698069056 0
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -38,6 +38,8 @@
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1248133631 32080 340ef9bf63678554ee606688e7b5339d ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb" 1248133631 32298 c6d25bb16d1eac01ebdc6d7084126a1e ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
+  "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb" 1248133631 32734 69e00a6b65cedb993666e42eedb3d48f ""
+  "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1248133631 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1248133631 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb" 1248133631 33993 9b89b85fd2d9df0482bd47194d1d3bf3 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb" 1248133631 32587 1788b0c1c5b39540c96f5e42ccd6dae8 ""
@@ -183,12 +185,12 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1688881012 4643411 808b8df776595c3e72145e027cce2612 ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1688881055 8172456 b563fca315dcd1b2673ea5601c7f5dfd ""
   "/usr/local/texlive/2023/texmf.cnf" 1688881009 455 5b996dcaa0eb4ef14a83b026bc0a008c ""
-  "/workspaces/lqg-string/lqg-strings.tex" 1698055330 6621 3317d5624220828e5096a8349ae0dc8a ""
-  "PDF/lqg-strings.aux" 1698055342 2275 27704b0a0084f2798bb92e5a62db6798 "pdflatex"
-  "PDF/lqg-strings.bbl" 1697715671 110 45a49a2c91184cd9298df1dd4f9fe39a "bibtex PDF/lqg-strings"
-  "PDF/lqg-strings.out" 1698055342 1587 5d8d2b556835479b2cb72c2392f5d69f "pdflatex"
-  "PDF/lqg-strings.toc" 1698055342 839 e4c0421f428cde1a14f52fa66f465729 "pdflatex"
-  "lqg-strings.tex" 1698055330 6621 3317d5624220828e5096a8349ae0dc8a ""
+  "/workspaces/lqg-string/lqg-strings.tex" 1698069051 9782 db2dd8139194da79e66989d8712a04a4 ""
+  "PDF/lqg-strings.aux" 1698069055 2275 66a3f2cb3d45737817c98350ac666fe0 "pdflatex"
+  "PDF/lqg-strings.bbl" 1698068322 110 45a49a2c91184cd9298df1dd4f9fe39a "bibtex PDF/lqg-strings"
+  "PDF/lqg-strings.out" 1698069055 1587 5d8d2b556835479b2cb72c2392f5d69f "pdflatex"
+  "PDF/lqg-strings.toc" 1698069055 839 3a53b1b7f76208784afc8df2cffe97db "pdflatex"
+  "lqg-strings.tex" 1698069051 9782 db2dd8139194da79e66989d8712a04a4 ""
   "revtex4-2.cls" 1697434111 202588 252d8ad05b878c573f3e2adfc38ce076 ""
   (generated)
   "PDF/lqg-strings.aux"
