@@ -86,6 +86,8 @@
   *{file}   {umsa.fd}     {2013/01/14 v3.01}
   *{file}   {umsb.fd}     {2013/01/14 v3.01}
   *{file}   {ulasy.fd}    {1998/08/17 v2.2e}
+  *{file}   {ueuf.fd}     {2013/01/14 v3.01}
+  *{file}   {Ubbold.fd}   {0000/00/00 v0.0}
   *{-------}{Document-specific files:}{----}
   *{file}   {supp-pdf.mkii}{0000/00/00 v0.0}
   *{package}{epstopdf-base}{2020-01-24 v2.11}
