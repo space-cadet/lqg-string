@@ -1,3 +1,27 @@
-\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{}
+\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{1}
+
+\bibitem{Friedan1985Nonlinear}
+D.~H. Friedan, {\it Nonlinear {{Models}} in {{Two}} + {{Epsilon Dimensions}}},
+  {\em Annals Phys.} {\bf 163} (1985) 318.
+
+\bibitem{Callan1989Sigma}
+C.~G. Callan, Jr. and L.~Thorlacius, {\it Sigma {{Models}} and {{String
+  Theory}}},  in {\em Theoretical {{Advanced Study Institute}} in {{Elementary
+  Particle Physics}}: {{Particles}}, {{Strings}} and {{Supernovae}} ({{TASI}}
+  88)}, Mar., 1989.
+
+\bibitem{Callan1985Strings}
+C.~G. Callan, D.~Friedan, E.~J. Martinec, and M.~J. Perry, {\it Strings in
+  background fields},  {\em Nuclear Physics, Section B} {\bf 262} (1985), no.~4
+  593--609, [\href{http://arxiv.org/abs/1612.01830}{{\tt arXiv:1612.01830}}].
+
+\bibitem{Polchinski1998aString}
+J.~Polchinski, {\em String Theory (Cambridge Monographs on Mathematical
+  Physics) (Volume 1)}.
+\newblock Cambridge University Press, 1~ed., Oct., 1998.
+
+\bibitem{Tong2010Lectures}
+D.~Tong, {\it {Lectures on String Theory}},
+  \href{http://arxiv.org/abs/0908.0333}{{\tt arXiv:0908.0333}}.
 
 \end{thebibliography}\endgroup
