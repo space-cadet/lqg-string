@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex PDF/lqg-strings"] 1698590242 "PDF/lqg-strings.aux" "PDF/lqg-strings.bbl" "PDF/lqg-strings" 1698590403 0
+["bibtex PDF/lqg-strings"] 1698688495 "PDF/lqg-strings.aux" "PDF/lqg-strings.bbl" "PDF/lqg-strings" 1698688498 0
   "./JHEP3.bst" 1697727923 19999 c86b5f93a8c5d838a263135b613681a4 ""
   "./lqg-strings.bib" 1698589796 71988 b59452b73cdd499fbbc410c836fc90b4 ""
-  "/Volumes/Data/owncloud/root/research/articles/lqg-string/PDF/lqg-stringsNotes.bib" 1698590401 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "PDF/lqg-strings.aux" 1698590401 2887 c1bfe4941d2b638b7ee214b7099527f2 "pdflatex"
+  "/Volumes/Data/owncloud/root/research/articles/lqg-string/PDF/lqg-stringsNotes.bib" 1698688496 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "PDF/lqg-strings.aux" 1698688497 4956 63f513cf1aaea2d1cba92c1fb104179f "pdflatex"
   (generated)
   "PDF/lqg-strings.bbl"
   "PDF/lqg-strings.blg"
   (rewritten before read)
-["pdflatex"] 1698590400 "/Volumes/Data/owncloud/root/research/articles/lqg-string/lqg-strings.tex" "PDF/lqg-strings.pdf" "lqg-strings" 1698590403 0
+["pdflatex"] 1698688495 "/Volumes/Data/owncloud/root/research/articles/lqg-string/lqg-strings.tex" "PDF/lqg-strings.pdf" "lqg-strings" 1698688498 0
   "/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1690714097 1004 54797486969f23fa377b128694d548df ""
   "/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1690714097 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/euler/eufm10.tfm" 1690714097 1040 b84415f97d114011685943ade933dc71 ""
@@ -80,9 +80,12 @@
   "/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex" 1690714131 35249 abd4adf948f960299a4b3d27c5dddf46 ""
   "/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex" 1690714131 22012 81b34a0aa8fa1a6158cc6220b00e4f10 ""
   "/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex" 1690714131 8893 e851de2175338fdf7c17f3e091d94618 ""
+  "/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryfadings.code.tex" 1690714131 1179 5483d86c1582c569e665c74efab6281f ""
   "/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex" 1690714131 3937 3f208572dd82c71103831da976d74f1a ""
+  "/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshadows.code.tex" 1690714131 2889 d698e3a959304efa342d47e3bb86da5b ""
   "/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex" 1690714131 11518 738408f795261b70ce8dd47459171309 ""
   "/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex" 1690714131 186782 af500404a9edec4d362912fe762ded92 ""
+  "/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/libraries/pgflibraryfadings.code.tex" 1690714131 2563 d5b174eb7709fd6bdcc2f70953dbdf8e ""
   "/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex" 1690714131 32995 ac577023e12c0e4bd8aa420b2e852d1a ""
   "/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/math/pgfint.code.tex" 1690714131 3063 8c415c68a0f3394e45cfeca0b65f6ee6 ""
   "/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/math/pgfmath.code.tex" 1690714131 949 cea70942e7b7eddabfb3186befada2e6 ""
@@ -171,7 +174,9 @@
   "/Users/deepak/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/public/bbold/dpi600/bbold10.pk" 1690715497 12432 114955d4d750cb1d0913992187cf0b8e ""
   "/Users/deepak/Library/Application Support/MiKTeX/texmfs/data/fonts/tfm/public/bbold/bbold10.tfm" 1690715492 788 aa2bfd021367054a224c4cf5a9967398 ""
   "/Users/deepak/Library/Application Support/MiKTeX/texmfs/data/fonts/tfm/public/bbold/bbold5.tfm" 1690715493 764 6e384685b780f01b6a1744eb2db32b69 ""
+  "/Users/deepak/Library/Application Support/MiKTeX/texmfs/data/fonts/tfm/public/bbold/bbold6.tfm" 1690715494 764 bc340104b2499eb440977e2d302aad8b ""
   "/Users/deepak/Library/Application Support/MiKTeX/texmfs/data/fonts/tfm/public/bbold/bbold7.tfm" 1690715492 788 cfc6f7349e03ca366560917be88c2027 ""
+  "/Users/deepak/Library/Application Support/MiKTeX/texmfs/data/fonts/tfm/public/bbold/bbold8.tfm" 1690715494 768 b3927d32cc38bf306f676b7e9ddf7414 ""
   "/Users/deepak/Library/Application Support/MiKTeX/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt" 1694666776 24144861 d61d620838107ee8d6ba260b240302ec ""
   "/Users/deepak/Library/Application Support/MiKTeX/texmfs/install/tex/generic/bigintcalc/bigintcalc.sty" 1690715394 40635 c40361e206be584d448876bba8a64a3b ""
   "/Users/deepak/Library/Application Support/MiKTeX/texmfs/install/tex/generic/bitset/bitset.sty" 1690715392 33961 6b5c75130e435b2bfdb9f480a09a39f9 ""
@@ -200,12 +205,13 @@
   "/Users/deepak/Library/Application Support/MiKTeX/texmfs/install/tex/latex/snapshot/snapshot.sty" 1690715476 20062 ae35c3c7dfd173faf041b7ce78d4ba8e ""
   "/Users/deepak/Library/Application Support/MiKTeX/texmfs/install/tex/latex/textcase/textcase.sty" 1690715479 3050 42e1650bbafdaeb05aa69e5d5263388a ""
   "/Users/deepak/Library/Application Support/MiKTeX/texmfs/install/tex/latex/todonotes/todonotes.sty" 1690715485 21300 a6e0d5f13b9360f0419aa0d6b30a9c96 ""
-  "/Volumes/Data/owncloud/root/research/articles/lqg-string/lqg-strings.tex" 1698590399 17010 b1261be7336d5631b7d7a1d440766c43 ""
-  "PDF/lqg-strings.aux" 1698590401 2887 c1bfe4941d2b638b7ee214b7099527f2 "pdflatex"
-  "PDF/lqg-strings.bbl" 1698590243 1125 6cb42544f4ce32f94fd6cb0ae99df0a1 "bibtex PDF/lqg-strings"
-  "PDF/lqg-strings.out" 1698590401 1724 7d67c2e5c967b6c5c7b0f40579c117de "pdflatex"
-  "PDF/lqg-strings.toc" 1698590401 864 bd00a3aba996a7c0f419c7e11475b704 "pdflatex"
-  "lqg-strings.tex" 1698590399 17010 b1261be7336d5631b7d7a1d440766c43 ""
+  "/Volumes/Data/owncloud/root/research/articles/lqg-string/lqg-strings.tex" 1698688491 21062 db4b7e747926062c81649c5fbc76064f ""
+  "PDF/lqg-strings.aux" 1698688497 4956 63f513cf1aaea2d1cba92c1fb104179f "pdflatex"
+  "PDF/lqg-strings.bbl" 1698688495 1125 6cb42544f4ce32f94fd6cb0ae99df0a1 "bibtex PDF/lqg-strings"
+  "PDF/lqg-strings.out" 1698688497 1831 533346345a96b810ad3ccf2875b30f1b "pdflatex"
+  "PDF/lqg-strings.tdo" 1698688497 733 d7d4d842cfd778b01a4441127579441d "pdflatex"
+  "PDF/lqg-strings.toc" 1698688497 933 704305149ceb509ec2a160524f735c0f "pdflatex"
+  "lqg-strings.tex" 1698688491 21062 db4b7e747926062c81649c5fbc76064f ""
   "revtex4-2.cls" 1697435730 202588 252d8ad05b878c573f3e2adfc38ce076 ""
   (generated)
   "PDF/lqg-strings.aux"
@@ -213,6 +219,7 @@
   "PDF/lqg-strings.log"
   "PDF/lqg-strings.out"
   "PDF/lqg-strings.pdf"
+  "PDF/lqg-strings.tdo"
   "PDF/lqg-strings.toc"
   "PDF/lqg-stringsNotes.bib"
   (rewritten before read)

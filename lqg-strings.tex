@@ -1,6 +1,6 @@
 \RequirePackage{snapshot}
 \RequirePackage[final]{graphicx}
-\documentclass[twocolumn,final,aps,nofootinbib,nobibnotes]{revtex4-2}
+\documentclass[twocolumn,draft,aps,nofootinbib,nobibnotes]{revtex4-2}
 
 % revtex4 imports the natbib package which conflicts with biblatex. To remedy the resulting name conflicts the following recipe is taken from https://tex.stackexchange.com/a/37077
 % Start of 'ignore natbib' hack
@@ -38,7 +38,9 @@
 \usepackage{epsfig}
 \usepackage{latexsym}
 \usepackage{xcolor}
-\usepackage[colorinlistoftodos, shadow, textsize=small, obeyDraft]{todonotes}
+\usepackage[colorinlistoftodos, shadow, textsize=small, obeyDraft,loadshadowlibrary]{todonotes}
+
+\setlength{\emergencystretch}{2em}
 
 \usepackage[colorlinks=true,citecolor=blue,linkcolor=blue,final]{hyperref}
 %\usepackage{hyperref}
@@ -164,7 +166,7 @@
 
 \listoftodos
 
-\section{Introduction}
+\section{Introduction}\label{sec:intro}
 
 ``Quantum gravity'' refers to the broad enterprise dedicated to finding a complete, consistent theory in which quantum mechanics coexists peacefully with general relativity. There are two major approaches to quantum gravity which are widely recognized for their success in describing various aspects of physics at the Planck scale. The first of these is String Theory\footnote{In this work we will capitalize the words ``string theory'' since the second approach in question, loop quantum gravity is usually abbreviated as LQG.}, the quantum theory of a one dimensional object which is said to contain within it a complete description of all particles, forces and their interactions, including gravity. However, where precisely in the vast space of effective field theories which can possibly arise as in the low energy limit of a conjectured ``M-Theory'', our Universe with its collection of particles, forces and coupling constants, exists, is still a matter of vigorous debate.
 
@@ -192,7 +194,7 @@ While this procedure is straightforward in principle, in practice is was impossi
 
 Following this, work by Rovelli and Smolin \todo{insert ref} and by Ashtekar, Rovelli and Smolin demonstrated the most remarkable feature of this theory, which came to be known as ``Loop Quantum Gravity'', was that one could construct quantum operators for geometric quantities such as areas of two dimensional surfaces and volumes of three dimensional regions. Moreover, these operators could be diagonlized exactly in the spin-network basis and a lower bound on the smallest possible quantum of area and quantum of volume could be derived. This was the first time that physicists had discovered the ``atoms of space'' or the ``quanta of geometry'' in the true sense of the expression.
 
-\section{Strings in Background Fields and Emergent Gravity}
+\section{Strings in Background Fields and Emergent Gravity}\label{sec:strings-gravity}
 
 Let us begin by recalling the Polyakov action for the bosonic string.
 
@@ -217,7 +219,25 @@ Then, as shown long ago by Friedan \cite{Friedan1985Nonlinear} (see also \cite{C
 \end{equation}
 Therefore we find that conformal invariance of the string worldsheet \emph{implies} that the background geometry in which the string propagates satisfies the \emph{vacuum} Einstein equations. It is this result which is often cited as evidence for the claim that string theory is a \emph{background independent} theory of quantum gravity.
 
-\section{Equations of Motion}
+In our opinion, however, this result is insufficient evidence for asserting that string theory is background independent. Our reasons are the following:
+
+\begin{enumerate}[itemsep=0.5em]
+	\item While the conformal invariance of the string worldsheet implies that the background is Ricci flat, this, in itself, is not very surprising. After all conformal invariance of worldsheet is equivalent to the statement of diffeomorphism invariance of the worldsheet, and in order for this to be consistent with the bulk geometry, the bulk geometry should also have a description in terms of diffeomorphism invariant physics. The simplest form of this requirement is that the background should satisfy the vacuum Einstein equations \todo{Does this make sense? Check!}.
+	\item One can ask what is the quantum mechanical description of the bulk geometry? It is often suggested that the bulk geometry corresponds to a coherent state or a graviton condensate, where the graviton are themselves excitations of the fundamental string. However, there does not appear to be an actual mathematical realization of this statement in terms of non-perturbative physics.
+	\item Finally, as mentioned in the introduction, in any \emph{quantum} theory of gravity one would expect to be able to describe the ``atoms of geometry''. There is no sense in which this is realised in this picture of gravity emerging from stringy physics. Even though one can calculate higher order corrections to the graviton beta function and this provides us with the quantum corrected effective action for the bulk geometry, all the physical quantities are still defined in terms of continuous fields such as the metric. For \eg, to the best of our knowledge, there is no clear sense in which one construct a \emph{non-perturbative} state which corresponds to a superposition of geometries using the quantum theory of a bosonic string alone.
+\end{enumerate}
+
+Despite all the concerns string theory has emerged as the primary candidate for a theory of quantum gravity. There are good reasons for this. AdS/CFT - the most concrete version of a \emph{non-perturbative} theory of quantum gravity - arose out of string theory. AdS/CFT is also far from being a complete quantum theory of quantum gravity. Our universe, for instance, is described by a positive cosmological constant $\Lambda > 0$ rather than $\Lambda < 0$ as is implied by the ``Anti-deSitter'' part of the correspondence. However, the correspondence has passed numerous checks and is now considered part of the established canon. Moreoever, it has led to numerous theoretical insights. We have gained a deep understanding of the properties of real world systems referred to as ``strange metals'' \todo{insert refs} by studying their dual gravitational theories. The significance of quantum error correction and quantum information for a theory of quantum gravity was also first most clearly illuminated via AdS/CFT \todo{insert refs}. For these, are other reasons too numerous to mention here, most theorists still regard string theory as the primary (or even the sole) candidate for a theory of quantum gravity.
+
+On the other hand LQG is also built upon a rigorous mathematical framework which follows the well-established rules of quantization\footnote{Though there are those who disagree with this assertion \todo[inline]{insert refs}}. Moreoever it allows us to construct a non-perturbative framework for quantum geometry which makes it possible to probe regimes which do not appear to be accessible via string theory.
+
+Thus, we are now at an impasse. We have two theories, both built upon rigorous mathematical foundations, but which do not appear to be concordant with each other. There are two possibilities. The first is that one of the two approaches is fundamentally flawed in some way and must be rejected. The second is that we are missing some crucial ingredient which would allow us to find a missing link between the two theories. We feel that it worthwhile to explore the second option in greater detail, if for no other reason then to rule out the possibility of such a link between these two theories.
+
+\section{Strings and Quantum Geometry}\label{sec:string-geometry}
+
+
+
+\section{Equations of Motion}\label{sec:eom}
 
 \section{Physical Implications}
 

@@ -3,12 +3,13 @@
 \tocdepth@munge 
 \contentsline {section}{\numberline {}Contents}{1}{section*.3}%
 \tocdepth@restore 
-\contentsline {section}{\numberline {I}Introduction}{1}{section*.4}%
-\contentsline {section}{\numberline {II}Strings in Background Fields and Emergent Gravity}{2}{section*.5}%
-\contentsline {section}{\numberline {III}Equations of Motion}{3}{section*.6}%
-\contentsline {section}{\numberline {IV}Physical Implications}{3}{section*.7}%
-\contentsline {section}{\numberline {V}Discussion}{3}{section*.8}%
-\contentsline {section}{\numberline {}Acknowledgments}{3}{section*.9}%
+\contentsline {section}{\numberline {}Todo list}{1}{section*.4}%
+\contentsline {section}{\numberline {I}Introduction}{1}{section*.5}%
+\contentsline {section}{\numberline {II}Strings in Background Fields and Emergent Gravity}{2}{section*.9}%
+\contentsline {section}{\numberline {III}Equations of Motion}{4}{section*.14}%
+\contentsline {section}{\numberline {IV}Physical Implications}{4}{section*.15}%
+\contentsline {section}{\numberline {V}Discussion}{4}{section*.16}%
+\contentsline {section}{\numberline {}Acknowledgments}{4}{section*.17}%
 \appendix 
-\contentsline {section}{\numberline {A}}{3}{section*.10}%
-\contentsline {section}{\numberline {}References}{3}{section*.11}%
+\contentsline {section}{\numberline {A}}{4}{section*.18}%
+\contentsline {section}{\numberline {}References}{4}{section*.19}%
