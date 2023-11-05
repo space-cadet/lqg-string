@@ -1,0 +1,230 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{indentfirst}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath,amsthm,amsfonts}
+\usepackage{esint}
+\usepackage{upgreek}
+\usepackage{tikz}
+\usepackage{mathtools}
+\usepackage{mathrsfs}
+\usepackage{slashed}
+\usepackage{hyperref}
+\usepackage{bbold}
+\usepackage[margin=2cm]{geometry}
+\usepackage{titlesec}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\diff}{\mathrm{d}}
+\newcommand{\inp}{\mathrm{i}}
+\newcommand{\e}{\mathrm{e}}
+\newcommand{\Lagr}{\mathscr{L}}
+\newcommand{\PS}{\mathcal{P}}
+
+
+
+\newcommand{\bite}{\begin{itemize}}
+	\newcommand{\eat}{\end{itemize}}
+\newcommand{\beq}{\begin{equation}}
+	\newcommand{\eeq}{\end{equation}}
+\newcommand{\rarrow}{\rightarrow}
+\newcommand{\beqa}{\begin{align}}
+	\newcommand{\eeqa}{\end{align}}
+\newcommand{\barr}{\begin{array}}
+	\newcommand{\earr}{\end{array}}
+\newcommand{\del}{\partial}
+\newcommand{\de}{\mathrm{d}}
+%\newcommand{\mu\nu}{{\mu\nu}}
+\renewcommand{\th}{\mathrm{th}}
+\newcommand{\com}[1]{\begin{itemize}\color{RED}{{#1}}\end{itemize}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\btw}[1]{\color{PURPLE}{{#1}}\color{BLACK}}
+\newcommand{\cut}[1]{\color{RED}{{#1}}\color{BLACK}}
+
+%text
+\newcommand{\ie}{\textit{i.e.}~}
+\newcommand{\eg}{\textit{e.g.}~}
+\newcommand{\wrt}{\textit{w.r.t.}~}
+\newcommand{\etc}{\textit{etc.}~}
+
+
+\newcommand{\M}{\mathcal{M}}
+\newcommand{\N}{\mathcal{N}}
+% \newcommand{\H}{\mathcal{H}}
+
+\newcommand{\bz}{\mathbf{z}}
+
+\newcommand{\mb}[1]{\mathbf{#1}}
+\newcommand{\mc}[1]{\mathcal{#1}}
+\newcommand{\mbb}[1]{\mathbb{#1}}
+\newcommand{\mf}[1]{\mathfrak{#1}}
+
+\newcommand{\unit}[1]{\mathbf{\hat{#1}}}
+
+%% Package bbold for bold identity symbol
+\usepackage{bbold}
+
+\newcommand{\id}{\mathbb{1}}
+
+\newcommand{\utilde}[1]{\underaccent{\tilde}{#1}}
+
+\newcommand{\vect}[1]{\boldsymbol{#1}}
+\newcommand{\bvec}[1]{\boldsymbol{\vec #1}}
+\newcommand{\expect}[1]{\langle #1\rangle}
+\newcommand{\innerp}[2]{\langle #1 \vert #2 \rangle}
+\newcommand{\expectop}[3]{\langle #1 \vert #2 \vert #3 \rangle}
+\newcommand{\bra}[1]{\langle #1 \vert}
+\newcommand{\ket}[1]{\vert #1 \rangle}
+\newcommand{\supersc}[1]{$^{\textrm{#1}}$}
+\newcommand{\subsc}[1]{$_{\textrm{#1}}$}
+\newcommand{\sltwoc}{\mathfrak{sl}(2,\mathbb{C})}
+
+\newcommand{\norm}[1]{\lVert #1 \rVert}
+
+\newcommand{\rket}[1]{\vert #1 ]}
+\newcommand{\rbra}[1]{[ #1 \vert}
+
+\newcommand{\rinnerp}[2]{[ #1 \vert #2 ]}
+
+\newcommand{\bket}[1]{\vert #1 )}
+\newcommand{\bbra}[1]{( #1 \vert}
+
+\newcommand{\binnerp}[2]{( #1 \vert #2 )}
+
+\newcommand{\innerpA}[2]{\langle #1 \vert #2 ]}
+\newcommand{\innerpB}[2]{[ #1 \vert #2 \rangle}
+
+\newcommand{\onehalf}{\frac{1}{2}}
+
+\newcommand{\Tr}{\mathrm{Tr}}
+
+\newcommand{\Cyl}{\mathrm{Cyl}}
+
+\newtheorem{theorem}{Theorem}[paragraph]
+\newtheorem{proposition}{Proposition}[paragraph]
+\newtheorem{corollary}{Corollary}[theorem]
+
+\setcounter{secnumdepth}{4}
+
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+\title{Sketchboard}
+
+\begin{document}
+
+\maketitle
+
+\newpage
+
+\section{Basic concepts}
+
+\subsection{With extra capital internal index on embbeding fields}
+
+Promote embedding fields $X^{\mu}$ to have an internal group index with $D$ values
+\begin{equation*}
+    X^{\mu} \rightarrow X^{\mu I} \ , \ \ I = 0 , ... , d
+\end{equation*}
+\begin{equation*}
+    g_{a b} = 2 f \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} \rightarrow g_{a b} ^{I J} = 2 f D_{a} X^{\mu I} D_{b} X^{\nu J} G_{\mu \nu}
+\end{equation*}
+\begin{equation*}
+    D_{a} X^{\mu I} = \partial _{a} X^{\mu I} + \omega ^{I} _{a J} X^{\mu J}
+\end{equation*}
+\begin{equation*}
+    e^{i} _{a} e^{j} _{b} \eta _{i j} = g_{a b} \rightarrow e^{i} _{a} e^{j} _{b} \eta _{i j} = \Tr (g_{a b} ^{I J} T_{I} T_{J}) = g_{a b} ^{I J} \eta _{I J} \ , \ \ i , j = 0 , 1
+\end{equation*}
+\begin{equation*}
+    g = \det (g_{a b}) \rightarrow g = \det (\Tr (g_{a b} ^{I J} T_{I} T_{J})) = \det (g_{a b} ^{I J} \eta _{I J}) = \det (e^{i} _{a} e^{j} _{b} \eta _{i j}) = - \det (e)^{2} \implies \sqrt{- g} = \det (e)
+\end{equation*}
+
+\subsection{With extra small internal index on embedding fields}
+
+Promote embbeding fields to have a internal group index with 2 values
+\begin{equation*}
+    X^{\mu} \rightarrow X^{\mu i} \ , \ \ i = 0 , 1
+\end{equation*}
+\begin{equation*}
+    g_{a b} = 2 f \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} \rightarrow g_{a b} ^{i j} = 2 f D_{a} X^{\mu i} D_{b} X^{\nu j} G_{\mu \nu}
+\end{equation*}
+\begin{equation*}
+    D_{a} X^{\mu i} = \partial _{a} X^{\mu i} + \omega ^{i} _{a j} X^{\mu j}
+\end{equation*}
+\begin{equation*}
+    e^{i} _{a} e^{j} _{b} \eta _{i j} = g_{a b} \rightarrow e^{i} _{a} e^{j} _{b} \eta _{i j} = \Tr (g_{a b} ^{i j} T_{i} T_{j}) = g_{a b} ^{i j} \eta _{i j} \implies e^{i} _{a} e^{j} _{b} = g_{a b} ^{i j}
+\end{equation*}
+\begin{equation*}
+    g = \det (g_{a b}) \rightarrow g = \det (\Tr (g_{a b} ^{i j} T_{i} T_{j})) = \det (g_{a b} ^{i j} \eta _{i j}) = \det (e^{i} _{a} e^{j} _{b} \eta _{i j}) = - \det (e)^{2} \implies \sqrt{- g} = \det (e)
+\end{equation*}
+
+\subsection{Without extra index on embbeding fields}
+
+Change from WS metric to WS zweibein and connection (which vanishes since in 2d metric is conformally flat)
+\begin{equation*}
+    e_{a} ^{i} e_{b} ^{j} \eta _{i j} = g_{a b} = 2 f \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu}
+\end{equation*}
+\begin{equation*}
+    g = \det (g_{a b}) = \det (e_{a} ^{i} e_{b} ^{j} \eta _{i j}) = - \det (e)^{2} \implies \sqrt{- g} = \det (e)
+\end{equation*}
+
+\section{Building an Action}
+
+Start with Polyakov action in curved space-time
+\begin{equation*}
+    S_{P} = - \frac{T_{0}}{2} \int \diff \tau \wedge \diff \sigma \sqrt{- g} g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} \ ,
+\end{equation*}
+
+\subsection{With capital internal index}
+
+... and promote partial derivative $\partial _{a}$ to covariant derivative $D_{a}$, giving us our first attempt at modified Polyakov action
+\begin{equation*}
+    S_{M P 1} = - \frac{T_{0}}{2} \int \diff \tau \wedge \diff \sigma \det (e) \eta ^{i j} e^{a} _{i} e^{b} _{j} D_{a} X^{\mu I} D_{b} X^{\nu J} E_{\mu} ^{K} E_{\nu K} \eta _{I J}
+\end{equation*}
+\begin{equation*}
+    \updownarrow
+\end{equation*}
+\begin{equation*}
+    \Lagr = - \frac{T_{0}}{2} \det (e) \eta ^{i j} e^{a} _{i} e^{b} _{j} D_{a} X^{\mu I} D_{b} X^{\nu J} E_{\mu} ^{K} E_{\nu K} \eta _{I J}
+\end{equation*}
+
+\subsection{With small internal index}
+
+... and promote derivatives to covariant $D_{a}$, giving us another modified Polyakov action
+\begin{equation*}
+    S_{M P 2} = - \frac{T_{0}}{2} \int \diff \tau \wedge \diff \sigma \det (e) e^{a} _{i} e^{b} _{j} D_{a} X^{\mu i} D_{b} X^{\mu j} E_{\mu} ^{I} (X) E_{\nu I} (X)
+\end{equation*}
+\begin{equation*}
+    \updownarrow
+\end{equation*}
+\begin{equation*}
+    \Lagr = - \frac{T_{0}}{2} \det (e) e^{a} _{i} e^{b} _{j} D_{a} X^{\mu i} D_{b} X^{\mu j} E_{\mu} ^{I} (X) E_{\nu I} (X)
+\end{equation*}
+
+\subsection{Without extra index}
+
+... and swap to new set of variables giving us the dyad-Polyakov action
+\begin{equation*}
+    S_{D P} = - \frac{T_{0}}{2} \int \diff \tau \wedge \diff \sigma \det (e) e^{a} _{i} e^{b i} \partial _{a} X^{\mu} \partial _{b} X^{\nu} E_{\mu} ^{I} (X) E_{\nu I} (X) \ .
+\end{equation*}
+\begin{equation*}
+    \updownarrow
+\end{equation*}
+\begin{equation*}
+    \Lagr = - \frac{T_{0}}{2} \det (e) e^{a} _{i} e^{b i} \partial _{a} X^{\mu} \partial _{b} X^{\nu} E_{\mu} ^{I} (X) E_{\nu I} (X) \ .
+\end{equation*}
+
+\section{EoMs}
+
+\subsection{w.r.t $e$}
+
+Start by writing $\det (e) = \frac{1}{2} \varepsilon ^{c d} \varepsilon _{m n} e_{c} ^{m} e_{d} ^{n}$
+\begin{align*}
+    \frac{\delta S}{\delta e^{e} _{l}} & = \frac{D \Lagr}{D e^{e} _{l}} = \left( \frac{\partial}{\partial e^{e} _{l}} - \partial _{f} \frac{\partial}{\partial (\partial _{f} e^{e} _{l})} \right) \left( - \frac{T_{0}}{2} \frac{1}{2} \varepsilon ^{c d} \varepsilon _{m n} e^{m} _{c} e^{n} _{d} \eta ^{i j} e^{a} _{i} e^{b} _{j} \partial _{a} X^{\mu} \partial _{b} X^{\nu} E^{I} _{\mu} E^{J} _{\nu} \eta _{I J} \right) = \\
+                                       & = - \frac{T_{0}}{4}
+\end{align*}
+
+\end{document}
