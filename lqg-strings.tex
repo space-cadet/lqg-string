@@ -245,15 +245,15 @@ Thus, we are now at an impasse. We have two theories, both built upon rigorous m
 
 \section{Strings and Quantum Geometry}\label{sec:string-geometry}
 
-Let us begin by writing down the action of a string propagating in a background geometry which is specified not in terms of a metric, but in terms of a connection $A_\mu^{IJ}$ and vierbein fields $E_\mu^I$. Further we will require that the bulk connection and the bulk vierbein can be pulled back onto a connection $\omega_a^i$ and a dyad $e^a_i$, respectively, living on the string worldsheet $\Sigma$. In order for the bulk connection $A_\mu^{IJ}$, and its pullback $\omega_a^i$ on $\Sigma$, to have an effect on the string dynamics we will also promote the embedding fields $X^\mu$ to Lie algebra valued one-form fields $X^\mu_I$. However, due to the fact that parallel transport of the embedding fields on the worldsheet should only involve the worldsheet connection $\omega_a^i$, we can replace $X^\mu_I$ with $X^\mu_i$.
+Let us begin by writing down the action of a string propagating in a background geometry which is specified not in terms of a metric, but in terms of a connection $A_\mu^{IJ}$ and vielbein fields $E_\mu^I$. Further we will require that the bulk connection and the bulk vielbein can be pulled back onto a connection $\omega_a^i$ and a dyad $e^a_i$, respectively, living on the string worldsheet $\Sigma$. In order for the bulk connection $A_\mu^{IJ}$, and its pullback $\omega_a^i$ on $\Sigma$, to have an effect on the string dynamics we will also promote the embedding fields $X^\mu$ to Lie algebra valued vector fields $X^{\mu I}$. However, due to the fact that parallel transport of the embedding fields on the worldsheet should only involve the worldsheet connection $\omega_a^i$, we can replace $X^{\mu I}$ with $X^{\mu i}$.
 \begin{equation}\label{eqn:lqg-string-action}
-	S_{PA} = -\frac{T}{2} \int d\tau \wedge d\sigma\,e\,e^a_i\,e^b_j \, D_a X^\mu_i D_b X^\nu_j E_\mu^I E_{\nu I},
+	S_{PA} = -\frac{T}{2} \int \diff \tau \wedge \diff \sigma\,e\,e^a_i\,e^b_j \, D_a X^{\mu i} D_b X^{\nu j} E_\mu^I E_{\nu I},
 \end{equation}
 where $D_a$ is the covariant derivative with respect to the worldsheet connection, and is given by:
 \begin{equation}\label{eqn:worldsheet-deriv}
-	D_a X^\mu_i = \partial_a X^\mu_i + \omega_{a\,i}{}^j X^\mu_j,
+	D_a X^{\mu i} = \partial_a X^{\mu i} + \omega_{a\,j}^i X^{\mu j},
 \end{equation}
-where $\omega_{a\,i}{}^j$ is the pullback of the bulk connection to the worldsheet.
+where $\omega_{a\,j}^i$ is the pullback of the bulk connection to the worldsheet.
 
 \section{Equations of Motion}\label{sec:eom}
 
