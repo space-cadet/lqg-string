@@ -7,9 +7,10 @@ Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: JHEP3.bst
 Database file #1: lqg-stringsNotes.bib
 Database file #2: lqg-strings.bib
+Warning--I didn't find a database entry for "Jacobson1995Thermodynamics"
 You've used 5 entries,
             2148 wiz_defined-function locations,
-            538 strings with 4210 characters,
+            540 strings with 4262 characters,
 and the built_in function-call counts, 1144 in all, are:
 = -- 109
 > -- 34
@@ -48,3 +49,4 @@ warning$ -- 0
 while$ -- 9
 width$ -- 6
 write$ -- 49
+(There was 1 warning)

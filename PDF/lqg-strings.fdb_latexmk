@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex PDF/lqg-strings"] 1698688495 "PDF/lqg-strings.aux" "PDF/lqg-strings.bbl" "PDF/lqg-strings" 1698688498 0
+["bibtex PDF/lqg-strings"] 1699198449 "PDF/lqg-strings.aux" "PDF/lqg-strings.bbl" "PDF/lqg-strings" 1699198525 0
   "./JHEP3.bst" 1697727923 19999 c86b5f93a8c5d838a263135b613681a4 ""
-  "./lqg-strings.bib" 1698589796 71988 b59452b73cdd499fbbc410c836fc90b4 ""
-  "/Volumes/Data/owncloud/root/research/articles/lqg-string/PDF/lqg-stringsNotes.bib" 1698688496 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "PDF/lqg-strings.aux" 1698688497 4956 63f513cf1aaea2d1cba92c1fb104179f "pdflatex"
+  "./lqg-strings.bib" 1699198398 83488 3b05affe5c9b0014c4b59ba95eefe910 ""
+  "/Volumes/Data/owncloud/root/research/articles/lqg-string/PDF/lqg-stringsNotes.bib" 1699198523 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "PDF/lqg-strings.aux" 1699198524 5466 b1992b922fb5c91bba1264e67995b225 "pdflatex"
   (generated)
   "PDF/lqg-strings.bbl"
   "PDF/lqg-strings.blg"
   (rewritten before read)
-["pdflatex"] 1698688495 "/Volumes/Data/owncloud/root/research/articles/lqg-string/lqg-strings.tex" "PDF/lqg-strings.pdf" "lqg-strings" 1698688498 0
+["pdflatex"] 1699198523 "/Volumes/Data/owncloud/root/research/articles/lqg-string/lqg-strings.tex" "PDF/lqg-strings.pdf" "lqg-strings" 1699198525 0
   "/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1690714097 1004 54797486969f23fa377b128694d548df ""
   "/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1690714097 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/euler/eufm10.tfm" 1690714097 1040 b84415f97d114011685943ade933dc71 ""
@@ -21,6 +21,7 @@
   "/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm5.tfm" 1690714097 940 75ac932a52f80982a9f8ea75d03a34cf ""
   "/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm7.tfm" 1690714097 940 228d6584342e91276bf566bcf9716b83 ""
   "/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmbx12.tfm" 1690714103 1324 c910af8c371558dc20f2d7822f66fe64 ""
+  "/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmbx8.tfm" 1690714103 1332 1fde11373e221473104d6cc5993f046e ""
   "/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmbx9.tfm" 1690714103 1328 5442e22a7072966dbaf88ca900acf3f0 ""
   "/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmmi6.tfm" 1690714103 1512 f21f83efb36853c0b70002322c1ab3ad ""
   "/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmmi8.tfm" 1690714103 1520 eccf95517727cb11801f4f1aee3a21b4 ""
@@ -39,6 +40,7 @@
   "/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/latex-fonts/lasy7.tfm" 1690714115 520 a74c6ed8cb48679fdc3ea874d9d34a7e ""
   "/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/latex-fonts/lasy8.tfm" 1690714115 520 7bb3abb160b19e0ed6ac404bb59052b7 ""
   "/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1690714097 32080 340ef9bf63678554ee606688e7b5339d ""
+  "/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx8.pfb" 1690714097 32166 b0c356b15f19587482a9217ce1d8fa67 ""
   "/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx9.pfb" 1690714097 32298 c6d25bb16d1eac01ebdc6d7084126a1e ""
   "/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1690714097 30251 6afa5cb1d0204815a708a080681d4674 ""
   "/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1690714097 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
@@ -205,13 +207,13 @@
   "/Users/deepak/Library/Application Support/MiKTeX/texmfs/install/tex/latex/snapshot/snapshot.sty" 1690715476 20062 ae35c3c7dfd173faf041b7ce78d4ba8e ""
   "/Users/deepak/Library/Application Support/MiKTeX/texmfs/install/tex/latex/textcase/textcase.sty" 1690715479 3050 42e1650bbafdaeb05aa69e5d5263388a ""
   "/Users/deepak/Library/Application Support/MiKTeX/texmfs/install/tex/latex/todonotes/todonotes.sty" 1690715485 21300 a6e0d5f13b9360f0419aa0d6b30a9c96 ""
-  "/Volumes/Data/owncloud/root/research/articles/lqg-string/lqg-strings.tex" 1698688491 21062 db4b7e747926062c81649c5fbc76064f ""
-  "PDF/lqg-strings.aux" 1698688497 4956 63f513cf1aaea2d1cba92c1fb104179f "pdflatex"
-  "PDF/lqg-strings.bbl" 1698688495 1125 6cb42544f4ce32f94fd6cb0ae99df0a1 "bibtex PDF/lqg-strings"
-  "PDF/lqg-strings.out" 1698688497 1831 533346345a96b810ad3ccf2875b30f1b "pdflatex"
-  "PDF/lqg-strings.tdo" 1698688497 733 d7d4d842cfd778b01a4441127579441d "pdflatex"
-  "PDF/lqg-strings.toc" 1698688497 933 704305149ceb509ec2a160524f735c0f "pdflatex"
-  "lqg-strings.tex" 1698688491 21062 db4b7e747926062c81649c5fbc76064f ""
+  "/Volumes/Data/owncloud/root/research/articles/lqg-string/lqg-strings.tex" 1699198521 22451 b331daa4aa091c13cdaebec58ac39562 ""
+  "PDF/lqg-strings.aux" 1699198524 5466 b1992b922fb5c91bba1264e67995b225 "pdflatex"
+  "PDF/lqg-strings.bbl" 1699198449 1125 6cb42544f4ce32f94fd6cb0ae99df0a1 "bibtex PDF/lqg-strings"
+  "PDF/lqg-strings.out" 1699198524 2036 057d0a96aeff2d16bd47cfec09279d07 "pdflatex"
+  "PDF/lqg-strings.tdo" 1699198524 754 99e25356550a20a1802dfa923c7bf65c "pdflatex"
+  "PDF/lqg-strings.toc" 1699198524 1020 24f4234b704149d3bf3ec50200e4aadb "pdflatex"
+  "lqg-strings.tex" 1699198521 22451 b331daa4aa091c13cdaebec58ac39562 ""
   "revtex4-2.cls" 1697435730 202588 252d8ad05b878c573f3e2adfc38ce076 ""
   (generated)
   "PDF/lqg-strings.aux"

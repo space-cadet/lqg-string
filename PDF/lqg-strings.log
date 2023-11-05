@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.9.14)  30 OCT 2023 23:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.9.14)  5 NOV 2023 21:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -667,7 +667,12 @@ Overfull \hbox (9.7778pt too wide) detected at line 11
  []
 
 
-Overfull \hbox (9.7778pt too wide) detected at line 14
+Overfull \hbox (13.38892pt too wide) detected at line 12
+ \OT1/cmr/m/n/10 VI.|
+ []
+
+
+Overfull \hbox (9.7778pt too wide) detected at line 15
  \OT1/cmr/m/n/10 A.|
  []
 
@@ -691,14 +696,7 @@ Overfull \hbox (0.57553pt too wide) in paragraph at lines 175--175
  []
 
 
-Overfull \hbox (0.57553pt too wide) in paragraph at lines 177--177
-[][][]\OT1/cmr/m/n/9 insert |
- []
-
-
-Overfull \hbox (0.57553pt too wide) in paragraph at lines 177--177
-[][][]\OT1/cmr/m/n/9 insert |
- []
+Package natbib Warning: Citation `Jacobson1995Thermodynamics' on page 1 undefined on input line 177.
 
 [1{/Users/deepak/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex/pdftex.map}]
 LaTeX Font Info:    Trying to load font information for U+euf on input line 193.
@@ -719,51 +717,55 @@ Overfull \hbox (0.57553pt too wide) in paragraph at lines 195--195
  []
 
 [2]
-Overfull \hbox (2.92204pt too wide) in paragraph at lines 225--225
+Overfull \hbox (2.92204pt too wide) in paragraph at lines 227--227
 \OT1/cmr/m/n/9 sense? |
  []
 
 
-Overfull \hbox (5.12828pt too wide) in paragraph at lines 225--225
+Overfull \hbox (5.12828pt too wide) in paragraph at lines 227--227
 \OT1/cmr/m/n/9 Check![]  |
  []
 
 
-Overfull \hbox (2.92204pt too wide) in paragraph at lines 225--225
+Overfull \hbox (2.92204pt too wide) in paragraph at lines 227--227
 \OT1/cmr/m/n/9 sense? |
  []
 
 
-Overfull \hbox (5.12828pt too wide) in paragraph at lines 225--225
+Overfull \hbox (5.12828pt too wide) in paragraph at lines 227--227
 \OT1/cmr/m/n/9 Check![]  |
  []
 
 
-Overfull \hbox (0.57553pt too wide) in paragraph at lines 230--230
+Overfull \hbox (0.57553pt too wide) in paragraph at lines 232--232
 [][][]\OT1/cmr/m/n/9 insert |
  []
 
 
-Overfull \hbox (0.57553pt too wide) in paragraph at lines 230--230
+Overfull \hbox (0.57553pt too wide) in paragraph at lines 232--232
 [][][]\OT1/cmr/m/n/9 insert |
  []
 
 
-Overfull \hbox (0.57553pt too wide) in paragraph at lines 230--230
+Overfull \hbox (0.57553pt too wide) in paragraph at lines 232--232
 [][][]\OT1/cmr/m/n/9 insert |
  []
 
 
-Overfull \hbox (0.57553pt too wide) in paragraph at lines 230--230
+Overfull \hbox (0.57553pt too wide) in paragraph at lines 232--232
 [][][]\OT1/cmr/m/n/9 insert |
  []
 
-[3]
-Overfull \hbox (8.00009pt too wide) in paragraph at lines 232--232
+
+Overfull \hbox (8.00009pt too wide) in paragraph at lines 234--234
  [] |
  []
 
-(/Volumes/Data/owncloud/root/research/articles/lqg-string/PDF/lqg-strings.bbl) [4] (/Volumes/Data/owncloud/root/research/articles/lqg-string/PDF/lqg-strings.aux)
+[3] (/Volumes/Data/owncloud/root/research/articles/lqg-string/PDF/lqg-strings.bbl)
+
+Package natbib Warning: There were undefined citations.
+
+[4] (/Volumes/Data/owncloud/root/research/articles/lqg-string/PDF/lqg-strings.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
@@ -774,20 +776,20 @@ L3 programming layer <2023-08-29>
 
 Dependency list written on lqg-strings.dep.
 Package rerunfilecheck Info: File `lqg-strings.out' has not changed.
-(rerunfilecheck)             Checksum: 533346345A96B810AD3CCF2875B30F1B;1831.
+(rerunfilecheck)             Checksum: 057D0A96AEFF2D16BD47CFEC09279D07;2036.
  ) 
 Here is how much of TeX's memory you used:
- 23709 strings out of 475248
- 438671 string characters out of 5754956
- 1955807 words of memory out of 5000000
- 44756 multiletter control sequences out of 15000+600000
- 567576 words of font info for 78 fonts, out of 8000000 for 9000
+ 23718 strings out of 475248
+ 438734 string characters out of 5754956
+ 1958807 words of memory out of 5000000
+ 44762 multiletter control sequences out of 15000+600000
+ 567885 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,11n,118p,1373b,1164s stack positions out of 10000i,1000n,20000p,200000b,200000s
- </Users/deepak/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/public/bbold/dpi600/bbold10.pk></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx9.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi6.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi7.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr6.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy6.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmti10.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmti9.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt9.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/euler/eufm10.pfb>
-Output written on /Volumes/Data/owncloud/root/research/articles/lqg-string/PDF/lqg-strings.pdf (4 pages, 290688 bytes).
+ 99i,9n,118p,1373b,1168s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ </Users/deepak/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/public/bbold/dpi600/bbold10.pk></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx8.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx9.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi6.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi7.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr6.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy6.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmti10.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmti9.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt9.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/euler/eufm10.pfb>
+Output written on /Volumes/Data/owncloud/root/research/articles/lqg-string/PDF/lqg-strings.pdf (4 pages, 302563 bytes).
 PDF statistics:
- 270 PDF objects out of 1000 (max. 8388607)
- 43 named destinations out of 1000 (max. 500000)
- 205 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 280 PDF objects out of 1000 (max. 8388607)
+ 45 named destinations out of 1000 (max. 500000)
+ 213 words of extra memory for PDF output out of 10000 (max. 10000000)
 

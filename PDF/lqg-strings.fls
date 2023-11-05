@@ -313,6 +313,7 @@ INPUT /Volumes/Data/owncloud/root/research/articles/lqg-string/PDF/lqg-strings.t
 INPUT /Volumes/Data/owncloud/root/research/articles/lqg-string/PDF/lqg-strings.tdo
 OUTPUT /Volumes/Data/owncloud/root/research/articles/lqg-string/PDF/lqg-strings.tdo
 INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmti10.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmbx8.tfm
 INPUT /Users/deepak/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex/pdftex.map
 INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/ueuf.fd
 INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/ueuf.fd
@@ -342,6 +343,8 @@ INPUT /Users/deepak/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfo
 INPUT /Users/deepak/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/public/bbold/dpi600/bbold10.pk
 INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx8.pfb
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx8.pfb
 INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx9.pfb
 INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx9.pfb
 INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb
