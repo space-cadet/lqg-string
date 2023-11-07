@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex PDF/lqg-strings"] 1699198449 "PDF/lqg-strings.aux" "PDF/lqg-strings.bbl" "PDF/lqg-strings" 1699383214 0
+["bibtex PDF/lqg-strings"] 1699198449 "PDF/lqg-strings.aux" "PDF/lqg-strings.bbl" "PDF/lqg-strings" 1699385619 0
   "./JHEP3.bst" 1698891873 19999 c86b5f93a8c5d838a263135b613681a4 ""
   "./lqg-strings.bib" 1698891873 83488 3b05affe5c9b0014c4b59ba95eefe910 ""
-  "PDF/lqg-strings.aux" 1699383213 5466 b1992b922fb5c91bba1264e67995b225 "pdflatex"
-  "PDF/lqg-stringsNotes.bib" 1699383213 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "PDF/lqg-strings.aux" 1699385618 5891 6903906261cb34d18f0c522b27eeb7a0 "pdflatex"
+  "PDF/lqg-stringsNotes.bib" 1699385618 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "PDF/lqg-strings.bbl"
   "PDF/lqg-strings.blg"
   (rewritten before read)
-["pdflatex"] 1699383212 "/workspaces/lqg-string/lqg-strings.tex" "PDF/lqg-strings.pdf" "lqg-strings" 1699383214 2
+["pdflatex"] 1699385617 "/workspaces/lqg-string/lqg-strings.tex" "PDF/lqg-strings.pdf" "lqg-strings" 1699385619 2
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -210,13 +210,13 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1688881012 4643411 808b8df776595c3e72145e027cce2612 ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1688881055 8172456 b563fca315dcd1b2673ea5601c7f5dfd ""
   "/usr/local/texlive/2023/texmf.cnf" 1688881009 455 5b996dcaa0eb4ef14a83b026bc0a008c ""
-  "/workspaces/lqg-string/lqg-strings.tex" 1699383212 23168 2883d8ddc082f8e6cb814952c4c76ac2 ""
-  "PDF/lqg-strings.aux" 1699383213 5466 b1992b922fb5c91bba1264e67995b225 "pdflatex"
+  "/workspaces/lqg-string/lqg-strings.tex" 1699385617 24426 da2c37a679529a9aa3c46d1a40a7a38c ""
+  "PDF/lqg-strings.aux" 1699385618 5891 6903906261cb34d18f0c522b27eeb7a0 "pdflatex"
   "PDF/lqg-strings.bbl" 1698891873 1125 6cb42544f4ce32f94fd6cb0ae99df0a1 "bibtex PDF/lqg-strings"
-  "PDF/lqg-strings.out" 1699383213 2036 057d0a96aeff2d16bd47cfec09279d07 "pdflatex"
-  "PDF/lqg-strings.tdo" 1699383213 754 99e25356550a20a1802dfa923c7bf65c "pdflatex"
-  "PDF/lqg-strings.toc" 1699383213 1020 24f4234b704149d3bf3ec50200e4aadb "pdflatex"
-  "lqg-strings.tex" 1699383212 23168 2883d8ddc082f8e6cb814952c4c76ac2 ""
+  "PDF/lqg-strings.out" 1699385618 2184 5709a122f907d4a51be3f901eccea234 "pdflatex"
+  "PDF/lqg-strings.tdo" 1699385618 754 99e25356550a20a1802dfa923c7bf65c "pdflatex"
+  "PDF/lqg-strings.toc" 1699385618 1098 75396bfcad7d883d16b1799515b32e8d "pdflatex"
+  "lqg-strings.tex" 1699385617 24426 da2c37a679529a9aa3c46d1a40a7a38c ""
   "revtex4-2.cls" 1698891873 202588 252d8ad05b878c573f3e2adfc38ce076 ""
   (generated)
   "PDF/lqg-strings.aux"
