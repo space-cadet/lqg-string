@@ -165,7 +165,7 @@ Promote embbeding fields to have a internal group index with 2 values
 
 Promote embbeding fields $X^{\mu}$ to have two internal indices with 2 values
 \begin{equation*}
-    X^{\mu} \rightarrow X^{\mu} _{i j} \ , \ \ i , j = 0 , 1
+    X^{\mu} \rightarrow X^{\mu i j} \ , \ \ i , j = 0 , 1
 \end{equation*}
 
 \subsection{Without extra index on embbeding fields}
@@ -230,7 +230,10 @@ Start with Polyakov action in curved space-time
 
 ... and promote derivatives to covariant $D_{a}$,
 \begin{equation*}
-    S_{M P 4} = - \frac{T}{2} \int \diff \tau \wedge \diff \sigma e e^{a} _{k} e^{b k} D_{a} X^{\mu} _{i j} \eta ^{j m} \eta ^{i n} D_{b} X^{\nu} _{m n} E^{I} _{\mu} E_{\nu I}
+    S_{M P 4} = - \frac{T}{2} \int \diff \tau \wedge \diff \sigma e e^{a} _{i} e^{b} _{j} D_{a} X^{\mu i k} \eta _{k l} D_{b} X^{\nu l j} E^{I} _{\mu} E_{\nu I}
+\end{equation*}
+\begin{equation*}
+    \Lagr _{M P 4} = - \frac{T}{2} e e^{a} _{i} e^{b} _{j} D_{a} X^{\mu i k} \eta _{k l} D_{b} X^{\nu l j} E^{I} _{\mu} E_{\nu I}
 \end{equation*}
 
 \subsection{Without extra index}
