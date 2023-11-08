@@ -246,15 +246,14 @@ Thus, we are now at an impasse. We have two theories, both built upon rigorous m
 \section{Strings and Quantum Geometry}\label{sec:string-geometry}
 
 Let us begin by writing down the action of a string propagating in a background geometry which is specified not in terms of a metric, but in terms of a connection $A_\mu^{IJ}$ and vielbein fields $E_\mu^I$. Further we will require that the bulk connection and the bulk vielbein can be pulled back onto a connection $\omega _{a} ^{i j}$ and a dyad $e^a_i$, respectively, living on the string worldsheet $\Sigma$. In order for the bulk connection $A_\mu^{IJ}$, and its pullback $\omega _a ^{i j}$ on $\Sigma$, to have an effect on the string dynamics we will also promote the embedding fields $X^\mu$ to Lie algebra valued vector fields $X^{\mu} _{I}$. However, due to the fact that parallel transport of the embedding fields on the worldsheet should only involve the worldsheet connection $\omega _a ^{i j}$, we can replace $X^{\mu} _{I}$ with $X^{\mu} _{i}$, and to not lose the physical meaning of embedding fields as string coordinates, we include a new internal world-sheet field $v^{i}$, and define the string coordinates to be $\Tilde{X}^{\mu} \equiv X^{\mu} _{i} v^{i}$.
-\begin{multline}\label{eqn:lqg-string-action}
+\begin{multline} \label{eqn:lqg-string-action}
 	S_{PA} = - \frac{T}{2} \int \diff \tau \wedge \diff \sigma e e^{a} _{i} e^{b i} D_{a} X^{\mu} _{j} v^{j} \times \\
 	\times D_{b} X^{\nu} _{k} v^{k} E_{\mu} ^{I} E_{\nu I} ,
 \end{multline}
 where $e = \det (e^{i} _{a})$ and $D_a$ is the covariant derivative with respect to the worldsheet connection, and is given by:
-\begin{align}\label{eqn:worldsheet-deriv}
-	D_a X^{\mu} _{i} & = \partial_a X^{\mu} _{i} - \omega_{a\,i}^{j} X^{\mu} _{j} , \\
-	D_{a} v^{i}      & = \partial _{a} v^{i} + \omega ^{i} _{a j} v^{j} ,
-\end{align}
+\begin{equation} \label{eqn:worldsheet-deriv}
+	D_a X^{\mu} _{i} & = \partial_a X^{\mu} _{i} - \omega_{a\,i}^{j} X^{\mu} _{j} ,
+\end{equation}
 where $\omega_{a\,j}^i$ is the pullback of the bulk connection to the worldsheet.
 
 \section{Equations of Motion}\label{sec:eom}
