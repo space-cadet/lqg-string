@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.9)  9 NOV 2023 01:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.9)  9 NOV 2023 22:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -690,17 +690,22 @@ Overfull \hbox (9.50002pt too wide) detected at line 13
  []
 
 
-Overfull \hbox (9.7778pt too wide) detected at line 14
+Overfull \hbox (9.91669pt too wide) detected at line 14
+ \OT1/cmr/m/n/10 D.|
+ []
+
+
+Overfull \hbox (9.7778pt too wide) detected at line 15
  \OT1/cmr/m/n/10 V.|
  []
 
 
-Overfull \hbox (13.38892pt too wide) detected at line 15
+Overfull \hbox (13.38892pt too wide) detected at line 16
  \OT1/cmr/m/n/10 VI.|
  []
 
 
-Overfull \hbox (9.7778pt too wide) detected at line 18
+Overfull \hbox (9.7778pt too wide) detected at line 19
  \OT1/cmr/m/n/10 A.|
  []
 
@@ -797,7 +802,7 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-(PDF/lqg-strings.bbl [4])
+[4] (PDF/lqg-strings.bbl)
 
 Package natbib Warning: There were undefined citations.
 
@@ -812,21 +817,21 @@ L3 programming layer <2023-06-30>
 
 Dependency list written on lqg-strings.dep.
 Package rerunfilecheck Info: File `lqg-strings.out' has not changed.
-(rerunfilecheck)             Checksum: 3F8303EB352D0F08CA6531B31492CC0E;2538.
+(rerunfilecheck)             Checksum: 4E5BEDDB5BCA88A891CB6ED6AE8F9F18;2744.
  ) 
 Here is how much of TeX's memory you used:
- 23735 strings out of 475237
- 431154 string characters out of 5764559
- 1957244 words of memory out of 5000000
- 44489 multiletter control sequences out of 15000+600000
+ 23741 strings out of 475237
+ 431241 string characters out of 5764559
+ 1958244 words of memory out of 5000000
+ 44492 multiletter control sequences out of 15000+600000
  567885 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,9n,118p,1339b,1168s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb>
-Output written on PDF/lqg-strings.pdf (5 pages, 278762 bytes).
+Output written on PDF/lqg-strings.pdf (5 pages, 280706 bytes).
 PDF statistics:
- 315 PDF objects out of 1000 (max. 8388607)
- 246 compressed objects within 3 object streams
- 57 named destinations out of 1000 (max. 500000)
- 237 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 322 PDF objects out of 1000 (max. 8388607)
+ 253 compressed objects within 3 object streams
+ 60 named destinations out of 1000 (max. 500000)
+ 245 words of extra memory for PDF output out of 10000 (max. 10000000)
 
