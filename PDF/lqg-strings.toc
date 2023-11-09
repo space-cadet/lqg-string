@@ -10,9 +10,10 @@
 \contentsline {section}{\numberline {IV}Equations of Motion}{4}{section*.15}%
 \contentsline {subsection}{\numberline {A}The Dyad Equation}{4}{section*.16}%
 \contentsline {subsection}{\numberline {B}The Connection Equation}{4}{section*.17}%
-\contentsline {section}{\numberline {V}Physical Implications}{4}{section*.18}%
-\contentsline {section}{\numberline {VI}Discussion}{4}{section*.19}%
-\contentsline {section}{\numberline {}Acknowledgments}{4}{section*.20}%
+\contentsline {subsection}{\numberline {C}The New Field Equation}{4}{section*.18}%
+\contentsline {section}{\numberline {V}Physical Implications}{5}{section*.19}%
+\contentsline {section}{\numberline {VI}Discussion}{5}{section*.20}%
+\contentsline {section}{\numberline {}Acknowledgments}{5}{section*.21}%
 \appendix 
-\contentsline {section}{\numberline {A}}{4}{section*.21}%
-\contentsline {section}{\numberline {}References}{5}{section*.22}%
+\contentsline {section}{\numberline {A}}{5}{section*.22}%
+\contentsline {section}{\numberline {}References}{5}{section*.23}%
