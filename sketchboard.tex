@@ -249,6 +249,13 @@ Start with Polyakov action in curved space-time
     \Lagr _{D P} = - \frac{T_{0}}{2} \det (e) e^{a} _{i} e^{b i} \partial _{a} X^{\mu} \partial _{b} X^{\nu} E_{\mu} ^{I} (X) E_{\nu I} (X) \ .
 \end{equation*}
 
+\subsection{Linear Polyakov action}
+
+..., promote partial derivative to covariant derivative and build a linear action with inclusion of new bulk field
+\begin{equation*}
+    S_{L P} = - \frac{T}{2} \int \diff \tau \wedge \diff \sigma e e^{a} _{i} D_{a} X^{\mu i} E^{I} _{\mu} V_{I}
+\end{equation*}
+
 \section{EoMs}
 
 Start by writing $\det (e) = \frac{1}{2} \varepsilon ^{c d} \varepsilon _{m n} e_{c} ^{m} e_{d} ^{n}$ and $g_{a b} = g_{a b} ^{i j} \eta _{i j}$
@@ -361,5 +368,30 @@ Start by writing $\det (e) = \frac{1}{2} \varepsilon ^{c d} \varepsilon _{m n} e
     \frac{\delta S_{D P}}{\delta e^{e} _{l}} & = \frac{D \Lagr _{D P}}{D e^{e} _{l}} = \left( \frac{\partial}{\partial e^{e} _{l}} - \partial _{f} \frac{\partial}{\partial (\partial _{f} e^{e} _{l})} \right) \left( - \frac{T_{0}}{2} \frac{1}{2} \varepsilon ^{c d} \varepsilon _{m n} e^{m} _{c} e^{n} _{d} \eta ^{i j} e^{a} _{i} e^{b} _{j} \partial _{a} X^{\mu} \partial _{b} X^{\nu} E^{I} _{\mu} E^{J} _{\nu} \eta _{I J} \right) = \\
                                              & = - \frac{T_{0}}{4}
 \end{align*}
+
+\subsection{Linear action}
+
+\subsubsection{w.r.t $e$}
+
+\begin{align*}
+    \frac{\delta S_{L P}}{\delta \delta e^{b} _{j}} & = \frac{D \Lagr _{L P}}{D e^{b} _{j}} = \left( \frac{\partial}{\partial e^{b} _{j}} - \partial _{e} \frac{\partial}{\partial (\partial _{e} e^{b} _{j})} \right) \left( - \frac{T}{2} e e^{a} _{i} D_{a} X^{\mu i} E^{I} _{\mu} V_{I} \right) = \\
+                                                    & = - \frac{T}{4} \varepsilon ^{c d} \varepsilon _{m n} ((g_{c b} \eta ^{m j} e^{n} _{d} + e^{m} _{c} g_{d b} \eta ^{n j}) e^{a} _{i} + e^{m} _{c} e^{n} _{d} \delta ^{a} _{b} \delta ^{j} _{i}) D_{a} X^{\mu i} E^{I} _{\mu} V_{I} =             \\
+                                                    & = - \frac{T}{2} (- e e^{j} _{b} e^{a} _{i} D_{a} X^{\mu i} E^{I} _{\mu} V_{I} + e D_{b} X^{\mu j} E^{I} _{\mu} V_{I}) \overset{!}{=} 0
+\end{align*}
+\begin{equation*}
+    \downarrow
+\end{equation*}
+\begin{equation*}
+    T^{j} _{b} := D_{b} X^{\mu j} E^{I} _{\mu} V_{I} - e^{j} _{b} e^{a} _{i} D_{a} X^{\mu i} E^{I} _{\mu} V_{I} = 0
+\end{equation*}
+\begin{equation*}
+    \downarrow
+\end{equation*}
+\begin{equation*}
+    e^{j} _{b} = F D_{b} X^{\mu j} E^{I} _{\mu} V_{I} ,
+\end{equation*}
+\begin{equation*}
+    \frac{1}{F} = e^{a} _{i} D_{a} X^{\mu i} E^{I} _{\mu} V_{I}
+\end{equation*}
 
 \end{document}
