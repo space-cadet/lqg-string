@@ -313,9 +313,16 @@ INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/rsfs/rsfs7.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/rsfs/rsfs5.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/bbold/Ubbold.fd
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/bbold/Ubbold.fd
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/bbold/Ubbold.fd
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/bbold/bbold10.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/bbold/bbold7.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/bbold/bbold5.tfm
 INPUT PDF/sketchboard.aux
 INPUT PDF/sketchboard.out
 INPUT PDF/sketchboard.out
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb

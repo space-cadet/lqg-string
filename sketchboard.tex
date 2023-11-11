@@ -251,9 +251,15 @@ Start with Polyakov action in curved space-time
 
 \subsection{Linear Polyakov action}
 
-..., promote partial derivative to covariant derivative and build a linear action with inclusion of new bulk field
+..., promote partial derivative to covariant derivative and build a linear action with inclusion of $D$-dimensional gamma matrices and bulk spinors
 \begin{equation*}
-    S_{L P} = - \frac{T}{2} \int \diff \tau \wedge \diff \sigma e e^{a} _{i} D_{a} X^{\mu i} E^{I} _{\mu} V_{I}
+    S_{L P} = - \frac{T}{2} \int \diff \tau \wedge \diff \sigma \overline{\psi} e e^{a} _{i} D_{a} X^{\mu i} E^{I} _{\mu} \gamma _{I} \psi
+\end{equation*}
+\begin{equation*}
+    \updownarrow
+\end{equation*}
+\begin{equation*}
+    \Lagr _{L P} = - \frac{T}{2} \overline{\psi} e e^{a} _{i} D_{a} X^{\mu i} E^{I} _{\mu} \gamma _{I} \psi
 \end{equation*}
 
 \section{EoMs}
@@ -374,24 +380,30 @@ Start by writing $\det (e) = \frac{1}{2} \varepsilon ^{c d} \varepsilon _{m n} e
 \subsubsection{w.r.t $e$}
 
 \begin{align*}
-    \frac{\delta S_{L P}}{\delta \delta e^{b} _{j}} & = \frac{D \Lagr _{L P}}{D e^{b} _{j}} = \left( \frac{\partial}{\partial e^{b} _{j}} - \partial _{e} \frac{\partial}{\partial (\partial _{e} e^{b} _{j})} \right) \left( - \frac{T}{2} e e^{a} _{i} D_{a} X^{\mu i} E^{I} _{\mu} V_{I} \right) = \\
-                                                    & = - \frac{T}{4} \varepsilon ^{c d} \varepsilon _{m n} ((g_{c b} \eta ^{m j} e^{n} _{d} + e^{m} _{c} g_{d b} \eta ^{n j}) e^{a} _{i} + e^{m} _{c} e^{n} _{d} \delta ^{a} _{b} \delta ^{j} _{i}) D_{a} X^{\mu i} E^{I} _{\mu} V_{I} =             \\
-                                                    & = - \frac{T}{2} (- e e^{j} _{b} e^{a} _{i} D_{a} X^{\mu i} E^{I} _{\mu} V_{I} + e D_{b} X^{\mu j} E^{I} _{\mu} V_{I}) \overset{!}{=} 0
+    \frac{\delta S_{L P}}{\delta \delta e^{b} _{j}} & = \frac{D \Lagr _{L P}}{D e^{b} _{j}} = \left( \frac{\partial}{\partial e^{b} _{j}} - \partial _{e} \frac{\partial}{\partial (\partial _{e} e^{b} _{j})} \right) \left( - \frac{T}{2} \overline{\psi} e e^{a} _{i} D_{a} X^{\mu i} E^{I} _{\mu} \gamma _{I} \psi \right) = \\
+                                                    & = - \frac{T}{4} \overline{\psi} \varepsilon ^{c d} \varepsilon _{m n} ((g_{c b} \eta ^{m j} e^{n} _{d} + e^{m} _{c} g_{d b} \eta ^{n j}) e^{a} _{i} + e^{m} _{c} e^{n} _{d} \delta ^{a} _{b} \delta ^{j} _{i}) D_{a} X^{\mu i} E^{I} _{\mu} \gamma _{I} \psi =             \\
+                                                    & = - \frac{T}{2} \overline{\psi} (- e e^{j} _{b} e^{a} _{i} D_{a} X^{\mu i} E^{I} _{\mu} \gamma _{I} + e D_{b} X^{\mu j} E^{I} _{\mu} \gamma _{I}) \psi \overset{!}{=} 0
 \end{align*}
 \begin{equation*}
     \downarrow
 \end{equation*}
 \begin{equation*}
-    T^{j} _{b} := D_{b} X^{\mu j} E^{I} _{\mu} V_{I} - e^{j} _{b} e^{a} _{i} D_{a} X^{\mu i} E^{I} _{\mu} V_{I} = 0
+    T^{j} _{b} := \overline{\psi} (D_{b} X^{\mu j} E^{I} _{\mu} \gamma _{I} - e^{j} _{b} e^{a} _{i} D_{a} X^{\mu i} E^{I} _{\mu} \gamma _{I}) \psi = 0
 \end{equation*}
 \begin{equation*}
     \downarrow
 \end{equation*}
 \begin{equation*}
-    e^{j} _{b} = F D_{b} X^{\mu j} E^{I} _{\mu} V_{I} ,
+    e^{j} _{b} = F \overline{\psi} D_{b} X^{\mu j} E^{I} _{\mu} \gamma _{I} \psi ,
 \end{equation*}
 \begin{equation*}
-    \frac{1}{F} = e^{a} _{i} D_{a} X^{\mu i} E^{I} _{\mu} V_{I}
+    \frac{1}{F} = \overline{\psi} e^{a} _{i} D_{a} X^{\mu i} E^{I} _{\mu} \gamma _{I} \psi
+\end{equation*}
+\begin{equation*}
+    \Downarrow
+\end{equation*}
+\begin{equation*}
+    \overline{\psi} \psi = 1 , \ \psi \overline{\psi} = \mathbb{1}
 \end{equation*}
 
 \end{document}
