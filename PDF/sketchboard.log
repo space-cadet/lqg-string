@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.14)  14 NOV 2023 14:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.14)  14 NOV 2023 16:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -644,59 +644,59 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 [3]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 298.
+(hyperref)                removing `math shift' on input line 324.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 298.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 323.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\omega' on input line 323.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 323.
+(hyperref)                removing `math shift' on input line 324.
 
 [4]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 338.
+(hyperref)                removing `math shift' on input line 349.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 338.
+(hyperref)                removing `\omega' on input line 349.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 352.
+(hyperref)                removing `math shift' on input line 349.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 352.
+(hyperref)                removing `math shift' on input line 364.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 371.
+(hyperref)                removing `math shift' on input line 364.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 371.
+(hyperref)                removing `math shift' on input line 378.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 378.
 
 [5]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 380.
+(hyperref)                removing `math shift' on input line 397.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 380.
+(hyperref)                removing `math shift' on input line 397.
 
-LaTeX Font Info:    Trying to load font information for U+bbold on input line 406.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 406.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 406.
+
+LaTeX Font Info:    Trying to load font information for U+bbold on input line 432.
 (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ubbold.fd
 File: ubbold.fd 1996/01/01 Blackboard Bold Font Definition File (jk)
 ) [6] (c:\Users\Usuario\Desktop\lqg-strings\lqg-string\PDF\sketchboard.aux)
@@ -704,26 +704,19 @@ File: ubbold.fd 1996/01/01 Blackboard Bold Font Definition File (jk)
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
-
-
-Package rerunfilecheck Warning: File `sketchboard.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `sketchboard.out':
-(rerunfilecheck)             Before: 93CC05E86E6DD24BC99ACBA6EE9A59F5;4646
-(rerunfilecheck)             After:  4CDE5BFFD20AC4261F70264642ED458B;4622.
+Package rerunfilecheck Info: File `sketchboard.out' has not changed.
+(rerunfilecheck)             Checksum: 4CDE5BFFD20AC4261F70264642ED458B;4622.
  ) 
 Here is how much of TeX's memory you used:
  21946 strings out of 475247
  406086 string characters out of 5756847
- 1947785 words of memory out of 5000000
+ 1946785 words of memory out of 5000000
  43048 multiletter control sequences out of 15000+600000
  569582 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,12n,89p,596b,448s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/public/bbold/dpi600\bbold10.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/public/esint/dpi600\esint10.pk><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on c:\Users\Usuario\Desktop\lqg-strings\lqg-string\PDF\sketchboard.pdf (6 pages, 174377 bytes).
+Output written on c:\Users\Usuario\Desktop\lqg-strings\lqg-string\PDF\sketchboard.pdf (6 pages, 175181 bytes).
 PDF statistics:
  207 PDF objects out of 1000 (max. 8388607)
  31 named destinations out of 1000 (max. 500000)

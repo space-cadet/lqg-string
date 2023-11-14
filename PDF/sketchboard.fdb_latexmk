@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1699982968 "c:/Users/Usuario/Desktop/lqg-strings/lqg-string/sketchboard.tex" "PDF/sketchboard.pdf" "sketchboard" 1699983226 2
-  "C:/Users/Usuario/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1699983196 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
+["pdflatex"] 1699988554 "c:/Users/Usuario/Desktop/lqg-strings/lqg-string/sketchboard.tex" "PDF/sketchboard.pdf" "sketchboard" 1699988557 2
+  "C:/Users/Usuario/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1699983361 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/Usuario/AppData/Local/MiKTeX/fonts/pk/ljfour/public/bbold/dpi600/bbold10.pk" 1699983221 12432 37db641a0d86b66cef1fab8a7e2ac3ef ""
   "C:/Users/Usuario/AppData/Local/MiKTeX/fonts/pk/ljfour/public/esint/dpi600/esint10.pk" 1699983224 10544 2dbe5cacfdc4513fd5f7474c5e0ce8c9 ""
   "C:/Users/Usuario/AppData/Local/MiKTeX/fonts/tfm/public/bbold/bbold10.tfm" 1699983212 788 aa2bfd021367054a224c4cf5a9967398 ""
@@ -180,10 +180,10 @@
   "C:/Users/Usuario/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/Usuario/AppData/Local/Programs/MiKTeX/tex/latex/was/upgreek.sty" 1665850770 5794 9054e31be15d93f1e6bd28cca2b6643f ""
   "C:/Users/Usuario/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656236890 56148 51a9a8571c07b9921892ae11063ae853 ""
-  "PDF/sketchboard.aux" 1699983218 3803 28aa9f43d8494ed0b38f06083d83a966 "pdflatex"
-  "PDF/sketchboard.out" 1699983218 4622 4cde5bffd20ac4261f70264642ed458b "pdflatex"
-  "c:/Users/Usuario/Desktop/lqg-strings/lqg-string/sketchboard.tex" 1699982199 23772 f6ae39f0798c304af7c6c4d87e010371 ""
-  "sketchboard.tex" 1699982199 23772 f6ae39f0798c304af7c6c4d87e010371 ""
+  "PDF/sketchboard.aux" 1699988556 3803 28aa9f43d8494ed0b38f06083d83a966 "pdflatex"
+  "PDF/sketchboard.out" 1699988556 4622 4cde5bffd20ac4261f70264642ed458b "pdflatex"
+  "c:/Users/Usuario/Desktop/lqg-strings/lqg-string/sketchboard.tex" 1699988552 24925 b3bf6673a98670a1a2f83ac1b5563abe ""
+  "sketchboard.tex" 1699988552 24925 b3bf6673a98670a1a2f83ac1b5563abe ""
   (generated)
   "PDF/sketchboard.aux"
   "PDF/sketchboard.log"

@@ -283,7 +283,7 @@ Start by writing $\det (e) = \frac{1}{2} \varepsilon ^{c d} \varepsilon _{m n} e
     \downarrow
 \end{equation*}
 \begin{equation*}
-    T^{l} _{e} := E_{\mu} ^{I} E_{\nu I} (- e^{l} _{e} e^{a} _{i} e^{b} _{j} D_{a} X^{\mu i} D_{b} X^{\nu j} + e^{a} _{i} D_{a} X^{\mu i} D_{e} X^{\nu l}) = 0
+    T^{l} _{e} := E_{\mu} ^{I} E_{\nu I} (e^{a} _{i} D_{a} X^{\mu i} D_{e} X^{\nu l} - e^{l} _{e} e^{a} _{i} e^{b} _{j} D_{a} X^{\mu i} D_{b} X^{\nu j}) = 0
 \end{equation*}
 \begin{equation*}
     \Downarrow
@@ -293,6 +293,32 @@ Start by writing $\det (e) = \frac{1}{2} \varepsilon ^{c d} \varepsilon _{m n} e
 \end{equation*}
 \begin{equation*}
     \frac{1}{f} = e^{a} _{i} e^{b} _{j} D_{a} X^{\mu i} D_{b} X^{\nu j} E_{\mu} ^{I} E_{\nu I}
+\end{equation*}
+\begin{equation*}
+    \downarrow
+\end{equation*}
+\begin{align*}
+    e^{l} _{e} e_{f l} & = (f e^{a} _{i} D_{a} X^{\mu i} D_{e} X^{\nu l} E^{I} _{\mu} E_{\nu I}) (f e^{a'} _{i'} D_{a'} X^{\mu ' i'} D_{f} X^{\nu '} _{l} E^{I'} _{\mu '} E_{\nu ' I'}) = \\
+                       & = f^{2} D_{e} X^{\nu l} D_{f} X^{\nu '} _{l} E^{I'} _{\nu} E_{\nu ' I'} (e^{a} _{i} e^{a'} _{i'} D_{a} X^{\mu i} D_{a'} X^{\mu ' i'} E^{I} _{\mu} E_{\mu ' I}) = \\
+                       & = f D_{e} X^{\mu i} D_{f} X^{\nu} _{i} E^{I} _{\mu} E_{\nu I}
+\end{align*}
+\begin{equation*}
+    \Downarrow
+\end{equation*}
+\begin{equation*}
+    D_{e} X^{\mu i} D_{f} X^{\nu} _{i} E^{I} _{\mu} E_{\nu I} = 2 \partial _{e} X^{\mu} \partial _{f} X^{\nu} G_{\mu \nu}
+\end{equation*}
+\begin{equation*}
+    e^{a} _{i} e^{b} _{j} D_{a} X^{\mu i} D_{b} X^{\nu j} E^{I} _{\mu} E_{\nu I} = g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu}
+\end{equation*}
+\begin{equation*}
+    \Downarrow
+\end{equation*}
+\begin{equation*}
+    D_{a} X^{\mu 0} = - i \partial _{a} X^{\mu}
+\end{equation*}
+\begin{equation*}
+    D_{a} X^{\mu 1} = \partial _{a} X^{\mu}
 \end{equation*}
 
 \subsubsection{With extra field, w.r.t $e$}
@@ -408,7 +434,5 @@ Start by writing $\det (e) = \frac{1}{2} \varepsilon ^{c d} \varepsilon _{m n} e
 \begin{equation*}
     e^{a} _{i} e^{b} _{j} D_{a} X^{\mu i} D_{b} X^{\nu j} E^{I} _{\mu} E^{J} _{\nu} \eta _{I J} = g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu}
 \end{equation*}
-
-test
 
 \end{document}
