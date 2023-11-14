@@ -11,7 +11,7 @@
   *{class}  {revtex4-2}   {2020/10/03 v4.2e}
   *{file}   {aps4-2.rtx}  {0000/00/00 v0.0}
   *{file}   {aps10pt4-2.rtx}{0000/00/00 v0.0}
-  *{package}{textcase}    {2022/07/10 v1.03}
+  *{package}{textcase}    {2023/07/27 v1.04}
   *{package}{url}         {2013/09/16 v3.4}
   *{package}{natbib}      {2010/09/13 v8.31b}
   *{package}{revsymb4-2}  {2022/06/05 v4.2f}
@@ -87,11 +87,11 @@
   *{file}   {umsb.fd}     {2013/01/14 v3.01}
   *{file}   {ulasy.fd}    {1998/08/17 v2.2e}
   *{file}   {ueuf.fd}     {2013/01/14 v3.01}
-  *{file}   {Ubbold.fd}   {0000/00/00 v0.0}
+  *{file}   {ubbold.fd}   {1996/01/01 v0.0}
   *{-------}{Document-specific files:}{----}
   *{file}   {supp-pdf.mkii}{0000/00/00 v0.0}
   *{package}{epstopdf-base}{2020-01-24 v2.11}
-  *{file}   {epstopdf-sys.cfg}{2010/07/13 v1.3}
+  *{file}   {epstopdf-sys.cfg}{2021/03/18 v2.0}
   *{file}   {lqg-strings.out}{0000/00/00 v0.0}
   *{file}   {lqg-strings.out}{0000/00/00 v0.0}
   *{file}   {lqg-strings.bbl}{0000/00/00 v0.0}
