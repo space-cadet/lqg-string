@@ -484,7 +484,7 @@ where
     \PS ^{\tau} _{\mu} = \frac{\partial \Lagr _{M N G}}{\partial \Dot{X}^{\mu}} = - T \left( \frac{(\Dot{X} \cdot X') X' _{\mu} - (X')^2 \Dot{X}_{\mu}}{\sqrt{- h}} - \frac{g \Delta}{2} \frac{(\Dot{X} \cdot X') X' _{\mu} - (X')^2 \Dot{X}_{\mu}}{(- h)^{3/2}} \right) =
 \end{equation*}
 \begin{equation*}
-    = - T \frac{(\Dot{X} \cdot X') X' _{\mu} - (X')^2 \Dot{X}_{\mu}}{\sqrt{- h}} \left( 1 - \frac{g \Delta}{2 h} \right) = \PS ^{\tau} _{\mu (N G)} \left( 1 - \frac{g \Delta}{2 (- h)} \right)
+    = - T \frac{(\Dot{X} \cdot X') X' _{\mu} - (X')^2 \Dot{X}_{\mu}}{\sqrt{- h}} \left( 1 - \frac{g \Delta}{2 (- h)} \right) = \PS ^{\tau} _{\mu (N G)} \left( 1 - \frac{g \Delta}{2 (- h)} \right)
 \end{equation*}
 \begin{equation*}
     \PS ^{\sigma} _{\mu} = \frac{\partial \Lagr _{M N G}}{\partial X^{\prime \mu}} = - T \left( \frac{(\Dot{X} \cdot X') \Dot{X}_{\mu} - (\Dot{X})^2 X' _{\mu}}{\sqrt{- h}} - \frac{g \Delta}{2} \frac{(\Dot{X} \cdot X') \Dot{X}_{\mu} - (\Dot{X})^2 X' _{\mu}}{(- h)^{3/2}} \right) =
@@ -492,5 +492,44 @@ where
 \begin{equation*}
     = - T \frac{(\Dot{X} \cdot X') \Dot{X}_{\mu} - (\Dot{X})^2 X' _{\mu}}{\sqrt{- h}} \left( 1 - \frac{g \Delta}{2 (- h)} \right) = \PS ^{\sigma} _{\mu (N G)} \left( 1 - \frac{g \Delta}{2 (- h)} \right)
 \end{equation*}
+\begin{equation*}
+    \downarrow
+\end{equation*}
+\begin{equation*}
+    \partial _{\tau} \PS ^{\tau} _{\mu (N G)} + \partial _{\sigma} \PS ^{\sigma} _{\mu (N G)} = \frac{g \Delta}{2} \left( \frac{\partial (- h)^{-1}}{\partial \tau} + \frac{\partial (- h)^{-1}}{\partial \sigma} \right) ,
+\end{equation*}
+gauge fixing static gauge $\tau = t$ and transverse gauge $\frac{\partial X}{\partial \tau} \cdot \frac{\partial X}{\partial s} \frac{\diff s}{\diff \sigma} = 0$ ($s = \mathrm{length \ along \ string}$)
+\begin{equation*}
+    \downarrow
+\end{equation*}
+\begin{equation*}
+    \PS ^{\tau \mu} = T \frac{\diff s}{\diff \sigma} \gamma _{v_{\perp}} \frac{\partial X^{\mu}}{\partial t}
+\end{equation*}
+\begin{equation*}
+    \PS ^{\sigma \mu} = \frac{T}{\gamma _{v_{\perp}}} \frac{\partial X^{\mu}}{\partial s}
+\end{equation*}
+\begin{equation*}
+    \Downarrow
+\end{equation*}
+\begin{equation*}
+    \partial _{\tau} \PS ^{\tau 0} _{(N G)} + \partial _{\sigma} \PS ^{\sigma 0} _{(N G)} = \frac{g \Delta}{2} \left( \frac{\partial (- h)^{-1}}{\partial \tau} + \frac{\partial (- h)^{-1}}{\partial \sigma} \right)
+\end{equation*}
+\begin{equation*}
+    \downarrow
+\end{equation*}
+\begin{equation*}
+    \frac{\partial}{\partial t} \left( T \frac{\diff s}{\diff \sigma} \gamma _{v_{\perp}} \right) = \frac{g \Delta}{2} \left( \frac{\partial (- h)^{-1}}{\partial \tau} + \frac{\partial (- h)^{-1}}{\partial \sigma} \right)
+\end{equation*}
+$\implies$ energy along string is no longer conserved, rather it changes according to derivatives of inverse determinant,
+\begin{equation*}
+    \partial _{\tau} \Vec{\PS}^{\tau} _{(N G)} + \partial _{\sigma} \Vec{\PS}^{\sigma} _{(N G)} = \frac{g \Delta}{2} \left( \frac{\partial (- h)^{-1}}{\partial \tau} + \frac{\partial (- h)^{-1}}{\partial \sigma} \right)
+\end{equation*}
+\begin{equation*}
+    \downarrow
+\end{equation*}
+\begin{equation*}
+    \mu \gamma _{v_{\perp}} \frac{\partial ^2 \Vec{X}}{\partial t^2} - \frac{\partial}{\partial s} \left[ \frac{T}{\gamma _{v_{\perp}}} \frac{\partial \Vec{X}}{\partial s} \right] = \frac{g \Delta}{2} \left( \frac{\partial (- h)^{-1}}{\partial \tau} + \frac{\partial (- h)^{-1}}{\partial \sigma} \right)
+\end{equation*}
+$\implies$ generalized non-relativistic wave equation sourced by derivatives of inverse determinant
 
 \end{document}

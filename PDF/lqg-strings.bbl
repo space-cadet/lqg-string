@@ -1,5 +1,9 @@
 \providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{1}
 
+\bibitem{Jacobson1995Thermodynamics}
+T.~Jacobson, {\it Thermodynamics of spacetime:{{The Einstein}} equation of
+  state},  {\em Physical Review Letters} {\bf 75} (June, 1995).
+
 \bibitem{Friedan1985Nonlinear}
 D.~H. Friedan, {\it Nonlinear {{Models}} in {{Two}} + {{Epsilon Dimensions}}},
   {\em Annals Phys.} {\bf 163} (1985) 318.
