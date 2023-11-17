@@ -7,7 +7,7 @@
 \contentsline {section}{\numberline {I}Introduction}{1}{section*.5}%
 \contentsline {section}{\numberline {II}Strings in Background Fields and Emergent Gravity}{3}{section*.9}%
 \contentsline {section}{\numberline {III}Modified Nambu Goto Action}{4}{section*.14}%
-\contentsline {section}{\numberline {IV}Strings and Quantum Geometry}{4}{section*.15}%
+\contentsline {section}{\numberline {IV}Strings and Quantum Geometry}{5}{section*.15}%
 \contentsline {section}{\numberline {V}Equations of Motion}{5}{section*.16}%
 \contentsline {subsection}{\numberline {A}The Dyad Equation}{5}{section*.17}%
 \contentsline {subsection}{\numberline {B}The Connection Equation}{5}{section*.18}%
@@ -18,4 +18,4 @@
 \contentsline {section}{\numberline {}Acknowledgments}{5}{section*.23}%
 \appendix 
 \contentsline {section}{\numberline {A}}{5}{section*.24}%
-\contentsline {section}{\numberline {}References}{5}{section*.25}%
+\contentsline {section}{\numberline {}References}{6}{section*.25}%

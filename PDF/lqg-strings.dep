@@ -30,6 +30,7 @@
   *{package}{xcolor}      {2022/06/12 v2.14}
   *{file}   {color.cfg}   {2016/01/02 v1.6}
   *{file}   {mathcolor.ltx}{0000/00/00 v0.0}
+  *{package}{mathrsfs}    {1996/01/01 v1.0}
   *{package}{todonotes}   {2023/01/31 v0.0}
   *{package}{ifthen}      {2022/04/13 v1.1d}
   *{package}{xkeyval}     {2022/06/16 v2.9}
@@ -86,6 +87,7 @@
   *{file}   {umsa.fd}     {2013/01/14 v3.01}
   *{file}   {umsb.fd}     {2013/01/14 v3.01}
   *{file}   {ulasy.fd}    {1998/08/17 v2.2e}
+  *{file}   {ursfs.fd}    {1998/03/24 v0.0}
   *{file}   {ueuf.fd}     {2013/01/14 v3.01}
   *{file}   {ubbold.fd}   {1996/01/01 v0.0}
   *{-------}{Document-specific files:}{----}

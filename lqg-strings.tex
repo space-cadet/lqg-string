@@ -38,6 +38,7 @@
 \usepackage{epsfig}
 \usepackage{latexsym}
 \usepackage{xcolor}
+\usepackage{mathrsfs}
 \usepackage[colorinlistoftodos, shadow, textsize=small, obeyDraft,loadshadowlibrary]{todonotes}
 
 \setlength{\emergencystretch}{2em}
@@ -260,10 +261,31 @@ Here, $g = l_{pl}/l_s$, where $l_{pl}$ is the Planck scale, the scale at which q
 	\sqrt{h + g \Delta} \sim \sqrt{h}\left(1 + \frac{1}{2} \frac{g \Delta}{h} + \mc{O}(g^2/h^2)\right).
 \end{equation}
 Presumably the limit $g \ll 1$ corresponds to when the area of the string worldsheet is large compared to $\sqrt{h} \gg \Delta$. Thus in this limit $ g^2 \ll 1$ and $ h^2 \gg 1$ because of which we can drop the $\mc{O}(g^2/h^2)$ corrections. The final area corrected Nambu-Goto action becomes:
-\begin{equation}
+\begin{equation} \label{eqn:modified-NG-action}
 	S'_{NG} = -T \int \diff ^2 x \left( \sqrt{h} +  \frac{1}{2} \frac{g \Delta}{\sqrt{h}} \right).
 \end{equation}
 This action has, to the best of our knowledge, not been explored in the string theory literature. However, such an inverse area term arises very naturally in the LQG approach and goes by the name of ``inverse triad'' corrections, in the context of the 3D volume of spatial hypersurfaces.
+
+This correction does not change the form of the equations of motion and neither of the boundary conditions, i.e they are still given by
+\begin{equation} \label{eqn:modified-NG-eom}
+	\mathrm{EoM:} \partial _{\tau} \PS ^{\tau} _{\mu} + \partial _{\sigma} \PS ^{\sigma} _{\mu} = 0
+\end{equation}
+and
+\begin{equation} \label{eqn:modified-NG-bc}
+	\mathrm{B.C.:} \PS ^{\sigma} _{\mu} \delta X^{\mu} \big| _{\sigma = 0} ^{\sigma = \sigma _1} = 0 ,
+\end{equation}
+where
+\begin{multline} \label{eqn:modified-NG-tau-currents}
+	\PS ^{\tau} _{\mu} = \frac{\partial \Lagr ' _{N G}}{\partial \Dot{X}^{\mu}} = \\
+	= - T \frac{(\Dot{X} \cdot X') X' _{\mu} - (X')^2 \Dot{X}_{\mu}}{\sqrt{h}} \left( 1 - \frac{g \Delta}{2 h} \right) = \\
+	= \PS ^{\tau} _{\mu (N G)} \left( 1 - \frac{g \Delta}{2 h} \right)
+\end{multline}
+\begin{multline} \label{eqn:modified-NG-sigma-currents}
+	\PS ^{\sigma} _{\mu} = \frac{\partial \Lagr ' _{N G}}{\partial X^{\prime \mu}} = \\
+	= - T \frac{(\Dot{X} \cdot X') \Dot{X}_{\mu} - (\Dot{X})^2 X' _{\mu}}{\sqrt{h}} \left( 1 - \frac{g \Delta}{2 h} \right) = \\
+	= \PS ^{\sigma} _{\mu (N G)} \left( 1 - \frac{g \Delta}{2 h} \right)
+\end{multline}
+and $\PS ^{\tau} _{\mu (N G)}$, $\PS ^{\sigma} _{\mu (N G)}$ are the regular Nambu-Goto world-sheet currents.
 
 \section{Strings and Quantum Geometry}\label{sec:string-geometry}
 

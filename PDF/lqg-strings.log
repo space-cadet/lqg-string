@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.17)  17 NOV 2023 06:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.17)  17 NOV 2023 08:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -237,6 +237,9 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
+) (E:\MikTeX\tex/latex/jknappen\mathrsfs.sty
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup7
 ) (E:\MikTeX\tex/latex/todonotes\todonotes.sty
 Package: todonotes 2023/01/31 v1.1.6 Todonotes source and documentation.
 Package: todonotes 2023/01/31
@@ -571,23 +574,23 @@ Package: bbold 1994/04/06 Bbold symbol package
 LaTeX Font Info:    Redeclaring math alphabet \mathbb on input line 42.
 )
 
-e:/LQG-Strings/lqg-string/lqg-strings.tex:141: LaTeX Error: Command \R already defined.
+e:/LQG-Strings/lqg-string/lqg-strings.tex:142: LaTeX Error: Command \R already defined.
                Or name \end... illegal, see p.192 of the manual.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.141 \newcommand{\R}{\mathbb{R}}
+l.142 \newcommand{\R}{\mathbb{R}}
                                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-Class revtex4-2 Info: Unrecognized LaTeX tabular. Please update this document class! (Proceeding with fingers crossed.) on input line 152.
-Class revtex4-2 Info: cite was not loaded (OK!) on input line 152.
-Class revtex4-2 Info: mcite was not loaded (OK!) on input line 152.
-Class revtex4-2 Info: multicol was not loaded (OK!) on input line 152.
+Class revtex4-2 Info: Unrecognized LaTeX tabular. Please update this document class! (Proceeding with fingers crossed.) on input line 153.
+Class revtex4-2 Info: cite was not loaded (OK!) on input line 153.
+Class revtex4-2 Info: mcite was not loaded (OK!) on input line 153.
+Class revtex4-2 Info: multicol was not loaded (OK!) on input line 153.
 (E:\MikTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count319
@@ -595,24 +598,24 @@ File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
 ) (e:\LQG-Strings\lqg-string\PDF\lqg-strings.aux)
 \openout1 = `lqg-strings.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 153.
+LaTeX Font Info:    ... okay on input line 153.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 153.
+LaTeX Font Info:    ... okay on input line 153.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 153.
+LaTeX Font Info:    ... okay on input line 153.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 153.
+LaTeX Font Info:    ... okay on input line 153.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 153.
+LaTeX Font Info:    ... okay on input line 153.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 153.
+LaTeX Font Info:    ... okay on input line 153.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 153.
+LaTeX Font Info:    ... okay on input line 153.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 153.
+LaTeX Font Info:    ... okay on input line 153.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 153.
+LaTeX Font Info:    ... okay on input line 153.
  (E:\MikTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count320
@@ -633,27 +636,31 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 
-Package todonotes Warning: The length marginparwidth is less than 2cm and will most likely cause issues with the appearance of inserted todonotes. The issue can be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to loading the todonotes package. on input line 152.
+Package todonotes Warning: The length marginparwidth is less than 2cm and will most likely cause issues with the appearance of inserted todonotes. The issue can be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to loading the todonotes package. on input line 153.
 
-Package hyperref Info: Link coloring ON on input line 152.
+Package hyperref Info: Link coloring ON on input line 153.
 (e:\LQG-Strings\lqg-string\PDF\lqg-strings.out) (e:\LQG-Strings\lqg-string\PDF\lqg-strings.out)
 \@outlinefile=\write6
 \openout6 = `lqg-strings.out'.
 
-Class revtex4-2 Info: Taking \maketitle back from hyperref on input line 152.
+Class revtex4-2 Info: Taking \maketitle back from hyperref on input line 153.
 \openout3 = `lqg-stringsNotes.bib'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 171.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 172.
  (E:\MikTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 171.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 172.
  (E:\MikTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 171.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 172.
  (E:\MikTeX\tex/latex/base\ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 172.
+ (E:\MikTeX\tex/latex/jknappen\ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ) (e:\LQG-Strings\lqg-string\PDF\lqg-strings.toc
 Overfull \hbox (5.8889pt too wide) detected at line 7
  \OT1/cmr/m/n/10 I.|
@@ -722,85 +729,86 @@ Overfull \hbox (9.7778pt too wide) detected at line 20
 \tf@tdo=\write8
 \openout8 = `lqg-strings.tdo'.
 
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 183.
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 184.
 
-Overfull \hbox (0.57553pt too wide) in paragraph at lines 183--183
+Overfull \hbox (0.57553pt too wide) in paragraph at lines 184--184
 [][][]\OT1/cmr/m/n/9 insert |
  []
 
 
-Overfull \hbox (0.57553pt too wide) in paragraph at lines 183--183
+Overfull \hbox (0.57553pt too wide) in paragraph at lines 184--184
 [][][]\OT1/cmr/m/n/9 insert |
  []
 
 [1{C:/Users/Luigi/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
 
-Package natbib Warning: Citation `Jacobson1995Thermodynamics' on page 2 undefined on input line 185.
+Package natbib Warning: Citation `Jacobson1995Thermodynamics' on page 2 undefined on input line 186.
 
-LaTeX Font Info:    Trying to load font information for U+euf on input line 201.
+LaTeX Font Info:    Trying to load font information for U+euf on input line 202.
 (E:\MikTeX\tex/latex/amsfonts\ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 )
-LaTeX Font Info:    Trying to load font information for U+bbold on input line 201.
+LaTeX Font Info:    Trying to load font information for U+bbold on input line 202.
  (E:\MikTeX\tex/latex/jknappen\ubbold.fd
 File: ubbold.fd 1996/01/01 Blackboard Bold Font Definition File (jk)
 )
-Overfull \hbox (0.57553pt too wide) in paragraph at lines 203--203
+Overfull \hbox (0.57553pt too wide) in paragraph at lines 204--204
 [][][]\OT1/cmr/m/n/9 insert |
  []
 
 
-Overfull \hbox (0.57553pt too wide) in paragraph at lines 203--203
+Overfull \hbox (0.57553pt too wide) in paragraph at lines 204--204
 [][][]\OT1/cmr/m/n/9 insert |
  []
 
 [2]
-Overfull \hbox (2.92204pt too wide) in paragraph at lines 235--235
+Overfull \hbox (2.92204pt too wide) in paragraph at lines 236--236
 \OT1/cmr/m/n/9 sense? |
  []
 
 
-Overfull \hbox (5.12828pt too wide) in paragraph at lines 235--235
+Overfull \hbox (5.12828pt too wide) in paragraph at lines 236--236
 \OT1/cmr/m/n/9 Check![]  |
  []
 
 
-Overfull \hbox (2.92204pt too wide) in paragraph at lines 235--235
+Overfull \hbox (2.92204pt too wide) in paragraph at lines 236--236
 \OT1/cmr/m/n/9 sense? |
  []
 
 
-Overfull \hbox (5.12828pt too wide) in paragraph at lines 235--235
+Overfull \hbox (5.12828pt too wide) in paragraph at lines 236--236
 \OT1/cmr/m/n/9 Check![]  |
  []
 
 
-Overfull \hbox (0.57553pt too wide) in paragraph at lines 240--240
+Overfull \hbox (0.57553pt too wide) in paragraph at lines 241--241
 [][][]\OT1/cmr/m/n/9 insert |
  []
 
 
-Overfull \hbox (0.57553pt too wide) in paragraph at lines 240--240
+Overfull \hbox (0.57553pt too wide) in paragraph at lines 241--241
 [][][]\OT1/cmr/m/n/9 insert |
  []
 
 
-Overfull \hbox (0.57553pt too wide) in paragraph at lines 240--240
+Overfull \hbox (0.57553pt too wide) in paragraph at lines 241--241
 [][][]\OT1/cmr/m/n/9 insert |
  []
 
 
-Overfull \hbox (0.57553pt too wide) in paragraph at lines 240--240
+Overfull \hbox (0.57553pt too wide) in paragraph at lines 241--241
 [][][]\OT1/cmr/m/n/9 insert |
  []
 
 [3]
-Overfull \hbox (8.00009pt too wide) in paragraph at lines 242--242
+Overfull \hbox (8.00009pt too wide) in paragraph at lines 243--243
  [] |
  []
 
-e:/LQG-Strings/lqg-string/lqg-strings.tex:277: Misplaced alignment tab character &.
-l.277 	D_a X^{\mu} _{i} &
+[4]
+e:/LQG-Strings/lqg-string/lqg-strings.tex:299: Misplaced alignment tab character &.
+l.299 	D_a X^{\mu} _{i} &
                           = \partial_a X^{\mu} _{i} - \omega_{a\,i}^{j} X^{\...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -809,7 +817,7 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[4] (e:\LQG-Strings\lqg-string\PDF\lqg-strings.bbl [5])
+(e:\LQG-Strings\lqg-string\PDF\lqg-strings.bbl [5])
 
 Package natbib Warning: There were undefined citations.
 
@@ -827,17 +835,17 @@ Package rerunfilecheck Info: File `lqg-strings.out' has not changed.
 (rerunfilecheck)             Checksum: 1A78C590942E6B470F114C03B4EA0186;2939.
  ) 
 Here is how much of TeX's memory you used:
- 23774 strings out of 475247
- 424030 string characters out of 5774206
- 1956785 words of memory out of 5000000
- 44799 multiletter control sequences out of 15000+600000
- 567885 words of font info for 79 fonts, out of 8000000 for 9000
+ 23820 strings out of 475247
+ 424998 string characters out of 5774206
+ 1961785 words of memory out of 5000000
+ 44832 multiletter control sequences out of 15000+600000
+ 568709 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,9n,118p,1342b,1168s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\Luigi\AppData\Local\MiKTeX\fonts/pk/ljfour/public/bbold/dpi600\bbold10.pk><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmtt9.pfb><E:/MikTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb>
-Output written on e:\LQG-Strings\lqg-string\PDF\lqg-strings.pdf (6 pages, 323924 bytes).
+ <C:\Users\Luigi\AppData\Local\MiKTeX\fonts/pk/ljfour/public/bbold/dpi600\bbold10.pk><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmtt9.pfb><E:/MikTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><E:/MikTeX/fonts/type1/public/rsfs/rsfs10.pfb>
+Output written on e:\LQG-Strings\lqg-string\PDF\lqg-strings.pdf (6 pages, 338507 bytes).
 PDF statistics:
- 332 PDF objects out of 1000 (max. 8388607)
- 65 named destinations out of 1000 (max. 500000)
+ 347 PDF objects out of 1000 (max. 8388607)
+ 69 named destinations out of 1000 (max. 500000)
  253 words of extra memory for PDF output out of 10000 (max. 10000000)
 

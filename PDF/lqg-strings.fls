@@ -66,6 +66,8 @@ INPUT E:\MikTeX\tex\latex\graphics-cfg\color.cfg
 INPUT E:\MikTeX\tex\latex\graphics\mathcolor.ltx
 INPUT E:\MikTeX\tex\latex\graphics\mathcolor.ltx
 INPUT E:\MikTeX\tex\latex\graphics\mathcolor.ltx
+INPUT E:\MikTeX\tex\latex\jknappen\mathrsfs.sty
+INPUT E:\MikTeX\tex\latex\jknappen\mathrsfs.sty
 INPUT E:\MikTeX\tex\latex\todonotes\todonotes.sty
 INPUT E:\MikTeX\tex\latex\todonotes\todonotes.sty
 INPUT E:\MikTeX\tex\latex\base\ifthen.sty
@@ -288,6 +290,12 @@ INPUT E:\MikTeX\tex\latex\base\ulasy.fd
 INPUT E:\MikTeX\fonts\tfm\public\latex-fonts\lasy10.tfm
 INPUT E:\MikTeX\fonts\tfm\public\latex-fonts\lasy7.tfm
 INPUT E:\MikTeX\fonts\tfm\public\latex-fonts\lasy5.tfm
+INPUT E:\MikTeX\tex\latex\jknappen\ursfs.fd
+INPUT E:\MikTeX\tex\latex\jknappen\ursfs.fd
+INPUT E:\MikTeX\tex\latex\jknappen\ursfs.fd
+INPUT C:\Users\Luigi\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
+INPUT C:\Users\Luigi\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs7.tfm
+INPUT C:\Users\Luigi\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs5.tfm
 INPUT E:\MikTeX\fonts\tfm\public\cm\cmti9.tfm
 INPUT E:\MikTeX\fonts\tfm\public\cm\cmr8.tfm
 INPUT E:\MikTeX\fonts\tfm\public\cm\cmr6.tfm
@@ -303,6 +311,8 @@ INPUT E:\MikTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT E:\MikTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
 INPUT E:\MikTeX\fonts\tfm\public\latex-fonts\lasy8.tfm
 INPUT E:\MikTeX\fonts\tfm\public\latex-fonts\lasy6.tfm
+INPUT C:\Users\Luigi\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
+INPUT C:\Users\Luigi\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs5.tfm
 INPUT E:\MikTeX\fonts\tfm\public\cm\cmbx9.tfm
 INPUT e:\LQG-Strings\lqg-string\PDF\lqg-strings.toc
 INPUT e:\LQG-Strings\lqg-string\PDF\lqg-strings.toc
@@ -359,6 +369,8 @@ INPUT E:\MikTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
 INPUT E:\MikTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
 INPUT E:\MikTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
 INPUT E:\MikTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
+INPUT E:\MikTeX\fonts\type1\public\amsfonts\cm\cmr5.pfb
+INPUT E:\MikTeX\fonts\type1\public\amsfonts\cm\cmr5.pfb
 INPUT E:\MikTeX\fonts\type1\public\amsfonts\cm\cmr6.pfb
 INPUT E:\MikTeX\fonts\type1\public\amsfonts\cm\cmr6.pfb
 INPUT E:\MikTeX\fonts\type1\public\amsfonts\cm\cmr7.pfb
@@ -381,3 +393,5 @@ INPUT E:\MikTeX\fonts\type1\public\amsfonts\cm\cmtt9.pfb
 INPUT E:\MikTeX\fonts\type1\public\amsfonts\cm\cmtt9.pfb
 INPUT E:\MikTeX\fonts\type1\public\amsfonts\euler\eufm10.pfb
 INPUT E:\MikTeX\fonts\type1\public\amsfonts\euler\eufm10.pfb
+INPUT E:\MikTeX\fonts\type1\public\rsfs\rsfs10.pfb
+INPUT E:\MikTeX\fonts\type1\public\rsfs\rsfs10.pfb
