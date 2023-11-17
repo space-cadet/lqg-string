@@ -496,40 +496,52 @@ where
     \downarrow
 \end{equation*}
 \begin{equation*}
-    \partial _{\tau} \PS ^{\tau} _{\mu (N G)} + \partial _{\sigma} \PS ^{\sigma} _{\mu (N G)} = \frac{g \Delta}{2} \left( \frac{\partial (- h)^{-1}}{\partial \tau} + \frac{\partial (- h)^{-1}}{\partial \sigma} \right) ,
+    \partial _{\tau} \PS ^{\tau} _{\mu (N G)} + \partial _{\sigma} \PS ^{\sigma} _{\mu (N G)} = \frac{1}{\frac{2}{g \Delta} - (- h)^{-1}} \left( \PS ^{\tau} _{\mu (N G)} \frac{\partial (- h)^{-1}}{\partial \tau} + \PS ^{\sigma} _{\mu (N G)} \frac{\partial (- h)^{-1}}{\partial \sigma} \right) ,
 \end{equation*}
 gauge fixing static gauge $\tau = t$ and transverse gauge $\frac{\partial X}{\partial \tau} \cdot \frac{\partial X}{\partial s} \frac{\diff s}{\diff \sigma} = 0$ ($s = \mathrm{length \ along \ string}$)
 \begin{equation*}
     \downarrow
 \end{equation*}
 \begin{equation*}
-    \PS ^{\tau \mu} = T \frac{\diff s}{\diff \sigma} \gamma _{v_{\perp}} \frac{\partial X^{\mu}}{\partial t}
+    \PS ^{\tau \mu} _{(N G)} = T \frac{\diff s}{\diff \sigma} \gamma _{v_{\perp}} \frac{\partial X^{\mu}}{\partial t}
 \end{equation*}
 \begin{equation*}
-    \PS ^{\sigma \mu} = \frac{T}{\gamma _{v_{\perp}}} \frac{\partial X^{\mu}}{\partial s}
+    \PS ^{\sigma \mu} _{(N G)} = \frac{T}{\gamma _{v_{\perp}}} \frac{\partial X^{\mu}}{\partial s}
+\end{equation*}
+\begin{equation*}
+    - h = \frac{1}{\gamma _{v_{\perp}} ^2} \left( \frac{\diff s}{\diff \sigma} \right) ^2
 \end{equation*}
 \begin{equation*}
     \Downarrow
 \end{equation*}
 \begin{equation*}
-    \partial _{\tau} \PS ^{\tau 0} _{(N G)} + \partial _{\sigma} \PS ^{\sigma 0} _{(N G)} = \frac{g \Delta}{2} \left( \frac{\partial (- h)^{-1}}{\partial \tau} + \frac{\partial (- h)^{-1}}{\partial \sigma} \right)
+    \partial _{\tau} \PS ^{\tau 0} _{(N G)} + \partial _{\sigma} \PS ^{\sigma 0} _{(N G)} = \frac{1}{\frac{2}{g \Delta} - (- h)^{-1}} \left( \PS ^{\tau 0} _{(N G)} \frac{\partial (- h)^{-1}}{\partial \tau} + \PS ^{\sigma 0} _{(N G)} \frac{\partial (- h)^{-1}}{\partial \sigma} \right)
 \end{equation*}
 \begin{equation*}
     \downarrow
 \end{equation*}
 \begin{equation*}
-    \frac{\partial}{\partial t} \left( T \frac{\diff s}{\diff \sigma} \gamma _{v_{\perp}} \right) = \frac{g \Delta}{2} \left( \frac{\partial (- h)^{-1}}{\partial \tau} + \frac{\partial (- h)^{-1}}{\partial \sigma} \right)
+    \frac{\partial}{\partial t} \left( T \frac{\diff s}{\diff \sigma} \gamma _{v_{\perp}} \right) = \frac{1}{\frac{2}{g \Delta} - (- h)^{-1}} T \frac{\diff s}{\diff \sigma} \gamma _{v_{\perp}} \frac{\partial (- h)^{-1}}{\partial t}
 \end{equation*}
-$\implies$ energy along string is no longer conserved, rather it changes according to derivatives of inverse determinant,
+$\implies$ energy along string is no longer conserved, rather it changes according to time derivative of inverse determinant, either that or string energy get's redefined to (more likely actually)
 \begin{equation*}
-    \partial _{\tau} \Vec{\PS}^{\tau} _{(N G)} + \partial _{\sigma} \Vec{\PS}^{\sigma} _{(N G)} = \frac{g \Delta}{2} \left( \frac{\partial (- h)^{-1}}{\partial \tau} + \frac{\partial (- h)^{-1}}{\partial \sigma} \right)
+    \frac{\partial}{\partial t} \left( T \frac{\diff s}{\diff \sigma} \gamma _{v_{\perp}} \left( 1 - \frac{g \Delta}{2 (- h)} \right) \right) = 0,
+\end{equation*}
+and for the spatial part we have
+\begin{equation*}
+    \partial _{\tau} \Vec{\PS}^{\tau} + \partial _{\sigma} \Vec{\PS}^{\sigma} = 0
 \end{equation*}
 \begin{equation*}
     \downarrow
 \end{equation*}
 \begin{equation*}
-    \mu \gamma _{v_{\perp}} \frac{\partial ^2 \Vec{X}}{\partial t^2} - \frac{\partial}{\partial s} \left[ \frac{T}{\gamma _{v_{\perp}}} \frac{\partial \Vec{X}}{\partial s} \right] = \frac{g \Delta}{2} \left( \frac{\partial (- h)^{-1}}{\partial \tau} + \frac{\partial (- h)^{-1}}{\partial \sigma} \right)
+    \frac{\partial}{\partial t} \left[ T \frac{\diff s}{\diff \sigma} \gamma _{v_{\perp}} \frac{\partial \Vec{X}}{\partial t} \left( 1 - \frac{g \Delta}{2 (- h)} \right) \right] + \frac{\diff s}{\diff \sigma} \frac{\partial}{\partial s} \left[ - \frac{T}{\gamma _{v_{\perp}}} \frac{\partial \Vec{X}}{\partial s} \left( 1 - \frac{g \Delta}{2 (- h)} \right) \right] = 0
 \end{equation*}
-$\implies$ generalized non-relativistic wave equation sourced by derivatives of inverse determinant
+\begin{equation*}
+    \downarrow
+\end{equation*}
+\begin{equation*}
+    \mu \gamma _{v_{\perp}} \left( 1 - \frac{g \Delta}{2 (- h)} \right) \frac{\partial ^2 \Vec{X}}{\partial t^2} - \frac{\partial}{\partial s} \left[ \frac{T}{\gamma _{v_{\perp}}} \frac{\partial \Vec{X}}{\partial s} \left( 1 - \frac{g \Delta}{2 (- h)} \right) \right] = 0
+\end{equation*}
 
 \end{document}
