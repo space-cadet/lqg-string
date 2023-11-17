@@ -441,4 +441,56 @@ Start by writing $\det (e) = \frac{1}{2} \varepsilon ^{c d} \varepsilon _{m n} e
     e^{a} _{i} e^{b} _{j} D_{a} X^{\mu i} D_{b} X^{\nu j} E^{I} _{\mu} E^{J} _{\nu} \eta _{I J} = g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu}
 \end{equation*}
 
+\section{Inverse Area Action}
+
+Start from Nambu-Goto action
+\begin{equation*}
+    S_{N G} = - T \int \diff ^2 x \sqrt{h} ,
+\end{equation*}
+and make quantum geometry correction
+\begin{equation*}
+    \sqrt{h} \rightarrow \sqrt{h + g \Delta} \approx \sqrt{h} \left( 1 + \frac{g \Delta}{2 h} + \mathcal{O} \left( \frac{g^2}{h^2} \right) \right) ,
+\end{equation*}
+leading to modified NG action
+\begin{equation*}
+    S_{M N G} = - T \int \diff ^2 x \left( \sqrt{h} + \frac{g \Delta}{2 \sqrt{h}} \right) = S_{N G} + S_{I A}
+\end{equation*}
+\begin{equation*}
+    \downarrow
+\end{equation*}
+\begin{equation*}
+    \Lagr _{M N G} = - T \left( \sqrt{h} + \frac{g \Delta}{2 \sqrt{h}} \right)
+\end{equation*}
+
+\subsection{EoMs}
+
+Let $\PS ^{\tau} _{\mu} \equiv \partial \Lagr _{M N G} / \partial \Dot{X}^{\mu}$ and $\PS ^{\sigma} _{\mu} \equiv \partial \Lagr _{M N G} / \partial X^{\prime \mu}$
+
+\begin{align*}
+    \delta S_{M N G} & = \int \diff ^2 x \left( \frac{\partial \Lagr _{M N G}}{\partial \Dot{X}^{\mu}} \delta \Dot{X}^{\mu} + \frac{\partial \Lagr _{M N G}}{\partial X^{\prime \mu}} \delta X^{\prime \mu} \right) =                                                   \\
+                     & = - \int \diff ^2 x \left( \partial _{\tau} \PS ^{\tau} _{\mu} + \partial _{\sigma} \PS ^{\sigma} _{\mu} \right) \delta X^{\mu} + \int \diff \tau \PS ^{\sigma} _{\mu} \delta X^{\mu} \big| _{\sigma = 0} ^{\sigma = \sigma _1} \overset{!}{=} 0
+\end{align*}
+\begin{equation*}
+    \downarrow
+\end{equation*}
+\begin{equation*}
+    \mathrm{EoM:} \partial _{\tau} \PS ^{\tau} _{\mu} + \partial _{\sigma} \PS ^{\sigma} _{\mu} = 0
+\end{equation*}
+\begin{equation*}
+    \mathrm{B.C.:} \PS ^{\sigma} _{\mu} \delta X^{\mu} \big| _{\sigma = 0} ^{\sigma = \sigma _1} = 0 ,
+\end{equation*}
+where
+\begin{equation*}
+    \PS ^{\tau} _{\mu} = \frac{\partial \Lagr _{M N G}}{\partial \Dot{X}^{\mu}} = - T \left( \frac{(\Dot{X} \cdot X') X' _{\mu} - (X')^2 \Dot{X}_{\mu}}{\sqrt{h}} - \frac{g \Delta}{2} \frac{(\Dot{X} \cdot X') X' _{\mu} - (X')^2 \Dot{X}_{\mu}}{h^{3/2}} \right) =
+\end{equation*}
+\begin{equation*}
+    = - T \frac{(\Dot{X} \cdot X') X' _{\mu} - (X')^2 \Dot{X}_{\mu}}{\sqrt{h}} \left( 1 - \frac{g \Delta}{2 h} \right) = \PS ^{\tau} _{\mu (N G)} \left( 1 - \frac{g \Delta}{2 h} \right)
+\end{equation*}
+\begin{equation*}
+    \PS ^{\sigma} _{\mu} = \frac{\partial \Lagr _{M N G}}{\partial X^{\prime \mu}} = - T \left( \frac{(\Dot{X} \cdot X') \Dot{X}_{\mu} - (\Dot{X})^2 X' _{\mu}}{\sqrt{h}} - \frac{g \Delta}{2} \frac{(\Dot{X} \cdot X') \Dot{X}_{\mu} - (\Dot{X})^2 X' _{\mu}}{h^{3/2}} \right) =
+\end{equation*}
+\begin{equation*}
+    = - T \frac{(\Dot{X} \cdot X') \Dot{X}_{\mu} - (\Dot{X})^2 X' _{\mu}}{\sqrt{h}} \left( 1 - \frac{g \Delta}{2 h} \right) = \PS ^{\sigma} _{\mu (N G)} \left( 1 - \frac{g \Delta}{2 h} \right)
+\end{equation*}
+
 \end{document}
