@@ -5,11 +5,11 @@
 \tocdepth@restore 
 \contentsline {section}{\numberline {}Todo list}{1}{section*.4}%
 \contentsline {section}{\numberline {I}Introduction}{1}{section*.5}%
-\contentsline {section}{\numberline {II}Strings in Background Fields and Emergent Gravity}{2}{section*.9}%
+\contentsline {section}{\numberline {II}Strings in Background Fields and Emergent Gravity}{3}{section*.9}%
 \contentsline {section}{\numberline {III}Modified Nambu Goto Action}{4}{section*.14}%
 \contentsline {section}{\numberline {IV}Strings and Quantum Geometry}{4}{section*.15}%
-\contentsline {section}{\numberline {V}Equations of Motion}{4}{section*.16}%
-\contentsline {subsection}{\numberline {A}The Dyad Equation}{4}{section*.17}%
+\contentsline {section}{\numberline {V}Equations of Motion}{5}{section*.16}%
+\contentsline {subsection}{\numberline {A}The Dyad Equation}{5}{section*.17}%
 \contentsline {subsection}{\numberline {B}The Connection Equation}{5}{section*.18}%
 \contentsline {subsection}{\numberline {C}The New Field Equation}{5}{section*.19}%
 \contentsline {subsection}{\numberline {D}The Embbeding Field Equation}{5}{section*.20}%

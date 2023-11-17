@@ -1,5 +1,5 @@
 \RequireVersions{
-  *{application}{pdfTeX}  {0000/00/00 v1.40.24}
+  *{application}{pdfTeX}  {0000/00/00 v1.40.25}
   *{format} {LaTeX2e}     {2023-06-01 v2.e}
   *{package}{snapshot}    {2020/06/17 v2.14}
   *{package}{graphicx}    {2021/09/16 v1.2d}
