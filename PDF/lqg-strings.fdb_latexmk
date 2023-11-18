@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex PDF/lqg-strings"] 1700245719 "PDF/lqg-strings.aux" "PDF/lqg-strings.bbl" "PDF/lqg-strings" 1700324187 0
+["bibtex PDF/lqg-strings"] 1700245719 "PDF/lqg-strings.aux" "PDF/lqg-strings.bbl" "PDF/lqg-strings" 1700325522 0
   "./JHEP3.bst" 1700191142 21081 c86b5f93a8c5d838a263135b613681a4 ""
   "./lqg-strings.bib" 1700245713 106250 6c9772c5b6d34b191dc58caf2b2b763e ""
-  "PDF/lqg-strings.aux" 1700324186 7776 7bdb5d2658592a3968fa35c7317b991c "pdflatex"
-  "e:/LQG-Strings/lqg-string/PDF/lqg-stringsNotes.bib" 1700324186 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "PDF/lqg-strings.aux" 1700325521 7776 7bdb5d2658592a3968fa35c7317b991c "pdflatex"
+  "e:/LQG-Strings/lqg-string/PDF/lqg-stringsNotes.bib" 1700325520 0 d41d8cd98f00b204e9800998ecf8427e ""
   (generated)
   "PDF/lqg-strings.bbl"
   "PDF/lqg-strings.blg"
   (rewritten before read)
-["pdflatex"] 1700324185 "e:/LQG-Strings/lqg-string/lqg-strings.tex" "PDF/lqg-strings.pdf" "lqg-strings" 1700324187 2
+["pdflatex"] 1700325520 "e:/LQG-Strings/lqg-string/lqg-strings.tex" "PDF/lqg-strings.pdf" "lqg-strings" 1700325522 2
   "C:/Users/Luigi/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1700213675 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/Luigi/AppData/Local/MiKTeX/fonts/pk/ljfour/public/bbold/dpi600/bbold10.pk" 1700191725 12432 e4bad06bd50e6ebf977e7eda462f76c7 ""
   "C:/Users/Luigi/AppData/Local/MiKTeX/fonts/tfm/public/bbold/bbold10.tfm" 1700191722 788 aa2bfd021367054a224c4cf5a9967398 ""
@@ -213,13 +213,13 @@
   "E:/MikTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "E:/MikTeX/tex/latex/xcolor/xcolor.sty" 1656236890 56148 51a9a8571c07b9921892ae11063ae853 ""
   "E:/MikTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "PDF/lqg-strings.aux" 1700324186 7776 7bdb5d2658592a3968fa35c7317b991c "pdflatex"
+  "PDF/lqg-strings.aux" 1700325521 7776 7bdb5d2658592a3968fa35c7317b991c "pdflatex"
   "PDF/lqg-strings.bbl" 1700245719 1333 f3bb1c2df935af90eea8b0b5887721bf "bibtex PDF/lqg-strings"
-  "PDF/lqg-strings.out" 1700324186 2939 1a78c590942e6b470f114c03b4ea0186 "pdflatex"
-  "PDF/lqg-strings.tdo" 1700324186 754 dacce8f9cad2269d68db3d9747e2a597 "pdflatex"
-  "PDF/lqg-strings.toc" 1700324186 1440 284a5f52221efa09ecf2dd7c2d5304cf "pdflatex"
-  "e:/LQG-Strings/lqg-string/lqg-strings.tex" 1700324185 32593 3f759e81dc092fa514d61911001f0e4b ""
-  "lqg-strings.tex" 1700324185 32593 3f759e81dc092fa514d61911001f0e4b ""
+  "PDF/lqg-strings.out" 1700325521 2939 1a78c590942e6b470f114c03b4ea0186 "pdflatex"
+  "PDF/lqg-strings.tdo" 1700325521 754 dacce8f9cad2269d68db3d9747e2a597 "pdflatex"
+  "PDF/lqg-strings.toc" 1700325521 1440 284a5f52221efa09ecf2dd7c2d5304cf "pdflatex"
+  "e:/LQG-Strings/lqg-string/lqg-strings.tex" 1700325519 32594 0f7fc4374500430ebb1646acf31fe53b ""
+  "lqg-strings.tex" 1700325519 32594 0f7fc4374500430ebb1646acf31fe53b ""
   "revtex4-2.cls" 1700191142 210258 252d8ad05b878c573f3e2adfc38ce076 ""
   (generated)
   "PDF/lqg-strings.aux"

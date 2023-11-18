@@ -254,15 +254,15 @@ In a very real sense string theory is a quantum theory of geometry. After all, t
 \end{equation}
 is nothing more than the \emph{area} of the string worldsheet. So when we are constructing the quantum theory of the string we are constructing a theory in which the fundamental excitations are geometric in nature. What we would like to do is to modify the string action in a way which incorporates the insight from LQG that at the Planck scale there is a minimum quantum of area. One simple way in which to do this is to modify the integrand in \eqref{eqn:ng-action} as follows:
 \begin{equation*}
-	\sqrt{- h} \rightarrow \sqrt{- h + g \Delta}.
+	\sqrt{- h} \rightarrow \sqrt{- (h + g \Delta)}.
 \end{equation*}
 Here, $g = l_{pl}/l_s$, where $l_{pl}$ is the Planck scale, the scale at which quantum geometric effects become important; $l_s$ is the string scale where quantum geometric effects due to area quantization become small; $\Delta$ is a constant which corresponds to the square of the minimal quantum of area. In the limit that $l_s \gg l_{pl}$, $g \ll 1$ and the string action reduces to the conventional Nambu-Goto action with small corrections coming from quantum geometry. In this limit we can expand the integrand as follows:
 \begin{equation}
-	\sqrt{- h + g \Delta} \sim \sqrt{- h}\left(1 + \frac{1}{2} \frac{g \Delta}{(- h)} + \mc{O}(g^2/h^2)\right).
+	\sqrt{- (h + g \Delta)} \sim \sqrt{- h}\left(1 - \frac{1}{2} \frac{g \Delta}{(- h)} + \mc{O}(g^2/h^2)\right).
 \end{equation}
 Presumably the limit $g \ll 1$ corresponds to when the area of the string worldsheet is large compared to $\sqrt{h} \gg \Delta$. Thus in this limit $ g^2 \ll 1$ and $ h^2 \gg 1$ because of which we can drop the $\mc{O}(g^2/h^2)$ corrections. The final area corrected Nambu-Goto action becomes:
 \begin{equation} \label{eqn:modified-NG-action}
-	S'_{NG} = -T \int \diff ^2 x \left( \sqrt{- h} +  \frac{1}{2} \frac{g \Delta}{\sqrt{- h}} \right).
+	S'_{NG} = -T \int \diff ^2 x \left( \sqrt{- h} - \frac{1}{2} \frac{g \Delta}{\sqrt{- h}} \right).
 \end{equation}
 This action has, to the best of our knowledge, not been explored in the string theory literature. However, such an inverse area term arises very naturally in the LQG approach and goes by the name of ``inverse triad'' corrections, in the context of the 3D volume of spatial hypersurfaces.
 
@@ -277,19 +277,19 @@ and
 where
 \begin{align} \label{eqn:modified-NG-tau-currents}
 	\PS ^{\tau} _{\mu} & = \frac{\partial \Lagr ' _{N G}}{\partial \Dot{X}^{\mu}} \nonumber                                                                 \\
-	                   & = - T \frac{(\Dot{X} \cdot X') X' _{\mu} - (X')^2 \Dot{X}_{\mu}}{\sqrt{- h}} \left( 1 - \frac{g \Delta}{2 (- h)} \right) \nonumber \\
-	                   & = \PS ^{\tau} _{\mu (N G)} \left( 1 - \frac{g \Delta}{2 (- h)} \right)
+	                   & = - T \frac{(\Dot{X} \cdot X') X' _{\mu} - (X')^2 \Dot{X}_{\mu}}{\sqrt{- h}} \left( 1 + \frac{g \Delta}{2 (- h)} \right) \nonumber \\
+	                   & = \PS ^{\tau} _{\mu (N G)} \left( 1 + \frac{g \Delta}{2 (- h)} \right)
 \end{align}
 \begin{align} \label{eqn:modified-NG-sigma-currents}
 	\PS ^{\sigma} _{\mu} & = \frac{\partial \Lagr ' _{N G}}{\partial X^{\prime \mu}} \nonumber                                                                     \\
-	                     & = - T \frac{(\Dot{X} \cdot X') \Dot{X}_{\mu} - (\Dot{X})^2 X' _{\mu}}{\sqrt{- h}} \left( 1 - \frac{g \Delta}{2 (- h)} \right) \nonumber \\
-	                     & = \PS ^{\sigma} _{\mu (N G)} \left( 1 - \frac{g \Delta}{2 (- h)} \right)
+	                     & = - T \frac{(\Dot{X} \cdot X') \Dot{X}_{\mu} - (\Dot{X})^2 X' _{\mu}}{\sqrt{- h}} \left( 1 + \frac{g \Delta}{2 (- h)} \right) \nonumber \\
+	                     & = \PS ^{\sigma} _{\mu (N G)} \left( 1 + \frac{g \Delta}{2 (- h)} \right)
 \end{align}
 and $\PS ^{\tau} _{\mu (N G)}$, $\PS ^{\sigma} _{\mu (N G)}$ are the regular Nambu-Goto world-sheet currents.
 
 Using the static gauge $\tau = t$ and the transverse gauge with $\frac{\partial X}{\partial s} \cdot \frac{\partial X}{\partial t} = 0$, where $s$ is the length along the string parameter, we find that the new form for the conserved energy per infinitesimal piece of the string is the regular energy of the Nambu-Goto string times the correction factor
 \begin{equation} \label{eqn:string-energy}
-	E \diff \sigma = T \gamma _{v_{\perp}} \left( 1 - \frac{g \Delta}{2 (- h)} \right) \diff s ,
+	E \diff \sigma = T \gamma _{v_{\perp}} \left( 1 + \frac{g \Delta}{2 (- h)} \right) \diff s ,
 \end{equation}
 and the form of the wave equation maintains it's shape as in
 \begin{equation} \label{eqn:corrected-NG-wave-equation}
@@ -297,11 +297,11 @@ and the form of the wave equation maintains it's shape as in
 \end{equation}
 where the effective mass density and effective tension are given by
 \begin{align}
-	\mu _{eff} & = \mu \gamma _{v_{\perp}} \left( 1 - \frac{g \Delta}{2 (- h)} \right) \label{eqn:effective-mass}            \\
-	T_{eff}    & = \frac{T}{\gamma _{v_{\perp}}} \left( 1 - \frac{g \Delta}{2 (- h)} \right) . \label{eqn:effective-tension}
+	\mu _{eff} & = \mu \gamma _{v_{\perp}} \left( 1 + \frac{g \Delta}{2 (- h)} \right) \label{eqn:effective-mass}            \\
+	T_{eff}    & = \frac{T}{\gamma _{v_{\perp}}} \left( 1 + \frac{g \Delta}{2 (- h)} \right) . \label{eqn:effective-tension}
 \end{align}
 
-Rewriting eq(\ref{eqn:corrected-NG-wave-equation}) in terms of $\sigma$ derivatives and parameterizing $\sigma$ as (let $F = (1 - g \Delta / (2 (- h)))$)
+Rewriting eq(\ref{eqn:corrected-NG-wave-equation}) in terms of $\sigma$ derivatives and parameterizing $\sigma$ as (let $F = (1 + g \Delta / (2 (- h)))$)
 \begin{equation} \label{eqn:sigma-parameterization}
 	\sigma (q) = \frac{1}{T} \int _{0} ^{q} \diff E \frac{1}{F^2} ,
 \end{equation}
@@ -311,7 +311,7 @@ we find the wave equation
 \end{equation}
 from which we can see that the correction factor modifies the speed of propagation of the wave in the string as
 \begin{equation} \label{eqn:wave-speed-corrected}
-	v = \frac{c}{|F|} .
+	v = \frac{c}{F} .
 \end{equation}
 
 \section{Strings and Quantum Geometry}\label{sec:string-geometry}
