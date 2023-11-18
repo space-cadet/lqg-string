@@ -301,6 +301,19 @@ where the effective mass density and effective tension are given by
 	T_{eff}    & = \frac{T}{\gamma _{v_{\perp}}} \left( 1 - \frac{g \Delta}{2 (- h)} \right) . \label{eqn:effective-tension}
 \end{align}
 
+Rewriting eq(\ref{eqn:corrected-NG-wave-equation}) in terms of $\sigma$ derivatives and parameterizing $\sigma$ as (let $F = (1 - g \Delta / (2 (- h)))$)
+\begin{equation} \label{eqn:sigma-parameterization}
+	\sigma (q) = \frac{1}{T} \int _{0} ^{q} \diff E \frac{1}{F^2} ,
+\end{equation}
+we find the wave equation
+\begin{equation} \label{eqn:simplified-modified-wave-eqn}
+	F^2 \frac{\partial ^2 \Vec{X}}{\partial t^2} - \frac{\partial ^2 \Vec{X}}{\partial \sigma ^2} = 0 ,
+\end{equation}
+from which we can see that the correction factor modifies the speed of propagation of the wave in the string as
+\begin{equation} \label{eqn:wave-speed-corrected}
+	v = \frac{c}{|F|} .
+\end{equation}
+
 \section{Strings and Quantum Geometry}\label{sec:string-geometry}
 
 Let us begin by writing down the action of a string propagating in a background geometry which is specified not in terms of a metric, but in terms of a connection $A_\mu^{IJ}$ and vielbein fields $E_\mu^I$. Further we will require that the bulk connection and the bulk vielbein can be pulled back onto a connection $\omega _{a} ^{i j}$ and a dyad $e^a_i$, respectively, living on the string worldsheet $\Sigma$. In order for the bulk connection $A_\mu^{IJ}$, and its pullback $\omega _a ^{i j}$ on $\Sigma$, to have an effect on the string dynamics we will also promote the embedding fields $X^\mu$ to Lie algebra valued vector fields $X^{\mu} _{I}$. However, due to the fact that parallel transport of the embedding fields on the worldsheet should only involve the worldsheet connection $\omega _a ^{i j}$, we can replace $X^{\mu} _{I}$ with $X^{\mu} _{i}$, and to not lose the physical meaning of embedding fields as string coordinates, we include a new internal world-sheet field $v^{i}$, and define the string coordinates to be $\Tilde{X}^{\mu} \equiv X^{\mu} _{i} v^{i}$.
