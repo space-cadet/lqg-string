@@ -276,16 +276,30 @@ and
 \end{equation}
 where
 \begin{align} \label{eqn:modified-NG-tau-currents}
-	\PS ^{\tau} _{\mu} & = \frac{\partial \Lagr ' _{N G}}{\partial \Dot{X}^{\mu}} \nonumber \\
-	& = - T \frac{(\Dot{X} \cdot X') X' _{\mu} - (X')^2 \Dot{X}_{\mu}}{\sqrt{- h}} \left( 1 - \frac{g \Delta}{2 (- h)} \right) \nonumber \\
-	& = \PS ^{\tau} _{\mu (N G)} \left( 1 - \frac{g \Delta}{2 (- h)} \right)
+	\PS ^{\tau} _{\mu} & = \frac{\partial \Lagr ' _{N G}}{\partial \Dot{X}^{\mu}} \nonumber                                                                 \\
+	                   & = - T \frac{(\Dot{X} \cdot X') X' _{\mu} - (X')^2 \Dot{X}_{\mu}}{\sqrt{- h}} \left( 1 - \frac{g \Delta}{2 (- h)} \right) \nonumber \\
+	                   & = \PS ^{\tau} _{\mu (N G)} \left( 1 - \frac{g \Delta}{2 (- h)} \right)
 \end{align}
 \begin{align} \label{eqn:modified-NG-sigma-currents}
-	\PS ^{\sigma} _{\mu} & = \frac{\partial \Lagr ' _{N G}}{\partial X^{\prime \mu}} \nonumber \\
-	& = - T \frac{(\Dot{X} \cdot X') \Dot{X}_{\mu} - (\Dot{X})^2 X' _{\mu}}{\sqrt{- h}} \left( 1 - \frac{g \Delta}{2 (- h)} \right) \nonumber \\
-	& = \PS ^{\sigma} _{\mu (N G)} \left( 1 - \frac{g \Delta}{2 (- h)} \right)
+	\PS ^{\sigma} _{\mu} & = \frac{\partial \Lagr ' _{N G}}{\partial X^{\prime \mu}} \nonumber                                                                     \\
+	                     & = - T \frac{(\Dot{X} \cdot X') \Dot{X}_{\mu} - (\Dot{X})^2 X' _{\mu}}{\sqrt{- h}} \left( 1 - \frac{g \Delta}{2 (- h)} \right) \nonumber \\
+	                     & = \PS ^{\sigma} _{\mu (N G)} \left( 1 - \frac{g \Delta}{2 (- h)} \right)
 \end{align}
 and $\PS ^{\tau} _{\mu (N G)}$, $\PS ^{\sigma} _{\mu (N G)}$ are the regular Nambu-Goto world-sheet currents.
+
+Using the static gauge $\tau = t$ and the transverse gauge with $\frac{\partial X}{\partial s} \cdot \frac{\partial X}{\partial t} = 0$, where $s$ is the length along the string parameter, we find that the new form for the conserved energy per infinitesimal piece of the string is the regular energy of the Nambu-Goto string times the correction factor
+\begin{equation} \label{eqn:string-energy}
+	E \diff \sigma = T \gamma _{v_{\perp}} \left( 1 - \frac{g \Delta}{2 (- h)} \right) \diff s ,
+\end{equation}
+and the form of the wave equation maintains it's shape as in
+\begin{equation} \label{eqn:corrected-NG-wave-equation}
+	\mu _{eff} \frac{\partial ^2 \Vec{X}}{\partial t^2} - \frac{\partial}{\partial s} \left[ T_{eff} \frac{\partial \Vec{X}}{\partial s} \right] = 0 ,
+\end{equation}
+where the effective mass density and effective tension are given by
+\begin{align}
+	\mu _{eff} & = \mu \gamma _{v_{\perp}} \left( 1 - \frac{g \Delta}{2 (- h)} \right) \label{eqn:effective-mass}            \\
+	T_{eff}    & = \frac{T}{\gamma _{v_{\perp}}} \left( 1 - \frac{g \Delta}{2 (- h)} \right) . \label{eqn:effective-tension}
+\end{align}
 
 \section{Strings and Quantum Geometry}\label{sec:string-geometry}
 

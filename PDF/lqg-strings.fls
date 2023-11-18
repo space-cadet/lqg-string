@@ -324,7 +324,6 @@ INPUT e:\LQG-Strings\lqg-string\PDF\lqg-strings.tdo
 OUTPUT e:\LQG-Strings\lqg-string\PDF\lqg-strings.tdo
 INPUT E:\MikTeX\fonts\tfm\public\cm\cmti10.tfm
 INPUT C:\Users\Luigi\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
-INPUT E:\MikTeX\fonts\tfm\public\cm\cmbx8.tfm
 INPUT E:\MikTeX\tex\latex\amsfonts\ueuf.fd
 INPUT E:\MikTeX\tex\latex\amsfonts\ueuf.fd
 INPUT E:\MikTeX\tex\latex\amsfonts\ueuf.fd
@@ -353,8 +352,6 @@ INPUT C:\Users\Luigi\AppData\Local\MiKTeX\fonts\pk\ljfour\public\bbold\dpi600\bb
 INPUT C:\Users\Luigi\AppData\Local\MiKTeX\fonts\pk\ljfour\public\bbold\dpi600\bbold10.pk
 INPUT E:\MikTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT E:\MikTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
-INPUT E:\MikTeX\fonts\type1\public\amsfonts\cm\cmbx8.pfb
-INPUT E:\MikTeX\fonts\type1\public\amsfonts\cm\cmbx8.pfb
 INPUT E:\MikTeX\fonts\type1\public\amsfonts\cm\cmbx9.pfb
 INPUT E:\MikTeX\fonts\type1\public\amsfonts\cm\cmbx9.pfb
 INPUT E:\MikTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
@@ -381,6 +378,8 @@ INPUT E:\MikTeX\fonts\type1\public\amsfonts\cm\cmr9.pfb
 INPUT E:\MikTeX\fonts\type1\public\amsfonts\cm\cmr9.pfb
 INPUT E:\MikTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT E:\MikTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT E:\MikTeX\fonts\type1\public\amsfonts\cm\cmsy5.pfb
+INPUT E:\MikTeX\fonts\type1\public\amsfonts\cm\cmsy5.pfb
 INPUT E:\MikTeX\fonts\type1\public\amsfonts\cm\cmsy6.pfb
 INPUT E:\MikTeX\fonts\type1\public\amsfonts\cm\cmsy6.pfb
 INPUT E:\MikTeX\fonts\type1\public\amsfonts\cm\cmsy7.pfb
