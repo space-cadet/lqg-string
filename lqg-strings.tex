@@ -266,6 +266,22 @@ Presumably the limit $g \ll 1$ corresponds to when the area of the string worlds
 \end{equation}
 This action has, to the best of our knowledge, not been explored in the string theory literature. However, such an inverse area term arises very naturally in the LQG approach and goes by the name of ``inverse triad'' corrections, in the context of the 3D volume of spatial hypersurfaces.
 
+The action \eqref{eqn:modified-NG-action} has some interesting properties. First, on the face of it it does not appear to satisfy diffeomorphism invariance of the string worldsheet because of the second term. Given that we are assuming the existence of a minimum quantum of area, it is obvious that diffeomorphism invariance, at least in the classical sense, will no longer be an exact symmetry of the theory. However, if we look at that expression we see that it can be written as:
+\begin{equation} \label{eqn:modified-NG-action-v2}
+	S'_{NG}[h_{ab}] = -T \int \diff ^2 x \left( \sqrt{- h} - \frac{1}{2} {g \Delta}{\sqrt{- (h^{-1})}} \right),
+\end{equation}
+where $h^{-1}$ is now the determinant of the \emph{inverse} metric $h^{ab}$. So, while the second term is not diffeomorphism invariant \wrt the original metric $h_{ab}$ it is clearly diffeomorphism invariant \wrt the inverse metric $h^{ab}$.
+
+Second, in the expression \eqref{eqn:modified-NG-action} we can see a duality between the first and second terms. If we replace the metric $h_{ab}$ by its inverse $h'_{ab} \equiv h^{ab}$, then the action in terms of $h'_{ab}$ is the same as \eqref{eqn:modified-NG-action}, but with the difference that the factor of $g \Delta/2$ is mapped to $2/(g\Delta)$:
+\begin{align} \label{eqn:modified-NG-action-v3}
+	S'_{NG}[h'_{ab}] & = -T' \int \diff ^2 x \left( \sqrt{- h'} - \frac{2}{g \Delta} \sqrt{- (h')^{-1}} \right) \nonumber \\
+	& = -T' \int \diff ^2 x \left( \sqrt{- h'} - \onehalf {g' \Delta'}\sqrt{- (h')^{-1}} \right),
+\end{align}
+which has the same form as the original action \eqref{eqn:modified-NG-action}, as long as make the replacements $T \rightarrow T' = \frac{1}{2} {g \Delta} T $ and $ \frac{1}{2} {g \Delta} \rarrow \frac{1}{2} {g' \Delta'} = \frac{2} {g \Delta}$
+This is a duality between the physics at the Planck scale and the physics at the string scale, \ie between strong coupling ($g \gg 1$) and weak coupling ($g \ll 1$), small quantum of area ($\Delta$) and large quantum of area ($\Delta'$) and between large string tension $T$ and small string tension $T'$.
+
+\subsection{Modified Equations of Motion}\label{sec:modified-eom}
+
 This correction does not change the form of the equations of motion and neither of the boundary conditions, i.e they are still given by
 \begin{equation} \label{eqn:modified-NG-eom}
 	\mathrm{EoM:} \partial _{\tau} \PS ^{\tau} _{\mu} + \partial _{\sigma} \PS ^{\sigma} _{\mu} = 0

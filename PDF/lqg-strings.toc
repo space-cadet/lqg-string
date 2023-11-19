@@ -10,7 +10,7 @@
 \contentsline {section}{\numberline {IV}Strings and Quantum Geometry}{5}{section*.15}%
 \contentsline {section}{\numberline {V}Equations of Motion}{5}{section*.16}%
 \contentsline {subsection}{\numberline {A}The Dyad Equation}{5}{section*.17}%
-\contentsline {subsection}{\numberline {B}The Connection Equation}{5}{section*.18}%
+\contentsline {subsection}{\numberline {B}The Connection Equation}{6}{section*.18}%
 \contentsline {subsection}{\numberline {C}The New Field Equation}{6}{section*.19}%
 \contentsline {subsection}{\numberline {D}The Embbeding Field Equation}{6}{section*.20}%
 \contentsline {section}{\numberline {VI}Physical Implications}{6}{section*.21}%
