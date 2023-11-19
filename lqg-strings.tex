@@ -280,7 +280,7 @@ where $h^{-1}$ is now the determinant of the \emph{inverse} metric $h^{ab}$. So,
 Second, in the expression \eqref{eqn:modified-NG-action} we can see a duality between the first and second terms. If we replace the metric $h_{ab}$ by its inverse $h'_{ab} \equiv h^{ab}$, then the action in terms of $h'_{ab}$ is the same as \eqref{eqn:modified-NG-action}, but with the difference that the factor of $g \Delta/2$ is mapped to $2/(g\Delta)$:
 \begin{align} \label{eqn:modified-NG-action-v3}
 	S'_{NG}[h'_{ab}] & = -T' \int \diff ^2 x \left( \sqrt{- h'} - \frac{2}{g \Delta} \sqrt{- (h')^{-1}} \right) \nonumber \\
-	& = -T' \int \diff ^2 x \left( \sqrt{- h'} - \onehalf {g' \Delta'}\sqrt{- (h')^{-1}} \right),
+	                 & = -T' \int \diff ^2 x \left( \sqrt{- h'} - \onehalf {g' \Delta'}\sqrt{- (h')^{-1}} \right),
 \end{align}
 which has the same form as the original action \eqref{eqn:modified-NG-action}, as long as make the replacements $T \rightarrow T' = \frac{1}{2} {g \Delta} T $ and $ \frac{1}{2} {g \Delta} \rarrow \frac{1}{2} {g' \Delta'} = \frac{2} {g \Delta}$
 This is a duality between the physics at the Planck scale and the physics at the string scale, \ie between strong coupling ($g \gg 1$) and weak coupling ($g \ll 1$), small quantum of area ($\Delta$) and large quantum of area ($\Delta'$) and between large string tension $T$ and small string tension $T'$.
@@ -288,7 +288,7 @@ This is a duality between the physics at the Planck scale and the physics at the
 Now, one might object and say that having an action which is the sum of Nambu-Goto actions for two different metrics seems strange. However, such actions have been extensively studied under the heading of ``bimetric gravity'', with the earliest work dating as far back as 1940 in two papers \cite{Rosen1940General,Rosen1940aGeneral} by Einstein's future collaborator Nathan Rosen (the `R' in `EPR' and `ER'). In 2010, bimetric gravity gained great popularity due to the seminal paper \cite{de-Rham2011Resummation} which showed that by introducing a second \emph{reference} metric into a model for massive gravity one can get rid of the Boulware-Deser ghost \cite{Boulware1972Can-Gravitation} which otherwise plagues theories with massive gravitons. The \emph{reference} metric introduced in the work \cite{de-Rham2011Resummation} was taken to be a flat metric. However later work \cite{Hassan2012Bimetric,Hassan2012Ghost-Free} showed that the second metric need not be flat and that an action of the following form:
 \begin{align}\label{eqn:hassan-bimetric}
 	S & = M_g^2 \int \diff^4 x \sqrt{-g} R^{(g)} + M_f^2 \int \diff^4 x \sqrt{-f} R^{(f)} \nonumber \\
-	& + 2 m^2 M^2_{eff} \int \diff^4 x \sqrt{-g}\sum_{n=0}^{4}\beta_n e_n (\sqrt{g^{-1} f}),
+	  & + 2 m^2 M^2_{eff} \int \diff^4 x \sqrt{-g}\sum_{n=0}^{4}\beta_n e_n (\sqrt{g^{-1} f}),
 \end{align}
 where $g_{\mu\nu}$ and $f_{\mu\nu}$ are \emph{arbitrary} metrics, $M_g^2, M_f^2$ are the Planck masses for the two sectors respectively. $R^{(g)}, R^{(f)}$ are the respective Ricci scalars for each sector. The third term is an interaction term which is responsible for making one of the graviton massive while the other remains massless. $M^2_{eff}$ is an \emph{effective} Planck mass given by:
 \begin{equation}\label{eqn:hassan-effective-mpl}
@@ -312,7 +312,7 @@ Here the subscript $BNG$ stands for ``Bimetric Nambu-Goto''.
 The second possibility is the following. Rather than considering two different sets of embedding fields, and consequently two different worldsheets, we can work with one set of embeddings $X^\mu(\tau,\sigma)$ and \emph{two different} bulk metrics $G_{\mu\nu}$ and $H_{\mu\nu}$. As a result we would now get two different induced metrics on the \emph{same} string worldsheet, given by:
 \begin{subequations}\label{eqn:ws-induced-metrics}
 	\begin{align}
-		g_{ab} & = \frac{\partial X^\mu}{\partial x^a} \frac{\partial X^\nu}{\partial x^b} G_{\mu\nu} \\
+		g_{ab} & = \frac{\partial X^\mu}{\partial x^a} \frac{\partial X^\nu}{\partial x^b} G_{\mu\nu}  \\
 		h_{ab} & = \frac{\partial X^\mu}{\partial x^a} \frac{\partial X^\nu}{\partial x^b} H_{\mu\nu}.
 	\end{align}
 \end{subequations}
@@ -333,12 +333,12 @@ Following the general procedure, given in \cite{Callan1985Strings}, we can coupl
 where $G_{\mu\nu}$ is now the bulk or target space metric. Using this form we can now write down the worldsheet Polyakov bimetric action for two bulk metrics:
 \begin{align}\label{eqn:polyakov-flat}
 	S_{PB} = & -\frac{T}{2} \int \diff^2 x\sqrt{-g} g^{ab} \partial_a X^\mu \partial_b X^\nu G_{\mu\nu} \nonumber \\
-	& -\frac{T'}{2} \int \diff^2 x \sqrt{-h} h^{ab} \partial_a X^\mu \partial_b X^\nu H_{\mu\nu}.
+	         & -\frac{T'}{2} \int \diff^2 x \sqrt{-h} h^{ab} \partial_a X^\mu \partial_b X^\nu H_{\mu\nu}.
 \end{align}
 
 \subsection{Modified Equations of Motion}\label{sec:modified-eom}
 
-This correction does not change the form of the equations of motion and neither of the boundary conditions, i.e they are still given by
+The correction(\ref{eqn:modified-NG-action}) does not change the form of the equations of motion and neither of the boundary conditions, i.e they are still given by
 \begin{equation} \label{eqn:modified-NG-eom}
 	\mathrm{EoM:} \partial _{\tau} \PS ^{\tau} _{\mu} + \partial _{\sigma} \PS ^{\sigma} _{\mu} = 0
 \end{equation}
