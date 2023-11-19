@@ -1,6 +1,6 @@
 \RequirePackage{snapshot}
 \RequirePackage[final]{graphicx}
-\documentclass[twocolumn,draft,aps,nofootinbib,nobibnotes]{revtex4-2}
+\documentclass[twocolumn,draft,aps,prd,10pt,nofootinbib,nobibnotes]{revtex4-2}
 
 % revtex4 imports the natbib package which conflicts with biblatex. To remedy the resulting name conflicts the following recipe is taken from https://tex.stackexchange.com/a/37077
 % Start of 'ignore natbib' hack
@@ -94,8 +94,8 @@
 
 \newcommand{\mb}[1]{\mathbf{#1}}
 \newcommand{\mc}[1]{\mathcal{#1}}
-\newcommand{\mbb}[1]{\mathbb{#1}}
 \newcommand{\mf}[1]{\mathfrak{#1}}
+\newcommand{\mbb}[1]{\mathbb{#1}}
 
 \newcommand{\unit}[1]{\mathbf{\hat{#1}}}
 
@@ -139,7 +139,8 @@
 \newcommand{\Cyl}{\mathrm{Cyl}}
 
 %Luigi's custom commands
-\newcommand{\R}{\mathbb{R}}
+% \R is already defined as the same above.
+% \newcommand{\R}{\mathbb{R}}
 \newcommand{\diff}{\mathrm{d}}
 \newcommand{\inp}{\mathrm{i}}
 \newcommand{\e}{\mathrm{e}}
@@ -339,7 +340,7 @@ Let us begin by writing down the action of a string propagating in a background 
 \end{multline}
 where $e = \det (e^{i} _{a})$ and $D_a$ is the covariant derivative with respect to the worldsheet connection, and is given by:
 \begin{equation} \label{eqn:worldsheet-deriv}
-	D_a X^{\mu} _{i} & = \partial_a X^{\mu} _{i} - \omega_{a\,i}^{j} X^{\mu} _{j} ,
+	D_a X^{\mu} _{i} = \partial_a X^{\mu} _{i} - \omega_{a\,i}^{j} X^{\mu} _{j} ,
 \end{equation}
 where $\omega_{a\,j}^i$ is the pullback of the bulk connection to the worldsheet.
 
