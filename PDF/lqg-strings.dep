@@ -81,6 +81,7 @@
   *{package}{atveryend-ltx}{2020/08/19 v1.0a}
   *{package}{rerunfilecheck}{2022-07-10 v1.10}
   *{package}{uniquecounter}{2019/12/15 v1.4}
+  *{package}{mciteplus}   {2013/09/13 v1.2}
   *{package}{comment}     {0000/00/00 v0.0}
   *{package}{bbold}       {1994/04/06 v0.0}
   *{file}   {l3backend-pdftex.def}{2023-11-09 v3}

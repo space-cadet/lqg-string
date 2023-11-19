@@ -46,6 +46,10 @@
 \usepackage[colorlinks=true,citecolor=blue,linkcolor=blue,final]{hyperref}
 %\usepackage{hyperref}
 
+% Nov 20, 2023
+% Added package mciteplus to collapse multiple papers into one item in bibliography.
+\usepackage{mciteplus}
+
 %\usepackage{hypernat}
 
 \usepackage{comment}
@@ -281,6 +285,57 @@ Second, in the expression \eqref{eqn:modified-NG-action} we can see a duality be
 which has the same form as the original action \eqref{eqn:modified-NG-action}, as long as make the replacements $T \rightarrow T' = \frac{1}{2} {g \Delta} T $ and $ \frac{1}{2} {g \Delta} \rarrow \frac{1}{2} {g' \Delta'} = \frac{2} {g \Delta}$
 This is a duality between the physics at the Planck scale and the physics at the string scale, \ie between strong coupling ($g \gg 1$) and weak coupling ($g \ll 1$), small quantum of area ($\Delta$) and large quantum of area ($\Delta'$) and between large string tension $T$ and small string tension $T'$.
 
+Now, one might object and say that having an action which is the sum of Nambu-Goto actions for two different metrics seems strange. However, such actions have been extensively studied under the heading of ``bimetric gravity'', with the earliest work dating as far back as 1940 in two papers \cite{Rosen1940General,Rosen1940aGeneral} by Einstein's future collaborator Nathan Rosen (the `R' in `EPR' and `ER'). In 2010, bimetric gravity gained great popularity due to the seminal paper \cite{de-Rham2011Resummation} which showed that by introducing a second \emph{reference} metric into a model for massive gravity one can get rid of the Boulware-Deser ghost \cite{Boulware1972Can-Gravitation} which otherwise plagues theories with massive gravitons. The \emph{reference} metric introduced in the work \cite{de-Rham2011Resummation} was taken to be a flat metric. However later work \cite{Hassan2012Bimetric,Hassan2012Ghost-Free} showed that the second metric need not be flat and that an action of the following form:
+\begin{align}\label{eqn:hassan-bimetric}
+	S & = M_g^2 \int \diff^4 x \sqrt{-g} R^{(g)} + M_f^2 \int \diff^4 x \sqrt{-f} R^{(f)} \nonumber \\
+	& + 2 m^2 M^2_{eff} \int \diff^4 x \sqrt{-g}\sum_{n=0}^{4}\beta_n e_n (\sqrt{g^{-1} f}),
+\end{align}
+where $g_{\mu\nu}$ and $f_{\mu\nu}$ are \emph{arbitrary} metrics, $M_g^2, M_f^2$ are the Planck masses for the two sectors respectively. $R^{(g)}, R^{(f)}$ are the respective Ricci scalars for each sector. The third term is an interaction term which is responsible for making one of the graviton massive while the other remains massless. $M^2_{eff}$ is an \emph{effective} Planck mass given by:
+\begin{equation}\label{eqn:hassan-effective-mpl}
+	M^2_{eff} = \left( \frac{1}{M^2_g} + \frac{1}{M^2_f} \right)^{-1}
+\end{equation}
+
+\subsection{The Bimetric String}\label{sec:bimetric-nambu-goto}
+
+It would be natural to suspect that the action \eqref{eqn:modified-NG-action-v2} might be related to bimetric gravity in the target space of the string. We can see that this is indeed the case as follows.
+
+Consider a string propagating in a target space whose geometry is described by two bulk metrics. There are two ways that a string with two metrics might arise. One possibility is that there are two sets of embedding fields $X^\mu$ and $Y^\mu$. As a result the induced metrics on the string worldsheet would also be different for both sets of embedding fields. However, in this case we would not be talking about \emph{one} string but two \emph{different} strings described by the respective embedding functions. One could then proceed along the lines of \eqref{eqn:hassan-bimetric} and introduce a third term for the worldsheet action which describes a coupling between the two sets of embedding fields, of the form:
+\begin{equation}\label{eqn:ws-bimetric-interaction}
+	S_{int} = - T_{eff} \int \diff^2 x\, \Phi(g,h) \Psi(\mb{X}, \mb{Y}).
+\end{equation}
+Here $\Phi(g,h)$ is some function of the \emph{induced} metrics $g_{ab}$ and $h_{ab}$ on the two worldsheets and $\Psi(\mb{X}, \mb{Y})$ is some function of the embedding fields. The resulting action would be of the form:
+\begin{equation}\label{eqn:ws-bimetric-action-v1}
+	S_{BNG} = -T \int \diff^2 x\, \sqrt{-h} - T' \int \diff^2 x \, \sqrt{-g} + S_{int}.
+\end{equation}
+Here the subscript $BNG$ stands for ``Bimetric Nambu-Goto''.
+
+The second possibility is the following. Rather than considering two different sets of embedding fields, and consequently two different worldsheets, we can work with one set of embeddings $X^\mu(\tau,\sigma)$ and \emph{two different} bulk metrics $G_{\mu\nu}$ and $H_{\mu\nu}$. As a result we would now get two different induced metrics on the \emph{same} string worldsheet, given by:
+\begin{subequations}\label{eqn:ws-induced-metrics}
+	\begin{align}
+		g_{ab} & = \frac{\partial X^\mu}{\partial x^a} \frac{\partial X^\nu}{\partial x^b} G_{\mu\nu} \\
+		h_{ab} & = \frac{\partial X^\mu}{\partial x^a} \frac{\partial X^\nu}{\partial x^b} H_{\mu\nu}.
+	\end{align}
+\end{subequations}
+We can then write down the combined action for the string worldsheet as:
+\begin{equation}\label{eqn:ws-bimetric-action-v2}
+	S'_{BNG} = -T \int \diff^2 x\, \sqrt{-h} - T' \int \diff^2 x \, \sqrt{-g} + S'_{int},
+\end{equation}
+where now $S'_{int}[g,h,\mb{X}]$ is a term describing the interaction between the two metrics living on the \emph{same} worldsheet.
+
+\subsection{Bimetric Polyakov Action}\label{sec:bimetric-polyakov}
+
+The expression \eqref{eqn:ws-bimetric-action-v2} is not ideal because it does not retain any memory of the form of the bulk metrics, unless these are included in the interaction term $S'_{int}$. One way to manifestly exhibit the dependence of the respective worldsheet actions on the two bulk metrics is to work with the Polaykov action.
+
+Following the general procedure, given in \cite{Callan1985Strings}, we can couple the worldsheet to a bulk metric as follows:
+\begin{equation}\label{eqn:polyakov-curved}
+	S_{P} = -\frac{T}{2} \int \diff^2 x \sqrt{-g} g^{ab} \partial_a X^\mu \partial_b X^\nu G_{\mu\nu},
+\end{equation}
+where $G_{\mu\nu}$ is now the bulk or target space metric. Using this form we can now write down the worldsheet Polyakov bimetric action for two bulk metrics:
+\begin{align}\label{eqn:polyakov-flat}
+	S_{PB} = & -\frac{T}{2} \int \diff^2 x\sqrt{-g} g^{ab} \partial_a X^\mu \partial_b X^\nu G_{\mu\nu} \nonumber \\
+	& -\frac{T'}{2} \int \diff^2 x \sqrt{-h} h^{ab} \partial_a X^\mu \partial_b X^\nu H_{\mu\nu}.
+\end{align}
+
 \subsection{Modified Equations of Motion}\label{sec:modified-eom}
 
 This correction does not change the form of the equations of motion and neither of the boundary conditions, i.e they are still given by
@@ -328,7 +383,7 @@ we find the wave equation
 \end{equation}
 from which we can see that the correction factor modifies the speed of propagation of the wave in the string as
 \begin{equation} \label{eqn:wave-speed-corrected}
-	v = \frac{c}{F} .
+	v = \frac{c}{F}.
 \end{equation}
 
 \section{Strings and Quantum Geometry}\label{sec:string-geometry}
@@ -343,70 +398,6 @@ where $e = \det (e^{i} _{a})$ and $D_a$ is the covariant derivative with respect
 	D_a X^{\mu} _{i} = \partial_a X^{\mu} _{i} - \omega_{a\,i}^{j} X^{\mu} _{j} ,
 \end{equation}
 where $\omega_{a\,j}^i$ is the pullback of the bulk connection to the worldsheet.
-
-\section{Equations of Motion}\label{sec:eom}
-
-\subsection{The Dyad Equation}\label{subsec:dyad-eom}
-
-Variation of the modified Polyakov action(\ref{eqn:lqg-string-action}) w.r.t the zweibein $e^{c} _{l}$ yields the vanishing of the Lie algebra-valued energy-momentum tensor, which can be contracted with the dyad to yield the regular stress-energy tensor:
-\begin{equation} \label{eqn:variation-wrt-e}
-	\frac{\delta S_{PA}}{\delta e^{c} _{l}} \overset{!}{=} 0
-\end{equation}
-\begin{equation*}
-	\downarrow
-\end{equation*}
-\begin{multline} \label{eqn:vanishing-em-tensor}
-	T^{l} _{c} := E^{I} _{\mu} E_{\nu I} (e^{a l} D_{a} X^{\mu} _{j} v^{j} D_{c} X^{\nu} _{k} v^{k} - \\
-	- e^{l} _{c} e^{a} _{i} e^{b i} D_{a} X^{\mu} _{j} v^{j} D_{b} X^{\nu} _{k} v^{k}) = 0 .
-\end{multline}
-Equation(\ref{eqn:vanishing-em-tensor}) can be used to obtain an expression for the dyads in terms of the embbeding fields $X^{\mu} _{i}$ as in
-\begin{equation} \label{eqn:dyad-string-coordinates}
-	e^{l} _{c} = F e^{a l} D_{a} X^{\mu} _{j} v^{j} D_{c} X^{\nu} _{k} v^{k} E^{I} _{\mu} E_{\nu I} ,
-\end{equation}
-where the function $F$ is given by
-\begin{equation} \label{eqn:F-function-dyad}
-	\frac{1}{F} = e^{a} _{i} e^{b i} D_{a} X^{\mu} _{j} v^{j} D_{b} X^{\nu} _{k} v^{k} E^{I} _{\mu} E_{\nu I} .
-\end{equation}
-
-\subsection{The Connection Equation} \label{sec:omega-eom}
-
-Varying our action w.r.t connection $\omega ^{m n} _{c}$ gives the vanishing of world-sheet torsion $\mathcal{T}^{i} _{a b}$ as
-\begin{equation} \label{eqn:variation-wrt-omega}
-	\frac{\delta S_{P A}}{\delta \omega ^{m n} _{c}} \overset{!}{=} 0
-\end{equation}
-\begin{equation*}
-	\downarrow
-\end{equation*}
-\begin{equation} \label{eqn:vanishing-torsion}
-	\mathcal{T}^{i} _{a b} := e^{c i} D_{c} X^{\mu} _{k} v^{k} X^{\nu} _{[m} v_{n]} e^{m} _{a} e^{n} _{b} E^{I} _{\mu} E_{\nu I} = 0 .
-\end{equation}
-
-\subsection{The New Field Equation} \label{sec:v-eom}
-
-The equation of motion for the new field $v^{l}$ gives a constraint on said field and the embbeding fields $X^{\mu} _{i}$
-\begin{equation} \label{eqn:variation-wrt-v}
-	\frac{\delta S_{P A}}{\delta v^{l}} \overset{!}{=} 0
-\end{equation}
-\begin{equation*}
-	\downarrow
-\end{equation*}
-\begin{equation} \label{eqn:v-and-X-constraint}
-	e^{a} _{i} e^{b i} D_{a} X^{\mu} _{l} D_{b} X^{\nu} _{j} v^{j} E^{I} _{\mu} E_{\nu I} = 0 .
-\end{equation}
-
-\subsection{The Embbeding Field Equation}
-
-Finally, varying the action w.r.t the embbeding fields $X^{\lambda} _{l}$ yields a slightly modified version of the classical equation of motion for strings propagating in curved space-time:
-\begin{equation} \label{eqn:variation-wrt-X}
-	\frac{\delta S_{P A}}{\delta X^{\lambda} _{l}} \overset{!}{=} 0
-\end{equation}
-\begin{equation*}
-	\downarrow
-\end{equation*}
-\begin{multline} \label{eqn:string-eom}
-	e^{a} _{i} e^{b i} D_{b} (e v^{l} D_{a} X^{\mu} _{j} v^{j} E^{I} _{\mu} E_{\lambda I}) = \\
-	= e e^{a} _{i} e^{b i} D_{a} X^{\mu} _{j} v^{j} D_{b} X^{\nu} _{k} v^{k} \frac{\partial E^{I} _{\mu}}{\partial X^{\lambda} _{l}} E_{\nu I} .
-\end{multline}
 
 \section{Physical Implications}
 
@@ -423,6 +414,5 @@ Finally, varying the action w.r.t the embbeding fields $X^{\lambda} _{l}$ yields
 \bibliographystyle{JHEP3}
 
 \bibliography{lqg-strings.bib}
-
 
 \end{document}
