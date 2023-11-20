@@ -410,28 +410,28 @@ where the function $f^{(G)}$ is given by
 	\frac{1}{f^{(G)}} = g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu},
 \end{equation}
 and completely analogously for the $H_{\mu \nu}$ metric,
-\begin{equation} \label{variation-wrt-h}
+\begin{equation} \label{eqn:variation-wrt-h}
 	\frac{\delta S_{P B}}{\delta h^{c d}} \overset{!}{=} 0
 \end{equation}
 \begin{equation*}
 	\downarrow
 \end{equation*}
-\begin{multline} \label{h-em-tensor}
+\begin{multline} \label{eqn:h-em-tensor}
 	T^{(H)} _{c d} := H_{\mu \nu} \bigg( \partial _{c} X^{\mu} \partial _{d} X^{\mu} - \\
 	- \frac{1}{2} h_{c d} h^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \bigg) = 0
 \end{multline}
 \begin{equation*}
 	\Downarrow
 \end{equation*}
-\begin{equation} \label{h-expression}
+\begin{equation} \label{eqn:h-expression}
 	h_{c d} = 2 f^{(H)} \partial _{c} X^{\mu} \partial _{d} X^{\nu} H_{\mu \nu} ,
 \end{equation}
 with
-\begin{equation} \label{h's-f-function}
+\begin{equation} \label{eqn:h's-f-function}
 	\frac{1}{f^{(H)}} = h^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} H_{\mu \nu} .
 \end{equation}
 
-As for the embbeding fields equation, we get a wave equation for the combined metric
+As for the embbeding fields equation, we get a wave equation for the coupled metric
 \begin{equation} \label{eqn:variation-wrt-X}
 	\frac{\delta S_{P B}}{\delta X^{\lambda}} \overset{!}{=} 0
 \end{equation}
@@ -448,7 +448,11 @@ where
 \begin{equation} \label{eqn:combined-bulk-metric}
 	F_{\mu \nu}    & = G_{\mu \nu} + H_{\mu \nu} ,
 \end{equation}
-in which we add a prime in the coupled metric $f^{\prime a b}$ since it is not quite the metric induced by the combined bulk metric $F_{\mu \nu}$.
+in which we add a prime in the coupled metric $f^{\prime a b}$ since it is not quite the metric induced by the combined bulk metric $F_{\mu \nu}$. Since 2D metrics can always be written as a conformal metric, it is easy to see that eq(\ref{eqn:coupled-ws-metric}) can be recast as
+\begin{equation} \label{eqn:conformal-coupled-metric}
+	f^{\prime a b} = T \eta ^{a b} + T' \eta ^{a b} = (T + T') \eta ^{a b} ,
+\end{equation}
+and in the special case of the second metric coming from the quantum geometry inverse area correction where $T' = T g \Delta / 2$, we see that eq(\ref{eqn:bimetric-wave-equation}) trivially reduces to eq(\ref{eqn:simplified-modified-wave-eqn}) found before when the background metric $F_{\mu \nu} = 2 G_{\mu \nu}$ is fixed i.e $\partial _{\lambda} F_{\mu \nu} = 0$.
 
 \section{Strings and Quantum Geometry}\label{sec:string-geometry}
 
