@@ -10,10 +10,11 @@
 \contentsline {subsection}{\numberline {A}Modified Equations of Motion}{5}{section*.15}%
 \contentsline {section}{\numberline {IV}The Bimetric String}{6}{section*.16}%
 \contentsline {subsection}{\numberline {A}Bimetric Polyakov Action}{6}{section*.17}%
-\contentsline {section}{\numberline {V}Strings and Quantum Geometry}{6}{section*.18}%
-\contentsline {section}{\numberline {VI}Physical Implications}{6}{section*.19}%
-\contentsline {section}{\numberline {VII}Discussion}{6}{section*.20}%
-\contentsline {section}{\numberline {}Acknowledgments}{6}{section*.21}%
+\contentsline {subsection}{\numberline {B}The Bimetric Polyakov Equations}{6}{section*.18}%
+\contentsline {section}{\numberline {V}Strings and Quantum Geometry}{7}{section*.19}%
+\contentsline {section}{\numberline {VI}Physical Implications}{7}{section*.20}%
+\contentsline {section}{\numberline {VII}Discussion}{7}{section*.21}%
+\contentsline {section}{\numberline {}Acknowledgments}{7}{section*.22}%
 \appendix 
-\contentsline {section}{\numberline {A}}{6}{section*.22}%
-\contentsline {section}{\numberline {}References}{7}{section*.23}%
+\contentsline {section}{\numberline {A}}{7}{section*.23}%
+\contentsline {section}{\numberline {}References}{7}{section*.24}%

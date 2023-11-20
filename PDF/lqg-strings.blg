@@ -7,44 +7,44 @@ Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: JHEP3.bst
 Database file #1: lqg-stringsNotes.bib
 Database file #2: lqg-strings.bib
-You've used 13 entries,
+You've used 14 entries,
             2148 wiz_defined-function locations,
-            596 strings with 5375 characters,
-and the built_in function-call counts, 3426 in all, are:
-= -- 350
-> -- 88
+            599 strings with 5436 characters,
+and the built_in function-call counts, 3539 in all, are:
+= -- 361
+> -- 92
 < -- 0
-+ -- 36
-- -- 23
-* -- 249
-:= -- 486
-add.period$ -- 15
-call.type$ -- 13
-change.case$ -- 13
++ -- 38
+- -- 24
+* -- 258
+:= -- 505
+add.period$ -- 16
+call.type$ -- 14
+change.case$ -- 14
 chr.to.int$ -- 0
-cite$ -- 13
-duplicate$ -- 196
-empty$ -- 344
-format.name$ -- 23
-if$ -- 868
+cite$ -- 14
+duplicate$ -- 201
+empty$ -- 354
+format.name$ -- 24
+if$ -- 894
 int.to.chr$ -- 0
-int.to.str$ -- 13
-missing$ -- 44
-newline$ -- 44
-num.names$ -- 13
-pop$ -- 56
+int.to.str$ -- 14
+missing$ -- 47
+newline$ -- 47
+num.names$ -- 14
+pop$ -- 58
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 122
+skip$ -- 123
 stack$ -- 0
-substring$ -- 168
+substring$ -- 169
 swap$ -- 74
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 29
-width$ -- 15
-write$ -- 130
+while$ -- 30
+width$ -- 16
+write$ -- 137

@@ -290,7 +290,7 @@ Now, one might object and say that having an action which is the sum of Nambu-Go
 	S & = M_g^2 \int \diff^4 x \sqrt{-g} R^{(g)} + M_f^2 \int \diff^4 x \sqrt{-f} R^{(f)} \nonumber \\
 	  & + 2 m^2 M^2_{eff} \int \diff^4 x \sqrt{-g}\sum_{n=0}^{4}\beta_n e_n (\sqrt{g^{-1} f}),
 \end{align}
-where $g_{\mu\nu}$ and $f_{\mu\nu}$ are \emph{arbitrary} metrics, $M_g^2, M_f^2$ are the Planck masses for the two sectors respectively. $R^{(g)}, R^{(f)}$ are the respective Ricci scalars for each sector. The third term is an interaction term which is responsible for making one of the graviton massive while the other remains massless. $M^2_{eff}$ is an \emph{effective} Planck mass given by:
+where $g_{\mu\nu}$ and $f_{\mu\nu}$ are \emph{arbitrary} metrics, $M_g^2, M_f^2$ are the Planck masses for the two sectors respectively. $R^{(g)}, R^{(f)}$ are the respective Ricci scalars for each sector. The third term is an interaction term which is responsible for making one of the gravitons massive while the other remains massless. $M^2_{eff}$ is an \emph{effective} Planck mass given by:
 \begin{equation}\label{eqn:hassan-effective-mpl}
 	M^2_{eff} = \left( \frac{1}{M^2_g} + \frac{1}{M^2_f} \right)^{-1}
 \end{equation}
@@ -322,7 +322,7 @@ Using the static gauge $\tau = t$ and the transverse gauge with $\frac{\partial 
 \begin{equation} \label{eqn:string-energy}
 	E \diff \sigma = T \gamma _{v_{\perp}} \left( 1 + \frac{g \Delta}{2 (- h)} \right) \diff s ,
 \end{equation}
-and the form of the wave equation maintains it's shape as in
+and the form of the wave equation maintains its shape as in
 \begin{equation} \label{eqn:corrected-NG-wave-equation}
 	\mu _{eff} \frac{\partial ^2 \Vec{X}}{\partial t^2} - \frac{\partial}{\partial s} \left[ T_{eff} \frac{\partial \Vec{X}}{\partial s} \right] = 0 ,
 \end{equation}
@@ -349,7 +349,7 @@ from which we can see that the correction factor modifies the speed of propagati
 
 It would be natural to suspect that the action \eqref{eqn:modified-NG-action-v2} might be related to bimetric gravity in the target space of the string. We can see that this is indeed the case as follows.
 
-Consider a string propagating in a target space whose geometry is described by two bulk metrics. There are two ways that a string with two metrics might arise. One possibility is that there are two sets of embedding fields $X^\mu$ and $Y^\mu$. As a result the induced metrics on the string worldsheet would also be different for both sets of embedding fields. However, in this case we would not be talking about \emph{one} string but two \emph{different} strings described by the respective embedding functions. One could then proceed along the lines of \eqref{eqn:hassan-bimetric} and introduce a third term for the worldsheet action which describes a coupling between the two sets of embedding fields, of the form:
+Consider a string propagating in a target space whose geometry is described by two bulk metrics. There are two ways that a string with two metrics might arise. One possibility is that there are two sets of embedding fields $X^\mu$ and $Y^\mu$. As a result, the induced metrics on the string worldsheet would also be different for both sets of embedding fields. However, in this case, we would not be talking about \emph{one} string but two \emph{different} strings described by the respective embedding functions. One could then proceed along the lines of \eqref{eqn:hassan-bimetric} and introduce a third term for the worldsheet action which describes a coupling between the two sets of embedding fields, of the form:
 \begin{equation}\label{eqn:ws-bimetric-interaction}
 	S_{int} = - T_{eff} \int \diff^2 x\, \Phi(g,h) \Psi(\mb{X}, \mb{Y}).
 \end{equation}
@@ -359,7 +359,7 @@ Here $\Phi(g,h)$ is some function of the \emph{induced} metrics $g_{ab}$ and $h_
 \end{equation}
 Here the subscript $BNG$ stands for ``Bimetric Nambu-Goto''.
 
-The second possibility is the following. Rather than considering two different sets of embedding fields, and consequently two different worldsheets, we can work with one set of embeddings $X^\mu(\tau,\sigma)$ and \emph{two different} bulk metrics $G_{\mu\nu}$ and $H_{\mu\nu}$. As a result we would now get two different induced metrics on the \emph{same} string worldsheet, given by:
+The second possibility is the following. Rather than considering two different sets of embedding fields, and consequently two different worldsheets, we can work with one set of embeddings $X^\mu(\tau,\sigma)$ and \emph{two different} bulk metrics $G_{\mu\nu}$ and $H_{\mu\nu}$. As a result, we would now get two different induced metrics on the \emph{same} string worldsheet, given by:
 \begin{subequations}\label{eqn:ws-induced-metrics}
 	\begin{align}
 		g_{ab} & = \frac{\partial X^\mu}{\partial x^a} \frac{\partial X^\nu}{\partial x^b} G_{\mu\nu}  \\
@@ -374,7 +374,7 @@ where now $S'_{int}[g,h,\mb{X}]$ is a term describing the interaction between th
 
 \subsection{Bimetric Polyakov Action}\label{sec:bimetric-polyakov}
 
-The expression \eqref{eqn:ws-bimetric-action-v2} is not ideal because it does not retain any memory of the form of the bulk metrics, unless these are included in the interaction term $S'_{int}$. One way to manifestly exhibit the dependence of the respective worldsheet actions on the two bulk metrics is to work with the Polaykov action.
+The expression \eqref{eqn:ws-bimetric-action-v2} is not ideal because it does not retain any memory of the form of the bulk metrics unless these are included in the interaction term $S'_{int}$. One way to manifestly exhibit the dependence of the respective worldsheet actions on the two bulk metrics is to work with the Polaykov action.
 
 Following the general procedure, given in \cite{Callan1985Strings}, we can couple the worldsheet to a bulk metric as follows:
 \begin{equation}\label{eqn:polyakov-curved}
@@ -386,9 +386,73 @@ where $G_{\mu\nu}$ is now the bulk or target space metric. Using this form we ca
 	         & -\frac{T'}{2} \int \diff^2 x \sqrt{-h} h^{ab} \partial_a X^\mu \partial_b X^\nu H_{\mu\nu}.
 \end{align}
 
+\subsection{The Bimetric Polyakov Equations} \label{sec:bimetric-polyakov-eoms}
+
+Following the usual procedure such as the one found in \cite{Tong2009Lectures}, we find two copies of the string energy-momentum tensor being set to zero, which can be used to find an expression for the induced metrics:
+\begin{equation} \label{eqn:variation-wrt-g}
+	\frac{\delta S_{P B}}{\delta g^{c d}} \overset{!}{=} 0
+\end{equation}
+\begin{equation*}
+	\downarrow
+\end{equation*}
+\begin{multline} \label{eqn:g-em-tensor}
+	T^{(G)} _{c d} := G_{\mu \nu} \bigg( \partial _{c} X^{\mu} \partial _{d} X^{\nu} - \\
+	- \frac{1}{2} g_{c d} g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \bigg) = 0
+\end{multline}
+\begin{equation*}
+	\Downarrow
+\end{equation*}
+\begin{equation} \label{eqn:g-expression}
+	g_{c d} = 2 f^{(G)} \partial _{c} X^{\mu} \partial _{d} X^{\nu} G_{\mu \nu} ,
+\end{equation}
+where the function $f^{(G)}$ is given by
+\begin{equation} \label{eqn:g's-f-function}
+	\frac{1}{f^{(G)}} = g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu},
+\end{equation}
+and completely analogously for the $H_{\mu \nu}$ metric,
+\begin{equation} \label{variation-wrt-h}
+	\frac{\delta S_{P B}}{\delta h^{c d}} \overset{!}{=} 0
+\end{equation}
+\begin{equation*}
+	\downarrow
+\end{equation*}
+\begin{multline} \label{h-em-tensor}
+	T^{(H)} _{c d} := H_{\mu \nu} \bigg( \partial _{c} X^{\mu} \partial _{d} X^{\mu} - \\
+	- \frac{1}{2} h_{c d} h^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \bigg) = 0
+\end{multline}
+\begin{equation*}
+	\Downarrow
+\end{equation*}
+\begin{equation} \label{h-expression}
+	h_{c d} = 2 f^{(H)} \partial _{c} X^{\mu} \partial _{d} X^{\nu} H_{\mu \nu} ,
+\end{equation}
+with
+\begin{equation} \label{h's-f-function}
+	\frac{1}{f^{(H)}} = h^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} H_{\mu \nu} .
+\end{equation}
+
+As for the embbeding fields equation, we get a wave equation for the combined metric
+\begin{equation} \label{eqn:variation-wrt-X}
+	\frac{\delta S_{P B}}{\delta X^{\lambda}} \overset{!}{=} 0
+\end{equation}
+\begin{equation*}
+	\downarrow
+\end{equation*}
+\begin{equation} \label{eqn:bimetric-wave-equation}
+	f^{\prime a b} \partial _{a} \partial _{b} X^{\mu} F_{\mu \lambda} = \frac{1}{2} f^{\prime a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \frac{\partial F_{\mu \nu}}{\partial X^{\lambda}} ,
+\end{equation}
+where
+\begin{equation} \label{eqn:coupled-ws-metric}
+	f^{\prime a b} & = T \sqrt{- g} g^{a b} + T' \sqrt{- h} h^{a b}
+\end{equation}
+\begin{equation} \label{eqn:combined-bulk-metric}
+	F_{\mu \nu}    & = G_{\mu \nu} + H_{\mu \nu} ,
+\end{equation}
+in which we add a prime in the coupled metric $f^{\prime a b}$ since it is not quite the metric induced by the combined bulk metric $F_{\mu \nu}$.
+
 \section{Strings and Quantum Geometry}\label{sec:string-geometry}
 
-Let us begin by writing down the action of a string propagating in a background geometry which is specified not in terms of a metric, but in terms of a connection $A_\mu^{IJ}$ and vielbein fields $E_\mu^I$. Further we will require that the bulk connection and the bulk vielbein can be pulled back onto a connection $\omega _{a} ^{i j}$ and a dyad $e^a_i$, respectively, living on the string worldsheet $\Sigma$. In order for the bulk connection $A_\mu^{IJ}$, and its pullback $\omega _a ^{i j}$ on $\Sigma$, to have an effect on the string dynamics we will also promote the embedding fields $X^\mu$ to Lie algebra valued vector fields $X^{\mu} _{I}$. However, due to the fact that parallel transport of the embedding fields on the worldsheet should only involve the worldsheet connection $\omega _a ^{i j}$, we can replace $X^{\mu} _{I}$ with $X^{\mu} _{i}$, and to not lose the physical meaning of embedding fields as string coordinates, we include a new internal world-sheet field $v^{i}$, and define the string coordinates to be $\Tilde{X}^{\mu} \equiv X^{\mu} _{i} v^{i}$.
+Let us begin by writing down the action of a string propagating in a background geometry which is specified not in terms of a metric, but in terms of a connection $A_\mu^{IJ}$ and vielbein fields $E_\mu^I$. Further, we will require that the bulk connection and the bulk vielbein can be pulled back onto a connection $\omega _{a} ^{i j}$ and a dyad $e^a_i$, respectively, living on the string worldsheet $\Sigma$. In order for the bulk connection $A_\mu^{IJ}$, and its pullback $\omega _a ^{i j}$ on $\Sigma$, to have an effect on the string dynamics we will also promote the embedding fields $X^\mu$ to Lie algebra valued vector fields $X^{\mu} _{I}$. However, due to the fact that parallel transport of the embedding fields on the worldsheet should only involve the worldsheet connection $\omega _a ^{i j}$, we can replace $X^{\mu} _{I}$ with $X^{\mu} _{i}$, and to not lose the physical meaning of embedding fields as string coordinates, we include a new internal world-sheet field $v^{i}$, and define the string coordinates to be $\Tilde{X}^{\mu} \equiv X^{\mu} _{i} v^{i}$.
 \begin{multline} \label{eqn:lqg-string-action}
 	S_{PA} = - \frac{T}{2} \int \diff \tau \wedge \diff \sigma e e^{a} _{i} e^{b i} D_{a} X^{\mu} _{j} v^{j} \times \\
 	\times D_{b} X^{\nu} _{k} v^{k} E_{\mu} ^{I} E_{\nu I} ,
