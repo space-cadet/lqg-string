@@ -443,6 +443,8 @@ Start by writing $\det (e) = \frac{1}{2} \varepsilon ^{c d} \varepsilon _{m n} e
 
 \section{Inverse Area Action}
 
+\subsection{Nambu-Goto}
+
 Start from Nambu-Goto action
 \begin{equation*}
     S_{N G} = - T \int \diff ^2 x \sqrt{- h} ,
@@ -462,7 +464,7 @@ leading to modified NG action
     \Lagr _{M N G} = - T \left( \sqrt{- h} - \frac{g \Delta}{2 \sqrt{- h}} \right)
 \end{equation*}
 
-\subsection{EoMs}
+\subsubsection{EoMs}
 
 Let $\PS ^{\tau} _{\mu} \equiv \partial \Lagr _{M N G} / \partial \Dot{X}^{\mu}$ and $\PS ^{\sigma} _{\mu} \equiv \partial \Lagr _{M N G} / \partial X^{\prime \mu}$
 
@@ -594,6 +596,72 @@ where (let $a = \frac{g \Delta}{2}$ and $b = (1 - v_{\perp}^2)^2$)
 \end{equation*}
 \begin{equation*}
     F = 1 + \frac{g \Delta}{2 (- h)} = 1 + \frac{g \Delta}{2 \left( \frac{b}{3} - f_1 - f_2 \right)}
+\end{equation*}
+
+\section{Bimetric Polyakov}
+
+Start with Polyakov action
+\begin{equation*}
+    S_{P} = - \frac{T}{2} \int \diff ^2 x \sqrt{- g} g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu},
+\end{equation*}
+and promote to bimetric action
+\begin{equation*}
+    \downarrow
+\end{equation*}
+\begin{equation*}
+    S_{B P} = - \frac{T}{2} \int \diff ^2 x \sqrt{- g} g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} - \frac{T'}{2} \int \diff ^2 x \sqrt{- h} h^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} H_{\mu \nu}
+\end{equation*}
+
+\subsection{EoMs}
+
+\begin{align*}
+    \frac{\delta S_{B P}}{\delta g^{c d}} & = - \frac{T}{2} \left( \frac{\partial \sqrt{- g}}{\partial g^{c d}} g^{a b} + \sqrt{- g} \frac{\partial g^{a b}}{\partial g^{c d}} \right) \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} + 0 = \\
+                                          & = - \frac{T}{2} \left( - \frac{1}{2} \sqrt{- g} g_{c d} g^{a b} + \sqrt{- g} \delta ^{a} _{(c} \delta ^{b} _{d)} \right) \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} \overset{!}{=} 0
+\end{align*}
+\begin{equation*}
+    T^{(G)} _{c d} := \left( \partial _{c} X^{\mu} \partial _{d} X^{\nu} - \frac{1}{2} g_{c d} g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \right) G_{\mu \nu} = 0
+\end{equation*}
+\begin{equation*}
+    \Downarrow
+\end{equation*}
+\begin{equation*}
+    g_{c d} = 2 f^{(G)} \partial _{c} X^{\mu} \partial _{d} X^{\nu} G_{\mu \nu} ,
+\end{equation*}
+\begin{equation*}
+    \frac{1}{f^{(G)}} = g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu}
+\end{equation*}
+
+\begin{align*}
+    \frac{\delta S_{B P}}{\delta h^{c d}} & = ... =                                                                                                                                                                                            \\
+                                          & = - \frac{T'}{2} \left( - \frac{1}{2} \sqrt{- h} h_{c d} h^{a b} + \sqrt{- h} \delta ^{a} _{(c} \delta ^{b} _{d)} \right) \partial _{a} X^{\mu} \partial _{b} X^{\nu} H_{\mu \nu} \overset{!}{=} 0
+\end{align*}
+\begin{equation*}
+    \downarrow
+\end{equation*}
+\begin{equation*}
+    T^{(H)} _{c d} := \left( \partial _{c} X^{\mu} \partial _{d} X^{\mu} - \frac{1}{2} h_{c d} h^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \right) H_{\mu \nu} = 0
+\end{equation*}
+\begin{equation*}
+    \Downarrow
+\end{equation*}
+\begin{equation*}
+    h_{c d} = 2 f^{(H)} \partial _{c} X^{\mu} \partial _{d} X^{\nu} H_{\mu \nu} ,
+\end{equation*}
+\begin{equation*}
+    \frac{1}{f^{(H)}} = h^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} H_{\mu \nu}
+\end{equation*}
+
+\begin{align*}
+    \frac{\delta S_{B P}}{\delta X^{\lambda}} & = \left( - \frac{T}{2} \sqrt{- g} g^{a b} - \frac{T'}{2} \sqrt{- h} h^{a b} \right) \partial _{a} X^{\mu} \partial _{b} X^{\nu} \left( \frac{\partial G_{\mu \nu}}{\partial X^{\lambda}} + \frac{\partial H_{\mu \nu}}{\partial X^{\lambda}} \right) -                                                       \\
+                                              & - \partial _{c} \left( \left( - \frac{T}{2} \sqrt{- g} g^{a b} - \frac{T'}{2} \sqrt{- h} h^{a b} \right) \left( \delta ^{c} _{a} \delta ^{\mu} _{\lambda} \partial _{b} X^{\nu} + \partial _{a} X^{\mu} \delta ^{c} _{b} \delta ^{\nu} _{\lambda} \right) \left( G_{\mu \nu} + H_{\mu \nu} \right) \right) = \\
+                                              & = \left( - \frac{T}{2} \sqrt{- g} g^{a b} - \frac{T'}{2} \sqrt{- h} h^{a b} \right) \partial _{a} X^{\mu} \partial _{b} X^{\nu} \left( \frac{\partial G_{\mu \nu}}{\partial X^{\lambda}} + \frac{\partial H_{\mu \nu}}{\partial X^{\lambda}} \right) +                                                       \\
+                                              & + \left( T \sqrt{- g} g^{a b} + T' \sqrt{- h} h^{a b} \right) \partial _{a} \partial _{b} X^{\mu} (G_{\mu \lambda} + H_{\mu \lambda}) \overset{!}{=} 0
+\end{align*}
+\begin{equation*}
+    \downarrow
+\end{equation*}
+\begin{equation*}
+    \left( T \sqrt{- g} g^{a b} + T' \sqrt{- h} h^{a b} \right) \partial _{a} \partial _{b} X^{\mu} (G_{\mu \lambda} + H_{\mu \lambda}) = \left( \frac{T}{2} \sqrt{- g} g^{a b} + \frac{T'}{2} \sqrt{- h} h^{a b} \right) \partial _{a} X^{\mu} \partial _{b} X^{\nu} \left( \frac{\partial G_{\mu \nu}}{\partial X^{\lambda}} + \frac{\partial H_{\mu \nu}}{\partial X^{\lambda}} \right)
 \end{equation*}
 
 \end{document}
