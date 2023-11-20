@@ -295,47 +295,6 @@ where $g_{\mu\nu}$ and $f_{\mu\nu}$ are \emph{arbitrary} metrics, $M_g^2, M_f^2$
 	M^2_{eff} = \left( \frac{1}{M^2_g} + \frac{1}{M^2_f} \right)^{-1}
 \end{equation}
 
-\subsection{The Bimetric String}\label{sec:bimetric-nambu-goto}
-
-It would be natural to suspect that the action \eqref{eqn:modified-NG-action-v2} might be related to bimetric gravity in the target space of the string. We can see that this is indeed the case as follows.
-
-Consider a string propagating in a target space whose geometry is described by two bulk metrics. There are two ways that a string with two metrics might arise. One possibility is that there are two sets of embedding fields $X^\mu$ and $Y^\mu$. As a result the induced metrics on the string worldsheet would also be different for both sets of embedding fields. However, in this case we would not be talking about \emph{one} string but two \emph{different} strings described by the respective embedding functions. One could then proceed along the lines of \eqref{eqn:hassan-bimetric} and introduce a third term for the worldsheet action which describes a coupling between the two sets of embedding fields, of the form:
-\begin{equation}\label{eqn:ws-bimetric-interaction}
-	S_{int} = - T_{eff} \int \diff^2 x\, \Phi(g,h) \Psi(\mb{X}, \mb{Y}).
-\end{equation}
-Here $\Phi(g,h)$ is some function of the \emph{induced} metrics $g_{ab}$ and $h_{ab}$ on the two worldsheets and $\Psi(\mb{X}, \mb{Y})$ is some function of the embedding fields. The resulting action would be of the form:
-\begin{equation}\label{eqn:ws-bimetric-action-v1}
-	S_{BNG} = -T \int \diff^2 x\, \sqrt{-h} - T' \int \diff^2 x \, \sqrt{-g} + S_{int}.
-\end{equation}
-Here the subscript $BNG$ stands for ``Bimetric Nambu-Goto''.
-
-The second possibility is the following. Rather than considering two different sets of embedding fields, and consequently two different worldsheets, we can work with one set of embeddings $X^\mu(\tau,\sigma)$ and \emph{two different} bulk metrics $G_{\mu\nu}$ and $H_{\mu\nu}$. As a result we would now get two different induced metrics on the \emph{same} string worldsheet, given by:
-\begin{subequations}\label{eqn:ws-induced-metrics}
-	\begin{align}
-		g_{ab} & = \frac{\partial X^\mu}{\partial x^a} \frac{\partial X^\nu}{\partial x^b} G_{\mu\nu}  \\
-		h_{ab} & = \frac{\partial X^\mu}{\partial x^a} \frac{\partial X^\nu}{\partial x^b} H_{\mu\nu}.
-	\end{align}
-\end{subequations}
-We can then write down the combined action for the string worldsheet as:
-\begin{equation}\label{eqn:ws-bimetric-action-v2}
-	S'_{BNG} = -T \int \diff^2 x\, \sqrt{-h} - T' \int \diff^2 x \, \sqrt{-g} + S'_{int},
-\end{equation}
-where now $S'_{int}[g,h,\mb{X}]$ is a term describing the interaction between the two metrics living on the \emph{same} worldsheet.
-
-\subsection{Bimetric Polyakov Action}\label{sec:bimetric-polyakov}
-
-The expression \eqref{eqn:ws-bimetric-action-v2} is not ideal because it does not retain any memory of the form of the bulk metrics, unless these are included in the interaction term $S'_{int}$. One way to manifestly exhibit the dependence of the respective worldsheet actions on the two bulk metrics is to work with the Polaykov action.
-
-Following the general procedure, given in \cite{Callan1985Strings}, we can couple the worldsheet to a bulk metric as follows:
-\begin{equation}\label{eqn:polyakov-curved}
-	S_{P} = -\frac{T}{2} \int \diff^2 x \sqrt{-g} g^{ab} \partial_a X^\mu \partial_b X^\nu G_{\mu\nu},
-\end{equation}
-where $G_{\mu\nu}$ is now the bulk or target space metric. Using this form we can now write down the worldsheet Polyakov bimetric action for two bulk metrics:
-\begin{align}\label{eqn:polyakov-flat}
-	S_{PB} = & -\frac{T}{2} \int \diff^2 x\sqrt{-g} g^{ab} \partial_a X^\mu \partial_b X^\nu G_{\mu\nu} \nonumber \\
-	         & -\frac{T'}{2} \int \diff^2 x \sqrt{-h} h^{ab} \partial_a X^\mu \partial_b X^\nu H_{\mu\nu}.
-\end{align}
-
 \subsection{Modified Equations of Motion}\label{sec:modified-eom}
 
 Following the procedure done in $\cite{Zwiebach2009A-First}$, the correction(\ref{eqn:modified-NG-action}) does not change the form of the equations of motion and neither of the boundary conditions, i.e they are still given by
@@ -385,6 +344,47 @@ from which we can see that the correction factor modifies the speed of propagati
 \begin{equation} \label{eqn:wave-speed-corrected}
 	v = \frac{c}{F}.
 \end{equation}
+
+\section{The Bimetric String}\label{sec:bimetric-nambu-goto}
+
+It would be natural to suspect that the action \eqref{eqn:modified-NG-action-v2} might be related to bimetric gravity in the target space of the string. We can see that this is indeed the case as follows.
+
+Consider a string propagating in a target space whose geometry is described by two bulk metrics. There are two ways that a string with two metrics might arise. One possibility is that there are two sets of embedding fields $X^\mu$ and $Y^\mu$. As a result the induced metrics on the string worldsheet would also be different for both sets of embedding fields. However, in this case we would not be talking about \emph{one} string but two \emph{different} strings described by the respective embedding functions. One could then proceed along the lines of \eqref{eqn:hassan-bimetric} and introduce a third term for the worldsheet action which describes a coupling between the two sets of embedding fields, of the form:
+\begin{equation}\label{eqn:ws-bimetric-interaction}
+	S_{int} = - T_{eff} \int \diff^2 x\, \Phi(g,h) \Psi(\mb{X}, \mb{Y}).
+\end{equation}
+Here $\Phi(g,h)$ is some function of the \emph{induced} metrics $g_{ab}$ and $h_{ab}$ on the two worldsheets and $\Psi(\mb{X}, \mb{Y})$ is some function of the embedding fields. The resulting action would be of the form:
+\begin{equation}\label{eqn:ws-bimetric-action-v1}
+	S_{BNG} = -T \int \diff^2 y \, \sqrt{-h} - T' \int \diff^2 x \, \sqrt{-g} + S_{int}.
+\end{equation}
+Here the subscript $BNG$ stands for ``Bimetric Nambu-Goto''.
+
+The second possibility is the following. Rather than considering two different sets of embedding fields, and consequently two different worldsheets, we can work with one set of embeddings $X^\mu(\tau,\sigma)$ and \emph{two different} bulk metrics $G_{\mu\nu}$ and $H_{\mu\nu}$. As a result we would now get two different induced metrics on the \emph{same} string worldsheet, given by:
+\begin{subequations}\label{eqn:ws-induced-metrics}
+	\begin{align}
+		g_{ab} & = \frac{\partial X^\mu}{\partial x^a} \frac{\partial X^\nu}{\partial x^b} G_{\mu\nu}  \\
+		h_{ab} & = \frac{\partial X^\mu}{\partial x^a} \frac{\partial X^\nu}{\partial x^b} H_{\mu\nu}.
+	\end{align}
+\end{subequations}
+We can then write down the combined action for the string worldsheet as:
+\begin{equation}\label{eqn:ws-bimetric-action-v2}
+	S'_{BNG} = -T \int \diff^2 x\, \sqrt{-h} - T' \int \diff^2 x \, \sqrt{-g} + S'_{int},
+\end{equation}
+where now $S'_{int}[g,h,\mb{X}]$ is a term describing the interaction between the two metrics living on the \emph{same} worldsheet.
+
+\subsection{Bimetric Polyakov Action}\label{sec:bimetric-polyakov}
+
+The expression \eqref{eqn:ws-bimetric-action-v2} is not ideal because it does not retain any memory of the form of the bulk metrics, unless these are included in the interaction term $S'_{int}$. One way to manifestly exhibit the dependence of the respective worldsheet actions on the two bulk metrics is to work with the Polaykov action.
+
+Following the general procedure, given in \cite{Callan1985Strings}, we can couple the worldsheet to a bulk metric as follows:
+\begin{equation}\label{eqn:polyakov-curved}
+	S_{P} = -\frac{T}{2} \int \diff^2 x \sqrt{-g} g^{ab} \partial_a X^\mu \partial_b X^\nu G_{\mu\nu},
+\end{equation}
+where $G_{\mu\nu}$ is now the bulk or target space metric. Using this form we can now write down the worldsheet Polyakov bimetric action for two bulk metrics:
+\begin{align}\label{eqn:polyakov-flat}
+	S_{PB} = & -\frac{T}{2} \int \diff^2 x\sqrt{-g} g^{ab} \partial_a X^\mu \partial_b X^\nu G_{\mu\nu} \nonumber \\
+	         & -\frac{T'}{2} \int \diff^2 x \sqrt{-h} h^{ab} \partial_a X^\mu \partial_b X^\nu H_{\mu\nu}.
+\end{align}
 
 \section{Strings and Quantum Geometry}\label{sec:string-geometry}
 
