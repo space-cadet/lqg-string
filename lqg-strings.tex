@@ -388,7 +388,7 @@ where $G_{\mu\nu}$ is now the bulk or target space metric. Using this form we ca
 
 \subsection{The Bimetric Polyakov Equations} \label{sec:bimetric-polyakov-eoms}
 
-Following the usual procedure such as the one found in \cite{Tong2009Lectures}, we find two copies of the string energy-momentum tensor being set to zero, which can be used to find an expression for the induced metrics:
+Following the usual procedure such as the one found in \cite{Tong2009Lectures} with the bulk metric fixed, we find two copies of the string energy-momentum tensor being set to zero, which can be used to find an expression for the induced metrics:
 \begin{equation} \label{eqn:variation-wrt-g}
 	\frac{\delta S_{P B}}{\delta g^{c d}} \overset{!}{=} 0
 \end{equation}
@@ -431,7 +431,7 @@ with
 	\frac{1}{f^{(H)}} = h^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} H_{\mu \nu} .
 \end{equation}
 
-As for the embbeding fields equation, we get a wave equation for the coupled metric
+As for the embbeding fields equation, we get a non-homogeneous wave equation for the coupled metric
 \begin{equation} \label{eqn:variation-wrt-X}
 	\frac{\delta S_{P B}}{\delta X^{\lambda}} \overset{!}{=} 0
 \end{equation}
@@ -439,31 +439,33 @@ As for the embbeding fields equation, we get a wave equation for the coupled met
 	\downarrow
 \end{equation*}
 \begin{equation} \label{eqn:bimetric-wave-equation}
-	f^{\prime a b} \partial _{a} \partial _{b} X^{\mu} F_{\mu \lambda} = \frac{1}{2} f^{\prime a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \frac{\partial F_{\mu \nu}}{\partial X^{\lambda}} ,
+	\partial _{a} \left( f^{\prime a b} \partial _{b} X^{\mu} \right) F_{\mu \lambda} = 0 ,
 \end{equation}
-where
+with the coupled metric $f^{\prime a b}$ and the combined bulk metric $F_{\mu \nu}$ given by
 \begin{equation} \label{eqn:coupled-ws-metric}
-	f^{\prime a b} & = T \sqrt{- g} g^{a b} + T' \sqrt{- h} h^{a b}
+	f^{\prime a b} = T \sqrt{- g} g^{a b} + T' \sqrt{- h} h^{a b}
 \end{equation}
 \begin{equation} \label{eqn:combined-bulk-metric}
-	F_{\mu \nu}    & = G_{\mu \nu} + H_{\mu \nu} ,
+	F_{\mu \nu} = G_{\mu \nu} + H_{\mu \nu},
 \end{equation}
-in which we add a prime in the coupled metric $f^{\prime a b}$ since it is not quite the metric induced by the combined bulk metric $F_{\mu \nu}$. Since 2D metrics can always be written as a conformal metric, it is easy to see that eq(\ref{eqn:coupled-ws-metric}) can be recast as
-\begin{equation} \label{eqn:conformal-coupled-metric}
-	f^{\prime a b} = T \eta ^{a b} + T' \eta ^{a b} = (T + T') \eta ^{a b} .
-\end{equation}
-This reduces eq(\ref{eqn:bimetric-wave-equation}) to
-\begin{equation} \label{eqn:reduced-Polyakov-equation}
-	\eta ^{a b} \partial _{a} \partial _{b} X^{\kappa} = \frac{1}{2} \eta ^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} F^{\kappa \lambda} \partial _{\lambda} F_{\mu \nu} ,
-\end{equation}
-where if the R.H.S is set to be proportional to the embbeding fields, we thus get a Klein-Gordon equation
-\begin{equation} \label{eqn:Polyakov-Klein-Gordon-equation}
-	\eta ^{a b} \partial _{a} \partial _{b} X^{\mu} - \kappa X^{\mu} = 0 .
-\end{equation}
-
-\subsection{Relation With The Nambu-Goto Equation}
-
-At first glance, our recent analysis seems to conflict with the one done in sec(\ref{sec:modified-eom}), but as pointed out in \cite{}, the variable-speed wave equation can be turned into a Klein-Gordon equation as long as the speed function satisfies certain constraints [need to show], while it is known from the GR literature that variable-speed waves are equivalent to waves in curved space, which is precisely what we found, since for eq(\ref{eqn:bimetric-wave-equation}) to reduce into the Klein-Gordon equation(\ref{eqn:Polyakov-Klein-Gordon-equation}) we needed for the background geometry to be dynamical.
+where the coupled metric $f^{\prime a b}$ has a prime since it is not quite the metric induced by the combined metric $F_{\mu \nu}$. In the special case where $h = g^{-1}$ and $T' = T k \Delta / 2$, we get
+\begin{multline} \label{eqn:h-equal-g-inverse-f'}
+	f^{\prime a b} = T \bigg( \sqrt{- g} g^{a b} + \\
+	+ \frac{k \Delta}{2} \sqrt{- g^{-1}} U^{a} _{\ a'} (g^{-1})^{a' b'} U^{\ b} _{b'} \bigg) ,
+\end{multline}
+where we have a new $\mathrm{SO}(1,1)$ symmetry in the second metric since forcing the determinant to be the inverse of the first doesn't mean the second matrix will be just the inverse, but rather any matrix that differs by an orthogonal transformation $U$. Given the metric itself is a function of world-sheet coordinates, we require this to be a local symmetry $U(x)$, thus eq(\ref{eqn:bimetric-wave-equation}) becomes
+\begin{multline} \label{eqn:gauge-wave-eqn}
+	f^{\prime a b} \partial _{a} \partial _{b} X^{\mu} + T \Big( \partial _{a} (\sqrt{- g} g^{a b}) + \\
+	+ \frac{k \Delta}{2} \Big( U^{a} _{\ a'} \partial _{a} (\sqrt{- g^{-1}} (g^{-1})^{a' b'}) U^{\ b} _{b'} + \\
+	+ \partial _{a} U^{a} _{\ a'} (\sqrt{- g^{-1}} (g^{-1})^{a' b'}) U^{\ b} _{b'} + \\
+	+ U^{a} _{\ a'} (\sqrt{- g^{-1}} (g^{-1})^{a' b'}) \partial _{a} U^{\ b} _{b'} \Big) \Big) \partial _{b} X^{\mu} = 0 ,
+\end{multline}
+and after applying the conformal symmetry of 2D metrics in the form $g^{a b} = (\phi (x))^{-1} \eta ^{a b}$ the above equation reduces to
+\begin{multline}
+	\left( 1 + \frac{k \Delta}{2} \right) \eta ^{a b} \partial _{a} \partial _{b} X^{\mu} + \\
+	+ \frac{k \Delta}{2} \Big( \partial _{a} U^{a} _{\ a'} \eta ^{a' b'} U^{\ b} _{b'} + \\
+	+ U^{a} _{\ a'} \eta ^{a' b'} \partial _{a} U^{\ b} _{b'} \Big) \partial _{b} X^{\mu} = 0 .
+\end{multline}
 
 \section{Strings and Quantum Geometry}\label{sec:string-geometry}
 
