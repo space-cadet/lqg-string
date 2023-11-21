@@ -450,9 +450,20 @@ where
 \end{equation}
 in which we add a prime in the coupled metric $f^{\prime a b}$ since it is not quite the metric induced by the combined bulk metric $F_{\mu \nu}$. Since 2D metrics can always be written as a conformal metric, it is easy to see that eq(\ref{eqn:coupled-ws-metric}) can be recast as
 \begin{equation} \label{eqn:conformal-coupled-metric}
-	f^{\prime a b} = T \eta ^{a b} + T' \eta ^{a b} = (T + T') \eta ^{a b} ,
+	f^{\prime a b} = T \eta ^{a b} + T' \eta ^{a b} = (T + T') \eta ^{a b} .
 \end{equation}
-and in the special case of the second metric coming from the quantum geometry inverse area correction where $T' = T g \Delta / 2$ and the background geometry being fixed i.e $\partial _{\lambda} F_{\mu \nu} = 0$, we see that eq(\ref{eqn:bimetric-wave-equation}) almost reduces to eq(\ref{eqn:simplified-modified-wave-eqn}), the only difference being that the correction factor loses the dependence on the determinant $h$.
+In the special case where the second metric comes from the quantum geometry correction in the form of inverse area, where $T' = T k \Delta / 2$, eq(\ref{eqn:bimetric-wave-equation}) thus reduces to
+\begin{equation} \label{eqn:reduced-Polyakov-equation}
+	\eta ^{a b} \partial _{a} \partial _{b} X^{\kappa} = \frac{1}{2} \eta ^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} F^{\kappa \lambda} \partial _{\lambda} F_{\mu \nu} ,
+\end{equation}
+where if the R.H.S is set to be proportional to the embbeding fields, we thus get a Klein-Gordon equation
+\begin{equation} \label{eqn:Polyakov-Klein-Gordon-equation}
+	\eta ^{a b} \partial _{a} \partial _{b} X^{\mu} - \kappa X^{\mu} = 0 .
+\end{equation}
+
+\subsection{Relation With The Nambu-Goto Equation}
+
+At first glance, our recent analysis seems to conflict with the one done in sec(\ref{sec:modified-eom}), but as pointed out in \cite{}, the variable-speed wave equation can be turned into a Klein-Gordon equation as long as the speed function satisfies certain constraints [need to show], while it is known from the GR literature that variable-speed waves are equivalent to waves in curved space, which is precisely what we found, since for eq(\ref{eqn:bimetric-wave-equation}) to reduce into the Klein-Gordon equation(\ref{eqn:Polyakov-Klein-Gordon-equation}) we needed for the background geometry to be dynamical.
 
 \section{Strings and Quantum Geometry}\label{sec:string-geometry}
 

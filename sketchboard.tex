@@ -673,5 +673,34 @@ and promote to bimetric action
     f^{\prime a b} & = T \sqrt{- g} g^{a b} + T' \sqrt{- h} h^{a b} \\
     F_{\mu \nu}    & = G_{\mu \nu} + H_{\mu \nu}
 \end{align*}
+let $T' = T k \Delta / 2$ and $h = g^{-1}$
+\begin{equation*}
+    f^{\prime a b} = T \sqrt{- g} \left( g^{a b} + \frac{k \Delta}{2 (- g)} (g^{-1})^{a b} \right) ,
+\end{equation*}
+using conformal symmetry of 2D metrics $g^{a b} = (\phi (x))^{-1} \eta ^{a b} \implies (g^{-1})^{a b} = \phi (x) \eta ^{a b}$
+\begin{equation*}
+    f^{\prime a b} = T \left( 1 + \frac{k \Delta}{2} \right) \eta ^{a b}
+\end{equation*}
+\begin{equation*}
+    T \left( 1 + \frac{k \Delta}{2} \right) \eta ^{a b} \partial _{a} \partial _{b} X^{\mu} F_{\mu \lambda} = \frac{1}{2} T \left( 1 + \frac{k \Delta}{2} \right) \eta ^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \frac{\partial F_{\mu \nu}}{\partial X^{\lambda}}
+\end{equation*}
+\begin{equation*}
+    \downarrow
+\end{equation*}
+\begin{equation*}
+    \eta ^{a b} \partial _{a} \partial _{b} X^{\mu} F_{\mu \lambda} = \frac{1}{2} \eta ^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \partial _{\lambda} F_{\mu \nu}
+\end{equation*}
+\begin{equation*}
+    \downarrow
+\end{equation*}
+\begin{equation*}
+    \eta ^{a b} \partial _{a} \partial _{b} X^{\kappa} = \frac{1}{2} \eta ^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} F^{\kappa \lambda} \partial _{\lambda} F_{\mu \nu} =: \kappa X^{\kappa}
+\end{equation*}
+\begin{equation*}
+    \downarrow
+\end{equation*}
+\begin{equation*}
+    \eta ^{a b} \partial _{a} \partial _{b} X^{\mu} - \kappa X^{\mu} = 0
+\end{equation*}
 
 \end{document}
