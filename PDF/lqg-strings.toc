@@ -5,7 +5,7 @@
 \tocdepth@restore 
 \contentsline {section}{\numberline {}Todo list}{1}{section*.4}%
 \contentsline {section}{\numberline {I}Introduction}{1}{section*.5}%
-\contentsline {section}{\numberline {II}Strings in Background Fields and Emergent Gravity}{2}{section*.9}%
+\contentsline {section}{\numberline {II}Strings in Background Fields and Emergent Gravity}{3}{section*.9}%
 \contentsline {section}{\numberline {III}Modified Nambu Goto Action}{4}{section*.14}%
 \contentsline {subsection}{\numberline {A}Modified Equations of Motion}{5}{section*.15}%
 \contentsline {section}{\numberline {IV}The Bimetric String}{6}{section*.16}%
@@ -18,4 +18,4 @@
 \contentsline {section}{\numberline {}Acknowledgments}{7}{section*.23}%
 \appendix 
 \contentsline {section}{\numberline {A}}{7}{section*.24}%
-\contentsline {section}{\numberline {}References}{8}{section*.25}%
+\contentsline {section}{\numberline {}References}{7}{section*.25}%
