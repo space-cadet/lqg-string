@@ -652,51 +652,23 @@ and promote to bimetric action
 \end{equation*}
 
 \begin{align*}
-    \frac{\delta S_{B P}}{\delta X^{\lambda}} & = 0 - \partial _{c} \left( \left( - \frac{T}{2} \sqrt{- g} g^{a b} - \frac{T'}{2} \sqrt{- h} h^{a b} \right) (\delta ^{c} _{a} \delta ^{\mu} _{\lambda} \partial _{b} X^{\nu} + \partial _{a} X^{\mu} \delta ^{c} _{b} \delta ^{\nu} _{\lambda}) (G_{\mu \nu} + H_{\mu \nu}) \right) = \\
-                                              & = \partial _{a} \left( \left( T \sqrt{- g} g^{a b} + T' \sqrt{- h} h^{a b} \right) \partial _{b} X^{\mu} \right) (G_{\mu \lambda} + H_{\mu \lambda}) \overset{!}{=} 0
+    \frac{\delta S_{B P}}{\delta X^{\lambda}} & = \left( - \frac{T}{2} \sqrt{- g} g^{a b} \partial _{\lambda} G_{\mu \nu} - \frac{T'}{2} \sqrt{- h} h^{a b} \partial _{\lambda} H_{\mu \nu} \right) \partial _{a} X^{\mu} \partial _{b} X^{\nu} -                                                               \\
+                                              & - \partial _{c} \left( - \frac{T}{2} \sqrt{- g} g^{a b} G_{\mu \nu} - \frac{T'}{2} \sqrt{- h} h^{a b} H_{\mu \nu} \right) (\delta ^{c} _{a} \delta ^{\mu} _{\lambda} \partial _{b} X^{\nu} + \partial _{a} X^{\mu} \delta ^{c} _{b} \delta ^{\nu} _{\lambda}) = \\
+                                              & = \partial _{a} \left( T \sqrt{- g} g^{a b} G_{\mu \lambda} + T' \sqrt{- h} h^{a b} H_{\mu \lambda} \right) \partial _{b} X^{\mu} -                                                                                                                             \\
+                                              & - \left( \frac{T}{2} \sqrt{- g} g^{a b} \partial _{\lambda} G_{\mu \nu} + \frac{T'}{2} \sqrt{- h} h^{a b} \partial _{\lambda} H_{\mu \nu} \right) \partial _{a} X^{\mu} \partial _{b} X^{\nu} \overset{!}{=} 0
 \end{align*}
 \begin{equation*}
     \downarrow
 \end{equation*}
 \begin{equation*}
-    \partial _{a} \left( \left( T \sqrt{- g} g^{a b} + T' \sqrt{- h} h^{a b} \right) \partial _{b} X^{\mu} \right) (G_{\mu \lambda} + H_{\mu \lambda}) = 0
+    \partial _{a} \left( F^{a b} _{\mu \lambda} \partial _{b} X^{\mu} \right) = \frac{1}{2} \partial _{\lambda} F^{a b} _{\mu \nu} \partial _{a} X^{\mu} \partial _{b} X^{\nu} ,
 \end{equation*}
 \begin{equation*}
-    \downarrow
+    F^{a b} _{\mu \nu} = T \sqrt{- g} g^{a b} G_{\mu \nu} + T' \sqrt{- h} h^{a b} H_{\mu \nu}
 \end{equation*}
-\begin{equation*}
-    \partial _{a} \left( f^{\prime a b} \partial _{b} X^{\mu} \right) F_{\mu \lambda} = 0 ,
-\end{equation*}
-\begin{equation*}
-    \downarrow
-\end{equation*}
-\begin{equation*}
-    f^{\prime a b} \partial _{a} \partial _{b} X^{\mu} + \partial _{a} f^{\prime a b} \partial _{b} X^{\mu} = 0
-\end{equation*}
-\begin{align*}
-    f^{\prime a b} & = T \sqrt{- g} g^{a b} + T' \sqrt{- h} h^{a b} \\
-    F_{\mu \nu}    & = G_{\mu \nu} + H_{\mu \nu}
-\end{align*}
 let $T' = T k \Delta / 2$ and $h = g^{-1}$
 \begin{equation*}
-    f^{\prime a b} = T \left( \sqrt{- g} g^{a b} + \frac{k \Delta}{2} \sqrt{- g^{-1}} U^{a} _{\ a'} (g^{-1})^{a' b'} U^{\ b} _{b'} \right) ,
-\end{equation*}
-\begin{equation*}
-    \downarrow
-\end{equation*}
-\begin{multline*}
-    f^{\prime a b} \partial _{a} \partial _{b} X^{\mu} + T \Big( \partial _{a} (\sqrt{- g} g^{a b}) + \\
-    + \frac{k \Delta}{2} \left( U^{a} _{\ a'} \partial _{a} (\sqrt{- g^{-1}} (g^{-1})^{a' b'}) U^{\ b} _{b'} + \partial _{a} U^{a} _{\ a'} (\sqrt{- g^{-1}} (g^{-1})^{a' b'}) U^{\ b} _{b'} + U^{a} _{\ a'} (\sqrt{- g^{-1}} (g^{-1})^{a' b'}) \partial _{a} U^{\ b} _{b'} \right) \Big) \partial _{b} X^{\mu} = 0
-\end{multline*}
-use conformal symmetry $g^{a b} = (\phi (x))^{-1} \eta ^{a b}$
-\begin{equation*}
-    f^{\prime a b} \partial _{a} \partial _{b} X^{\mu} + T \Big( 0 + \frac{k \Delta}{2} \left( 0 + \partial _{a} U^{a} _{\ a'} \eta ^{a' b'} U^{\ b} _{b'} + U^{a} _{\ a'} \eta ^{a' b'} \partial _{a} U^{\ b} _{b'} \right) \Big) \partial _{b} X^{\mu} = 0
-\end{equation*}
-\begin{equation*}
-    \downarrow
-\end{equation*}
-\begin{equation*}
-    \left( 1 + \frac{k \Delta}{2} \right) \eta ^{a b} \partial _{a} \partial _{b} X^{\mu} + \frac{k \Delta}{2} \left( \partial _{a} U^{a} _{\ a'} \eta ^{a' b'} U^{\ b} _{b'} + U^{a} _{\ a'} \eta ^{a' b'} \partial _{a} U^{\ b} _{b'} \right) \partial _{b} X^{\mu} = 0
+    F^{a b} _{\mu \nu} = T \left( \sqrt{- g} g^{a b} G_{\mu \nu} + \frac{k \Delta}{2} \sqrt{- g^{-1}} U^{a} _{\ a'} (g^{-1})^{a' b'} U^{\ b} _{b'} (G^{-1})_{\mu \nu} \right) ,
 \end{equation*}
 
 \end{document}
