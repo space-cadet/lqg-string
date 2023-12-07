@@ -741,16 +741,29 @@ leading to
 
 \begin{align*}
     \frac{\delta S_{I A P}}{\delta X^{\lambda}} & = \left( \sqrt{- g} - \frac{k \Delta}{2 \sqrt{- g}} \right) g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \partial _{\lambda} G_{\mu \nu} - \partial _{c} \left( \left( \sqrt{- g} - \frac{k \Delta}{2 \sqrt{- g}} \right) 2 g^{a b} \delta ^{c} _{a} \delta ^{\mu} _{\lambda} \partial _{b} X^{\nu} G_{\mu \nu} \right) = \\
-                                                & = 0 - 2 \left( \sqrt{- g} - \frac{k \Delta}{2 \sqrt{- g}} \right) g^{a b} \partial _{a} \partial _{b} X^{\nu} G_{\lambda \nu} - 2 \partial _{a} \left( \left( \sqrt{- g} - \frac{k \Delta}{2 \sqrt{- g}} \right) g^{a b} \right) \partial _{b} X^{\nu} G_{\lambda \nu} =                                                         \\
-                                                & = - 2 \left( 1 - \frac{k \Delta}{2 (- g)} \right) \sqrt{- g} g^{a b} \partial _{a} \partial _{b} X^{\nu} G_{\lambda \nu} - 2 \partial _{a} \left( \left( 1 - \frac{k \Delta}{2 (- g)} \right) \sqrt{- g} g^{a b} \right) \partial _{b} X^{\nu} G_{\lambda \nu} \overset{!}{=} 0
+                                                & = \left( \sqrt{- g} - \frac{k \Delta}{2 \sqrt{- g}} \right) g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \partial _{\lambda} G_{\mu \nu} - 2 \left( \sqrt{- g} - \frac{k \Delta}{2 \sqrt{- g}} \right) g^{a b} \partial _{a} \partial _{b} X^{\nu} G_{\lambda \nu} -                                                      \\
+                                                & - 2 \partial _{a} \left( \left( \sqrt{- g} - \frac{k \Delta}{2 \sqrt{- g}} \right) g^{a b} \right) \partial _{b} X^{\nu} G_{\lambda \nu} =                                                                                                                                                                                       \\
+                                                & = \left( 1 - \frac{k \Delta}{2 (- g)} \right) \sqrt{- g} g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \partial _{\lambda} G_{\mu \nu} - 2 \left( 1 - \frac{k \Delta}{2 (- g)} \right) \sqrt{- g} g^{a b} \partial _{a} \partial _{b} X^{\nu} G_{\lambda \nu} -                                                            \\
+                                                & - 2 \partial _{a} \left( \left( 1 - \frac{k \Delta}{2 (- g)} \right) \sqrt{- g} g^{a b} \right) \partial _{b} X^{\nu} G_{\lambda \nu} \overset{!}{=} 0
 \end{align*}
 \begin{equation*}
     \downarrow
 \end{equation*}
-\begin{equation*}
-    \left( 1 - \frac{k \Delta}{2 (- g)} \right) \sqrt{- g} g^{a b} \partial _{a} \partial _{b} X^{\mu} + \partial _{a} \left( \left( 1 - \frac{k \Delta}{2 (- g)} \right) \sqrt{- g} g^{a b} \right) \partial _{b} X^{\mu} = 0 ,
-\end{equation*}
+\begin{multline*}
+    \left( 1 - \frac{k \Delta}{2 (- g)} \right) \sqrt{- g} g^{a b} \partial _{a} \partial _{b} X^{\nu} G_{\lambda \nu} + \partial _{a} \left( \left( 1 - \frac{k \Delta}{2 (- g)} \right) \sqrt{- g} g^{a b} \right) \partial _{b} X^{\nu} G_{\lambda \nu} = \\
+    \frac{1}{2} \left( 1 - \frac{k \Delta}{2 (- g)} \right) \sqrt{- g} g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \partial _{\lambda} G_{\mu \nu} ,
+\end{multline*}
 imposing conformal symmetry $g^{a b} = (\phi (x))^{-1} \eta ^{a b}$ and let $F' = \left( 1 - \frac{k \Delta}{2 \phi ^2} \right)$ leads to
+\begin{equation*}
+    \eta ^{a b} \partial _{a} \partial _{b} X^{\nu} G_{\lambda \nu} + \frac{1}{F'} \eta ^{a b} \partial _{a} F' \partial _{b} X^{\nu} G_{\lambda \nu} = \eta ^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \partial _{\lambda} G_{\mu \nu} ,
+\end{equation*}
+assuming flat background $G_{\mu \nu} = \eta _{\mu \nu}$
+\begin{equation*}
+    \eta ^{a b} \partial _{a} \partial _{b} X^{\nu} \eta _{\lambda \nu} + \frac{1}{F'} \eta ^{a b} \partial _{a} F' \partial _{b} X^{\nu} \eta _{\lambda \nu} = 0
+\end{equation*}
+\begin{equation*}
+    \downarrow
+\end{equation*}
 \begin{equation*}
     \eta ^{a b} \partial _{a} \partial _{b} X^{\mu} + \frac{1}{F'} \eta ^{a b} \partial _{a} F' \partial _{b} X^{\mu} = 0
 \end{equation*}
