@@ -666,7 +666,7 @@ and promote to bimetric action
 \begin{equation*}
     F^{a b} _{\mu \nu} = T \sqrt{- g} g^{a b} G_{\mu \nu} + T' \sqrt{- h} h^{a b} H_{\mu \nu}
 \end{equation*}
-let $T' = T k \Delta / 2$ and $h = g^{-1}$
+let $T' = T k \Delta / 2$ and $h = g^{-1} (H_{\mu \nu} = G_{\mu \nu})$
 \begin{equation*}
     F^{a b} _{\mu \nu} = T \left( \sqrt{- g} g^{a b} G_{\mu \nu} + \frac{k \Delta}{2} \sqrt{- g^{-1}} U^{a} _{\ a'} (g^{-1})^{a' b'} U^{\ b} _{b'} (G^{-1})_{\mu \nu} \right) ,
 \end{equation*}
@@ -701,15 +701,58 @@ imposing conformal symmetry $g^{a b} = (\phi (x))^{-1} \eta ^{a b} \implies D_{a
 
 \newpage
 
+\section{Inverse Area Polyakov}
+
+Start with Polyakov action
+\begin{equation*}
+    S_{P} = - \frac{T}{2} \int \diff ^2 x \sqrt{- g} g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu}
+\end{equation*}
+and make quantum geometry correction
+\begin{equation*}
+    \sqrt{- g} \rightarrow \sqrt{- (g + k \Delta)} \approx \sqrt{- g} \left( 1 + \frac{k \Delta}{2 g} + \mathcal{O} \left( \frac{k^2}{g^2} \right) \right)
+\end{equation*}
+leading to
+\begin{equation*}
+    S_{I A P} = - \frac{T}{2} \int \diff ^{2} x \left( \sqrt{- g} - \frac{k \Delta}{2 \sqrt{- g}} \right) g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu}
+\end{equation*}
+
+\subsection{EoMs}
+
 \begin{align*}
-    \partial _{a} \left( \sqrt{- g^{-1}} (g^{-1})^{b c} \right) & \rightarrow \partial _{a} \left( \sqrt{- g^{-1}} U^{b} _{\ b'} (g^{-1})^{b' c'} U^{\ c} _{c'} \right) =                                                                                                                 \\
-                                                                & = U ^{b} _{\ b'} \partial _{a} (\sqrt{- g^{-1}} (g^{-1})^{b' c'}) U^{\ c} _{c'} + \sqrt{- g^{-1}} (g^{-1})^{b' c'} \left( \partial _{a} U^{b} _{\ b'} U^{\ c} _{c'} + U^{b} _{\ b'} \partial _{a} U^{\ c} _{c'} \right)
+    \frac{\delta S_{I A P}}{\delta g^{c d}} & = \frac{\partial}{\partial g^{c d}} \left( \sqrt{- g} - \frac{k \Delta}{2 \sqrt{- g}} \right) g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} + \left( \sqrt{- g} - \frac{k \Delta}{2 \sqrt{- g}} \right) \delta ^{a} _{c} \delta ^{b} _{d} \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} = \\
+                                            & = \left( - \frac{1}{2} \sqrt{- g} g_{c d} + \frac{k \Delta}{4 \sqrt{- g}} g_{c d} \right) g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} + \left( \sqrt{- g} - \frac{k \Delta}{2 \sqrt{- g}} \right) \partial _{c} X^{\mu} \partial _{d} X^{\nu} G_{\mu \nu} =                                       \\
+                                            & = - \frac{1}{2} \left( \sqrt{- g} - \frac{k \Delta}{2 \sqrt{- g}} \right) g_{c d} g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} + \left( \sqrt{- g} - \frac{k \Delta}{2 \sqrt{- g}} \right) \partial _{c} X^{\mu} \partial _{d} X^{\nu} G_{\mu \nu} \overset{!}{=} 0
 \end{align*}
 \begin{equation*}
-    \Downarrow
+    \downarrow
 \end{equation*}
 \begin{equation*}
-    A' _{a} U^{b} _{\ b'} \sqrt{- g^{-1}} (g^{-1})^{b' c'} U^{\ c} _{c'} = A_{a} U^{b} _{\ b'} \sqrt{- g^{-1}} (g^{-1})^{b' c'} U^{\ c} _{c'} - \sqrt{- g^{-1}} (g^{-1})^{b' c'} (\partial _{a} U^{b} _{\ b'} U^{\ c} _{c'} + U^{b} _{\ b'} \partial _{a} U^{\ c} _{c'})
+    T_{c d} := \partial _{c} X^{\mu} \partial _{d} X^{\nu} G_{\mu \nu} - \frac{1}{2} g_{c d} g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} = 0
+\end{equation*}
+\begin{equation*}
+    \downarrow
+\end{equation*}
+\begin{equation*}
+    g_{c d} = 2 f \partial _{c} X^{\mu} \partial _{d} X^{\nu} G_{\mu \nu} ,
+\end{equation*}
+\begin{equation*}
+    \frac{1}{f} = g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu}
+\end{equation*}
+
+\begin{align*}
+    \frac{\delta S_{I A P}}{\delta X^{\lambda}} & = \left( \sqrt{- g} - \frac{k \Delta}{2 \sqrt{- g}} \right) g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \partial _{\lambda} G_{\mu \nu} - \partial _{c} \left( \left( \sqrt{- g} - \frac{k \Delta}{2 \sqrt{- g}} \right) 2 g^{a b} \delta ^{c} _{a} \delta ^{\mu} _{\lambda} \partial _{b} X^{\nu} G_{\mu \nu} \right) = \\
+                                                & = 0 - 2 \left( \sqrt{- g} - \frac{k \Delta}{2 \sqrt{- g}} \right) g^{a b} \partial _{a} \partial _{b} X^{\nu} G_{\lambda \nu} - 2 \partial _{a} \left( \left( \sqrt{- g} - \frac{k \Delta}{2 \sqrt{- g}} \right) g^{a b} \right) \partial _{b} X^{\nu} G_{\lambda \nu} =                                                         \\
+                                                & = - 2 \left( 1 - \frac{k \Delta}{2 (- g)} \right) \sqrt{- g} g^{a b} \partial _{a} \partial _{b} X^{\nu} G_{\lambda \nu} - 2 \partial _{a} \left( \left( 1 - \frac{k \Delta}{2 (- g)} \right) \sqrt{- g} g^{a b} \right) \partial _{b} X^{\nu} G_{\lambda \nu} \overset{!}{=} 0
+\end{align*}
+\begin{equation*}
+    \downarrow
+\end{equation*}
+\begin{equation*}
+    \left( 1 - \frac{k \Delta}{2 (- g)} \right) \sqrt{- g} g^{a b} \partial _{a} \partial _{b} X^{\mu} + \partial _{a} \left( \left( 1 - \frac{k \Delta}{2 (- g)} \right) \sqrt{- g} g^{a b} \right) \partial _{b} X^{\mu} = 0 ,
+\end{equation*}
+imposing conformal symmetry $g^{a b} = (\phi (x))^{-1} \eta ^{a b}$ and let $F = \left( 1 - \frac{k \Delta}{2 \phi ^2} \right)$ leads to
+\begin{equation*}
+    \eta ^{a b} \partial _{a} \partial _{b} X^{\mu} + \frac{1}{F} \eta ^{a b} \partial _{a} F \partial _{b} X^{\mu} = 0
 \end{equation*}
 
 \end{document}
