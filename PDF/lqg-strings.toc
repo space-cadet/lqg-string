@@ -5,16 +5,19 @@
 \tocdepth@restore 
 \contentsline {section}{\numberline {}Todo list}{1}{section*.4}%
 \contentsline {section}{\numberline {I}Introduction}{1}{section*.5}%
-\contentsline {section}{\numberline {II}Strings in Background Fields and Emergent Gravity}{2}{section*.9}%
+\contentsline {section}{\numberline {II}Strings in Background Fields and Emergent Gravity}{3}{section*.9}%
 \contentsline {section}{\numberline {III}Modified Nambu Goto Action}{4}{section*.14}%
 \contentsline {subsection}{\numberline {A}Modified Equations of Motion}{5}{section*.15}%
-\contentsline {section}{\numberline {IV}The Bimetric String}{6}{section*.16}%
-\contentsline {subsection}{\numberline {A}Bimetric Polyakov Action}{6}{section*.17}%
-\contentsline {subsection}{\numberline {B}The Bimetric Polyakov Equations}{6}{section*.18}%
-\contentsline {section}{\numberline {V}Strings and Quantum Geometry}{7}{section*.19}%
-\contentsline {section}{\numberline {VI}Physical Implications}{7}{section*.20}%
-\contentsline {section}{\numberline {VII}Discussion}{7}{section*.21}%
-\contentsline {section}{\numberline {}Acknowledgments}{7}{section*.22}%
+\contentsline {section}{\numberline {IV}Inverse Metric Polyakov}{6}{section*.16}%
+\contentsline {subsection}{\numberline {A}Solving The Equations of Motion}{6}{section*.17}%
+\contentsline {subsection}{\numberline {B}Relation With The Nambu-Goto Analysis}{6}{section*.18}%
+\contentsline {section}{\numberline {V}The Bimetric String}{6}{section*.19}%
+\contentsline {subsection}{\numberline {A}Bimetric Polyakov Action}{7}{section*.20}%
+\contentsline {subsection}{\numberline {B}The Bimetric Polyakov Equations}{7}{section*.21}%
+\contentsline {section}{\numberline {VI}Strings and Quantum Geometry}{8}{section*.22}%
+\contentsline {section}{\numberline {VII}Physical Implications}{8}{section*.23}%
+\contentsline {section}{\numberline {VIII}Discussion}{8}{section*.24}%
+\contentsline {section}{\numberline {}Acknowledgments}{8}{section*.25}%
 \appendix 
-\contentsline {section}{\numberline {A}}{7}{section*.23}%
-\contentsline {section}{\numberline {}References}{7}{section*.24}%
+\contentsline {section}{\numberline {A}}{8}{section*.26}%
+\contentsline {section}{\numberline {}References}{8}{section*.27}%

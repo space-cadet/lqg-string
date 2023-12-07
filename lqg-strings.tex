@@ -262,7 +262,7 @@ is nothing more than the \emph{area} of the string worldsheet. So when we are co
 	\sqrt{- h} \rightarrow \sqrt{- (h + g \Delta)}.
 \end{equation*}
 Here, $g = l_{pl}/l_s$, where $l_{pl}$ is the Planck scale, the scale at which quantum geometric effects become important; $l_s$ is the string scale where quantum geometric effects due to area quantization become small; $\Delta$ is a constant which corresponds to the square of the minimal quantum of area. In the limit that $l_s \gg l_{pl}$, $g \ll 1$ and the string action reduces to the conventional Nambu-Goto action with small corrections coming from quantum geometry. In this limit we can expand the integrand as follows:
-\begin{equation}
+\begin{equation} \label{eqn:inverse-metric-correction}
 	\sqrt{- (h + g \Delta)} \sim \sqrt{- h}\left(1 - \frac{1}{2} \frac{g \Delta}{(- h)} + \mc{O}(g^2/h^2)\right).
 \end{equation}
 Presumably the limit $g \ll 1$ corresponds to when the area of the string worldsheet is large compared to $\sqrt{h} \gg \Delta$. Thus in this limit $ g^2 \ll 1$ and $ h^2 \gg 1$ because of which we can drop the $\mc{O}(g^2/h^2)$ corrections. The final area corrected Nambu-Goto action becomes:
@@ -332,18 +332,93 @@ where the effective mass density and effective tension are given by
 	T_{eff}    & = \frac{T}{\gamma _{v_{\perp}}} \left( 1 + \frac{g \Delta}{2 (- h)} \right) . \label{eqn:effective-tension}
 \end{align}
 
-Rewriting eq(\ref{eqn:corrected-NG-wave-equation}) in terms of $\sigma$ derivatives and parameterizing $\sigma$ as (let $F = (1 + g \Delta / (2 (- h)))$)
+Rewriting eq(\ref{eqn:corrected-NG-wave-equation}) in terms of $\sigma$ derivatives and parameterizing $\sigma$ as (let $F^+ = 1 + g \Delta / 2 (- h)$)
 \begin{equation} \label{eqn:sigma-parameterization}
-	\sigma (q) = \frac{1}{T} \int _{0} ^{q} \diff E \frac{1}{F^2} = \frac{E (q)}{T F^2} ,
+	\sigma (q) = \frac{1}{T} \int _{0} ^{q} \diff E \frac{1}{(F^+)^2} = \frac{E (q)}{T (F^+)^2} ,
 \end{equation}
 we find the wave equation
 \begin{equation} \label{eqn:simplified-modified-wave-eqn}
-	F^2 \frac{\partial ^2 \Vec{X}}{\partial t^2} - \frac{\partial ^2 \Vec{X}}{\partial \sigma ^2} = 0 ,
+	(F^+)^2 \frac{\partial ^2 \Vec{X}}{\partial t^2} - \frac{\partial ^2 \Vec{X}}{\partial \sigma ^2} = 0 ,
 \end{equation}
 from which we can see that the correction factor modifies the speed of propagation of the wave in the string as
 \begin{equation} \label{eqn:wave-speed-corrected}
-	v = \frac{c}{F}.
+	v = \frac{c}{F^+}.
 \end{equation}
+
+\section{Inverse Metric Polyakov} \label{sec:inverse-metric-Polyakov}
+
+In the same way we considered the quantum geometry inverse metric correction to the Nambu-Goto action, it is also natural to consider such correction to the Polyakov string. we start with the action(\ref{eqn:polyakov-gravity}) and proceed with the inverse area correction(\ref{eqn:inverse-metric-correction}), which yields our corrected Polyakov action
+\begin{multline} \label{eqn:inverse-metric-Polyakov}
+	S_{I A P} = - \frac{T}{2} \int \diff ^2 x \left( \sqrt{- g} - \frac{k \Delta}{2 \sqrt{- g}} \right) \times \\ \times g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} .
+\end{multline}
+The equations of motion for the world-sheet metric are completely unchanged by this correction, so they are
+\begin{equation} \label{eqn:vary-wrt-g}
+	\frac{\delta S_{I A P}}{\delta g^{c d}} \overset{!}{=} 0
+\end{equation}
+\begin{equation*}
+	\downarrow
+\end{equation*}
+\begin{multline}
+	T_{c d} := \partial _{c} X^{\mu} \partial _{d} X^{\nu} G_{\mu \nu} - \\ - \frac{1}{2} g_{c d} g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} = 0 ,
+\end{multline}
+from which we can extract the metric $g_{c d}$ as
+\begin{equation} \label{eqn:ws-metric}
+	g_{c d} = 2 f \partial _{c} X^{\mu} \partial _{d} X^{\nu} G_{\mu \nu} ,
+\end{equation}
+where the function $f$ is given by
+\begin{equation} \label{eqn:inverse-area-f}
+	\frac{1}{f} = g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} .
+\end{equation}
+
+As for variation w.r.t the embbeding fields $X^{\lambda}$, we have
+\begin{equation} \label{eqn:vary-wrt-X}
+	\frac{\delta S_{I A P}}{\delta X^{\lambda}} \overset{!}{=} 0
+\end{equation}
+\begin{equation*}
+	\downarrow
+\end{equation*}
+\begin{multline} \label{eqn:X-eom-inverse-area}
+	F^{-} \sqrt{- g} g^{a b} \partial _{a} \partial _{b} X^{\nu} G_{\lambda \nu} + \partial _{a} \left( F^{-} \sqrt{- g} g^{a b} \right) \partial _{b} X^{\nu} G_{\lambda \nu} = \\ = \frac{1}{2} F^{-} \sqrt{- g} g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \partial _{\lambda} G_{\mu \nu} ,
+\end{multline}
+where $F^{-} = 1 - k \Delta / 2 (- g)$. Using conformal symmetry $g^{a b} = (\phi (x))^{-1} \eta ^{a b}$ and assuming flat background $G_{\mu \nu} = \eta _{\mu \nu}$, eq(\ref{eqn:X-eom-inverse-area}) simplify to
+\begin{equation} \label{eqn:X-eom-simplified}
+	\eta ^{a b} \partial _{a} \partial _{b} X^{\mu} + \eta ^{a b} \partial _{a} \ln (F^{-}) \partial _{b} X^{\mu} = 0 .
+\end{equation}
+
+\subsection{Solving The Equations of Motion} \label{sec:solving-eoms-inverse-area}
+
+Equation(\ref{eqn:X-eom-simplified}) seems a bit odd, but we can polish it by choosing a plane-wave ansatz for the embedding fields $X^{\mu} = X^{\mu} _{0} \e ^{-i (E \tau - p \sigma)}$ and using it to fix a form for the conformal function $\phi (x)$ appearing in $F^{-}$. By using the ansatz in eq(\ref{eqn:X-eom-simplified}), it becomes
+\begin{equation}
+	(E^{2} - p^{2}) X^{\mu} + i (E \partial _{\tau} \ln (F^{-}) - p \partial _{\sigma} \ln (F^{-})) X^{\mu} = 0 ,
+\end{equation}
+from which we can use the freedom in the conformal function to fix the second term as $- m^2 X^{\mu}$, with $- m^2 = p^2 - E^2$ on-shell, and this in turn implies that the derivatives of $\ln (F^{-})$ are given by
+\begin{equation} \label{eqn:derivatives-F-minus}
+	\partial _{\tau} \ln (F^{-}) = i E , \ \partial _{\sigma} \ln (F^{-}) = i p ,
+\end{equation}
+thus we have
+\begin{equation} \label{eqn:ln-F}
+	\ln (F^{-}) = i (E \tau + p \sigma) + a
+\end{equation}
+\begin{equation*}
+	\Downarrow
+\end{equation*}
+\begin{equation} \label{eqn:F-minus-exp}
+	F^{-} = A \e ^{i (E \tau + p \sigma)}
+\end{equation}
+\begin{equation*}
+	\Downarrow
+\end{equation*}
+\begin{equation} \label{eqn:phi}
+	\phi (\tau , \sigma) = \sqrt{\frac{k \Delta}{2 \left( 1 - A \e ^{i (E \tau + p \sigma)} \right)}} ,
+\end{equation}
+where $A = \e ^{a}$ and $a$ is some constant. At first glance it seems problematic that we have a complex conformal function $\phi (x)$, but the complex structure comes from our ansatz for the embedding fields, and when we choose either the real or imaginary part of the latter it should also pick the respective component of $\phi$. With this choice, we thus turned eq(\ref{eqn:X-eom-simplified}) into a Klein-Gordon equation
+\begin{equation} \label{eqn:X-Klein-Gordon-eqn}
+	\left( \partial _{\sigma} ^2 - \partial _{\tau} ^2 \right) X^{\mu} - m^2 X^{\mu} = 0 .
+\end{equation}
+
+\subsection{Relation With The Nambu-Goto Analysis} \label{sec:relation-with-NG-case}
+
+At first glance, our recent analysis of the Polyakov string with inverse metric correction seems to not be related to what we found in the analysis of the Nambu-Goto string. However, as pointed out in \cite{Grimshaw2010Homogenization}, wave equations with a variable speed (the result of the Nambu-Goto analysis) can be turned into Klein-Gordon equations (what we just found), as long as the speed function $c(x)$ satisfy certain criteria.[need to show]
 
 \section{The Bimetric String}\label{sec:bimetric-nambu-goto}
 
@@ -435,37 +510,6 @@ As for the embbeding fields equation, we get a non-homogeneous wave equation for
 \begin{equation} \label{eqn:variation-wrt-X}
 	\frac{\delta S_{P B}}{\delta X^{\lambda}} \overset{!}{=} 0
 \end{equation}
-\begin{equation*}
-	\downarrow
-\end{equation*}
-\begin{equation} \label{eqn:bimetric-wave-equation}
-	\partial _{a} \left( f^{\prime a b} \partial _{b} X^{\mu} \right) F_{\mu \lambda} = 0 ,
-\end{equation}
-with the coupled metric $f^{\prime a b}$ and the combined bulk metric $F_{\mu \nu}$ given by
-\begin{equation} \label{eqn:coupled-ws-metric}
-	f^{\prime a b} = T \sqrt{- g} g^{a b} + T' \sqrt{- h} h^{a b}
-\end{equation}
-\begin{equation} \label{eqn:combined-bulk-metric}
-	F_{\mu \nu} = G_{\mu \nu} + H_{\mu \nu},
-\end{equation}
-where the coupled metric $f^{\prime a b}$ has a prime since it is not quite the metric induced by the combined metric $F_{\mu \nu}$. In the special case where $h = g^{-1}$ and $T' = T k \Delta / 2$, we get
-\begin{multline} \label{eqn:h-equal-g-inverse-f'}
-	f^{\prime a b} = T \bigg( \sqrt{- g} g^{a b} + \\
-	+ \frac{k \Delta}{2} \sqrt{- g^{-1}} U^{a} _{\ a'} (g^{-1})^{a' b'} U^{\ b} _{b'} \bigg) ,
-\end{multline}
-where we have a new $\mathrm{SO}(1,1)$ symmetry in the second metric since forcing the determinant to be the inverse of the first doesn't mean the second matrix will be just the inverse, but rather any matrix that differs by an orthogonal transformation $U$. Given the metric itself is a function of world-sheet coordinates, we require this to be a local symmetry $U(x)$, thus eq(\ref{eqn:bimetric-wave-equation}) becomes
-\begin{multline} \label{eqn:gauge-wave-eqn}
-	f^{\prime a b} \partial _{a} \partial _{b} X^{\mu} + T \Big( \partial _{a} (\sqrt{- g} g^{a b}) + \\
-	+ \frac{k \Delta}{2} \Big( U^{a} _{\ a'} \partial _{a} (\sqrt{- g^{-1}} (g^{-1})^{a' b'}) U^{\ b} _{b'} + \\
-	+ \partial _{a} U^{a} _{\ a'} (\sqrt{- g^{-1}} (g^{-1})^{a' b'}) U^{\ b} _{b'} + \\
-	+ U^{a} _{\ a'} (\sqrt{- g^{-1}} (g^{-1})^{a' b'}) \partial _{a} U^{\ b} _{b'} \Big) \Big) \partial _{b} X^{\mu} = 0 ,
-\end{multline}
-and after applying the conformal symmetry of 2D metrics in the form $g^{a b} = (\phi (x))^{-1} \eta ^{a b}$ the above equation reduces to
-\begin{multline}
-	\left( 1 + \frac{k \Delta}{2} \right) \eta ^{a b} \partial _{a} \partial _{b} X^{\mu} + \\
-	+ \frac{k \Delta}{2} \Big( \partial _{a} U^{a} _{\ a'} \eta ^{a' b'} U^{\ b} _{b'} + \\
-	+ U^{a} _{\ a'} \eta ^{a' b'} \partial _{a} U^{\ b} _{b'} \Big) \partial _{b} X^{\mu} = 0 .
-\end{multline}
 
 \section{Strings and Quantum Geometry}\label{sec:string-geometry}
 
