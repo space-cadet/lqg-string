@@ -385,7 +385,7 @@ where $F^{-} = 1 - k \Delta / 2 (- g)$. Using conformal symmetry $g^{a b} = (\ph
 	\eta ^{a b} \partial _{a} \partial _{b} X^{\mu} + \eta ^{a b} \partial _{a} \ln (F^{-}) \partial _{b} X^{\mu} = 0 .
 \end{equation}
 
-\subsection{Solving The Equations of Motion} \label{sec:solving-eoms-inverse-area}
+\subsection{Simplifying The Equations of Motion} \label{sec:solving-eoms-inverse-area}
 
 Equation(\ref{eqn:X-eom-simplified}) seems a bit odd, but we can polish it by choosing a plane-wave ansatz for the embedding fields $X^{\mu} = X^{\mu} _{0} \e ^{-i (E \tau - p \sigma)}$ and using it to fix a form for the conformal function $\phi (x)$ appearing in $F^{-}$. By using the ansatz in eq(\ref{eqn:X-eom-simplified}), it becomes
 \begin{equation}
@@ -397,21 +397,21 @@ from which we can use the freedom in the conformal function to fix the second te
 \end{equation}
 thus we have
 \begin{equation} \label{eqn:ln-F}
-	\ln (F^{-}) = i (E \tau + p \sigma) + a
+	\ln (F^{-}) = i (E \tau + p \sigma) + a , \ a \in \mathbb{C}
 \end{equation}
 \begin{equation*}
 	\Downarrow
 \end{equation*}
 \begin{equation} \label{eqn:F-minus-exp}
-	F^{-} = A \e ^{i (E \tau + p \sigma)}
+	F^{-} = A \e ^{i (E \tau + p \sigma + \varphi)} , \ A > 0
 \end{equation}
 \begin{equation*}
 	\Downarrow
 \end{equation*}
 \begin{equation} \label{eqn:phi}
-	\phi (\tau , \sigma) = \sqrt{\frac{k \Delta}{2 \left( 1 - A \e ^{i (E \tau + p \sigma)} \right)}} ,
+	\phi (\tau , \sigma) = \sqrt{\frac{k \Delta}{2 \left( 1 - A \e ^{i (E \tau + p \sigma + \varphi)} \right)}} .
 \end{equation}
-where $A = \e ^{a}$ and $a$ is some constant. At first glance it seems problematic that we have a complex conformal function $\phi (x)$, but the complex structure comes from our ansatz for the embedding fields, and when we choose either the real or imaginary part of the latter it should also pick the respective component of $\phi$. With this choice, we thus turned eq(\ref{eqn:X-eom-simplified}) into a Klein-Gordon equation
+At first glance it seems problematic that we have a complex conformal function $\phi (x)$, but the complex structure comes from our ansatz for the embedding fields, and when we choose either the real or imaginary part of the latter it should also pick the respective component of $\phi$. With this choice, we thus turned eq(\ref{eqn:X-eom-simplified}) into a Klein-Gordon equation
 \begin{equation} \label{eqn:X-Klein-Gordon-eqn}
 	\left( \partial _{\sigma} ^2 - \partial _{\tau} ^2 \right) X^{\mu} - m^2 X^{\mu} = 0 .
 \end{equation}

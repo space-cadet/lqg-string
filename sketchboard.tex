@@ -808,13 +808,13 @@ use plane-wave ansatz $X^{\mu} = X^{\mu} _{0} \e ^{- i (E \tau - p \sigma)}$
     \Downarrow
 \end{equation*}
 \begin{equation*}
-    F' = A \e ^{i (E \tau + p \sigma)} , \ \mathfrak{Re} (A) > 0
+    F' = A \e ^{i (E \tau + p \sigma + \phi)} , \ A > 0
 \end{equation*}
 \begin{equation*}
     \Downarrow
 \end{equation*}
 \begin{equation*}
-    \phi (\tau , \sigma) = \sqrt{\frac{k \Delta}{2 \left( 1 - A \e ^{i (E \tau + p \sigma)} \right)}}
+    \phi (\tau , \sigma) = \sqrt{\frac{k \Delta}{2 \left( 1 - A \e ^{i (E \tau + p \sigma + \phi)} \right)}}
 \end{equation*}
 \begin{equation*}
     \downarrow
@@ -825,17 +825,59 @@ use plane-wave ansatz $X^{\mu} = X^{\mu} _{0} \e ^{- i (E \tau - p \sigma)}$
 
 \newpage
 
+\section{Inverse Area Polyakov v2}
+
+Quantum geometry correction
 \begin{equation*}
-    A \e ^{i (E \tau + p \sigma)} = 1 - \frac{k \Delta}{2 \phi ^{2}}
+    \sqrt{- g} \rightarrow \sqrt{- (g + k \Delta)} \approx \sqrt{- g} \left( 1 + \frac{k \Delta}{2 g} + \mathcal{O} \left( \frac{k^2}{g^2} \right) \right)
 \end{equation*}
 \begin{equation*}
-    \frac{k \Delta}{2 \phi ^{2}} = 1 - A \e ^{i (E \tau + p \sigma)}
+    \Downarrow
 \end{equation*}
 \begin{equation*}
-    \phi ^2 = \frac{k \Delta}{2 \left( 1 - A \e ^{i (E \tau + p \sigma)} \right)}
+    g_{a b} \rightarrow \Tilde{g}_{a b} = g_{a b} + k \Delta \delta _{a b}
 \end{equation*}
 \begin{equation*}
-    \phi = \sqrt{\frac{k \Delta}{2 \left( 1 - A \e ^{i (E \tau + p \sigma)} \right)}}
+    \downarrow
 \end{equation*}
+\begin{equation*}
+    g^{a b} \rightarrow \Tilde{g}^{a b} \approx g^{a b} - k \Delta \delta ^{a b}
+\end{equation*}
+\begin{equation*}
+    \downarrow
+\end{equation*}
+\begin{equation*}
+    S = - \frac{T}{2} \int \diff ^2 x \left( \sqrt{- g} - \frac{k \Delta}{2 \sqrt{- g}} \right) \left( g^{a b} - k \Delta \delta ^{a b} \right) \partial _{a} X^{\mu} \partial _{b} X^{\nu} \widetilde{G}_{\mu \nu} ,
+\end{equation*}
+\begin{equation*}
+    \widetilde{G}_{\mu \nu} = G_{\mu \nu} + k \Theta \delta _{\mu \nu} ,
+\end{equation*}
+where $\Theta$ is related to minimal hyper-volume of bulk quantum geometry
+
+\subsection{EoMs}
+
+\begin{align*}
+    \frac{\delta S}{\delta g^{c d}} & = \frac{\partial}{\partial g^{c d}} \left( \sqrt{- g} - \frac{k \Delta}{2 \sqrt{- g}} \right) \left( g^{a b} - k \Delta \delta ^{a b} \right) \partial _{a} X^{\mu} \partial _{b} X^{\nu} \widetilde{G}_{\mu \nu} + \\
+                                    & + \left( \sqrt{- g} - \frac{k \Delta}{2 \sqrt{- g}} \right) \frac{\partial}{\partial g^{c d}} \left( g^{a b} - k \Delta \delta ^{a b} \right) \partial _{a} X^{\mu} \partial _{b} X^{\nu} \widetilde{G}_{\mu \nu} = \\
+                                    & = \left( - \frac{1}{2} \sqrt{- g} g_{c d} + \frac{k \Delta}{4 \sqrt{- g}} g_{c d} \right) \left( g^{a b} - k \Delta \delta ^{a b} \right) \partial _{a} X^{\mu} \partial _{b} X^{\nu} \widetilde{G}_{\mu \nu} +     \\
+                                    & + \left( \sqrt{- g} - \frac{k \Delta}{2 \sqrt{- g}} \right) \delta ^{a} _{c} \delta ^{b} _{d} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \widetilde{G}_{\mu \nu} =                                                 \\
+                                    & = - \frac{1}{2} \left( \sqrt{- g} - \frac{k \Delta}{2 \sqrt{- g}} \right) g_{c d} \left( g^{a b} - k \Delta \delta ^{a b} \right) \partial _{a} X^{\mu} \partial _{b} X^{\nu} \widetilde{G}_{\mu \nu} +             \\
+                                    & + \left( \sqrt{- g} - \frac{k \Delta}{2 \sqrt{- g}} \right) \partial _{c} X^{\mu} \partial _{d} X^{\nu} \widetilde{G}_{\mu \nu} \overset{!}{=} 0
+\end{align*}
+\begin{equation*}
+    \downarrow
+\end{equation*}
+\begin{equation*}
+    T_{c d} := \partial _{c} X^{\mu} \partial _{d} X^{\nu} \widetilde{G}_{\mu \nu} - \frac{1}{2} g_{c d} \left( g^{a b} - k \Delta \delta ^{a b} \right) \partial _{a} X^{\mu} \partial _{b} X^{\nu} \widetilde{G}_{\mu \nu} = 0
+\end{equation*}
+\begin{equation*}
+    g_{c d} = 2 f \partial _{c} X^{\mu} \partial _{d} X^{\nu} \widetilde{G}_{\mu \nu} ,
+\end{equation*}
+\begin{align*}
+    \frac{1}{f} & = \left( g^{a b} - k \Delta \delta ^{a b} \right) \partial _{a} X^{\mu} \partial _{b} X^{\nu} \widetilde{G}_{\mu \nu} =                                                                                                                   \\
+                & = g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} - k \Theta g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \delta _{\mu \nu} -                                                                                      \\
+                & - k \Delta \delta ^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} - k^2 \Delta \Theta \delta ^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \delta _{\mu \nu} \approx                                                  \\
+                & \approx g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} - k \Theta g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \delta _{\mu \nu} - k \Delta \delta ^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu}
+\end{align*}
 
 \end{document}
