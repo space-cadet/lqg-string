@@ -880,4 +880,31 @@ where $\Theta$ is related to minimal hyper-volume of bulk quantum geometry
                 & \approx g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} - k \Theta g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \delta _{\mu \nu} - k \Delta \delta ^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu}
 \end{align*}
 
+\newpage
+
+\section{Relating NG and Polyakov analysis}
+
+From NG analysis
+\begin{equation*}
+    (F^{+})^2 \frac{\partial ^2 X^{\mu}}{\partial t^2} - \frac{\partial ^2 X^{\mu}}{\partial x^2} = 0 ,
+\end{equation*}
+make change of variables $\tau = \tau (t , x)$ and $\sigma = \sigma (t , x)$
+\begin{equation*}
+    (F^{+})^2 \left( \frac{\partial \tau}{\partial t} \frac{\partial}{\partial \tau} + \frac{\partial \sigma}{\partial t} \frac{\partial}{\partial \sigma} \right) \left( \frac{\partial \tau}{\partial t} \frac{\partial X^{\mu}}{\partial \tau} + \frac{\partial \sigma}{\partial t} \frac{\partial X^{\mu}}{\partial \sigma} \right) - \left( \frac{\partial \tau}{\partial x} \frac{\partial}{\partial \tau} + \frac{\partial \sigma}{\partial x} \frac{\partial}{\partial \sigma} \right) \left( \frac{\partial \tau}{\partial x} \frac{\partial X^{\mu}}{\partial \tau} + \frac{\partial \sigma}{\partial x} \frac{\partial X^{\mu}}{\partial \sigma} \right) = 0
+\end{equation*}
+\begin{multline*}
+    (F^{+})^2 \left( \left( \frac{\partial \tau}{\partial t} \right) ^2 \frac{\partial ^2 X^{\mu}}{\partial \tau ^2} + 2 \frac{\partial \tau}{\partial t} \frac{\partial \sigma}{\partial t} \frac{\partial ^2 X^{\mu}}{\partial \tau \partial \sigma} + \left( \frac{\partial \sigma}{\partial t} \right) ^2 \frac{\partial ^2 X^{\mu}}{\partial \sigma ^2} \right) - \\
+    - \left( \left( \frac{\partial \tau}{\partial x} \right) ^2 \frac{\partial ^2 X^{\mu}}{\partial \tau ^2} + 2 \frac{\partial \tau}{\partial x} \frac{\partial \sigma}{\partial x} \frac{\partial ^2 X^{\mu}}{\partial \tau \partial \sigma} + \left( \frac{\partial \sigma}{\partial x} \right) ^2 \frac{\partial ^2 X^{\mu}}{\partial \sigma ^2} \right) = 0 ,
+\end{multline*}
+which comparing to what is obtained from the Polyakov analysis
+\begin{equation*}
+    \frac{\partial ^2 X^{\mu}}{\partial \sigma ^2} - \frac{\partial ^2 X^{\mu}}{\partial \tau ^2} - m^2 X^{\mu} = 0 ,
+\end{equation*}
+we get
+\begin{align*}
+    (F^{+})^2 \left( \frac{\partial \sigma}{\partial t} \right) ^2 - \left( \frac{\partial \sigma}{\partial x} \right) ^2                                                                                                                                                       & = 1               \\
+    (F^{+})^2 \left( \frac{\partial \tau}{\partial t} \right) ^2 - \left( \frac{\partial \tau}{\partial x} \right) ^2                                                                                                                                                           & = - 1             \\
+    2 (F^{+})^2 \frac{\partial \tau}{\partial t} \frac{\partial \sigma}{\partial t} \frac{\partial ^2 X^{\mu}}{\partial \tau \partial \sigma} - 2 \frac{\partial \tau}{\partial x} \frac{\partial \sigma}{\partial x} \frac{\partial ^2 X^{\mu}}{\partial \tau \partial \sigma} & = - m^2 X^{\mu} ,
+\end{align*}
+
 \end{document}
