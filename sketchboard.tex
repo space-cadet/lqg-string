@@ -894,12 +894,15 @@ make change of variables $\tau = \tau (t , x)$ and $\sigma = \sigma (t , x)$
 \end{equation*}
 \begin{multline*}
     (F^{+})^2 \left( \left( \frac{\partial \tau}{\partial t} \right) ^2 \frac{\partial ^2 X^{\mu}}{\partial \tau ^2} + 2 \frac{\partial \tau}{\partial t} \frac{\partial \sigma}{\partial t} \frac{\partial ^2 X^{\mu}}{\partial \tau \partial \sigma} + \left( \frac{\partial \sigma}{\partial t} \right) ^2 \frac{\partial ^2 X^{\mu}}{\partial \sigma ^2} \right) - \\
-    - \left( \left( \frac{\partial \tau}{\partial x} \right) ^2 \frac{\partial ^2 X^{\mu}}{\partial \tau ^2} + 2 \frac{\partial \tau}{\partial x} \frac{\partial \sigma}{\partial x} \frac{\partial ^2 X^{\mu}}{\partial \tau \partial \sigma} + \left( \frac{\partial \sigma}{\partial x} \right) ^2 \frac{\partial ^2 X^{\mu}}{\partial \sigma ^2} \right) = 0 ,
+    - \left( \left( \frac{\partial \tau}{\partial x} \right) ^2 \frac{\partial ^2 X^{\mu}}{\partial \tau ^2} + 2 \frac{\partial \tau}{\partial x} \frac{\partial \sigma}{\partial x} \frac{\partial ^2 X^{\mu}}{\partial \tau \partial \sigma} + \left( \frac{\partial \sigma}{\partial x} \right) ^2 \frac{\partial ^2 X^{\mu}}{\partial \sigma ^2} \right) = 0
 \end{multline*}
-which, without loss of generality, we can set
+\begin{equation*}
+    \left( (\partial _t \tau)^2 - v^2 (\partial _x \tau)^2 \right) \partial ^2 _{\tau} X^{\mu} + \left( (\partial _t \sigma)^2 - v^2 (\partial _x \sigma)^2 \right) \partial ^2 _{\sigma} X^{\mu} + 2 \left( \partial _t \tau \partial _t \sigma - v^2 \partial _x \tau \partial _x \sigma \right) \partial _{\tau} \partial _{\sigma} X^{\mu} = 0
+\end{equation*}
+where $v = 1 / F^{+}$. Without loss of generality, we can set (just rescale/rotate the coordinates)
 \begin{align*}
-    (F^{+})^2 \left( \frac{\partial \sigma}{\partial t} \right) ^2 - \left( \frac{\partial \sigma}{\partial x} \right) ^2 & = \left( \frac{\partial \tau}{\partial x} \right) ^2 - (F^{+})^2 \left( \frac{\partial \tau}{\partial t} \right) ^2 \\
-    (F^{+})^2 \frac{\partial \tau}{\partial t} \frac{\partial \sigma}{\partial t}                                         & = \frac{\partial \tau}{\partial x} \frac{\partial \sigma}{\partial x}
+    (\partial _t \sigma)^2 - v^2 (\partial _x \sigma)^2 & = v^2 (\partial _x \tau)^2 - (\partial _t \tau)^2 \\
+    \partial _t \tau \partial _t \sigma                 & = v^2 \partial _x \tau \partial _x \sigma
 \end{align*}
 
 \end{document}
