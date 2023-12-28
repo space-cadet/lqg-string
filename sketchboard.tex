@@ -888,7 +888,11 @@ make change of variables $\tau = \tau (t , x)$ and $\sigma = \sigma (t , x)$
 \begin{multline*}
     (F^{+})^2 \left( \left( \frac{\partial \tau}{\partial t} \right) ^2 \frac{\partial ^2 X^{\mu}}{\partial \tau ^2} + 2 \frac{\partial \tau}{\partial t} \frac{\partial \sigma}{\partial t} \frac{\partial ^2 X^{\mu}}{\partial \tau \partial \sigma} + \left( \frac{\partial \sigma}{\partial t} \right) ^2 \frac{\partial ^2 X^{\mu}}{\partial \sigma ^2} \right) - \\
     - \left( \left( \frac{\partial \tau}{\partial x} \right) ^2 \frac{\partial ^2 X^{\mu}}{\partial \tau ^2} + 2 \frac{\partial \tau}{\partial x} \frac{\partial \sigma}{\partial x} \frac{\partial ^2 X^{\mu}}{\partial \tau \partial \sigma} + \left( \frac{\partial \sigma}{\partial x} \right) ^2 \frac{\partial ^2 X^{\mu}}{\partial \sigma ^2} \right) + \\
-    + \left( (F^{+})^2 \frac{\partial ^2 \tau}{\partial t^2} - \frac{\partial ^2 \tau}{\partial x^2} \right) \frac{\partial X^{\mu}}{\partial \tau} + \left( (F^{+})^2 \frac{\partial ^2 \sigma}{\partial t^2} - \frac{\partial ^2 \sigma}{\partial x^2} \right) \frac{\partial X^{\mu}}{\partial \sigma} = 0 .
+    + \left( (F^{+})^2 \frac{\partial ^2 \tau}{\partial t^2} - \frac{\partial ^2 \tau}{\partial x^2} \right) \frac{\partial X^{\mu}}{\partial \tau} + \left( (F^{+})^2 \frac{\partial ^2 \sigma}{\partial t^2} - \frac{\partial ^2 \sigma}{\partial x^2} \right) \frac{\partial X^{\mu}}{\partial \sigma} = 0
+\end{multline*}
+\begin{multline*}
+    \left( (F^{+})^2 (\partial _{t} \tau)^2 - (\partial _{x} \tau)^2 \right) \partial _{\tau} ^2 X^{\mu} + \left( (F^{+})^2 (\partial _{t} \sigma)^2 - (\partial _{x} \sigma)^2 \right) \partial _{\sigma} ^2 X^{\mu} + \\
+    + 2 \left( (F^{+})^2 \partial _{t} \tau \partial _{t} \sigma - \partial _{x} \tau \partial _{x} \sigma \right) \partial _{\tau} \partial _{\sigma} X^{\mu} + \left( (F^{+})^2 \partial _{t} ^2 \tau - \partial _{x} ^2 \tau \right) \partial _{\tau} X^{\mu} + \left( (F^{+})^2 \partial _{t} ^2 \sigma - \partial _{x} ^2 \sigma \right) \partial _{\sigma} X^{\mu} = 0
 \end{multline*}
 Without loss of generality, we can set (just rescale/rotate the coordinates)
 \begin{align*}
@@ -971,7 +975,7 @@ To determine $f(x)$, we undo the chain rule for $x$ now:
 \end{equation*}
 giving us
 \begin{equation*}
-    \kappa = v^{\frac{1}{2}} .
+    \kappa = v^{\frac{1}{2}} , \ v = v (x) .
 \end{equation*}
 Substituting this into the earlier equation yields
 \begin{equation*}
@@ -980,7 +984,21 @@ Substituting this into the earlier equation yields
 with
 \begin{align*}
     - m^2 & = \frac{\partial _{\tau} ^2 \kappa - \partial _{\sigma} ^2 \kappa}{\kappa} + \frac{(\partial _{t} v \partial _{x} \sigma + v \partial _{x} v \partial _{x} \tau) \partial _{\tau} \kappa + (\partial _{t} v \partial _{x} \tau + v \partial _{x} v \partial _{x} \sigma) \partial _{\sigma} \kappa}{\kappa \left( (\partial _{t} \tau)^2 - v^2 (\partial _{x} \tau)^2 \right)} = \\
-          & = \frac{\partial _{\tau} ^2 \kappa - \partial _{\sigma} ^2 \kappa}{\kappa} + \frac{\partial _{t} v (\partial _{x} \sigma \partial _{\tau} \kappa + \partial _{x} \tau \partial _{\sigma} \kappa) + v \partial _{x} v \partial _{x} \kappa}{\kappa \left( (\partial _{t} \tau)^2 - v^2 (\partial _{x} \tau)^2 \right)}
+          & = \frac{\partial _{\tau} ^2 \kappa - \partial _{\sigma} ^2 \kappa}{\kappa} + \frac{\partial _{t} v (\partial _{x} \sigma \partial _{\tau} \kappa + \partial _{x} \tau \partial _{\sigma} \kappa) + v \partial _{x} v \partial _{x} \kappa}{\kappa \left( (\partial _{t} \tau)^2 - v^2 (\partial _{x} \tau)^2 \right)} =                                                          \\
+          & = \frac{\partial _{\tau} ^2 \kappa - \partial _{\sigma} ^2 \kappa}{\kappa} + \frac{(\partial _{x} v)^2}{\left( (\partial _{t} \tau)^2 - v^2 (\partial _{x} \tau)^2 \right)} ,
+\end{align*}
+where by use of chain rule we have that
+\begin{equation*}
+    \partial _{t} ^2 \kappa - v^2 \partial _{x} ^2 \kappa - v \partial _{x} v \partial _{x} \kappa = ((\partial _{t} \tau)^2 - v^2 (\partial _{x} \tau)^2) (\partial _{\tau} ^2 \kappa - \partial _{\sigma} ^2 \kappa) ,
+\end{equation*}
+where since $\kappa = v^{\frac{1}{2}}$, $- m^2$ reduces to
+\begin{equation*}
+    - m^2 = \frac{(\partial _{x} v)^2 - 2 v \partial _{x} ^2 v}{4 \left( (\partial _{t} \tau)^2 - v^2 (\partial _{x} \tau)^2 \right)} ,
+\end{equation*}
+with $\tau$ satisfying
+\begin{align*}
+    \partial _{t} \tau   & = v \partial _{x} \sigma \\
+    v \partial _{x} \tau & = \partial _{t} \sigma
 \end{align*}
 
 \end{document}
