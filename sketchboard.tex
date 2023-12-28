@@ -1002,4 +1002,36 @@ with $\tau$ satisfying
 \end{align*}
 such that $- m^2$ is indeed constant.
 
+\newpage
+
+\section{Solutions for the Polyakov KG eqn}
+
+From the inverse-area corrected Polyakov action we have the equation
+\begin{equation*}
+    (\partial _{\sigma} ^2 - \partial _{\tau} ^2) X^{\mu} - m^2 X^{\mu} = 0
+\end{equation*}
+subjected to the constraint
+\begin{equation*}
+    \partial _{c} X^{\mu} \partial _{d} X^{\nu} \eta _{\mu \nu} - \frac{1}{2} g_{c d} g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \eta _{\mu \nu} = 0 ,
+\end{equation*}
+which with conformal gauge $g_{a b} = \phi \eta _{a b}$ becomes
+\begin{equation*}
+    \partial _{c} X^{\mu} \partial _{d} X^{\nu} \eta_{\mu \nu} = \frac{1}{2} \eta _{c d} \eta ^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \eta _{\mu \nu}
+\end{equation*}
+or more explicitly,
+\begin{align*}
+    \partial _{\tau} X^{\mu} \partial _{\tau} X^{\nu} \eta _{\mu \nu}     & = - \frac{1}{2} \eta ^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \eta _{\mu \nu} \\
+    \partial _{\sigma} X^{\mu} \partial _{\sigma} X^{\nu} \eta _{\mu \nu} & = \frac{1}{2} \eta ^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \eta _{\mu \nu}   \\
+    \partial _{\tau} X^{\mu} \partial _{\sigma} X^{\nu} \eta_{\mu \nu}    & = \partial _{\sigma} X^{\mu} \partial _{\tau} X^{\nu} \eta _{\mu \nu} = 0 .
+\end{align*}
+The EoM is just a one-dimensional Klein-Gordon equation, which has general solution given by Fourier transform
+\begin{equation*}
+    X^{\mu} (\tau , \sigma) = \frac{1}{2 \pi} \int \diff p \frac{1}{2 E (p)} \left( a^{\mu} (p) \e ^{- i (- E \tau + p \sigma)} + b^{\mu} (p) \e ^{i (- E \tau + p \sigma)} \right) ,
+\end{equation*}
+where $E (p) = \sqrt{p^2 + m^2}$. The derivatives are
+\begin{align*}
+    \partial _{\tau} X^{\mu}   & = \frac{i}{4 \pi} \int \diff p \left( a^{\mu} (p) \e^{- i (- E \tau + p \sigma)} - b^{\mu} (p) \e ^{i (- E \tau + p \sigma)} \right)                              \\
+    \partial _{\sigma} X^{\mu} & = \frac{i}{4 \pi} \int \diff p \frac{p}{\sqrt{p^2 + m^2}} \left( - a^{\mu} (p) \e ^{-i (- E \tau + p \sigma)} + b^{\mu} (p) \e ^{i (- E \tau + p \sigma)} \right)
+\end{align*}
+
 \end{document}
