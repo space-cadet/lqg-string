@@ -409,7 +409,38 @@ At first glance it seems problematic that we have a complex conformal function $
 
 \subsection{Relation With The Nambu-Goto Analysis} \label{sec:relation-with-NG-case}
 
-At first glance, our recent analysis of the Polyakov string with inverse metric correction seems to not be related to what we found in the analysis of the Nambu-Goto string. However, as pointed out in \cite{Grimshaw2010Homogenization}, wave equations with a variable speed (the result of the Nambu-Goto analysis) can be turned into Klein-Gordon equations (what we just found), as long as the speed function $c(x)$ satisfy certain criteria.[need to show]
+At first glance, our recent analysis of the Polyakov string with inverse metric correction seems to not be related to what we found in the analysis of the Nambu-Goto string. However, as pointed out in \cite{Grimshaw2010Homogenization}, wave equations with a variable speed (the result of the Nambu-Goto analysis) can be turned into Klein-Gordon equations (what we just found). While they're work deals only with space-varying wave speed, it is straight forward to generalise the procedure to also include time dependence, but ironically enough the calculations lead to the conclusion that the wave speed $v = 1 / F^{+}$ is actually time independent.
+
+Following the procedure found in \cite{Grimshaw2010Homogenization}, we start with eq(\ref{eqn:simplified-modified-wave-eqn}) obtained in sec(\ref{sec:modified-eom}), renaming $\sigma$ as $x$ and dividing by $(F^{+})^2$ such that we have $v^2$ on the second term like the mentioned work, and perform a change of variables $(t , x) \rightarrow (\tau (t , x) , \sigma (t , x))$, where without loss of generality (one needs just to rescale and/or rotate the coordinates) we set
+\begin{multline} \label{eqn:new-coordinates-constraints-quadratic}
+	\ \ \ \ \ \ \ \ \ \ (\partial _{t} \sigma)^2 - v^2 (\partial _{x} \sigma)^2 = v^2 (\partial _{x} \tau)^2 - (\partial _{t} \tau)^2 \\
+	\partial _{t} \tau \partial _{t} \sigma = v^2 \partial _{x} \tau \partial _{x} \sigma , \ \ \ \ \ \ \ \ \ \ \ \
+\end{multline}
+or more compactly,
+\begin{multline} \label{eqn:new-coordinates-constraints-compact}
+	\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \partial _{t} \tau = v \partial _{x} \sigma \\
+	\partial _{t} \sigma = v \partial _{x} \tau \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ,
+\end{multline}
+which is equivalent to
+\begin{multline} \label{eqn:new-coordinates-constraints-second-order}
+	\ \ \ \ \ \ \ \ \ \ \ \partial _{t} ^2 \tau - v^2 \partial _{x} ^2 \tau = \partial _{t} v \partial _{x} \sigma + v \partial _{x} v \partial _{x} \tau \\
+	\partial _{t} ^2 \sigma - v^2 \partial _{x} ^2 \sigma = \partial _{t} v \partial _{x} \tau + v \partial _{x} v \partial _{x} \sigma . \ \ \ \ \ \ \
+\end{multline}
+This turns eq(\ref{eqn:simplified-modified-wave-eqn}) into
+\begin{multline} \label{eqn:modified-wave-eqn-new}
+	\partial _{\tau} ^2 X^{\mu} - \partial _{\sigma} ^2 X^{\mu} + \\
+	+ \frac{\partial _{t} v \partial _{x} \sigma + v \partial _{x} v \partial _{x} \tau}{((\partial _{t} \tau)^2 - v^2 (\partial _{x} \tau)^2)} \partial _{\tau} X^{\mu} + \\
+	+ \frac{\partial _{t} v \partial _{x} \tau + v \partial _{x} v \partial _{x} \sigma}{((\partial _{t} \tau)^2 - v^2 (\partial _{x} \tau)^2)} \partial _{\sigma} X^{\mu} = 0 .
+\end{multline}
+Next, we introduce $X^{\mu} = \kappa (\tau , \sigma) W^{\mu} (\tau , \sigma)$ such that terms proportional to first derivatives of $W^{\mu}$ cancel out. This is obtained by choosing $\kappa = v^{1/2}$ and concluding that $v$ only depends on $x$. With this, eq(\ref{eqn:modified-wave-eqn-new}) turns into a Klein-Gordon equation
+\begin{equation}
+	\partial _{\tau} ^2 W^{\mu} - \partial _{\sigma} ^2 W^{\mu} + m^2 W^{\mu} = 0 ,
+\end{equation}
+with \textquotedblleft mass" squared given by
+\begin{equation}
+	m^2 = \frac{(\partial _{x} v)^2 - 2 v \partial _{x} ^2 v}{4 \left( (\partial _{t} \tau)^2 - v^2 (\partial _{x} \tau)^2 \right)}
+\end{equation}
+and $\tau (t , x)$ satisfying constraints(\ref{eqn:new-coordinates-constraints-compact}). This shows that our action(\ref{eqn:inverse-metric-Polyakov}) is indeed in agreement with the inverse area corrected Nambu-Goto action(\ref{eqn:modified-NG-action}).
 
 \section{The Bimetric String}\label{sec:bimetric-nambu-goto}
 

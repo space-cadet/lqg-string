@@ -979,26 +979,27 @@ giving us
 \end{equation*}
 Substituting this into the earlier equation yields
 \begin{equation*}
-    \partial _{\tau} ^2 Y^{\mu} - \partial _{\sigma} ^2 Y^{\mu} - m^2 Y^{\mu} = 0 ,
+    \partial _{\tau} ^2 Y^{\mu} - \partial _{\sigma} ^2 Y^{\mu} + m^2 Y^{\mu} = 0 ,
 \end{equation*}
 with
 \begin{align*}
-    - m^2 & = \frac{\partial _{\tau} ^2 \kappa - \partial _{\sigma} ^2 \kappa}{\kappa} + \frac{(\partial _{t} v \partial _{x} \sigma + v \partial _{x} v \partial _{x} \tau) \partial _{\tau} \kappa + (\partial _{t} v \partial _{x} \tau + v \partial _{x} v \partial _{x} \sigma) \partial _{\sigma} \kappa}{\kappa \left( (\partial _{t} \tau)^2 - v^2 (\partial _{x} \tau)^2 \right)} = \\
-          & = \frac{\partial _{\tau} ^2 \kappa - \partial _{\sigma} ^2 \kappa}{\kappa} + \frac{\partial _{t} v (\partial _{x} \sigma \partial _{\tau} \kappa + \partial _{x} \tau \partial _{\sigma} \kappa) + v \partial _{x} v \partial _{x} \kappa}{\kappa \left( (\partial _{t} \tau)^2 - v^2 (\partial _{x} \tau)^2 \right)} =                                                          \\
-          & = \frac{\partial _{\tau} ^2 \kappa - \partial _{\sigma} ^2 \kappa}{\kappa} + \frac{(\partial _{x} v)^2}{\left( (\partial _{t} \tau)^2 - v^2 (\partial _{x} \tau)^2 \right)} ,
+    m^2 & = \frac{\partial _{\tau} ^2 \kappa - \partial _{\sigma} ^2 \kappa}{\kappa} + \frac{(\partial _{t} v \partial _{x} \sigma + v \partial _{x} v \partial _{x} \tau) \partial _{\tau} \kappa + (\partial _{t} v \partial _{x} \tau + v \partial _{x} v \partial _{x} \sigma) \partial _{\sigma} \kappa}{\kappa \left( (\partial _{t} \tau)^2 - v^2 (\partial _{x} \tau)^2 \right)} = \\
+        & = \frac{\partial _{\tau} ^2 \kappa - \partial _{\sigma} ^2 \kappa}{\kappa} + \frac{\partial _{t} v (\partial _{x} \sigma \partial _{\tau} \kappa + \partial _{x} \tau \partial _{\sigma} \kappa) + v \partial _{x} v \partial _{x} \kappa}{\kappa \left( (\partial _{t} \tau)^2 - v^2 (\partial _{x} \tau)^2 \right)} =                                                          \\
+        & = \frac{\partial _{\tau} ^2 \kappa - \partial _{\sigma} ^2 \kappa}{\kappa} + \frac{(\partial _{x} v)^2}{\left( (\partial _{t} \tau)^2 - v^2 (\partial _{x} \tau)^2 \right)} ,
 \end{align*}
 where by use of chain rule we have that
 \begin{equation*}
     \partial _{t} ^2 \kappa - v^2 \partial _{x} ^2 \kappa - v \partial _{x} v \partial _{x} \kappa = ((\partial _{t} \tau)^2 - v^2 (\partial _{x} \tau)^2) (\partial _{\tau} ^2 \kappa - \partial _{\sigma} ^2 \kappa) ,
 \end{equation*}
-where since $\kappa = v^{\frac{1}{2}}$, $- m^2$ reduces to
+where since $\kappa = v^{\frac{1}{2}}$, $m^2$ reduces to
 \begin{equation*}
-    - m^2 = \frac{(\partial _{x} v)^2 - 2 v \partial _{x} ^2 v}{4 \left( (\partial _{t} \tau)^2 - v^2 (\partial _{x} \tau)^2 \right)} ,
+    m^2 = \frac{(\partial _{x} v)^2 - 2 v \partial _{x} ^2 v}{4 \left( (\partial _{t} \tau)^2 - v^2 (\partial _{x} \tau)^2 \right)} ,
 \end{equation*}
 with $\tau$ satisfying
 \begin{align*}
     \partial _{t} \tau   & = v \partial _{x} \sigma \\
     v \partial _{x} \tau & = \partial _{t} \sigma
 \end{align*}
+such that $- m^2$ is indeed constant.
 
 \end{document}

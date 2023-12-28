@@ -11,7 +11,7 @@
 \contentsline {section}{\numberline {IV}Inverse Metric Polyakov}{6}{section*.16}%
 \contentsline {subsection}{\numberline {A}Simplifying The Equations of Motion}{6}{section*.17}%
 \contentsline {subsection}{\numberline {B}Relation With The Nambu-Goto Analysis}{6}{section*.18}%
-\contentsline {section}{\numberline {V}The Bimetric String}{6}{section*.19}%
+\contentsline {section}{\numberline {V}The Bimetric String}{7}{section*.19}%
 \contentsline {subsection}{\numberline {A}Bimetric Polyakov Action}{7}{section*.20}%
 \contentsline {subsection}{\numberline {B}The Bimetric Polyakov Equations}{7}{section*.21}%
 \contentsline {section}{\numberline {VI}Strings and Quantum Geometry}{8}{section*.22}%
