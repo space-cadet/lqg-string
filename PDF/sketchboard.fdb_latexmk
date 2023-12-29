@@ -1,7 +1,8 @@
 # Fdb version 4
-["pdflatex"] 1703866709 "e:/LQG-Strings/lqg-string/sketchboard.tex" "PDF/sketchboard.pdf" "sketchboard" 1703866710 2
+["pdflatex"] 1703883820 "e:/LQG-Strings/lqg-string/sketchboard.tex" "PDF/sketchboard.pdf" "sketchboard" 1703883821 2
   "C:/Users/Luigi/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1700436637 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/Luigi/AppData/Local/MiKTeX/fonts/pk/ljfour/public/bbold/dpi600/bbold10.pk" 1700191725 12432 e4bad06bd50e6ebf977e7eda462f76c7 ""
+  "C:/Users/Luigi/AppData/Local/MiKTeX/fonts/pk/ljfour/public/bbold/dpi600/bbold7.pk" 1703869477 9384 22e063916d3e0ffb75c921d7490f350a ""
   "C:/Users/Luigi/AppData/Local/MiKTeX/fonts/pk/ljfour/public/esint/dpi600/esint10.pk" 1700191727 10544 4022de501f1f856eef30f400dc8a82ae ""
   "C:/Users/Luigi/AppData/Local/MiKTeX/fonts/tfm/public/bbold/bbold10.tfm" 1700191722 788 aa2bfd021367054a224c4cf5a9967398 ""
   "C:/Users/Luigi/AppData/Local/MiKTeX/fonts/tfm/public/bbold/bbold5.tfm" 1700191724 764 6e384685b780f01b6a1744eb2db32b69 ""
@@ -183,10 +184,10 @@
   "E:/MikTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "E:/MikTeX/tex/latex/was/upgreek.sty" 1665850770 5794 9054e31be15d93f1e6bd28cca2b6643f ""
   "E:/MikTeX/tex/latex/xcolor/xcolor.sty" 1656236890 56148 51a9a8571c07b9921892ae11063ae853 ""
-  "PDF/sketchboard.aux" 1703866710 5110 cea19ad6d82eae0338fc30e43dfc499f "pdflatex"
-  "PDF/sketchboard.out" 1703866710 6102 c97f88a6a8fd9b80a7e04292cf59f578 "pdflatex"
-  "e:/LQG-Strings/lqg-string/sketchboard.tex" 1703866709 75765 a9efe4a2d01bea45bbbef595715d49d2 ""
-  "sketchboard.tex" 1703866709 75765 a9efe4a2d01bea45bbbef595715d49d2 ""
+  "PDF/sketchboard.aux" 1703883821 5255 007df0276a5ff294aee14395e77115d0 "pdflatex"
+  "PDF/sketchboard.out" 1703883821 6399 225724f298cdff1464422dffde40cd2e "pdflatex"
+  "e:/LQG-Strings/lqg-string/sketchboard.tex" 1703883820 82196 3f9dcd85af6fa5ffc45270b3e6b31676 ""
+  "sketchboard.tex" 1703883820 82196 3f9dcd85af6fa5ffc45270b3e6b31676 ""
   (generated)
   "PDF/sketchboard.aux"
   "PDF/sketchboard.log"
