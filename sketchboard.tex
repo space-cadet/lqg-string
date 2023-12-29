@@ -1024,14 +1024,104 @@ or more explicitly,
     \partial _{\sigma} X^{\mu} \partial _{\sigma} X^{\nu} \eta _{\mu \nu} & = \frac{1}{2} \eta ^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \eta _{\mu \nu}   \\
     \partial _{\tau} X^{\mu} \partial _{\sigma} X^{\nu} \eta_{\mu \nu}    & = \partial _{\sigma} X^{\mu} \partial _{\tau} X^{\nu} \eta _{\mu \nu} = 0 .
 \end{align*}
+These simplify further by expanding the summation on $a,b$:
+\begin{equation*}
+    \partial _{\tau} X^{\mu} \partial _{\tau} X^{\nu} \eta _{\mu \nu} = - \frac{1}{2} \left( - \partial _{\tau} X^{\mu} \partial _{\tau} X^{\nu} \eta _{\mu \nu} + \partial _{\sigma} X^{\mu} \partial _{\sigma} X^{\nu} \eta _{\mu \nu} \right)
+\end{equation*}
+\begin{equation*}
+    \partial _{\tau} X^{\mu} \partial _{\tau} X^{\nu} \eta _{\mu \nu} = - \partial _{\sigma} X^{\mu} \partial _{\sigma} X^{\nu} \eta _{\mu \nu} .
+\end{equation*}
 The EoM is just a one-dimensional Klein-Gordon equation, which has general solution given by Fourier transform
 \begin{equation*}
     X^{\mu} (\tau , \sigma) = \frac{1}{2 \pi} \int \diff p \frac{1}{2 E (p)} \left( a^{\mu} (p) \e ^{- i (- E \tau + p \sigma)} + b^{\mu} (p) \e ^{i (- E \tau + p \sigma)} \right) ,
 \end{equation*}
 where $E (p) = \sqrt{p^2 + m^2}$. The derivatives are
 \begin{align*}
-    \partial _{\tau} X^{\mu}   & = \frac{i}{4 \pi} \int \diff p \left( a^{\mu} (p) \e^{- i (- E \tau + p \sigma)} - b^{\mu} (p) \e ^{i (- E \tau + p \sigma)} \right)                              \\
-    \partial _{\sigma} X^{\mu} & = \frac{i}{4 \pi} \int \diff p \frac{p}{\sqrt{p^2 + m^2}} \left( - a^{\mu} (p) \e ^{-i (- E \tau + p \sigma)} + b^{\mu} (p) \e ^{i (- E \tau + p \sigma)} \right)
+    \partial _{\tau} X^{\mu}   & = \frac{i}{4 \pi} \int \diff p \left( a^{\mu} (p) \e^{- i (- E \tau + p \sigma)} - b^{\mu} (p) \e ^{i (- E \tau + p \sigma)} \right)                                \\
+    \partial _{\sigma} X^{\mu} & = \frac{i}{4 \pi} \int \diff p \frac{p}{\sqrt{p^2 + m^2}} \left( - a^{\mu} (p) \e ^{-i (- E \tau + p \sigma)} + b^{\mu} (p) \e ^{i (- E \tau + p \sigma)} \right) .
 \end{align*}
+Starting with the mixed constraint,
+\begin{multline*}
+    \partial _{\tau} X^{\mu} \partial _{\sigma} X^{\nu} \eta _{\mu \nu} = - \frac{\eta _{\mu \nu}}{(4 \pi)^2} \int \diff p \left( a^{\mu} (p) \e^{- i (- E (p) \tau + p \sigma)} - b^{\mu} (p) \e ^{i (- E (p) \tau + p \sigma)} \right) \times \\
+    \times \int \diff p' \frac{p'}{\sqrt{p^{\prime 2} + m^2}} \left( - a^{\nu} (p') \e ^{-i (- E (p') \tau + p' \sigma)} + b^{\nu} (p') \e ^{i (- E (p') \tau + p' \sigma)} \right) =
+\end{multline*}
+\begin{multline*}
+    = - \frac{\eta _{\mu \nu}}{(4 \pi)^2} \int \diff p \diff p' \frac{p'}{\sqrt{p^{\prime 2} + m^2}} \left( a^{\mu} (p) \e^{- i (- E (p) \tau + p \sigma)} - b^{\mu} (p) \e ^{i (- E (p) \tau + p \sigma)} \right) \times \\
+    \times \left( - a^{\nu} (p') \e ^{-i (- E (p') \tau + p' \sigma)} + b^{\nu} (p') \e ^{i (- E (p') \tau + p' \sigma)} \right) =
+\end{multline*}
+\begin{multline*}
+    = - \frac{\eta _{\mu \nu}}{(4 \pi)^2} \int \diff p \diff p' \frac{p'}{\sqrt{p^{\prime 2} + m^2}} \Big( - a^{\mu} (p) a^{\nu} (p') \e ^{i (E (p) + E (p')) \tau} \e ^{- i (p + p') \sigma} + a^{\mu} (p) b^{\nu} (p') \e ^{i (E (p) - E (p')) \tau} \e ^{- i (p - p') \sigma} + \\
+    + b^{\mu} (p) a^{\nu} (p') \e ^{- i (E (p) - E (p')) \tau} \e ^{i (p - p') \sigma} - b^{\mu} (p) b^{\nu} (p') \e ^{- i (E (p) + E (p')) \tau} \e ^{i (p + p') \sigma} \Big) = 0 .
+\end{multline*}
+If we integrate this expression over $\sigma$ we obtain
+\begin{multline*}
+    - \frac{\eta _{\mu \nu}}{(4 \pi)^2} \int \diff p \diff p' \frac{p'}{\sqrt{p^{\prime 2} + m^2}} \Big( - a^{\mu} (p) a^{\nu} (p') \e ^{i (E (p) + E (p')) \tau} \int \diff \sigma \e ^{-i (p + p') \sigma} + \\
+    + a^{\mu} (p) b^{\nu} (p') \e ^{i (E (p) - E (p')) \tau} \int \diff \sigma \e ^{-i (p - p') \sigma} + b^{\mu} (p) a^{\nu} (p') \e ^{- i (E (p) - E (p')) \tau} \int \diff \sigma \e ^{i (p - p') \sigma} - \\
+    - b^{\mu} (p) b^{\nu} (p') \e ^{- i (E (p) + E (p')) \tau} \int \diff \sigma \e ^{i (p + p') \sigma} \Big) =
+\end{multline*}
+\begin{multline*}
+    = - \frac{\eta _{\mu \nu}}{8 \pi} \int \diff p \diff p' \frac{p'}{\sqrt{p^{\prime 2} + m^2}} \Big( - a^{\mu} (p) a^{\nu} (p') \e ^{i (E (p) + E (p')) \tau} \delta (p + p') + a^{\mu} (p) b^{\nu} (p') \e ^{i (E (p) - E (p')) \tau} \delta (p - p') + \\
+    + b^{\mu} (p) a^{\nu} (p') \e ^{- i (E (p) - E (p')) \tau} \delta (p - p') - b^{\mu} (p) b^{\nu} (p') \e ^{- i (E (p) + E (p')) \tau} \delta (p + p') \Big) =
+\end{multline*}
+\begin{equation*}
+    = - \frac{\eta _{\mu \nu}}{8 \pi} \int \diff p \frac{p}{\sqrt{p^2 + m^2}} \Big( a^{\mu} (p) a^{\nu} (- p) \e ^{2 i E (p) \tau} + a^{\mu} (p) b^{\nu} (p) + b^{\mu} (p) a^{\nu} (p) + b^{\mu} (p) b^{\nu} (- p) \e ^{- 2 i E (p) \tau} \Big) = 0
+\end{equation*}
+which implies the whole expression inside the integral must vanish, thus we have (leaving $(a^{\mu} b^{\nu} + b^{\mu} a^{\nu}) \eta _{\mu \nu}$ as is since eventually these will not be numbers and may not commute, thus will not be equal to $2 a^{\mu} b^{\nu} \eta _{\mu \nu}$)
+\begin{equation*}
+    \Big( a^{\mu} (p) a^{\nu} (- p) \e ^{2 i E (p) \tau} + a^{\mu} (p) b^{\nu} (p) + b^{\mu} (p) a^{\nu} (p) + b^{\mu} (p) b^{\nu} (- p) \e ^{- 2 i E (p) \tau} \Big) \eta _{\mu \nu} = 0 .
+\end{equation*}
+
+As for the other part of the constraint, let's start with the L.H.S
+\begin{multline*}
+    \partial _{\tau} X^{\mu} \partial _{\tau} X^{\nu} \eta _{\mu \nu} = - \frac{1}{(4 \pi)^2} \int \diff p \diff p' \Big( a^{\mu} (p) \e^{- i (- E (p) \tau + p \sigma)} - b^{\mu} (p) \e ^{i (- E (p) \tau + p \sigma)} \Big) \times \\
+    \times \Big( a^{\nu} (p') \e^{- i (- E (p') \tau + p' \sigma)} - b^{\nu} (p') \e ^{i (- E (p') \tau + p' \sigma)} \Big) =
+\end{multline*}
+\begin{multline*}
+    = - \frac{\eta _{\mu \nu}}{(4 \pi)^2} \int \diff p \diff p' \Big( a^{\mu} (p) a^{\nu} (p') \e ^{i (E (p) + E (p')) \tau} \e ^{- i (p + p') \sigma} - a^{\mu} (p) b^{\nu} (p') \e ^{i (E (p) - E (p')) \tau} \e ^{- i (p - p') \sigma} - \\
+    - b^{\mu} (p) a^{\nu} (p') \e ^{- i (E (p) - E (p')) \tau} \e ^{i (p - p') \sigma} + b^{\mu} (p) b^{\nu} (p') \e ^{- i (E (p) + E (p')) \tau} \e ^{i (p + p') \sigma} \Big) ,
+\end{multline*}
+which we integrate over $\sigma$ to get
+\begin{multline*}
+    - \frac{\eta _{\mu \nu}}{8 \pi} \int \diff p \diff p' \Big( a^{\mu} (p) a^{\nu} (p') \e ^{i (E (p) + E (p')) \tau} \delta (p + p') - a^{\mu} (p) b^{\nu} (p') \e ^{i (E (p) - E (p')) \tau} \delta (p - p') - \\
+    - b^{\mu} (p) a^{\nu} (p') \e ^{- i (E (p) - E (p')) \tau} \delta (p - p') + b^{\mu} (p) b^{\nu} (p') \e ^{- i (E (p) + E (p')) \tau} \delta (p + p') \Big) =
+\end{multline*}
+\begin{equation*}
+    = - \frac{\eta _{\mu \nu}}{8 \pi} \int \diff p \Big( a^{\mu} (p) a^{\nu} (- p) \e ^{2 i E (p) \tau} - a^{\mu} (p) b^{\nu} (p) - b^{\mu} (p) a^{\nu} (p) + b^{\mu} (p) b^{\nu} (- p) \e ^{- 2 i E (p) \tau} \Big) ,
+\end{equation*}
+and now for the R.H.S
+\begin{multline*}
+    - \partial _{\sigma} X^{\mu} \partial _{\sigma} X^{\nu} \eta _{\mu \nu} = \frac{\eta _{\mu \nu}}{(4 \pi)^2} \int \diff p \diff p' \frac{p}{\sqrt{p^2 + m^2}} \frac{p'}{\sqrt{p^{\prime 2} + m^2}} \Big( - a^{\mu} (p) \e ^{- i (-E \tau + p \sigma)} + b^{\mu} (p) \e ^{i (- E \tau + p \sigma)} \Big) \times \\
+    \times \Big( - a^{\nu} (p') \e ^{- i (- E (p') \tau + p' \sigma)} + b^{\nu} (p') \e ^{i (- E (p') \tau + p' \sigma)} \Big) =
+\end{multline*}
+\begin{multline*}
+    = \frac{\eta _{\mu \nu}}{(4 \pi)^2} \int \diff p \diff p' \frac{p p'}{E (p) E (p')} \Big( a^{\mu} (p) a^{\nu} (p') \e ^{i (E (p) + E (p')) \tau} \e ^{- i (p + p') \sigma} - a^{\mu} (p) b^{\nu} (p') \e ^{i (E (p) - E (p')) \tau} \e ^{- i (p - p') \sigma} - \\
+    - b^{\mu} (p) a^{\nu} (p') \e ^{- i (E (p) - E (p')) \tau} \e ^{i (p - p') \sigma} + b^{\mu} (p) b^{\nu} (p) \e ^{- i ( E (p) + E (p')) \tau} \e ^{i (p + p') \sigma} \Big) ,
+\end{multline*}
+which once again we integrate over $\sigma$,
+\begin{multline*}
+    \frac{\eta _{\mu \nu}}{8 \pi} \int \diff p \diff p' \frac{p p'}{E (p) E (p')} \Big( a^{\mu} (p) a^{\nu} (p') \e ^{i (E (p) + E (p')) \tau} \delta (p + p') - a^{\mu} (p) b^{\nu} (p') \e ^{i (E (p) - E (p')) \tau} \delta (p - p') - \\
+    - b^{\mu} (p) a^{\nu} (p') \e ^{- i (E (p) - E (p')) \tau} \delta (p - p') + b^{\mu} (p) b^{\nu} (p) \e ^{- i ( E (p) + E (p')) \tau} \delta (p + p') \Big) =
+\end{multline*}
+\begin{equation*}
+    = \frac{1}{8 \pi} \int \diff p \frac{p^2}{p^2 + m^2} \Big( a^{\mu} (p) a^{\nu} (- p) \e ^{2 i E (p) \tau} - a^{\mu} (p) b^{\nu} (p) - b^{\mu} (p) a^{\nu} (p) + b^{\mu} (p) b^{\nu} (- p) \e ^{- 2 i E (p) \tau} \Big) \eta _{\mu \nu} ,
+\end{equation*}
+which when equated to the L.H.S yields
+\begin{equation*}
+    \int \diff p \left( \frac{p^2}{p^2 + m^2} + 1 \right) \Big( a^{\mu} (p) a^{\nu} (- p) \e ^{2 i E (p) \tau} - a^{\mu} (p) b^{\nu} (p) - b^{\mu} (p) a^{\nu} (p) + b^{\mu} (p) b^{\nu} (- p) \e ^{- 2 i E (p) \tau} \Big) \eta _{\mu \nu} = 0 ,
+\end{equation*}
+which implies
+\begin{equation*}
+    \Big( a^{\mu} (p) a^{\nu} (- p) \e ^{2 i E (p) \tau} - a^{\mu} (p) b^{\nu} (p) - b^{\mu} (p) a^{\nu} (p) + b^{\mu} (p) b^{\nu} (- p) \e ^{- 2 i E (p) \tau} \Big) \eta _{\mu \nu} = 0 .
+\end{equation*}
+We can sum and subtract this with the previous condition to simplify and obtain
+\begin{align*}
+    \Big( a^{\mu} (p) a^{\nu} (- p) \e ^{2 i E (p) \tau} + b^{\mu} (p) b^{\nu} (- p) \e ^{- 2 i E (p) \tau} \Big) \eta _{\mu \nu} & = 0   \\
+    \Big( a^{\mu} (p) b^{\nu} (p) + b^{\mu} (p) a^{\nu} (p) \Big) \eta _{\mu \nu}                                                 & = 0 ,
+\end{align*}
+and for while $a^{\mu}$ and $b^{\nu}$ are number-valued, the second condition can be further simplified to
+\begin{equation*}
+    a^{\mu} (p) b^{\nu} (p) \eta _{\mu \nu} = 0 ,
+\end{equation*}
+meaning $a^{\mu}$ and $b^{\nu}$ are orthogonal. In general, this condition states that $a^{\mu}$ and $b^{\nu}$ anti-commute w.r.t Lorentz inner product.
 
 \end{document}
