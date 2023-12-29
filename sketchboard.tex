@@ -1122,6 +1122,21 @@ and for while $a^{\mu}$ and $b^{\nu}$ are number-valued, the second condition ca
 \begin{equation*}
     a^{\mu} (p) b^{\nu} (p) \eta _{\mu \nu} = 0 ,
 \end{equation*}
-meaning $a^{\mu}$ and $b^{\nu}$ are orthogonal. In general, this condition states that $a^{\mu}$ and $b^{\nu}$ anti-commute w.r.t Lorentz inner product.
+meaning $a^{\mu}$ and $b^{\nu}$ are orthogonal. In general, this condition states that $a^{\mu}$ and $b^{\nu}$ anti-commute w.r.t Lorentz inner product. The first condition must hold for all values of $\tau$, and since the exponentials are linearly independent, we thus have
+\begin{align*}
+    a^{\mu} (p) a^{\nu} (- p) \eta _{\mu \nu} & = 0   \\
+    b^{\mu} (p) b^{\nu} (- p) \eta _{\mu \nu} & = 0 ,
+\end{align*}
+meaning that reflecting the argument of $a^{\mu}$ and $b^{\nu}$ creates orthogonal vectors. We can thus write
+\begin{align*}
+    a^{\mu} (p) & = \Lambda ^{\mu} _{\ \nu} \left( \frac{p}{4} \right) a^{\nu} (0)    \\
+    b^{\mu} (p) & = \Upsilon ^{\mu} _{\ \nu} \left( \frac{p}{4} \right) b^{\nu} (0) ,
+\end{align*}
+where $\Lambda , \Upsilon \in \mathrm{SO}^{+} (1 , d)$. Also. since the orthogonality under reflection must hold for all values of $p$, in particular we have
+\begin{align*}
+    a^{\mu} (0) a^{\nu} (0) \eta _{\mu \nu} & = 0   \\
+    b^{\mu} (0) b^{\nu} (0) \eta _{\mu \nu} & = 0 ,
+\end{align*}
+meaning that the initial $a^{\mu} (0)$ and $b^{\nu} (0)$ are null vectors. This means that $a^{\mu} (p)$ and $b^{\nu} (p)$ are also null vectors since they are related to the initial values by Lorentz transformation.
 
 \end{document}
