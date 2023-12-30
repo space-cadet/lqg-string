@@ -1189,63 +1189,48 @@ These simplify further by expanding the summation on $a,b$:
 \end{equation*}
 The EoM is just a one-dimensional finite-space Klein-Gordon equation, which has general solution given by Fourier transform
 \begin{equation*}
-    X^{\mu} (\tau , \sigma) = \sum _{n \in \mathbb{Z}} \frac{1}{2 E_{n}} \left( a^{\mu} _{n} \e ^{- i (- E_{n} \tau + n \sigma)} + b^{\mu} _{n} \e ^{i (- E_{n} \tau + n \sigma)} \right) ,
+    X^{\mu} (\tau , \sigma) = \sum _{n \in \mathbb{Z}} \frac{1}{2 E_{n}} \left( a^{\mu} _{n} \e ^{i (- E_{n} \tau + n \sigma)} + b^{\mu} _{n} \e ^{i (E_{n} \tau + n \sigma)} \right) ,
 \end{equation*}
 with $E_{n} = \sqrt{n^2 + m^2}$. The derivatives are
 \begin{align*}
-    \partial _{\tau} X^{\mu}   & = \frac{i}{2} \sum _{n \in \mathbb{Z}} \left( a^{\mu} _{n} \e ^{- i (- E_{n} \tau + n \sigma)} - b^{\mu} _{n} \e ^{i (- E_{n} \tau + n \sigma)} \right)                     \\
-    \partial _{\sigma} X^{\mu} & = \frac{i}{2} \sum _{n \in \mathbb{Z}} \frac{n}{E_{n}} \left( - a^{\mu} _{n} \e ^{- i (- E_{n} \tau + n \sigma)} + b^{\mu} _{n} \e ^{i (- E_{n} \tau + n \sigma)} \right) .
+    \partial _{\tau} X^{\mu}   & = \frac{i}{2} \sum _{n \in \mathbb{Z}} \left( - a^{\mu} _{n} \e ^{i (- E_{n} \tau + n \sigma)} + b^{\mu} _{n} \e ^{i (E_{n} \tau + n \sigma)} \right)                 \\
+    \partial _{\sigma} X^{\mu} & = \frac{i}{2} \sum _{n \in \mathbb{Z}} \frac{n}{E_{n}} \left( a^{\mu} _{n} \e ^{i (- E_{n} \tau + n \sigma)} + b^{\mu} _{n} \e ^{i (E_{n} \tau + n \sigma)} \right) .
 \end{align*}
 
-Starting from the mixed constraint, we have
+Reality of $X^{\mu}$ implies
+\begin{align*}
+    (X^{\mu})^{*} & = \left( \sum _{n \in \mathbb{Z}} \frac{1}{2 E_{n}} \left( a^{\mu} _{n} \e ^{i (- E_{n} \tau + n \sigma)} + b^{\mu} _{n} \e ^{i (E_{n} \tau + n \sigma)} \right) \right) ^{*} =            \\
+                  & = \sum _{n \in \mathbb{Z}} \frac{1}{2 E_{n}} \left( (a^{\mu} _{n})^{*} \e ^{- i (- E_{n} \tau + n \sigma)} + (b^{\mu} _{n})^{*} \e ^{- i (E_{n} \tau + n \sigma)} \right) \equiv X^{\mu} ,
+\end{align*}
+giving us
+\begin{align*}
+    (a^{\mu} _{n})^{*} & = b^{\mu} _{- n}   \\
+    (b^{\mu} _{n})^{*} & = a^{\mu} _{- n} ,
+\end{align*}
+so the solution becomes
 \begin{equation*}
-    \partial _{\tau} X^{\mu} \partial _{\sigma} X^{\nu} \eta _{\mu \nu} = - \frac{\eta _{\mu \nu}}{4} \sum _{n \in \mathbb{Z}} \sum _{k \in \mathbb{Z}} \frac{k}{E_{k}} \left( a^{\mu} _{n} \e ^{- i (- E_{n} \tau + n \sigma)} - b^{\mu} _{n} \e ^{i (- E_{n} \tau + n \sigma)} \right) \left( - a^{\nu} _{k} \e ^{- i (- E_{k} \tau + k \sigma)} + b^{\nu} _{k} \e ^{i (- E_{k} \tau + k \sigma)} \right) =
+    X^{\mu} (\tau , \sigma) = \sum _{n \in \mathbb{Z}} \frac{1}{2 E_{n}} \left( a^{\mu} _{n} \e ^{i (- E_{n} \tau + n \sigma)} + (a^{\mu} _{- n})^{*} \e ^{i (E_{n} \tau + n \sigma)} \right) .
+\end{equation*}
+
+Analysing the constraints, starting by the mixed one, we get
+\begin{equation*}
+    \partial _{\tau} X^{\mu} \partial _{\sigma} X^{\nu} \eta _{\mu \nu} = - \frac{\eta _{\mu \nu}}{4} \sum _{n} \sum _{k} \frac{k}{E_{k}} \Big( - a^{\mu} _{n} \e ^{i (- E_{n} \tau + n \sigma)} + (a^{\mu} _{- n})^{*} \e ^{i (E_{n} \tau + n \sigma)} \Big) \Big( a^{\nu} _{k} \e ^{i (- E_{k} \tau + k \sigma)} + (a^{\nu} _{- k})^{*} \e ^{i (E_{k} \tau + k \sigma)} \Big) =
 \end{equation*}
 \begin{multline*}
-    = - \frac{\eta _{\mu \nu}}{4} \sum _{n} \sum _{k} \frac{k}{E_{k}} \Big( - a^{\mu} _{n} a^{\nu} _{k} \e ^{i (E _{n} + E_{k}) \tau} \e ^{- i (n + k) \sigma} + a^{\mu} _{n} b^{\nu} _{k} \e ^{i (E_{n} - E_{k}) \tau} \e ^{- i (n - k) \sigma} + \\
-    + b^{\mu} _{n} a^{\nu} _{k} \e ^{- i (E_{n} - E_{k}) \tau} \e ^{i (n - k) \sigma} - b^{\mu} _{n} b^{\nu} _{k} \e ^{- i (E_{n} + E_{k}) \tau} \e ^{i (n + k) \sigma} \Big) = 0 ,
+    = - \frac{\eta _{\mu \nu}}{4} \sum _{n} \sum _{k} \frac{k}{E_{k}} \Big( - a^{\mu} _{n} a^{\nu} _{k} \e ^{- i (E_{n} + E_{k}) \tau} \e ^{i (n + k) \sigma} - a^{\mu} _{n} (a^{\nu} _{- k})^{*} \e ^{- i (E_{n} - E_{k}) \tau} \e ^{i (n + k) \sigma} + \\
+    + (a^{\mu} _{- n})^{*} a^{\nu} _{k} \e ^{i (E_{n} - E_{k}) \tau} \e ^{i (n + k) \sigma} + (a^{\mu} _{- n})^{*} (a^{\nu} _{- k})^{*} \e ^{i (E_{n} + E_{k}) \tau} \e ^{i (n + k) \sigma} \Big) = 0 .
 \end{multline*}
-for which we have 3 cases to analyse: $n = k$, $n = - k$ and $- k \neq n \neq k$. Starting with $- k \neq n \neq k$, since the equality must hold for all $\tau$ and $\sigma$ and the exponentials are linearly independent, we get that each term must vanish:
+Since this must hold for all values of $\tau$ and $\sigma$, we have that each term must vanish
 \begin{align*}
-    a^{\mu} _{n} a^{\nu} _{k} \eta _{\mu \nu} & = 0                         \\
-    a^{\mu} _{n} b^{\nu} _{k} \eta _{\mu \nu} & = 0                         \\
-    b^{\mu} _{n} a^{\nu} _{k} \eta _{\mu \nu} & = 0                         \\
-    b^{\mu} _{n} b^{\nu} _{k} \eta _{\mu \nu} & = 0 , \ - k \neq n \neq k .
+    a^{\mu} _{n} a^{\nu} _{k} \eta _{\mu \nu}                 & = 0   \\
+    a^{\mu} _{n} (a^{\nu} _{- k})^{*} \eta _{\mu \nu}         & = 0   \\
+    (a^{\mu} _{- n})^{*} a^{\nu} _{k} \eta _{\mu \nu}         & = 0   \\
+    (a^{\mu} _{- n})^{*} (a^{\nu} _{- k})^{*} \eta _{\mu \nu} & = 0 .
 \end{align*}
-For $n = k$, the 2 middle terms become linearly dependent, thus we get
-\begin{align*}
-    a^{\mu} _{n} a^{\nu} _{n} \eta _{\mu \nu}                               & = 0   \\
-    (a^{\mu} _{n} b^{\mu} _{n} + b^{\mu} _{n} a^{\nu} _{n}) \eta _{\mu \nu} & = 0   \\
-    b^{\mu} _{n} b^{\nu} _{n} \eta _{\mu \nu}                               & = 0 ,
-\end{align*}
-and finally for $n = - k$, this time the $\tau$ exponential still survives since $E_{n}$ is symmetric, thus we get
-\begin{align*}
-    a^{\mu} _{n} a^{\nu} _{- n} \eta _{\mu \nu} & = 0   \\
-    a^{\mu} _{n} b^{\nu} _{- n} \eta _{\mu \nu} & = 0   \\
-    b^{\mu} _{n} a^{\nu} _{- n} \eta _{\mu \nu} & = 0   \\
-    b^{\mu} _{n} b^{\nu} _{- n} \eta _{\mu \nu} & = 0 .
-\end{align*}
-The first and last conditions in each group can be combined into
-\begin{align*}
-    a^{\mu} _{n} a^{\nu} _{k} \eta _{\mu \nu} & = 0                                      \\
-    b^{\mu} _{n} b^{\nu} _{k} \eta _{\mu \nu} & = 0 , \ \forall \ n , k \in \mathbb{Z} .
-\end{align*}
-The middle conditions can be summed to combine and become
-\begin{equation*}
-    (a^{\mu} _{n} b^{\nu} _{k} + b^{\nu} _{n} a^{\mu} _{k}) \eta _{\mu \nu} = 0 , \ \forall \ n , k \in \mathbb{Z} .
-\end{equation*}
-Repeating the analysis for the other constraint will give the same results.
 
-So far, we have thus that $a$ and $b$ for different values of $n$ are orthogonal to each other, and in particular when the index are equal. Thus, they are null vectors, and remain always colinear since that's the only way two null vectors can have a 0 dot product. Altogether, this leads to
-\begin{equation*}
-    a^{\mu} _{n} = a_{n} a^{\mu} _{0} , \ a_{0} = 1 , \ a^{\mu} _{0} a^{\nu} _{0} \eta _{\mu \nu} = 0
-\end{equation*}
-\begin{equation*}
-    b^{\mu} _{n} = b_{n} a^{\mu} _{n} = b_{n} a_{n} a^{\mu} _{0} .
-\end{equation*}
-Without loss of generality, we can choose background coordinates such that $a^{\mu} _{0} = (\frac{1}{\sqrt{2}} , \frac{1}{\sqrt{2}} , 0 , ... , 0) = x^{+}$, giving us
-\begin{equation*}
-    X^{\mu} (\tau , \sigma) = a^{\mu} _{0} \sum _{n} \frac{a_{n}}{2 E_{n}} \left( \e ^{- i (- E_{n} \tau + n \sigma)} + b_{n} \e ^{i (- E_{n} \tau + n \sigma)} \right)
-\end{equation*}
+Now analysing the other constraint, it reads $(\partial _{\tau} X^{\mu} \partial _{\tau} X^{\nu} + \partial _{\sigma} X^{\mu} \partial _{\sigma} X^{\nu}) \eta _{\mu \nu} = 0$. The first term here is
+\begin{multline*}
+    \partial _{\tau} X^{\mu} \partial _{\tau} X^{\nu} \eta _{\mu \nu} = - \frac{\eta _{\mu \nu}}{4} \sum _{n} \sum _{k} \Big( a^{\mu} _{n} a^{\nu} _{k} \e ^{- i (E_{n} + E_{k}) \tau} \e ^{i (n + k) \sigma} \Big)
+\end{multline*}
 
 \end{document}
