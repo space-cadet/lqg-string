@@ -1218,19 +1218,18 @@ Analysing the constraints, starting by the mixed one, we get
 \end{equation*}
 \begin{multline*}
     = - \frac{\eta _{\mu \nu}}{4} \sum _{n} \sum _{k} \frac{k}{E_{k}} \Big( - a^{\mu} _{n} a^{\nu} _{k} \e ^{- i (E_{n} + E_{k}) \tau} \e ^{i (n + k) \sigma} - a^{\mu} _{n} (a^{\nu} _{- k})^{*} \e ^{- i (E_{n} - E_{k}) \tau} \e ^{i (n + k) \sigma} + \\
-    + (a^{\mu} _{- n})^{*} a^{\nu} _{k} \e ^{i (E_{n} - E_{k}) \tau} \e ^{i (n + k) \sigma} + (a^{\mu} _{- n})^{*} (a^{\nu} _{- k})^{*} \e ^{i (E_{n} + E_{k}) \tau} \e ^{i (n + k) \sigma} \Big) = 0 .
+    + (a^{\mu} _{- n})^{*} a^{\nu} _{k} \e ^{i (E_{n} - E_{k}) \tau} \e ^{i (n + k) \sigma} + (a^{\mu} _{- n})^{*} (a^{\nu} _{- k})^{*} \e ^{i (E_{n} + E_{k}) \tau} \e ^{i (n + k) \sigma} \Big) =
 \end{multline*}
-Since this must hold for all values of $\tau$ and $\sigma$, we have that each term must vanish
-\begin{align*}
-    a^{\mu} _{n} a^{\nu} _{k} \eta _{\mu \nu}                 & = 0   \\
-    a^{\mu} _{n} (a^{\nu} _{- k})^{*} \eta _{\mu \nu}         & = 0   \\
-    (a^{\mu} _{- n})^{*} a^{\nu} _{k} \eta _{\mu \nu}         & = 0   \\
-    (a^{\mu} _{- n})^{*} (a^{\nu} _{- k})^{*} \eta _{\mu \nu} & = 0 .
-\end{align*}
-
-Now analysing the other constraint, it reads $(\partial _{\tau} X^{\mu} \partial _{\tau} X^{\nu} + \partial _{\sigma} X^{\mu} \partial _{\sigma} X^{\nu}) \eta _{\mu \nu} = 0$. The first term here is
 \begin{multline*}
-    \partial _{\tau} X^{\mu} \partial _{\tau} X^{\nu} \eta _{\mu \nu} = - \frac{\eta _{\mu \nu}}{4} \sum _{n} \sum _{k} \Big( a^{\mu} _{n} a^{\nu} _{k} \e ^{- i (E_{n} + E_{k}) \tau} \e ^{i (n + k) \sigma} \Big)
+    = - \frac{\eta _{\mu \nu}}{4} \sum _{n} \sum _{p} \frac{p - n}{E_{p - n}} \Big( - a^{\mu} _{n} a^{\nu} _{p - n} \e ^{- i (E_{n} + E_{p - n}) \tau} \e ^{i p \sigma} - a^{\mu} _{n} (a^{\nu} _{n - p})^{*} \e ^{- i (E_{n} - E_{p - n}) \tau} \e ^{i p \sigma} + \\
+    + (a^{\mu} _{- n})^{*} a^{\nu} _{p - n} \e ^{i (E_{n} - E_{p - n}) \tau} \e ^{i p \sigma} + (a^{\mu} _{- n})^{*} (a^{\nu} _{n - p})^{*} \e ^{i (E_{n} + E_{p - n}) \tau} \e ^{i p \sigma} \Big) = 0 ,
 \end{multline*}
+where since this must hold for all values of $\tau$ and $\sigma$, each term must vanish separately, giving us
+\begin{align*}
+    \sum _{n} \sum_{p} \frac{p - n}{E_{p - n}} a^{\mu} _{n} a^{\nu} _{p - n} \eta _{\mu \nu} \e ^{- i (E_{n} + E_{p - n}) \tau} \e ^{i p \sigma}             & = 0 \\
+    \sum _{n} \sum_{p} \frac{p - n}{E_{p - n}} a^{\mu} _{n} (a^{\nu} _{n - p})^{*} \eta _{\mu \nu} \e ^{- i (E_{n} - E_{p - n}) \tau} \e ^{i p \sigma}       & = 0 \\
+    \sum _{n} \sum_{p} \frac{p - n}{E_{p - n}} (a^{\mu} _{- n})^{*} a^{\nu} _{p - n} \eta _{\mu \nu} \e ^{i (E_{n} - E_{p - n}) \tau} \e ^{i p \sigma}       & = 0 \\
+    \sum _{n} \sum_{p} \frac{p - n}{E_{p - n}} (a^{\mu} _{- n})^{*} (a^{\nu} _{n - p})^{*} \eta _{\mu \nu} \e ^{i (E_{n} + E_{p - n}) \tau} \e ^{i p \sigma} & = 0
+\end{align*}
 
 \end{document}
