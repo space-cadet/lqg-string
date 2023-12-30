@@ -1226,10 +1226,11 @@ Analysing the constraints, starting by the mixed one, we get
 \end{multline*}
 where since this must hold for all values of $\tau$ and $\sigma$, each term must vanish separately, giving us
 \begin{align*}
-    \sum _{n} \sum_{p} \frac{p - n}{E_{p - n}} a^{\mu} _{n} a^{\nu} _{p - n} \eta _{\mu \nu} \e ^{- i (E_{n} + E_{p - n}) \tau} \e ^{i p \sigma}             & = 0 \\
-    \sum _{n} \sum_{p} \frac{p - n}{E_{p - n}} a^{\mu} _{n} (a^{\nu} _{n - p})^{*} \eta _{\mu \nu} \e ^{- i (E_{n} - E_{p - n}) \tau} \e ^{i p \sigma}       & = 0 \\
-    \sum _{n} \sum_{p} \frac{p - n}{E_{p - n}} (a^{\mu} _{- n})^{*} a^{\nu} _{p - n} \eta _{\mu \nu} \e ^{i (E_{n} - E_{p - n}) \tau} \e ^{i p \sigma}       & = 0 \\
-    \sum _{n} \sum_{p} \frac{p - n}{E_{p - n}} (a^{\mu} _{- n})^{*} (a^{\nu} _{n - p})^{*} \eta _{\mu \nu} \e ^{i (E_{n} + E_{p - n}) \tau} \e ^{i p \sigma} & = 0
+    \sum _{n} \sum_{p} \frac{p - n}{E_{p - n}} a^{\mu} _{n} a^{\nu} _{p - n} \eta _{\mu \nu} \e ^{- i (E_{n} + E_{p - n}) \tau} \e ^{i p \sigma}             & = 0   \\
+    \sum _{n} \sum_{p} \frac{p - n}{E_{p - n}} a^{\mu} _{n} (a^{\nu} _{n - p})^{*} \eta _{\mu \nu} \e ^{- i (E_{n} - E_{p - n}) \tau} \e ^{i p \sigma}       & = 0   \\
+    \sum _{n} \sum_{p} \frac{p - n}{E_{p - n}} (a^{\mu} _{- n})^{*} a^{\nu} _{p - n} \eta _{\mu \nu} \e ^{i (E_{n} - E_{p - n}) \tau} \e ^{i p \sigma}       & = 0   \\
+    \sum _{n} \sum_{p} \frac{p - n}{E_{p - n}} (a^{\mu} _{- n})^{*} (a^{\nu} _{n - p})^{*} \eta _{\mu \nu} \e ^{i (E_{n} + E_{p - n}) \tau} \e ^{i p \sigma} & = 0 .
 \end{align*}
+The 2 middle equations are just complex conjugates of each other, so they are redundant. The same is true for the first and last.
 
 \end{document}
