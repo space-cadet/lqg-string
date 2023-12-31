@@ -1233,8 +1233,8 @@ where since this must hold for all values of $\tau$ and $\sigma$, each term must
 \end{align*}
 The 2 middle equations are just complex conjugates of each other, so they are redundant. The same is true for the first and last. This leaves us with
 \begin{align*}
-    L_{p} (\tau)             & := \frac{1}{2} \sum _{n} \frac{p - n}{E_{p - n}} a^{\mu} _{n} a^{\nu} _{p - n} \eta _{\mu \nu} \e ^{- i (E_{n} + E_{p - n}) \tau} = 0         \\
-    \widetilde{L}_{p} (\tau) & := \frac{1}{2} \sum _{n} \frac{p - n}{E_{p - n}} a^{\mu} _{n} (a^{\nu} _{n - p})^{*} \eta _{\mu \nu} \e ^{- i (E_{n} - E_{p - n}) \tau} = 0 .
+    L_{n , p}             & := \frac{p - n}{E_{p - n}} a^{\mu} _{n} a^{\nu} _{p - n} \eta _{\mu \nu} = 0         \\
+    \widetilde{L}_{n , p} & := \frac{p - n}{E_{p - n}} a^{\mu} _{n} (a^{\nu} _{n - p})^{*} \eta _{\mu \nu} = 0 .
 \end{align*}
 
 One last thing before quantizing: the $n = 0$ term in the solution reads
@@ -1245,5 +1245,42 @@ which is divergent in the $m \rightarrow 0$ limit unless $\mathfrak{Re}(a^{\mu} 
 \begin{equation*}
     M^2 = - p^{\mu} p_{\mu} = \frac{1}{16 \pi ^2 (\alpha ')^4} a^{\mu} _{0} a^{\nu} _{0} \eta _{\mu \nu}
 \end{equation*}
+
+\newpage
+
+\section{Into the Quantum Realm}
+
+Start by finding the canonical momentum
+\begin{equation*}
+    \Pi _{\lambda} = \frac{\partial \Lagr}{\partial (\partial _{\tau} X^{\lambda})} = - \frac{T}{2} \left( \sqrt{- g} - \frac{k \Delta}{2 \sqrt{- g}} \right) g^{a b} \delta ^{\tau} _{a} \delta ^{\mu} _{\lambda} \partial _{b} X^{\nu} \eta _{\mu \nu} =
+\end{equation*}
+\begin{equation*}
+    = - \frac{1}{4 \pi \alpha '} \left( 1 - \frac{k \Delta}{2 \phi ^2} \right) \eta ^{\tau b} \partial _{b} X^{\nu} \eta _{\lambda \nu} =
+\end{equation*}
+\begin{equation*}
+    = \frac{1}{4 \pi \alpha '} F^{-} \partial _{\tau} X^{\nu} \eta_{\lambda \nu} = F^{-} \frac{i}{(4 \pi \alpha ')^2} \sum _{p} \left( - \alpha ^{\nu} _{p} \e ^{i (- E_{p} \tau + p \sigma)} + (\alpha ^{\nu} _{- p})^{*} \e ^{i (E_{p} \tau + p \sigma)} \right) \eta _{\nu \lambda} .
+\end{equation*}
+Translating the equal-time Poisson bracket relations
+\begin{equation*}
+    \left\{ X^{\mu} (\tau , \sigma) , \Pi ^{\nu} (\tau , \sigma ') \right\} = \delta (\sigma - \sigma ') \eta ^{\mu \nu}
+\end{equation*}
+\begin{equation*}
+    \left\{ X^{\mu} (\tau , \sigma) , X^{\nu} (\tau , \sigma ') \right\} = \left\{ \Pi ^{\mu} (\tau , \sigma) , \Pi ^{\nu} (\tau , \sigma ') \right\} = 0
+\end{equation*}
+into equal time commutation relations for the now operators $\Hat{X}^{\mu}$ and $\Hat{\Pi}^{\nu}$
+\begin{equation*}
+    \left[ \Hat{X}^{\mu} (\tau , \sigma) , \Hat{\Pi}^{\nu} (\tau , \sigma ') \right] = i \delta (\sigma - \sigma ') \eta ^{\mu \nu}
+\end{equation*}
+\begin{equation*}
+    \left[ \Hat{X}^{\mu} (\tau , \sigma) , \Hat{X}^{\nu} (\tau , \sigma ') \right] = \left[ \Hat{\Pi}^{\mu} ( \tau , \sigma) , \Hat{\Pi}^{\nu} (\tau , \sigma ') \right] = 0 ,
+\end{equation*}
+we start by $X^{\mu}$ with itself
+\begin{multline*}
+    \left[ \Hat{X}^{\mu} (\tau , \sigma) , \Hat{X}^{\nu} (\tau , \sigma ') \right] = \Big[ \frac{1}{2 \pi \alpha '} \sum _{p \in \mathbb{Z}} \frac{1}{2 E_{p}} \Big( \Hat{\alpha} ^{\mu} _{p} \e ^{i (- E_{p} \tau + p \sigma)} + (\Hat{\alpha} ^{\mu} _{- p})^{\dagger} \e ^{i (E_{p} \tau + p \sigma)} \Big) , \\
+        \frac{1}{2 \pi \alpha '} \sum _{n \in \mathbb{Z}} \frac{1}{2 E_{n}} \Big( \Hat{\alpha} ^{\mu} _{n} \e ^{i (- E_{n} \tau + n \sigma)} + (\Hat{\alpha} ^{\mu} _{- n})^{\dagger} \e ^{i (E_{n} \tau + n \sigma)} \Big) \Big] =
+\end{multline*}
+\begin{multline*}
+    = \frac{1}{(4 \pi \alpha ')^2} \sum _{p} \sum _{n} \frac{1}{E_{p} E_{n}} \Big( \Big[  \Big] \Big)
+\end{multline*}
 
 \end{document}

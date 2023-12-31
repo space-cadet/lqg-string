@@ -15,7 +15,7 @@
 \contentsline {section}{\numberline {V}The Bimetric String}{7}{section*.20}%
 \contentsline {subsection}{\numberline {A}Bimetric Polyakov Action}{8}{section*.21}%
 \contentsline {subsection}{\numberline {B}The Bimetric Polyakov Equations}{8}{section*.22}%
-\contentsline {section}{\numberline {VI}Strings and Quantum Geometry}{9}{section*.23}%
+\contentsline {section}{\numberline {VI}Strings and Quantum Geometry}{8}{section*.23}%
 \contentsline {section}{\numberline {VII}Physical Implications}{9}{section*.24}%
 \contentsline {section}{\numberline {VIII}Discussion}{9}{section*.25}%
 \contentsline {section}{\numberline {}Acknowledgments}{9}{section*.26}%

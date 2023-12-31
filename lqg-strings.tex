@@ -446,18 +446,18 @@ and $\tau (t , x)$ satisfying constraints(\ref{eqn:new-coordinates-constraints-c
 
 From our analysis of the inverse-area corrected Polyakov action, we got $D$ finite-space one-dimensional Klein-Gordon equations (\ref{eqn:X-Klein-Gordon-eqn}), with constraints given by eq\eqref{eqn:inverse-area-em-tensor}. The constraints are nothing new, they're precisely the same as the ones of regular String Theory. What's new in our analysis is the $\mu ^2$ term, which makes it so the solution is given by Fourier transform
 \begin{multline} \label{eqn:KG-Polyakov-solution-initial}
-	X^{\mu} (\tau , \sigma) = \frac{1}{2 \pi \alpha '} \sum _{p \in \mathbb{Z}} \frac{1}{2 E_{p}} \Big( \alpha ^{\mu} _{n} \e ^{i (- E_{p} \tau + p \sigma)} + \\
-	+ \beta ^{\mu} _{n} \e ^{i (E_{p} \tau + p \sigma)} \Big) ,
+	X^{\mu} (\tau , \sigma) = \frac{1}{2 \pi \alpha '} \sum _{p \in \mathbb{Z}} \frac{1}{2 E_{p}} \Big( \alpha ^{\mu} _{p} \e ^{i (- E_{p} \tau + p \sigma)} + \\
+	+ \beta ^{\mu} _{p} \e ^{i (E_{p} \tau + p \sigma)} \Big) ,
 \end{multline}
 with $E_{p} = \sqrt{p^2 + \mu ^2}$. Reality of $X^{\mu}$ implies $(X^{\mu})^{*} = X^{\mu}$, from which we get
 \begin{equation} \label{eqn:reality-consequence}
 	\beta ^{\mu} _{n} = (\alpha ^{\mu} _{- n})^{*} .
 \end{equation}
 
-When looking at the constraints, we see that we can't decouple the exponentials in $\tau$ from any of the sums, thus we get $\tau$-dependent \textquotedblleft Virasoro modes"
+When looking at the constraints, we see that we can't decouple the exponentials in $\tau$ from any of the sums, thus we get two-index \textquotedblleft Virasoro modes"
 \begin{align}
-	L_{n} (\tau)              & := \frac{1}{2} \sum _{p \in \mathbb{Z}} \frac{n - p}{E_{n - p}} \alpha ^{\mu} _{p} \alpha ^{\nu} _{n - p} \eta _{\mu \nu} \e ^{- i (E_{n} + E_{n - p}) \tau} \label{eqn:"Virasoro"-modes-1}         \\
-	\widetilde{L} _{n} (\tau) & := \frac{1}{2} \sum _{p \in \mathbb{Z}} \frac{n - p}{E_{n - p}} \alpha ^{\mu} _{p} (\alpha ^{\nu} _{p - n})^{*} \eta _{\mu \nu} \e ^{- i (E_{n} - E_{n - p}) \tau} \label{eqn:"Virasoro"-modes-2} .
+	L_{n , p}              & := \frac{n - p}{E_{n - p}} \alpha ^{\mu} _{p} \alpha ^{\nu} _{n - p} \eta _{\mu \nu} = 0 \label{eqn:"Virasoro"-modes-1}         \\
+	\widetilde{L} _{n , p} & := \frac{n - p}{E_{n - p}} \alpha ^{\mu} _{p} (\alpha ^{\nu} _{p - n})^{*} \eta _{\mu \nu} = 0 \label{eqn:"Virasoro"-modes-2} .
 \end{align}
 
 Before proceeding to quantization, we have one last remark: the 0-th term of the solution reads
@@ -468,19 +468,19 @@ which is clearly divergent in the $\mu \rightarrow 0$ limit unless $\mathfrak{Re
 \begin{equation} \label{eqn:a-p-relation}
 	\alpha ^{\mu} _{0} = 4 \pi i (\alpha ')^2 p^{\mu} .
 \end{equation}
-Since our Virasoro-like \textquotedblleft modes" have a $n - p$ factor, we see that the 0-th term of $L_{0} (\tau)$ is vanishes, thus the string rest mass $M^2$ is given only in terms of the 0-th oscilator mode
+Since our Virasoro-like \textquotedblleft modes" are double-indexed without summation, the string rest mass $M^2$ is given only in terms of the 0-th oscillator mode
 \begin{equation} \label{eqn:string-rest-mass}
 	M^2 = - p^{\mu} p_{\mu} = \frac{1}{16 \pi^2 (\alpha ')^{4}} \alpha ^{\mu} _{0} \alpha ^{\nu} _{0} \eta _{\mu \nu} .
 \end{equation}
 
 Collecting our results, we have that the solution for our string is given by
 \begin{multline} \label{eqn:KG-Polyakov-solution-final}
-	X^{\mu} (\tau , \sigma) = \frac{1}{2 \pi \alpha '} \sum _{p \in \mathbb{Z}} \frac{1}{2 \E_{p}} \Big( \alpha ^{\mu} _{n} \e ^{i (- E_{p} \tau + p \sigma)} + \\
-	+ (\alpha ^{\mu} _{- n})^{*} \e ^{i (E_{p} \tau + p \sigma)} \Big)
+	X^{\mu} (\tau , \sigma) = \frac{1}{2 \pi \alpha '} \sum _{p \in \mathbb{Z}} \frac{1}{2 E_{p}} \Big( \alpha ^{\mu} _{p} \e ^{i (- E_{p} \tau + p \sigma)} + \\
+	+ (\alpha ^{\mu} _{- p})^{*} \e ^{i (E_{p} \tau + p \sigma)} \Big)
 \end{multline}
 subject to the infinite family of constraints
 \begin{equation}
-	L_{n} (\tau) = \widetilde{L}_{n} (\tau) = 0
+	L_{n , p} = \widetilde{L}_{n , p} = 0
 \end{equation} \label{eqn:"Virasoro"-constraints}
 and 0-th oscillation mode related to center of mass momentum
 \begin{equation*}
