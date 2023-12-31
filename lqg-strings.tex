@@ -444,39 +444,39 @@ and $\tau (t , x)$ satisfying constraints(\ref{eqn:new-coordinates-constraints-c
 
 \subsection{Solving The String Klein-Gordon Equation}
 
-From our analysis of the inverse-area corrected Polyakov action, we got $D$ Klein-Gordon equations (\ref{eqn:X-Klein-Gordon-eqn}), with constraints given by eq\eqref{eqn:inverse-area-em-tensor}. The constraints are nothing new, they're precisely the same as the ones of regular String Theory. What's new in our analysis is the $\mu ^2$ term, which makes it so the solution is given by Fourier transform
+From our analysis of the inverse-area corrected Polyakov action, we got $D$ finite-space one-dimensional Klein-Gordon equations (\ref{eqn:X-Klein-Gordon-eqn}), with constraints given by eq\eqref{eqn:inverse-area-em-tensor}. The constraints are nothing new, they're precisely the same as the ones of regular String Theory. What's new in our analysis is the $\mu ^2$ term, which makes it so the solution is given by Fourier transform
 \begin{multline} \label{eqn:KG-Polyakov-solution-initial}
-	X^{\mu} (\tau , \sigma) = \frac{1}{2 \pi \alpha '} \sum _{p \in \mathbb{Z}} \frac{1}{2 E_{p}} \Big( a^{\mu} _{n} \e ^{i (- E_{p} \tau + p \sigma)} + \\
-	+ b^{\mu} _{n} \e ^{i (E_{p} \tau + p \sigma)} \Big) ,
+	X^{\mu} (\tau , \sigma) = \frac{1}{2 \pi \alpha '} \sum _{p \in \mathbb{Z}} \frac{1}{2 E_{p}} \Big( \alpha ^{\mu} _{n} \e ^{i (- E_{p} \tau + p \sigma)} + \\
+	+ \beta ^{\mu} _{n} \e ^{i (E_{p} \tau + p \sigma)} \Big) ,
 \end{multline}
 with $E_{p} = \sqrt{p^2 + \mu ^2}$. Reality of $X^{\mu}$ implies $(X^{\mu})^{*} = X^{\mu}$, from which we get
 \begin{equation} \label{eqn:reality-consequence}
-	b^{\mu} _{n} = (a^{\mu} _{- n})^{*} .
+	\beta ^{\mu} _{n} = (\alpha ^{\mu} _{- n})^{*} .
 \end{equation}
 
 When looking at the constraints, we see that we can't decouple the exponentials in $\tau$ from any of the sums, thus we get $\tau$-dependent \textquotedblleft Virasoro modes"
 \begin{align}
-	L_{n} (\tau)              & := \frac{1}{2} \sum _{p \in \mathbb{Z}} \frac{n - p}{E_{n - p}} a^{\mu} _{p} a^{\nu} _{n - p} \eta _{\mu \nu} \e ^{- i (E_{n} + E_{n - p}) \tau} \label{eqn:"Virasoro"-modes-1}         \\
-	\widetilde{L} _{n} (\tau) & := \frac{1}{2} \sum _{p \in \mathbb{Z}} \frac{n - p}{E_{n - p}} a^{\mu} _{p} (a^{\nu} _{p - n})^{*} \eta _{\mu \nu} \e ^{- i (E_{n} - E_{n - p}) \tau} \label{eqn:"Virasoro"-modes-2} .
+	L_{n} (\tau)              & := \frac{1}{2} \sum _{p \in \mathbb{Z}} \frac{n - p}{E_{n - p}} \alpha ^{\mu} _{p} \alpha ^{\nu} _{n - p} \eta _{\mu \nu} \e ^{- i (E_{n} + E_{n - p}) \tau} \label{eqn:"Virasoro"-modes-1}         \\
+	\widetilde{L} _{n} (\tau) & := \frac{1}{2} \sum _{p \in \mathbb{Z}} \frac{n - p}{E_{n - p}} \alpha ^{\mu} _{p} (\alpha ^{\nu} _{p - n})^{*} \eta _{\mu \nu} \e ^{- i (E_{n} - E_{n - p}) \tau} \label{eqn:"Virasoro"-modes-2} .
 \end{align}
 
 Before proceeding to quantization, we have one last remark: the 0-th term of the solution reads
 \begin{equation} \label{eqn:X-sol-0-term}
-	\frac{1}{2 \pi \alpha '} \frac{1}{2 \mu} \left( a^{\mu} _{0} \e ^{- i \mu \tau} + (a^{\mu} _{0})^{*} \e ^{i \mu \tau} \right) ,
+	\frac{1}{2 \pi \alpha '} \frac{1}{2 \mu} \left( \alpha ^{\mu} _{0} \e ^{- i \mu \tau} + (\alpha ^{\mu} _{0})^{*} \e ^{i \mu \tau} \right) ,
 \end{equation}
-which is clearly divergent in the $\mu \rightarrow 0$ limit unless $\mathfrak{Re}(a^{\mu} _{0}) = 0$. Moreover, if we want to recover the classic String Theory expression in this regime, it is not difficult to see that we require
+which is clearly divergent in the $\mu \rightarrow 0$ limit unless $\mathfrak{Re}(\alpha ^{\mu} _{0}) = 0$. Moreover, if we want to recover the classic String Theory expression in this regime, it is not difficult to see that we require
 \begin{equation} \label{eqn:a-p-relation}
-	a^{\mu} _{0} = 4 \pi i (\alpha ')^2 p^{\mu} .
+	\alpha ^{\mu} _{0} = 4 \pi i (\alpha ')^2 p^{\mu} .
 \end{equation}
 Since our Virasoro-like \textquotedblleft modes" have a $n - p$ factor, we see that the 0-th term of $L_{0} (\tau)$ is vanishes, thus the string rest mass $M^2$ is given only in terms of the 0-th oscilator mode
 \begin{equation} \label{eqn:string-rest-mass}
-	M^2 = - p^{\mu} p_{\mu} = \frac{1}{16 \pi^2 (\alpha ')^{4}} a^{\mu} _{0} a^{\nu} _{0} \eta _{\mu \nu} .
+	M^2 = - p^{\mu} p_{\mu} = \frac{1}{16 \pi^2 (\alpha ')^{4}} \alpha ^{\mu} _{0} \alpha ^{\nu} _{0} \eta _{\mu \nu} .
 \end{equation}
 
 Collecting our results, we have that the solution for our string is given by
 \begin{multline} \label{eqn:KG-Polyakov-solution-final}
-	X^{\mu} (\tau , \sigma) = \frac{1}{2 \pi \alpha '} \sum _{p \in \mathbb{Z}} \frac{1}{2 \E_{p}} \Big( a^{\mu} _{n} \e ^{i (- E_{p} \tau + p \sigma)} + \\
-	+ (a^{\mu} _{- n})^{*} \e ^{i (E_{p} \tau + p \sigma)} \Big)
+	X^{\mu} (\tau , \sigma) = \frac{1}{2 \pi \alpha '} \sum _{p \in \mathbb{Z}} \frac{1}{2 \E_{p}} \Big( \alpha ^{\mu} _{n} \e ^{i (- E_{p} \tau + p \sigma)} + \\
+	+ (\alpha ^{\mu} _{- n})^{*} \e ^{i (E_{p} \tau + p \sigma)} \Big)
 \end{multline}
 subject to the infinite family of constraints
 \begin{equation}
@@ -484,7 +484,7 @@ subject to the infinite family of constraints
 \end{equation} \label{eqn:"Virasoro"-constraints}
 and 0-th oscillation mode related to center of mass momentum
 \begin{equation*}
-	a^{\mu} _{0} = 4 \pi i (\alpha ')^2 p^{\mu} .
+	\alpha ^{\mu} _{0} = 4 \pi i (\alpha ')^2 p^{\mu} .
 \end{equation*}
 
 \section{The Bimetric String}\label{sec:bimetric-nambu-goto}
