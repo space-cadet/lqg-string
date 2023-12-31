@@ -319,6 +319,12 @@ INPUT E:\MikTeX\tex\latex\jknappen\ubbold.fd
 INPUT C:\Users\Luigi\AppData\Local\MiKTeX\fonts\tfm\public\bbold\bbold10.tfm
 INPUT C:\Users\Luigi\AppData\Local\MiKTeX\fonts\tfm\public\bbold\bbold7.tfm
 INPUT C:\Users\Luigi\AppData\Local\MiKTeX\fonts\tfm\public\bbold\bbold5.tfm
+INPUT E:\MikTeX\tex\latex\amsfonts\ueuf.fd
+INPUT E:\MikTeX\tex\latex\amsfonts\ueuf.fd
+INPUT E:\MikTeX\tex\latex\amsfonts\ueuf.fd
+INPUT E:\MikTeX\fonts\tfm\public\amsfonts\euler\eufm10.tfm
+INPUT E:\MikTeX\fonts\tfm\public\amsfonts\euler\eufm7.tfm
+INPUT E:\MikTeX\fonts\tfm\public\amsfonts\euler\eufm5.tfm
 INPUT e:\LQG-Strings\lqg-string\PDF\sketchboard.aux
 INPUT e:\LQG-Strings\lqg-string\PDF\sketchboard.out
 INPUT e:\LQG-Strings\lqg-string\PDF\sketchboard.out
@@ -356,5 +362,7 @@ INPUT E:\MikTeX\fonts\type1\public\amsfonts\cm\cmsy5.pfb
 INPUT E:\MikTeX\fonts\type1\public\amsfonts\cm\cmsy5.pfb
 INPUT E:\MikTeX\fonts\type1\public\amsfonts\cm\cmsy7.pfb
 INPUT E:\MikTeX\fonts\type1\public\amsfonts\cm\cmsy7.pfb
+INPUT E:\MikTeX\fonts\type1\public\amsfonts\euler\eufm10.pfb
+INPUT E:\MikTeX\fonts\type1\public\amsfonts\euler\eufm10.pfb
 INPUT E:\MikTeX\fonts\type1\public\rsfs\rsfs10.pfb
 INPUT E:\MikTeX\fonts\type1\public\rsfs\rsfs10.pfb

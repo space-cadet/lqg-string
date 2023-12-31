@@ -1233,13 +1233,17 @@ where since this must hold for all values of $\tau$ and $\sigma$, each term must
 \end{align*}
 The 2 middle equations are just complex conjugates of each other, so they are redundant. The same is true for the first and last. This leaves us with
 \begin{align*}
-    \sum _{n} \sum _{p} \frac{p - n}{E_{p - n}} a^{\mu} _{n} a^{\nu} _{p - n} \eta _{\mu \nu}       & = 0 \\
-    \sum _{n} \sum _{p} \frac{p - n}{E_{p - n}} a^{\mu} _{n} (a^{\nu} _{n - p})^{*} \eta _{\mu \nu} & = 0
+    L_{p} (\tau)             & := \sum _{n} \frac{p - n}{E_{p - n}} a^{\mu} _{n} a^{\nu} _{p - n} \eta _{\mu \nu} \e ^{- i (E_{n} + E_{p - n}) \tau} = 0         \\
+    \widetilde{L}_{p} (\tau) & := \sum _{n} \frac{p - n}{E_{p - n}} a^{\mu} _{n} (a^{\nu} _{n - p})^{*} \eta _{\mu \nu} \e ^{- i (E_{n} - E_{p - n}) \tau} = 0 .
 \end{align*}
-or simplifying
-\begin{align*}
-    L_{p} : = \sum _{n} \frac{p - n}{E_{p - n}} a^{\mu} _{n} a^{\nu} _{p - n} \eta _{\mu \nu}                   & = 0 \\
-    \widetilde{L}_{p} : = \sum _{n} \frac{p - n}{E_{p - n}} a^{\mu} _{n} (a^{\nu} _{n - p})^{*} \eta _{\mu \nu} & = 0
-\end{align*}
+
+One last thing before quantizing: the $n = 0$ term in the solution reads
+\begin{equation*}
+    \frac{1}{2 m} \left( a^{\mu} _{0} \e ^{- i m \tau} + (a^{\mu} _{0})^{*} \e ^{i m \tau} \right) ,
+\end{equation*}
+which is divergent in the $m \rightarrow 0$ limit unless $\mathfrak{Re}(a^{\mu} _{0}) = 0$, thus $a^{\mu} _{0}$ must be purely imaginary. Keeping the analogy to the $m \rightarrow 0$ regime, we conclude $a^{\mu} _{0} = 4 \pi i (\alpha ')^2 p^{\mu}$. Also, I forgot to include a factor of $T = 1 / 2 \pi \alpha '$, so the solution is really
+\begin{equation*}
+    X^{\mu} (\tau , \sigma) = \frac{1}{2 \pi \alpha '} \sum _{n \in \mathbb{Z}} \frac{1}{2 E_{n}} \left( a^{\mu} _{n} \e ^{i (- E_{n} \tau + n \sigma)} + (a^{\mu} _{n})^{*} \e ^{i (E_{n} \tau + n \sigma)} \right) .
+\end{equation*}
 
 \end{document}

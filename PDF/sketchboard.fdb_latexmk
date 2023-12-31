@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1704031241 "e:/LQG-Strings/lqg-string/sketchboard.tex" "PDF/sketchboard.pdf" "sketchboard" 1704031242 2
+["pdflatex"] 1704037268 "e:/LQG-Strings/lqg-string/sketchboard.tex" "PDF/sketchboard.pdf" "sketchboard" 1704037270 2
   "C:/Users/Luigi/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1700436637 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/Luigi/AppData/Local/MiKTeX/fonts/pk/ljfour/public/bbold/dpi600/bbold10.pk" 1700191725 12432 e4bad06bd50e6ebf977e7eda462f76c7 ""
   "C:/Users/Luigi/AppData/Local/MiKTeX/fonts/pk/ljfour/public/bbold/dpi600/bbold7.pk" 1703869477 9384 22e063916d3e0ffb75c921d7490f350a ""
@@ -13,6 +13,9 @@
   "C:/Users/Luigi/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1700191658 24125535 105b140a5576586269150c167fc2b9b4 ""
   "E:/MikTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
   "E:/MikTeX/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1233951848 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
+  "E:/MikTeX/fonts/tfm/public/amsfonts/euler/eufm10.tfm" 1233951852 1040 b84415f97d114011685943ade933dc71 ""
+  "E:/MikTeX/fonts/tfm/public/amsfonts/euler/eufm5.tfm" 1233951852 1040 a9d2074f3fa062d4d9046b92e2334d8c ""
+  "E:/MikTeX/fonts/tfm/public/amsfonts/euler/eufm7.tfm" 1233951852 1040 82eb6630b094bff824fccca83ff507f9 ""
   "E:/MikTeX/fonts/tfm/public/amsfonts/euler/eurm10.tfm" 1233951852 1228 9be37fdf0dc0e1f4df4af3594876d628 ""
   "E:/MikTeX/fonts/tfm/public/amsfonts/euler/eurm5.tfm" 1233951852 1228 6fc4d2f2c0a79dc4f413411f6e2f336c ""
   "E:/MikTeX/fonts/tfm/public/amsfonts/euler/eurm7.tfm" 1233951852 1228 22a83614922c993c1b2e124955a38ca1 ""
@@ -50,6 +53,7 @@
   "E:/MikTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247596667 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "E:/MikTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb" 1247596666 32915 7bf7720c61a5b3a7ff25b0964421c9b6 ""
   "E:/MikTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1247596666 32716 08e384dc442464e7285e891af9f45947 ""
+  "E:/MikTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb" 1335366146 21098 d4aee7c0aac232caac5688b586b9363c ""
   "E:/MikTeX/fonts/type1/public/rsfs/rsfs10.pfb" 893413860 16077 4737ac34f0fb5608550f3780a0202c22 ""
   "E:/MikTeX/tex/context/base/mkii/supp-pdf.mkii" 1580390158 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "E:/MikTeX/tex/generic/atbegshi/atbegshi.sty" 1575571100 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
@@ -121,6 +125,7 @@
   "E:/MikTeX/tex/latex/amscls/amsthm.sty" 1591023609 12594 0d51ac3a545aaaa555021326ff22a6cc ""
   "E:/MikTeX/tex/latex/amsfonts/amsfonts.sty" 1358197772 5949 3f3fd50a8cc94c3d4cbf4fc66cd3df1c ""
   "E:/MikTeX/tex/latex/amsfonts/amssymb.sty" 1358197772 13829 94730e64147574077f8ecfea9bb69af4 ""
+  "E:/MikTeX/tex/latex/amsfonts/ueuf.fd" 1358197772 1047 4252767c0fde12e3ce9f914ef4bb1ea1 ""
   "E:/MikTeX/tex/latex/amsfonts/umsa.fd" 1358197772 961 6518c6525a34feb5e8250ffa91731cff ""
   "E:/MikTeX/tex/latex/amsfonts/umsb.fd" 1358197772 961 d02606146ba5601b5645f987c92e6193 ""
   "E:/MikTeX/tex/latex/amsmath/amsbsy.sty" 1686931788 2222 499d61426192c39efd8f410ee1a52b9c ""
@@ -184,10 +189,10 @@
   "E:/MikTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "E:/MikTeX/tex/latex/was/upgreek.sty" 1665850770 5794 9054e31be15d93f1e6bd28cca2b6643f ""
   "E:/MikTeX/tex/latex/xcolor/xcolor.sty" 1656236890 56148 51a9a8571c07b9921892ae11063ae853 ""
-  "PDF/sketchboard.aux" 1704031242 5255 007df0276a5ff294aee14395e77115d0 "pdflatex"
-  "PDF/sketchboard.out" 1704031242 6399 225724f298cdff1464422dffde40cd2e "pdflatex"
-  "e:/LQG-Strings/lqg-string/sketchboard.tex" 1704031240 82234 c6b633d0a3cec08bb91fa0b3a6129601 ""
-  "sketchboard.tex" 1704031240 82234 c6b633d0a3cec08bb91fa0b3a6129601 ""
+  "PDF/sketchboard.aux" 1704037269 5255 007df0276a5ff294aee14395e77115d0 "pdflatex"
+  "PDF/sketchboard.out" 1704037269 6399 225724f298cdff1464422dffde40cd2e "pdflatex"
+  "e:/LQG-Strings/lqg-string/sketchboard.tex" 1704037268 82864 8da855678a039c0d33fd2f922cedf9db ""
+  "sketchboard.tex" 1704037268 82864 8da855678a039c0d33fd2f922cedf9db ""
   (generated)
   "PDF/sketchboard.aux"
   "PDF/sketchboard.log"
