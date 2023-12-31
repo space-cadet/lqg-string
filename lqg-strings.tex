@@ -356,7 +356,7 @@ The equations of motion for the world-sheet metric are completely unchanged by t
 	\frac{\delta S_{I A P}}{\delta g^{c d}} \overset{!}{=} 0
 \end{equation}
 from which we obtain the stress-energy tensor for the worldsheet:
-\begin{multline}
+\begin{multline} \label{eqn:inverse-area-em-tensor}
 	T_{c d} := \partial _{c} X^{\mu} \partial _{d} X^{\nu} G_{\mu \nu} - \\ - \frac{1}{2} g_{c d} g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} = 0 ,
 \end{multline}
 from which we can extract the metric $g_{c d}$ as
@@ -404,7 +404,7 @@ thus we have
 \end{equation}
 At first glance it seems problematic that we have a complex conformal function $\phi (x)$, but the complex structure comes from our ansatz for the embedding fields, and when we choose either the real or imaginary part of the latter it should also pick the respective component of $\phi$. With this choice, we thus turned eq(\ref{eqn:X-eom-simplified}) into a Klein-Gordon equation
 \begin{equation} \label{eqn:X-Klein-Gordon-eqn}
-	\left( \partial _{\sigma} ^2 - \partial _{\tau} ^2 \right) X^{\mu} - m^2 X^{\mu} = 0 .
+	\left( \partial _{\sigma} ^2 - \partial _{\tau} ^2 \right) X^{\mu} - \mu ^2 X^{\mu} = 0 .
 \end{equation}
 
 \subsection{Relation With The Nambu-Goto Analysis} \label{sec:relation-with-NG-case}
@@ -434,13 +434,58 @@ This turns eq(\ref{eqn:simplified-modified-wave-eqn}) into
 \end{multline}
 Next, we introduce $X^{\mu} = \kappa (\tau , \sigma) W^{\mu} (\tau , \sigma)$ such that terms proportional to first derivatives of $W^{\mu}$ cancel out. This is obtained by choosing $\kappa = v^{1/2}$ and concluding that $v$ only depends on $x$. With this, eq(\ref{eqn:modified-wave-eqn-new}) turns into a Klein-Gordon equation
 \begin{equation}
-	\partial _{\tau} ^2 W^{\mu} - \partial _{\sigma} ^2 W^{\mu} + m^2 W^{\mu} = 0 ,
+	\partial _{\tau} ^2 W^{\mu} - \partial _{\sigma} ^2 W^{\mu} + \mu ^2 W^{\mu} = 0 ,
 \end{equation}
 with \textquotedblleft mass" squared given by
 \begin{equation}
-	m^2 = \frac{(\partial _{x} v)^2 - 2 v \partial _{x} ^2 v}{4 \left( (\partial _{t} \tau)^2 - v^2 (\partial _{x} \tau)^2 \right)}
+	\mu ^2 = \frac{(\partial _{x} v)^2 - 2 v \partial _{x} ^2 v}{4 \left( (\partial _{t} \tau)^2 - v^2 (\partial _{x} \tau)^2 \right)}
 \end{equation}
 and $\tau (t , x)$ satisfying constraints(\ref{eqn:new-coordinates-constraints-compact}). This shows that our action(\ref{eqn:inverse-metric-Polyakov}) is indeed in agreement with the inverse area corrected Nambu-Goto action(\ref{eqn:modified-NG-action}).
+
+\subsection{Solving The String Klein-Gordon Equation}
+
+From our analysis of the inverse-area corrected Polyakov action, we got $D$ Klein-Gordon equations (\ref{eqn:X-Klein-Gordon-eqn}), with constraints given by eq\eqref{eqn:inverse-area-em-tensor}. The constraints are nothing new, they're precisely the same as the ones of regular String Theory. What's new in our analysis is the $\mu ^2$ term, which makes it so the solution is given by Fourier transform
+\begin{multline} \label{eqn:KG-Polyakov-solution-initial}
+	X^{\mu} (\tau , \sigma) = \frac{1}{2 \pi \alpha '} \sum _{p \in \mathbb{Z}} \frac{1}{2 E_{p}} \Big( a^{\mu} _{n} \e ^{i (- E_{p} \tau + p \sigma)} + \\
+	+ b^{\mu} _{n} \e ^{i (E_{p} \tau + p \sigma)} \Big) ,
+\end{multline}
+with $E_{p} = \sqrt{p^2 + \mu ^2}$. Reality of $X^{\mu}$ implies $(X^{\mu})^{*} = X^{\mu}$, from which we get
+\begin{equation} \label{eqn:reality-consequence}
+	b^{\mu} _{n} = (a^{\mu} _{- n})^{*} .
+\end{equation}
+
+When looking at the constraints, we see that we can't decouple the exponentials in $\tau$ from any of the sums, thus we get $\tau$-dependent \textquotedblleft Virasoro modes"
+\begin{align}
+	L_{n} (\tau)              & := \frac{1}{2} \sum _{p \in \mathbb{Z}} \frac{n - p}{E_{n - p}} a^{\mu} _{p} a^{\nu} _{n - p} \eta _{\mu \nu} \e ^{- i (E_{n} + E_{n - p}) \tau} \label{eqn:"Virasoro"-modes-1}         \\
+	\widetilde{L} _{n} (\tau) & := \frac{1}{2} \sum _{p \in \mathbb{Z}} \frac{n - p}{E_{n - p}} a^{\mu} _{p} (a^{\nu} _{p - n})^{*} \eta _{\mu \nu} \e ^{- i (E_{n} - E_{n - p}) \tau} \label{eqn:"Virasoro"-modes-2} .
+\end{align}
+
+Before proceeding to quantization, we have one last remark: the 0-th term of the solution reads
+\begin{equation} \label{eqn:X-sol-0-term}
+	\frac{1}{2 \pi \alpha '} \frac{1}{2 \mu} \left( a^{\mu} _{0} \e ^{- i \mu \tau} + (a^{\mu} _{0})^{*} \e ^{i \mu \tau} \right) ,
+\end{equation}
+which is clearly divergent in the $\mu \rightarrow 0$ limit unless $\mathfrak{Re}(a^{\mu} _{0}) = 0$. Moreover, if we want to recover the classic String Theory expression in this regime, it is not difficult to see that we require
+\begin{equation} \label{eqn:a-p-relation}
+	a^{\mu} _{0} = 4 \pi i (\alpha ')^2 p^{\mu} .
+\end{equation}
+Since our Virasoro-like \textquotedblleft modes" have a $n - p$ factor, we see that the 0-th term of $L_{0} (\tau)$ is vanishes, thus the string rest mass $M^2$ is given only in terms of the 0-th oscilator mode
+\begin{equation} \label{eqn:string-rest-mass}
+	M^2 = - p^{\mu} p_{\mu} = \frac{1}{16 \pi^2 (\alpha ')^{4}} a^{\mu} _{0} a^{\nu} _{0} \eta _{\mu \nu} .
+\end{equation}
+
+Collecting our results, we have that the solution for our string is given by
+\begin{multline} \label{eqn:KG-Polyakov-solution-final}
+	X^{\mu} (\tau , \sigma) = \frac{1}{2 \pi \alpha '} \sum _{p \in \mathbb{Z}} \frac{1}{2 \E_{p}} \Big( a^{\mu} _{n} \e ^{i (- E_{p} \tau + p \sigma)} + \\
+	+ (a^{\mu} _{- n})^{*} \e ^{i (E_{p} \tau + p \sigma)} \Big)
+\end{multline}
+subject to the infinite family of constraints
+\begin{equation}
+	L_{n} (\tau) = \widetilde{L}_{n} (\tau) = 0
+\end{equation} \label{eqn:"Virasoro"-constraints}
+and 0-th oscillation mode related to center of mass momentum
+\begin{equation*}
+	a^{\mu} _{0} = 4 \pi i (\alpha ')^2 p^{\mu} .
+\end{equation*}
 
 \section{The Bimetric String}\label{sec:bimetric-nambu-goto}
 

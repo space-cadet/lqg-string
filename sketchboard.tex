@@ -1189,18 +1189,18 @@ These simplify further by expanding the summation on $a,b$:
 \end{equation*}
 The EoM is just a one-dimensional finite-space Klein-Gordon equation, which has general solution given by Fourier transform
 \begin{equation*}
-    X^{\mu} (\tau , \sigma) = \sum _{n \in \mathbb{Z}} \frac{1}{2 E_{n}} \left( a^{\mu} _{n} \e ^{i (- E_{n} \tau + n \sigma)} + b^{\mu} _{n} \e ^{i (E_{n} \tau + n \sigma)} \right) ,
+    X^{\mu} (\tau , \sigma) = \frac{1}{2 \pi \alpha '} \sum _{n \in \mathbb{Z}} \frac{1}{2 E_{n}} \left( a^{\mu} _{n} \e ^{i (- E_{n} \tau + n \sigma)} + b^{\mu} _{n} \e ^{i (E_{n} \tau + n \sigma)} \right) ,
 \end{equation*}
 with $E_{n} = \sqrt{n^2 + m^2}$. The derivatives are
 \begin{align*}
-    \partial _{\tau} X^{\mu}   & = \frac{i}{2} \sum _{n \in \mathbb{Z}} \left( - a^{\mu} _{n} \e ^{i (- E_{n} \tau + n \sigma)} + b^{\mu} _{n} \e ^{i (E_{n} \tau + n \sigma)} \right)                 \\
-    \partial _{\sigma} X^{\mu} & = \frac{i}{2} \sum _{n \in \mathbb{Z}} \frac{n}{E_{n}} \left( a^{\mu} _{n} \e ^{i (- E_{n} \tau + n \sigma)} + b^{\mu} _{n} \e ^{i (E_{n} \tau + n \sigma)} \right) .
+    \partial _{\tau} X^{\mu}   & = \frac{i}{4 \pi \alpha '} \sum _{n \in \mathbb{Z}} \left( - a^{\mu} _{n} \e ^{i (- E_{n} \tau + n \sigma)} + b^{\mu} _{n} \e ^{i (E_{n} \tau + n \sigma)} \right)                 \\
+    \partial _{\sigma} X^{\mu} & = \frac{i}{4 \pi \alpha '} \sum _{n \in \mathbb{Z}} \frac{n}{E_{n}} \left( a^{\mu} _{n} \e ^{i (- E_{n} \tau + n \sigma)} + b^{\mu} _{n} \e ^{i (E_{n} \tau + n \sigma)} \right) .
 \end{align*}
 
 Reality of $X^{\mu}$ implies
 \begin{align*}
-    (X^{\mu})^{*} & = \left( \sum _{n \in \mathbb{Z}} \frac{1}{2 E_{n}} \left( a^{\mu} _{n} \e ^{i (- E_{n} \tau + n \sigma)} + b^{\mu} _{n} \e ^{i (E_{n} \tau + n \sigma)} \right) \right) ^{*} =            \\
-                  & = \sum _{n \in \mathbb{Z}} \frac{1}{2 E_{n}} \left( (a^{\mu} _{n})^{*} \e ^{- i (- E_{n} \tau + n \sigma)} + (b^{\mu} _{n})^{*} \e ^{- i (E_{n} \tau + n \sigma)} \right) \equiv X^{\mu} ,
+    (X^{\mu})^{*} & = \left( \frac{1}{2 \pi \alpha '} \sum _{n \in \mathbb{Z}} \frac{1}{2 E_{n}} \left( a^{\mu} _{n} \e ^{i (- E_{n} \tau + n \sigma)} + b^{\mu} _{n} \e ^{i (E_{n} \tau + n \sigma)} \right) \right) ^{*} =            \\
+                  & = \frac{1}{2 \pi \alpha '} \sum _{n \in \mathbb{Z}} \frac{1}{2 E_{n}} \left( (a^{\mu} _{n})^{*} \e ^{- i (- E_{n} \tau + n \sigma)} + (b^{\mu} _{n})^{*} \e ^{- i (E_{n} \tau + n \sigma)} \right) \equiv X^{\mu} ,
 \end{align*}
 giving us
 \begin{align*}
@@ -1209,19 +1209,19 @@ giving us
 \end{align*}
 so the solution becomes
 \begin{equation*}
-    X^{\mu} (\tau , \sigma) = \sum _{n \in \mathbb{Z}} \frac{1}{2 E_{n}} \left( a^{\mu} _{n} \e ^{i (- E_{n} \tau + n \sigma)} + (a^{\mu} _{- n})^{*} \e ^{i (E_{n} \tau + n \sigma)} \right) .
+    X^{\mu} (\tau , \sigma) = \frac{1}{2 \pi \alpha '} \sum _{n \in \mathbb{Z}} \frac{1}{2 E_{n}} \left( a^{\mu} _{n} \e ^{i (- E_{n} \tau + n \sigma)} + (a^{\mu} _{- n})^{*} \e ^{i (E_{n} \tau + n \sigma)} \right) .
 \end{equation*}
 
-Analysing the constraints, starting by the mixed one, we get
+Analysing the constraints, starting by the mixed one we get
 \begin{equation*}
-    \partial _{\tau} X^{\mu} \partial _{\sigma} X^{\nu} \eta _{\mu \nu} = - \frac{\eta _{\mu \nu}}{4} \sum _{n} \sum _{k} \frac{k}{E_{k}} \Big( - a^{\mu} _{n} \e ^{i (- E_{n} \tau + n \sigma)} + (a^{\mu} _{- n})^{*} \e ^{i (E_{n} \tau + n \sigma)} \Big) \Big( a^{\nu} _{k} \e ^{i (- E_{k} \tau + k \sigma)} + (a^{\nu} _{- k})^{*} \e ^{i (E_{k} \tau + k \sigma)} \Big) =
+    \partial _{\tau} X^{\mu} \partial _{\sigma} X^{\nu} \eta _{\mu \nu} = - \frac{\eta _{\mu \nu}}{16 \pi ^2 (\alpha ')^2} \sum _{n} \sum _{k} \frac{k}{E_{k}} \Big( - a^{\mu} _{n} \e ^{i (- E_{n} \tau + n \sigma)} + (a^{\mu} _{- n})^{*} \e ^{i (E_{n} \tau + n \sigma)} \Big) \Big( a^{\nu} _{k} \e ^{i (- E_{k} \tau + k \sigma)} + (a^{\nu} _{- k})^{*} \e ^{i (E_{k} \tau + k \sigma)} \Big) =
 \end{equation*}
 \begin{multline*}
-    = - \frac{\eta _{\mu \nu}}{4} \sum _{n} \sum _{k} \frac{k}{E_{k}} \Big( - a^{\mu} _{n} a^{\nu} _{k} \e ^{- i (E_{n} + E_{k}) \tau} \e ^{i (n + k) \sigma} - a^{\mu} _{n} (a^{\nu} _{- k})^{*} \e ^{- i (E_{n} - E_{k}) \tau} \e ^{i (n + k) \sigma} + \\
+    = - \frac{\eta _{\mu \nu}}{16 \pi ^2 (\alpha ')^2} \sum _{n} \sum _{k} \frac{k}{E_{k}} \Big( - a^{\mu} _{n} a^{\nu} _{k} \e ^{- i (E_{n} + E_{k}) \tau} \e ^{i (n + k) \sigma} - a^{\mu} _{n} (a^{\nu} _{- k})^{*} \e ^{- i (E_{n} - E_{k}) \tau} \e ^{i (n + k) \sigma} + \\
     + (a^{\mu} _{- n})^{*} a^{\nu} _{k} \e ^{i (E_{n} - E_{k}) \tau} \e ^{i (n + k) \sigma} + (a^{\mu} _{- n})^{*} (a^{\nu} _{- k})^{*} \e ^{i (E_{n} + E_{k}) \tau} \e ^{i (n + k) \sigma} \Big) =
 \end{multline*}
 \begin{multline*}
-    = - \frac{\eta _{\mu \nu}}{4} \sum _{n} \sum _{p} \frac{p - n}{E_{p - n}} \Big( - a^{\mu} _{n} a^{\nu} _{p - n} \e ^{- i (E_{n} + E_{p - n}) \tau} \e ^{i p \sigma} - a^{\mu} _{n} (a^{\nu} _{n - p})^{*} \e ^{- i (E_{n} - E_{p - n}) \tau} \e ^{i p \sigma} + \\
+    = - \frac{\eta _{\mu \nu}}{16 \pi ^2 (\alpha ')^2} \sum _{n} \sum _{p} \frac{p - n}{E_{p - n}} \Big( - a^{\mu} _{n} a^{\nu} _{p - n} \e ^{- i (E_{n} + E_{p - n}) \tau} \e ^{i p \sigma} - a^{\mu} _{n} (a^{\nu} _{n - p})^{*} \e ^{- i (E_{n} - E_{p - n}) \tau} \e ^{i p \sigma} + \\
     + (a^{\mu} _{- n})^{*} a^{\nu} _{p - n} \e ^{i (E_{n} - E_{p - n}) \tau} \e ^{i p \sigma} + (a^{\mu} _{- n})^{*} (a^{\nu} _{n - p})^{*} \e ^{i (E_{n} + E_{p - n}) \tau} \e ^{i p \sigma} \Big) = 0 ,
 \end{multline*}
 where since this must hold for all values of $\tau$ and $\sigma$, each term must vanish separately, giving us
@@ -1233,17 +1233,17 @@ where since this must hold for all values of $\tau$ and $\sigma$, each term must
 \end{align*}
 The 2 middle equations are just complex conjugates of each other, so they are redundant. The same is true for the first and last. This leaves us with
 \begin{align*}
-    L_{p} (\tau)             & := \sum _{n} \frac{p - n}{E_{p - n}} a^{\mu} _{n} a^{\nu} _{p - n} \eta _{\mu \nu} \e ^{- i (E_{n} + E_{p - n}) \tau} = 0         \\
-    \widetilde{L}_{p} (\tau) & := \sum _{n} \frac{p - n}{E_{p - n}} a^{\mu} _{n} (a^{\nu} _{n - p})^{*} \eta _{\mu \nu} \e ^{- i (E_{n} - E_{p - n}) \tau} = 0 .
+    L_{p} (\tau)             & := \frac{1}{2} \sum _{n} \frac{p - n}{E_{p - n}} a^{\mu} _{n} a^{\nu} _{p - n} \eta _{\mu \nu} \e ^{- i (E_{n} + E_{p - n}) \tau} = 0         \\
+    \widetilde{L}_{p} (\tau) & := \frac{1}{2} \sum _{n} \frac{p - n}{E_{p - n}} a^{\mu} _{n} (a^{\nu} _{n - p})^{*} \eta _{\mu \nu} \e ^{- i (E_{n} - E_{p - n}) \tau} = 0 .
 \end{align*}
 
 One last thing before quantizing: the $n = 0$ term in the solution reads
 \begin{equation*}
-    \frac{1}{2 m} \left( a^{\mu} _{0} \e ^{- i m \tau} + (a^{\mu} _{0})^{*} \e ^{i m \tau} \right) ,
+    \frac{1}{2 \pi \alpha '} \frac{1}{2 m} \left( a^{\mu} _{0} \e ^{- i m \tau} + (a^{\mu} _{0})^{*} \e ^{i m \tau} \right) ,
 \end{equation*}
-which is divergent in the $m \rightarrow 0$ limit unless $\mathfrak{Re}(a^{\mu} _{0}) = 0$, thus $a^{\mu} _{0}$ must be purely imaginary. Keeping the analogy to the $m \rightarrow 0$ regime, we conclude $a^{\mu} _{0} = 4 \pi i (\alpha ')^2 p^{\mu}$. Also, I forgot to include a factor of $T = 1 / 2 \pi \alpha '$, so the solution is really
+which is divergent in the $m \rightarrow 0$ limit unless $\mathfrak{Re}(a^{\mu} _{0}) = 0$, thus $a^{\mu} _{0}$ must be purely imaginary. Keeping the analogy to the $m \rightarrow 0$ regime, we conclude $a^{\mu} _{0} = 4 \pi i (\alpha ')^2 p^{\mu}$. Since $a^{\mu} _{0}$ is proportional to $p^{\mu}$, we have that
 \begin{equation*}
-    X^{\mu} (\tau , \sigma) = \frac{1}{2 \pi \alpha '} \sum _{n \in \mathbb{Z}} \frac{1}{2 E_{n}} \left( a^{\mu} _{n} \e ^{i (- E_{n} \tau + n \sigma)} + (a^{\mu} _{n})^{*} \e ^{i (E_{n} \tau + n \sigma)} \right) .
+    M^2 = - p^{\mu} p_{\mu} = \frac{1}{16 \pi ^2 (\alpha ')^4} a^{\mu} _{0} a^{\nu} _{0} \eta _{\mu \nu}
 \end{equation*}
 
 \end{document}
