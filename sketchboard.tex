@@ -1274,13 +1274,43 @@ into equal time commutation relations for the now operators $\Hat{X}^{\mu}$ and 
 \begin{equation*}
     \left[ \Hat{X}^{\mu} (\tau , \sigma) , \Hat{X}^{\nu} (\tau , \sigma ') \right] = \left[ \Hat{\Pi}^{\mu} ( \tau , \sigma) , \Hat{\Pi}^{\nu} (\tau , \sigma ') \right] = 0 ,
 \end{equation*}
-we start by $X^{\mu}$ with itself
+we start by the non-zero one
 \begin{multline*}
-    \left[ \Hat{X}^{\mu} (\tau , \sigma) , \Hat{X}^{\nu} (\tau , \sigma ') \right] = \Big[ \frac{1}{2 \pi \alpha '} \sum _{p \in \mathbb{Z}} \frac{1}{2 E_{p}} \Big( \Hat{\alpha} ^{\mu} _{p} \e ^{i (- E_{p} \tau + p \sigma)} + (\Hat{\alpha} ^{\mu} _{- p})^{\dagger} \e ^{i (E_{p} \tau + p \sigma)} \Big) , \\
-        \frac{1}{2 \pi \alpha '} \sum _{n \in \mathbb{Z}} \frac{1}{2 E_{n}} \Big( \Hat{\alpha} ^{\mu} _{n} \e ^{i (- E_{n} \tau + n \sigma)} + (\Hat{\alpha} ^{\mu} _{- n})^{\dagger} \e ^{i (E_{n} \tau + n \sigma)} \Big) \Big] =
+    \left[ \Hat{X}^{\mu} (\tau , \sigma) , \Hat{\Pi}^{\nu} (\tau , \sigma ') \right] = \Big[ \frac{1}{2 \pi \alpha '} \sum _{p \in \mathbb{Z}} \frac{1}{2 E_{p}} \Big( \Hat{\alpha} ^{\mu} _{p} \e ^{i (- E_{p} \tau + p \sigma)} + (\Hat{\alpha} ^{\mu} _{- p})^{\dagger} \e ^{i (E_{p} \tau + p \sigma)} \Big) , \\
+        F^{-} \frac{i}{(4 \pi \alpha ')^2} \sum _{n \in \mathbb{Z}} \Big( - \Hat{\alpha} ^{\nu} _{n} \e ^{i (- E_{n} \tau + n \sigma ')} + (\Hat{\alpha} ^{\nu} _{- n})^{\dagger} \e ^{i (E_{n} \tau + n \sigma ')} \Big) \Big] =
 \end{multline*}
 \begin{multline*}
-    = \frac{1}{(4 \pi \alpha ')^2} \sum _{p} \sum _{n} \frac{1}{E_{p} E_{n}} \Big( \Big[  \Big] \Big)
+    = F^{-} \frac{i}{(4 \pi \alpha ')^3} \sum _{p} \sum _{n} \frac{1}{E_{p}} \Big( - \Big[ \Hat{\alpha}^{\mu} _{p} , \Hat{\alpha}^{\nu} _{n} \Big] \e ^{- i (E_{p} + E_n) \tau} \e ^{i (p \sigma + n \sigma ')} + \Big[ \Hat{\alpha}^{\mu} _{p} , (\Hat{\alpha}^{\nu} _{- n})^{\dagger} \Big] \e ^{- i (E_{p} - E_{n}) \tau} \e ^{i (p \sigma + n \sigma ')} - \\
+    - \Big[ (\Hat{\alpha}^{\mu} _{- p})^{\dagger} , \Hat{\alpha}^{\nu} _{n} \Big] \e ^{i (E_{p} - E_{n}) \tau} \e ^{i (p \sigma + n \sigma ')} + \Big[ (\Hat{\alpha}^{\mu} _{- p})^{\dagger} , (\Hat{\alpha} _{- n})^{\dagger} \Big] \e ^{i (E_{p} + E_{n}) \tau} \e ^{i (p \sigma + n \sigma ')} \Big) \equiv i \delta (\sigma - \sigma ') \eta ^{\mu \nu} ,
 \end{multline*}
+from which we conclude that
+\begin{equation*}
+    \Big[ \Hat{\alpha}^{\mu} _{p} , (\Hat{\alpha}^{\nu} _{- n})^{\dagger} \Big] = \eta ^{\mu \nu} \delta _{p , - n} ,
+\end{equation*}
+giving us the harmonic oscillator operators
+\begin{align*}
+    \Hat{a}^{\mu} _{n}             & := \Hat{\alpha}^{\mu} _{n}                            \\
+    (\Hat{a}^{\mu} _{n})^{\dagger} & := (\Hat{\alpha} ^{\mu} _{- n})^{\dagger} , \ n > 0 .
+\end{align*}
+
+We define a vacuum state of the string to obey
+\begin{equation*}
+    \Hat{a}^{\mu} _{n} \ket{0} = 0 , \ \mathrm{for} \ n > 0 .
+\end{equation*}
+For $n = 0$, we have the center of mass momentum operator, so the vacuum also obeys
+\begin{equation*}
+    \Hat{p}^{\mu} \ket{0} = p^{\mu} \ket{0} .
+\end{equation*}
+
+A generic state arises from a sequence of creation operators on the vacuum
+\begin{equation*}
+    ((a^{\mu _{1}} _{1})^{\dagger})^{n_{\mu _1}} ((a^{\mu _2} _{2})^{\dagger})^{n_{\mu _2}} ... ((a^{\nu _1} _{1})^{\dagger})^{n_{\nu _1}} ((a^{\mu _2} _{2})^{\dagger})^{n_{\nu _2}} ... \ket{0} .
+\end{equation*}
+This (should) give rise to particles.
+
+As in regular ST, we have ghosts arising from the Minkowski metric
+\begin{equation*}
+    \Big[ \Hat{a}^{\mu} _{n} , (\Hat{a}^{\nu} _{m})^{\dagger} \Big] = \eta ^{\mu \nu} \delta _{n m}
+\end{equation*}
 
 \end{document}

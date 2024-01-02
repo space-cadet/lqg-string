@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.17)  31 DEC 2023 20:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.17)  2 JAN 2024 19:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -707,12 +707,7 @@ Overfull \hbox (6.34128pt too wide) detected at line 1218
 LaTeX Font Info:    Trying to load font information for U+euf on input line 1244.
  (E:\MikTeX\tex/latex/amsfonts\ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
-) [22]
-Underfull \hbox (badness 10000) detected at line 1284
- []$[]   \OT1/cmr/m/n/10 = [] [] [] [][][][][]  $ 
- []
-
-[23] (e:\LQG-Strings\lqg-string\PDF\sketchboard.aux)
+) [22] [23] (e:\LQG-Strings\lqg-string\PDF\sketchboard.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
@@ -729,7 +724,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  84i,12n,89p,691b,448s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Luigi\AppData\Local\MiKTeX\fonts/pk/ljfour/public/bbold/dpi600\bbold7.pk> <C:\Users\Luigi\AppData\Local\MiKTeX\fonts/pk/ljfour/public/bbold/dpi600\bbold10.pk> <C:\Users\Luigi\AppData\Local\MiKTeX\fonts/pk/ljfour/public/esint/dpi600\esint10.pk><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><E:/MikTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><E:/MikTeX/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on e:\LQG-Strings\lqg-string\PDF\sketchboard.pdf (23 pages, 301470 bytes).
+Output written on e:\LQG-Strings\lqg-string\PDF\sketchboard.pdf (23 pages, 303632 bytes).
 PDF statistics:
  364 PDF objects out of 1000 (max. 8388607)
  61 named destinations out of 1000 (max. 500000)
