@@ -13,7 +13,7 @@
 \contentsline {subsection}{\numberline {B}Relation With The Nambu-Goto Analysis}{6}{section*.18}%
 \contentsline {subsection}{\numberline {C}Solving The String Klein-Gordon Equation}{7}{section*.19}%
 \contentsline {section}{\numberline {V}The Quantum Klein-Gordon String}{7}{section*.20}%
-\contentsline {section}{\numberline {VI}The Bimetric String}{7}{section*.21}%
+\contentsline {section}{\numberline {VI}The Bimetric String}{8}{section*.21}%
 \contentsline {subsection}{\numberline {A}Bimetric Polyakov Action}{8}{section*.22}%
 \contentsline {subsection}{\numberline {B}The Bimetric Polyakov Equations}{8}{section*.23}%
 \contentsline {section}{\numberline {VII}Strings and Quantum Geometry}{9}{section*.24}%

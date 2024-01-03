@@ -489,7 +489,22 @@ and 0-th oscillation mode related to center of mass momentum
 
 \section{The Quantum Klein-Gordon String} \label{sec:quantum-KG-string}
 
-In this paper, we proceed to quantize the Klein-Gordon string via canonical covariant quantization, in a manner much similar to those found in \cite{Tong2009Lectures} and \cite{Green_Schwarz_Witten_2012}
+In the following, we proceed to quantize the Klein-Gordon string via canonical covariant quantization, in a manner much similar to those found in \cite{Tong2009Lectures} and \cite{Green_Schwarz_Witten_2012}. To start, we calculate the momentum canonical to the embbeding fields $X^{\mu}$, which reads
+\begin{multline} \label{eqn:canonical-momentum}
+	\Pi _{\mu} (\tau , \sigma) = F^{-} \frac{i}{(4 \pi \alpha ')^2} \sum _{p} \left( - \alpha ^{\nu} _{p} \e ^{i (- E_{p} \tau + p \sigma)} + \\
+	+ (\alpha ^{\nu} _{- p})^{*} \e ^{i (E_{p} \tau + p \sigma)} \right) \eta _{\nu \mu} ,
+\end{multline}
+and then we proceed to turn the equal-time Poisson bracket relations
+\begin{equation} \label{eqn:Poisson-brackets-1}
+	\left\{ X^{\mu} (\tau , \sigma) , \Pi ^{\nu} (\tau , \sigma ') \right\} = \delta (\sigma - \sigma ') \eta ^{\mu \nu}
+\end{equation}
+\begin{equation} \label{eqn:Poisson-brackets-2}
+	\left\{ X^{\mu} (\tau , \sigma) , X^{\nu} (\tau , \sigma ') \right\} = 0 = \left\{ \Pi ^{\mu} (\tau , \sigma) , \Pi ^{\nu} (\tau , \sigma ') \right\}
+\end{equation}
+into equal-time commutation relations between the now operators $\Hat{X}^{\mu}$ and $\Hat{\Pi}^{\nu}$:
+\begin{equation}
+	\Big[ \Hat{X}^{\mu} (\tau , \sigma) , \Hat{\Pi}^{\nu} (\tau , \sigma ') \Big] \equiv i \delta (\sigma - \sigma ') \eta ^{\mu \nu}
+\end{equation}
 
 \section{The Bimetric String}\label{sec:bimetric-nambu-goto}
 
