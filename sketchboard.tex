@@ -1360,12 +1360,11 @@ The commutation relations between the $L$'s are
                                                                           & = \frac{(m - n)}{E_{m - n}} \frac{(k - p)}{E_{k - p}} \eta _{\mu \nu} \left( (\Hat{\alpha}^{\mu} _{n})^{\dagger} \Hat{\alpha}^{\nu} _{k - p} \delta _{n - m , k} + (\Hat{\alpha}^{\mu} _{k})^{\dagger} \Hat{\alpha}^{\nu} _{n - m} \delta _{n , k - p} \right) =                                                                                                                                                 \\
                                                                           & = \frac{(m - n)}{E_{m - n}} \frac{(k - p)}{E_{k - p}} \left( \frac{E_{- n}}{(- n)} \Hat{\widetilde{L}}_{k - p - n , k - p} \delta _{n - m , k} + \frac{E_{- k}}{(- k)} \Hat{\widetilde{L}}_{n - m - k , n - m} \delta _{n , k - p} \right) .
 \end{align*}
-Note that $(\Hat{\widetilde{L}}_{n , p})^{\dagger} = \frac{(p - n)}{E_{p - n}} \frac{E_{n}}{(- n)} \Hat{\widetilde{L}}_{n - p , - p}$ thus if we have a sequence of $L$'s sandwiched between physical states (where if one of the $p$'s is 0 the $\widetilde{L}$ should be replaced by $\widetilde{L} - a$)
+Since $[\Hat{L}_{n , m} , \Hat{\widetilde{L}}_{p , k}]$ only has annihilation operators, it has no ordering ambiguities. $[\Hat{\widetilde{L}}_{n , m} , \Hat{\widetilde{L}}_{p , k}]$ would have ordering ambiguities for $k - p = 0$ and $n - m = 0$, however in both cases regardless of the order the commutator would vanish because of the $(m - n)(k - p)$ factor multiplying the whole expression, thus our algebra has no anomalous terms.
+
+Mass-shell condition
 \begin{equation*}
-    \bra{\mathrm{phys}'} L_{n_1 , p_1} ... L_{n_m , p_k} \ket{\mathrm{phys}}
-\end{equation*}
-\begin{equation*}
-    \bra{\mathrm{phys}'}
+    (4 \pi (\alpha ')^2)^2 \Hat{M}^2 - \lim _{n \rightarrow 0} \frac{E_{n}}{n} \Hat{\widetilde{L}}_{n , 0} = \lim _{n \rightarrow 0} \frac{E_{n}}{n} c_{n}
 \end{equation*}
 
 \end{document}
