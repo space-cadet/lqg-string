@@ -1362,9 +1362,18 @@ The commutation relations between the $L$'s are
 \end{align*}
 Since $[\Hat{L}_{n , m} , \Hat{\widetilde{L}}_{p , k}]$ only has annihilation operators, it has no ordering ambiguities. $[\Hat{\widetilde{L}}_{n , m} , \Hat{\widetilde{L}}_{p , k}]$ would have ordering ambiguities for $k - p = 0$ and $n - m = 0$, however in both cases regardless of the order the commutator would vanish because of the $(m - n)(k - p)$ factor multiplying the whole expression, thus our algebra has no anomalous terms.
 
-Mass-shell condition
+Considering the ground state $\ket{0 ; k}$, mass-shell condition
 \begin{equation*}
-    (4 \pi (\alpha ')^2)^2 \Hat{M}^2 - \lim _{n \rightarrow 0} \frac{E_{n}}{n} \Hat{\widetilde{L}}_{n , 0} = \lim _{n \rightarrow 0} \frac{E_{n}}{n} c_{n}
+    - (4 \pi (\alpha ')^2)^2 \Hat{M}^2 + \lim _{n \rightarrow 0} \frac{E_{n}}{n} \Hat{\widetilde{L}}_{n , 0} = \lim _{n \rightarrow 0} \frac{E_{n}}{n} c_{n}
 \end{equation*}
+implies
+\begin{equation*}
+    - (4 \pi (\alpha ')^2)^2 (M^2 + k^{\mu} k_{\mu}) = \lim _{n \rightarrow 0} \frac{E_{n}}{n} c_{n} .
+\end{equation*}
+Now considering states at the first excited level, given by $\zeta _{\mu} (\Hat{\alpha} ^{\mu} _{1})^{\dagger} \ket{0 ; k}$ with $\zeta _{\mu} (k)$ being a polarization vector, the mass-shell condition will now read
+\begin{equation*}
+    \left( - (4 \pi (\alpha ')^2)^2 \Hat{M}^2 + \lim _{n \rightarrow 0} \frac{E_{n}}{n} \Hat{\widetilde{L}}_{n , 0} \right) \zeta _{\mu} (\Hat{\alpha}^{\mu} _{1})^{\dagger} \ket{0 ; k} = \lim _{n \rightarrow 0} \frac{E_{n}}{n} c_{n} \zeta _{\mu} (\Hat{\alpha}^{\mu} _{1})^{\dagger} \ket{0 ; k} ,
+\end{equation*}
+leading to the same result.
 
 \end{document}
