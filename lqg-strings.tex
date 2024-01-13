@@ -347,7 +347,7 @@ from which we can see that the correction factor modifies the speed of propagati
 
 \section{Inverse Metric Polyakov} \label{sec:inverse-metric-Polyakov}
 
-In the same way we considered the quantum geometry inverse metric correction to the Nambu-Goto action, it is also natural to consider such correction to the Polyakov string. We start with the action(\ref{eqn:polyakov-gravity}) and proceed with the inverse area correction(\ref{eqn:inverse-metric-correction}), which yields our corrected Polyakov action
+In the same way we considered the quantum geometry inverse metric correction to the Nambu-Goto action, it is also natural to consider such correction to the Polyakov string. we start with the action(\ref{eqn:polyakov-gravity}) and proceed with the inverse area correction(\ref{eqn:inverse-metric-correction}), which yields our corrected Polyakov action
 \begin{multline} \label{eqn:inverse-metric-Polyakov}
 	S_{I A P} = - \frac{T}{2} \int \diff ^2 x \left( \sqrt{- g} - \frac{k \Delta}{2 \sqrt{- g}} \right) \times \\ \times g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} .
 \end{multline}
@@ -376,18 +376,18 @@ As for variation w.r.t the embbeding fields $X^{\lambda}$, we have
 \begin{multline} \label{eqn:X-eom-inverse-area}
 	F^{-} \sqrt{- g} g^{a b} \partial _{a} \partial _{b} X^{\nu} G_{\lambda \nu} + \partial _{a} \left( F^{-} \sqrt{- g} g^{a b} \right) \partial _{b} X^{\nu} G_{\lambda \nu} = \\ = \frac{1}{2} F^{-} \sqrt{- g} g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \partial _{\lambda} G_{\mu \nu} ,
 \end{multline}
-where $F^{-} = 1 - k \Delta / 2 (- g)$. Using conformal gauge $g^{a b} = (\phi (x))^{-1} \eta ^{a b}$ and assuming flat background $G_{\mu \nu} = \eta _{\mu \nu}$, eq(\ref{eqn:X-eom-inverse-area}) simplify to
+where $F^{-} = 1 - k \Delta / 2 (- g)$. Using conformal symmetry $g^{a b} = (\phi (x))^{-1} \eta ^{a b}$ and assuming flat background $G_{\mu \nu} = \eta _{\mu \nu}$, eq(\ref{eqn:X-eom-inverse-area}) simplify to
 \begin{equation} \label{eqn:X-eom-simplified}
 	\eta ^{a b} \partial _{a} \partial _{b} X^{\mu} + \eta ^{a b} \partial _{a} \ln (F^{-}) \partial _{b} X^{\mu} = 0 .
 \end{equation}
 
 \subsection{Simplifying The Equations of Motion} \label{sec:solving-eoms-inverse-area}
 
-Equation(\ref{eqn:X-eom-simplified}) seems a bit odd, but we can polish it by choosing a plane-wave ansatz for the embedding fields $X^{\mu} = X^{\mu} _{0} \e ^{-i (E \tau - p \sigma)}$ and using it to fix a form for the conformal factor $\phi (x)$ appearing in $F^{-}$. By using the ansatz in eq(\ref{eqn:X-eom-simplified}), it becomes
+Equation(\ref{eqn:X-eom-simplified}) seems a bit odd, but we can polish it by choosing a plane-wave ansatz for the embedding fields $X^{\mu} = X^{\mu} _{0} \e ^{-i (E \tau - p \sigma)}$ and using it to fix a form for the conformal function $\phi (x)$ appearing in $F^{-}$. By using the ansatz in eq(\ref{eqn:X-eom-simplified}), it becomes
 \begin{equation}
 	(E^{2} - p^{2}) X^{\mu} + i (E \partial _{\tau} \ln (F^{-}) - p \partial _{\sigma} \ln (F^{-})) X^{\mu} = 0 ,
 \end{equation}
-from which we can use the freedom in the conformal function to fix the second term as $- \mu ^2 X^{\mu}$, with $- \mu ^2 = p^2 - E^2$ on-shell, and this in turn implies that the derivatives of $\ln (F^{-})$ are given by
+from which we can use the freedom in the conformal function to fix the second term as $- m^2 X^{\mu}$, with $- m^2 = p^2 - E^2$ on-shell, and this in turn implies that the derivatives of $\ln (F^{-})$ are given by
 \begin{equation} \label{eqn:derivatives-F-minus}
 	\partial _{\tau} \ln (F^{-}) = i E , \ \partial _{\sigma} \ln (F^{-}) = i p ,
 \end{equation}
@@ -409,7 +409,7 @@ At first glance it seems problematic that we have a complex conformal function $
 
 \subsection{Relation With The Nambu-Goto Analysis} \label{sec:relation-with-NG-case}
 
-At first glance, our recent analysis of the Polyakov string with inverse metric correction seems to not be related to what we found in the analysis of the Nambu-Goto string. However, as pointed out in \cite{Grimshaw2010Homogenization}, wave equations with a variable speed (the result of the Nambu-Goto analysis) can be turned into Klein-Gordon equations (what we just found). While their work deals only with space-varying wave speed, it is straightforward to generalise the procedure to also include time dependence.
+At first glance, our recent analysis of the Polyakov string with inverse metric correction seems to not be related to what we found in the analysis of the Nambu-Goto string. However, as pointed out in \cite{Grimshaw2010Homogenization}, wave equations with a variable speed (the result of the Nambu-Goto analysis) can be turned into Klein-Gordon equations (what we just found). While they're work deals only with space-varying wave speed, it is straight forward to generalise the procedure to also include time dependence, but ironically enough the calculations lead to the conclusion that the wave speed $v = 1 / F^{+}$ is actually time independent.
 
 Following the procedure found in \cite{Grimshaw2010Homogenization}, we start with eq(\ref{eqn:simplified-modified-wave-eqn}) obtained in sec(\ref{sec:modified-eom}), renaming $\sigma$ as $x$ and dividing by $(F^{+})^2$ such that we have $v^2$ on the second term like the mentioned work, and perform a change of variables $(t , x) \rightarrow (\tau (t , x) , \sigma (t , x))$, where without loss of generality (one needs just to rescale and/or rotate the coordinates) we set
 \begin{multline} \label{eqn:new-coordinates-constraints-quadratic}
@@ -486,100 +486,6 @@ and 0-th oscillation mode related to center of mass momentum
 \begin{equation*}
 	\alpha ^{\mu} _{0} = 4 \pi i (\alpha ')^2 p^{\mu} .
 \end{equation*}
-
-\section{The Quantum Klein-Gordon String} \label{sec:quantum-KG-string}
-
-In the following, we proceed to quantize the Klein-Gordon string via canonical covariant quantization, in a manner much similar to those found in \cite{Tong2009Lectures} and \cite{Green_Schwarz_Witten_2012}. To start, we calculate the momentum canonical to the embbeding fields $X^{\mu}$, which reads
-\begin{multline} \label{eqn:canonical-momentum}
-	\Pi _{\mu} (\tau , \sigma) = F^{-} \frac{i}{(4 \pi \alpha ')^2} \sum _{p} \left( - \alpha ^{\nu} _{p} \e ^{i (- E_{p} \tau + p \sigma)} + \\
-	+ (\alpha ^{\nu} _{- p})^{*} \e ^{i (E_{p} \tau + p \sigma)} \right) \eta _{\nu \mu} ,
-\end{multline}
-and then we proceed to turn the equal-time Poisson bracket relations
-\begin{equation} \label{eqn:Poisson-brackets-1}
-	\left\{ X^{\mu} (\tau , \sigma) , \Pi ^{\nu} (\tau , \sigma ') \right\} = \delta (\sigma - \sigma ') \eta ^{\mu \nu}
-\end{equation}
-\begin{equation} \label{eqn:Poisson-brackets-2}
-	\left\{ X^{\mu} (\tau , \sigma) , X^{\nu} (\tau , \sigma ') \right\} = 0 = \left\{ \Pi ^{\mu} (\tau , \sigma) , \Pi ^{\nu} (\tau , \sigma ') \right\}
-\end{equation}
-into equal-time commutation relations between the now operators $\Hat{X}^{\mu}$ and $\Hat{\Pi}^{\nu}$:
-\begin{equation} \label{eqn:canonical-commutator-1}
-	\Big[ \Hat{X}^{\mu} (\tau , \sigma) , \Hat{\Pi}^{\nu} (\tau , \sigma ') \Big] \equiv i \delta (\sigma - \sigma ') \eta ^{\mu \nu}
-\end{equation}
-\begin{equation} \label{eqn:canonical-commutator-2}
-	\Big[ \Hat{X}^{\mu} (\tau , \sigma) , \Hat{X}^{\nu} (\tau , \sigma ') \Big] = 0 = \Big[ \Hat{\Pi}^{\mu} (\tau , \sigma) , \Hat{\Pi}^{\nu} (\tau , \sigma ') \Big] .
-\end{equation}
-From these relations, we get commutation relations for the vibrational modes $\Hat{\alpha}^{\mu} _{p}$ and $(\Hat{\alpha}^{\nu} _{- k})^{\dagger}$:
-\begin{equation} \label{eqn:non-vanishing-commutator}
-	\Big[ \Hat{\alpha}^{\mu} _{p} , (\Hat{\alpha}^{\nu} _{- k})^{\dagger} \Big] = \eta ^{\mu \nu} \delta _{p , - k}
-\end{equation}
-\begin{equation} \label{eqn:vanishing-commutators}
-	\Big[ \Hat{\alpha}^{\mu} _{p} , \Hat{\alpha}^{\nu} _{k} \Big] = 0 = \Big[ (\Hat{\alpha}^{\mu} _{- p})^{\dagger} , (\Hat{\alpha}^{\nu} _{- k})^{\dagger} \Big] ,
-\end{equation}
-which are just harmonic oscillator relations with
-\begin{align}
-	\Hat{a}^{\mu} _{p}             & = \Hat{\alpha}^{\mu} _{p} \label{eqn:annihilation-operator}                                       \\
-	(\Hat{a}^{\mu} _{p})^{\dagger} & = (\Hat{\alpha}^{\mu} _{p})^{\dagger} , \ \mathrm{for} \ p \neq 0 . \label{eqn:creation-operator}
-\end{align}
-For $p = 0$ we have the center of mass momentum operator $\Hat{p}^{\mu}$. As usual, we define a vacuum state for the string to obey
-\begin{equation} \label{eqn:annihilation-vacuum}
-	\Hat{a}^{\mu} _{p} \ket{0} = 0 , \ \mathrm{for} \ p \neq 0 ,
-\end{equation}
-and for $p = 0$
-\begin{equation} \label{eqn:momentum-vacuum}
-	\Hat{p}^{\mu} \ket{0} = p^{\mu} \ket{0} .
-\end{equation}
-Our Fock space is built from the vacuum state $\ket{0}$ by operating with a sequence of creation operators
-\begin{multline} \label{eqn:general-state}
-	\ket{\psi} = ((a^{\mu _{1}} _{1})^{\dagger})^{n_{\mu _1}} ((a^{\mu _2} _{2})^{\dagger})^{n_{\mu _2}} ... \times \\
-	\times ((a^{\nu _1} _{1})^{\dagger})^{n_{\nu _1}} ((a^{\mu _2} _{2})^{\dagger})^{n_{\nu _2}} ... \ket{0} .
-\end{multline}
-
-As usual, by the appearance of the Minkowski metric in the non-zero commutator
-\begin{equation} \label{eqn:ghosts}
-	\Big[ \Hat{a}^{\mu} _{p} , (\Hat{a}^{\nu} _{k})^{\dagger} \Big] = \eta ^{\mu \nu} \delta _{p k} ,
-\end{equation}
-we have ghosts in the theory which must be dealt with. When translating the constraints as quantum operators, we require that they have vanishing matrix elements when sandwiched by physical states $\psi$ and $\phi$:
-\begin{equation} \label{eqn:L-constraint-quantum-1}
-	\bra{\phi} \Hat{L}_{p , k} \ket{\psi} = 0 \, \,
-\end{equation}
-\begin{equation} \label{eqn:L-constraint-quantum-2}
-	\bra{\phi} \Hat{\widetilde{L}}_{p , k} \ket{\psi} = 0 .
-\end{equation}
-$\Hat{L}_{p , k}$ has no ambiguities since it's composed of only annihilation operators, however, we have an ambiguity for $\Hat{\widetilde{L}}_{p , 0}$. To resolve this issue, we pick
-\begin{equation} \label{eqn:L-normal-ordering}
-	\Hat{\widetilde{L}}_{p , 0} = \frac{- p}{E_{- p}} (\Hat{\alpha}^{\mu} _{p})^{\dagger} \Hat{\alpha}^{\nu} _{p} \eta _{\mu \nu}
-\end{equation}
-with the annihilation operator to the right, which manifests in the imposition of the constraint as
-\begin{equation} \label{eqn:shifted-L-constraint}
-	\bra{\phi} \Hat{\widetilde{L}}_{p , 0} - c_{p} \ket{\psi} = 0 ,
-\end{equation}
-for some sequence $c_{p}$. The reason for it to be a sequence of $p$ and not a constant like in the regular String Theory literature is that in the usual theory, we would have a sum over $p$ and thus it would end up being a constant, but in our analysis we have this extra freedom, which we'll now see ends up being important. Classically, we had eq(\ref{eqn:string-rest-mass}) for the string rest mass, which we can rewrite as
-\begin{equation} \label{eqn:alternative-classical-rest-mass}
-	M^2 = - \frac{1}{(4 \pi (\alpha ')^2)^2} \lim _{p \rightarrow 0} \left( - \frac{E_{p}}{p} \widetilde{L}_{p , 0} \right) ,
-\end{equation}
-from where we can now see that the string mass spectrum will get shifted by
-\begin{equation} \label{eqn:shifted-mass-spectrum}
-	\Hat{M}^2 = - \frac{1}{(4 \pi (\alpha ')^2)^2} \left( (\Hat{\alpha} ^{\mu} _{0})^{\dagger} \Hat{\alpha}^{\nu} _{0} \eta _{\mu \nu} + \lim _{p \rightarrow 0} \frac{E_{p}}{p} c_{p} \right) .
-\end{equation}
-Since $E_{0} = \mu$, it seems like the natural candidate for $c_{p}$ would be some function $f (\mu , p)$ such that
-\begin{equation} \label{eqn:cp-limit}
-	\lim _{p \rightarrow 0} \frac{c_{p}}{p} = \mu
-\end{equation}
-like $c_{p} = \mu p$, $c_{p} = \sin (\mu p)$, $c_{p} = \tan (\mu p)$, etc, making it so the mass spectrum of the string gets shifted by the \textquotedblleft mass" term of the Klein-Gordon equation (\ref{eqn:X-Klein-Gordon-eqn}), $\mu ^2$.
-
-The \textquotedblleft Virasoro-Klein-Gordon" algebra our constraint modes satisfy is given by
-\begin{equation} \label{eqn:L-commutators-1}
-	\Big[ \Hat{L}_{n , m} , \Hat{L}_{p , k} \Big] = 0
-\end{equation}
-\begin{multline} \label{eqn:L-commutators-2}
-	\Big[ \Hat{L}_{n , m} , \Hat{\widetilde{L}}_{p , k} \Big] = \frac{m - n}{E_{m - n}} \Big( \Hat{L}_{n + k - p , n} \delta _{n - m , k} + \\
-	+ \Hat{L}_{n - m + k - p , n - m} \delta _{n , k} \Big)
-\end{multline}
-\begin{multline} \label{eqn:L-commutators-3}
-	\Big[ \Hat{\widetilde{L}}_{n , m} , \Hat{\widetilde{L}}_{p , k} \Big] = \frac{(m - n)}{E_{m - n}} \frac{(k - p)}{E_{k - p}} \times \\
-	\times \Bigg( \frac{E_{- n}}{(- n)} \Hat{\widetilde{L}}_{k - p - n , k - p} \delta _{n - m , k} + \\
-	+ \frac{E_{- k}}{(- k)} \Hat{\widetilde{L}}_{n - m - k , n - m} \delta _{n , k - p} \Bigg) .
-\end{multline}
 
 \section{The Bimetric String}\label{sec:bimetric-nambu-goto}
 
@@ -663,6 +569,23 @@ As for the embbeding fields equation, we get a non-homogeneous wave equation for
 
 \section{Strings and Quantum Geometry}\label{sec:string-geometry}
 
+$X^\mu(\sigma, \tau)$ are the space-time coordinates of a point $(\sigma, \tau)$ on the worldsheet. Now if one takes the sigma model viewpoint then the $X$'s can be viewed as $D+1$ scalar fields living on a $1+1$ worldsheet.
+But these are not scalars, they are components of a $D+1$ dim vector because they transform as elements of $SO(D,1)$ under global Lorentz transformations on the ambient space-time.
+
+The key point here is that the Lorentz transformations acting on the $X$'s are \textbf{global}. If the background geometry is taken to be Minkowski then the $X$'s become points on this manifold and $SO(D,1)$ just takes one point in Minkowski to another point in Minkowski. The overall geometry is invariant under SO(D,1). 
+Now, consider the case when the background geometry is not flat. Immediately you can see that the $X$'s can no longer be treated as elements of a $SO(D,1)$ vector under \emph{global} Lorentz transformations.
+
+But now instead of viewing the $X$'s as elements of a Minkowski space, we think of them as elements of the tangent space $T_p(M)$ of the background manifold $M$.
+And what happens when you go from point $p$ to point $p'$ in $M$, the local Lorentz frames at the two points are related by an element of $g(p,p') \in SO(D,1)$. This group element can be thought of arising from taking the holonomy of a $\mf{so}(D,1)$ Lie algebra valued connection living on $M$, along a path connecting $p$ and $p'$.
+
+Now, let's remind ourselves what we're trying to do here. We want a gauge field, which lives on the background geometry and which encodes the background geometry, should appear in an action of a Bosonic string. The end result is that we now have with a gauge field $\mc{A}_a^J(\sigma, \tau)$ living on the worldsheet $\Sigma$. Here the lower index $a$ is the worldsheet index and $J$ labels generators of the Lie algebra $\mf{so}(D,1)$. Remember this is a gauge field which is now living on the worldsheet. The consequence for the string action is that in order for the action to be invariant under local gauge transformations of $\mc{A}$, we have to replace the ordinary derivatives of $X^\mu$ with the gauge covariant derivative $\partial_a X^\mu \rightarrow \mc{D}_a X^\mu$, which is defined as:
+
+\begin{equation}
+	\mc{D}_a X^I(\sigma,\tau) = \partial_a X^I + g \mc{A}_a X^I,
+\end{equation}
+where $\mc{A}_a$ is a field living on $\Sigma$ which takes values in the Lie algebra $\mf{so}(D,1)$.
+
+
 Let us begin by writing down the action of a string propagating in a background geometry which is specified not in terms of a metric, but in terms of a connection $A_\mu^{IJ}$ and vielbein fields $E_\mu^I$. Further, we will require that the bulk connection and the bulk vielbein can be pulled back onto a connection $\omega _{a} ^{i j}$ and a dyad $e^a_i$, respectively, living on the string worldsheet $\Sigma$. In order for the bulk connection $A_\mu^{IJ}$, and its pullback $\omega _a ^{i j}$ on $\Sigma$, to have an effect on the string dynamics we will also promote the embedding fields $X^\mu$ to Lie algebra valued vector fields $X^{\mu} _{I}$. However, due to the fact that parallel transport of the embedding fields on the worldsheet should only involve the worldsheet connection $\omega _a ^{i j}$, we can replace $X^{\mu} _{I}$ with $X^{\mu} _{i}$, and to not lose the physical meaning of embedding fields as string coordinates, we include a new internal world-sheet field $v^{i}$, and define the string coordinates to be $\Tilde{X}^{\mu} \equiv X^{\mu} _{i} v^{i}$.
 \begin{multline} \label{eqn:lqg-string-action}
 	S_{PA} = - \frac{T}{2} \int \diff \tau \wedge \diff \sigma e e^{a} _{i} e^{b i} D_{a} X^{\mu} _{j} v^{j} \times \\
@@ -684,7 +607,9 @@ where $\omega_{a\,j}^i$ is the pullback of the bulk connection to the worldsheet
 
 \appendix
 
-\section{}
+\section{Worldsheet Action in Terms of Transverse Velocity}
+
+
 
 \bibliographystyle{JHEP3}
 
