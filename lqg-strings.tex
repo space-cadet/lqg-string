@@ -218,7 +218,7 @@ In \autoref{app:bimetric-string} we discuss further the bimetric extension of th
 
 Let us begin by recalling the Polyakov action for the bosonic string.
 
-\begin{equation}\label{eqn:polyakov-flat}
+\begin{equation}
 	S_{P} = -\frac{T}{2} \int \diff \tau \wedge \diff \sigma \sqrt{-g} g^{ab} \partial_a X^\mu \partial_b X^\nu \eta_{\mu\nu}.
 \end{equation}
 Here $\mu, \nu \in \{0,1,\ldots,D-1\}$ are co-ordinates of the $D$ dimensional worldvolume (the geometry in which the string propagates), $a,b \in \{0,1\}$ are co-ordinates on the string worldsheet, $X^\mu$ are the embedding co-ordinates which specify the location of a point on the string worldsheet in the bulk worldvolume, $\eta_{\mu\nu}$ is the flat Minkowski metric on the worldvolume, $g_{ab}$ is the metric on the string worldsheet, $T$ is the string tension and $\tau, \sigma $ are the co-ordinates on the string worldsheet.
@@ -301,7 +301,7 @@ where $g_{\mu\nu}$ and $f_{\mu\nu}$ are \emph{arbitrary} metrics, $M_g^2, M_f^2$
 
 \subsection{Modified Equations of Motion}\label{sec:modified-eom}
 
-Following the procedure done in $\cite{Zwiebach2009A-First}$, the correction(\ref{eqn:modified-NG-action}) does not change the form of the equations of motion and neither of the boundary conditions, i.e they are still given by
+Following the procedure done in \cite{Zwiebach2009A-First}, the correction(\ref{eqn:modified-NG-action}) does not change the form of the equations of motion and neither of the boundary conditions, i.e they are still given by
 \begin{equation} \label{eqn:modified-NG-eom}
 	\mathrm{EoM:} \partial _{\tau} \PS ^{\tau} _{\mu} + \partial _{\sigma} \PS ^{\sigma} _{\mu} = 0
 \end{equation}
@@ -493,10 +493,10 @@ and 0-th oscillation mode related to center of mass momentum
 
 \section{The Quantum Klein-Gordon String} \label{sec:quantum-KG-string}
 
-In the following, we proceed to quantize the Klein-Gordon string via canonical covariant quantization, in a manner much similar to those found in \cite{Tong2009Lectures} and \cite{Green_Schwarz_Witten_2012}. To start, we calculate the momentum canonical to the embbeding fields $X^{\mu}$, which reads
+In the following, we proceed to quantize the Klein-Gordon string via canonical covariant quantization, in a manner much similar to those found in \cite{Tong2009Lectures} and \cite{Green2012Superstring}. To start, we calculate the momentum canonical to the embbeding fields $X^{\mu}$, which reads
 \begin{multline} \label{eqn:canonical-momentum}
-	\Pi _{\mu} (\tau , \sigma) = F^{-} \frac{i}{(4 \pi \alpha ')^2} \sum _{p} \left( - \alpha ^{\nu} _{p} \e ^{i (- E_{p} \tau + p \sigma)} + \\
-	+ (\alpha ^{\nu} _{- p})^{*} \e ^{i (E_{p} \tau + p \sigma)} \right) \eta _{\nu \mu} ,
+	\Pi _{\mu} (\tau , \sigma) = F^{-} \frac{i}{(4 \pi \alpha ')^2} \sum _{p} \big( - \alpha ^{\nu} _{p} \e ^{i (- E_{p} \tau + p \sigma)} + \\
+	+ (\alpha ^{\nu} _{- p})^{*} \e ^{i (E_{p} \tau + p \sigma)} \big) \eta _{\nu \mu} ,
 \end{multline}
 and then we proceed to turn the equal-time Poisson bracket relations
 \begin{equation} \label{eqn:Poisson-brackets-1}
@@ -585,6 +585,57 @@ The \textquotedblleft Virasoro-Klein-Gordon" algebra our constraint modes satisf
 	+ \frac{E_{- k}}{(- k)} \Hat{\widetilde{L}}_{n - m - k , n - m} \delta _{n , k - p} \Bigg) .
 \end{multline}
 
+\section{Strings and Quantum Geometry}\label{sec:string-geometry}
+
+Uptil now we have studied a phenomenological modification of the string action. However, ultimately all phenomenological ideas must have a grounding in some exact, microscopic description of the system. Further, we have neglected one very important aspect of this whole endeavor, which is the description of the background geometry in the connection formalism and how to couple that to the Bosonic string. In this section we present a possible action in which the bulk geometry is encoded in the string action in terms of a connection living on the worldsheet.
+
+Let us begin by writing down the action of a string propagating in a background geometry. The background geometry is specified not in terms of a metric, but in terms of a connection $A_\mu^{IJ}$ and vielbein fields $E_\mu^I$. Further, we will require that the bulk connection and the bulk vielbein can be pulled back onto a connection $\mc{A}_{a}^{ij}$ and a dyad $e^a_i$, respectively, living on the string worldsheet $\Sigma$. $X^\mu(\sigma, \tau)$ are the space-time coordinates of a point $(\sigma, \tau)$ on the worldsheet. Now if one takes the sigma model viewpoint then the $X$'s can be viewed as $D+1$ scalar fields living on a $1+1$ worldsheet. But these fields are not scalars. They are components of a $D+1$ dim vector because they transform as elements of $SO(D,1)$ under global Lorentz transformations acting on the ambient space-time, which we take to be flat for the time being.
+
+The key point here is that the Lorentz transformations acting on the $X$'s are \textbf{global}. If the background geometry is taken to be Minkowski then the $X$'s become points on this manifold and $SO(D,1)$ just takes one point in Minkowski to another point in Minkowski. The overall geometry is invariant under SO(D,1). Now, consider the case when the background geometry is not flat. Immediately you can see that the $X$'s can no longer be treated as elements of a $SO(D,1)$ vector under \textbf{global} Lorentz transformations.
+
+Instead of viewing the $X$'s as elements of a Minkowski space, we think of them as elements of the tangent space $T_p(M)$ at a given point $p$ of the background manifold $M$.
+When we travel along some path $\mc{C} \in M$ from point $p$ to point $p'$, the local Lorentz frames at the two points are, in general, related by an element of $g(p,p') \in SO(D,1)$. This group element arises from taking the holonomy of a $\mf{so}(D,1)$ Lie algebra valued connection living on $M$, along a the path $\mc{C}$.
+
+Let us remind ourselves what we're trying to do here. We want a gauge field, which lives on the background geometry and which encodes the background geometry, to somehow make an appearance in the action of a Bosonic string. There is an obvious connection $\mc{A}_a^{IJ}$ living on the worldsheet which is the pullback from $M$ to $\Sigma$ of the connection $A_{\mu}^{IJ}$.
+
+The end result is that we now have with a gauge field $\mc{A}_a^{IJ}(\sigma, \tau)$ living on the worldsheet $\Sigma$. Here the lower index $a$ is the worldsheet index and $J$ labels generators of the Lie algebra $\mf{so}(D,1)$. Remember this is a gauge field which is now living on the worldsheet. The consequence for the string action is that in order for the action to be invariant under local gauge transformations of $\mc{A}$, we have to replace the ordinary derivatives of $X^\mu$ with the gauge covariant derivative $\partial_a X^\mu \rightarrow \mc{D}_a X^\mu$, which is defined as:
+
+\begin{equation}
+	\mc{D}_a X^I(\sigma,\tau) = \partial_a X^I + g \mc{A}_a X^I,
+\end{equation}
+where $\mc{A}_a$ is a field living on $\Sigma$ which takes values in the Lie algebra $\mf{so}(D,1)$. We should therefore think of the embedding fields as $(D+1)$ dimensional vectors living in the fundamental representation of $SO(D,1)$.
+
+This viewpoint on the embedding fields, as elements of the tangent space $T_p(M)$, might appear to be at odds with their prescribed usage as co-ordinate functions on $M$. However, some reflection shows that this is not the case. For instance, one can take the embedding manifold to be a two-dimensional sphere $S^2$. Then the co-ordinates of a point on the string worldsheet $\Sigma$ can be expressed in terms of the polar and azimuthal angles $\theta$ and $\phi$. The action for this system would be:
+\begin{equation}\label{eqn:s2-string}
+	S_{S^2} = -\frac{T}{2} \int \diff^2 x \sqrt{-g} g^{ab} \partial_a \theta^\mu \partial_b \theta^\nu G_{\mu\nu},
+\end{equation}
+where $\theta^\mu(\sigma,\tau) \in \{\theta, \phi\}$ are the embedding fields, and $G_{\mu\nu}$ is \emph{a} metric living on $S^2$.
+
+% \hline
+
+ In order for the bulk connection $A_\mu^{IJ}$, and its pullback $\omega _a ^{i j}$ on $\Sigma$, to have an effect on the string dynamics we will also promote the embedding fields $X^\mu$ to Lie algebra valued vector fields $X^{\mu} _{I}$. However, due to the fact that parallel transport of the embedding fields on the worldsheet should only involve the worldsheet connection $\omega _a ^{i j}$, we can replace $X^{\mu} _{I}$ with $X^{\mu} _{i}$, and to not lose the physical meaning of embedding fields as string coordinates, we include a new internal world-sheet field $v^{i}$, and define the string coordinates to be $\Tilde{X}^{\mu} \equiv X^{\mu} _{i} v^{i}$.
+\begin{multline} \label{eqn:lqg-string-action}
+	S_{PA} = - \frac{T}{2} \int \diff \tau \wedge \diff \sigma e e^{a} _{i} e^{b i} D_{a} X^{\mu} _{j} v^{j} \times \\
+	\times D_{b} X^{\nu} _{k} v^{k} E_{\mu} ^{I} E_{\nu I} ,
+\end{multline}
+where $e = \det (e^{i} _{a})$ and $D_a$ is the covariant derivative with respect to the worldsheet connection, and is given by:
+\begin{equation} \label{eqn:worldsheet-deriv}
+	D_a X^{\mu} _{i} = \partial_a X^{\mu} _{i} - \omega_{a\,i}^{j} X^{\mu} _{j} ,
+\end{equation}
+where $\omega_{a\,j}^i$ is the pullback of the bulk connection to the worldsheet.
+
+\section{Physical Implications}
+
+\section{Discussion}
+
+\begin{acknowledgments}
+
+\end{acknowledgments}
+
+\appendix
+
+\section{Worldsheet Action in Terms of Transverse Velocity}\label{app:transverse-action}
+
 \section{The Bimetric String}\label{app:bimetric-string}
 
 It would be natural to suspect that the action \eqref{eqn:modified-NG-action-v2} might be related to bimetric gravity in the target space of the string. We can see that this is indeed the case as follows.
@@ -664,7 +715,6 @@ As for the embbeding fields equation, we get a non-homogeneous wave equation for
 \begin{equation} \label{eqn:variation-wrt-X}
 	\frac{\delta S_{P B}}{\delta X^{\lambda}} \overset{!}{=} 0
 \end{equation}
-
 
 \bibliographystyle{JHEP3}
 

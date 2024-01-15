@@ -7,9 +7,10 @@ Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: JHEP3.bst
 Database file #1: lqg-stringsNotes.bib
 Database file #2: lqg-strings.bib
+Warning--I didn't find a database entry for "Green_Schwarz_Witten_2012"
 You've used 15 entries,
             2148 wiz_defined-function locations,
-            607 strings with 5619 characters,
+            609 strings with 5669 characters,
 and the built_in function-call counts, 3910 in all, are:
 = -- 401
 > -- 103
@@ -48,3 +49,4 @@ warning$ -- 0
 while$ -- 34
 width$ -- 17
 write$ -- 147
+(There was 1 warning)
