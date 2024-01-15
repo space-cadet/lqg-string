@@ -171,7 +171,7 @@
 \date{\today}
 
 \begin{abstract}
-	We write down an action for a bosonic string propagating in a bulk background whose geometry is specified in terms of connection and tetrad (or ``vierbein'') variables
+	With the goal of understanding whether or not it is possible to construct a string theory which is consistent with loop quantum gravity (LQG), we study alternate versions of the Nambu-Goto action for a Bosonic string. We consider two types of modifications. The first is a phenomenological action based on the observation that LQG tells us that areas of two-surfaces are operators in quantum geoemtry and are bounded from below. The second is an action in which the background geometry is described in terms of a vielbein $E^\mu_I$ and a connection field $A_\mu^{IJ}$, in the spirit of LQG. The modified Nambu-Goto action is constructed by pulling back the background connection onto the worldsheet and replacing ordinary partial derivatives by covariant derivatives with respect to the pulled back conection $\mc{A}_a^{IJ}$.
 \end{abstract}
 
 \maketitle
@@ -210,6 +210,10 @@ Following this, work by Rovelli and Smolin \todo{insert ref} and by Ashtekar, Ro
 
 \todo[inline]{Insert brief intro to spin nets}
 
+The following is the outline of the paper. In \autoref{sec:intro} we recall the Nambu-Goto action and its symmetries. We explain how the bulk (embedding manifold) geometry is coupled to the worldsheet geometry and the conventional argument for the statement that string theory describes not only the object but also its background (the geometry it is propagating) in and is therefore a complete theory of quantum gravity. We critique this claim and explain in what way LQG might provide a resolution of some of the puzzles of string theory. In \autoref{sec:modified-ng} we present a phenomenological modification of the Nambu-Goto action based on the observation from LQG that there exists a non-zero, positive, eigenvalue of the area operator. We show that this action can be expanded in terms of a small coupling constant $g = l_{pl}/l_s$ where the Planck length - the length at which quantum geometric effects become important - $l_{pl}$ is much smaller than the string scale $l_s$ and therefore $g \ll 1$. We point out that the lowest order correction to the NG action can be viewed as a bimetric action for the string. We derive the classical equations of motion for this area-corrected NG action. In \autoref{sec:inverse-metric-Polyakov} we construct the Polyakov version of the modified NG action, show that the equations of motion it yields are the same as those coming from the modified NG action. Further we solve the string equations of motion to find the fundamental modes and perform the quantization of the Bosonic string in the usual manner. In \autoref{sec:string-geometry} we describe how to construct an action for the Bosonic string which encodes the geometry of the bulk spacetime in the language of the connection formulation of general relativity. We discuss possible avenues for quantizing this action and further studying its implications for the relationship between string theory and LQG.
+
+In \autoref{app:bimetric-string} we discuss further the bimetric extension of the string action in both the Nambu-Goto and Polyakov version.
+ 
 \section{Strings in Background Fields and Emergent Gravity}\label{sec:strings-gravity}
 
 Let us begin by recalling the Polyakov action for the bosonic string.
@@ -487,7 +491,58 @@ and 0-th oscillation mode related to center of mass momentum
 	\alpha ^{\mu} _{0} = 4 \pi i (\alpha ')^2 p^{\mu} .
 \end{equation*}
 
-\section{The Bimetric String}\label{sec:bimetric-nambu-goto}
+\section{Strings and Quantum Geometry}\label{sec:string-geometry}
+
+Uptil now we have studied a phenomenological modification of the string action. However, ultimately all phenomenological ideas must have a grounding in some exact, microscopic description of the system. Further, we have neglected one very important aspect of this whole endeavor, which is the description of the background geometry in the connection formalism and how to couple that to the Bosonic string. In this section we present a possible action in which the bulk geometry is encoded in the string action in terms of a connection living on the worldsheet.
+
+Let us begin by writing down the action of a string propagating in a background geometry. The background geometry is specified not in terms of a metric, but in terms of a connection $A_\mu^{IJ}$ and vielbein fields $E_\mu^I$. Further, we will require that the bulk connection and the bulk vielbein can be pulled back onto a connection $\mc{A}_{a}^{ij}$ and a dyad $e^a_i$, respectively, living on the string worldsheet $\Sigma$. $X^\mu(\sigma, \tau)$ are the space-time coordinates of a point $(\sigma, \tau)$ on the worldsheet. Now if one takes the sigma model viewpoint then the $X$'s can be viewed as $D+1$ scalar fields living on a $1+1$ worldsheet. But these fields are not scalars. They are components of a $D+1$ dim vector because they transform as elements of $SO(D,1)$ under global Lorentz transformations acting on the ambient space-time, which we take to be flat for the time being.
+
+The key point here is that the Lorentz transformations acting on the $X$'s are \textbf{global}. If the background geometry is taken to be Minkowski then the $X$'s become points on this manifold and $SO(D,1)$ just takes one point in Minkowski to another point in Minkowski. The overall geometry is invariant under SO(D,1). Now, consider the case when the background geometry is not flat. Immediately you can see that the $X$'s can no longer be treated as elements of a $SO(D,1)$ vector under \textbf{global} Lorentz transformations.
+
+Instead of viewing the $X$'s as elements of a Minkowski space, we think of them as elements of the tangent space $T_p(M)$ at a given point $p$ of the background manifold $M$.
+When we travel along some path $\mc{C} \in M$ from point $p$ to point $p'$, the local Lorentz frames at the two points are, in general, related by an element of $g(p,p') \in SO(D,1)$. This group element arises from taking the holonomy of a $\mf{so}(D,1)$ Lie algebra valued connection living on $M$, along a the path $\mc{C}$.
+
+Let us remind ourselves what we're trying to do here. We want a gauge field, which lives on the background geometry and which encodes the background geometry, to somehow make an appearance in the action of a Bosonic string. There is an obvious connection $\mc{A}_a^{IJ}$ living on the worldsheet which is the pullback from $M$ to $\Sigma$ of the connection $A_{\mu}^{IJ}$.
+
+The end result is that we now have with a gauge field $\mc{A}_a^{IJ}(\sigma, \tau)$ living on the worldsheet $\Sigma$. Here the lower index $a$ is the worldsheet index and $J$ labels generators of the Lie algebra $\mf{so}(D,1)$. Remember this is a gauge field which is now living on the worldsheet. The consequence for the string action is that in order for the action to be invariant under local gauge transformations of $\mc{A}$, we have to replace the ordinary derivatives of $X^\mu$ with the gauge covariant derivative $\partial_a X^\mu \rightarrow \mc{D}_a X^\mu$, which is defined as:
+
+\begin{equation}
+	\mc{D}_a X^I(\sigma,\tau) = \partial_a X^I + g \mc{A}_a X^I,
+\end{equation}
+where $\mc{A}_a$ is a field living on $\Sigma$ which takes values in the Lie algebra $\mf{so}(D,1)$. We should therefore think of the embedding fields as $(D+1)$ dimensional vectors living in the fundamental representation of $SO(D,1)$.
+
+This viewpoint on the embedding fields, as elements of the tangent space $T_p(M)$, might appear to be at odds with their prescribed usage as co-ordinate functions on $M$. However, some reflection shows that this is not the case. For instance, one can take the embedding manifold to be a two-dimensional sphere $S^2$. Then the co-ordinates of a point on the string worldsheet $\Sigma$ can be expressed in terms of the polar and azimuthal angles $\theta$ and $\phi$. The action for this system would be:
+\begin{equation}\label{eqn:s2-string}
+	S_{S^2} = -\frac{T}{2} \int \diff^2 x \sqrt{-g} g^{ab} \partial_a \theta^\mu \partial_b \theta^\nu G_{\mu\nu},
+\end{equation}
+where $\theta^\mu(\sigma,\tau) \in \{\theta, \phi\}$ are the embedding fields, and $G_{\mu\nu}$ is \emph{a} metric living on $S^2$.
+
+\hline
+
+ In order for the bulk connection $A_\mu^{IJ}$, and its pullback $\omega _a ^{i j}$ on $\Sigma$, to have an effect on the string dynamics we will also promote the embedding fields $X^\mu$ to Lie algebra valued vector fields $X^{\mu} _{I}$. However, due to the fact that parallel transport of the embedding fields on the worldsheet should only involve the worldsheet connection $\omega _a ^{i j}$, we can replace $X^{\mu} _{I}$ with $X^{\mu} _{i}$, and to not lose the physical meaning of embedding fields as string coordinates, we include a new internal world-sheet field $v^{i}$, and define the string coordinates to be $\Tilde{X}^{\mu} \equiv X^{\mu} _{i} v^{i}$.
+\begin{multline} \label{eqn:lqg-string-action}
+	S_{PA} = - \frac{T}{2} \int \diff \tau \wedge \diff \sigma e e^{a} _{i} e^{b i} D_{a} X^{\mu} _{j} v^{j} \times \\
+	\times D_{b} X^{\nu} _{k} v^{k} E_{\mu} ^{I} E_{\nu I} ,
+\end{multline}
+where $e = \det (e^{i} _{a})$ and $D_a$ is the covariant derivative with respect to the worldsheet connection, and is given by:
+\begin{equation} \label{eqn:worldsheet-deriv}
+	D_a X^{\mu} _{i} = \partial_a X^{\mu} _{i} - \omega_{a\,i}^{j} X^{\mu} _{j} ,
+\end{equation}
+where $\omega_{a\,j}^i$ is the pullback of the bulk connection to the worldsheet.
+
+\section{Physical Implications}
+
+\section{Discussion}
+
+\begin{acknowledgments}
+
+\end{acknowledgments}
+
+\appendix
+
+\section{Worldsheet Action in Terms of Transverse Velocity}\label{app:transverse-action}
+
+\section{The Bimetric String}\label{app:bimetric-string}
 
 It would be natural to suspect that the action \eqref{eqn:modified-NG-action-v2} might be related to bimetric gravity in the target space of the string. We can see that this is indeed the case as follows.
 
@@ -566,49 +621,6 @@ As for the embbeding fields equation, we get a non-homogeneous wave equation for
 \begin{equation} \label{eqn:variation-wrt-X}
 	\frac{\delta S_{P B}}{\delta X^{\lambda}} \overset{!}{=} 0
 \end{equation}
-
-\section{Strings and Quantum Geometry}\label{sec:string-geometry}
-
-$X^\mu(\sigma, \tau)$ are the space-time coordinates of a point $(\sigma, \tau)$ on the worldsheet. Now if one takes the sigma model viewpoint then the $X$'s can be viewed as $D+1$ scalar fields living on a $1+1$ worldsheet.
-But these are not scalars, they are components of a $D+1$ dim vector because they transform as elements of $SO(D,1)$ under global Lorentz transformations on the ambient space-time.
-
-The key point here is that the Lorentz transformations acting on the $X$'s are \textbf{global}. If the background geometry is taken to be Minkowski then the $X$'s become points on this manifold and $SO(D,1)$ just takes one point in Minkowski to another point in Minkowski. The overall geometry is invariant under SO(D,1). 
-Now, consider the case when the background geometry is not flat. Immediately you can see that the $X$'s can no longer be treated as elements of a $SO(D,1)$ vector under \emph{global} Lorentz transformations.
-
-But now instead of viewing the $X$'s as elements of a Minkowski space, we think of them as elements of the tangent space $T_p(M)$ of the background manifold $M$.
-And what happens when you go from point $p$ to point $p'$ in $M$, the local Lorentz frames at the two points are related by an element of $g(p,p') \in SO(D,1)$. This group element can be thought of arising from taking the holonomy of a $\mf{so}(D,1)$ Lie algebra valued connection living on $M$, along a path connecting $p$ and $p'$.
-
-Now, let's remind ourselves what we're trying to do here. We want a gauge field, which lives on the background geometry and which encodes the background geometry, should appear in an action of a Bosonic string. The end result is that we now have with a gauge field $\mc{A}_a^J(\sigma, \tau)$ living on the worldsheet $\Sigma$. Here the lower index $a$ is the worldsheet index and $J$ labels generators of the Lie algebra $\mf{so}(D,1)$. Remember this is a gauge field which is now living on the worldsheet. The consequence for the string action is that in order for the action to be invariant under local gauge transformations of $\mc{A}$, we have to replace the ordinary derivatives of $X^\mu$ with the gauge covariant derivative $\partial_a X^\mu \rightarrow \mc{D}_a X^\mu$, which is defined as:
-
-\begin{equation}
-	\mc{D}_a X^I(\sigma,\tau) = \partial_a X^I + g \mc{A}_a X^I,
-\end{equation}
-where $\mc{A}_a$ is a field living on $\Sigma$ which takes values in the Lie algebra $\mf{so}(D,1)$.
-
-
-Let us begin by writing down the action of a string propagating in a background geometry which is specified not in terms of a metric, but in terms of a connection $A_\mu^{IJ}$ and vielbein fields $E_\mu^I$. Further, we will require that the bulk connection and the bulk vielbein can be pulled back onto a connection $\omega _{a} ^{i j}$ and a dyad $e^a_i$, respectively, living on the string worldsheet $\Sigma$. In order for the bulk connection $A_\mu^{IJ}$, and its pullback $\omega _a ^{i j}$ on $\Sigma$, to have an effect on the string dynamics we will also promote the embedding fields $X^\mu$ to Lie algebra valued vector fields $X^{\mu} _{I}$. However, due to the fact that parallel transport of the embedding fields on the worldsheet should only involve the worldsheet connection $\omega _a ^{i j}$, we can replace $X^{\mu} _{I}$ with $X^{\mu} _{i}$, and to not lose the physical meaning of embedding fields as string coordinates, we include a new internal world-sheet field $v^{i}$, and define the string coordinates to be $\Tilde{X}^{\mu} \equiv X^{\mu} _{i} v^{i}$.
-\begin{multline} \label{eqn:lqg-string-action}
-	S_{PA} = - \frac{T}{2} \int \diff \tau \wedge \diff \sigma e e^{a} _{i} e^{b i} D_{a} X^{\mu} _{j} v^{j} \times \\
-	\times D_{b} X^{\nu} _{k} v^{k} E_{\mu} ^{I} E_{\nu I} ,
-\end{multline}
-where $e = \det (e^{i} _{a})$ and $D_a$ is the covariant derivative with respect to the worldsheet connection, and is given by:
-\begin{equation} \label{eqn:worldsheet-deriv}
-	D_a X^{\mu} _{i} = \partial_a X^{\mu} _{i} - \omega_{a\,i}^{j} X^{\mu} _{j} ,
-\end{equation}
-where $\omega_{a\,j}^i$ is the pullback of the bulk connection to the worldsheet.
-
-\section{Physical Implications}
-
-\section{Discussion}
-
-\begin{acknowledgments}
-
-\end{acknowledgments}
-
-\appendix
-
-\section{Worldsheet Action in Terms of Transverse Velocity}
-
 
 
 \bibliographystyle{JHEP3}
