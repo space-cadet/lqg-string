@@ -1329,17 +1329,17 @@ When translating the constraints into quantum operators, in $L_{n , p}$ we have 
 \end{equation*}
 The ambiguity manifests in the imposition of this constraint as
 \begin{equation*}
-    \bra{\mathrm{phys }'} (\Hat{\widetilde{L}}_{n , 0} - a) \ket{\mathrm{phys}} = 0 ,
+    \bra{\mathrm{phys }'} (\Hat{\widetilde{L}}_{n , 0} - c_{n}) \ket{\mathrm{phys}} = 0 ,
 \end{equation*}
-for some constant $a$. Since classically
+for some sequence $c_{n}$ with $c_{0} = 0$ since $\Hat{\widetilde{L}}_{0 , 0}$ has no ordering ambiguities. Since classically
 \begin{equation*}
     M^2 = - p^{\mu} p_{\mu} = - \frac{1}{(4 \pi (\alpha ')^2)^2} \alpha ^{\mu} _{0} (\alpha ^{\nu} _{0})^{*} \eta _{\mu \nu} = - \frac{1}{(4 \pi (\alpha ')^2)^2} \lim _{n \rightarrow 0} \left( - \frac{E_{n}}{n} \widetilde{L}_{n , 0} \right) ,
 \end{equation*}
 we see that the string mass spectrum will be shifted by
 \begin{equation*}
-    \Hat{M}^2 = - \frac{1}{(4 \pi (\alpha ')^2)^2} \left( (\Hat{\alpha} ^{\mu} _{0})^{\dagger} \Hat{\alpha}^{\nu} _{0} \eta _{\mu \nu} + \lim _{n \rightarrow 0} \frac{E_{n}}{n} a \right) ,
+    \Hat{M}^2 = - \frac{1}{(4 \pi (\alpha ')^2)^2} \left( (\Hat{\alpha} ^{\mu} _{0})^{\dagger} \Hat{\alpha}^{\nu} _{0} \eta _{\mu \nu} + \lim _{n \rightarrow 0} \frac{E_{n}}{n} c_{n} \right) ,
 \end{equation*}
-so either the mass spectrum of the string diverges, or the constant $a$ isn't so constant and $a = \mu n$, making the limit equal to $\mu E_{0} = \mu ^2$, the KG \textquotedblleft mass" term.
+so we get that the mass spectrum is shifted by the limit of $E_{n} c_{n} / n$. Since $E_{0} = \mu$, it seems reasonable to expect that the limit of $c_{n} / n$ will be proportional to $\mu$, such that the mass spectrum gets shifted by the KG \textquotedblleft mass" term $\mu ^2$.
 
 The commutation relations between the $L$'s are
 \begin{equation*}
@@ -1370,15 +1370,10 @@ implies
 \begin{equation*}
     - (4 \pi (\alpha ')^2)^2 (M^2 + k^{\mu} k_{\mu}) = \lim _{n \rightarrow 0} \frac{E_{n}}{n} c_{n} .
 \end{equation*}
-Now considering states at the first excited level, given by $\zeta _{\mu} (\Hat{\alpha} ^{\mu} _{1})^{\dagger} \ket{0 ; k}$ with $\zeta _{\mu} (k)$ being a polarization vector, the mass-shell condition will now read
+Now considering states at the first excited level, given by $\zeta _{\mu} (\Hat{\alpha} ^{\mu} _{1})^{\dagger} \ket{0 ; k}$ with $\zeta _{\mu} (k)$ being a polarization vector, the mass-shell condition will now reads
 \begin{equation*}
     \left( - (4 \pi (\alpha ')^2)^2 \Hat{M}^2 + \lim _{n \rightarrow 0} \frac{E_{n}}{n} \Hat{\widetilde{L}}_{n , 0} \right) \zeta _{\mu} (\Hat{\alpha}^{\mu} _{1})^{\dagger} \ket{0 ; k} = \lim _{n \rightarrow 0} \frac{E_{n}}{n} c_{n} \zeta _{\mu} (\Hat{\alpha}^{\mu} _{1})^{\dagger} \ket{0 ; k}
 \end{equation*}
-\begin{equation*}
-    \left( - (4 \pi (\alpha ')^2)^2 \Hat{M}^2 - \lim _{n \rightarrow 0} (\Hat{\alpha}^{\lambda} _{n})^{\dagger} \Hat{\alpha}^{\nu} _{n} \eta _{\lambda \nu} \right) \zeta _{\mu} (\Hat{\alpha}^{\mu} _{1})^{\dagger} \ket{0 ; k} = \lim _{n \rightarrow 0} \frac{E_{n}}{n} c_{n} \zeta _{\mu} (\Hat{\alpha}^{\mu} _{1})^{\dagger} \ket{0 ; k}
-\end{equation*}
-\begin{equation*}
-    - (4 \pi (\alpha ')^2)^2 \Hat{M}^2 - \lim _{n \rightarrow 0} \eta _{\lambda \nu} \zeta _{\mu} \left( (\Hat{\alpha}^{\lambda} _{n})^{\dagger} (\Hat{\alpha}^{\mu} _{1})^{\dagger} \Hat{\alpha}^{\nu} _{n} + (\Hat{\alpha}^{\lambda} _{n})^{\dagger} \eta ^{\nu \mu} \delta _{n , 1} \right) \ket{0 ; k} = \lim _{n \rightarrow 0} \frac{E_{n}}{n} c_{n} \zeta _{\mu} (\Hat{\alpha}^{\mu} _{1})^{\dagger} \ket{0 ; k}
-\end{equation*}
+so the mass spectrum of excited states are the same as of the vacuum state.
 
 \end{document}
