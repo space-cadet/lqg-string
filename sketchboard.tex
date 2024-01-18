@@ -1185,8 +1185,13 @@ These simplify further by expanding the summation on $a,b$:
     \partial _{\tau} X^{\mu} \partial _{\tau} X^{\nu} \eta _{\mu \nu} = - \frac{1}{2} \left( - \partial _{\tau} X^{\mu} \partial _{\tau} X^{\nu} \eta _{\mu \nu} + \partial _{\sigma} X^{\mu} \partial _{\sigma} X^{\nu} \eta _{\mu \nu} \right)
 \end{equation*}
 \begin{equation*}
-    \partial _{\tau} X^{\mu} \partial _{\tau} X^{\nu} \eta _{\mu \nu} = - \partial _{\sigma} X^{\mu} \partial _{\sigma} X^{\nu} \eta _{\mu \nu} .
+    \partial _{\tau} X^{\mu} \partial _{\tau} X^{\nu} \eta _{\mu \nu} + \partial _{\sigma} X^{\mu} \partial _{\sigma} X^{\nu} \eta _{\mu \nu} = 0 .
 \end{equation*}
+These can be combined by multiplying the previous one by 2 and summing, leaving us with
+\begin{equation*}
+    (\partial _{\tau} X^{\mu} + \partial _{\sigma} X^{\mu}) (\partial _{\tau} X^{\nu} + \partial _{\sigma} X^{\nu}) \eta _{\mu \nu} = 0 .
+\end{equation*}
+
 The EoM is just a one-dimensional finite-space Klein-Gordon equation, which has general solution given by Fourier transform
 \begin{equation*}
     X^{\mu} (\tau , \sigma) = \frac{1}{2 \pi \alpha '} \sum _{n \in \mathbb{Z}} \frac{1}{2 E_{n}} \left( a^{\mu} _{n} \e ^{i (- E_{n} \tau + n \sigma)} + b^{\mu} _{n} \e ^{i (E_{n} \tau + n \sigma)} \right) ,
@@ -1212,29 +1217,32 @@ so the solution becomes
     X^{\mu} (\tau , \sigma) = \frac{1}{2 \pi \alpha '} \sum _{n \in \mathbb{Z}} \frac{1}{2 E_{n}} \left( a^{\mu} _{n} \e ^{i (- E_{n} \tau + n \sigma)} + (a^{\mu} _{- n})^{*} \e ^{i (E_{n} \tau + n \sigma)} \right) .
 \end{equation*}
 
-Analysing the constraints, starting by the mixed one we get
+Analysing the constraints, we have that
 \begin{equation*}
-    \partial _{\tau} X^{\mu} \partial _{\sigma} X^{\nu} \eta _{\mu \nu} = - \frac{\eta _{\mu \nu}}{16 \pi ^2 (\alpha ')^2} \sum _{n} \sum _{k} \frac{k}{E_{k}} \Big( - a^{\mu} _{n} \e ^{i (- E_{n} \tau + n \sigma)} + (a^{\mu} _{- n})^{*} \e ^{i (E_{n} \tau + n \sigma)} \Big) \Big( a^{\nu} _{k} \e ^{i (- E_{k} \tau + k \sigma)} + (a^{\nu} _{- k})^{*} \e ^{i (E_{k} \tau + k \sigma)} \Big) =
+    \partial _{\tau} X^{\mu} + \partial _{\sigma} X^{\mu} = \frac{i}{4 \pi \alpha '} \sum _{n \in \mathbb{Z}} \left( \left( \frac{n}{E_{n}} - 1 \right) a^{\mu} _{n} \e ^{i (- E_{n} \tau + n \sigma)} + \left( \frac{n}{E_{n}} + 1 \right) b^{\mu} _{n} \e ^{i (E_{n} \tau + n \sigma)} \right) ,
 \end{equation*}
+so the constraint reads
 \begin{multline*}
-    = - \frac{\eta _{\mu \nu}}{16 \pi ^2 (\alpha ')^2} \sum _{n} \sum _{k} \frac{k}{E_{k}} \Big( - a^{\mu} _{n} a^{\nu} _{k} \e ^{- i (E_{n} + E_{k}) \tau} \e ^{i (n + k) \sigma} - a^{\mu} _{n} (a^{\nu} _{- k})^{*} \e ^{- i (E_{n} - E_{k}) \tau} \e ^{i (n + k) \sigma} + \\
-    + (a^{\mu} _{- n})^{*} a^{\nu} _{k} \e ^{i (E_{n} - E_{k}) \tau} \e ^{i (n + k) \sigma} + (a^{\mu} _{- n})^{*} (a^{\nu} _{- k})^{*} \e ^{i (E_{n} + E_{k}) \tau} \e ^{i (n + k) \sigma} \Big) =
+    (\partial _{\tau} X + \partial _{\sigma} X)^2 = - \frac{\eta _{\mu \nu}}{(4 \pi \alpha ')^2} \sum _{n} \sum _{p} \bigg( \bigg( \frac{n}{E_{n}} - 1 \bigg) \bigg( \frac{p}{E_{p}} - 1 \bigg) a^{\mu} _{n} a^{\nu} _{p} \e ^{i ( - (E_{n} + E_{p}) \tau + (n + p) \sigma)} + \\
+    + \bigg( \frac{n}{E_{n}} - 1 \bigg) \bigg( \frac{p}{E_{p}} + 1 \bigg) a^{\mu} _{n} (a^{\nu} _{- p})^{*} \e ^{i (- (E_{n} - E_{p}) \tau + (n + p) \sigma)} + \bigg( \frac{n}{E_{n}} + 1 \bigg) \bigg( \frac{p}{E_{p}} - 1 \bigg) (a^{\mu} _{- n})^{*} a^{\nu} _{p} \e ^{i ((E_{n} - E_{p}) \tau + (n + p) \sigma)} + \\
+    + \bigg( \frac{n}{E_{n}} + 1 \bigg) \bigg( \frac{p}{E_{p}} + 1 \bigg) (a^{\mu} _{- n})^{*} (a^{\nu} _{- p})^{*} \e ^{i ((E_{n} + E_{p}) \tau + (n + p) \sigma)} \bigg) \equiv 0 .
 \end{multline*}
-\begin{multline*}
-    = - \frac{\eta _{\mu \nu}}{16 \pi ^2 (\alpha ')^2} \sum _{n} \sum _{p} \frac{p - n}{E_{p - n}} \Big( - a^{\mu} _{n} a^{\nu} _{p - n} \e ^{- i (E_{n} + E_{p - n}) \tau} \e ^{i p \sigma} - a^{\mu} _{n} (a^{\nu} _{n - p})^{*} \e ^{- i (E_{n} - E_{p - n}) \tau} \e ^{i p \sigma} + \\
-    + (a^{\mu} _{- n})^{*} a^{\nu} _{p - n} \e ^{i (E_{n} - E_{p - n}) \tau} \e ^{i p \sigma} + (a^{\mu} _{- n})^{*} (a^{\nu} _{n - p})^{*} \e ^{i (E_{n} + E_{p - n}) \tau} \e ^{i p \sigma} \Big) = 0 ,
-\end{multline*}
-where since this must hold for all values of $\tau$ and $\sigma$, each term must vanish separately, giving us
+Since the exponentials are all linearly independent and we can't decouple the tau exponential from any of the sums, we have that all 4 coefficients must vanish independently:
 \begin{align*}
-    \sum _{n} \sum_{p} \frac{p - n}{E_{p - n}} a^{\mu} _{n} a^{\nu} _{p - n} \eta _{\mu \nu} \e ^{- i (E_{n} + E_{p - n}) \tau} \e ^{i p \sigma}             & = 0   \\
-    \sum _{n} \sum_{p} \frac{p - n}{E_{p - n}} a^{\mu} _{n} (a^{\nu} _{n - p})^{*} \eta _{\mu \nu} \e ^{- i (E_{n} - E_{p - n}) \tau} \e ^{i p \sigma}       & = 0   \\
-    \sum _{n} \sum_{p} \frac{p - n}{E_{p - n}} (a^{\mu} _{- n})^{*} a^{\nu} _{p - n} \eta _{\mu \nu} \e ^{i (E_{n} - E_{p - n}) \tau} \e ^{i p \sigma}       & = 0   \\
-    \sum _{n} \sum_{p} \frac{p - n}{E_{p - n}} (a^{\mu} _{- n})^{*} (a^{\nu} _{n - p})^{*} \eta _{\mu \nu} \e ^{i (E_{n} + E_{p - n}) \tau} \e ^{i p \sigma} & = 0 .
+    L^{1} _{n , p} & := \bigg( \frac{n}{E_{n}} - 1 \bigg) \bigg( \frac{p}{E_{p}} - 1 \bigg) a^{\mu} _{n} a^{\nu} _{p} \eta _{\mu \nu} = 0                   \\
+    L^{2} _{n , p} & := \bigg( \frac{n}{E_{n}} - 1 \bigg) \bigg( \frac{p}{E_{p}} + 1 \bigg) a^{\mu} _{n} (a^{\nu} _{- p})^{*} \eta _{\mu \nu} = 0           \\
+    L^{3} _{n , p} & := \bigg( \frac{n}{E_{n}} + 1 \bigg) \bigg( \frac{p}{E_{p}} - 1 \bigg) (a^{\mu} _{- n})^{*} a^{\nu} _{p} \eta _{\mu \nu} = 0           \\
+    L^{4} _{n , p} & := \bigg( \frac{n}{E_{n}} + 1 \bigg) \bigg( \frac{p}{E_{p}} + 1 \bigg) (a^{\mu} _{- n})^{*} (a^{\nu} _{- p})^{*} \eta _{\mu \nu} = 0 .
 \end{align*}
-The 2 middle equations are just complex conjugates of each other, so they are redundant. The same is true for the first and last. This leaves us with
+$L^{2} _{n , p}$ and $L^{3} _{n , p}$ are just complex conjugates of each other with $n \mapsto - n$ and $p \mapsto - p$, so they are redundant. The same is true for $L^{1} _{n , p}$ and $L^{4} _{n , p}$, so in the end we have
 \begin{align*}
-    L_{n , p}             & := \frac{p - n}{E_{p - n}} a^{\mu} _{n} a^{\nu} _{p - n} \eta _{\mu \nu} = 0         \\
-    \widetilde{L}_{n , p} & := \frac{p - n}{E_{p - n}} a^{\mu} _{n} (a^{\nu} _{n - p})^{*} \eta _{\mu \nu} = 0 .
+    L_{n , p}             & := \bigg( \frac{n}{E_{n}} - 1 \bigg) \bigg( \frac{p}{E_{p}} - 1 \bigg) a^{\mu} _{n} a^{\nu} _{p} \eta _{\mu \nu} = 0           \\
+    \widetilde{L}_{n , p} & := \bigg( \frac{n}{E_{n}} - 1 \bigg) \bigg( \frac{p}{E_{p}} + 1 \bigg) a^{\mu} _{n} (a^{\nu} _{- p})^{*} \eta _{\mu \nu} = 0 .
+\end{align*}
+The coefficients of both expressions are actually not necessary, since for them to be $0$ we would need $n \rightarrow \pm \infty$ or $p \rightarrow \pm \infty$, so we can redefine
+\begin{align*}
+    L_{n , p}             & := a^{\mu} _{n} a^{\nu} _{p} \eta _{\mu \nu} = 0           \\
+    \widetilde{L}_{n , p} & := a^{\mu} _{n} (a^{\nu} _{- p})^{*} \eta _{\mu \nu} = 0 .
 \end{align*}
 
 One last thing before quantizing: the $n = 0$ term in the solution reads
@@ -1372,7 +1380,7 @@ implies
 \end{equation*}
 Now considering states at the first excited level, given by $\zeta _{\mu} (\Hat{\alpha} ^{\mu} _{1})^{\dagger} \ket{0 ; k}$ with $\zeta _{\mu} (k)$ being a polarization vector, the mass-shell condition will now reads
 \begin{equation*}
-    \left( - (4 \pi (\alpha ')^2)^2 \Hat{M}^2 + \lim _{n \rightarrow 0} \frac{E_{n}}{n} \Hat{\widetilde{L}}_{n , 0} \right) \zeta _{\mu} (\Hat{\alpha}^{\mu} _{1})^{\dagger} \ket{0 ; k} = \lim _{n \rightarrow 0} \frac{E_{n}}{n} c_{n} \zeta _{\mu} (\Hat{\alpha}^{\mu} _{1})^{\dagger} \ket{0 ; k}
+    \left( - (4 \pi (\alpha ')^2)^2 \Hat{M}^2 + \lim _{n \rightarrow 0} \frac{E_{n}}{n} \Hat{\widetilde{L}}_{n , 0} \right) \zeta _{\mu} (\Hat{\alpha}^{\mu} _{1})^{\dagger} \ket{0 ; k} = \lim _{n \rightarrow 0} \frac{E_{n}}{n} c_{n} \zeta _{\mu} (\Hat{\alpha}^{\mu} _{1})^{\dagger} \ket{0 ; k} ,
 \end{equation*}
 so the mass spectrum of excited states are the same as of the vacuum state.
 
