@@ -1244,6 +1244,11 @@ The coefficients of both expressions are actually not necessary, since for them 
     L_{n , p}             & := a^{\mu} _{n} a^{\nu} _{p} \eta _{\mu \nu} = 0           \\
     \widetilde{L}_{n , p} & := a^{\mu} _{n} (a^{\nu} _{- p})^{*} \eta _{\mu \nu} = 0 .
 \end{align*}
+To make it more in line with regular ST literature, let's also map $p \mapsto p - n$
+\begin{align*}
+    L_{n , p}             & = a^{\mu} _{n} a^{\nu} _{p - n} \eta _{\mu \nu} = 0         \\
+    \widetilde{L}_{n , p} & = a^{\mu} _{n} (a^{\nu} _{n - p})^{*} \eta _{\mu \nu} = 0 .
+\end{align*}
 
 One last thing before quantizing: the $n = 0$ term in the solution reads
 \begin{equation*}
@@ -1324,16 +1329,16 @@ As in regular ST, we have ghosts arising from the Minkowski metric
 
 For constraints, classically we have
 \begin{align*}
-    L_{n , p}             & = \frac{p - n}{E_{p - n}} \alpha ^{\mu} _{n} \alpha ^{\nu} _{n - p} \eta _{\mu \nu} = 0         \\
-    \widetilde{L}_{n , p} & = \frac{p - n}{E_{p - n}} \alpha ^{\mu} _{n} (\alpha ^{\nu} _{n - p})^{*} \eta _{\mu \nu} = 0 ,
+    L_{n , p}             & = \alpha ^{\mu} _{n} \alpha ^{\nu} _{p - n} \eta _{\mu \nu} = 0       \\
+    \widetilde{L}_{n , p} & = \alpha ^{\mu} _{n} (\alpha ^{\nu} _{n - p})^{*} \eta _{\mu \nu} = 0
 \end{align*}
 which because of the existence of ghosts we require to have vanishing matrix elements when sandwiched between physical states
 \begin{equation*}
     \bra{\mathrm{phys} '} \Hat{L}_{n , p} \ket{\mathrm{phys}} = 0 = \bra{\mathrm{phys} '} \Hat{\widetilde{L}}_{n , p} \ket{\mathrm{phys}} .
 \end{equation*}
-When translating the constraints into quantum operators, in $L_{n , p}$ we have no ambiguity of ordering since $\Hat{\alpha}$ commutes with itself for different indices. As for $\widetilde{L}_{n , p}$, there is an ambiguity for $p = 0$, and so we pick normal ordering with the annihilation operators moved to the right
+When translating the constraints into quantum operators, in $L_{n , p}$ we have no ambiguity of ordering since $\Hat{\alpha}$ commutes with itself. As for $\widetilde{L}_{n , p}$, there is an ambiguity for $p = 0$ and $n \neq 0$, so we pick normal ordering with the annihilation operators moved to the right
 \begin{equation*}
-    \Hat{\widetilde{L}}_{n , 0} = \frac{- n}{E_{n}} (\Hat{\alpha} ^{\mu} _{n})^{\dagger} \Hat{\alpha} ^{\nu} _{n} \eta _{\mu \nu} .
+    \Hat{\widetilde{L}}_{n , 0} = (\Hat{\alpha} ^{\mu} _{n})^{\dagger} \Hat{\alpha} ^{\nu} _{n} \eta _{\mu \nu} .
 \end{equation*}
 The ambiguity manifests in the imposition of this constraint as
 \begin{equation*}
@@ -1341,34 +1346,36 @@ The ambiguity manifests in the imposition of this constraint as
 \end{equation*}
 for some sequence $c_{n}$ with $c_{0} = 0$ since $\Hat{\widetilde{L}}_{0 , 0}$ has no ordering ambiguities. Since classically
 \begin{equation*}
-    M^2 = - p^{\mu} p_{\mu} = - \frac{1}{(4 \pi (\alpha ')^2)^2} \alpha ^{\mu} _{0} (\alpha ^{\nu} _{0})^{*} \eta _{\mu \nu} = - \frac{1}{(4 \pi (\alpha ')^2)^2} \lim _{n \rightarrow 0} \left( - \frac{E_{n}}{n} \widetilde{L}_{n , 0} \right) ,
+    M^2 = - p^{\mu} p_{\mu} = - \frac{1}{(4 \pi (\alpha ')^2)^2} \alpha ^{\mu} _{0} (\alpha ^{\nu} _{0})^{*} \eta _{\mu \nu} = \frac{1}{(4 \pi (\alpha ')^2)^2} \widetilde{L}_{0 , 0} ,
 \end{equation*}
-we see that the string mass spectrum will be shifted by
+we see that the string mass spectrum will be on-shell
 \begin{equation*}
-    \Hat{M}^2 = - \frac{1}{(4 \pi (\alpha ')^2)^2} \left( (\Hat{\alpha} ^{\mu} _{0})^{\dagger} \Hat{\alpha}^{\nu} _{0} \eta _{\mu \nu} + \lim _{n \rightarrow 0} \frac{E_{n}}{n} c_{n} \right) ,
+    \Hat{M}^2 = - \frac{1}{(4 \pi (\alpha ')^2)^2} (\Hat{\alpha} ^{\mu} _{0})^{\dagger} \Hat{\alpha}^{\nu} _{0} \eta _{\mu \nu} = - \Hat{p}^{\mu} \Hat{p}_{\mu} .
 \end{equation*}
-so we get that the mass spectrum is shifted by the limit of $E_{n} c_{n} / n$. Since $E_{0} = \mu$, it seems reasonable to expect that the limit of $c_{n} / n$ will be proportional to $\mu$, such that the mass spectrum gets shifted by the KG \textquotedblleft mass" term $\mu ^2$.
 
 The commutation relations between the $L$'s are
 \begin{equation*}
     \Big[ \Hat{L}_{n , m} , \Hat{L}_{p , k} \Big] = 0 \ (\mathrm{this \ has \ only \ annihilation \ operators})
 \end{equation*}
 \begin{align*}
-    \Big[ \Hat{L}_{n , m} , \Hat{\widetilde{L}}_{p , k} \Big] & = \Big[ \frac{m - n}{E_{m - n}} \Hat{\alpha}^{\mu} _{n} \Hat{\alpha}^{\nu} _{n - m} \eta _{\mu \nu} , \frac{k - p}{E_{k - p}} (\Hat{\alpha}^{\mu '} _{k})^{\dagger} \Hat{\alpha}^{\nu '} _{k - p} \eta _{\mu ' \nu '} \Big] =                                                                                                                                                                                                \\
-                                                              & = \frac{(m - n)}{E_{m - n}} \frac{(k - p)}{E_{k - p}} \left(  \eta _{\mu \nu} \Big[ \Hat{\alpha}^{\mu} _{n} \Hat{\alpha}^{\nu} _{n - m} , (\Hat{\alpha}^{\mu '} _{k})^{\dagger} \Big] \Hat{\alpha}^{\nu '} _{k - p} \eta _{\mu' \nu'} + \eta _{\mu \nu} (\Hat{\alpha}^{\mu '} _{k})^{\dagger} \Big[ \Hat{\alpha}^{\mu} _{n} \Hat{\alpha}^{\nu} _{n - m} , \Hat{\alpha}^{\nu '} _{k - p} \Big] \eta _{\mu ' \nu '} \right) =  \\
-                                                              & = \frac{(m - n)}{E_{m - n}} \frac{(k - p)}{E_{k - p}} \left( \eta _{\mu \nu} \Hat{\alpha}^{\mu} _{n} \Big[ \Hat{\alpha}^{\nu} _{n - m} , (\Hat{\alpha}^{\mu '} _{k})^{\dagger} \Big] \Hat{\alpha}^{\nu '} _{k - p} \eta _{\mu ' \nu '} + \eta_{\mu \nu} \Big[ \Hat{\alpha}^{\mu} _{n} , (\Hat{\alpha}^{\mu '} _{k})^{\dagger} \Big] \Hat{\alpha}^{\nu} _{n - m} \Hat{\alpha} ^{\nu '} _{k - p} \eta _{\mu ' \nu '} \right) = \\
-                                                              & = \frac{(m - n)}{E_{m - n}} \frac{(k - p)}{E_{k - p}} \eta _{\mu \nu} \eta _{\mu ' \nu '} \left( \Hat{\alpha}^{\mu} _{n} \eta ^{\nu \mu '} \delta _{n - m , k} \Hat{\alpha} ^{\nu '} _{k - p} + \eta ^{\mu \mu '} \delta _{n k} \Hat{\alpha}^{\nu} _{n - m} \Hat{\alpha}^{\nu '} _{k - p} \right) =                                                                                                                          \\
-                                                              & = \frac{(m - n)}{E_{m - n}} \frac{(k - p)}{E_{k - p}} \eta _{\mu \nu} \left( \Hat{\alpha}^{\mu} _{n} \Hat{\alpha}^{\nu} _{k - p} \delta _{n - m , k} + \Hat{\alpha}^{\mu} _{n - m} \Hat{\alpha} ^{\nu} _{k - p} \delta _{n , k} \right) =                                                                                                                                                                                    \\
-                                                              & = \frac{m - n}{E_{m - n}} \left( \Hat{L}_{n + k - p , n} \delta _{n - m , k} + \Hat{L}_{n - m + k - p , n - m} \delta _{n , k} \right)
+    \Big[ \Hat{L}_{n , m} , \Hat{\widetilde{L}}_{p , k} \Big] & = \Big[\Hat{\alpha}^{\mu} _{n} \Hat{\alpha}^{\nu} _{m - n} \eta _{\mu \nu} , (\Hat{\alpha}^{\mu '} _{p - k})^{\dagger} \Hat{\alpha}^{\nu '} _{p} \eta _{\mu ' \nu '} \Big] =                                                                                                                                                         \\
+                                                              & = \eta _{\mu \nu} \left( \Hat{\alpha}^{\mu} _{n} \Big[ \Hat{\alpha}^{\nu} _{m - n} , (\Hat{\alpha}^{\mu '} _{p - k})^{\dagger} \Hat{\alpha}^{\nu '} _{p} \Big] + \Big[ \Hat{\alpha}^{\mu} _{n} , (\Hat{\alpha}^{\mu '} _{p - k})^{\dagger} \Hat{\alpha}^{\nu '} _{p} \Big] \Hat{\alpha}^{\nu} _{m - n} \right) \eta _{\mu ' \nu '} = \\
+                                                              & = \eta _{\mu \nu} \left( \Hat{\alpha}^{\mu} _{n} \eta ^{\nu \mu '} \delta _{m - n - p + k , 0} \Hat{\alpha}^{\nu '} _{p} + \eta ^{\mu \mu '} \delta _{n - p + k , 0} \Hat{\alpha}^{\nu '} _{p} \Hat{\alpha}^{\nu} _{m - n} \right) \eta _{\mu ' \nu '} =                                                                             \\
+                                                              & = \Hat{\alpha}^{\mu} _{n} \Hat{\alpha}^{\nu} _{p} \eta _{\mu \nu} \delta _{m - n - p + k} + \Hat{\alpha}^{\mu} _{p} \Hat{\alpha}^{\nu} _{m - n} \eta _{\mu \nu} \delta _{n - p + k} =                                                                                                                                                \\
+                                                              & = \Hat{L}_{n , p + n} \delta _{m - n - p + k , 0} + \Hat{L}_{p , m - n + p} \delta _{n - p + k , 0}
 \end{align*}
 \begin{align*}
-    \Big[ \Hat{\widetilde{L}}_{n , m} , \Hat{\widetilde{L}}_{p , k} \Big] & = \Big[ \frac{(m - n)}{E_{m - n}} (\Hat{\alpha}^{\mu} _{n})^{\dagger} \Hat{\alpha}^{\nu} _{n - m} \eta _{\mu \nu} , \frac{(k - p)}{E_{k - p}} (\Hat{\alpha}^{\mu '} _{k})^{\dagger} \Hat{\alpha}^{\nu '} _{k - p} \eta _{\mu ' \nu '} \Big] =                                                                                                                                                                    \\
-                                                                          & = \frac{(m - n)}{E_{m - n}} \frac{(k - p)}{E_{k - p}} \eta _{\mu \nu} \eta _{\mu ' \nu '} \left( (\Hat{\alpha}^{\mu} _{n})^{\dagger} \Big[ \Hat{\alpha}^{\nu} _{n - m} , (\Hat{\alpha}^{\mu '} _{k})^{\dagger} \Big] \Hat{\alpha}^{\nu '} _{k - p} + (\Hat{\alpha}^{\mu '} _{k})^{\dagger} \Big[ (\Hat{\alpha}^{\mu} _{n})^{\dagger} , \Hat{\alpha}^{\nu '} _{k - p} \Big] \Hat{\alpha}^{\nu} _{n - m} \right) = \\
-                                                                          & = \frac{(m - n)}{E_{m - n}} \frac{(k - p)}{E_{k - p}} \eta _{\mu \nu} \eta _{\mu ' \nu '} \left( (\Hat{\alpha}^{\mu} _{n})^{\dagger} \eta ^{\nu \mu '} \delta _{n - m , k} \Hat{\alpha}^{\nu '} _{k - p} + (\Hat{\alpha}^{\mu '} _{k})^{\dagger} \eta ^{\mu \nu '} \delta _{n , k - p} \Hat{\alpha}^{\nu} _{n - m} \right) =                                                                                     \\
-                                                                          & = \frac{(m - n)}{E_{m - n}} \frac{(k - p)}{E_{k - p}} \eta _{\mu \nu} \left( (\Hat{\alpha}^{\mu} _{n})^{\dagger} \Hat{\alpha}^{\nu} _{k - p} \delta _{n - m , k} + (\Hat{\alpha}^{\mu} _{k})^{\dagger} \Hat{\alpha}^{\nu} _{n - m} \delta _{n , k - p} \right) =                                                                                                                                                 \\
-                                                                          & = \frac{(m - n)}{E_{m - n}} \frac{(k - p)}{E_{k - p}} \left( \frac{E_{- n}}{(- n)} \Hat{\widetilde{L}}_{k - p - n , k - p} \delta _{n - m , k} + \frac{E_{- k}}{(- k)} \Hat{\widetilde{L}}_{n - m - k , n - m} \delta _{n , k - p} \right) .
+    \Big[ \Hat{\widetilde{L}}_{n , m} , \Hat{\widetilde{L}}_{p , k} \Big] & = \Big[ (\Hat{\alpha}^{\mu} _{n - m})^{\dagger} \Hat{\alpha}^{\nu} _{n} \eta _{\mu \nu} , (\Hat{\alpha}^{\mu '} _{p - k})^{\dagger} \Hat{\alpha}^{\nu '} _{p} \eta _{\mu ' \nu '} \Big] =                                                                                                                                                                    \\
+                                                                          & = \eta _{\mu \nu} \left( (\Hat{\alpha}^{\mu '} _{p - k})^{\dagger} \Big[ (\Hat{\alpha}^{\mu} _{n - m})^{\dagger} \Hat{\alpha}^{\nu} _{n} , \Hat{\alpha}^{\nu '} _{p} \Big] + \Big[ (\Hat{\alpha}^{\mu} _{n - m})^{\dagger} \Hat{\alpha}^{\nu} _{n} , (\Hat{\alpha}^{\mu '} _{p - k})^{\dagger} \Big] \Hat{\alpha}^{\nu '} _{p} \right) \eta _{\mu ' \nu '} = \\
+                                                                          & = \eta _{\mu \nu} \left( (\Hat{\alpha}^{\mu '} _{p - k})^{\dagger} (- \eta ^{\mu \nu '} \delta _{p - n + m , 0}) \Hat{\alpha}^{\nu} _{n} + (\Hat{\alpha}^{\mu} _{n - m})^{\dagger} \eta ^{\nu \mu '} \delta _{n - p + k , 0} \Hat{\alpha}^{\nu '} _{p} \right) \eta _{\mu ' \nu '} =                                                                         \\
+                                                                          & = - (\Hat{\alpha}^{\mu} _{p - k})^{\dagger} \Hat{\alpha}^{\nu} _{n} \eta _{\mu \nu} \delta _{p - n + m , 0} + (\Hat{\alpha}^{\mu} _{n - m})^{\dagger} \Hat{\alpha}^{\nu} _{p} \eta _{\mu \nu} \delta _{n - p + k , 0} =                                                                                                                                      \\
+                                                                          & = - \Hat{\widetilde{L}}_{n , n - p + k} \delta _{p - n + m , 0} + \Hat{\widetilde{L}}_{p , p - n + m} \delta _{n - p + k , 0}
 \end{align*}
-Since $[\Hat{L}_{n , m} , \Hat{\widetilde{L}}_{p , k}]$ only has annihilation operators, it has no ordering ambiguities. $[\Hat{\widetilde{L}}_{n , m} , \Hat{\widetilde{L}}_{p , k}]$ would have ordering ambiguities for $k - p = 0$ and $n - m = 0$, however in both cases regardless of the order the commutator would vanish because of the $(m - n)(k - p)$ factor multiplying the whole expression, and also $\Hat{\widetilde{L}}_{n , n} = 0$, so we would be commuting something with $0$, thus our algebra has no anomalous terms.
+Since $[\Hat{L}_{n , m} , \Hat{\widetilde{L}}_{p , k}]$ only has annihilation operators, it has no ordering ambiguities. $[\Hat{\widetilde{L}}_{n , m} , \Hat{\widetilde{L}}_{p , k}]$ have ordering ambiguities for $n - p + k = 0$ with $k + m = 0$ and/or $p - n + m = 0$ with $m + k = 0$, so we add the anomalous terms
+\begin{equation*}
+    \Big[ \Hat{\widetilde{L}}_{n , m} , \Hat{\widetilde{L}}_{p , k} \Big] = - \Hat{\widetilde{L}}_{n , n - p + k} \delta _{p - n + m , 0} + \Hat{\widetilde{L}}_{p , p - n + m} \delta _{n - p + k , 0} + C_{n} \delta _{n - p + k , 0} + D_{p} \delta _{p - n + m , 0} .
+\end{equation*}
+Clearly, $C_{0} = 0 = D_{0}$, since in these cases the equivalent terms are composed by $\Hat{\widetilde{L}}_{0 , 0} = \Hat{p}^{\mu} \Hat{p}_{\mu}$
 
 Considering the ground state $\ket{0 ; k}$, mass-shell condition
 \begin{equation*}
