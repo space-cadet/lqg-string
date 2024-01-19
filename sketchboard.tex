@@ -1299,12 +1299,28 @@ we have the string mass in terms of vibrational modes
     M^2 & = - \frac{1}{(4 \pi (\alpha ')^2)^2} \sum _{n \neq 0} \left( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) \widetilde{L}_{n , 0} \right) =                           \\
         & = - \frac{1}{(4 \pi (\alpha ')^2)^2} \sum _{n \neq 0} \left( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) a^{\mu} _{n} (a^{\nu} _{n})^{*} \eta _{\mu \nu} \right) .
 \end{align*}
+However, since
+\begin{equation*}
+    L_{n , p} = 0 , \ \forall \ n , p \in \mathbb{Z} ,
+\end{equation*}
+in particular we have $L_{0 , 0} = a^{\mu} _{0} a^{\nu} _{0} \eta _{\mu \nu} = 0$, thus the center of mass momentum $p^{\mu}$ is a null vector.
 
 As for the open string, its derivatives are
 \begin{align*}
     \partial _{\tau} X^{\mu}   & = \frac{i}{4 \pi \alpha '} \sum _{n} \left( - a^{\mu} _{n} \e ^{- i E_{n} \tau} + (a^{\mu} _{n})^{*} \e ^{i E_{n} \tau} \right) \cos (n \sigma)                 \\
     \partial _{\sigma} X^{\mu} & = - \frac{1}{4 \pi \alpha '} \sum _{n} \frac{n}{E_{n}} \left( a^{\mu} _{n} \e ^{- i E_{n} \tau} + (a^{\mu} _{n})^{*} \e ^{i E_{n} \tau} \right) \sin (n \sigma)
 \end{align*}
+and the constraint reads
+\begin{equation*}
+    \partial _{\tau} X^{\mu} + \partial _{\sigma} X^{\mu} = \frac{1}{4 \pi \alpha '} \sum _{n} \left( - a^{\mu} _{n} \e ^{- i E_{n} \tau} \left( i \cos (n \sigma) + \frac{n}{E_{n}} \sin (n \sigma) \right) + (a^{\mu} _{n})^{*} \e ^{i E_{n} \tau} \left( i \cos (n \sigma) - \frac{n}{E_{n}} \sin (n \sigma) \right) \right)
+\end{equation*}
+\begin{multline*}
+    (\partial _{\tau} X + \partial _{\sigma} X)^2 = \frac{1}{(4 \pi \alpha ')^2} \sum _{n} \sum _{p} \bigg( a^{\mu} _{n} a^{\nu} _{p} \e ^{- i (E_{n} + E_{p}) \tau} \left( i \cos (n \sigma) + \frac{n}{E_{n}} \sin (n \sigma) \right) \left( i \cos (p \sigma) + \frac{p}{E_{p}} \sin (p \sigma) \right) - \\
+    - a^{\mu} _{n} (a^{\nu} _{p})^{*} \e ^{- i (E_{n} - E_{p}) \tau} \left( i \cos (n \sigma) + \frac{n}{E_{n}} \sin (n \sigma) \right) \left( i \cos (p \sigma) - \frac{p}{E_{p}} \sin (p \sigma) \right) - \\
+    - (a^{\mu} _{n})^{*} a^{\nu} _{p} \e ^{i (E_{n} - E_{p}) \tau} \left( i \cos (n \sigma) - \frac{n}{E_{n}} \sin (n \sigma) \right) \left( i \cos (p \sigma) + \frac{p}{E_{p}} \sin (p \sigma) \right) + \\
+    + (a^{\mu} _{n})^{*} (a^{\nu} _{p})^{*} \e ^{i (E_{n} + E_{p}) \tau} \left( i \cos (n \sigma) - \frac{n}{E_{n}} \sin (n \sigma) \right) \left( i \cos (p \sigma) - \frac{p}{E_{p}} \sin (p \sigma) \right) \bigg) = 0 .
+\end{multline*}
+Once more, we see that the middle 2 terms and outer 2 terms are complex conjugate pairs, so we're left with
 
 \newpage
 
