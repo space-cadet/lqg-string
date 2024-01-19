@@ -1212,12 +1212,20 @@ giving us
     (a^{\mu} _{n})^{*} & = b^{\mu} _{- n}   \\
     (b^{\mu} _{n})^{*} & = a^{\mu} _{- n} ,
 \end{align*}
-so the solution becomes
+so the solution becomes for closed strings
 \begin{equation*}
     X^{\mu} (\tau , \sigma) = \frac{1}{2 \pi \alpha '} \sum _{n \in \mathbb{Z}} \frac{1}{2 E_{n}} \left( a^{\mu} _{n} \e ^{i (- E_{n} \tau + n \sigma)} + (a^{\mu} _{- n})^{*} \e ^{i (E_{n} \tau + n \sigma)} \right) .
 \end{equation*}
+For open strings with free endpoints B.C we have general solution
+\begin{equation*}
+    X^{\mu} (\tau , \sigma) = \frac{1}{2 \pi \alpha '} \sum _{n \in \mathbb{Z}} \frac{1}{2 E_{n}} \left( a^{\mu} _{n} \e ^{- i E_{n} \tau} + b^{\mu} _{n} \e ^{i E_{n} \tau} \right) \cos (n \sigma) ,
+\end{equation*}
+which reality condition implies $b^{\mu} _{n} = (a^{\mu} _{n})^{*}$, thus open string with free endpoint solution becomes
+\begin{equation*}
+    X^{\mu} (\tau , \sigma) = \frac{1}{2 \pi \alpha '} \sum _{n \in \mathbb{Z}} \frac{1}{2 E_{n}} \left( a^{\mu} _{n} \e ^{- i E_{n} \tau} + (a^{\mu} _{n})^{*} \e ^{i E_{n} \tau} \right) \cos (n \sigma) .
+\end{equation*}
 
-Analysing the constraints, we have that
+Analysing the constraints, for the closed string we have that
 \begin{equation*}
     \partial _{\tau} X^{\mu} + \partial _{\sigma} X^{\mu} = \frac{i}{4 \pi \alpha '} \sum _{n \in \mathbb{Z}} \left( \left( \frac{n}{E_{n}} - 1 \right) a^{\mu} _{n} \e ^{i (- E_{n} \tau + n \sigma)} + \left( \frac{n}{E_{n}} + 1 \right) b^{\mu} _{n} \e ^{i (E_{n} \tau + n \sigma)} \right) ,
 \end{equation*}
@@ -1227,27 +1235,45 @@ so the constraint reads
     + \bigg( \frac{n}{E_{n}} - 1 \bigg) \bigg( \frac{p}{E_{p}} + 1 \bigg) a^{\mu} _{n} (a^{\nu} _{- p})^{*} \e ^{i (- (E_{n} - E_{p}) \tau + (n + p) \sigma)} + \bigg( \frac{n}{E_{n}} + 1 \bigg) \bigg( \frac{p}{E_{p}} - 1 \bigg) (a^{\mu} _{- n})^{*} a^{\nu} _{p} \e ^{i ((E_{n} - E_{p}) \tau + (n + p) \sigma)} + \\
     + \bigg( \frac{n}{E_{n}} + 1 \bigg) \bigg( \frac{p}{E_{p}} + 1 \bigg) (a^{\mu} _{- n})^{*} (a^{\nu} _{- p})^{*} \e ^{i ((E_{n} + E_{p}) \tau + (n + p) \sigma)} \bigg) \equiv 0 .
 \end{multline*}
-Since the exponentials are all linearly independent and we can't decouple the tau exponential from any of the sums, we have that all 4 coefficients must vanish independently:
+Since the exponentials are all linearly independent and we can't decouple the $\tau$ exponential from any of the sums, we have 3 cases to investigate: $n = p$, $n = - p$ and $n \neq \pm p$. For $n \neq \pm p$, we get
 \begin{align*}
     L^{1} _{n , p} & := \bigg( \frac{n}{E_{n}} - 1 \bigg) \bigg( \frac{p}{E_{p}} - 1 \bigg) a^{\mu} _{n} a^{\nu} _{p} \eta _{\mu \nu} = 0                   \\
     L^{2} _{n , p} & := \bigg( \frac{n}{E_{n}} - 1 \bigg) \bigg( \frac{p}{E_{p}} + 1 \bigg) a^{\mu} _{n} (a^{\nu} _{- p})^{*} \eta _{\mu \nu} = 0           \\
     L^{3} _{n , p} & := \bigg( \frac{n}{E_{n}} + 1 \bigg) \bigg( \frac{p}{E_{p}} - 1 \bigg) (a^{\mu} _{- n})^{*} a^{\nu} _{p} \eta _{\mu \nu} = 0           \\
-    L^{4} _{n , p} & := \bigg( \frac{n}{E_{n}} + 1 \bigg) \bigg( \frac{p}{E_{p}} + 1 \bigg) (a^{\mu} _{- n})^{*} (a^{\nu} _{- p})^{*} \eta _{\mu \nu} = 0 .
+    L^{4} _{n , p} & := \bigg( \frac{n}{E_{n}} + 1 \bigg) \bigg( \frac{p}{E_{p}} + 1 \bigg) (a^{\mu} _{- n})^{*} (a^{\nu} _{- p})^{*} \eta _{\mu \nu} = 0 ,
 \end{align*}
-$L^{2} _{n , p}$ and $L^{3} _{n , p}$ are just complex conjugates of each other with $n \mapsto - n$ and $p \mapsto - p$, so they are redundant. The same is true for $L^{1} _{n , p}$ and $L^{4} _{n , p}$, so in the end we have
+where $L^{2} _{n , p}$ and $L^{3} _{n , p}$ are just complex conjugates of each other with $n \mapsto - n$ and $p \mapsto - p$, so they are redundant. The same is true for $L^{1} _{n , p}$ and $L^{4} _{n , p}$, so in the end we have
 \begin{align*}
     L_{n , p}             & := \bigg( \frac{n}{E_{n}} - 1 \bigg) \bigg( \frac{p}{E_{p}} - 1 \bigg) a^{\mu} _{n} a^{\nu} _{p} \eta _{\mu \nu} = 0           \\
     \widetilde{L}_{n , p} & := \bigg( \frac{n}{E_{n}} - 1 \bigg) \bigg( \frac{p}{E_{p}} + 1 \bigg) a^{\mu} _{n} (a^{\nu} _{- p})^{*} \eta _{\mu \nu} = 0 .
 \end{align*}
 The coefficients of both expressions are actually not necessary, since for them to be $0$ we would need $n \rightarrow \pm \infty$ or $p \rightarrow \pm \infty$, so we can redefine
 \begin{align*}
-    L_{n , p}             & := a^{\mu} _{n} a^{\nu} _{p} \eta _{\mu \nu} = 0           \\
-    \widetilde{L}_{n , p} & := a^{\mu} _{n} (a^{\nu} _{- p})^{*} \eta _{\mu \nu} = 0 .
+    L_{n , p}             & := a^{\mu} _{n} a^{\nu} _{p} \eta _{\mu \nu} = 0                          \\
+    \widetilde{L}_{n , p} & := a^{\mu} _{n} (a^{\nu} _{- p})^{*} \eta _{\mu \nu} = 0 , n \neq \pm p .
 \end{align*}
-To make it more in line with regular ST literature, let's also map $p \mapsto p - n$
+For $n = - p$, the first and last terms are complex conjugates of each other with the relabeling $n \mapsto - n$ and $p \mapsto - p$, while the exponentials in the 2 middle terms are reduced to $1$, so we get
 \begin{align*}
-    L_{n , p}             & = a^{\mu} _{n} a^{\nu} _{p - n} \eta _{\mu \nu} = 0         \\
-    \widetilde{L}_{n , p} & = a^{\mu} _{n} (a^{\nu} _{n - p})^{*} \eta _{\mu \nu} = 0 .
+    \left( \frac{n}{E_{n}} - 1 \right) ^2 a^{\mu} _{n} a^{\nu} _{- n} \eta _{\mu \nu}                                             & = 0   \\
+    \sum _{n} \left( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) a^{\mu} _{n} (a^{\nu} _{n})^{*} \eta _{\mu \nu} \right) & = 0 ,
+\end{align*}
+where in the first equation we can ignore the first factor once more. Finally for $n = p$, we get
+\begin{align*}
+    \left( \frac{n}{E_{n}} - 1 \right) ^2 a^{\mu} _{n} a^{\nu} _{n} \eta _{\mu \nu}                        & = 0   \\
+    \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) a^{\mu} _{n} (a^{\nu} _{- n})^{*} \eta _{\mu \nu} & = 0 ,
+\end{align*}
+where we again ignore the first factor because it's only $0$ at infinity, thus collecting everything we have
+\begin{align*}
+    L_{n , p} := a^{\mu} _{n} a^{\nu} _{p} \eta _{\mu \nu}                                                & = 0 , \ \forall \ n , p \in \mathbb{Z} , \\
+    \widetilde{L}_{n , p} := a^{\mu} _{n} (a^{\nu} _{- p})^{*}                                            & = 0 , \ n \neq - p ,                     \\
+    \sum _{n} \left( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) \widetilde{L}_{n , - n} \right) & = 0 .
+\end{align*}
+
+To make it more in line with regular ST literature, let's also map $p \mapsto p - n$:
+\begin{align*}
+    L_{n , p} = a^{\mu} _{n} a^{\nu} _{p - n} \eta _{\mu \nu}                                           & = 0   \\
+    \widetilde{L}_{n , p} = a^{\mu} _{n} (a^{\nu} _{n - p})^{*} \eta _{\mu \nu}                         & = 0   \\
+    \sum _{n} \left( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) \widetilde{L}_{n , 0} \right) & = 0 .
 \end{align*}
 
 One last thing before quantizing: the $n = 0$ term in the solution reads
@@ -1256,8 +1282,29 @@ One last thing before quantizing: the $n = 0$ term in the solution reads
 \end{equation*}
 which is divergent in the $m \rightarrow 0$ limit unless $\mathfrak{Re}(a^{\mu} _{0}) = 0$, thus $a^{\mu} _{0}$ must be purely imaginary. Keeping the analogy to the $m \rightarrow 0$ regime, we conclude $a^{\mu} _{0} = 4 \pi i (\alpha ')^2 p^{\mu}$. Since $a^{\mu} _{0}$ is proportional to $p^{\mu}$, we have that
 \begin{equation*}
-    M^2 = - p^{\mu} p_{\mu} = \frac{1}{16 \pi ^2 (\alpha ')^4} a^{\mu} _{0} a^{\nu} _{0} \eta _{\mu \nu}
+    M^2 = - p^{\mu} p_{\mu} = \frac{1}{16 \pi ^2 (\alpha ')^4} a^{\mu} _{0} a^{\nu} _{0} \eta _{\mu \nu} ,
 \end{equation*}
+which after analysing closer the $n = - p$ condition
+\begin{equation*}
+    \sum _{n} \left( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) \widetilde{L}_{n , 0} \right) = 0
+\end{equation*}
+\begin{equation*}
+    \sum _{n \neq 0} \left( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) \widetilde{L}_{n , 0} \right) - \widetilde{L}_{0 , 0} = 0
+\end{equation*}
+\begin{equation*}
+    \sum _{n \neq 0} \left( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) \widetilde{L}_{n , 0} \right) = a^{\mu} _{0} (a^{\nu} _{0})^{*} \eta _{\mu \nu} \equiv (4 \pi (\alpha ')^2)^2 p^{\mu} p_{\mu} ,
+\end{equation*}
+we have the string mass in terms of vibrational modes
+\begin{align*}
+    M^2 & = - \frac{1}{(4 \pi (\alpha ')^2)^2} \sum _{n \neq 0} \left( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) \widetilde{L}_{n , 0} \right) =                           \\
+        & = - \frac{1}{(4 \pi (\alpha ')^2)^2} \sum _{n \neq 0} \left( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) a^{\mu} _{n} (a^{\nu} _{n})^{*} \eta _{\mu \nu} \right) .
+\end{align*}
+
+As for the open string, its derivatives are
+\begin{align*}
+    \partial _{\tau} X^{\mu}   & = \frac{i}{4 \pi \alpha '} \sum _{n} \left( - a^{\mu} _{n} \e ^{- i E_{n} \tau} + (a^{\mu} _{n})^{*} \e ^{i E_{n} \tau} \right) \cos (n \sigma)                 \\
+    \partial _{\sigma} X^{\mu} & = - \frac{1}{4 \pi \alpha '} \sum _{n} \frac{n}{E_{n}} \left( a^{\mu} _{n} \e ^{- i E_{n} \tau} + (a^{\mu} _{n})^{*} \e ^{i E_{n} \tau} \right) \sin (n \sigma)
+\end{align*}
 
 \newpage
 
@@ -1375,20 +1422,6 @@ Since $[\Hat{L}_{n , m} , \Hat{\widetilde{L}}_{p , k}]$ only has annihilation op
 \begin{equation*}
     \Big[ \Hat{\widetilde{L}}_{n , m} , \Hat{\widetilde{L}}_{p , k} \Big] = - \Hat{\widetilde{L}}_{n , n - p + k} \delta _{p - n + m , 0} + \Hat{\widetilde{L}}_{p , p - n + m} \delta _{n - p + k , 0} + C_{n} \delta _{n - p + k , 0} + D_{p} \delta _{p - n + m , 0} .
 \end{equation*}
-Clearly, $C_{0} = 0 = D_{0}$, since in these cases the equivalent terms are composed by $\Hat{\widetilde{L}}_{0 , 0} = \Hat{p}^{\mu} \Hat{p}_{\mu}$
-
-Considering the ground state $\ket{0 ; k}$, mass-shell condition
-\begin{equation*}
-    - (4 \pi (\alpha ')^2)^2 \Hat{M}^2 + \lim _{n \rightarrow 0} \frac{E_{n}}{n} \Hat{\widetilde{L}}_{n , 0} = \lim _{n \rightarrow 0} \frac{E_{n}}{n} c_{n}
-\end{equation*}
-implies
-\begin{equation*}
-    - (4 \pi (\alpha ')^2)^2 (M^2 + k^{\mu} k_{\mu}) = \lim _{n \rightarrow 0} \frac{E_{n}}{n} c_{n} .
-\end{equation*}
-Now considering states at the first excited level, given by $\zeta _{\mu} (\Hat{\alpha} ^{\mu} _{1})^{\dagger} \ket{0 ; k}$ with $\zeta _{\mu} (k)$ being a polarization vector, the mass-shell condition will now reads
-\begin{equation*}
-    \left( - (4 \pi (\alpha ')^2)^2 \Hat{M}^2 + \lim _{n \rightarrow 0} \frac{E_{n}}{n} \Hat{\widetilde{L}}_{n , 0} \right) \zeta _{\mu} (\Hat{\alpha}^{\mu} _{1})^{\dagger} \ket{0 ; k} = \lim _{n \rightarrow 0} \frac{E_{n}}{n} c_{n} \zeta _{\mu} (\Hat{\alpha}^{\mu} _{1})^{\dagger} \ket{0 ; k} ,
-\end{equation*}
-so the mass spectrum of excited states are the same as of the vacuum state.
+Clearly, $C_{0} = 0 = D_{0}$, since in these cases the equivalent terms are composed by $\Hat{\widetilde{L}}_{0 , 0} = \Hat{p}^{\mu} \Hat{p}_{\mu}$.
 
 \end{document}
