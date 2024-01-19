@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.17)  19 JAN 2024 19:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.17)  19 JAN 2024 20:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -702,26 +702,26 @@ File: ubbold.fd 1996/01/01 Blackboard Bold Font Definition File (jk)
 LaTeX Font Info:    Trying to load font information for U+euf on input line 1283.
  (E:\MikTeX\tex/latex/amsfonts\ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
-) [23] [24] [25] [26] (e:\LQG-Strings\lqg-string\PDF\sketchboard.aux)
+) [23] [24] [25] [26] [27] (e:\LQG-Strings\lqg-string\PDF\sketchboard.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
 Package rerunfilecheck Info: File `sketchboard.out' has not changed.
-(rerunfilecheck)             Checksum: AB9FAA638AB7302E9D2CE1513F7AB741;6563.
+(rerunfilecheck)             Checksum: A998FDCD42FB152CD0C641341A38D068;6831.
  ) 
 Here is how much of TeX's memory you used:
- 22010 strings out of 475247
- 394611 string characters out of 5774206
+ 22013 strings out of 475247
+ 394640 string characters out of 5774206
  1949785 words of memory out of 5000000
- 43073 multiletter control sequences out of 15000+600000
+ 43074 multiletter control sequences out of 15000+600000
  570290 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,13n,89p,691b,448s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Luigi\AppData\Local\MiKTeX\fonts/pk/ljfour/public/bbold/dpi600\bbold7.pk> <C:\Users\Luigi\AppData\Local\MiKTeX\fonts/pk/ljfour/public/bbold/dpi600\bbold10.pk> <C:\Users\Luigi\AppData\Local\MiKTeX\fonts/pk/ljfour/public/esint/dpi600\esint10.pk><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><E:/MikTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><E:/MikTeX/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on e:\LQG-Strings\lqg-string\PDF\sketchboard.pdf (26 pages, 317157 bytes).
+Output written on e:\LQG-Strings\lqg-string\PDF\sketchboard.pdf (27 pages, 319626 bytes).
 PDF statistics:
- 378 PDF objects out of 1000 (max. 8388607)
- 64 named destinations out of 1000 (max. 500000)
- 309 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 386 PDF objects out of 1000 (max. 8388607)
+ 66 named destinations out of 1000 (max. 500000)
+ 317 words of extra memory for PDF output out of 10000 (max. 10000000)
 
