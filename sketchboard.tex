@@ -1459,8 +1459,45 @@ where the WS metric can be recast in terms of zweibein fields as
 
 \subsection{EoMs}
 
+\subsubsection{W.r.t $e$}
+
 \begin{align*}
-    \frac{\delta S}{\delta e^{c} _{k}} & = \frac{T}{2} \left( \frac{\partial}{\partial e^{c} _{k}} e e^{a} _{i} e^{b i} + e \frac{\partial}{\partial e^{c} _{k}} (e^{a} _{i} e^{b i}) \right) \mc{D}_{a} X^{I} \mc{D}_{b} X^{J} \eta _{I J}
+    \frac{\delta S}{\delta e^{c} _{k}} & = \frac{T}{2} \left( \frac{\partial}{\partial e^{c} _{k}} e e^{a} _{i} e^{b i} + e \frac{\partial}{\partial e^{c} _{k}} (e^{a} _{i} e^{b i}) \right) \mc{D}_{a} X^{I} \mc{D}_{b} X^{J} \eta _{I J} = \\
+                                       & = T \left( - e e^{k} _{c} e^{a} _{i} e^{b i} + e \delta ^{a} _{c} \delta ^{k} _{i} e^{b i} \right) \mc{D}_{a} X^{I} \mc{D}_{b} X^{J} \eta _{I J} =                                                   \\
+                                       & = T \left( - e e^{k} _{c} e^{a} _{i} e^{b i} \mc{D}_{a} X^{I} \mc{D}_{b} X^{J} \eta _{I J} + e e^{b k} \mc{D}_{c} X^{I} \mc{D}_{b} X^{J} \eta _{I J} \right) \overset{!}{=} 0
 \end{align*}
+\begin{equation*}
+    T^{k} _{c} := e^{b k} \mc{D}_{c} X^{I} \mc{D}_{b} X^{J} \eta _{I J} - e^{k} _{c} e^{a} _{i} e^{b i} \mc{D}_{a} X^{I} \mc{D}_{b} X^{J} \eta _{I J} = 0
+\end{equation*}
+\begin{equation*}
+    e^{k} _{c} = f e^{b k} \mc{D}_{c} X^{I} \mc{D}_{b} X^{J} \eta _{I J} ,
+\end{equation*}
+\begin{equation*}
+    \frac{1}{f} = e^{a} _{i} e^{b i} \mc{D}_{a} X^{I} \mc{D}_{b} X^{J} \eta _{I J}
+\end{equation*}
+
+\subsubsection{W.r.t $A$}
+
+\begin{align*}
+    \frac{\delta S}{\delta \mc{A}^{K L} _{c}} & = \frac{T}{2} e e^{a} _{i} e^{b i} \frac{\partial}{\partial \mc{A}^{K L} _{c}} \left( \mc{D}_{a} X^{I} \mc{D}_{b} X^{J} \right) \eta _{I J} = \\
+                                              & = T e e^{a} _{i} e^{b i} k \delta ^{c} _{a} \delta ^{I} _{[K} \eta _{L] I'} X^{I'} \mc{D}_{b} X^{J} \eta _{I J} =                             \\
+                                              & = T k e e^{c} _{i} e^{b i} \mc{D}_{b} X^{J} \eta _{J [K} X_{L]} \overset{!}{=} 0
+\end{align*}
+\begin{equation*}
+    \mc{T}^{K L} _{c} = \mc{D}_{c} X^{[K} X^{L]} = 0
+\end{equation*}
+
+\subsubsection{W.r.t $X$}
+
+\begin{align*}
+    \frac{\delta S}{\delta X^{K}} & = - \frac{T}{2} \left( \partial _{c} \left( e e^{a} _{i} e^{b i} \frac{\partial}{\partial (\partial _{c} X^{K})} \left( \mc{D}_{a} X^{I} \mc{D}_{b} X^{J} \right) \eta _{I J} \right) - e e^{a} _{i} e^{b i} \frac{\partial}{\partial X^{K}} \left( \mc{D}_{a} X^{I} \mc{D}_{b} X^{J} \right) \eta _{I J} \right) = \\
+                                  & = - T \left( \partial _{c} \left( e e^{a} _{i} e^{b i} \delta ^{c} _{a} \delta ^{I} _{K} \mc{D}_{b} X^{J} \eta _{I J} \right) - e e^{a} _{i} e^{b i} k \mc{A}^{I} _{a I'} \delta ^{I'} _{K} \mc{D}_{b} X^{J} \eta _{I J} \right)=                                                                                   \\
+                                  & = - T \left( \partial _{a} \left( e e^{a} _{i} e^{b i} \mc{D}_{b} X^{J} \eta _{K J} \right) - k \mc{A}^{I} _{a K} \left( e e^{a} _{i} e^{b i} \mc{D}_{b} X^{J} \eta _{I J} \right) \right) =                                                                                                                        \\
+                                  & = - T \mc{D}_{a} \left( e e^{a} _{i} e^{b i} \mc{D}_{b} X_{K} \right) \overset{!}{=} 0
+\end{align*}
+In conformal gauge $e e^{a} _{i} e^{b i} = \eta ^{a b}$, thus
+\begin{equation*}
+    \eta ^{a b} \mc{D}_{a} \mc{D}_{b} X^{I} = 0
+\end{equation*}
 
 \end{document}
