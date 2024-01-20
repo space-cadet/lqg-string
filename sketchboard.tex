@@ -1448,7 +1448,7 @@ Turn embbeding fields $X^{\mu}$ into vector in the spin-1 representation of $\ma
 \begin{equation*}
     \mc{D}_{a} X^{I} = \partial _{a} X^{I} + k \mc{A}^{I} _{a J} X^{J} ,
 \end{equation*}
-where $\mc{A}^{I} _{a J} = A^{\alpha} _{a} (T_{\alpha})^{I} _{\ J}$ is the background $\mathrm{Spin}(d , 1)$ connection, so the action becomes
+where $\mc{A}^{I} _{a J} (X) = (A^{\alpha \beta} _{a} (X) T_{\alpha \beta})^{I} _{\ J}$ is the background $\mathrm{Spin}(d , 1)$ connection, so the action becomes
 \begin{equation*}
     S = - \frac{T}{2} \int \diff ^2 x \sqrt{g} g^{a b} \mc{D}_{a} X^{I} \mc{D}_{b} X^{J} \eta _{I J} ,
 \end{equation*}
@@ -1476,28 +1476,20 @@ where the WS metric can be recast in terms of zweibein fields as
     \frac{1}{f} = e^{a} _{i} e^{b i} \mc{D}_{a} X^{I} \mc{D}_{b} X^{J} \eta _{I J}
 \end{equation*}
 
-\subsubsection{W.r.t $A$}
-
-\begin{align*}
-    \frac{\delta S}{\delta \mc{A}^{K L} _{c}} & = \frac{T}{2} e e^{a} _{i} e^{b i} \frac{\partial}{\partial \mc{A}^{K L} _{c}} \left( \mc{D}_{a} X^{I} \mc{D}_{b} X^{J} \right) \eta _{I J} = \\
-                                              & = T e e^{a} _{i} e^{b i} k \delta ^{c} _{a} \delta ^{I} _{[K} \eta _{L] I'} X^{I'} \mc{D}_{b} X^{J} \eta _{I J} =                             \\
-                                              & = T k e e^{c} _{i} e^{b i} \mc{D}_{b} X^{J} \eta _{J [K} X_{L]} \overset{!}{=} 0
-\end{align*}
-\begin{equation*}
-    \mc{T}^{K L} _{c} = \mc{D}_{c} X^{[K} X^{L]} = 0
-\end{equation*}
-
 \subsubsection{W.r.t $X$}
 
 \begin{align*}
     \frac{\delta S}{\delta X^{K}} & = - \frac{T}{2} \left( \partial _{c} \left( e e^{a} _{i} e^{b i} \frac{\partial}{\partial (\partial _{c} X^{K})} \left( \mc{D}_{a} X^{I} \mc{D}_{b} X^{J} \right) \eta _{I J} \right) - e e^{a} _{i} e^{b i} \frac{\partial}{\partial X^{K}} \left( \mc{D}_{a} X^{I} \mc{D}_{b} X^{J} \right) \eta _{I J} \right) = \\
-                                  & = - T \left( \partial _{c} \left( e e^{a} _{i} e^{b i} \delta ^{c} _{a} \delta ^{I} _{K} \mc{D}_{b} X^{J} \eta _{I J} \right) - e e^{a} _{i} e^{b i} k \mc{A}^{I} _{a I'} \delta ^{I'} _{K} \mc{D}_{b} X^{J} \eta _{I J} \right)=                                                                                   \\
-                                  & = - T \left( \partial _{a} \left( e e^{a} _{i} e^{b i} \mc{D}_{b} X^{J} \eta _{K J} \right) - k \mc{A}^{I} _{a K} \left( e e^{a} _{i} e^{b i} \mc{D}_{b} X^{J} \eta _{I J} \right) \right) =                                                                                                                        \\
-                                  & = - T \mc{D}_{a} \left( e e^{a} _{i} e^{b i} \mc{D}_{b} X_{K} \right) \overset{!}{=} 0
+                                  & = - T \left( \partial _{c} \left( e e^{a} _{i} e^{b i} \delta ^{c} _{a} \delta ^{I} _{K} \mc{D}_{b} X^{J} \eta _{I J} \right) - e e^{a} _{i} e^{b i} k \left( \mc{A}^{I} _{a I'} \delta ^{I'} _{K} + \frac{\partial \mc{A}^{I} _{a I'}}{\partial X^{K}} X^{I'} \right) \mc{D}_{b} X^{J} \eta _{I J} \right)=        \\
+                                  & = - T \left( \partial _{a} \left( e e^{a} _{i} e^{b i} \mc{D}_{b} X^{J} \eta _{K J} \right) - k \mc{A}^{I} _{a K} \left( e e^{a} _{i} e^{b i} \mc{D}_{b} X^{J} \eta _{I J} \right) - k e e^{a} _{i} e^{b i} \frac{\partial \mc{A}^{I} _{a I'}}{\partial X^{K}} X^{I'} \mc{D}_{b} X^{J} \eta _{I J} \right) =        \\
+                                  & = - T \left( \mc{D}_{a} \left( e e^{a} _{i} e^{b i} \mc{D}_{b} X_{K} \right) - k e e^{a} _{i} e^{b i} \frac{\partial \mc{A}^{I} _{a I'}}{\partial X^{K}} X^{I'} \mc{D}_{b} X^{J} \eta _{I J} \right) \overset{!}{=} 0
 \end{align*}
+\begin{equation*}
+    \mc{D}_{a} \left( e e^{a} _{i} e^{b i} \mc{D}_{b} X_{K} \right) = k e e^{a} _{i} e^{b i} \frac{\partial \mc{A}^{I} _{a I'}}{\partial X^{K}} X^{I'} \mc{D}_{b} X^{J} \eta _{I J}
+\end{equation*}
 In conformal gauge $e e^{a} _{i} e^{b i} = \eta ^{a b}$, thus
 \begin{equation*}
-    \eta ^{a b} \mc{D}_{a} \mc{D}_{b} X^{I} = 0
+    \eta ^{a b} \mc{D}_{a} \mc{D}_{b} X^{I} = k \eta ^{a b} \frac{\partial \mc{A}^{I} _{a I'}}{\partial X^{K}} X^{I'} \mc{D}_{b} X^{J} \eta _{I J}
 \end{equation*}
 
 \end{document}
