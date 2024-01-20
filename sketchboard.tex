@@ -1444,17 +1444,23 @@ Clearly, $C_{0} = 0 = D_{0}$, since in these cases the equivalent terms are comp
 
 \section{Polyakov Action in terms of LQG Variables}
 
-Turn embbeding fields $X^{\mu}$ into field with internal index $X^{I}$, and promote partial derivative to covariant derivative $\partial _{a} \mapsto D_{a}$ acting as
+Turn embbeding fields $X^{\mu}$ into vector in the spin-1 representation of $\mathrm{Spin}(d , 1)$, $X^{I}$, and promote partial derivative to covariant derivative $\partial _{a} \mapsto \mc{D}_{a}$ acting as
 \begin{equation*}
-    D_{a} X^{I} = \partial _{a} X^{I} + k A^{I} _{a J} X^{J} ,
+    \mc{D}_{a} X^{I} = \partial _{a} X^{I} + k \mc{A}^{I} _{a J} X^{J} ,
 \end{equation*}
-where $A^{I J} _{a}$ is the background $\mathrm{Spin}(d , 1)$ connection, so the action becomes
+where $\mc{A}^{I} _{a J} = A^{\alpha} _{a} (T_{\alpha})^{I} _{\ J}$ is the background $\mathrm{Spin}(d , 1)$ connection, so the action becomes
 \begin{equation*}
-    S = - \frac{T}{2} \int \diff ^2 x \sqrt{g} g^{a b} D_{a} X^{I} D_{b} X^{J} \eta _{I J} ,
+    S = - \frac{T}{2} \int \diff ^2 x \sqrt{g} g^{a b} \mc{D}_{a} X^{I} \mc{D}_{b} X^{J} \eta _{I J} ,
 \end{equation*}
-where the metrics can be recast in terms of vielbein fields as
+where the WS metric can be recast in terms of zweibein fields as
 \begin{equation*}
-    S = - \frac{T}{2} \int \diff ^2 x e e^{a} _{K} e^{b K} D_{a} X^{I} D_{b} X^{J} E^{\mu} _{I} E^{\nu} _{J} G_{\mu \nu}
+    S = - \frac{T}{2} \int \diff ^2 x e e^{a} _{i} e^{b i} \mc{D}_{a} X^{I} \mc{D}_{b} X^{J} \eta _{I J} .
 \end{equation*}
+
+\subsection{EoMs}
+
+\begin{align*}
+    \frac{\delta S}{\delta e^{c} _{k}} & = \frac{T}{2} \left( \frac{\partial}{\partial e^{c} _{k}} e e^{a} _{i} e^{b i} + e \frac{\partial}{\partial e^{c} _{k}} (e^{a} _{i} e^{b i}) \right) \mc{D}_{a} X^{I} \mc{D}_{b} X^{J} \eta _{I J}
+\end{align*}
 
 \end{document}
