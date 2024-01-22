@@ -1500,7 +1500,28 @@ where the WS metric can be recast in terms of auxiliary zweibein fields as
 \end{equation*}
 In conformal gauge $e e^{a} _{i} e^{b i} = \eta ^{a b}$, thus
 \begin{equation*}
-    \eta ^{a b} \mc{D}_{a} \mc{D}_{b} X^{I} = 0
+    \eta ^{a b} \mc{D}_{a} \mc{D}_{b} X^{I} = 0 .
+\end{equation*}
+More explicitly,
+\begin{equation*}
+    \eta ^{a b} \mc{D}_{a} \left( \partial _{b} X^{I} + k \mc{A}^{I} _{b J} X^{J} \right) = 0
+\end{equation*}
+\begin{equation*}
+    \eta ^{a b} \left( \left( \partial _{a} \partial _{b} X^{I} + k \mc{A}^{I} _{a J} \partial _{b} X^{J} \right) + \left( k \partial _{a} \left( \mc{A}^{I} _{b J} X^{J} \right) + k^2 \mc{A}^{I} _{a I'} \mc{A}^{I'} _{b J} X^{J} \right) \right) = 0
+\end{equation*}
+\begin{equation*}
+    \eta ^{a b} \left( \partial _{a} \partial _{b} X^{I} + 2 k \mc{A}^{I} _{a J} \partial _{b} X^{J} + k \partial _{a} \mc{A}^{I} _{b J} X^{J} + k^2 \mc{A}^{I} _{a I'} \mc{A}^{I'} _{b J} X^{J} \right) = 0
+\end{equation*}
+\begin{equation*}
+    \eta ^{a b} \left( \delta ^{I} _{J} \partial _{a} \partial _{b} + 2 k \mc{A}^{I} _{a J} \partial _{b} \right) X^{J} = - \left( k \eta ^{a b} \partial _{a} \mc{A}^{I} _{a J} X^{J} + k^2 \eta ^{a b} \mc{A}^{I} _{a I'} \mc{A}^{I'} _{b J} X^{J} \right) ,
+\end{equation*}
+which has implicit solution given by
+\begin{equation*}
+    X^{K} (x) = - \int \diff ^2 x' G^{K} _{\ I} (x , x') \left( k \eta ^{a' b'} \partial _{a'} \mc{A}^{I} _{b' J} (x') X^{J} (x') + k^2 \eta ^{a' b'} \mc{A}^{I} _{a' I'} (x') \mc{A}^{I'} _{b' J} (x') X^{J} (x') \right) ,
+\end{equation*}
+where the Green's function matrix $G^{K} _{\ J} (x , x')$ satisfies
+\begin{equation*}
+    \left( \eta ^{a b} \delta ^{I} _{K} \partial _{a} \partial _{b} + 2 k \mc{A}^{I} _{a K} (x) \partial _{b} \right) G^{K} _{\ J} (x , x') = \delta ^{I} _{J} \delta (x , x') .
 \end{equation*}
 
 \end{document}
