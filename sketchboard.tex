@@ -1581,34 +1581,50 @@ For FLRW metric
 \end{equation*}
 the vielbein is
 \begin{align*}
-    E^{0} _{\mu} \diff X^{\mu} & = \diff t                                \\
-    E^{i} _{\mu} \diff X^{\mu} & = a(t) \diff X^{i} , \ i = 1 , ... , d ,
+    E^{0} _{\mu} \diff X^{\mu}   & = \diff t                                \\
+    E^{(i)} _{\mu} \diff X^{\mu} & = a(t) \diff X^{i} , \ i = 1 , ... , d ,
 \end{align*}
 so the connection is
 \begin{equation*}
-    A^{0 i} _{t} = - A^{i 0} _{t} = 0
+    A^{0 (i)} _{t} = - A^{(i) 0} _{t} = 0
 \end{equation*}
 \begin{equation*}
-    A^{0 i} _{(i)} = - A^{i 0} _{(i)} = - \partial _{t} a(t)
+    A^{0 (i)} _{i} = - A^{(i) 0} _{i} = - \partial _{t} a(t)
 \end{equation*}
 \begin{equation*}
-    A^{0 i} _{(j)} = - A^{i 0} _{(j)} = 0
+    A^{0 (i)} _{j} = - A^{(i) 0} _{j} = 0
 \end{equation*}
 \begin{equation*}
-    A^{i j} _{t} = - A^{j i} _{t} = 0
+    A^{(i) (j)} _{t} = - A^{(j) (i)} _{t} = 0
 \end{equation*}
 \begin{equation*}
-    A^{i j} _{(i)} = - A^{j i} _{(i)} = - A^{i j} _{(j)} = A^{j i} _{(j)} = 0 ,
+    A^{(i) (j)} _{i} = - A^{(j) (i)} _{i} = - A^{(i) (j)} _{j} = A^{(j) (i)} _{j} = 0 ,
 \end{equation*}
 all other components being 0. From this, the full connection is
 \begin{equation*}
-    \mc{A} _{\mu} = A^{A B} _{\mu} T_{A B} = A^{0 i} _{(i)} T_{0 i} = - \partial _{t} a(t) \sum _{i = 1} ^{d} T_{0 i} = - \begin{bmatrix} 0                  & \partial _{t} a(t) & \partial _{t} a(t) & ... & \partial _{t} a(t) \\
+    \mc{A} _{\mu} = A^{A B} _{\mu} T_{A B} = A^{0 (i)} _{i} T_{0 (i)} = - \partial _{t} a(t) \sum _{i = 1} ^{d} T_{0 i} = - \begin{bmatrix} 0                  & \partial _{t} a(t) & \partial _{t} a(t) & ... & \partial _{t} a(t) \\
                 \partial _{t} a(t) & 0                  & 0                  & ... & 0                  \\ \partial _{t} a(t) & 0 & 0 & ... & 0 \\ \vdots & & & & \vdots \\ \partial _{t} a(t) & 0 & 0 & ... & 0\end{bmatrix} .
 \end{equation*}
-Assuming the pullback to WS retains the form we have
+Pullback of connection gives
 \begin{equation*}
-    \mc{A}_{a} = - \begin{bmatrix} 0                        & \partial _{\tau} a(\tau) & \partial _{\tau} a(\tau) & ... & \partial _{\tau} a(\tau) \\
-                \partial _{\tau} a(\tau) & 0                        & 0                        & ... & 0                        \\ \partial _{\tau} a(\tau) & 0 & 0 & ... & 0 \\ \vdots & & & & \vdots \\ \partial _{\tau} a(\tau) & 0 & 0 & ... & 0\end{bmatrix}
+    \mc{A}_{a} = \frac{\partial X^{\mu}}{\partial x^{a}} \mc{A}_{\mu} = - \partial _{a} a(\tau , \sigma) \begin{bmatrix} 0 & 1 & 1 & ... & 1 \\
+                1 & 0 & 0 & ... & 0 \\ 1 & 0 & 0 & ... & 0 \\ \vdots & & & & \vdots \\ 1 & 0 & 0 & ... & 0\end{bmatrix}
+\end{equation*}
+\begin{equation*}
+    \mc{A}_{a} \mc{A}_{b} = \partial _{a} a(\tau , \sigma) \partial _{b} a(\tau , \sigma) \begin{bmatrix} d & 0 & ... & 0 \\ 0 & d & ... & 0 \\ \vdots & & & \vdots \\ 0 & 0 & ... & d \end{bmatrix}
+\end{equation*}
+\begin{equation*}
+    \partial _{a} \mc{A}_{b} = - \partial _{a} \partial _{b} a(\tau , \sigma) \begin{bmatrix} 0 & 1 & 1 & ... & 1 \\
+                1 & 0 & 0 & ... & 0 \\ 1 & 0 & 0 & ... & 0 \\ \vdots & & & & \vdots \\ 1 & 0 & 0 & ... & 0\end{bmatrix}
+\end{equation*}
+\begin{equation*}
+    \mc{A}_{a} X = - \partial _{a} a(\tau , \sigma) \begin{bmatrix} 0 & 1 & 1 & ... & 1 \\
+                1 & 0 & 0 & ... & 0 \\ 1 & 0 & 0 & ... & 0 \\ \vdots & & & & \vdots \\ 1 & 0 & 0 & ... & 0\end{bmatrix} \begin{bmatrix} X^{0} \\ X^{1} \\ X^{2} \\ \vdots \\ X^{d} \end{bmatrix} = - \partial _{a} a (\tau , \sigma) \begin{bmatrix} \sum _{i = 1} ^{d} X^{i} \\ X^{0} \\ X^{0} \\ \vdots \\ X^{0} \end{bmatrix} .
+\end{equation*}
+
+Solution thus becomes
+\begin{equation*}
+    X^{K} (x) = - \int \diff ^2 x' G^{K} _{\ I} (x ; x') \eta ^{a' b'} \left( k \partial _{a'} \mc{A}^{I} _{b' J} (x') X^{J} (x') + k^2 d \partial _{a'} a(x') \partial _{b'} a (x') X^{I} (x') \right)
 \end{equation*}
 
 \end{document}

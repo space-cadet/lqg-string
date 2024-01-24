@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.17)  24 JAN 2024 13:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.17)  24 JAN 2024 17:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -727,7 +727,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1490.
 
-[27] [28] [29] (e:\LQG-Strings\lqg-string\PDF\sketchboard.aux)
+[27] [28] [29] [30] (e:\LQG-Strings\lqg-string\PDF\sketchboard.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
@@ -736,17 +736,17 @@ Package rerunfilecheck Info: File `sketchboard.out' has not changed.
 (rerunfilecheck)             Checksum: 554F350D4CE59F1D6D2D49C87667A425;7235.
  ) 
 Here is how much of TeX's memory you used:
- 22025 strings out of 475247
- 394870 string characters out of 5774206
+ 22026 strings out of 475247
+ 394877 string characters out of 5774206
  1949785 words of memory out of 5000000
  43080 multiletter control sequences out of 15000+600000
  570290 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,13n,89p,691b,448s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Luigi\AppData\Local\MiKTeX\fonts/pk/ljfour/public/bbold/dpi600\bbold7.pk> <C:\Users\Luigi\AppData\Local\MiKTeX\fonts/pk/ljfour/public/bbold/dpi600\bbold10.pk> <C:\Users\Luigi\AppData\Local\MiKTeX\fonts/pk/ljfour/public/esint/dpi600\esint10.pk><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><E:/MikTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><E:/MikTeX/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on e:\LQG-Strings\lqg-string\PDF\sketchboard.pdf (29 pages, 335336 bytes).
+Output written on e:\LQG-Strings\lqg-string\PDF\sketchboard.pdf (30 pages, 337771 bytes).
 PDF statistics:
- 412 PDF objects out of 1000 (max. 8388607)
- 72 named destinations out of 1000 (max. 500000)
+ 418 PDF objects out of 1000 (max. 8388607)
+ 73 named destinations out of 1000 (max. 500000)
  349 words of extra memory for PDF output out of 10000 (max. 10000000)
 
