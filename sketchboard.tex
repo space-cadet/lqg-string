@@ -1521,7 +1521,46 @@ which has implicit solution given by
 \end{equation*}
 where the Green's function matrix $G^{K} _{\ J} (x , x')$ satisfies
 \begin{equation*}
-    \left( \eta ^{a b} \delta ^{I} _{K} \partial _{a} \partial _{b} + 2 k \mc{A}^{I} _{a K} (x) \partial _{b} \right) G^{K} _{\ J} (x , x') = \delta ^{I} _{J} \delta (x , x') .
+    \eta ^{a b} \left( \delta ^{I} _{K} \partial _{a} \partial _{b} + 2 k \mc{A}^{I} _{a K} (x) \partial _{b} \right) G^{K} _{\ J} (x , x') = \delta ^{I} _{J} \delta (x , x') .
+\end{equation*}
+
+Boundary conditions come from
+\begin{equation*}
+    \delta S = \int \diff ^2 x \left( \frac{\partial \Lagr}{\partial X^{K}} \delta X^{K} + \frac{\partial \Lagr}{\partial (\partial _{c}X^{K})} \delta (\partial _{c} X^{K}) + ... \right) =
+\end{equation*}
+\begin{equation*}
+    = \int \diff ^2 x \left( (\mathrm{EoM}) \delta X^{K} + \partial _{c} \left( \frac{\partial \Lagr}{\partial (\partial _{c} X^{K})} \delta X^{K} \right) + ... \right) =
+\end{equation*}
+\begin{equation*}
+    = \int \diff ^2 x (\mathrm{EoM}) \delta X^{K} + \int \diff \tau \left( \frac{\partial \Lagr}{\partial (\partial _{\sigma} X^{K})} \delta X^{K} \right) \bigg| _{0} ^{\sigma _{1}} + ... = 0 ,
+\end{equation*}
+thus
+\begin{equation*}
+    \left( \frac{\partial \Lagr}{\partial (\partial _{\sigma} X^{K})} \delta X^{K} \right) \bigg| _{0} ^{\sigma _{1}} = 0
+\end{equation*}
+\begin{equation*}
+    \left( \left( - T e e^{\sigma} _{i} e^{b i} \mc{D}_{b} X_{K} \right) \delta X^{K} \right) \big| _{0} ^{\sigma _{1}} = 0
+\end{equation*}
+\begin{equation*}
+    \left( (\mc{D}_{\sigma} X_{K}) \delta X^{K} \right) \big| _{0} ^{\sigma _{1}} = 0 ,
+\end{equation*}
+so either $\delta X^{K} (\tau , \sigma _{*}) = 0 , \ \sigma _{*} = 0 , \sigma _{1}$ (Dirichlet B.C) or $\mc{D}_{\sigma} X^{K} (\tau , \sigma _{*}) = 0 , \ \sigma _{*} = 0 , \sigma _{1}$ (free end-point B.C). For closed strings, $X^{K} (\tau , \sigma) = X^{K} (\tau , \sigma + 2 \pi)$.
+
+When connection is trivial EoM reduces to regular wave eqn, which have the regular string solution
+\begin{equation*}
+    X^{I} _{0} (\tau , \sigma) = X^{I} _{0 L} (\sigma ^{+}) + X^{I} _{0 R} (\sigma ^{-}) ,
+\end{equation*}
+with
+\begin{equation*}
+    X^{I} _{0 L} (\sigma ^{+}) = \frac{1}{2} x^{I} + \frac{1}{2} \alpha ' p^{I} \sigma ^{+} + i \sqrt{\frac{\alpha '}{2}} \sum _{n \neq 0} \frac{1}{n} \widetilde{\alpha}^{I} _{n} \e ^{- i n \sigma ^{+}} , \ \sigma ^{+} = \tau + \sigma
+\end{equation*}
+\begin{equation*}
+    X^{I} _{0 R} (\sigma ^{-}) = \frac{1}{2} x^{I} + \frac{1}{2} \alpha ' p^{I} \sigma ^{-} + i \sqrt{\frac{\alpha '}{2}} \sum _{n \neq 0} \frac{1}{n} \alpha ^{I} _{n} \e ^{- i n \sigma ^{-}} , \ \sigma ^{-} = \tau - \sigma .
+\end{equation*}
+
+For Schwarzchild space-time, we start by calculating the bulk vielbein field from the metric
+\begin{equation*}
+    \diff s^2 = - \left( 1 - \frac{r_{s} ^{d - 2}}{r^{d - 2}} \right) \diff t^2 + \frac{1}{1 - \dfrac{r_{s} ^{d - 2}}{r^{d - 2}}} \diff r^2 + r^2 \diff \Omega _{d - 1} ^2
 \end{equation*}
 
 \end{document}
