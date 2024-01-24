@@ -1513,7 +1513,7 @@ More explicitly,
     \eta ^{a b} \left( \partial _{a} \partial _{b} X^{I} + 2 k \mc{A}^{I} _{a J} \partial _{b} X^{J} + k \partial _{a} \mc{A}^{I} _{b J} X^{J} + k^2 \mc{A}^{I} _{a I'} \mc{A}^{I'} _{b J} X^{J} \right) = 0
 \end{equation*}
 \begin{equation*}
-    \eta ^{a b} \left( \delta ^{I} _{J} \partial _{a} \partial _{b} + 2 k \mc{A}^{I} _{a J} \partial _{b} \right) X^{J} = - \left( k \eta ^{a b} \partial _{a} \mc{A}^{I} _{a J} X^{J} + k^2 \eta ^{a b} \mc{A}^{I} _{a I'} \mc{A}^{I'} _{b J} X^{J} \right) ,
+    \eta ^{a b} \left( \delta ^{I} _{J} \partial _{a} \partial _{b} + 2 k \mc{A}^{I} _{a J} \partial _{b} \right) X^{J} = - \left( k \eta ^{a b} \partial _{a} \mc{A}^{I} _{b J} X^{J} + k^2 \eta ^{a b} \mc{A}^{I} _{a I'} \mc{A}^{I'} _{b J} X^{J} \right) ,
 \end{equation*}
 which has implicit solution given by
 \begin{equation*}
@@ -1560,7 +1560,55 @@ with
 
 For Schwarzchild space-time, we start by calculating the bulk vielbein field from the metric
 \begin{equation*}
-    \diff s^2 = - \left( 1 - \frac{r_{s} ^{d - 2}}{r^{d - 2}} \right) \diff t^2 + \frac{1}{1 - \dfrac{r_{s} ^{d - 2}}{r^{d - 2}}} \diff r^2 + r^2 \diff \Omega _{d - 1} ^2
+    \diff s^2 = - \left( 1 - \frac{r_{s} ^{d - 2}}{r^{d - 2}} \right) \diff t^2 + \frac{1}{1 - \dfrac{r_{s} ^{d - 2}}{r^{d - 2}}} \diff r^2 + r^2 \left( (\diff \phi ^{1}) ^{2} +  \sum _{i = 2} ^{d - 1} \prod _{j = 1} ^{i - 1} \sin ^2 (\phi ^{j}) (\diff \phi ^{i})^2 \right)
+\end{equation*}
+\begin{align*}
+    E^{0} _{\mu} \diff X^{\mu} & = \left( 1 - \left( \frac{r_s}{r} \right) ^{d - 2} \right) \diff t             \\
+    E^{1} _{\mu} \diff X^{\mu} & = \left( \frac{1}{1 - \left(\dfrac{r_{s}}{r} \right) ^{d - 2}} \right) \diff r \\
+    E^{2} _{\mu} \diff X^{\mu} & = r \diff \phi ^{1}                                                            \\
+    E^{3} _{\mu} \diff X^{\mu} & = r \sin (\phi ^{1}) \diff \phi ^{2}                                           \\
+    \vdots                                                                                                      \\
+    E^{d} _{\mu} \diff X^{\mu} & = r \prod _{j = 1} ^{d - 2} \sin (\phi ^{j}) \diff \phi ^{d - 1} ,
+\end{align*}
+from which we can get the spin connection as
+\begin{equation*}
+    A^{A B} _{\mu} = \frac{1}{2} E^{\nu A} (\partial _{\mu} E^{B} _{\nu} - \partial _{\nu} E^{B} _{\mu}) - \frac{1}{2} E^{\nu B} (\partial _{\mu} E^{A} _{\nu} - \partial _{\nu} E^{A} _{\mu}) - \frac{1}{2} E^{\lambda A} E^{\rho B} (\partial _{\lambda} E_{\rho C} - \partial _{\rho} E_{\lambda \C}) E^{C} _{\mu}
+\end{equation*}
+
+For FLRW metric
+\begin{equation*}
+    \diff s^2 = - \diff t^2 + (a(t))^2 \left( \sum _{i = 1} ^{d} (\diff X^{i})^2 \right)
+\end{equation*}
+the vielbein is
+\begin{align*}
+    E^{0} _{\mu} \diff X^{\mu} & = \diff t                                \\
+    E^{i} _{\mu} \diff X^{\mu} & = a(t) \diff X^{i} , \ i = 1 , ... , d ,
+\end{align*}
+so the connection is
+\begin{equation*}
+    A^{0 i} _{t} = - A^{i 0} _{t} = 0
+\end{equation*}
+\begin{equation*}
+    A^{0 i} _{(i)} = - A^{i 0} _{(i)} = - \partial _{t} a(t)
+\end{equation*}
+\begin{equation*}
+    A^{0 i} _{(j)} = - A^{i 0} _{(j)} = 0
+\end{equation*}
+\begin{equation*}
+    A^{i j} _{t} = - A^{j i} _{t} = 0
+\end{equation*}
+\begin{equation*}
+    A^{i j} _{(i)} = - A^{j i} _{(i)} = - A^{i j} _{(j)} = A^{j i} _{(j)} = 0 ,
+\end{equation*}
+all other components being 0. From this, the full connection is
+\begin{equation*}
+    \mc{A} _{\mu} = A^{A B} _{\mu} T_{A B} = A^{0 i} _{(i)} T_{0 i} = - \partial _{t} a(t) \sum _{i = 1} ^{d} T_{0 i} = - \begin{bmatrix} 0                  & \partial _{t} a(t) & \partial _{t} a(t) & ... & \partial _{t} a(t) \\
+                \partial _{t} a(t) & 0                  & 0                  & ... & 0                  \\ \partial _{t} a(t) & 0 & 0 & ... & 0 \\ \vdots & & & & \vdots \\ \partial _{t} a(t) & 0 & 0 & ... & 0\end{bmatrix} .
+\end{equation*}
+Assuming the pullback to WS retains the form we have
+\begin{equation*}
+    \mc{A}_{a} = - \begin{bmatrix} 0                        & \partial _{\tau} a(\tau) & \partial _{\tau} a(\tau) & ... & \partial _{\tau} a(\tau) \\
+                \partial _{\tau} a(\tau) & 0                        & 0                        & ... & 0                        \\ \partial _{\tau} a(\tau) & 0 & 0 & ... & 0 \\ \vdots & & & & \vdots \\ \partial _{\tau} a(\tau) & 0 & 0 & ... & 0\end{bmatrix}
 \end{equation*}
 
 \end{document}
