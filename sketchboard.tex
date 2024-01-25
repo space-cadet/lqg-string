@@ -1624,7 +1624,11 @@ Pullback of connection gives
 
 Solution thus becomes
 \begin{equation*}
-    X^{K} (x) = - \int \diff ^2 x' G^{K} _{\ I} (x ; x') \eta ^{a' b'} \left( k \partial _{a'} \mc{A}^{I} _{b' J} (x') X^{J} (x') + k^2 d \partial _{a'} a(x') \partial _{b'} a (x') X^{I} (x') \right)
+    X (x) = - \int \diff ^2 x' \underline{G} (x ; x') \eta ^{a' b'} \left( - k \partial _{a'} \partial _{b'} a (x') \sum _{i} T_{0 (i)} X (x') + k^2 d \partial _{a'} a (x') \partial _{b'} a (x') X (x') \right)
+\end{equation*}
+where the Green's matrix satisfies
+\begin{equation*}
+    \eta ^{a b} \left( \mathbb{1} \partial _{a} \partial _{b} - 2 k \partial _{a} a (x) \sum _{i} T_{0 (i)} \partial _{b} \right) \underline{G} (x ; x') = \mathbb{1} \delta (x ; x')
 \end{equation*}
 
 \end{document}
