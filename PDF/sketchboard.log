@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.17)  26 JAN 2024 14:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.17)  26 JAN 2024 18:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -738,13 +738,13 @@ Package rerunfilecheck Info: File `sketchboard.out' has not changed.
 Here is how much of TeX's memory you used:
  22026 strings out of 475247
  394877 string characters out of 5774206
- 1952785 words of memory out of 5000000
+ 1955785 words of memory out of 5000000
  43080 multiletter control sequences out of 15000+600000
  570290 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,15n,89p,762b,448s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,15n,89p,768b,448s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Luigi\AppData\Local\MiKTeX\fonts/pk/ljfour/public/bbold/dpi600\bbold7.pk> <C:\Users\Luigi\AppData\Local\MiKTeX\fonts/pk/ljfour/public/bbold/dpi600\bbold10.pk> <C:\Users\Luigi\AppData\Local\MiKTeX\fonts/pk/ljfour/public/esint/dpi600\esint10.pk><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><E:/MikTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><E:/MikTeX/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on e:\LQG-Strings\lqg-string\PDF\sketchboard.pdf (30 pages, 339113 bytes).
+Output written on e:\LQG-Strings\lqg-string\PDF\sketchboard.pdf (30 pages, 339567 bytes).
 PDF statistics:
  418 PDF objects out of 1000 (max. 8388607)
  73 named destinations out of 1000 (max. 500000)
