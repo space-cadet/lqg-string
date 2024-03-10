@@ -171,7 +171,10 @@
 \date{\today}
 
 \begin{abstract}
-	With the goal of understanding whether or not it is possible to construct a string theory which is consistent with loop quantum gravity (LQG), we study alternate versions of the Nambu-Goto action for a Bosonic string. We consider two types of modifications. The first is a phenomenological action based on the observation that LQG tells us that areas of two-surfaces are operators in quantum geoemtry and are bounded from below. The second is an action in which the background geometry is described in terms of a vielbein $E^\mu_I$ and a connection field $A_\mu^{IJ}$, in the spirit of LQG. The modified Nambu-Goto action is constructed by pulling back the background connection onto the worldsheet and replacing ordinary partial derivatives by covariant derivatives with respect to the pulled back conection $\mc{A}_a^{IJ}$.
+
+	With the goal of understanding whether or not it is possible to construct a string theory which is consistent with loop quantum gravity (LQG), we study alternate versions of the Nambu-Goto action for a bosonic string. We consider two types of modifications. The first is a phenomenological action based on the observation that LQG tells us that areas of two-surfaces are operators in quantum geometry and are bounded from below. This leads us to a string action which is similar to that of bimetric gravity. We provide formulations of the bimetric string for both the Nambu-Goto (second order) and Polyakov (first order) formulations. We explore the classical solutions of this action and its quantization and relate it to the conventional string solutions.
+	
+	The second is an action in which the background geometry is described in terms of the pullback of the connection which describes the bulk geometry to the worldsheet. The resulting action is in the form of a gauged sigma model, where the spacetime co-ordinates are now SO(D,1) vectors. We find that for the particular case of a constant background connection the action reduces to the bimetric action discussed above. We discuss classical solutions and quantization strategies for this action and its implications for the broader program of unifying string theory and loop quantum gravity.
 \end{abstract}
 
 \maketitle
@@ -218,9 +221,10 @@ In \autoref{app:bimetric-string} we discuss further the bimetric extension of th
 
 Let us begin by recalling the Polyakov action for the bosonic string.
 
-\begin{equation}
+\begin{equation}\label{eqn:polyakov-action}
 	S_{P} = -\frac{T}{2} \int \diff \tau \wedge \diff \sigma \sqrt{-g} g^{ab} \partial_a X^\mu \partial_b X^\nu \eta_{\mu\nu}.
 \end{equation}
+
 Here $\mu, \nu \in \{0,1,\ldots,D-1\}$ are co-ordinates of the $D$ dimensional worldvolume (the geometry in which the string propagates), $a,b \in \{0,1\}$ are co-ordinates on the string worldsheet, $X^\mu$ are the embedding co-ordinates which specify the location of a point on the string worldsheet in the bulk worldvolume, $\eta_{\mu\nu}$ is the flat Minkowski metric on the worldvolume, $g_{ab}$ is the metric on the string worldsheet, $T$ is the string tension and $\tau, \sigma $ are the co-ordinates on the string worldsheet.
 
 Now, one proceeds in the usual way by determining the symmetries of the action \eqref{eqn:polyakov-flat}, varying the action to find the equations of motion, fixing the gauge using the Weyl freedom of the worldsheet and then solving the classical equations of motion. Imposition of (bosonic) commutation relations on the operator versions of the embedding fields $\hat X^\mu$ then leads us to description of the quantum state of the bosonic string in terms of an infinite ladder of harmonic oscillators which obey the Virasoro algebra.
@@ -589,6 +593,24 @@ The commutator (\ref{eqn:L-commutators-2}) ends up with only annihilation operat
 \section{Strings and Quantum Geometry}\label{sec:string-geometry}
 
 Uptil now we have studied a phenomenological modification of the string action. However, ultimately all phenomenological ideas must have a grounding in some exact, microscopic description of the system. Further, we have neglected one very important aspect of this whole endeavor, which is the description of the background geometry in the connection formalism and how to couple that to the Bosonic string. In this section we present a possible action in which the bulk geometry is encoded in the string action in terms of a connection living on the worldsheet.
+
+First let us recall the form of the Polyakov action for the bosonic string \eqref{eqn:polyakov-action}:
+
+\begin{equation*}
+	S_{P} = -\frac{T}{2} \int \diff \tau \wedge \diff \sigma \sqrt{-g} g^{ab} \partial_a X^\mu \partial_b X^\nu \eta_{\mu\nu}.
+\end{equation*}
+
+If one was to ask a beginning graduate student as to how one can incorporate a gauge field in the above expression, the natural answer would be that we can promote the $X^\mu$ to vectors which live in the representation of some gauge group $\mc G$ and promote the ordinary derivative to a gauge covariant derivative \wrt a connection valued in $\mc G$. The resulting action would now have the form:
+
+\begin{equation}\label{eqn:polyakov-gauged}
+	S_{P} = -\frac{T}{2} \int \diff \tau \wedge \diff \sigma \sqrt{-g} g^{ab} \mc{D}_a X^\mu \mc{D}_b X^\nu \eta_{\mu\nu},
+\end{equation}
+
+where the covariant derivative $\mc{D}_a$ is of the form:
+\begin{equation}\label{eqn:covariant-deriv}
+	\mc{D}_a X^\mu(\tau , \sigma) = \partial_a X^\mu + g \mc{A}_{a}^\mu{}_\nu X^\nu,
+\end{equation}
+where $\mc{A}_{a}^\mu{}_\nu$ is the gauge field and $g$ is the gauge coupling. A more experienced researcher would object saying that we know that the $X^\mu$ are spacetime co-ordinates and not vectors transforming 
 
 Let us begin by writing down the action of a string propagating in a background geometry. The background geometry is specified not in terms of a metric, but in terms of a connection $A_\mu^{IJ}$ and vielbein fields $E_\mu^I$. Further, we will require that the bulk connection and the bulk vielbein can be pulled back onto a connection $\mc{A}_{a}^{ij}$ and a dyad $e^a_i$, respectively, living on the string worldsheet $\Sigma$. $X^\mu(\tau , \sigma)$ are the space-time coordinates of a point $(\tau , \sigma)$ on the worldsheet. Now if one takes the sigma model viewpoint then the $X$'s can be viewed as $d+1$ scalar fields living on a $1+1$ worldsheet. But these fields are not really scalars. They are components of a $d+1$ dim vector since they transform with the fundamental representation of $\mathrm{SO}(d,1)$ under global Lorentz transformations acting on the ambient space-time, which we take to be flat for the time being.
 
