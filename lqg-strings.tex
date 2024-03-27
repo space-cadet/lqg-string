@@ -46,6 +46,11 @@
 \usepackage[colorlinks=true,citecolor=blue,linkcolor=blue,final]{hyperref}
 %\usepackage{hyperref}
 
+% Mar 25, 2023
+% Added parskip package for spacing between paragraphs.
+\usepackage{parskip}
+\setlength{\parindent}{15pt}
+
 % Nov 20, 2023
 % Added package mciteplus to collapse multiple papers into one item in bibliography.
 \usepackage{mciteplus}
@@ -616,6 +621,8 @@ Let us begin by writing down the action of a string propagating in a background 
 
 The key point here is that the Lorentz transformations acting on the $X$'s are \textbf{global}. If the background geometry is taken to be Minkowski then the $X$'s become points on this manifold and $\mathrm{SO}(d,1)$ just takes one point in Minkowski to another point in Minkowski. The overall geometry is invariant under $\mathrm{SO}(d,1)$. Now, consider the case when the background geometry is not flat. Immediately you can see that the $X$'s can no longer be treated as elements of a $\mathrm{SO}(d,1)$ vector under \textbf{global} Lorentz transformations.
 
+\subsection{Gauging Lorentz Transformations}\label{sec:gauging-lt}
+
 Instead of viewing the $X$'s as elements of a Minkowski space, we think of them as elements of the tangent space $T_p (M)$ at a given point $p$ of the background manifold $M$.
 When we travel along some path $\mc{C} \subset M$ from point $p$ to point $p'$, the local Lorentz frames at the two points are, in general, related by an element of $g(p,p') \in \mathrm{SO}(d,1)$. This group element arises from taking the holonomy of a $\mf{so}(d,1)$ Lie algebra valued connection living on $M$, along a the path $\mc{C}$.
 
@@ -634,18 +641,30 @@ This viewpoint on the embedding fields, as elements of the tangent space $T_p(M)
 \end{equation}
 where $\theta^\mu(\sigma,\tau) \in \{\theta, \phi\}$ are the embedding fields, and $G_{\mu\nu}$ is \emph{a} metric living on $S^2$.
 
-% \hline
+\subsection{Two Expressions for Area}\label{eqn:area-formulae}
 
-In order for the bulk connection $A_\mu^{IJ}$, and its pullback $\omega _a ^{i j}$ on $\Sigma$, to have an effect on the string dynamics we will also promote the embedding fields $X^\mu$ to Lie algebra valued vector fields $X^{\mu} _{I}$. However, due to the fact that parallel transport of the embedding fields on the worldsheet should only involve the worldsheet connection $\omega _a ^{i j}$, we can replace $X^{\mu} _{I}$ with $X^{\mu} _{i}$, and to not lose the physical meaning of embedding fields as string coordinates, we include a new internal world-sheet field $v^{i}$, and define the string coordinates to be $\Tilde{X}^{\mu} \equiv X^{\mu} _{i} v^{i}$.
-\begin{multline} \label{eqn:lqg-string-action}
-	S_{PA} = - \frac{T}{2} \int \diff \tau \wedge \diff \sigma e e^{a} _{i} e^{b i} D_{a} X^{\mu} _{j} v^{j} \times \\
-	\times D_{b} X^{\nu} _{k} v^{k} E_{\mu} ^{I} E_{\nu I} ,
-\end{multline}
-where $e = \det (e^{i} _{a})$ and $D_a$ is the covariant derivative with respect to the worldsheet connection, and is given by:
-\begin{equation} \label{eqn:worldsheet-deriv}
-	D_a X^{\mu} _{i} = \partial_a X^{\mu} _{i} - \omega_{a\,i}^{j} X^{\mu} _{j} ,
+There is another explanation for why it makes sense to promote the $X$'s to local fields. This can be found in terms of the expression for the area of a 2-surface. We have a manifold $\mc M$, within which is embedded a two dimensional submanifold $\mc N$. Let $(\tau,\sigma)$ be the location of a point on the worldsheet and $X^\mu(\tau, \sigma)$ be the location of that same point in terms of co-ordinates on $\mc M$. Then we can define the induced metric on $\mc N$, $h_{ab}$ in terms of the embedding fields and their derivatives:
+
+\begin{equation}\label{eqn:ws-metric}
+	h_{ab} = \frac{\partial X^\mu}{\partial x^a} \frac{\partial X^\nu}{\partial x^b} g_{\mu\nu},
 \end{equation}
-where $\omega_{a\,j}^i$ is the pullback of the bulk connection to the worldsheet.
+where $g_{\mu\nu}$ is the metric in the ambient space $\mc M$. Now, we can calculate the area of a small patch of $\mc P \in \mc N$ by taking the square root of the determinant of the induced metric $\sqrt{\det(h)}$ and integrating over that patch:
+\begin{equation}\label{eqn:patch-area-v1}
+	A^{(1)}_{\mc P} = \int_{\mc P} d^2 x \, \sqrt{\det(h)}.
+\end{equation}
+This is, of course, the expression for the Nambu-Goto action - modulo some constants - which we all know and love. In LQG we don't have a notion of embedding fields. Since we are dealing with gauge invariant observables constructed from holonomies of a connection along a 1d-curve and the flux of a tetrad across a 2-surface, the embedding co-ordinates of the curves and surface turn to not be needed. When promoting classical observables into quantum operators acting on lines and surfaces the embedding co-ordinates of the lines and surfaces are not relevant as long as we work with gauge invariant quantities.
+
+How then does one define the area of a surface in LQG? It is defined as the magnitude of the area two form. Recall that given a tetradic basis $e_\mu^I$ for a local Lorentz frame whose metric is given by $g_{\mu\nu}$, we can write the metric in terms of the tetrad in the usual manner:
+\begin{equation}\label{eqn:metric-from-tetrad}
+	g_{\mu\nu} = e_\mu^I e_\nu^J \eta_{IJ},
+\end{equation}
+where $\eta_{IJ}$ is the flat Minkowski metric on the ``internal'' flat space. If we consider any two dimensional surface in the local Lorentz frame, then its area can be written in terms of the vielbein as:
+\begin{equation}
+	A^{(2)}_{\mc P} = \int_{\mc P} \Tr (e_\mu \wedge e_\nu) dx^\mu \wedge dx^\nu,
+\end{equation}
+the trace is taken over the ``internal'' Lorentz indices.
+
+Now, if we compare the two expressions \eqref{eqn:ws-metric} and \eqref{eqn:metric-from-tetrad} we notice an obvious parallel between the derivatives $\partial X^\mu/\partial x_a$ of the embedding co-ordinates and the vielbein $e_\mu^I$. This similarity becomes more apparent once we write down the expression for the area of a 2-surface by taking the determinant in \eqref{eqn:patch-area-v1} and comparing that to the expression obtained using frame fields.
 
 \section{Physical Implications}
 
