@@ -1265,7 +1265,7 @@ where in the first equation we can ignore the first factor once more. Finally fo
 where we again ignore the first factor because it's only $0$ at infinity, thus collecting everything we have
 \begin{align*}
     L_{n , p} := a^{\mu} _{n} a^{\nu} _{p} \eta _{\mu \nu}                                                & = 0 , \ \forall \ n , p \in \mathbb{Z} , \\
-    \widetilde{L}_{n , p} := a^{\mu} _{n} (a^{\nu} _{- p})^{*}                                            & = 0 , \ n \neq - p ,                     \\
+    \widetilde{L}_{n , p} := a^{\mu} _{n} (a^{\nu} _{- p})^{*} \eta _{\mu \nu}                            & = 0 , \ n \neq - p ,                     \\
     \sum _{n} \left( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) \widetilde{L}_{n , - n} \right) & = 0 .
 \end{align*}
 
@@ -1315,12 +1315,21 @@ and the constraint reads
     \partial _{\tau} X^{\mu} + \partial _{\sigma} X^{\mu} = \frac{1}{4 \pi \alpha '} \sum _{n} \left( - a^{\mu} _{n} \e ^{- i E_{n} \tau} \left( i \cos (n \sigma) + \frac{n}{E_{n}} \sin (n \sigma) \right) + (a^{\mu} _{n})^{*} \e ^{i E_{n} \tau} \left( i \cos (n \sigma) - \frac{n}{E_{n}} \sin (n \sigma) \right) \right)
 \end{equation*}
 \begin{multline*}
-    (\partial _{\tau} X + \partial _{\sigma} X)^2 = \frac{1}{(4 \pi \alpha ')^2} \sum _{n} \sum _{p} \bigg( a^{\mu} _{n} a^{\nu} _{p} \e ^{- i (E_{n} + E_{p}) \tau} \left( i \cos (n \sigma) + \frac{n}{E_{n}} \sin (n \sigma) \right) \left( i \cos (p \sigma) + \frac{p}{E_{p}} \sin (p \sigma) \right) - \\
+    (\partial _{\tau} X + \partial _{\sigma} X)^2 = \frac{\eta _{\mu \nu}}{(4 \pi \alpha ')^2} \sum _{n} \sum _{p} \bigg( a^{\mu} _{n} a^{\nu} _{p} \e ^{- i (E_{n} + E_{p}) \tau} \left( i \cos (n \sigma) + \frac{n}{E_{n}} \sin (n \sigma) \right) \left( i \cos (p \sigma) + \frac{p}{E_{p}} \sin (p \sigma) \right) - \\
     - a^{\mu} _{n} (a^{\nu} _{p})^{*} \e ^{- i (E_{n} - E_{p}) \tau} \left( i \cos (n \sigma) + \frac{n}{E_{n}} \sin (n \sigma) \right) \left( i \cos (p \sigma) - \frac{p}{E_{p}} \sin (p \sigma) \right) - \\
     - (a^{\mu} _{n})^{*} a^{\nu} _{p} \e ^{i (E_{n} - E_{p}) \tau} \left( i \cos (n \sigma) - \frac{n}{E_{n}} \sin (n \sigma) \right) \left( i \cos (p \sigma) + \frac{p}{E_{p}} \sin (p \sigma) \right) + \\
     + (a^{\mu} _{n})^{*} (a^{\nu} _{p})^{*} \e ^{i (E_{n} + E_{p}) \tau} \left( i \cos (n \sigma) - \frac{n}{E_{n}} \sin (n \sigma) \right) \left( i \cos (p \sigma) - \frac{p}{E_{p}} \sin (p \sigma) \right) \bigg) = 0 .
 \end{multline*}
-Once more, we see that the middle 2 terms and outer 2 terms are complex conjugate pairs, so we're left with
+Once more, we see that the middle 2 terms and outer 2 terms are complex conjugate pairs. Unlike the closed string, here all cases lead to
+\begin{align*}
+    L_{n , p} : = a^{\mu} _{n} a^{\nu} _{p} \eta _{\mu \nu}                   & = 0   \\
+    \widetilde{L}_{n , p} : = a^{\mu} _{n} (a^{\nu} _{p})^{*} \eta _{\mu \nu} & = 0 ,
+\end{align*}
+where again to be more in line with ST literature we remap $p \mapsto p - n$
+\begin{align*}
+    L_{n , p} = a^{\mu} _{n} a^{\nu} _{p - n} \eta _{\mu \nu}                   & = 0 \\
+    \widetilde{L}_{n , p} = a^{\mu} _{n} (a^{\nu} _{p - n})^{*} \eta _{\mu \nu} & = 0
+\end{align*}
 
 \newpage
 
@@ -1655,6 +1664,9 @@ leaving us with the almost symmetric system of eqns
     \eta ^{a b} \partial _{a} \partial _{b} G^{0} _{\ J} - 2 k d \Dot{a} \partial _{\sigma} G^{1} _{\ J} & = 0   \\
     \eta ^{a b} \partial _{a} \partial _{b} G^{1} _{\ J} - 2 k \Dot{a} \partial _{\sigma} G^{0} _{\ J}   & = 0 .
 \end{align*}
-These can be solved with the use of the 1D wave Green's function $\Theta (| \sigma | - \tau)$
+These can be solved with the use of the 1D wave Green's function $\Theta (|\sigma| - \tau)$ as in
+\begin{align*}
+    G^{0} _{\ J} = 2 k d \int _{0} ^{\sigma _{1}} \diff ^2 x'
+\end{align*}
 
 \end{document}
