@@ -1187,53 +1187,50 @@ These simplify further by expanding the summation on $a,b$:
 \begin{equation*}
     \partial _{\tau} X^{\mu} \partial _{\tau} X^{\nu} \eta _{\mu \nu} + \partial _{\sigma} X^{\mu} \partial _{\sigma} X^{\nu} \eta _{\mu \nu} = 0 .
 \end{equation*}
-These can be combined by multiplying the previous one by 2 and summing, leaving us with
+These can be combined by multiplying the previous one by 2 and summing/subtracting, leaving us with
 \begin{equation*}
-    (\partial _{\tau} X^{\mu} + \partial _{\sigma} X^{\mu}) (\partial _{\tau} X^{\nu} + \partial _{\sigma} X^{\nu}) \eta _{\mu \nu} = 0 .
+    (\partial _{\tau} X \pm \partial _{\sigma} X)^2 = 0 .
 \end{equation*}
 
 The EoM is just a one-dimensional finite-space Klein-Gordon equation, which has general solution given by Fourier transform
 \begin{equation*}
-    X^{\mu} (\tau , \sigma) = \frac{1}{2 \pi \alpha '} \sum _{n \in \mathbb{Z}} \frac{1}{2 E_{n}} \left( a^{\mu} _{n} \e ^{i (- E_{n} \tau + n \sigma)} + b^{\mu} _{n} \e ^{i (E_{n} \tau + n \sigma)} \right) ,
+    X^{\mu} (\tau , \sigma) = \frac{1}{2 \pi \alpha '} \sum _{n \in \mathbb{Z}} \frac{1}{2 E_{n}} \left( a^{\mu} _{n} \e ^{i (E_{n} \tau - n \sigma)} + b^{\mu} _{n} \e ^{i (E_{n} \tau + n \sigma)} \right) ,
 \end{equation*}
-with $E_{n} = \sqrt{n^2 + m^2}$. The derivatives are
-\begin{align*}
-    \partial _{\tau} X^{\mu}   & = \frac{i}{4 \pi \alpha '} \sum _{n \in \mathbb{Z}} \left( - a^{\mu} _{n} \e ^{i (- E_{n} \tau + n \sigma)} + b^{\mu} _{n} \e ^{i (E_{n} \tau + n \sigma)} \right)                 \\
-    \partial _{\sigma} X^{\mu} & = \frac{i}{4 \pi \alpha '} \sum _{n \in \mathbb{Z}} \frac{n}{E_{n}} \left( a^{\mu} _{n} \e ^{i (- E_{n} \tau + n \sigma)} + b^{\mu} _{n} \e ^{i (E_{n} \tau + n \sigma)} \right) .
-\end{align*}
+with $E_{n} = \sqrt{n^2 + m^2}$.
 
 Reality of $X^{\mu}$ implies
 \begin{align*}
-    (X^{\mu})^{*} & = \left( \frac{1}{2 \pi \alpha '} \sum _{n \in \mathbb{Z}} \frac{1}{2 E_{n}} \left( a^{\mu} _{n} \e ^{i (- E_{n} \tau + n \sigma)} + b^{\mu} _{n} \e ^{i (E_{n} \tau + n \sigma)} \right) \right) ^{*} =            \\
-                  & = \frac{1}{2 \pi \alpha '} \sum _{n \in \mathbb{Z}} \frac{1}{2 E_{n}} \left( (a^{\mu} _{n})^{*} \e ^{- i (- E_{n} \tau + n \sigma)} + (b^{\mu} _{n})^{*} \e ^{- i (E_{n} \tau + n \sigma)} \right) \equiv X^{\mu} ,
+    (X^{\mu})^{*} & = \left( \frac{1}{2 \pi \alpha '} \sum _{n \in \mathbb{Z}} \frac{1}{2 E_{n}} \left( a^{\mu} _{n} \e ^{i (E_{n} \tau - n \sigma)} + b^{\mu} _{n} \e ^{i (E_{n} \tau + n \sigma)} \right) \right) ^{*} =            \\
+                  & = \frac{1}{2 \pi \alpha '} \sum _{n \in \mathbb{Z}} \frac{1}{2 E_{n}} \left( (a^{\mu} _{n})^{*} \e ^{- i (E_{n} \tau - n \sigma)} + (b^{\mu} _{n})^{*} \e ^{- i (E_{n} \tau + n \sigma)} \right) \equiv X^{\mu} ,
 \end{align*}
 giving us
 \begin{align*}
-    (a^{\mu} _{n})^{*} & = b^{\mu} _{- n}   \\
-    (b^{\mu} _{n})^{*} & = a^{\mu} _{- n} ,
+    (a^{\mu} _{n})^{*} & = b^{\mu} _{n}   \\
+    (b^{\mu} _{n})^{*} & = a^{\mu} _{n} ,
 \end{align*}
-so the solution becomes for closed strings
+and also that actually only the $\cos (E_{n} \tau)$ is used, so the solution becomes for closed strings
 \begin{equation*}
-    X^{\mu} (\tau , \sigma) = \frac{1}{2 \pi \alpha '} \sum _{n \in \mathbb{Z}} \frac{1}{2 E_{n}} \left( a^{\mu} _{n} \e ^{i (- E_{n} \tau + n \sigma)} + (a^{\mu} _{- n})^{*} \e ^{i (E_{n} \tau + n \sigma)} \right) .
+    X^{\mu} (\tau , \sigma) = \frac{1}{2 \pi \alpha '} \sum _{n \in \mathbb{Z}} \frac{1}{2 E_{n}} \left( a^{\mu} _{n} \e ^{- i n \sigma} + (a^{\mu} _{n})^{*} \e ^{i n \sigma} \right) \cos (E_{n} \tau) .
 \end{equation*}
 For open strings with free endpoints B.C we have general solution
 \begin{equation*}
-    X^{\mu} (\tau , \sigma) = \frac{1}{2 \pi \alpha '} \sum _{n \in \mathbb{Z}} \frac{1}{2 E_{n}} \left( a^{\mu} _{n} \e ^{- i E_{n} \tau} + b^{\mu} _{n} \e ^{i E_{n} \tau} \right) \cos (n \sigma) ,
-\end{equation*}
-which reality condition implies $b^{\mu} _{n} = (a^{\mu} _{n})^{*}$, thus open string with free endpoint solution becomes
-\begin{equation*}
-    X^{\mu} (\tau , \sigma) = \frac{1}{2 \pi \alpha '} \sum _{n \in \mathbb{Z}} \frac{1}{2 E_{n}} \left( a^{\mu} _{n} \e ^{- i E_{n} \tau} + (a^{\mu} _{n})^{*} \e ^{i E_{n} \tau} \right) \cos (n \sigma) .
+    X^{\mu} (\tau , \sigma) = \frac{1}{2 \pi \alpha '} \sum _{n \in \mathbb{Z}} \frac{1}{2 E_{n}} a^{\mu} _{n} \cos (E_{n} \tau) \cos (n \sigma) .
 \end{equation*}
 
-Analysing the constraints, for the closed string we have that
+Analysing the constraints, for the closed string we have the derivatives
+\begin{align*}
+    \partial _{\tau} X^{\mu}   & = - \frac{1}{4 \pi \alpha '} \sum _{n} \left( a^{\mu} _{n} \e ^{- i n \sigma} + (a^{\mu} _{n})^{*} \e ^{i n \sigma} \right) \sin (E_{n} \tau)                   \\
+    \partial _{\sigma} X^{\mu} & = \frac{i}{4 \pi \alpha '} \sum _{n} \frac{n}{E_{n}} \left( - a^{\mu} _{n} \e ^{- i n \sigma} + (a^{\mu} _{n})^{*} \e ^{i n \sigma} \right) \cos (E_{n} \tau) ,
+\end{align*}
 \begin{equation*}
-    \partial _{\tau} X^{\mu} + \partial _{\sigma} X^{\mu} = \frac{i}{4 \pi \alpha '} \sum _{n \in \mathbb{Z}} \left( \left( \frac{n}{E_{n}} - 1 \right) a^{\mu} _{n} \e ^{i (- E_{n} \tau + n \sigma)} + \left( \frac{n}{E_{n}} + 1 \right) b^{\mu} _{n} \e ^{i (E_{n} \tau + n \sigma)} \right) ,
+    \partial _{\tau} X^{\mu} \pm \partial _{\sigma} X^{\mu} = \frac{1}{4 \pi \alpha '} \sum _{n} \bigg( - a^{\mu} _{n} \bigg( \sin (E_{n} \tau) \pm i \frac{n}{E_{n}} \cos (E_{n} \tau) \bigg) \e ^{- i n \sigma} + (a^{\mu} _{n})^{*} \bigg( - \sin (E_{n} \tau) \pm i \frac{n}{E_{n}} \cos (E_{n} \tau) \bigg) \bigg) =
+\end{equation*}
+\begin{equation*}
+
 \end{equation*}
 so the constraint reads
 \begin{multline*}
-    (\partial _{\tau} X + \partial _{\sigma} X)^2 = - \frac{\eta _{\mu \nu}}{(4 \pi \alpha ')^2} \sum _{n} \sum _{p} \bigg( \bigg( \frac{n}{E_{n}} - 1 \bigg) \bigg( \frac{p}{E_{p}} - 1 \bigg) a^{\mu} _{n} a^{\nu} _{p} \e ^{i ( - (E_{n} + E_{p}) \tau + (n + p) \sigma)} + \\
-    + \bigg( \frac{n}{E_{n}} - 1 \bigg) \bigg( \frac{p}{E_{p}} + 1 \bigg) a^{\mu} _{n} (a^{\nu} _{- p})^{*} \e ^{i (- (E_{n} - E_{p}) \tau + (n + p) \sigma)} + \bigg( \frac{n}{E_{n}} + 1 \bigg) \bigg( \frac{p}{E_{p}} - 1 \bigg) (a^{\mu} _{- n})^{*} a^{\nu} _{p} \e ^{i ((E_{n} - E_{p}) \tau + (n + p) \sigma)} + \\
-    + \bigg( \frac{n}{E_{n}} + 1 \bigg) \bigg( \frac{p}{E_{p}} + 1 \bigg) (a^{\mu} _{- n})^{*} (a^{\nu} _{- p})^{*} \e ^{i ((E_{n} + E_{p}) \tau + (n + p) \sigma)} \bigg) \equiv 0 .
+    (\partial _{\tau} X \pm \partial _{\sigma} X)^2 = - \frac{\eta _{\mu \nu}}{(4 \pi \alpha ')^2} \sum _{n} \sum _{p} \bigg( \bigg( 1 \mp \frac{n}{E_{n}} \bigg) \bigg( 1 \mp \frac{p}{E_{p}} \bigg) \bigg) \equiv 0 .
 \end{multline*}
 Since the exponentials are all linearly independent and we can't decouple the $\tau$ exponential from any of the sums, we have 3 cases to investigate: $n = p$, $n = - p$ and $n \neq \pm p$. For $n \neq \pm p$, we get
 \begin{align*}
@@ -1333,8 +1330,56 @@ where again to be more in line with ST literature we remap $p \mapsto p - n$
 Since we don't have a summed constraint, the mass of the open string can't be written in terms of vibrational modes, only in terms of the 0-th mode
 \begin{align*}
     M^2 = - p^{\mu} p_{\mu} & = \frac{1}{(4 \pi (\alpha ')^2 )^2} a^{\mu} _{0} a^{\nu} _{0} \eta _{\mu \nu} = \\
-                            & = \frac{1}{(4 \pi (\alpha ')^2 )^2} L_{0 , 0} \equiv 0
+                            & = \frac{1}{(4 \pi (\alpha ')^2 )^2} L_{0 , 0} \equiv 0 .
 \end{align*}
+
+\subsection{The Expansion Modes Algebra}
+
+\subsubsection{Closed String}
+
+Before starting this analysis, let's rename the vibrational modes to $\alpha ^{\mu} _{n}$ to be more in line with the literature
+
+Start by finding the canonical momentum
+\begin{equation*}
+    \Pi _{\lambda} = \frac{\partial \Lagr}{\partial (\partial _{\tau} X^{\lambda})} = - \frac{T}{2} \left( \sqrt{- g} - \frac{k \Delta}{2 \sqrt{- g}} \right) g^{a b} \delta ^{\tau} _{a} \delta ^{\mu} _{\lambda} \partial _{b} X^{\nu} \eta _{\mu \nu} =
+\end{equation*}
+\begin{equation*}
+    = - \frac{1}{4 \pi \alpha '} \left( 1 - \frac{k \Delta}{2 \phi ^2} \right) \eta ^{\tau b} \partial _{b} X^{\nu} \eta _{\lambda \nu} =
+\end{equation*}
+\begin{equation*}
+    = \frac{1}{4 \pi \alpha '} F^{-} \partial _{\tau} X^{\nu} \eta_{\lambda \nu} = F^{-} \frac{i}{4 \pi \alpha '} \sum _{n \in \mathbb{Z}} \left( - \alpha ^{\nu} _{n} \e ^{i (- E_{n} \tau + n \sigma)} + (\alpha ^{\nu} _{- n})^{*} \e ^{i (E_{n} \tau + n \sigma)} \right) \eta _{\nu \lambda} .
+\end{equation*}
+We then proceed to the cannonical Poisson bracket relations
+\begin{equation*}
+    \left\{ X^{\mu} (\tau , \sigma) , \Pi ^{\nu} (\tau , \sigma ') \right\} = \delta (\sigma - \sigma ') \eta ^{\mu \nu}
+\end{equation*}
+\begin{equation*}
+    \left\{ X^{\mu} (\tau , \sigma) , X^{\nu} (\tau , \sigma ') \right\} = \left\{ \Pi ^{\mu} (\tau , \sigma) , \Pi ^{\nu} (\tau , \sigma ') \right\} = 0 ,
+\end{equation*}
+where by expanding the first relation we get
+\begin{multline*}
+    \left\{ X^{\mu} (\tau , \sigma) , \Pi ^{\nu} (\tau , \sigma ') \right\} = \bigg\{ \frac{1}{2 \pi \alpha '} \sum _{n \in \mathbb{Z}} \frac{1}{2 E_{n}} \left( \alpha ^{\mu} _{n} \e ^{i (- E_{n} \tau + n \sigma)} + (\alpha ^{\mu} _{- n})^{*} \e ^{i (E_{n} \tau + n \sigma)} \right) , \\
+    F^{-} \frac{i}{4 \pi \alpha '} \sum _{p \in \mathbb{Z}} \left( - \alpha ^{\nu} _{p} \e ^{i (- E_{p} \tau + p \sigma ')} + (\alpha ^{\nu} _{- p})^{*} \e ^{i (E_{p} \tau + p \sigma ')} \right) \bigg\} =
+\end{multline*}
+\begin{multline*}
+    = \frac{i}{8 \pi ^2 (\alpha ')^2} \sum _{n} \sum _{p} \frac{1}{2 E_{n}} \bigg( - F^{-} \left\{ \alpha ^{\mu} _{n} , \alpha ^{\nu} _{p} \right\} \e ^{- i (E_{n} + E_{p}) \tau} \e ^{i (n \sigma + p \sigma ')} + F^{-} \left\{ \alpha ^{\mu} _{n} , (\alpha ^{\nu} _{- p})^{*} \right\} \e ^{- i (E_{n} - E_{p}) \tau} \e ^{i (n \sigma + p \sigma ')} - \\
+    - F^{-} \left\{ (\alpha ^{\mu} _{- n})^{*} , \alpha ^{\nu} _{p} \right\} \e ^{i (E_{n} - E_{p}) \tau} \e ^{i (n \sigma + p \sigma ')} + F^{-} \left\{ (\alpha ^{\mu} _{- n})^{*} , (\alpha ^{\nu} _{- p})^{*} \right\} \e ^{i (E_{n} + E_{p}) \tau} \e ^{i (n \sigma + p \sigma ')} \bigg) = \delta (\sigma - \sigma ') \eta ^{\mu \nu}
+\end{multline*}
+\begin{equation*}
+    \bigg\downarrow \frac{1}{2 \pi} \int _{0} ^{2 \pi} \diff \sigma \e ^{- i k \sigma}
+\end{equation*}
+\begin{multline*}
+    \frac{i}{8 \pi ^2 (\alpha ')^2} \sum _{n} \sum _{p} \frac{1}{2 E_{n}} \bigg( - F^{-} \left\{ \alpha ^{\mu} _{n} , \alpha ^{\nu} _{p} \right\} \e ^{- i (E_{n} + E_{p}) \tau} \delta _{n , k} \e ^{i p \sigma '} + F^{-} \left\{ \alpha ^{\mu} _{n} , (\alpha ^{\nu} _{- p})^{*} \right\} \e ^{- i (E_{n} - E_{p}) \tau} \delta _{n , k} \e ^{i p \sigma '} - \\
+    - F^{-} \left\{ (\alpha ^{\mu} _{- n})^{*} , \alpha ^{\nu} _{p} \right\} \e ^{i (E_{n} - E_{p}) \tau} \delta _{n , k} \e ^{i p \sigma '} + F^{-} \left\{ (\alpha ^{\mu} _{- n})^{*} , (\alpha ^{\nu} _{- p})^{*} \right\} \e ^{i (E_{n} + E_{p}) \tau} \delta _{n , k} \e ^{i p \sigma '} \bigg) = \frac{\eta ^{\mu \nu}}{2 \pi} \e ^{- i k \sigma '}
+\end{multline*}
+\begin{multline*}
+    \frac{i}{8 \pi ^2 (\alpha ')^2} \sum _{p} \frac{1}{2 E_{k}} \bigg( - F^{-} \left\{ \alpha ^{\mu} _{k} , \alpha ^{\nu} _{p} \right\} \e ^{- i (E_{k} + E_{p}) \tau} \e ^{i p \sigma '} + F^{-} \left\{ \alpha ^{\mu} _{k} , (\alpha ^{\nu} _{- p})^{*} \right\} \e ^{- i (E_{k} - E_{p}) \tau} \e ^{i p \sigma '} - \\
+    - F^{-} \left\{ (\alpha ^{\mu} _{- k})^{*} , \alpha ^{\nu} _{p} \right\} \e ^{i (E_{k} - E_{p}) \tau} \e ^{i p \sigma '} + F^{-} \left\{ (\alpha ^{\mu} _{- k})^{*} , (\alpha ^{\nu} _{- p})^{*} \right\} \e ^{i (E_{k} + E_{p}) \tau} \e ^{i p \sigma '} \bigg) = \frac{\eta ^{\mu \nu}}{2 \pi} \e ^{- i k \sigma '}
+\end{multline*}
+\begin{equation*}
+    \bigg\downarrow \frac{1}{2 \pi} \int _{0} ^{2 \pi} \diff \sigma ' \e ^{i k \sigma '}
+\end{equation*}
+
 
 \newpage
 
