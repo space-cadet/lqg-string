@@ -1223,14 +1223,14 @@ Analysing the constraints, for the closed string we have the derivatives
     \partial _{\sigma} X^{\mu} & = \frac{i}{4 \pi \alpha '} \sum _{n} \frac{n}{E_{n}} \left( - a^{\mu} _{n} \e ^{- i n \sigma} + (a^{\mu} _{n})^{*} \e ^{i n \sigma} \right) \cos (E_{n} \tau) ,
 \end{align*}
 \begin{equation*}
-    \partial _{\tau} X^{\mu} \pm \partial _{\sigma} X^{\mu} = \frac{1}{4 \pi \alpha '} \sum _{n} \bigg( - a^{\mu} _{n} \bigg( \sin (E_{n} \tau) \pm i \frac{n}{E_{n}} \cos (E_{n} \tau) \bigg) \e ^{- i n \sigma} + (a^{\mu} _{n})^{*} \bigg( - \sin (E_{n} \tau) \pm i \frac{n}{E_{n}} \cos (E_{n} \tau) \bigg) \bigg) =
-\end{equation*}
-\begin{equation*}
-
+    \partial _{\tau} X^{\mu} \pm \partial _{\sigma} X^{\mu} = \frac{1}{4 \pi \alpha '} \sum _{n} \bigg( - a^{\mu} _{n} \bigg( \sin (E_{n} \tau) \pm i \frac{n}{E_{n}} \cos (E_{n} \tau) \bigg) \e ^{- i n \sigma} + (a^{\mu} _{n})^{*} \bigg( - \sin (E_{n} \tau) \pm i \frac{n}{E_{n}} \cos (E_{n} \tau) \bigg) \e ^{i n \sigma} \bigg)
 \end{equation*}
 so the constraint reads
 \begin{multline*}
-    (\partial _{\tau} X \pm \partial _{\sigma} X)^2 = - \frac{\eta _{\mu \nu}}{(4 \pi \alpha ')^2} \sum _{n} \sum _{p} \bigg( \bigg( 1 \mp \frac{n}{E_{n}} \bigg) \bigg( 1 \mp \frac{p}{E_{p}} \bigg) \bigg) \equiv 0 .
+    (\partial _{\tau} X \pm \partial _{\sigma} X)^2 = \frac{\eta _{\mu \nu}}{(4 \pi \alpha ')^2} \sum _{n} \sum _{p} \bigg( a^{\mu} _{n} a^{\nu} _{p} \bigg( \sin (E_{n} \tau) \pm i \frac{n}{E_{n}} \cos (E_{n} \tau) \bigg) \bigg( \sin (E_{p} \tau) \pm i \frac{p}{E_{p}} \cos (E_{p} \tau) \bigg) \e ^{- i (n + p) \sigma} - \\
+    - a^{\mu} _{n} (a^{\nu} _{p})^{*} \bigg( \sin (E_{n} \tau) \pm i \frac{n}{E_{n}} \cos (E_{n} \tau) \bigg) \bigg( - \sin (E_{p} \tau) \pm i \frac{p}{E_{p}} \cos (E_{p} \tau) \bigg) \e ^{- i (n - p) \sigma} - \\
+    - (a^{\mu} _{n})^{*} a^{\nu} _{p} \bigg( - \sin (E_{n} \tau) \pm i \frac{n}{E_{n}} \cos (E_{n} \tau) \bigg) \bigg( \sin (E_{p} \tau) \pm i \frac{p}{E_{p}} \cos (E_{p} \tau) \bigg) \e ^{i (n - p) \sigma} + \\
+    + (a^{\mu} _{n})^{*} (a^{\nu} _{p})^{*} \bigg( - \sin (E_{n} \tau) \pm i \frac{n}{E_{n}} \cos (E_{n} \tau) \bigg) \bigg( - \sin (E_{p} \tau) \pm i \frac{p}{E_{p}} \cos (E_{p} \tau) \bigg) \e ^{i (n + p) \sigma} \bigg) \equiv 0
 \end{multline*}
 Since the exponentials are all linearly independent and we can't decouple the $\tau$ exponential from any of the sums, we have 3 cases to investigate: $n = p$, $n = - p$ and $n \neq \pm p$. For $n \neq \pm p$, we get
 \begin{align*}
