@@ -1280,9 +1280,9 @@ One last thing before quantizing: the $n = 0$ term in the solution reads
 \begin{equation*}
     \frac{1}{2 \pi \alpha '} \frac{1}{2 m} \left( a^{\mu} _{0} \e ^{- i m \tau} + (a^{\mu} _{0})^{*} \e ^{i m \tau} \right) ,
 \end{equation*}
-which is divergent in the $m \rightarrow 0$ limit unless $\mathfrak{Re}(a^{\mu} _{0}) = 0$, thus $a^{\mu} _{0}$ must be purely imaginary. Keeping the analogy to the $m \rightarrow 0$ regime, we conclude $a^{\mu} _{0} = 4 \pi i (\alpha ')^2 p^{\mu}$. Since $a^{\mu} _{0}$ is proportional to $p^{\mu}$, we have that
+which is divergent in the $m \rightarrow 0$ limit unless $\mathfrak{Re}(a^{\mu} _{0}) \sim m$. Keeping the analogy to the $m \rightarrow 0$ regime, we conclude $a^{\mu} _{0} = 2 \pi \alpha ' m x^{\mu} + 4 \pi i (\alpha ')^2 p^{\mu}$. Since $a^{\mu} _{0}$ includes $p^{\mu}$, we have that
 \begin{equation*}
-    M^2 = - p^{\mu} p_{\mu} = \frac{1}{16 \pi ^2 (\alpha ')^4} a^{\mu} _{0} a^{\nu} _{0} \eta _{\mu \nu} ,
+    M^2 = - p^{\mu} p_{\mu} = \frac{1}{16 \pi ^2 (\alpha ')^4} \left( (2 \pi \alpha ')^{2} x^{\mu} x^{\nu} - a^{\mu} _{0} (a^{\nu} _{0})^{*} \right) \eta _{\mu \nu} ,
 \end{equation*}
 which after analysing closer the $n = - p$ condition
 \begin{equation*}
@@ -1292,18 +1292,13 @@ which after analysing closer the $n = - p$ condition
     \sum _{n \neq 0} \left( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) \widetilde{L}_{n , 0} \right) - \widetilde{L}_{0 , 0} = 0
 \end{equation*}
 \begin{equation*}
-    \sum _{n \neq 0} \left( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) \widetilde{L}_{n , 0} \right) = a^{\mu} _{0} (a^{\nu} _{0})^{*} \eta _{\mu \nu} \equiv (4 \pi (\alpha ')^2)^2 p^{\mu} p_{\mu} ,
+    \sum _{n \neq 0} \left( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) \widetilde{L}_{n , 0} \right) = a^{\mu} _{0} (a^{\nu} _{0})^{*} \eta _{\mu \nu} \equiv (4 \pi (\alpha ')^2)^2 p^{\mu} p_{\mu} + (2 \pi \alpha ')^{2} x^{\mu} x_{\mu} ,
 \end{equation*}
-we have the string mass in terms of vibrational modes
+we have the string mass in terms of vibrational modes... (and center of mass position?!?)
 \begin{align*}
-    M^2 & = - \frac{1}{(4 \pi (\alpha ')^2)^2} \sum _{n \neq 0} \left( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) \widetilde{L}_{n , 0} \right) =                           \\
-        & = - \frac{1}{(4 \pi (\alpha ')^2)^2} \sum _{n \neq 0} \left( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) a^{\mu} _{n} (a^{\nu} _{n})^{*} \eta _{\mu \nu} \right) .
+    M^2 & = \frac{1}{(4 \pi (\alpha ')^2)^2} \left( (2 \pi \alpha ')^{2} x^{\mu} x_{\mu} - \sum _{n \neq 0} \left( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) \widetilde{L}_{n , 0} \right) \right) =                           \\
+        & = \frac{1}{(4 \pi (\alpha ')^2)^2} \left( (2 \pi \alpha ')^{2} x^{\mu} x_{\mu} - \sum _{n \neq 0} \left( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) a^{\mu} _{n} (a^{\nu} _{n})^{*} \eta _{\mu \nu} \right) \right) .
 \end{align*}
-However, since
-\begin{equation*}
-    L_{n , p} = 0 , \ \forall \ n , p \in \mathbb{Z} ,
-\end{equation*}
-in particular we have $L_{0 , 0} = a^{\mu} _{0} a^{\nu} _{0} \eta _{\mu \nu} = 0$, thus the center of mass momentum $p^{\mu}$ is a null vector.
 
 As for the open string, its derivatives are
 \begin{align*}
@@ -1391,21 +1386,57 @@ where by expanding the first relation we get
 \begin{equation*}
     \left( A_{- (p + m)} \e ^{i (E_{p + m} \tau + \varphi _{- (p + m)})} + (A_{p + m})^{*} \e ^{- i (E_{p + m} \tau + \varphi _{- (p + m)})} \right)
 \end{equation*}
+\begin{multline*}
+    \frac{i}{8 \pi ^2 (\alpha ')^2} \frac{F^{-}}{2 E_{k}} \bigg( - \left\{ \alpha ^{\mu} _{k} , \alpha ^{\nu} _{- m} \right\} \e ^{- i (E_{k} + E_{m}) \tau} + \left\{ \alpha ^{\mu} _{k} , (\alpha ^{\nu} _{m})^{*} \right\} \e ^{- i (E_{k} - E_{m}) \tau} - \\
+    - \left\{ (\alpha ^{\mu} _{- k})^{*} , \alpha ^{\nu} _{- m} \right\} \e ^{i (E_{k} - E_{m}) \tau} + \left\{ (\alpha ^{\mu} _{- k})^{*} , (\alpha ^{\nu} _{m})^{*} \right\} \e ^{i (E_{k} + E_{m}) \tau} \bigg) = \frac{\eta ^{\mu \nu}}{2 \pi} \delta _{m , k} .
+\end{multline*}
+The only way for this to hold is
+\begin{align*}
+    \left\{ \alpha ^{\mu} _{k} , \alpha ^{\nu} _{- m} \right\}     & = \left\{ (\alpha ^{\mu} _{- k})^{*} , (\alpha ^{\nu} _{m})^{*} \right\} = 0                                                                            \\
+    \left\{ \alpha ^{\mu} _{k} , (\alpha ^{\nu} _{m})^{*} \right\} & = - \left\{ (\alpha ^{\mu} _{- k})^{*} , \alpha ^{\nu} _{- m} \right\} = - i \frac{4 \pi (\alpha ')^{2}}{F^{-}} E_{k} \eta ^{\mu \nu} \delta _{k , m} ,
+\end{align*}
+thus rescaling we get harmonic oscillator bracket relations
+\begin{align*}
+    a^{\mu} _{k}       & : = \frac{1}{2 \alpha '} \sqrt{\frac{F^{-}}{\pi}} \frac{1}{\sqrt{E_{k}}} \alpha ^{\mu} _{k}        \\
+    (a^{\mu} _{k})^{*} & : =  \frac{1}{2 \alpha '} \sqrt{\frac{F^{-}}{\pi}} \frac{1}{\sqrt{E_{k}}} (\alpha ^{\mu} _{k})^{*}
+\end{align*}
+\begin{equation*}
+    \Downarrow
+\end{equation*}
+\begin{align*}
+    \left\{ a^{\mu} _{k} , (a^{\nu} _{p})^{*} \right\} & = - i \eta ^{\mu \nu} \delta _{k , p}                            \\
+    \left\{ a^{\mu} _{k} , a^{\nu} _{p} \right\}       & = \left\{ (a^{\mu} _{k})^{*} , (a^{\nu} _{p})^{*} \right\} = 0 .
+\end{align*}
+For the $k = p = 0$ case, we also get the expected relations for $x^{\mu}$ and $p^{\nu}$:
+\begin{equation*}
+    \left\{ \alpha ^{\mu} _{0} , (\alpha ^{\nu} _{0})^{*} \right\} = - i \frac{4 \pi (\alpha ')^{2}}{F^{-}} E_{0} \eta ^{\mu \nu}
+\end{equation*}
+\begin{equation*}
+    \left\{ 2 \pi \alpha ' \mu x^{\mu} + 4 \pi i (\alpha ')^{2} p^{\mu} , 2 \pi \alpha ' \mu x^{\nu} - 4 \pi i (\alpha ')^{2} p^{\nu} \right\} = - i \frac{4 \pi (\alpha ')^{2}}{F^{-}} \mu \eta ^{\mu \nu}
+\end{equation*}
+\begin{equation*}
+    (2 \pi \alpha ')^{2} \bigg(  \mu ^2 \left\{ x^{\mu} , x^{\nu} \right\} - 2 i \alpha ' \mu \left\{ x^{\mu} , p^{\nu} \right\} + 2 i \alpha ' \mu \left\{ p^{\mu} , x^{\nu} \right\} + (2 \alpha ') \left\{ p^{\mu} , p^{\nu} \right\} \bigg) = - i \frac{4 \pi (\alpha ')^2}{F^{-}} \mu \eta ^{\mu \nu}
+\end{equation*}
+\begin{equation*}
+    \Downarrow
+\end{equation*}
+\begin{align*}
+    \left\{ x^{\mu} , x^{\nu} \right\} & = \left\{ p^{\mu} , p^{\nu} \right\} = 0           \\
+    \left\{ x^{\mu} , p^{\nu} \right\} & = \frac{1}{4 \pi \alpha ' F^{-}} \eta ^{\mu \nu} .
+\end{align*}
+Since $F^{-} = 1 - k \Delta / (2 \phi ^2)$, if we choose
+\begin{equation*}
+    \phi = \sqrt{\frac{k \Delta}{2 \left( 1 - \dfrac{1}{4 \pi \alpha '} \right)}}
+\end{equation*}
+then the bracket relation simplifies to the expected
+\begin{equation*}
+    \left\{ x^{\mu} , p^{\nu} \right\} = \eta ^{\mu \nu}
+\end{equation*}
 
 \newpage
 
 \section{Into the Quantum Realm}
 
-Start by finding the canonical momentum
-\begin{equation*}
-    \Pi _{\lambda} = \frac{\partial \Lagr}{\partial (\partial _{\tau} X^{\lambda})} = - \frac{T}{2} \left( \sqrt{- g} - \frac{k \Delta}{2 \sqrt{- g}} \right) g^{a b} \delta ^{\tau} _{a} \delta ^{\mu} _{\lambda} \partial _{b} X^{\nu} \eta _{\mu \nu} =
-\end{equation*}
-\begin{equation*}
-    = - \frac{1}{4 \pi \alpha '} \left( 1 - \frac{k \Delta}{2 \phi ^2} \right) \eta ^{\tau b} \partial _{b} X^{\nu} \eta _{\lambda \nu} =
-\end{equation*}
-\begin{equation*}
-    = \frac{1}{4 \pi \alpha '} F^{-} \partial _{\tau} X^{\nu} \eta_{\lambda \nu} = F^{-} \frac{i}{(4 \pi \alpha ')^2} \sum _{p} \left( - \alpha ^{\nu} _{p} \e ^{i (- E_{p} \tau + p \sigma)} + (\alpha ^{\nu} _{- p})^{*} \e ^{i (E_{p} \tau + p \sigma)} \right) \eta _{\nu \lambda} .
-\end{equation*}
 Translating the equal-time Poisson bracket relations
 \begin{equation*}
     \left\{ X^{\mu} (\tau , \sigma) , \Pi ^{\nu} (\tau , \sigma ') \right\} = \delta (\sigma - \sigma ') \eta ^{\mu \nu}

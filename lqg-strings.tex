@@ -612,7 +612,7 @@ If one was to ask a beginning graduate student as to how one can incorporate a g
 \end{equation}
 
 where the covariant derivative $\mc{D}_a$ is of the form:
-\begin{equation}\label{eqn:covariant-deriv}
+\begin{equation}\label{eqn:covariant-deriv-v1}
 	\mc{D}_a X^\mu(\tau , \sigma) = \partial_a X^\mu + g \mc{A}_{a}^\mu{}_\nu X^\nu,
 \end{equation}
 where $\mc{A}_{a}^\mu{}_\nu$ is the gauge field and $g$ is the gauge coupling. A more experienced researcher would object saying that we know that the $X^\mu$ are spacetime co-ordinates and not vectors transforming 
@@ -630,7 +630,7 @@ Let us remind ourselves what we're trying to do here. We want a gauge field, whi
 
 The end result is that we now have with a gauge field $\mc{A}_a^{IJ}(\tau , \sigma)$ living on the worldsheet $\Sigma$. Here the lower index $a$ is the worldsheet index and $I , J$ labels the generators of the Lie algebra $\mf{so}(d,1)$. Remember this is a gauge field which is now living on the worldsheet. The consequence for the string action is that in order for the action to be invariant under local gauge transformations of $\mc{A}$, we have to replace the ordinary derivatives of $X^\mu$ with the gauge covariant derivative $\partial_a X^\mu \rightarrow \mc{D}_a X^\mu$, which is defined as:
 
-\begin{equation}
+\begin{equation}\label{eqn:covariant-deriv-v2}
 	\mc{D}_a X^I(\tau , \sigma) = \partial_a X^I + k \mc{A}_{a J}^{I} X^J,
 \end{equation}
 where $\mc{A}_a^{I J}$ is a field living on $\Sigma$ which takes values in the Lie algebra $\mf{so}(d,1)$. We should therefore think of the embedding fields as $d+1$ dimensional vectors living in the fundamental representation of $\mathrm{SO}(d,1)$.
@@ -665,6 +665,51 @@ where $\eta_{IJ}$ is the flat Minkowski metric on the ``internal'' flat space. I
 the trace is taken over the ``internal'' Lorentz indices.
 
 Now, if we compare the two expressions \eqref{eqn:ws-metric} and \eqref{eqn:metric-from-tetrad} we notice an obvious parallel between the derivatives $\partial X^\mu/\partial x_a$ of the embedding co-ordinates and the vielbein $e_\mu^I$. This similarity becomes more apparent once we write down the expression for the area of a 2-surface by taking the determinant in \eqref{eqn:patch-area-v1} and comparing that to the expression obtained using frame fields.
+
+\textbf{From Embedding Fields:}
+
+We take the bulk metric $g_{\mu\nu}$ to be flat. Let $\{\tau,\sigma\} := \{x^0, x^1\}$ be the spacetime co-ordinates on the worldsheet. Derivatives of the $X$'s in terms of these co-ordinates can be written as:
+\begin{equation}
+	\dot X := \left\{\frac{\partial X^\mu}{\partial \tau}\right\}; \quad X' := \left\{\frac{\partial X^\mu}{\partial \sigma}\right\}
+\end{equation}
+ we obtain the following form for the determinant of the worldsheet metric (\eqref{eqn:patch-area-v1}) in terms of the embedding fields:
+\begin{align}\label{eqn:area-embedding}
+	\det h & = \begin{vmatrix}
+		h_{00} && h_{01} \\
+		h_{10} && h_{11} 
+	\end{vmatrix} = \begin{vmatrix}
+		\dot X^2 && \dot X \cdot X' \\
+		\dot X \cdot X' && X'^2
+	\end{vmatrix} \nonumber \\
+	& = \dot X^2 X'^2 - (\dot X \cdot X')^2
+\end{align}
+
+\textbf{From Vielbein:}
+
+We can proceed to obtain the area of a 2-surface from the bulk vielbein as follows. Starting with the bulk vielbein $e_\mu^I$, we perform a local Lorentz transformation such that two ``legs'' of the vielbein are tangent to the worldsheet surface. We then project down the vielbein $e_\mu^I$ to a dyad $e_a^i$ living in the tangent space of the worldsheet, in terms of which the worldsheet metric can be written as:
+\begin{equation}
+	h_{ab} = e_a^i e_b^j \eta_{ij},
+\end{equation}
+where $\eta_{ij}$ is the flat $(1+1)$ Minkowski metric. The determinant then becomes:
+\begin{align}\label{eqn:area-vielbein}
+	\det h & = \begin{vmatrix}
+		h_{00} && h_{01} \\
+		h_{10} && h_{11} 
+	\end{vmatrix} = \begin{vmatrix}
+		e_x{}^i e_x{}^j & e_x{}^i e_y{}^j \\
+		e_y{}^i e_x{}^j & e_y{}^i e_y{}^j
+	\end{vmatrix} \eta_{ij} \nonumber \\
+	& = \vec e_x{}^2 \vec e_y{}^2 - (\vec e_x \cdot \vec e_y)^2,
+\end{align}
+where $\vec e_x \cdot \vec e_y = e_x{}^i e_y{}^j \eta_{ij}$. It is clear by comparing the two expressions \eqref{eqn:area-embedding} and \eqref{eqn:area-vielbein} that we have the following correspondence between the vielbein the $X$ derivatives:
+\begin{equation}
+	\vec e_\tau \equiv \frac{\partial \vec X}{\partial \tau}; \quad \vec e_\sigma \equiv \frac{\partial \vec X}{\partial \sigma}.
+\end{equation}
+In other words we can identify the vielbein with the derivatives of the embedding fields. Of course, this is not altogether surprising. If we consider any manifold on which we have some set of fields $\{X^I(x^\mu)\}$, where $I$ is valued in the Lie algebra ${\mc g}$ of some group $\mc G$, as a function of some  ``fiducial'' co-ordinates $\{x^\mu\}$, then we can always define a set of ${\mc g}$ valued vector fields: 
+$$
+	e^I_\mu := \frac{\partial X^I}{\partial x^\mu}.
+$$
+In the usual formulation of the string action the embedding fields are \emph{not} Lie-algebra valued but are co-ordinate fields on what is generally taken to be a flat background. In order for this correspondence between vielbein and $X$ derivatives to work we have to view the $X$ fields as taking values in a Lie algebra. But these same $X$ fields \emph{also} serve as local co-ordinates for the bulk. In order for the co-ordinates to change from point to point in the bulk geometry, we must therefore have that the connection $\mc A$ in \eqref{eqn:covariant-deriv-v2} can never vanish completely! If $\mc A$ vanishes then that will imply that the fields $X$ don't change from one point to the next. Thus the amplitude $|\mc A|$ can be arbitrarily small but it can never be zero.
 
 \section{Physical Implications}
 
