@@ -1387,23 +1387,30 @@ where by expanding the first relation we get
 \end{equation*}
 \begin{multline*}
     \frac{i}{8 \pi ^2 (\alpha ')^2} \frac{F^{-}}{2 E_{k}} \bigg( - \left\{ \alpha ^{\mu} _{k} , \alpha ^{\nu} _{- m} \right\} \e ^{- i (E_{k} + E_{m}) \tau} + \left\{ \alpha ^{\mu} _{k} , (\alpha ^{\nu} _{m})^{*} \right\} \e ^{- i (E_{k} - E_{m}) \tau} - \\
-    - \left\{ (\alpha ^{\mu} _{- k})^{*} , \alpha ^{\nu} _{- m} \right\} \e ^{i (E_{k} - E_{m}) \tau} + \left\{ (\alpha ^{\mu} _{- k})^{*} , (\alpha ^{\nu} _{m})^{*} \right\} \e ^{i (E_{k} + E_{m}) \tau} \bigg) = \frac{\eta ^{\mu \nu}}{2 \pi} \delta _{m , k}
+    - \left\{ (\alpha ^{\mu} _{- k})^{*} , \alpha ^{\nu} _{- m} \right\} \e ^{i (E_{k} - E_{m}) \tau} + \left\{ (\alpha ^{\mu} _{- k})^{*} , (\alpha ^{\nu} _{m})^{*} \right\} \e ^{i (E_{k} + E_{m}) \tau} \bigg) = \frac{\eta ^{\mu \nu}}{2 \pi} \delta _{m , k} .
 \end{multline*}
+The only way for this to hold is
+\begin{align*}
+    \left\{ \alpha ^{\mu} _{k} , \alpha ^{\nu} _{- m} \right\}     & = \left\{ (\alpha ^{\mu} _{- k})^{*} , (\alpha ^{\nu} _{m})^{*} \right\} = 0                                                                            \\
+    \left\{ \alpha ^{\mu} _{k} , (\alpha ^{\nu} _{m})^{*} \right\} & = - \left\{ (\alpha ^{\mu} _{- k})^{*} , \alpha ^{\nu} _{- m} \right\} = - i \frac{4 \pi (\alpha ')^{2}}{F^{-}} E_{k} \eta ^{\mu \nu} \delta _{k , m} ,
+\end{align*}
+thus rescaling we get harmonic oscillator bracket relations
+\begin{align*}
+    a^{\mu} _{k}       & : = \frac{1}{2 \alpha '} \sqrt{\frac{F^{-}}{\pi}} \frac{1}{\sqrt{E_{k}}} \alpha ^{\mu} _{k}        \\
+    (a^{\mu} _{k})^{*} & : =  \frac{1}{2 \alpha '} \sqrt{\frac{F^{-}}{\pi}} \frac{1}{\sqrt{E_{k}}} (\alpha ^{\mu} _{k})^{*}
+\end{align*}
+\begin{equation*}
+    \Downarrow
+\end{equation*}
+\begin{align*}
+    \left\{ a^{\mu} _{k} , (a^{\nu} _{p})^{*} \right\} & = - i \eta ^{\mu \nu} \delta _{k , p}                          \\
+    \left\{ a^{\mu} _{k} , a^{\nu} _{p} \right\}       & = \left\{ (a^{\mu} _{k})^{*} , (a^{\nu} _{p})^{*} \right\} = 0
+\end{align*}
 
 \newpage
 
 \section{Into the Quantum Realm}
 
-Start by finding the canonical momentum
-\begin{equation*}
-    \Pi _{\lambda} = \frac{\partial \Lagr}{\partial (\partial _{\tau} X^{\lambda})} = - \frac{T}{2} \left( \sqrt{- g} - \frac{k \Delta}{2 \sqrt{- g}} \right) g^{a b} \delta ^{\tau} _{a} \delta ^{\mu} _{\lambda} \partial _{b} X^{\nu} \eta _{\mu \nu} =
-\end{equation*}
-\begin{equation*}
-    = - \frac{1}{4 \pi \alpha '} \left( 1 - \frac{k \Delta}{2 \phi ^2} \right) \eta ^{\tau b} \partial _{b} X^{\nu} \eta _{\lambda \nu} =
-\end{equation*}
-\begin{equation*}
-    = \frac{1}{4 \pi \alpha '} F^{-} \partial _{\tau} X^{\nu} \eta_{\lambda \nu} = F^{-} \frac{i}{(4 \pi \alpha ')^2} \sum _{p} \left( - \alpha ^{\nu} _{p} \e ^{i (- E_{p} \tau + p \sigma)} + (\alpha ^{\nu} _{- p})^{*} \e ^{i (E_{p} \tau + p \sigma)} \right) \eta _{\nu \lambda} .
-\end{equation*}
 Translating the equal-time Poisson bracket relations
 \begin{equation*}
     \left\{ X^{\mu} (\tau , \sigma) , \Pi ^{\nu} (\tau , \sigma ') \right\} = \delta (\sigma - \sigma ') \eta ^{\mu \nu}
