@@ -829,23 +829,55 @@ use plane-wave ansatz $X^{\mu} = X^{\mu} _{0} \e ^{- i (E \tau - p \sigma)}$
 
 Quantum geometry correction
 \begin{equation*}
-    \sqrt{- g} \rightarrow \sqrt{- (g + k \Delta)} \approx \sqrt{- g} \left( 1 + \frac{k \Delta}{2 g} + \mathcal{O} \left( \frac{k^2}{g^2} \right) \right) ,
+    \sqrt{- g} \rightarrow \sqrt{- \Tilde{g}} = \sqrt{- (g + k \Delta)} \approx \sqrt{- g} \left( 1 + \frac{k \Delta}{2 g} + \mathcal{O} \left( \frac{k^2}{g^2} \right) \right) ,
 \end{equation*}
 which implies
 \begin{equation*}
     g_{a b} \rightarrow \Tilde{g}_{a b} = g_{a b} + \sqrt{k \Delta} \delta _{a b} ,
 \end{equation*}
 \begin{equation*}
-    g^{a b} \rightarrow \Tilde{g}^{a b} = \frac{1}{2 (g + k \Delta)} \varepsilon ^{a c} \varepsilon ^{b d} \Tilde{g}_{c d} ,
+    g^{a b} \rightarrow \Tilde{g}^{a b} = \frac{1}{2 (g + k \Delta)} \varepsilon ^{a c} \varepsilon ^{b d} \Tilde{g}_{c d} =
+\end{equation*}
+\begin{equation*}
+    = \frac{1}{2 (g + k \Delta)} \varepsilon ^{a c} \varepsilon ^{b d} \left( g_{c d} + \sqrt{k \Delta} \delta _{c d} \right) =
+\end{equation*}
+\begin{equation*}
+    = \frac{1}{2 (g + k \Delta)} \left( \varepsilon ^{a c} \varepsilon ^{b d} g_{c d} + \sqrt{k \Delta} \delta ^{a b} \right) \approx
+\end{equation*}
+\begin{equation*}
+    \approx \frac{1}{2 g} \left( 1 - \frac{k \Delta}{g} \right) \left( \varepsilon ^{a c} \varepsilon ^{b d} g_{c d} + \sqrt{k \Delta} \delta ^{a b} \right) =
+\end{equation*}
+\begin{equation*}
+    = \left( 1 - \frac{k \Delta}{g} \right) \left( g^{a b} + \frac{\sqrt{k \Delta}}{2 g} \delta ^{a b} \right)
 \end{equation*}
 leading to
 \begin{equation*}
-    S = - \frac{T}{2} \int \diff ^2 x \sqrt{- \Tilde{g}} \Tilde{g}^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} ,
+    S = - \frac{T}{2} \int \diff ^2 x \sqrt{- \Tilde{g}} \Tilde{g}^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} \approx
+\end{equation*}
+\begin{equation*}
+    \approx - \frac{T}{2} \int \diff ^2 x \sqrt{- g} \left( 1 + \frac{k \Delta}{2 g} \right) \left( 1 - \frac{k \Delta}{g} \right) \left( g^{a b} + \frac{\sqrt{k \Delta}}{2 g} \delta ^{a b} \right) \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} =
+\end{equation*}
+\begin{equation*}
+    = - \frac{T}{2} \int \diff ^2 x \sqrt{- g} \left( g^{a b} + \frac{\sqrt{k \Delta}}{2 g} \delta ^{a b} + \frac{k \Delta}{2 g} g^{a b} - \frac{k \Delta}{g} g^{a b} + \mc{O} \left( \frac{(k \Delta)^{3/2}}{g^2} ; \frac{(k \Delta)^2}{g^2} \right) \right) \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} \approx
+\end{equation*}
+\begin{equation*}
+    \approx - \frac{T}{2} \int \diff ^2 x \left( \left( \sqrt{- g} + \frac{k \Delta}{2 \sqrt{- g}} \right) g^{a b} - \frac{\sqrt{k \Delta}}{2 \sqrt{- g}} \delta ^{a b} \right) \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} = S_{P} + S_{c} ,
+\end{equation*}
+\begin{equation*}
+    S_{c} = - \frac{T \sqrt{k \Delta}}{4} \int \diff ^2 x \sqrt{- g}^{-1} \left( \sqrt{k \Delta} g^{a b} - \delta ^{a b} \right) \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu}
 \end{equation*}
 
 \subsection{EoMs}
 
+Since the total action is the Polyakov action plus a correction term, let's calculate just the EoMs for the correction action and later sum them with the known eqns of the regular Polyakov action.
+\subsubsection{W.r.t $g$}
 
+\begin{align*}
+    \frac{\delta S_{c}}{\delta g^{c d}} & = \left( \frac{\partial \sqrt{- g}^{-1}}{\partial g^{c d}} \left( \sqrt{k \Delta} g^{a b} - \delta ^{a b} \right) - \sqrt{- g}^{-1} \frac{\partial g^{a b}}{\partial g^{c d}} \right) \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} = \\
+                                        & = \left( - \frac{1}{2 \sqrt{- g}^{-1}} g_{c d} \left( \sqrt{k \Delta} g^{a b} - \delta ^{a b} \right) - \sqrt{- g}^{-1} \delta ^{(a} _{c} \delta ^{b)} _{d} \right) \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} =                   \\
+                                        & = - \left( \frac{1}{2} \sqrt{- g} g_{c d} \left( \sqrt{k \Delta} g^{a b} - \delta ^{a b} \right) + \sqrt{- g}^{-1} \delta ^{a} _{(c} \delta ^{b} _{d)} \right) \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} =                        \\
+                                        & =
+\end{align*}
 
 \newpage
 
