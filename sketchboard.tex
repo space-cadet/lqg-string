@@ -562,7 +562,7 @@ let $\left( 1 + \frac{g \Delta}{2 (- h)} \right) = F$
 \begin{equation*}
     F^2 \frac{\partial ^2 \Vec{X}}{\partial t^2} - \frac{\partial ^2 \Vec{X}}{\partial \sigma ^2} = 0
 \end{equation*}
-$\implies$ speed of wave on the string gets modified by correction factor $v = c / F$
+$\implies$ speed of wave on the string gets modified by correction factor $v = c / F$.
 \begin{equation*}
     - h = \frac{1}{\gamma _{v_{\perp}} ^2} \left( \frac{\diff s}{\diff \sigma} \right) ^2 = \frac{F^2}{\gamma _{v_{\perp}} ^4} = F^2 \left( 1 - v_{\perp} ^2 \right) ^2
 \end{equation*}
@@ -877,6 +877,55 @@ Since the total action is the Polyakov action plus a correction term, let's calc
                                         & = \left( - \frac{1}{2 \sqrt{- g}^{-1}} g_{c d} \left( \sqrt{k \Delta} g^{a b} - \delta ^{a b} \right) - \sqrt{- g}^{-1} \delta ^{(a} _{c} \delta ^{b)} _{d} \right) \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} =                   \\
                                         & = - \left( \frac{1}{2} \sqrt{- g} g_{c d} \left( \sqrt{k \Delta} g^{a b} - \delta ^{a b} \right) + \sqrt{- g}^{-1} \delta ^{a} _{(c} \delta ^{b} _{d)} \right) \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} =                        \\
                                         & =
+\end{align*}
+
+\section{Inverse Area Polyakov v3}
+
+Taking Tomas' reply into consideration, instead of modifying the WS metric in the action before imposing the metric EoM, let's modify the BULK metric $G_{\mu \nu} \mapsto G_{\mu \nu} + \sqrt[D]{\kappa \Theta} \delta _{\mu \nu}$ (such that $\sqrt{- G} \mapsto \sqrt{- (G + \kappa \Theta)}$). For simplicity, assume $G_{\mu \nu} = \eta _{\mu \nu}$
+\begin{equation*}
+    S = - \frac{T}{2} \int \diff ^2 x \sqrt{- g} g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \left( \eta _{\mu \nu} + \sqrt[D]{\kappa \Theta} \delta _{\mu \nu} \right)
+\end{equation*}
+
+The EoM for $X$ is
+\begin{equation*}
+    \partial _{a} \left( \sqrt{- g} g^{a b} \partial _{b} X^{\mu} \left( \eta _{\mu \nu} + \sqrt[D]{\kappa \Theta} \delta _{\mu \nu} \right) \right) = 0 ,
+\end{equation*}
+which in conformal gauge $g_{a b} = \phi \eta  _{a b}$ simplifies into
+\begin{equation*}
+    \eta ^{a b} \partial _{a} \partial _{b} X^{\mu} \left( \eta _{\mu \nu} + \sqrt[D]{\kappa \Theta} \delta _{\mu \nu} \right) = 0 .
+\end{equation*}
+
+\subsection{Relation with NG corrected analysis}
+
+The NG area-corrected analysis yielded the eqn
+\begin{equation*}
+    \left( (F^{+})^2 (\partial _{t})^{2} - (\partial _{x})^2 \right) X^{\mu} \eta _{\mu \nu} = 0 ,
+\end{equation*}
+where $F^{+} = (1 + k \Delta / (2 (- g)))$. Expanding, we get
+\begin{equation*}
+    (F^{+})^2 = \left( 1 + \frac{k \Delta}{2 (- g)} \right) ^2 = \left( 1 + \frac{k \Delta}{(- g)} + \left( \frac{k \Delta}{2 g} \right) ^2 \right) \approx \left( 1 + \frac{k \Delta}{(- g)} \right)
+\end{equation*}
+\begin{equation*}
+    \Downarrow
+\end{equation*}
+\begin{equation*}
+    \left( (\partial _{t})^{2} - (\partial _{x})^{2} \right) X^{\mu} \eta _{\mu \nu} + \frac{k \Delta}{(- g)} (\partial _{t})^{2} X^{\mu} \eta _{\mu \nu} = 0 .
+\end{equation*}
+Performing a reparameterization of the WS $(t , x) \mapsto (\tau (t , x) , \sigma (t , x))$ to (try to) transform one into another yields
+\begin{multline*}
+    \left( (\partial _{t})^2 - (\partial _{x})^2 \right) X^{\mu} \eta _{\mu \nu} + \frac{k \Delta}{(- g)} (\partial _{t})^{2} X^{\mu} \eta _{\mu \nu} = \\
+    = \left( (\partial _{t} \tau)^2 - (\partial _{x} \tau)^2 \right) \partial _{\tau} ^2 X^{\mu} \eta _{\mu \nu} + \left( (\partial _{t} \sigma)^2 - (\partial _{x} \sigma)^2 \right) \partial _{\sigma} ^2 X^{\mu} \eta _{\mu \nu} + \\
+    + 2 \left( \partial _{t} \tau \partial _{t} \sigma - \partial _{x} \tau \partial _{x} \sigma \right) \partial _{\tau} \partial _{\sigma} X^{\mu} \eta _{\mu \nu} + \left( \partial _{t} ^2 \tau - \partial _{x} ^2 \tau \right) \partial _{\tau} X^{\mu} \eta _{\mu \nu} + \left( \partial _{t} ^2 \sigma - \partial _{x} ^2 \sigma \right) \partial _{\sigma} X^{\mu} \eta _{\mu \nu} + \\
+    + \frac{k \Delta}{(- g)} \left( (\partial _{t} \tau)^2 \partial ^2 _{\tau} + 2 \partial _{t} \tau \partial _{t} \sigma \partial _{\tau} \partial _{\sigma} + (\partial _{t} \sigma)^2 \partial ^2 _{\sigma} \right) X^{\mu} \eta _{\mu \nu} = 0 .
+\end{multline*}
+Without loss of generality, we can take $\tau$ and $\sigma$ to satisfy
+\begin{align*}
+    \partial _{t} \tau   & = \partial _{x} \sigma \\
+    \partial _{t} \sigma & = \partial _{x} \tau ,
+\end{align*}
+simplifying the eqn to
+\begin{align*}
+    \left( \partial ^2 _{\tau} - \partial ^2 _{\sigma} \right) X^{\mu} \eta _{\mu \nu} + \frac{k \Delta}{(- g)} \frac{1}{\left( (\partial _{t} \tau)^2 - (\partial _{x} \tau)^2 \right)} \left( (\partial _{t} \tau)^2 \partial ^2 _{\tau} + 2 \partial _{t} \tau \partial _{t} \sigma \partial _{\tau} \partial _{\sigma} + (\partial _{t} \sigma)^2 \partial ^2 _{\sigma} \right) X^{\mu} \eta _{\mu \nu} = 0
 \end{align*}
 
 \newpage
