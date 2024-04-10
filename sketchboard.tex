@@ -873,60 +873,26 @@ Since the total action is the Polyakov action plus a correction term, let's calc
 \subsubsection{W.r.t $g$}
 
 \begin{align*}
-    \frac{\delta S_{c}}{\delta g^{c d}} & = \left( \frac{\partial \sqrt{- g}^{-1}}{\partial g^{c d}} \left( \sqrt{k \Delta} g^{a b} - \delta ^{a b} \right) - \sqrt{- g}^{-1} \frac{\partial g^{a b}}{\partial g^{c d}} \right) \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} = \\
-                                        & = \left( - \frac{1}{2 \sqrt{- g}^{-1}} g_{c d} \left( \sqrt{k \Delta} g^{a b} - \delta ^{a b} \right) - \sqrt{- g}^{-1} \delta ^{(a} _{c} \delta ^{b)} _{d} \right) \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} =                   \\
-                                        & = - \left( \frac{1}{2} \sqrt{- g} g_{c d} \left( \sqrt{k \Delta} g^{a b} - \delta ^{a b} \right) + \sqrt{- g}^{-1} \delta ^{a} _{(c} \delta ^{b} _{d)} \right) \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} =                        \\
-                                        & =
+    \frac{\delta S_{c}}{\delta g^{c d}} & = \left( \frac{\partial \sqrt{- g}^{-1}}{\partial g^{c d}} \left( \sqrt{k \Delta} g^{a b} - \delta ^{a b} \right) - \sqrt{k \Delta} \sqrt{- g}^{-1} \frac{\partial g^{a b}}{\partial g^{c d}} \right) \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} = \\
+                                        & = \left( - \frac{1}{2 \sqrt{- g}^{-1}} g_{c d} \left( \sqrt{k \Delta} g^{a b} - \delta ^{a b} \right) - \sqrt{k \Delta} \sqrt{- g}^{-1} \delta ^{(a} _{c} \delta ^{b)} _{d} \right) \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} =                   \\
+                                        & = - \left( \frac{1}{2} \sqrt{- g} g_{c d} \left( \sqrt{k \Delta} g^{a b} - \delta ^{a b} \right) + \sqrt{k \Delta} \sqrt{- g}^{-1} \delta ^{a} _{(c} \delta ^{b} _{d)} \right) \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu}
 \end{align*}
-
-\section{Inverse Area Polyakov v3}
-
-Taking Tomas' reply into consideration, instead of modifying the WS metric in the action before imposing the metric EoM, let's modify the BULK metric $G_{\mu \nu} \mapsto G_{\mu \nu} + \sqrt[D]{\kappa \Theta} \delta _{\mu \nu}$ (such that $\sqrt{- G} \mapsto \sqrt{- (G + \kappa \Theta)}$). For simplicity, assume $G_{\mu \nu} = \eta _{\mu \nu}$
 \begin{equation*}
-    S = - \frac{T}{2} \int \diff ^2 x \sqrt{- g} g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \left( \eta _{\mu \nu} + \sqrt[D]{\kappa \Theta} \delta _{\mu \nu} \right)
+    \Downarrow
 \end{equation*}
-
-The EoM for $X$ is
+\begin{multline*}
+    T_{c d} := \sqrt{- g} \partial _{c} X^{\mu} \partial _{d} X^{\nu} G_{\mu \nu} - \frac{1}{2} \sqrt{- g} g_{c d} g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} - \\
+    - \frac{\sqrt{k \Delta}}{2} \left( \sqrt{k \Delta} \sqrt{- g}^{-1} \partial _{c} X^{\mu} \partial _{d} X^{\nu} G_{\mu \nu} + \frac{\sqrt{- g}}{2} g_{c d} \left( \sqrt{k \Delta} g^{a b} - \delta ^{a b} \right) \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} \right) = 0
+\end{multline*}
 \begin{equation*}
-    \partial _{a} \left( \sqrt{- g} g^{a b} \partial _{b} X^{\mu} \left( \eta _{\mu \nu} + \sqrt[D]{\kappa \Theta} \delta _{\mu \nu} \right) \right) = 0 ,
-\end{equation*}
-which in conformal gauge $g_{a b} = \phi \eta  _{a b}$ simplifies into
-\begin{equation*}
-    \eta ^{a b} \partial _{a} \partial _{b} X^{\mu} \left( \eta _{\mu \nu} + \sqrt[D]{\kappa \Theta} \delta _{\mu \nu} \right) = 0 .
-\end{equation*}
-
-\subsection{Relation with NG corrected analysis}
-
-The NG area-corrected analysis yielded the eqn
-\begin{equation*}
-    \left( (F^{+})^2 (\partial _{t})^{2} - (\partial _{x})^2 \right) X^{\mu} \eta _{\mu \nu} = 0 ,
-\end{equation*}
-where $F^{+} = (1 + k \Delta / (2 (- g)))$. Expanding, we get
-\begin{equation*}
-    (F^{+})^2 = \left( 1 + \frac{k \Delta}{2 (- g)} \right) ^2 = \left( 1 + \frac{k \Delta}{(- g)} + \left( \frac{k \Delta}{2 g} \right) ^2 \right) \approx \left( 1 + \frac{k \Delta}{(- g)} \right)
+    T_{c d} = \left( 1 - \frac{k \Delta}{2 (- g)} \right) \partial _{c} X^{\mu} \partial _{d} X^{\nu} G_{\mu \nu} - \frac{1}{2} g_{c d} \left( \left( 1 + \frac{k \Delta}{2} \right) g^{a b} - \frac{\sqrt{k \Delta}}{2} \delta ^{a b} \right) \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} = 0
 \end{equation*}
 \begin{equation*}
     \Downarrow
 \end{equation*}
 \begin{equation*}
-    \left( (\partial _{t})^{2} - (\partial _{x})^{2} \right) X^{\mu} \eta _{\mu \nu} + \frac{k \Delta}{(- g)} (\partial _{t})^{2} X^{\mu} \eta _{\mu \nu} = 0 .
+    g_{c d} = 2 \frac{F^{-}}{f'} \partial _{c} X^{\mu} \partial _{d} X^{\nu} G_{\mu \nu} , \ f' = \left( \left( 1 + \frac{k \Delta}{2} \right) g^{a b} - \frac{\sqrt{k \Delta}}{2} \delta ^{a b} \right) \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu}
 \end{equation*}
-Performing a reparameterization of the WS $(t , x) \mapsto (\tau (t , x) , \sigma (t , x))$ to (try to) transform one into another yields
-\begin{multline*}
-    \left( (\partial _{t})^2 - (\partial _{x})^2 \right) X^{\mu} \eta _{\mu \nu} + \frac{k \Delta}{(- g)} (\partial _{t})^{2} X^{\mu} \eta _{\mu \nu} = \\
-    = \left( (\partial _{t} \tau)^2 - (\partial _{x} \tau)^2 \right) \partial _{\tau} ^2 X^{\mu} \eta _{\mu \nu} + \left( (\partial _{t} \sigma)^2 - (\partial _{x} \sigma)^2 \right) \partial _{\sigma} ^2 X^{\mu} \eta _{\mu \nu} + \\
-    + 2 \left( \partial _{t} \tau \partial _{t} \sigma - \partial _{x} \tau \partial _{x} \sigma \right) \partial _{\tau} \partial _{\sigma} X^{\mu} \eta _{\mu \nu} + \left( \partial _{t} ^2 \tau - \partial _{x} ^2 \tau \right) \partial _{\tau} X^{\mu} \eta _{\mu \nu} + \left( \partial _{t} ^2 \sigma - \partial _{x} ^2 \sigma \right) \partial _{\sigma} X^{\mu} \eta _{\mu \nu} + \\
-    + \frac{k \Delta}{(- g)} \left( (\partial _{t} \tau)^2 \partial ^2 _{\tau} + 2 \partial _{t} \tau \partial _{t} \sigma \partial _{\tau} \partial _{\sigma} + (\partial _{t} \sigma)^2 \partial ^2 _{\sigma} \right) X^{\mu} \eta _{\mu \nu} = 0 .
-\end{multline*}
-Without loss of generality, we can take $\tau$ and $\sigma$ to satisfy
-\begin{align*}
-    \partial _{t} \tau   & = \partial _{x} \sigma \\
-    \partial _{t} \sigma & = \partial _{x} \tau ,
-\end{align*}
-simplifying the eqn to
-\begin{align*}
-    \left( \partial ^2 _{\tau} - \partial ^2 _{\sigma} \right) X^{\mu} \eta _{\mu \nu} + \frac{k \Delta}{(- g)} \frac{1}{\left( (\partial _{t} \tau)^2 - (\partial _{x} \tau)^2 \right)} \left( (\partial _{t} \tau)^2 \partial ^2 _{\tau} + 2 \partial _{t} \tau \partial _{t} \sigma \partial _{\tau} \partial _{\sigma} + (\partial _{t} \sigma)^2 \partial ^2 _{\sigma} \right) X^{\mu} \eta _{\mu \nu} = 0
-\end{align*}
 
 \newpage
 
@@ -1656,9 +1622,9 @@ Turn embbeding fields $X^{\mu}$ into vector in the spin-1 representation of $\ma
 \begin{equation*}
     \mc{D}_{a} X^{I} = \partial _{a} X^{I} + k \mc{A}^{I} _{a J} X^{J} ,
 \end{equation*}
-where $\mc{A}^{I} _{a J} (x) = (A^{\alpha \beta} _{a} (x) T_{\alpha \beta})^{I} _{\ J}$ is the background $\mathrm{Spin}(d , 1)$ connection pulledback to the WS, so the action becomes
+where $\mc{A}^{I} _{a J} (x) = (A^{\alpha \beta} _{a} (x) T_{\alpha \beta})^{I} _{\ J}$ is the WS $\mathrm{Spin}(d , 1)$ connection, so the action becomes
 \begin{equation*}
-    S = - \frac{T}{2} \int \diff ^2 x \sqrt{g} g^{a b} \mc{D}_{a} X^{I} \mc{D}_{b} X^{J} \eta _{I J} ,
+    S = - \frac{T}{2} \int \diff ^2 x \sqrt{- g} g^{a b} \mc{D}_{a} X^{I} \mc{D}_{b} X^{J} \eta _{I J} ,
 \end{equation*}
 where the WS metric can be recast in terms of auxiliary zweibein fields as
 \begin{equation*}
@@ -1765,107 +1731,5 @@ with
 \begin{equation*}
     X^{I} _{0 R} (\sigma ^{-}) = \frac{1}{2} x^{I} + \frac{1}{2} \alpha ' p^{I} \sigma ^{-} + i \sqrt{\frac{\alpha '}{2}} \sum _{n \neq 0} \frac{1}{n} \alpha ^{I} _{n} \e ^{- i n \sigma ^{-}} , \ \sigma ^{-} = \tau - \sigma .
 \end{equation*}
-
-For Schwarzchild space-time, we start by calculating the bulk vielbein field from the metric
-\begin{equation*}
-    \diff s^2 = - \left( 1 - \frac{r_{s} ^{d - 2}}{r^{d - 2}} \right) \diff t^2 + \frac{1}{1 - \dfrac{r_{s} ^{d - 2}}{r^{d - 2}}} \diff r^2 + r^2 \left( (\diff \phi ^{1}) ^{2} +  \sum _{i = 2} ^{d - 1} \prod _{j = 1} ^{i - 1} \sin ^2 (\phi ^{j}) (\diff \phi ^{i})^2 \right)
-\end{equation*}
-\begin{align*}
-    E^{0} _{\mu} \diff X^{\mu} & = \left( 1 - \left( \frac{r_s}{r} \right) ^{d - 2} \right) \diff t             \\
-    E^{1} _{\mu} \diff X^{\mu} & = \left( \frac{1}{1 - \left(\dfrac{r_{s}}{r} \right) ^{d - 2}} \right) \diff r \\
-    E^{2} _{\mu} \diff X^{\mu} & = r \diff \phi ^{1}                                                            \\
-    E^{3} _{\mu} \diff X^{\mu} & = r \sin (\phi ^{1}) \diff \phi ^{2}                                           \\
-    \vdots                                                                                                      \\
-    E^{d} _{\mu} \diff X^{\mu} & = r \prod _{j = 1} ^{d - 2} \sin (\phi ^{j}) \diff \phi ^{d - 1} ,
-\end{align*}
-from which we can get the spin connection as
-\begin{equation*}
-    A^{A B} _{\mu} = \frac{1}{2} E^{\nu A} (\partial _{\mu} E^{B} _{\nu} - \partial _{\nu} E^{B} _{\mu}) - \frac{1}{2} E^{\nu B} (\partial _{\mu} E^{A} _{\nu} - \partial _{\nu} E^{A} _{\mu}) - \frac{1}{2} E^{\lambda A} E^{\rho B} (\partial _{\lambda} E_{\rho C} - \partial _{\rho} E_{\lambda \C}) E^{C} _{\mu}
-\end{equation*}
-
-For FLRW metric
-\begin{equation*}
-    \diff s^2 = - \diff t^2 + (a(t))^2 \left( \sum _{i = 1} ^{d} (\diff X^{i})^2 \right)
-\end{equation*}
-the vielbein is
-\begin{align*}
-    E^{0} _{\mu} \diff X^{\mu}   & = \diff t                                \\
-    E^{(i)} _{\mu} \diff X^{\mu} & = a(t) \diff X^{i} , \ i = 1 , ... , d ,
-\end{align*}
-so the connection is
-\begin{equation*}
-    A^{0 (i)} _{t} = - A^{(i) 0} _{t} = 0
-\end{equation*}
-\begin{equation*}
-    A^{0 (i)} _{i} = - A^{(i) 0} _{i} = - \partial _{t} a(t)
-\end{equation*}
-\begin{equation*}
-    A^{0 (i)} _{j} = - A^{(i) 0} _{j} = 0
-\end{equation*}
-\begin{equation*}
-    A^{(i) (j)} _{t} = - A^{(j) (i)} _{t} = 0
-\end{equation*}
-\begin{equation*}
-    A^{(i) (j)} _{i} = - A^{(j) (i)} _{i} = - A^{(i) (j)} _{j} = A^{(j) (i)} _{j} = 0 ,
-\end{equation*}
-all other components being 0. From this, the full connection is
-\begin{align*}
-    \mc{A}_{t} & = 0                                                                                                                                                                                                                                                                                                                                         \\
-    \mc{A}_{i} & = A^{A B} _{i} T_{A B} = A^{0 (i)} _{i} T_{0 (i)} = - \partial _{t} a(t) \sum _{i = 1} ^{d} T_{0 i} = - \begin{bmatrix} 0                  & \partial _{t} a(t) & \partial _{t} a(t) & ... & \partial _{t} a(t) \\
-                \partial _{t} a(t) & 0                  & 0                  & ... & 0                  \\ \partial _{t} a(t) & 0 & 0 & ... & 0 \\ \vdots & & & & \vdots \\ \partial _{t} a(t) & 0 & 0 & ... & 0\end{bmatrix} , \ i = 1 , ... , d .
-\end{align*}
-Assuming pulledback connection retains its form,
-\begin{align*}
-    \mc{A}_{\tau}   & = 0                                                                                                                                   \\
-    \mc{A}_{\sigma} & =  - \partial _{\tau} a(\tau) \begin{bmatrix} 0 & 1 & 1 & ... & 1 \\
-                1 & 0 & 0 & ... & 0 \\ 1 & 0 & 0 & ... & 0 \\ \vdots & & & & \vdots \\ 1 & 0 & 0 & ... & 0\end{bmatrix}
-\end{align*}
-\begin{equation*}
-    \mc{A}_{\sigma} \mc{A}_{\sigma} = (\partial _{\tau} a(\tau))^2 \begin{bmatrix} d & 0 & ... & 0 \\ 0 & d & ... & 0 \\ \vdots & & & \vdots \\ 0 & 0 & ... & d \end{bmatrix}
-\end{equation*}
-\begin{align*}
-    \partial _{\tau} \mc{A}_{\sigma}   & = - \partial _{a} \partial _{\tau} a(\tau) \begin{bmatrix} 0 & 1 & 1 & ... & 1 \\
-                1 & 0 & 0 & ... & 0 \\ 1 & 0 & 0 & ... & 0 \\ \vdots & & & & \vdots \\ 1 & 0 & 0 & ... & 0\end{bmatrix} \\
-    \partial _{\sigma} \mc{A}_{\sigma} & = 0
-\end{align*}
-\begin{equation*}
-    \mc{A}_{\sigma} X = - \partial _{\tau} a(\tau) \begin{bmatrix} 0 & 1 & 1 & ... & 1 \\
-                1 & 0 & 0 & ... & 0 \\ 1 & 0 & 0 & ... & 0 \\ \vdots & & & & \vdots \\ 1 & 0 & 0 & ... & 0\end{bmatrix} \begin{bmatrix} X^{0} \\ X^{1} \\ X^{2} \\ \vdots \\ X^{d} \end{bmatrix} = - \partial _{\tau} a (\tau) \begin{bmatrix} \sum _{i = 1} ^{d} X^{i} \\ X^{0} \\ X^{0} \\ \vdots \\ X^{0} \end{bmatrix} .
-\end{equation*}
-
-Solution thus becomes
-\begin{equation*}
-    X (x) = - k^2 d \int \diff ^2 x' (\partial _{\tau} a (\tau '))^2 \underline{G} (x ; x') X (x')
-\end{equation*}
-where the Green's matrix satisfies
-\begin{equation*}
-    \left( \mathbb{1} \eta ^{a b} \partial _{a} \partial _{b} - 2 k \partial _{\tau} a (\tau) \sum _{i} T_{0 (i)} \partial _{\sigma} \right) \underline{G} (x ; x') = \mathbb{1} \delta (x ; x') .
-\end{equation*}
-
-\begin{equation*}
-    \sum _{i} T_{0 (i)} \underline{G} = \begin{bmatrix} 0 & 1 & ... & 1 \\ 1 & 0 & ... & 0 \\ \vdots & \vdots & & \vdots \\ 1 & 0 & ... & 0 \end{bmatrix} \begin{bmatrix} G^{0} _{\ 0} & G^{0} _{\ 1} & ... & G^{0} _{\ d} \\ G^{1} _{\ 0} & G^{1} _{\ 1} & ... & G^{1} _{\ d} \\ \vdots & \vdots & & \vdots \\ G^{d} _{\ 0} & G^{d} _{\ 1} & ... & G^{d} _{\ d} \end{bmatrix} = \begin{bmatrix} \sum _{i} G^{(i)} _{\ 0} & \sum _{i} G^{(i)} _{\ 1} & ... & \sum _{i} G^{(i)} _{\ d} \\ G^{0} _{\ 0} & G^{0} _{\ 1} & ... & G^{0} _{\ d} \\ \vdots & \vdots & & \vdots \\ G^{0} _{\ 0} & G^{0} _{\ 1} & ... & G^{0} _{\ d} \end{bmatrix} ,
-\end{equation*}
-thus the Green's matrix condition becomes
-\begin{equation*}
-    \eta ^{a b} \partial _{a} \partial _{b} \begin{bmatrix} G^{0} _{\ 0} & G^{0} _{\ 1} & ... & G^{0} _{\ d} \\ G^{1} _{\ 0} & G^{1} _{\ 1} & ... & G^{1} _{\ d} \\ \vdots & \vdots & & \vdots \\ G^{d} _{\ 0} & G^{d} _{\ 1} & ... & G^{d} _{\ d} \end{bmatrix} - 2 k \partial _{\tau} a (\tau) \partial _{\sigma} \begin{bmatrix} \sum _{i} G^{(i)} _{\ 0} & \sum _{i} G^{(i)} _{\ 1} & ... & \sum _{i} G^{(i)} _{\ d} \\ G^{0} _{\ 0} & G^{0} _{\ 1} & ... & G^{0} _{\ d} \\ \vdots & \vdots & & \vdots \\ G^{0} _{\ 0} & G^{0} _{\ 1} & ... & G^{0} _{\ d} \end{bmatrix} = \delta (x ; x') \begin{bmatrix} 1 & 0 & ... & 0 \\ 0 & 1 & ... & 0 \\ \vdots & \vdots & & \vdots \\ 0 & 0 & ... & 1 \end{bmatrix} .
-\end{equation*}
-For $x \neq x'$, we thus get
-\begin{align*}
-    \eta ^{a b} \partial _{a} \partial _{b} G^{0} _{\ J} - 2 k \Dot{a} \partial _{\sigma} \sum _{i} G^{(i)} _{\ J} & = 0 , \\
-    \eta ^{a b} \partial _{a} \partial _{b} G^{(i)} _{\ J} - 2 k \Dot{a} \partial _{\sigma} G^{0} _{\ J}           & = 0 .
-\end{align*}
-The second eqn tells us that $G^{1} _{\ J} = G^{2} _{\ J} = ... = G^{d} _{\ J}$, since the functions all satisfy the same eqn with same B.C, reducing the first eqn to
-\begin{equation*}
-    \eta ^{a b} \partial _{a} \partial _{b} G^{0} _{\ J} - 2 k d \Dot{a} \partial _{\sigma} G^{1} _{\ J} = 0 ,
-\end{equation*}
-leaving us with the almost symmetric system of eqns
-\begin{align*}
-    \eta ^{a b} \partial _{a} \partial _{b} G^{0} _{\ J} - 2 k d \Dot{a} \partial _{\sigma} G^{1} _{\ J} & = 0   \\
-    \eta ^{a b} \partial _{a} \partial _{b} G^{1} _{\ J} - 2 k \Dot{a} \partial _{\sigma} G^{0} _{\ J}   & = 0 .
-\end{align*}
-These can be solved with the use of the 1D wave Green's function $\Theta (|\sigma| - \tau)$ as in
-\begin{align*}
-    G^{0} _{\ J} = 2 k d \int _{0} ^{\sigma _{1}} \diff ^2 x'
-\end{align*}
 
 \end{document}
