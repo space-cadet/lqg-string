@@ -1731,15 +1731,30 @@ with
 \begin{equation*}
     X^{I} _{0 R} (\sigma ^{-}) = \frac{1}{2} x^{I} + \frac{1}{2} \alpha ' p^{I} \sigma ^{-} + i \sqrt{\frac{\alpha '}{2}} \sum _{n \neq 0} \frac{1}{n} \alpha ^{I} _{n} \e ^{- i n \sigma ^{-}} , \ \sigma ^{-} = \tau - \sigma .
 \end{equation*}
-This, however, does not amount to any motion in actual space-time, since with trivial connection the vector does not change after parallel transport. For a more interesting case, let's consider $A_{\tau} ^{\alpha \beta} = A_{\sigma} ^{\alpha \beta} = a \varepsilon ^{\alpha \beta}$, which amounts to flat background. The EoM turn into
+This, however, does not amount to any motion in actual space-time, since with trivial connection the vector does not change after parallel transport. For a more interesting case, let's consider $A_{\tau} ^{\alpha \beta} = A_{\sigma} ^{\alpha \beta} = a \varepsilon ^{\alpha \beta}$, which amounts to flat space-time. The EoM turn into
 \begin{equation*}
-    \left( \partial _{\sigma} ^2 - \partial _{\tau} ^2 \right) X^{I} + 2 k a (\varepsilon ^{\alpha \beta} T_{\alpha \beta})^{I} _{\ J} \left( \partial _{\sigma} - \partial _{\tau} \right) X^{J} + k^2 a^2 \left( \left( \varepsilon ^{\alpha \beta} T_{\alpha \beta} \right) ^{I} _{\ I'} \left( \varepsilon ^{\alpha ' \beta '} T_{\alpha ' \beta '} \right) ^{I'} _{\ J} \right) X^{J} = 0
+    \left( \partial _{\sigma} ^2 - \partial _{\tau} ^2 \right) X^{I} + 2 k a (\varepsilon ^{\alpha \beta} T_{\alpha \beta})^{I} _{\ J} \left( \partial _{\sigma} - \partial _{\tau} \right) X^{J} = 0
 \end{equation*}
-
-\newpage
-
 \begin{equation*}
-    \varepsilon ^{\alpha \beta} T_{\alpha \beta} = 2 \sum _{\alpha , \beta} T_{\alpha \beta} = 2 \begin{bmatrix} 0 & 1 & 1 & ... & 1 \\ 1 & 0 & 1 & ... & (-1)^{d} \\ 1 & - 1 & 0 & ... & (-1)^{d - 1} \\ \vdots & \vdots & \vdots & \ddots & \vdots \\ 1 & (-1)^{d + 1} & (-1)^{d} & ... & 0 \end{bmatrix}
+    \left( \partial _{\sigma} ^2 - \partial _{\tau} ^2 \right) \begin{bmatrix} X^{0} \\ X^{1} \\ X^{2} \\ \vdots \\ X^{d} \end{bmatrix} + 4 k a \left( \partial _{\sigma} - \partial _{\tau} \right) \begin{bmatrix} 0 & 1 & 1 & ... & 1 \\ 1 & 0 & 1 & ... & 1 \\ 1 & - 1 & 0 & ... & 1 \\ \vdots & \vdots & \vdots & \ddots & \vdots \\ 1 & -1 & -1 & ... & 0 \end{bmatrix} \begin{bmatrix} X^{0} \\ X^{1} \\ X^{2} \\ \vdots \\ X^{d} \end{bmatrix} = 0
+\end{equation*}
+\begin{equation*}
+    \begin{bmatrix} \left( \partial _{\sigma} ^2 - \partial _{\tau} ^2 \right) X^{0} + 4 k a \left( \partial _{\sigma} - \partial _{\tau} \right) \sum _{i > 0} X^{i} \\ \left( \partial _{\sigma} ^2 - \partial _{\tau} ^2 \right) X^{1} + 4 k a \left( \partial _{\sigma} - \partial _{\tau} \right) \sum _{i \neq 1} X^{i} \\ \left( \partial _{\sigma} ^2 - \partial _{\tau} ^2 \right) X^{2} + 4 k a \left( \partial _{\sigma} - \partial _{\tau} \right) \left( X^{0} - X^{1} + \sum _{i > 2} X^{i} \right) \\ \vdots \\ \left( \partial _{\sigma} ^2 - \partial _{\tau} ^2 \right) X^{d} + 4 k a \left( \partial _{\sigma} - \partial _{\tau} \right) \left( X^{0} - \sum _{i = 1} ^{d - 1} X^{i} \right) \end{bmatrix} = 0
+\end{equation*}
+\begin{equation*}
+    \left( \partial _{\sigma} ^2 - \partial _{\tau} ^2 \right) X^{I} + 4 k a \left( \partial _{\sigma} - \partial _{\tau} \right) \left( (\mathrm{sgn}(I))^2 X^{0} + \sum _{i > 0} \mathrm{sgn}(i - I) X^{i} \right) = 0
+\end{equation*}
+\begin{equation*}
+    \left( \partial _{\sigma} - \partial _{\tau} \right) \left( \left( \partial _{\sigma} + \partial _{\tau} \right) X^{I} + 4 k a \left( (\mathrm{sgn}(I))^2 X^{0} + \sum _{i > 0} \mathrm{sgn}(i - I) X^{i} \right) \right) = 0
+\end{equation*}
+\begin{equation*}
+    \left( \partial _{\sigma} + \partial _{\tau} \right) X^{I} + 4 k a \left( (\mathrm{sgn}(I))^2 X^{0} + \sum _{i > 0} \mathrm{sgn}(i - I) X^{i} \right) = C^{I} _{1} . (\tau + \sigma) , \ C^{I} \in \mathbb{C}
+\end{equation*}
+\begin{equation*}
+    \left( \partial _{\sigma} + \partial _{\tau} \right) X^{I} = C^{I} _{1} . (\tau + \sigma) - 4 k a \left( (\mathrm{sgn}(I))^2 X^{0} + \sum _{i > 0} \mathrm{sgn}(i - I) X^{i} \right)
+\end{equation*}
+\begin{equation*}
+    X^{I} = \frac{1}{2} C^{I} _{1} . \left( \tau ^2 + \sigma ^2 \right) + C^{I} _{2} . \left( \tau - \sigma \right) - 4 k a \int \diff ^2 x' \left( (\mathrm{sgn}(I))^2 X^{0} + \sum _{i > 0} \mathrm{sgn}(i - I) X^{i} \right)
 \end{equation*}
 
 \end{document}
