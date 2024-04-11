@@ -1519,16 +1519,16 @@ When translating the constraints into quantum operators, in $L_{n , p}$ we have 
 \end{equation*}
 The ambiguity manifests in the imposition of this constraint as
 \begin{equation*}
-    \bra{\mathrm{phys }'} (\Hat{\widetilde{L}}_{n , - n} - c_{n}) \ket{\mathrm{phys}} = 0 ,
+    \bra{\mathrm{phys }'} \left( \sum _{n} \left( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) \widetilde{L}_{n , - n} \right) - c \right) \ket{\mathrm{phys}} = 0 ,
 \end{equation*}
-for some sequence $c_{n}$ with $c_{0} = 0$ since $\Hat{\widetilde{L}}_{0 , 0}$ has no ordering ambiguities. Since classically
+for some costant $c$. Since classically
 \begin{align*}
     M^2 & = \frac{1}{(4 \pi (\alpha ')^2)^2} \left( (2 \pi \alpha ' \mu)^{2} x^{\mu} x_{\mu} - \sum _{n \neq 0} \left( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) \widetilde{L}_{n , - n} \right) \right) =                         \\
         & = \frac{1}{(4 \pi (\alpha ')^2)^2} \left( (2 \pi \alpha ' \mu)^{2} x^{\mu} x_{\mu} - \sum _{n \neq 0} \left( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) a^{\mu} _{n} (a^{\nu} _{n})^{*} \eta _{\mu \nu} \right) \right) .
 \end{align*}
-we see that the string mass spectrum will be affected by this sequence
+we see that the string mass spectrum will be affected by this costant
 \begin{equation*}
-    \Hat{M}^2 = \frac{1}{(4 \pi (\alpha ')^2)^2} \left( (2 \pi \alpha ' \mu)^{2} \Hat{x}^{\mu} \Hat{x}_{\mu} - \sum _{n \neq 0} \left( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) \left( (\Hat{a}^{\mu} _{n})^{\dagger} \Hat{a}^{\nu} _{n} \eta _{\mu \nu} - c_{n} \right) \right) \right)
+    \Hat{M}^2 = \frac{1}{(4 \pi (\alpha ')^2)^2} \left( (2 \pi \alpha ' \mu)^{2} \Hat{x}^{\mu} \Hat{x}_{\mu} - \left( \sum _{n \neq 0} \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) (\Hat{a}^{\mu} _{n})^{\dagger} \Hat{a}^{\nu} _{n} \eta _{\mu \nu} - c \right) \right)
 \end{equation*}
 
 The commutation relations between the $L$'s are inherited from the bracket relations
@@ -1601,11 +1601,74 @@ so in actuallity the constraint algebra has no anomalies.
 
 Let us now denote the ground state of momentum $p^{\mu}$ as $\ket{0 ; p}$. The mass-shell condition
 \begin{equation*}
-    \Hat{M}^2 = \frac{1}{(4 \pi (\alpha ')^2)^2} \left( (2 \pi \alpha ' \mu)^{2} \Hat{x}^{\mu} \Hat{x}_{\mu} - \sum _{n \neq 0} \left( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) \left( (\Hat{a}^{\mu} _{n})^{\dagger} \Hat{a}^{\nu} _{n} \eta _{\mu \nu} - c_{n} \right) \right) \right)
+    \Hat{M}^2 = \frac{1}{(4 \pi (\alpha ')^2)^2} \left( (2 \pi \alpha ' \mu)^{2} \Hat{x}^{\mu} \Hat{x}_{\mu} - \left( \sum _{n \neq 0} \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) (\Hat{a}^{\mu} _{n})^{\dagger} \Hat{a}^{\nu} _{n} \eta _{\mu \nu} - c \right) \right)
 \end{equation*}
 implies that
 \begin{equation*}
-
+    \bra{0 ; p} \Hat{M}^2 \ket{0 ; p} = \frac{1}{(4 \pi (\alpha ')^2)^2} \left( (2 \pi \alpha ' \mu)^{2} \bra{0 ; p} \Hat{x}^{\mu} \Hat{x}_{\mu} \ket{0 ; p} - \left( \sum _{n \neq 0} \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) \bra{0 ; p} (\Hat{a}^{\mu} _{n})^{\dagger} \Hat{a}^{\nu} _{n} \eta _{\mu \nu} \ket{0 ; p} - \bra{0 ; p} c \ket{0 ; p} \right) \right)
+\end{equation*}
+\begin{equation*}
+    M^2 = \frac{1}{(4 \pi (\alpha ')^2)^2} \left( (2 \pi \alpha ' \mu)^{2} \frac{\partial \psi ^{*} (p)}{\partial p_{\mu}} \frac{\partial \psi (p)}{\partial p^{\mu}} + c \right)
+\end{equation*}
+\begin{equation*}
+    (4 \pi (\alpha ')^2)^2 p^2 = - \left( (2 \pi \alpha ' \mu)^{2} \left| \frac{\partial \psi (p)}{\partial p} \right| ^2 + c \right)
+\end{equation*}
+Now looking at the first excited state $\zeta _{\mu} (\Hat{a}^{\mu} _{1})^{\dagger} \ket{0 ; p}$ with $\zeta _{\mu} = \zeta _{\mu} (p)$ being the polarization covector, the mass-shell now reads
+\begin{multline*}
+    \bra{0 ; p} \Hat{a}^{\mu} _{1} \zeta _{\mu} \Hat{M}^2 \zeta _{\nu} (\Hat{a}^{\nu} _{1})^{\dagger} \ket{0 ; p} = \frac{1}{(4 \pi (\alpha ')^2)^2} \Bigg( (2 \pi \alpha ' \mu)^{2} \bra{0 ; p} \Hat{a}^{\mu} _{1} \zeta _{\mu} \Hat{x}^{\mu '} \Hat{x}_{\mu '} \zeta _{\nu} (\Hat{a}^{\nu} _{1})^{\dagger} \ket{0 ; p} - \\
+    - \left( \sum _{n \neq 0} \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) \bra{0 ; p} \Hat{a}^{\mu} _{1} \zeta _{\mu} (\Hat{a}^{\mu '} _{n})^{\dagger} \Hat{a}^{\nu '} _{n} \eta _{\mu ' \nu '} \zeta _{\nu} (\Hat{a}^{\nu} _{1})^{\dagger} \ket{0 ; p} - \bra{0 ; p} \Hat{a}^{\mu} _{1} \zeta _{\mu} c \zeta _{\nu} (\Hat{a}^{\nu} _{1})^{\dagger} \ket{0 ; p} \right) \Bigg)
+\end{multline*}
+\begin{equation*}
+    M^2 \zeta ^{\mu} \zeta _{\mu} = \frac{1}{(4 \pi (\alpha ')^2)^2} \left( (2 \pi \alpha ' \mu)^{2} \left| \frac{\partial \psi (p)}{\partial p} \right| ^2 \zeta ^{\mu} \zeta _{\mu} - \left( \frac{1}{1 + \mu ^2} - 1 \right) \zeta ^{\mu} \zeta _{\mu} + c \zeta ^{\mu} \zeta _{\mu} \right)
+\end{equation*}
+\begin{equation*}
+    (4 \pi (\alpha ')^2)^2 p^2 = - \left( (2 \pi \alpha ' \mu)^{2} \left| \frac{\partial \psi (p)}{\partial p} \right| ^2 - \left( \frac{1}{1 + \mu ^2} - 1 \right) + c \right) .
+\end{equation*}
+The auxiliary $\Hat{\widetilde{L}}_{1 , 0} \zeta _{\mu '} (\Hat{a}^{\mu '} _{1})^{\dagger} \ket{0 ; p} = 0$ condition implies
+\begin{equation*}
+    \Hat{\widetilde{L}}_{1 , 0} \zeta _{\mu '} (\Hat{a}^{\mu '} _{1})^{\dagger} \ket{0 ; p} = 0
+\end{equation*}
+\begin{equation*}
+    (\Hat{a}^{\mu} _{0})^{\dagger} \Hat{a}^{\nu} _{1} \eta _{\mu \nu} \zeta _{\mu '} (\Hat{a}^{\mu '} _{1})^{\dagger} \ket{0 ; p} = 0
+\end{equation*}
+\begin{equation*}
+    \zeta _{\mu} (\Hat{a}^{\mu} _{0})^{\dagger} \ket{0 ; p} = 0
+\end{equation*}
+\begin{equation*}
+    \zeta _{\mu} \left( 2 \pi \alpha ' \mu \Hat{x}^{\mu} - 4 \pi (\alpha ')^2 i \Hat{p}^{\mu} \right) \ket{0 ; p} = 0
+\end{equation*}
+\begin{equation*}
+    - 2 \pi \alpha ' \mu i \zeta _{\mu} \frac{\partial \psi (p)}{\partial p_{\mu}} = 4 \pi (\alpha ')^2 i \zeta _{\mu} p^{\mu}
+\end{equation*}
+\begin{equation*}
+    \zeta _{\mu} p^{\mu} = - \frac{\mu}{2 \alpha '} \zeta _{\mu} \frac{\partial \psi (p)}{\partial p_{\mu}} .
+\end{equation*}
+If the momentum wave function is chosen to be (need to justify this)
+\begin{equation*}
+    \psi (p) = \frac{\alpha '}{\mu} p^2 ,
+\end{equation*}
+we get that $\zeta _{\mu} p^{\mu} = 0$. Using this in the mass-shell condition for the first excited state yields
+\begin{equation*}
+    (4 \pi (\alpha ')^2)^2 p^2 = - \left( (2 \pi \alpha ' \mu)^{2} 4 \frac{(\alpha ')^2}{\mu ^2} p^2 - \left( \frac{1}{1 + \mu ^2} - 1 \right) + c \right)
+\end{equation*}
+\begin{equation*}
+    2 (4 \pi (\alpha ')^2)^2 p^2 = \frac{1}{1 + \mu ^2} - 1 - c ,
+\end{equation*}
+and for the ground state
+\begin{equation*}
+    2 (4 \pi (\alpha ')^2)^2 p^2 = - c .
+\end{equation*}
+In general, the $n$-th excited state will have momentum given by
+\begin{equation*}
+    2 (4 \pi (\alpha ')^2)^2 p^2 = \frac{n^2}{n^2 + \mu ^2} - 1 - c .
+\end{equation*}
+The norm of the states is given by $\zeta _{\mu} \zeta ^{\mu}$, thus if we choose $p$ to lie on the $(0 , 1)$-plane, then the $D - 2$ spacelike polarizations normal to that plane clearly have positive norm. If we choose $c$ such that the $n = 3$ (we choose this because the solution only has $n = 0 , 1 , 2 , 3$ terms by the $\widetilde{L}$ constraints) excited state is a tachyon with $p^2 > 0$, then $p$ can be taken to have no time component and thus $\zeta$ is time-like with negative norm. If $p^2 < 0$, $p$ can be chosen to ONLY have a time component, leaving $\zeta$ spacelike with positive norm again. At last, if $p^2 = 0$, then $\zeta$ is proportional to $p$ with zero norm. Thus, for the absence of ghosts we require
+\begin{equation*}
+    c \geq \frac{9}{9 + \mu ^2} - 1 .
+\end{equation*}
+In the boundary case, the 3rd excited vector state is massless and the rest (including the scalar ground state) are tachyons... This analysis, however, is to get spin 1 particles from the closed string. The actual massless particle we want from closed strings is a symmetric spin 2 particle, so let's consider now the state $\zeta _{\mu \nu} (\Hat{a}^{\mu} _{3})^{\dagger} (\Hat{a}^{\nu} _{3})^{\dagger} \ket{0 ; p}$ where $\zeta _{\mu \nu} = \zeta _{\nu \mu}$ is the polarization tensor. The mass-shell is
+\begin{equation*}
+    \bra{0 ; p} \Hat{a}^{\alpha} _{3} \Hat{a}^{\beta} _{3} \zeta _{\alpha \beta} \Hat{M}^2 \zeta _{\mu \nu} (\Hat{a}^{\mu} _{3})^{\dagger} (\Hat{a}^{\nu} _{3})^{\dagger} \ket{0 ; p} =
 \end{equation*}
 
 \newpage
