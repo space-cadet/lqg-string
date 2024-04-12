@@ -861,10 +861,10 @@ leading to
     = - \frac{T}{2} \int \diff ^2 x \sqrt{- g} \left( g^{a b} + \frac{\sqrt{k \Delta}}{2 g} \delta ^{a b} + \frac{k \Delta}{2 g} g^{a b} - \frac{k \Delta}{g} g^{a b} + \mc{O} \left( \frac{(k \Delta)^{3/2}}{g^2} ; \frac{(k \Delta)^2}{g^2} \right) \right) \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} \approx
 \end{equation*}
 \begin{equation*}
-    \approx - \frac{T}{2} \int \diff ^2 x \left( \left( \sqrt{- g} + \frac{k \Delta}{2 \sqrt{- g}} \right) g^{a b} - \frac{\sqrt{k \Delta}}{2 \sqrt{- g}} \delta ^{a b} \right) \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} = S_{P} + S_{c} ,
+    \approx - \frac{T}{2} \int \diff ^2 x \left( \sqrt{- g} g^{a b} - \frac{\sqrt{k \Delta}}{2 \sqrt{- g}} \delta ^{a b} \right) \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} = S_{P} + S_{c} ,
 \end{equation*}
 \begin{equation*}
-    S_{c} = - \frac{T \sqrt{k \Delta}}{4} \int \diff ^2 x \sqrt{- g}^{-1} \left( \sqrt{k \Delta} g^{a b} - \delta ^{a b} \right) \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu}
+    S_{c} = \frac{T \sqrt{k \Delta}}{4} \int \diff ^2 x \sqrt{- g}^{-1} \delta ^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu}
 \end{equation*}
 
 \subsection{EoMs}
@@ -873,25 +873,24 @@ Since the total action is the Polyakov action plus a correction term, let's calc
 \subsubsection{W.r.t $g$}
 
 \begin{align*}
-    \frac{\delta S_{c}}{\delta g^{c d}} & = \left( \frac{\partial \sqrt{- g}^{-1}}{\partial g^{c d}} \left( \sqrt{k \Delta} g^{a b} - \delta ^{a b} \right) - \sqrt{k \Delta} \sqrt{- g}^{-1} \frac{\partial g^{a b}}{\partial g^{c d}} \right) \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} = \\
-                                        & = \left( - \frac{1}{2 \sqrt{- g}^{-1}} g_{c d} \left( \sqrt{k \Delta} g^{a b} - \delta ^{a b} \right) - \sqrt{k \Delta} \sqrt{- g}^{-1} \delta ^{(a} _{c} \delta ^{b)} _{d} \right) \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} =                   \\
-                                        & = - \left( \frac{1}{2} \sqrt{- g} g_{c d} \left( \sqrt{k \Delta} g^{a b} - \delta ^{a b} \right) + \sqrt{k \Delta} \sqrt{- g}^{-1} \delta ^{a} _{(c} \delta ^{b} _{d)} \right) \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu}
+    \frac{\delta S_{c}}{\delta g^{c d}} & = \frac{\partial \sqrt{- g}^{- 1}}{\partial g^{c d}} \delta ^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} = \\
+                                        & = - \frac{1}{2 \sqrt{- g}^{-1}} g_{c d} \delta ^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} =              \\
+                                        & = - \frac{1}{2} \sqrt{- g} g_{c d} \delta ^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu}
 \end{align*}
 \begin{equation*}
     \Downarrow
 \end{equation*}
-\begin{multline*}
-    T_{c d} := \sqrt{- g} \partial _{c} X^{\mu} \partial _{d} X^{\nu} G_{\mu \nu} - \frac{1}{2} \sqrt{- g} g_{c d} g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} - \\
-    - \frac{\sqrt{k \Delta}}{2} \left( \sqrt{k \Delta} \sqrt{- g}^{-1} \partial _{c} X^{\mu} \partial _{d} X^{\nu} G_{\mu \nu} + \frac{\sqrt{- g}}{2} g_{c d} \left( \sqrt{k \Delta} g^{a b} - \delta ^{a b} \right) \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} \right) = 0
-\end{multline*}
 \begin{equation*}
-    T_{c d} = \left( 1 - \frac{k \Delta}{2 (- g)} \right) \partial _{c} X^{\mu} \partial _{d} X^{\nu} G_{\mu \nu} - \frac{1}{2} g_{c d} \left( \left( 1 + \frac{k \Delta}{2} \right) g^{a b} - \frac{\sqrt{k \Delta}}{2} \delta ^{a b} \right) \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} = 0
+    T_{c d} := \partial _{c} X^{\mu} \partial _{d} X^{\nu} G_{\mu \nu} - g_{c d} \left( \frac{1}{2} g^{a b} - \frac{\sqrt{k \Delta}}{4} \delta ^{a b} \right) \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} = 0
 \end{equation*}
 \begin{equation*}
     \Downarrow
 \end{equation*}
 \begin{equation*}
-    g_{c d} = 2 \frac{F^{-}}{f'} \partial _{c} X^{\mu} \partial _{d} X^{\nu} G_{\mu \nu} , \ f' = \left( \left( 1 + \frac{k \Delta}{2} \right) g^{a b} - \frac{\sqrt{k \Delta}}{2} \delta ^{a b} \right) \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu}
+    g_{c d} = 2 f' \partial _{c} X^{\mu} \partial _{d} X^{\nu} G_{\mu \nu} ,
+\end{equation*}
+\begin{equation*}
+    \frac{1}{f'} = \left( g^{a b} - \frac{\sqrt{k \Delta}}{2} \delta ^{a b} \right) \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu}
 \end{equation*}
 
 \newpage
