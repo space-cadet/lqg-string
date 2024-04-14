@@ -1661,14 +1661,112 @@ In general, the $n$-th excited state will have momentum given by
 \begin{equation*}
     2 (4 \pi (\alpha ')^2)^2 p^2 = \frac{n^2}{n^2 + \mu ^2} - 1 - c .
 \end{equation*}
-The norm of the states is given by $\zeta _{\mu} \zeta ^{\mu}$, thus if we choose $p$ to lie on the $(0 , 1)$-plane, then the $D - 2$ spacelike polarizations normal to that plane clearly have positive norm. If we choose $c$ such that the $n = 3$ (we choose this because the solution only has $n = 0 , 1 , 2 , 3$ terms by the $\widetilde{L}$ constraints) excited state is a tachyon with $p^2 > 0$, then $p$ can be taken to have no time component and thus $\zeta$ is time-like with negative norm. If $p^2 < 0$, $p$ can be chosen to ONLY have a time component, leaving $\zeta$ spacelike with positive norm again. At last, if $p^2 = 0$, then $\zeta$ is proportional to $p$ with zero norm. Thus, for the absence of ghosts we require
+The norm of the states is given by $\zeta _{\mu} \zeta ^{\mu}$, thus if we choose $p$ to lie on the $(0 , 1)$-plane, then the $D - 2$ spacelike polarizations normal to that plane clearly have positive norm. If we choose $c$ such that the $n = d$ , $d = (D - 1)$ (we choose this because the solution only has $n = 0 , 1 , 2 , ... , d$ terms by the $\widetilde{L}$ constraints) excited state is a tachyon with $p^2 > 0$, then $p$ can be taken to have no time component and thus $\zeta$ is time-like with negative norm. If $p^2 < 0$, $p$ can be chosen to ONLY have a time component, leaving $\zeta$ spacelike with positive norm again. At last, if $p^2 = 0$, then $\zeta$ is proportional to $p$ with zero norm. Thus, for the absence of ghosts we require
 \begin{equation*}
-    c \geq \frac{9}{9 + \mu ^2} - 1 .
+    c \geq \frac{d^2}{d^2 + \mu ^2} - 1 .
 \end{equation*}
-In the boundary case, the 3rd excited vector state is massless and the rest (including the scalar ground state) are tachyons... This analysis, however, is to get spin 1 particles from the closed string. The actual massless particle we want from closed strings is a symmetric spin 2 particle, so let's consider now the state $\zeta _{\mu \nu} (\Hat{a}^{\mu} _{3})^{\dagger} (\Hat{a}^{\nu} _{3})^{\dagger} \ket{0 ; p}$ where $\zeta _{\mu \nu} = \zeta _{\nu \mu}$ is the polarization tensor. The mass-shell is
+In the boundary case, the 3rd excited vector state is massless and the rest (including the scalar ground state) are tachyons... This analysis, however, is to get spin 1 particles from the closed string. The actual massless particle we want from closed strings is a symmetric spin 2 particle, so let's consider now the state $\zeta _{\mu \nu} (\Hat{a}^{\mu} _{d})^{\dagger} (\Hat{a}^{\nu} _{d})^{\dagger} \ket{0 ; p}$ where $\zeta _{\mu \nu} = \zeta _{\nu \mu}$ is the polarization tensor. The mass-shell is
+\begin{multline*}
+    \bra{0 ; p} \Hat{a}^{\alpha} _{d} \Hat{a}^{\beta} _{d} \zeta _{\alpha \beta} \Hat{M}^2 \zeta _{\mu \nu} (\Hat{a}^{\mu} _{d})^{\dagger} (\Hat{a}^{\nu} _{d})^{\dagger} \ket{0 ; p} = \frac{1}{(4 \pi (\alpha ')^2)^2} \Bigg( (2 \pi \alpha ' \mu)^2 \bra{0 ; p} \Hat{a}^{\alpha} _{d} \Hat{a}^{\beta} _{d} \zeta _{\alpha \beta} \Hat{x}^{\mu '} \Hat{x}_{\mu '} \zeta _{\mu \nu} (\Hat{a}^{\mu} _{d})^{\dagger} (\Hat{a}^{\nu} _{d})^{\dagger} \ket{0 ; p} - \\
+    - \Bigg( \sum _{n \neq 0} \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) \bra{0 ; p} \Hat{a}^{\alpha} _{d} \Hat{a}^{\beta} _{d} \zeta _{\alpha \beta} (\Hat{a}^{\mu '} _{n})^{\dagger} \Hat{a}^{\nu '} _{n} \eta _{\mu ' \nu '} \zeta _{\mu \nu} (\Hat{a}^{\mu} _{d})^{\dagger} (\Hat{a}^{\nu} _{d})^{\dagger} \ket{0 ; p} - \bra{0 ; p} \Hat{a}^{\alpha} _{d} \Hat{a}^{\beta} _{d} \zeta _{\alpha \beta} c \zeta _{\mu \nu} (\Hat{a}^{\mu} _{d})^{\dagger} (\Hat{a}^{\nu} _{d})^{\dagger} \ket{0 ; p} \Bigg) \Bigg)
+\end{multline*}
 \begin{equation*}
-    \bra{0 ; p} \Hat{a}^{\alpha} _{3} \Hat{a}^{\beta} _{3} \zeta _{\alpha \beta} \Hat{M}^2 \zeta _{\mu \nu} (\Hat{a}^{\mu} _{3})^{\dagger} (\Hat{a}^{\nu} _{3})^{\dagger} \ket{0 ; p} =
+    M^2 \zeta _{\mu \nu} \zeta ^{\mu \nu} = \frac{1}{(4 \pi (\alpha ')^2)^2} \Bigg( (2 \pi \alpha ' \mu)^2 \left| \frac{\partial \psi (p)}{\partial p} \right| ^2 \zeta _{\mu \nu} \zeta ^{\mu \nu} - \left( 2 \left( \frac{d^2}{d^2 + \mu ^2} - 1 \right) \zeta _{\mu \nu} \zeta ^{\mu \nu} - c \zeta _{\mu \nu} \zeta ^{\mu \nu} \right) \Bigg)
 \end{equation*}
+\begin{equation*}
+    (4 \pi (\alpha ')^2)^2 p^2 = - \Bigg( (2 \pi \alpha ' \mu)^2 \left| \frac{\partial \psi (p)}{\partial p} \right| ^2 - \left( 2 \left( \frac{d^2}{d^2 + \mu ^2} - 1 \right) - c \right) \Bigg)
+\end{equation*}
+\begin{equation*}
+    2 (4 \pi (\alpha ')^2)^2 p^2 = 2 \left( \frac{d^2}{d^2 + \mu ^2} - 1 \right) - c .
+\end{equation*}
+Using the auxiliary $\Hat{\widetilde{L}}_{d , 0} \zeta _{\mu \nu} (\Hat{a}^{\mu} _{d})^{\dagger} (\Hat{a}^{\nu} _{d})^{\dagger} \ket{0 ; p} = 0$ condition implies
+\begin{equation*}
+    \Hat{\widetilde{L}}_{d , 0} \zeta _{\mu \nu} (\Hat{a}^{\mu} _{d})^{\dagger} (\Hat{a}^{\nu} _{d})^{\dagger} \ket{0 ; p} = 0
+\end{equation*}
+\begin{equation*}
+    (\Hat{a}^{\mu '} _{0})^{\dagger} \Hat{a}^{\nu '} _{d} \eta _{\mu ' \nu '} \zeta _{\mu \nu} (\Hat{a}^{\mu} _{d})^{\dagger} (\Hat{a}^{\nu} _{d})^{\dagger} \ket{0 ; p} = 0
+\end{equation*}
+\begin{equation*}
+    \left( (\Hat{a}^{\mu '} _{0})^{\dagger} \eta _{\mu ' \nu '} \zeta _{\mu \nu} \eta ^{\nu ' \mu} (a^{\nu} _{d})^{\dagger} + (\Hat{a}^{\mu '} _{0})^{\dagger} \eta _{\mu ' \nu '} \zeta _{\mu \nu} (\Hat{a}^{\mu} _{d})^{\dagger} \Hat{a}^{\nu '} _{d} (\Hat{a}^{\nu} _{d})^{\dagger} \right) \ket{0 ; p} = 0
+\end{equation*}
+\begin{equation*}
+    \left( (\Hat{a}^{\mu '} _{0})^{\dagger} \eta _{\mu ' \nu '} \zeta _{\mu \nu} \eta ^{\nu ' \mu} (a^{\nu} _{d})^{\dagger} + (\Hat{a}^{\mu '} _{0})^{\dagger} \eta _{\mu ' \nu '} \zeta _{\mu \nu} (\Hat{a}^{\mu} _{d})^{\dagger} \eta ^{\nu ' \nu} \right) \ket{0 ; p} = 0
+\end{equation*}
+\begin{equation*}
+    2 \zeta _{\mu \nu} (\Hat{a}^{\mu} _{0})^{\dagger} (\Hat{a}^{\nu} _{d})^{\dagger} \ket{0 ; p} = 0
+\end{equation*}
+\begin{equation*}
+    \zeta _{\mu \nu} (\Hat{a}^{\nu} _{d})^{\dagger} \left( 2 \pi \alpha ' \mu \Hat{x}^{\mu} - 4 \pi (\alpha ')^2 i \Hat{p}^{\mu} \right) \ket{0 ; p} = 0
+\end{equation*}
+\begin{equation*}
+    \zeta _{\mu \nu} \left( - 2 \pi \alpha ' \mu i \frac{\partial \psi (p)}{\partial p_{\mu}} - 4 \pi (\alpha ')^2 i p^{\mu} \right) (\Hat{a}^{\nu} _{d})^{\dagger} \ket{0} = 0
+\end{equation*}
+\begin{equation*}
+    \zeta _{\mu \nu} p^{\mu} (\Hat{a}^{\nu} _{d})^{\dagger} \ket{0} = 0 ,
+\end{equation*}
+implying that
+\begin{equation*}
+    \zeta _{\mu \nu} p^{\mu} = \zeta _{\mu \nu} p^{\nu} = 0 .
+\end{equation*}
+Since the norm of the spin-2 states is given by $\zeta ^{\mu \nu} \zeta _{\mu \nu}$, we need those to not be negative. Since $\zeta$ is symmetric and we work in $(- , + , + , ...)$ signature, $\zeta ^{\mu \nu} \zeta _{\mu \nu} \geq 0$ always hold, so we just need to choose $c$ such that we get ate leats 1 massless spin-2 state. For that, we see that
+\begin{equation*}
+    c = 2 \left( \frac{n^2}{n^2 + \mu ^2} - 1 \right)
+\end{equation*}
+does the trick for the $n$-th state, and since for the non-existence of ghosts in the spin-1 states we required
+\begin{equation*}
+    c \geq \frac{d^2}{d^2 + \mu ^2} - 1 ,
+\end{equation*}
+which is negative, we can thus choose
+\begin{equation*}
+    c \equiv \frac{2 d^2}{d^2 + \mu ^2} - 2 ,
+\end{equation*}
+leaving the $d$-th spin-2 state massless, the rest being tachyons... This, however, is if we impose that one spin-2 state have to be massless. Since granular space-time affects wave propagation speed, in the effective limit gravitons might be effectively massive, thus we can get rid of the tachyons by letting $c > 0$ if need be.
+
+Let's now analyse spurious states to see the conditions to maximize 0-norm states. A physical state $\ket{\phi}$ is a state satisfying the constraints
+\begin{align*}
+    \Hat{L}_{n , m} \ket{\phi}                                                                                                                & = 0 , \ \forall n , m \in \mathbb{Z} \\
+    \Hat{\widetilde{L}}_{n , m} \ket{\phi}                                                                                                    & = 0 , \ n \neq - m                   \\
+    \left( \sum _{n} \left( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) \Hat{\widetilde{L}}_{n , - n} \right) - c \right) \ket{\phi} & = 0 .
+\end{align*}
+A spurious state $\ket{\psi}$ is a state satisfying the last constraint and orthogonal to all physical states, i.e,
+\begin{equation*}
+    \left( \sum _{n} \left( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) \Hat{\widetilde{L}}_{n , - n} \right) - c \right) \ket{\psi} = 0 ,
+\end{equation*}
+\begin{equation*}
+    \langle \phi | \psi \rangle = 0 .
+\end{equation*}
+Spurious states can be written in the from
+\begin{equation*}
+    \ket{\psi} = \sum _{n \neq - m} \Hat{\widetilde{L}}_{n , m} \ket{\chi _{n , m}}
+\end{equation*}
+with $\ket{\chi _{n , m}}$ satisfying
+\begin{equation*}
+    \left( \sum _{n} \left( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) \Hat{\widetilde{L}}_{n , - n} \right) - c - k - p \right) \ket{\chi _{k , p}} = 0 .
+\end{equation*}
+To see that this state is indeed orthogonal to $\ket{\phi}$, we perform the inner product
+\begin{equation*}
+    \langle \phi | \psi \rangle = \sum _{n \neq - m} \bra{\phi} \Hat{\widetilde{L}}_{n , m} \ket{\chi _{n , m}} = \sum _{n \neq - m} \bra{\chi _{n , m}} \Hat{\widetilde{L}}_{- m , - n} \ket{\phi} ^{*} \equiv 0 .
+\end{equation*}
+The interesting case is when $\ket{\psi}$ is both physical AND spurious, since by construction those states have 0-norm, being orthogonal to every physical state, including themselves. Such states can be constructed by considering spurious states of the form
+\begin{equation*}
+    \ket{\psi _{n , n'}} = \sum _{m} \Hat{\widetilde{L}}_{n , m} \ket{\widetilde{\chi}_{n' , m}}
+\end{equation*}
+where $\ket{\widetilde{\chi}_{n' , m}}$ satisfies
+\begin{align*}
+    \Hat{\widetilde{L}}_{k , p} \ket{\widetilde{\chi}_{n' , m}}                                                                                                                  & = 0 , \ k \neq - p \\
+    \left( \sum _{n'} \left( \left( \left( \frac{n'}{E_{n'}} \right) ^2 - 1 \right) \Hat{\widetilde{L}}_{n' , - n'} \right) - c - n' - m \right) \ket{\widetilde{\chi}_{n' , m}} & = 0 .
+\end{align*}
+These states are annihilated by $\Hat{\widetilde{L}}_{k , p}$, for $p \neq - n$, and for this case we have that
+\begin{equation*}
+    \sum _{n} \left( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) \Hat{\widetilde{L}}_{- p , - n} \ket{\psi _{n , n'}} \right) =
+\end{equation*}
+\begin{equation*}
+    = \sum _{n} \left( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) \Hat{\widetilde{L}}_{- p , - n} \sum _{m} \Hat{\widetilde{L}}_{n , m} \ket{\widetilde{\chi}_{n' , m}} \right)  =
+\end{equation*}
+\begin{equation*}
+    = \sum _{n} \left( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) \Hat{\widetilde{L}}_{n , - n} \right) \ket{\widetilde{\chi}_{n' , p}} ,
+\end{equation*}
+which vanish if $c = - (n' + p)$.
 
 \newpage
 
