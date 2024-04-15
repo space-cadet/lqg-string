@@ -1749,24 +1749,24 @@ To see that this state is indeed orthogonal to $\ket{\phi}$, we perform the inne
 \end{equation*}
 The interesting case is when $\ket{\psi}$ is both physical AND spurious, since by construction those states have 0-norm, being orthogonal to every physical state, including themselves. Such states can be constructed by considering spurious states of the form
 \begin{equation*}
-    \ket{\psi _{n , n'}} = \sum _{m} \Hat{\widetilde{L}}_{n , m} \ket{\widetilde{\chi}_{n' , m}}
+    \ket{\psi _{- 2 , n}} = \sum _{m} \Hat{\widetilde{L}}_{n , m} \ket{\widetilde{\chi}_{- 2 , m}}
 \end{equation*}
-where $\ket{\widetilde{\chi}_{n' , m}}$ satisfies
+where $\ket{\widetilde{\chi}_{- 2 , m}}$ satisfies
 \begin{align*}
-    \Hat{\widetilde{L}}_{k , p} \ket{\widetilde{\chi}_{n' , m}}                                                                                                                  & = 0 , \ k \neq - p \\
-    \left( \sum _{n'} \left( \left( \left( \frac{n'}{E_{n'}} \right) ^2 - 1 \right) \Hat{\widetilde{L}}_{n' , - n'} \right) - c - n' - m \right) \ket{\widetilde{\chi}_{n' , m}} & = 0 .
+    \Hat{\widetilde{L}}_{k , p} \ket{\widetilde{\chi}_{- 2 , m}}                                                                                                                 & = 0 , \ k \neq - p \\
+    \left( \sum _{n'} \left( \left( \left( \frac{n'}{E_{n'}} \right) ^2 - 1 \right) \Hat{\widetilde{L}}_{n' , - n'} \right) - c + 2 - m \right) \ket{\widetilde{\chi}_{- 2 , m}} & = 0 .
 \end{align*}
 These states are annihilated by $\Hat{\widetilde{L}}_{k , p}$, for $p \neq - n$, and for this case we have that
 \begin{equation*}
-    \sum _{n} \left( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) \Hat{\widetilde{L}}_{- p , - n} \ket{\psi _{n , n'}} \right) =
+    \sum _{n} \left( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) \Hat{\widetilde{L}}_{- p , - n} \ket{\psi _{- 2 , n}} \right) =
 \end{equation*}
 \begin{equation*}
-    = \sum _{n} \left( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) \Hat{\widetilde{L}}_{- p , - n} \sum _{m} \Hat{\widetilde{L}}_{n , m} \ket{\widetilde{\chi}_{n' , m}} \right)  =
+    = \sum _{n} \left( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) \Hat{\widetilde{L}}_{- 1 , - n} \sum _{m} \Hat{\widetilde{L}}_{n , m} \ket{\widetilde{\chi}_{- 2 , m}} \right)  =
 \end{equation*}
 \begin{equation*}
-    = \sum _{n} \left( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) \Hat{\widetilde{L}}_{n , - n} \right) \ket{\widetilde{\chi}_{n' , p}} ,
+    = \sum _{n} \left( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) \Hat{\widetilde{L}}_{n , - n} \right) \ket{\widetilde{\chi}_{- 2 , 1}} ,
 \end{equation*}
-which vanish if $c = - (n' + p)$.
+which vanish if $c = 1$.
 
 \newpage
 
@@ -1908,7 +1908,26 @@ This, however, does not amount to any motion in actual space-time, since with tr
     \left( \partial _{\sigma} + \partial _{\tau} \right) X^{I} = C^{I} _{1} . (\tau + \sigma) - 4 k a \left( (\mathrm{sgn}(I))^2 X^{0} + \sum _{i > 0} \mathrm{sgn}(i - I) X^{i} \right)
 \end{equation*}
 \begin{equation*}
-    X^{I} = \frac{1}{2} C^{I} _{1} . \left( \tau ^2 + \sigma ^2 \right) + C^{I} _{2} . \left( \tau - \sigma \right) - 4 k a \int \diff ^2 x' \left( (\mathrm{sgn}(I))^2 X^{0} + \sum _{i > 0} \mathrm{sgn}(i - I) X^{i} \right)
+    X^{I} = \frac{1}{2} C^{I} _{1} . \left( \tau ^2 + \sigma ^2 \right) + C^{I} _{2} . \left( \tau - \sigma \right) - 4 k a \int \diff ^2 x' \left( (\mathrm{sgn}(I))^2 X^{0} + \sum _{i > 0} \mathrm{sgn}(i - I) X^{i} \right) .
+\end{equation*}
+If $D = 2$, we get a symmetric system of eqns
+\begin{align*}
+    X^{0} & = \frac{1}{2} C^{0} _{1} . \left( \tau ^2 + \sigma ^2 \right) + C^{0} _{2} . \left( \tau - \sigma \right) - 4 k a \int \diff ^2 x' X^{1} \\
+    X^{1} & = \frac{1}{2} C^{1} _{1} . \left( \tau ^2 + \sigma ^2 \right) + C^{1} _{2} . \left( \tau - \sigma \right) - 4 k a \int \diff ^2 x' X^{0}
+\end{align*}
+\begin{equation*}
+    X^{0} & = \frac{1}{2} C^{0} _{1} . \left( \tau ^2 + \sigma ^2 \right) + C^{0} _{2} . \left( \tau - \sigma \right) - 4 k a \int \diff ^2 x' \left( \frac{1}{2} C^{1} _{1} . \left( \tau ^{\prime 2} + \sigma ^{\prime 2} \right) + C^{1} _{2} . \left( \tau ' - \sigma ' \right) - 4 k a \int \diff ^2 x'' X^{0} \right)
+\end{equation*}
+\begin{equation*}
+    X^{0} - 16 k^2 a^2 \int \diff ^2 x' \int \diff ^2 x'' X^{0} = \frac{1}{2} C^{0} _{1} . \left( \tau ^2 + \sigma ^2 \right) + C^{0} _{2} . \left( \tau - \sigma \right) - \frac{1}{2} C^{1} _{1} \left( \frac{\tau ^3}{3} \sigma + \tau \frac{\sigma ^3}{3} \right) - C^{1} _{2} \left( \frac{\tau ^2}{2} \sigma - \tau \frac{\sigma ^2}{2} \right) .
+\end{equation*}
+This integral equation is tricky to deal with, but we can turn it into a differential equation by applying $\partial _{\sigma} \partial _{\tau}$ twice:
+\begin{equation*}
+    \left( \partial _{\sigma} \partial _{\tau} \right) ^2 X^{0} - 16 k^2 a^2 X^{0} = 0 .
+\end{equation*}
+This has general solution given by sum of plane waves and exponentials
+\begin{equation*}
+    X^{0} = \sum _{n \neq 0} \frac{1}{n^4} \left( a^{0} _{n} \e ^{i 2 \sqrt{k a} n (\tau + \sigma)} + b^{0} _{n} \e ^{i 2 \sqrt{k a} n (\tau - \sigma)} + c^{0} _{n} \e ^{2 \sqrt{k a} n (\tau + \sigma)} + d^{0} _{n} \e ^{2 \sqrt{k a} n (\tau - \sigma)} \right) .
 \end{equation*}
 
 \end{document}

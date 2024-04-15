@@ -178,7 +178,7 @@
 \begin{abstract}
 
 	With the goal of understanding whether or not it is possible to construct a string theory which is consistent with loop quantum gravity (LQG), we study alternate versions of the Nambu-Goto action for a bosonic string. We consider two types of modifications. The first is a phenomenological action based on the observation that LQG tells us that areas of two-surfaces are operators in quantum geometry and are bounded from below. This leads us to a string action which is similar to that of bimetric gravity. We provide formulations of the bimetric string for both the Nambu-Goto (second order) and Polyakov (first order) formulations. We explore the classical solutions of this action and its quantization and relate it to the conventional string solutions.
-	
+
 	The second is an action in which the background geometry is described in terms of the pullback of the connection which describes the bulk geometry to the worldsheet. The resulting action is in the form of a gauged sigma model, where the spacetime co-ordinates are now SO(D,1) vectors. We find that for the particular case of a constant background connection the action reduces to the bimetric action discussed above. We discuss classical solutions and quantization strategies for this action and its implications for the broader program of unifying string theory and loop quantum gravity.
 \end{abstract}
 
@@ -360,13 +360,13 @@ from which we can see that the correction factor modifies the speed of propagati
 
 \section{Inverse Metric Polyakov} \label{sec:inverse-metric-Polyakov}
 
-In the same way we considered the quantum geometry inverse metric correction to the Nambu-Goto action, it is also natural to consider such correction to the Polyakov string. we start with the action(\ref{eqn:polyakov-gravity}) and proceed with the inverse area correction(\ref{eqn:inverse-metric-correction}), which yields our corrected Polyakov action
+In the same way we considered the quantum geometry inverse metric correction to the Nambu-Goto action, it is also natural to consider such correction to the Polyakov string. We start with the action(\ref{eqn:polyakov-gravity}) and proceed with the inverse area correction(\ref{eqn:inverse-metric-correction}), which yields our corrected Polyakov action
 \begin{multline} \label{eqn:inverse-metric-Polyakov}
 	S_{I A P} = - \frac{T}{2} \int \diff ^2 x \left( \sqrt{- g} - \frac{k \Delta}{2 \sqrt{- g}} \right) \times \\ \times g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} .
 \end{multline}
-The equations of motion for the world-sheet metric are completely unchanged by this correction, so they are
+The reason for considering this form and not one in which the inverse metric $g^{a b}$ also gets a correction term is that this form of a Polyakov inverse area-corrected action reduces nicely to the Nambu-Goto corrected action(\ref{eqn:modified-NG-action}) when the auxiliary metric $g_{a b}$ coincides with the induced metric $h_{a b} = \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu}$. The equations of motion for the auxiliary metric are completely unchanged by this correction, so they are
 \begin{equation} \label{eqn:vary-wrt-g}
-	\frac{\delta S_{I A P}}{\delta g^{c d}} \overset{!}{=} 0
+	\frac{\delta S_{I A P}}{\delta g^{c d}} = 0
 \end{equation}
 from which we obtain the stress-energy tensor for the worldsheet:
 \begin{multline} \label{eqn:inverse-area-em-tensor}
@@ -383,24 +383,24 @@ where the function $f$ is given by
 
 As for variation w.r.t the embbeding fields $X^{\lambda}$, we have
 \begin{equation} \label{eqn:vary-wrt-X}
-	\frac{\delta S_{I A P}}{\delta X^{\lambda}} \overset{!}{=} 0
+	\frac{\delta S_{I A P}}{\delta X^{\lambda}} = 0
 \end{equation}
 
 \begin{multline} \label{eqn:X-eom-inverse-area}
 	F^{-} \sqrt{- g} g^{a b} \partial _{a} \partial _{b} X^{\nu} G_{\lambda \nu} + \partial _{a} \left( F^{-} \sqrt{- g} g^{a b} \right) \partial _{b} X^{\nu} G_{\lambda \nu} = \\ = \frac{1}{2} F^{-} \sqrt{- g} g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \partial _{\lambda} G_{\mu \nu} ,
 \end{multline}
-where $F^{-} = 1 - k \Delta / 2 (- g)$. Using conformal symmetry $g^{a b} = (\phi (x))^{-1} \eta ^{a b}$ and assuming flat background $G_{\mu \nu} = \eta _{\mu \nu}$, eq(\ref{eqn:X-eom-inverse-area}) simplify to
+where $F^{-} = 1 - k \Delta / 2 (- g)$. In conformal gauge $g^{a b} = (\phi (x))^{-1} \eta ^{a b}$ and assuming flat background $G_{\mu \nu} = \eta _{\mu \nu}$, eq(\ref{eqn:X-eom-inverse-area}) simplify to
 \begin{equation} \label{eqn:X-eom-simplified}
 	\eta ^{a b} \partial _{a} \partial _{b} X^{\mu} + \eta ^{a b} \partial _{a} \ln (F^{-}) \partial _{b} X^{\mu} = 0 .
 \end{equation}
 
 \subsection{Simplifying The Equations of Motion} \label{sec:solving-eoms-inverse-area}
 
-Equation(\ref{eqn:X-eom-simplified}) seems a bit odd, but we can polish it by choosing a plane-wave ansatz for the embedding fields $X^{\mu} = X^{\mu} _{0} \e ^{-i (E \tau - p \sigma)}$ and using it to fix a form for the conformal function $\phi (x)$ appearing in $F^{-}$. By using the ansatz in eq(\ref{eqn:X-eom-simplified}), it becomes
+Equation(\ref{eqn:X-eom-simplified}) seems a bit odd, but we can polish it by choosing a plane-wave ansatz for the embedding fields $X^{\mu} = X^{\mu} _{0} \e ^{-i (E \tau - p \sigma)}$ and using it to fix a form for the conformal factor $\phi (x)$ appearing in $F^{-}$. By using the ansatz in eq(\ref{eqn:X-eom-simplified}), it becomes
 \begin{equation}
 	(E^{2} - p^{2}) X^{\mu} + i (E \partial _{\tau} \ln (F^{-}) - p \partial _{\sigma} \ln (F^{-})) X^{\mu} = 0 ,
 \end{equation}
-from which we can use the freedom in the conformal function to fix the second term as $- m^2 X^{\mu}$, with $- m^2 = p^2 - E^2$ on-shell, and this in turn implies that the derivatives of $\ln (F^{-})$ are given by
+from which we can use the freedom in the conformal factor to fix the second term as $- m^2 X^{\mu}$, with $- m^2 = p^2 - E^2$ on-shell, and this in turn implies that the derivatives of $\ln (F^{-})$ are given by
 \begin{equation} \label{eqn:derivatives-F-minus}
 	\partial _{\tau} \ln (F^{-}) = i E , \ \partial _{\sigma} \ln (F^{-}) = i p ,
 \end{equation}
@@ -415,14 +415,14 @@ thus we have
 \begin{equation} \label{eqn:phi}
 	\phi (\tau , \sigma) = \sqrt{\frac{k \Delta}{2 \left( 1 - A \e ^{i (E \tau + p \sigma + \varphi)} \right)}} .
 \end{equation}
-At first glance it seems problematic that we have a complex conformal function $\phi (x)$, but the complex structure comes from our ansatz for the embedding fields, and when we choose either the real or imaginary part of the latter it should also pick the respective component of $\phi$. With this choice, we thus turned eq(\ref{eqn:X-eom-simplified}) into a Klein-Gordon equation
+At first glance it seems problematic that we have a complex conformal factor $\phi (x)$, but the complex structure comes from our ansatz for the embedding fields, and when we choose either the real or imaginary part of the latter it will also pick the respective component of $\phi$. With this choice, we thus turned eq(\ref{eqn:X-eom-simplified}) into a Klein-Gordon equation
 \begin{equation} \label{eqn:X-Klein-Gordon-eqn}
 	\left( \partial _{\sigma} ^2 - \partial _{\tau} ^2 \right) X^{\mu} - \mu ^2 X^{\mu} = 0 .
 \end{equation}
 
 \subsection{Relation With The Nambu-Goto Analysis} \label{sec:relation-with-NG-case}
 
-At first glance, our recent analysis of the Polyakov string with inverse metric correction seems to not be related to what we found in the analysis of the Nambu-Goto string. However, as pointed out in \cite{Grimshaw2010Homogenization}, wave equations with a variable speed (the result of the Nambu-Goto analysis) can be turned into Klein-Gordon equations (what we just found). While they're work deals only with space-varying wave speed, it is straight forward to generalise the procedure to also include time dependence, but ironically enough the calculations lead to the conclusion that the wave speed $v = 1 / F^{+}$ is actually time independent.
+At first glance, our recent analysis of the Polyakov string with inverse metric correction seems to not be related to what we found in the analysis of the Nambu-Goto string. However, as pointed out in \cite{Grimshaw2010Homogenization}, wave equations with a variable speed (the result of the Nambu-Goto analysis) can be turned into Klein-Gordon equations (what we just found). While they're work deals only with space-varying wave speed, it is straight forward to generalise the procedure to also include time dependence.
 
 Following the procedure found in \cite{Grimshaw2010Homogenization}, we start with eq(\ref{eqn:simplified-modified-wave-eqn}) obtained in sec(\ref{sec:modified-eom}), renaming $\sigma$ as $x$ and dividing by $(F^{+})^2$ such that we have $v^2$ on the second term like the mentioned work, and perform a change of variables $(t , x) \rightarrow (\tau (t , x) , \sigma (t , x))$, where without loss of generality (one needs just to rescale and/or rotate the coordinates) we set
 \begin{multline} \label{eqn:new-coordinates-constraints-quadratic}
@@ -615,7 +615,7 @@ where the covariant derivative $\mc{D}_a$ is of the form:
 \begin{equation}\label{eqn:covariant-deriv-v1}
 	\mc{D}_a X^\mu(\tau , \sigma) = \partial_a X^\mu + g \mc{A}_{a}^\mu{}_\nu X^\nu,
 \end{equation}
-where $\mc{A}_{a}^\mu{}_\nu$ is the gauge field and $g$ is the gauge coupling. A more experienced researcher would object saying that we know that the $X^\mu$ are spacetime co-ordinates and not vectors transforming 
+where $\mc{A}_{a}^\mu{}_\nu$ is the gauge field and $g$ is the gauge coupling. A more experienced researcher would object saying that we know that the $X^\mu$ are spacetime co-ordinates and not vectors transforming
 
 Let us begin by writing down the action of a string propagating in a background geometry. The background geometry is specified not in terms of a metric, but in terms of a connection $A_\mu^{IJ}$ and vielbein fields $E_\mu^I$. Further, we will require that the bulk connection and the bulk vielbein can be pulled back onto a connection $\mc{A}_{a}^{ij}$ and a dyad $e^a_i$, respectively, living on the string worldsheet $\Sigma$. $X^\mu(\tau , \sigma)$ are the space-time coordinates of a point $(\tau , \sigma)$ on the worldsheet. Now if one takes the sigma model viewpoint then the $X$'s can be viewed as $d+1$ scalar fields living on a $1+1$ worldsheet. But these fields are not really scalars. They are components of a $d+1$ dim vector since they transform with the fundamental representation of $\mathrm{SO}(d,1)$ under global Lorentz transformations acting on the ambient space-time, which we take to be flat for the time being.
 
@@ -672,16 +672,16 @@ We take the bulk metric $g_{\mu\nu}$ to be flat. Let $\{\tau,\sigma\} := \{x^0, 
 \begin{equation}
 	\dot X := \left\{\frac{\partial X^\mu}{\partial \tau}\right\}; \quad X' := \left\{\frac{\partial X^\mu}{\partial \sigma}\right\}
 \end{equation}
- we obtain the following form for the determinant of the worldsheet metric (\eqref{eqn:patch-area-v1}) in terms of the embedding fields:
+we obtain the following form for the determinant of the worldsheet metric (\eqref{eqn:patch-area-v1}) in terms of the embedding fields:
 \begin{align}\label{eqn:area-embedding}
 	\det h & = \begin{vmatrix}
-		h_{00} && h_{01} \\
-		h_{10} && h_{11} 
-	\end{vmatrix} = \begin{vmatrix}
-		\dot X^2 && \dot X \cdot X' \\
-		\dot X \cdot X' && X'^2
-	\end{vmatrix} \nonumber \\
-	& = \dot X^2 X'^2 - (\dot X \cdot X')^2
+		           h_{00} &  & h_{01} \\
+		           h_{10} &  & h_{11}
+	           \end{vmatrix} = \begin{vmatrix}
+		                           \dot X^2        &  & \dot X \cdot X' \\
+		                           \dot X \cdot X' &  & X'^2
+	                           \end{vmatrix} \nonumber \\
+	       & = \dot X^2 X'^2 - (\dot X \cdot X')^2
 \end{align}
 
 \textbf{From Vielbein:}
@@ -693,19 +693,19 @@ We can proceed to obtain the area of a 2-surface from the bulk vielbein as follo
 where $\eta_{ij}$ is the flat $(1+1)$ Minkowski metric. The determinant then becomes:
 \begin{align}\label{eqn:area-vielbein}
 	\det h & = \begin{vmatrix}
-		h_{00} && h_{01} \\
-		h_{10} && h_{11} 
-	\end{vmatrix} = \begin{vmatrix}
-		e_x{}^i e_x{}^j & e_x{}^i e_y{}^j \\
-		e_y{}^i e_x{}^j & e_y{}^i e_y{}^j
-	\end{vmatrix} \eta_{ij} \nonumber \\
-	& = \vec e_x{}^2 \vec e_y{}^2 - (\vec e_x \cdot \vec e_y)^2,
+		           h_{00} &  & h_{01} \\
+		           h_{10} &  & h_{11}
+	           \end{vmatrix} = \begin{vmatrix}
+		                           e_x{}^i e_x{}^j & e_x{}^i e_y{}^j \\
+		                           e_y{}^i e_x{}^j & e_y{}^i e_y{}^j
+	                           \end{vmatrix} \eta_{ij} \nonumber        \\
+	       & = \vec e_x{}^2 \vec e_y{}^2 - (\vec e_x \cdot \vec e_y)^2,
 \end{align}
 where $\vec e_x \cdot \vec e_y = e_x{}^i e_y{}^j \eta_{ij}$. It is clear by comparing the two expressions \eqref{eqn:area-embedding} and \eqref{eqn:area-vielbein} that we have the following correspondence between the vielbein the $X$ derivatives:
 \begin{equation}
 	\vec e_\tau \equiv \frac{\partial \vec X}{\partial \tau}; \quad \vec e_\sigma \equiv \frac{\partial \vec X}{\partial \sigma}.
 \end{equation}
-In other words we can identify the vielbein with the derivatives of the embedding fields. Of course, this is not altogether surprising. If we consider any manifold on which we have some set of fields $\{X^I(x^\mu)\}$, where $I$ is valued in the Lie algebra ${\mc g}$ of some group $\mc G$, as a function of some  ``fiducial'' co-ordinates $\{x^\mu\}$, then we can always define a set of ${\mc g}$ valued vector fields: 
+In other words we can identify the vielbein with the derivatives of the embedding fields. Of course, this is not altogether surprising. If we consider any manifold on which we have some set of fields $\{X^I(x^\mu)\}$, where $I$ is valued in the Lie algebra ${\mc g}$ of some group $\mc G$, as a function of some  ``fiducial'' co-ordinates $\{x^\mu\}$, then we can always define a set of ${\mc g}$ valued vector fields:
 $$
 	e^I_\mu := \frac{\partial X^I}{\partial x^\mu}.
 $$
