@@ -668,24 +668,36 @@ where if $T' = - T k \Delta / 2$ and $h = g^{-1}$ we recover the NG area correct
 \end{equation*}
 The condition $h = g^{-1}$ can be achieved by
 \begin{equation*}
-    h_{a b} = U_{a c} g^{c d} U_{d b} ,
+    h_{a b} = S_{a c} g^{c d} T_{d b} ,
 \end{equation*}
-where $U \in \mathrm{SO}(1 , 1)$, so we have a gauge freedom in choosing $h_{a b}$. This also implies
+where $S , T \in \mathrm{SL}(2 , \R)$, so we have a gauge freedom in choosing $h_{a b}$. This also implies
 \begin{align*}
-    \partial _{a} X^{\mu} \partial _{b} X^{\nu} H_{\mu \nu}                                       & = U_{a c} g^{c d} U_{d b} =                                                                                                                      \\
-                                                                                                  & = U_{a c} \left( \frac{1}{2 g} \varepsilon ^{c c'} \varepsilon ^{d d'} g_{c' d'} \right) U_{d b} =                                               \\
-    \delta _{a} ^{c'} \delta _{b} ^{d'} \partial _{c'} X^{\mu} \partial _{d'} X^{\nu} H_{\mu \nu} & = U_{a c} \left( \frac{1}{2 g} \varepsilon ^{c c'} \varepsilon ^{d d'} \partial _{c'} X^{\mu} \partial _{d'} X^{\nu} G_{\mu \nu} \right) U_{d b}
+    \partial _{a} X^{\mu} \partial _{b} X^{\nu} H_{\mu \nu}                                       & = S_{a c} g^{c d} T_{d b} =                                                                                                                      \\
+                                                                                                  & = S_{a c} \left( \frac{1}{2 g} \varepsilon ^{c c'} \varepsilon ^{d d'} g_{c' d'} \right) T_{d b} =                                               \\
+    \delta _{a} ^{c'} \delta _{b} ^{d'} \partial _{c'} X^{\mu} \partial _{d'} X^{\nu} H_{\mu \nu} & = S_{a c} \left( \frac{1}{2 g} \varepsilon ^{c c'} \varepsilon ^{d d'} \partial _{c'} X^{\mu} \partial _{d'} X^{\nu} G_{\mu \nu} \right) T_{d b}
 \end{align*}
 \begin{equation*}
-    \delta _{a} ^{c'} \delta _{b} ^{d'} H_{\mu \nu} = \frac{1}{2 g} U_{a c} \varepsilon ^{c c'} U_{d b} \varepsilon ^{d d'} G_{\mu \nu}
+    \delta _{a} ^{c'} \delta _{b} ^{d'} H_{\mu \nu} = \frac{1}{2 g} S_{a c} \varepsilon ^{c c'} T_{d b} \varepsilon ^{d d'} G_{\mu \nu}
 \end{equation*}
 \begin{equation*}
-    H_{\mu \nu} = - \frac{1}{8 g} U_{a c} \varepsilon ^{c a} U_{d b} \varepsilon ^{b d} G_{\mu \nu}
+    H_{\mu \nu} = - \frac{1}{8 g} S_{a c} \varepsilon ^{c a} T_{d b} \varepsilon ^{b d} G_{\mu \nu}
 \end{equation*}
 \begin{equation*}
-    H_{\mu \nu} = - \frac{1}{8 g} (\Tr (U \varepsilon))^2 G_{\mu \nu} ,
+    H_{\mu \nu} = \frac{1}{8 (- g)} \Tr (S \varepsilon) \Tr (T \varepsilon) G_{\mu \nu}
 \end{equation*}
-where we must impose that $(\Tr (U \varepsilon))^2 = 8$ to recover the NG area corrected action.
+\begin{equation*}
+    H_{\mu \nu} = \frac{1}{8 (- g)} \Tr (S \varepsilon) \Tr (T (- \varepsilon ^{T})) G_{\mu \nu}
+\end{equation*}
+\begin{equation*}
+    H_{\mu \nu} = \frac{1}{8 g} \Tr (S \varepsilon) \Tr ((\varepsilon T)^{T}) G_{\mu \nu}
+\end{equation*}
+\begin{equation*}
+    H_{\mu \nu} = \frac{1}{8 g} \Tr (S \varepsilon) (\Tr (\varepsilon T)) G_{\mu \nu}
+\end{equation*}
+\begin{equation*}
+    H_{\mu \nu} = \frac{1}{8 g} \Tr (S \varepsilon) (\Tr (T \varepsilon)) G_{\mu \nu} ,
+\end{equation*}
+where we must impose that $\Tr (S \varepsilon) \Tr (T \varepsilon) = - 8$ to recover the NG area corrected action.
 
 \begin{align*}
     \frac{\delta S_{B P}}{\delta X^{\lambda}} & = \left( - \frac{T}{2} \sqrt{- g} g^{a b} \partial _{\lambda} G_{\mu \nu} - \frac{T'}{2} \sqrt{- h} h^{a b} \partial _{\lambda} H_{\mu \nu} \right) \partial _{a} X^{\mu} \partial _{b} X^{\nu} -                                                               \\
@@ -704,9 +716,9 @@ where we must impose that $(\Tr (U \varepsilon))^2 = 8$ to recover the NG area c
 \end{equation*}
 Assuming the condition for $h = g^{-1}$ and flat background $G_{\mu \nu} = \eta _{\mu \nu}$, the EoM reduces to
 \begin{equation*}
-    \partial _{a} \left( \left( \sqrt{- g} g^{a b} - \frac{k \Delta}{2 (- g)} \sqrt{- g}^{-1} (U^{-1})^{a c} g_{c d} (U^{-1})^{d b} \right) \partial _{b} X^{\mu} \right) = 0 ,
+    \partial _{a} \left( \left( \sqrt{- g} g^{a b} - \frac{k \Delta}{2 (- g)} \sqrt{- g}^{-1} (T^{-1})^{a c} g_{c d} (S^{-1})^{d b} \right) \partial _{b} X^{\mu} \right) = 0 ,
 \end{equation*}
-which in conformal gauge $g_{a b} = \phi \eta _{a b}$ reduces further
+which in conformal gauge $g_{a b} = \phi \eta _{a b}$ with $(T^{-1})^{a c} \eta _{c d} (S^{-1})^{d b} = \eta ^{a b}$ reduces further
 \begin{equation*}
     \partial _{a} \left( \left( 1 - \frac{k \Delta}{2 \phi ^2} \right) \eta ^{a b} \partial _{b} X^{\mu} \right) = 0
 \end{equation*}
