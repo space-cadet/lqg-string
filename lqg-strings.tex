@@ -518,45 +518,78 @@ We start by calculating the momentum canonical to $X^{\mu}$, $\Pi _{\lambda}$:
 	+ (\alpha ^{\nu} _{- n})^{*} \e ^{i (E_{n} \tau + n \sigma)} \bigg) \eta _{\nu \lambda}
 \end{multline}
 and proceed by using the canonical equal-time Poisson bracket between $X^{\mu}$ and $\Pi ^{\nu}$
-\begin{equation}
+\begin{equation} \label{eqn:equal-time-Poisson-bracket}
 	\left\{ X^{\mu} (\tau , \sigma) , \Pi ^{\nu} (\tau , \sigma ') \right\} = \delta (\sigma - \sigma ') \eta ^{\mu \nu}
 \end{equation}
+which, under the assumption of constant conformal factor $\phi$, leads to
+\begin{equation} \label{eqn:modes-bracket-0}
+	\left\{ \alpha ^{\mu} _{k} , \alpha ^{\nu} _{- m} \right\} = \left\{ (\alpha ^{\mu} _{- k})^{*} , (\alpha ^{\nu} _{m})^{*} \right\} = 0
+\end{equation}
+\begin{multline} \label{eqn:modes-bracket-oscillator}
+	\left\{ \alpha ^{\mu} _{k} , (\alpha ^{\nu} _{m})^{*} \right\} = - \left\{ (\alpha ^{\mu} _{- k})^{*} , \alpha ^{\nu} _{- m} \right\} = \\
+	- i \frac{4 \pi (\alpha ')^{2}}{F^{-}} E_{k} \eta ^{\mu \nu} \delta _{k , m} .
+\end{multline}
+This are just rescaled harmonic oscillator Poisson bracket relations, so we define the oscillator modes
+\begin{align}
+	a^{\mu} _{k}       & : = \frac{1}{2 \alpha '} \sqrt{\frac{F^{-}}{\pi}} \frac{1}{\sqrt{E_{k}}} \alpha ^{\mu} _{k} \label{eqn:annihilation-mode}      \\
+	(a^{\mu} _{k})^{*} & : =  \frac{1}{2 \alpha '} \sqrt{\frac{F^{-}}{\pi}} \frac{1}{\sqrt{E_{k}}} (\alpha ^{\mu} _{k})^{*} \label{eqn:creation-mode} ,
+\end{align}
+such that the bracket relations become proper harmonic oscillator bracket relations
+\begin{align}
+	\left\{ a^{\mu} _{k} , (a^{\nu} _{p})^{*} \right\} & = - i \eta ^{\mu \nu} \delta _{k , p} \label{eqn:oscillator-bracket}                   \\
+	\left\{ a^{\mu} _{k} , a^{\nu} _{p} \right\}       & = \left\{ (a^{\mu} _{k})^{*} , (a^{\nu} _{p})^{*} \right\} = 0 \label{eqn:0-bracket} .
+\end{align}
+By analysing the $k = p = 0$ case, we also get the relation for $x^{\mu}$ and $p^{\nu}$
+\begin{align}
+	\left\{ x^{\mu} , x^{\nu} \right\} & = \left\{ p^{\mu} , p^{\nu} \right\} = 0 \label{eqn:x-x-p-p-bracket}       \\
+	\left\{ x^{\mu} , p^{\nu} \right\} & = \frac{1}{4 \pi \alpha ' F^{-}} \eta ^{\mu \nu} \label{eqn:x-p-bracket} ,
+\end{align}
+where by choosing
+\begin{equation} \label{eqn:constant-conformal-factor}
+	\phi = \sqrt{\frac{k \Delta}{2 \left( 1 - \dfrac{1}{4 \pi \alpha '} \right)}}
+\end{equation}
+we can simplify the bracket(\ref{eqn:x-p-bracket}) to the expected
+\begin{equation} \label{eqn:x-p-bracket-normalized}
+	\left\{ x^{\mu} , p^{\nu} \right\} = \eta ^{\mu \nu} .
+\end{equation}
+
+Having the bracket algebra between the expansion modes and redefining the constraints $L_{n , m}$ and $\widetilde{L}_{k , p}$ to be between the normalized modes $a^{\mu} _{n}$ instead of the $\alpha ^{\mu} _{n}$ (we can do this since $E_{n} = \sqrt{n^2 + \mu ^2} \neq 0$), we get the \textquotedblleft Klein-Gordon-Virasoro algebra"
+\begin{align}
+	\left\{ L_{n , m} , L_{k , p} \right\}                         & = 0 \label{eqn:L-bracket-0}                                                                                                      \\
+	\left\{ L_{n , m} , \widetilde{L}_{k , p} \right\}             & = - i \left( L_{m, k} \delta _{n , - p} + L_{n , k} \delta _{m , - p} \right) \label{eqn:L-bracket-1}                            \\
+	\left\{ \widetilde{L}_{n , m} , \widetilde{L}_{k , p} \right\} & = - i \left( \widetilde{L}_{k , m} \delta _{n , - p} - \widetilde{L}_{n , p} \delta _{- m , k} \right) . \label{eqn:L-bracket-2}
+\end{align}
 
 \section{The Quantum Klein-Gordon String} \label{sec:quantum-KG-string}
 
-In the following, we proceed to quantize the Klein-Gordon string via canonical covariant quantization, in a manner much similar to those found in \cite{Tong2009Lectures} and \cite{Green2012Superstring}.
-
-We turn the equal-time Poisson bracket relations into equal-time commutation relations between the now operators $\Hat{X}^{\mu}$ and $\Hat{\Pi}^{\nu}$:
-\begin{equation} \label{eqn:canonical-commutator-1}
-	\Big[ \Hat{X}^{\mu} (\tau , \sigma) , \Hat{\Pi}^{\nu} (\tau , \sigma ') \Big] \equiv i \delta (\sigma - \sigma ') \eta ^{\mu \nu}
-\end{equation}
-\begin{equation} \label{eqn:canonical-commutator-2}
-	\Big[ \Hat{X}^{\mu} (\tau , \sigma) , \Hat{X}^{\nu} (\tau , \sigma ') \Big] = 0 = \Big[ \Hat{\Pi}^{\mu} (\tau , \sigma) , \Hat{\Pi}^{\nu} (\tau , \sigma ') \Big] .
-\end{equation}
-From these relations, we get commutation relations for the vibrational modes $\Hat{\alpha}^{\mu} _{p}$ and $(\Hat{\alpha}^{\nu} _{- k})^{\dagger}$:
-\begin{equation} \label{eqn:non-vanishing-commutator}
-	\Big[ \Hat{\alpha}^{\mu} _{p} , (\Hat{\alpha}^{\nu} _{- k})^{\dagger} \Big] = \eta ^{\mu \nu} \delta _{p , - k}
-\end{equation}
-\begin{equation} \label{eqn:vanishing-commutators}
-	\Big[ \Hat{\alpha}^{\mu} _{p} , \Hat{\alpha}^{\nu} _{k} \Big] = 0 = \Big[ (\Hat{\alpha}^{\mu} _{- p})^{\dagger} , (\Hat{\alpha}^{\nu} _{- k})^{\dagger} \Big] ,
-\end{equation}
-which are just harmonic oscillator relations with
+In the following, we proceed to quantize the Klein-Gordon string via canonical covariant quantization, in a manner much similar to those found in \cite{Tong2009Lectures} and \cite{Green2012Superstring}. We turn the Poisson bracket relations into commutation relations between the now operator variables, $\{ , \} \mapsto i [ , ]$, yielding
 \begin{align}
-	\Hat{a}^{\mu} _{p}             & = \Hat{\alpha}^{\mu} _{p} \label{eqn:annihilation-operator}                                       \\
-	(\Hat{a}^{\mu} _{p})^{\dagger} & = (\Hat{\alpha}^{\mu} _{p})^{\dagger} , \ \mathrm{for} \ p \neq 0 . \label{eqn:creation-operator}
+	\left[ \Hat{X}^{\mu} (\tau , \sigma) , \Hat{\Pi}^{\nu} (\tau , \sigma ') \right] & = i \delta (\sigma - \sigma ') \eta ^{\mu \nu} \label{eqn:commutator-X-Pi}                                      \\
+	\left[ \Hat{X}^{\mu} , \Hat{X}^{\nu} \right]                                     & = \left[ \Hat{\Pi}^{\mu} , \Hat{\Pi}^{\nu} \right] = 0 \label{eqn:commutator-X-X-Pi-Pi}                         \\
+	\left[ \Hat{a}^{\mu} _{n} , \Hat{a}^{\nu} _{m} \right]                           & = \left[ (\Hat{a}^{\mu} _{n})^{\dagger} , (\Hat{a}^{\nu} _{m})^{\dagger} \right] = 0 \label{eqn:commutator-a-a} \\
+	\left[ \Hat{a}^{\mu} _{n} , (\Hat{a}^{\nu} _{m})^{\dagger} \right]               & = \eta ^{\mu \nu} \delta _{n , m} \label{eqn:commutator-a-a*}                                                   \\
+	\left[ \Hat{x}^{\mu} , \Hat{x}^{\nu} \right]                                     & = \left[ \Hat{p}^{\mu} , \Hat{p}^{\nu} \right] = 0 \label{eqn:commutator-x-x-p-p}                               \\
+	\left[ \Hat{x}^{\mu} , \Hat{p}^{\nu} \right]                                     & = i \eta ^{\mu \nu} . \label{eqn:commutator-x-p}
 \end{align}
-For $p = 0$ we have the center of mass momentum operator $\Hat{p}^{\mu}$. As usual, we define a vacuum state for the string to obey
+
+We define a vacuum state for the string to obey
 \begin{equation} \label{eqn:annihilation-vacuum}
-	\Hat{a}^{\mu} _{p} \ket{0} = 0 , \ \mathrm{for} \ p \neq 0 ,
+	\Hat{a}^{\mu} _{p} \ket{0} = 0 , \ \mathrm{for} \ p \neq 0 .
 \end{equation}
-and for $p = 0$
-\begin{equation} \label{eqn:momentum-vacuum}
-	\Hat{p}^{\mu} \ket{0} = p^{\mu} \ket{0} .
-\end{equation}
-Our Fock space is built from the vacuum state $\ket{0}$ by operating with a sequence of creation operators
+Since $\Hat{a}^{\mu} _{0}$ contains $\Hat{x}^{\mu}$ and $\Hat{p}^{\mu}$, the vacuum also has extra structure from those
+\begin{align}
+	\Hat{x}^{\mu} \ket{0 ; x} & = x^{\mu} \ket{0 ; x} \label{eqn:x-x-rep}                               \\
+	\Hat{p}_{\mu} \ket{0 ; x} & = - i \frac{\partial}{\partial x^{\mu}} \ket{0 ; x} \label{eqn:p-x-rep}
+\end{align}
+in position representation and
+\begin{align}
+	\Hat{x}^{\mu} \ket{0 ; p} & = - i \frac{\partial}{\partial p_{\mu}} \ket{0 ; p} \label{eqn:x-p-rep} \\
+	\Hat{p}_{\mu} \ket{0 ; p} & = p_{\mu} \ket{0 ; p} \label{eqn:p-p-rep}
+\end{align}
+in momentum representation. Our Fock space is built from the vacuum state $\ket{0}$ by operating with a sequence of creation operators
 \begin{multline} \label{eqn:general-state}
-	\ket{\psi} = ((a^{\mu _{1}} _{1})^{\dagger})^{n_{\mu _1}} ((a^{\mu _2} _{2})^{\dagger})^{n_{\mu _2}} ... \times \\
-	\times ((a^{\nu _1} _{1})^{\dagger})^{n_{\nu _1}} ((a^{\mu _2} _{2})^{\dagger})^{n_{\nu _2}} ... \ket{0} .
+	\ket{\psi} = ((\Hat{a}^{\mu _{1}} _{1})^{\dagger})^{n_{\mu _1}} ((\Hat{a}^{\mu _2} _{2})^{\dagger})^{n_{\mu _2}} ... \times \\
+	\times ((\Hat{a}^{\nu _1} _{- 1})^{\dagger})^{n_{\nu _1}} ((\Hat{a}^{\mu _2} _{- 2})^{\dagger})^{n_{\nu _2}} ... \ket{0} .
 \end{multline}
 
 As usual, by the appearance of the Minkowski metric in the non-zero commutator
@@ -570,42 +603,6 @@ we have ghosts in the theory which must be dealt with. When translating the cons
 \begin{equation} \label{eqn:L-constraint-quantum-2}
 	\bra{\phi} \Hat{\widetilde{L}}_{p , k} \ket{\psi} = 0 .
 \end{equation}
-$\Hat{L}_{p , k}$ has no ambiguities since it's composed of only annihilation operators, however, we have an ambiguity for $\Hat{\widetilde{L}}_{p , 0}$. To resolve this issue, we pick
-\begin{equation} \label{eqn:L-normal-ordering}
-	\Hat{\widetilde{L}}_{p , 0} = \frac{- p}{E_{- p}} (\Hat{\alpha}^{\mu} _{p})^{\dagger} \Hat{\alpha}^{\nu} _{p} \eta _{\mu \nu}
-\end{equation}
-with the annihilation operator to the right, which manifests in the imposition of the constraint as
-\begin{equation} \label{eqn:shifted-L-constraint}
-	\bra{\phi} \Hat{\widetilde{L}}_{p , 0} - c_{p} \ket{\psi} = 0 ,
-\end{equation}
-for some sequence $c_{p}$. The reason for it to be a sequence of $p$ and not a constant like in the regular String Theory literature is that in the usual theory, we would have a sum over $p$ and thus it would end up being a constant, but in our analysis we have this extra freedom, which we'll now see ends up being important. Classically, we had eq(\ref{eqn:string-rest-mass}) for the string rest mass, which we can rewrite as
-\begin{equation} \label{eqn:alternative-classical-rest-mass}
-	M^2 = - \frac{1}{(4 \pi (\alpha ')^2)^2} \lim _{n \rightarrow 0} \left( - \frac{E_{p}}{p} \widetilde{L}_{p , 0} \right) ,
-\end{equation}
-from where we can now see that the string mass spectrum will get shifted by
-\begin{equation} \label{eqn:shifted-mass-spectrum}
-	\Hat{M}^2 = - \frac{1}{(4 \pi (\alpha ')^2)^2} \left( (\Hat{\alpha} ^{\mu} _{0})^{\dagger} \Hat{\alpha}^{\nu} _{0} \eta _{\mu \nu} + \lim _{p \rightarrow 0} \frac{E_{p}}{p} c_{p} \right) .
-\end{equation}
-Since $E_{0} = \mu$, it seems like the natural candidate for $c_{p}$ would be some function $f (\mu , p)$ such that
-\begin{equation} \label{eqn:cp-limit}
-	\lim _{p \rightarrow 0} \frac{c_{p}}{p} = \mu
-\end{equation}
-like $c_{p} = \mu p$, $c_{p} = \sin (\mu p)$, $c_{p} = \tan (\mu p)$, etc, making it so the mass spectrum of the string gets shifted by the \textquotedblleft mass" term of the Klein-Gordon equation (\ref{eqn:X-Klein-Gordon-eqn}), $\mu ^2$.
-
-The \textquotedblleft Virasoro-Klein-Gordon" algebra our constraint modes satisfy is given by
-\begin{equation} \label{eqn:L-commutators-1}
-	\Big[ \Hat{L}_{n , m} , \Hat{L}_{p , k} \Big] = 0
-\end{equation}
-\begin{multline} \label{eqn:L-commutators-2}
-	\Big[ \Hat{L}_{n , m} , \Hat{\widetilde{L}}_{p , k} \Big] = \frac{m - n}{E_{m - n}} \Big( \Hat{L}_{n + k - p , n} \delta _{n - m , k} + \\
-	+ \Hat{L}_{n - m + k - p , n - m} \delta _{n , k} \Big)
-\end{multline}
-\begin{multline} \label{eqn:L-commutators-3}
-	\Big[ \Hat{\widetilde{L}}_{n , m} , \Hat{\widetilde{L}}_{p , k} \Big] = \frac{(m - n)}{E_{m - n}} \frac{(k - p)}{E_{k - p}} \times \\
-	\times \Bigg( \frac{E_{- n}}{(- n)} \Hat{\widetilde{L}}_{k - p - n , k - p} \delta _{n - m , k} + \\
-	+ \frac{E_{- k}}{(- k)} \Hat{\widetilde{L}}_{n - m - k , n - m} \delta _{n , k - p} \Bigg) .
-\end{multline}
-The commutator (\ref{eqn:L-commutators-2}) ends up with only annihilation operators in the R.H.S, so it has no ordering ambiguities, meanwhile the commutator (\ref{eqn:L-commutators-3}) seem like it would have ordering ambiguities for $k - p = 0$ and $n - m = 0$. However it has a $(m - n)(k - p)$ factor multiplying the whole expression, so the commutator is $0$, which can also be seen by setting $n = m$ or $k = p$ on the L.H.S, in which case we get $\Hat{\widetilde{L}}_{n , n}$, which is identically equal to $0$ by the $n - m$ factor in front, thus we would be commuting something with $0$, which has to yield 0 on the R.H.S. As a result, our \textquotedblleft Virasoro-Klein-Gordon" algebra has no anomalous terms.
 
 \section{Strings and Quantum Geometry}\label{sec:string-geometry}
 
