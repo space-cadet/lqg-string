@@ -668,30 +668,24 @@ where if $T' = - T k \Delta / 2$ and $h = g^{-1}$ we recover the NG area correct
 \end{equation*}
 The condition $h = g^{-1}$ can be achieved by
 \begin{equation*}
-    h_{a b} = S_{a c} g^{c d} S_{d b} ,
+    h_{a b} = U_{a c} g^{c d} V_{d b} ,
 \end{equation*}
-where $S \in \mathrm{SL}(2 , \mathbb{C})$, so we have a gauge freedom in choosing $h_{a b}$. This also implies
+where $U , V \in \mathrm{SL}(2 , \mathbb{C})$, so we have a gauge freedom in choosing $h_{a b}$. This also implies
 \begin{align*}
-    \partial _{a} X^{\mu} \partial _{b} X^{\nu} H_{\mu \nu}                                       & = S_{a c} g^{c d} S_{d b} =                                                                                                                      \\
-                                                                                                  & = S_{a c} \left( \frac{1}{2 g} \varepsilon ^{c c'} \varepsilon ^{d d'} g_{c' d'} \right) S_{d b} =                                               \\
-    \delta _{a} ^{c'} \delta _{b} ^{d'} \partial _{c'} X^{\mu} \partial _{d'} X^{\nu} H_{\mu \nu} & = S_{a c} \left( \frac{1}{2 g} \varepsilon ^{c c'} \varepsilon ^{d d'} \partial _{c'} X^{\mu} \partial _{d'} X^{\nu} G_{\mu \nu} \right) S_{d b}
+    \partial _{a} X^{\mu} \partial _{b} X^{\nu} H_{\mu \nu}                                       & = U_{a c} g^{c d} V_{d b} =                                                                                                                      \\
+                                                                                                  & = U_{a c} \left( \frac{1}{2 g} \varepsilon ^{c c'} \varepsilon ^{d d'} g_{c' d'} \right) V_{d b} =                                               \\
+    \delta _{a} ^{c'} \delta _{b} ^{d'} \partial _{c'} X^{\mu} \partial _{d'} X^{\nu} H_{\mu \nu} & = U_{a c} \left( \frac{1}{2 g} \varepsilon ^{c c'} \varepsilon ^{d d'} \partial _{c'} X^{\mu} \partial _{d'} X^{\nu} G_{\mu \nu} \right) V_{d b}
 \end{align*}
 \begin{equation*}
-    \delta _{a} ^{c'} \delta _{b} ^{d'} H_{\mu \nu} = \frac{1}{2 g} S_{a c} \varepsilon ^{c c'} S_{d b} \varepsilon ^{d d'} G_{\mu \nu}
+    \delta _{a} ^{c'} \delta _{b} ^{d'} H_{\mu \nu} = \frac{1}{2 g} V_{a c} \varepsilon ^{c c'} U_{d b} \varepsilon ^{d d'} G_{\mu \nu}
 \end{equation*}
 \begin{equation*}
-    H_{\mu \nu} = - \frac{1}{8 g} S_{a c} \varepsilon ^{c a} S_{d b} \varepsilon ^{b d} G_{\mu \nu}
+    H_{\mu \nu} = - \frac{1}{8 g} U_{a c} \varepsilon ^{c a} V_{d b} \varepsilon ^{b d} G_{\mu \nu}
 \end{equation*}
 \begin{equation*}
-    H_{\mu \nu} = - \frac{1}{8 g} (\Tr (S \varepsilon))^2 G_{\mu \nu} ,
+    H_{\mu \nu} = - \frac{1}{8 g} \Tr (U \varepsilon) \Tr (V \varepsilon) G_{\mu \nu} ,
 \end{equation*}
-where we must impose that $(\Tr (S \varepsilon))^2 = - 8$ to recover the NG action. So, the group freedom we have for choosing $h$ becomes
-\begin{equation*}
-    G = \mathrm{SL}(2 , \mathbb{C}) \cup \left\{ S \in \mathrm{GL}(2 , \mathbb{C}) \ | \ (\Tr (S \varepsilon))^2 = - 8 \right\} =
-\end{equation*}
-\begin{equation*}
-    = \left\{ \begin{bmatrix} a & b \\ c & d \end{bmatrix} \ \Bigg| \ a , b , c , d \in \mathbb{C} , \ a d - b c = 1 , \ (c - b)^2 = - 8 \right\}
-\end{equation*}
+where we must impose that $\Tr (U \varepsilon) \Tr (V \varepsilon) = - 8$ to recover the NG area corrected action.
 
 \begin{align*}
     \frac{\delta S_{B P}}{\delta X^{\lambda}} & = \left( - \frac{T}{2} \sqrt{- g} g^{a b} \partial _{\lambda} G_{\mu \nu} - \frac{T'}{2} \sqrt{- h} h^{a b} \partial _{\lambda} H_{\mu \nu} \right) \partial _{a} X^{\mu} \partial _{b} X^{\nu} -                                                               \\
