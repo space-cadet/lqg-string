@@ -462,59 +462,71 @@ From our analysis of the inverse-area corrected Polyakov action, we got $D$ fini
 	X^{\mu} (\tau , \sigma) = \frac{1}{2 \pi \alpha '} \sum _{p \in \mathbb{Z}} \frac{1}{2 E_{p}} \Big( \alpha ^{\mu} _{p} \e ^{i (- E_{p} \tau + p \sigma)} + \\
 	+ \beta ^{\mu} _{p} \e ^{i (E_{p} \tau + p \sigma)} \Big) ,
 \end{multline}
-with $E_{p} = \sqrt{p^2 + \mu ^2}$. From here on, following an analogous procedure to the one found in \cite{Tong2009Lectures}, reality of $X^{\mu}$ implies $(X^{\mu})^{*} = X^{\mu}$, from which we get
+with $E_{p} = \sqrt{p^2 + \mu ^2}$ for the closed string. From here on, we shall deal only with closed strings, unless otherwise stated. Following an analogous procedure to the one found in \cite{Tong2009Lectures} and \cite{Green2012Superstring}, reality of $X^{\mu}$ implies $(X^{\mu})^{*} = X^{\mu}$, from which we get
 \begin{equation} \label{eqn:reality-consequence}
 	\beta ^{\mu} _{n} = (\alpha ^{\mu} _{- n})^{*} .
 \end{equation}
 
 When looking at the constraints, we see that we can't decouple the exponentials in $\tau$ from any of the sums, thus we get two-index \textquotedblleft Virasoro modes"
 \begin{align}
-	L_{n , p}              & := \frac{n - p}{E_{n - p}} \alpha ^{\mu} _{p} \alpha ^{\nu} _{n - p} \eta _{\mu \nu} = 0 \label{eqn:"Virasoro"-modes-1}         \\
-	\widetilde{L} _{n , p} & := \frac{n - p}{E_{n - p}} \alpha ^{\mu} _{p} (\alpha ^{\nu} _{p - n})^{*} \eta _{\mu \nu} = 0 \label{eqn:"Virasoro"-modes-2} .
+	L_{n , p}              & := \alpha ^{\mu} _{n} \alpha ^{\nu} _{p} \eta _{\mu \nu} = 0 , \ \forall \ n , p \in \mathbb{Z} \label{eqn:"Virasoro"-modes-1} \\
+	\widetilde{L} _{n , p} & := \alpha ^{\mu} _{n} (\alpha ^{\nu} _{- p})^{*} \eta _{\mu \nu} = 0 , \ n \neq - p \label{eqn:"Virasoro"-modes-2}
 \end{align}
+\begin{equation} \label{eqn:"Virasoro"-modes-sum}
+	\sum _{n} \left( \left( \frac{n}{E_{n}} \right) ^2- 1 \right) \widetilde{L}_{n , - n} = 0
+\end{equation}
 
-Before proceeding to quantization, we have one last remark: the 0-th term of the solution reads
+Before proceeding, we have one more remark: the 0-th term of the solution reads
 \begin{equation} \label{eqn:X-sol-0-term}
 	\frac{1}{2 \pi \alpha '} \frac{1}{2 \mu} \left( \alpha ^{\mu} _{0} \e ^{- i \mu \tau} + (\alpha ^{\mu} _{0})^{*} \e ^{i \mu \tau} \right) ,
 \end{equation}
-which is clearly divergent in the $\mu \rightarrow 0$ limit unless $\mathfrak{Re}(\alpha ^{\mu} _{0}) = 0$. Moreover, if we want to recover the classic String Theory expression in this regime, it is not difficult to see that we require
+which is clearly divergent in the $\mu \rightarrow 0$ limit unless $\mathfrak{Re}(\alpha ^{\mu} _{0}) \sim \mu$. Moreover, if we want to recover the classic String Theory expression in this regime, it is not difficult to see that we require
 \begin{equation} \label{eqn:a-p-relation}
-	\alpha ^{\mu} _{0} = 4 \pi i (\alpha ')^2 p^{\mu} .
-\end{equation}
-Since our Virasoro-like \textquotedblleft modes" are double-indexed without summation, the string rest mass $M^2$ is given only in terms of the 0-th oscillator mode
-\begin{equation} \label{eqn:string-rest-mass}
-	M^2 = - p^{\mu} p_{\mu} = \frac{1}{16 \pi^2 (\alpha ')^{4}} \alpha ^{\mu} _{0} \alpha ^{\nu} _{0} \eta _{\mu \nu} .
+	\alpha ^{\mu} _{0} = 2 \pi \alpha ' \mu x^{\mu} + 4 \pi i (\alpha ')^2 p^{\mu} .
 \end{equation}
 
-Collecting our results, we have that the solution for our string is given by
+After analysing closer the $n = - p$ constraint(\ref{eqn:"Virasoro"-modes-sum}), we get the string mass in terms of vibrational modes and center of mass position
+\begin{multline} \label{eqn:string-rest-mass}
+	M^2 = - p^{\mu} p_{\mu} = \frac{1}{(4 \pi (\alpha ')^2)^2} \Bigg( (2 \pi \alpha ' m)^{2} x^{\mu} x_{\mu} - \\
+	- \sum _{n \neq 0} \left( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) a^{\mu} _{n} (a^{\nu} _{n})^{*} \eta _{\mu \nu} \right) \Bigg) .
+\end{multline}
+
+Collecting our results, we have that the solution for our closed string is given by
 \begin{multline} \label{eqn:KG-Polyakov-solution-final}
 	X^{\mu} (\tau , \sigma) = \frac{1}{2 \pi \alpha '} \sum _{p \in \mathbb{Z}} \frac{1}{2 E_{p}} \Big( \alpha ^{\mu} _{p} \e ^{i (- E_{p} \tau + p \sigma)} + \\
 	+ (\alpha ^{\mu} _{- p})^{*} \e ^{i (E_{p} \tau + p \sigma)} \Big)
 \end{multline}
-subject to the infinite family of constraints
-\begin{equation}
+subject to the family of constraints
+\begin{equation} \label{eqn:"Virasoro"-constraints}
 	L_{n , p} = \widetilde{L}_{n , p} = 0
-\end{equation} \label{eqn:"Virasoro"-constraints}
-and 0-th oscillation mode related to center of mass momentum
+\end{equation}
 \begin{equation*}
-	\alpha ^{\mu} _{0} = 4 \pi i (\alpha ')^2 p^{\mu} .
+	\sum _{n} \left( \left( \frac{n}{E_{n}} \right) ^2- 1 \right) \widetilde{L}_{n , - n} = 0
 \end{equation*}
+and 0-th oscillator mode related to center of mass position and momentum
+\begin{equation*}
+	\alpha ^{\mu} _{0} = 2 \pi \alpha ' \mu x^{\mu} + 4 \pi i (\alpha ')^2 p^{\mu} .
+\end{equation*}
+One thing to note is that the constraint(\ref{eqn:"Virasoro"-modes-2}) implies we only have $D$ non-zero modes in the solution, since all modes must be mutually orthogonal.
+
+\subsection{The Modes and Constraints Algebra} \label{sec:modes-constraint-algebra}
+
+We start by calculating the momentum canonical to $X^{\mu}$, $\Pi _{\lambda}$:
+\begin{multline} \label{eqn:canonical-momentum}
+	\Pi _{\lambda} = \frac{\partial \Lagr}{\partial (\partial _{\tau} X^{\lambda})} = \\
+	= F^{-} \frac{i}{4 \pi \alpha '} \sum _{n \in \mathbb{Z}} \bigg( - \alpha ^{\nu} _{n} \e ^{i (- E_{n} \tau + n \sigma)} + \\
+	+ (\alpha ^{\nu} _{- n})^{*} \e ^{i (E_{n} \tau + n \sigma)} \bigg) \eta _{\nu \lambda}
+\end{multline}
+and proceed by using the canonical equal-time Poisson bracket between $X^{\mu}$ and $\Pi ^{\nu}$
+\begin{equation}
+	\left\{ X^{\mu} (\tau , \sigma) , \Pi ^{\nu} (\tau , \sigma ') \right\} = \delta (\sigma - \sigma ') \eta ^{\mu \nu}
+\end{equation}
 
 \section{The Quantum Klein-Gordon String} \label{sec:quantum-KG-string}
 
-In the following, we proceed to quantize the Klein-Gordon string via canonical covariant quantization, in a manner much similar to those found in \cite{Tong2009Lectures} and \cite{Green2012Superstring}. To start, we calculate the momentum canonical to the embbeding fields $X^{\mu}$, which reads
-\begin{multline} \label{eqn:canonical-momentum}
-	\Pi _{\mu} (\tau , \sigma) = F^{-} \frac{i}{(4 \pi \alpha ')^2} \sum _{p} \big( - \alpha ^{\nu} _{p} \e ^{i (- E_{p} \tau + p \sigma)} + \\
-	+ (\alpha ^{\nu} _{- p})^{*} \e ^{i (E_{p} \tau + p \sigma)} \big) \eta _{\nu \mu} ,
-\end{multline}
-and then we proceed to turn the equal-time Poisson bracket relations
-\begin{equation} \label{eqn:Poisson-brackets-1}
-	\left\{ X^{\mu} (\tau , \sigma) , \Pi ^{\nu} (\tau , \sigma ') \right\} = \delta (\sigma - \sigma ') \eta ^{\mu \nu}
-\end{equation}
-\begin{equation} \label{eqn:Poisson-brackets-2}
-	\left\{ X^{\mu} (\tau , \sigma) , X^{\nu} (\tau , \sigma ') \right\} = 0 = \left\{ \Pi ^{\mu} (\tau , \sigma) , \Pi ^{\nu} (\tau , \sigma ') \right\}
-\end{equation}
-into equal-time commutation relations between the now operators $\Hat{X}^{\mu}$ and $\Hat{\Pi}^{\nu}$:
+In the following, we proceed to quantize the Klein-Gordon string via canonical covariant quantization, in a manner much similar to those found in \cite{Tong2009Lectures} and \cite{Green2012Superstring}.
+
+We turn the equal-time Poisson bracket relations into equal-time commutation relations between the now operators $\Hat{X}^{\mu}$ and $\Hat{\Pi}^{\nu}$:
 \begin{equation} \label{eqn:canonical-commutator-1}
 	\Big[ \Hat{X}^{\mu} (\tau , \sigma) , \Hat{\Pi}^{\nu} (\tau , \sigma ') \Big] \equiv i \delta (\sigma - \sigma ') \eta ^{\mu \nu}
 \end{equation}
