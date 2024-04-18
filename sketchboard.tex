@@ -670,39 +670,31 @@ The condition $h = g^{-1}$ can be achieved by
 \begin{equation*}
     h_{a b} = S_{a c} g^{c d} T_{d b} ,
 \end{equation*}
-where $S , T \in \mathrm{SL}(2 , \mathbb{C})$, so we have a gauge freedom in choosing $h_{a b}$. Since we require $[h_{a b}] = [h_{a b}]^{\dagger}$ ($h_{a b}$ must be symmetric and real), this means $[T_{d b}] = [S_{d b}]^{\dagger}$, thus
+where $S , T \in \mathrm{SL}(2 , \mathbb{C})$, so we have a gauge freedom in choosing $h_{a b}$. Since we require $[h_{a b}] = [h_{a b}]^{\dagger}$ ($h_{a b}$ must be symmetric and real), this means $[T_{d b}] = [S_{d b}]^{\dagger}$ and also that $[S_{a b}]^{\dagger} = [S_{a b}]$, thus
 \begin{equation*}
-    h_{a b} = S_{a c} g^{c d} S^{\dagger} _{d b}.
+    h_{a b} = S_{a c} g^{c d} S_{d b}.
+\end{equation*}
+This restriction constrains our gauge group to just the boosts part of $\mathrm{SL}(2 , \mathbb{C})$,
+\begin{equation*}
+    S = \e ^{- n^{i} \sigma _{i} \beta} .
 \end{equation*}
 This also implies
 \begin{align*}
-    \partial _{a} X^{\mu} \partial _{b} X^{\nu} H_{\mu \nu}                                       & = S_{a c} g^{c d} S^{\dagger} _{d b} =                                                                                                                      \\
-                                                                                                  & = S_{a c} \left( \frac{1}{2 g} \varepsilon ^{c c'} \varepsilon ^{d d'} g_{c' d'} \right) S^{\dagger} _{d b} =                                               \\
-    \delta _{a} ^{c'} \delta _{b} ^{d'} \partial _{c'} X^{\mu} \partial _{d'} X^{\nu} H_{\mu \nu} & = S_{a c} \left( \frac{1}{2 g} \varepsilon ^{c c'} \varepsilon ^{d d'} \partial _{c'} X^{\mu} \partial _{d'} X^{\nu} G_{\mu \nu} \right) S^{\dagger} _{d b}
+    \partial _{a} X^{\mu} \partial _{b} X^{\nu} H_{\mu \nu}                                       & = S_{a c} g^{c d} S_{d b} =                                                                                                                      \\
+                                                                                                  & = S_{a c} \left( \frac{1}{2 g} \varepsilon ^{c c'} \varepsilon ^{d d'} g_{c' d'} \right) S_{d b} =                                               \\
+    \delta _{a} ^{c'} \delta _{b} ^{d'} \partial _{c'} X^{\mu} \partial _{d'} X^{\nu} H_{\mu \nu} & = S_{a c} \left( \frac{1}{2 g} \varepsilon ^{c c'} \varepsilon ^{d d'} \partial _{c'} X^{\mu} \partial _{d'} X^{\nu} G_{\mu \nu} \right) S_{d b}
 \end{align*}
 \begin{equation*}
-    \delta _{a} ^{c'} \delta _{b} ^{d'} H_{\mu \nu} = \frac{1}{2 g} S_{a c} \varepsilon ^{c c'} S^{\dagger} _{d b} \varepsilon ^{d d'} G_{\mu \nu}
+    \delta _{a} ^{c'} \delta _{b} ^{d'} H_{\mu \nu} = \frac{1}{2 g} S_{a c} \varepsilon ^{c c'} S_{d b} \varepsilon ^{d d'} G_{\mu \nu}
 \end{equation*}
 \begin{equation*}
-    H_{\mu \nu} = - \frac{1}{8 g} S_{a c} \varepsilon ^{c a} S^{\dagger} _{d b} \varepsilon ^{b d} G_{\mu \nu}
+    H_{\mu \nu} = - \frac{1}{8 g} S_{a c} \varepsilon ^{c a} S_{d b} \varepsilon ^{b d} G_{\mu \nu}
 \end{equation*}
 \begin{equation*}
-    H_{\mu \nu} = \frac{1}{8 (- g)} \Tr (S \varepsilon) \Tr (S^{\dagger} \varepsilon) G_{\mu \nu}
+    H_{\mu \nu} = \frac{1}{8 (- g)} \Tr (S \varepsilon) \Tr (S \varepsilon) G_{\mu \nu}
 \end{equation*}
 \begin{equation*}
-    H_{\mu \nu} = \frac{1}{8 (- g)} \Tr (S \varepsilon) \Tr (S^{\dagger} (- \varepsilon ^{\dagger})) G_{\mu \nu}
-\end{equation*}
-\begin{equation*}
-    H_{\mu \nu} = \frac{1}{8 g} \Tr (S \varepsilon) \Tr ((\varepsilon S)^{\dagger}) G_{\mu \nu}
-\end{equation*}
-\begin{equation*}
-    H_{\mu \nu} = \frac{1}{8 g} \Tr (S \varepsilon) \Tr (\varepsilon S)^{*} G_{\mu \nu}
-\end{equation*}
-\begin{equation*}
-    H_{\mu \nu} = \frac{1}{8 g} \Tr (S \varepsilon) \Tr (S \varepsilon)^{*} G_{\mu \nu}
-\end{equation*}
-\begin{equation*}
-    H_{\mu \nu} = \frac{1}{8 g} |\Tr (S \varepsilon)|^2 G_{\mu \nu} .
+    H_{\mu \nu} = \frac{1}{8 (- g)} \Tr (S \varepsilon)^2 G_{\mu \nu} .
 \end{equation*}
 This restricts $S$ to necessarily being not symmetric, otherwise the trace $\Tr (S \varepsilon)$ vanishes and we would get $H_{\mu \nu} = 0$.
 
@@ -723,9 +715,9 @@ This restricts $S$ to necessarily being not symmetric, otherwise the trace $\Tr 
 \end{equation*}
 Assuming the condition for $h = g^{-1}$ and flat background $G_{\mu \nu} = \eta _{\mu \nu}$, the EoM reduces to
 \begin{equation*}
-    \partial _{a} \left( \left( \sqrt{- g} g^{a b} - \frac{k \Delta}{2 (- g)} \sqrt{- g}^{-1} ((S^{\dagger})^{-1})^{a c} g_{c d} (S^{-1})^{d b} \right) \partial _{b} X^{\mu} \right) = 0 ,
+    \partial _{a} \left( \left( \sqrt{- g} g^{a b} - \frac{k \Delta}{2 (- g)} \sqrt{- g}^{-1} (S^{-1})^{a c} g_{c d} (S^{-1})^{d b} \right) \partial _{b} X^{\mu} \right) = 0 ,
 \end{equation*}
-which in conformal gauge $g_{a b} = \phi \eta _{a b}$ with $((S^{\dagger})^{-1})^{a c} \eta _{c d} (S^{-1})^{d b} = \eta ^{a b}$ reduces further
+which in conformal gauge $g_{a b} = \phi \eta _{a b}$ with $(S^{-1})^{a c} \eta _{c d} (S^{-1})^{d b} = \eta ^{a b}$ reduces further
 \begin{equation*}
     \partial _{a} \left( \left( 1 - \frac{k \Delta}{2 \phi ^2} \right) \eta ^{a b} \partial _{b} X^{\mu} \right) = 0
 \end{equation*}
@@ -738,69 +730,67 @@ which in conformal gauge $g_{a b} = \phi \eta _{a b}$ with $((S^{\dagger})^{-1})
 \begin{equation*}
     \eta ^{a b} \partial _{a} \partial _{b} X^{\mu} + \eta ^{a b} \partial _{a} \ln (F^{-}) \partial _{b} X^{\mu} = 0 .
 \end{equation*}
-This is the exact same equation derived in the next section which leads to the Klein-Gordon eqn. The requirement that $((S^{\dagger})^{-1})^{a c} \eta _{c d} (S^{-1})^{d b} = \eta ^{a b}$ restricts our gauge group to $\mathrm{SU}(1 , 1)$. Let's try to find more restrictions on $S$:
+This is the exact same equation derived in the next section which leads to the Klein-Gordon eqn. The requirement that $(S^{-1})^{a c} \eta _{c d} (S^{-1})^{d b} = \eta ^{a b}$ implies
+\begin{equation*}
+    S = \begin{bmatrix} a & b \\ c & d \end{bmatrix}
+\end{equation*}
+\begin{equation*}
+    S^{-1} = \begin{bmatrix} a & - b \\ - c & d \end{bmatrix} ,
+\end{equation*}
+\begin{equation*}
+    S = \begin{bmatrix} \cosh \beta - n^3 \sinh \beta & - (n^{1} - i n^2) \sinh \beta \\ - (n^1 + i n^2) \sinh \beta & \cosh \beta + n^3 \sinh \beta \end{bmatrix} ,
+\end{equation*}
+\begin{equation*}
+    S^{-1} = \begin{bmatrix} \cosh \beta + n^3 \sinh \beta & + (n^{1} - i n^2) \sinh \beta \\ + (n^1 + i n^2) \sinh \beta & \cosh \beta - n^3 \sinh \beta \end{bmatrix}
+\end{equation*}
+so $n^3 = 0$. Since $(n^1)^2 + (n^2)^2 = 1$, we can parametrize as $n^1 = \cos \theta$ and $n^2 = \sin \theta$, thus $S$ has the form
+\begin{equation*}
+    S = \begin{bmatrix} \cosh \beta & - \e ^{- i \theta} \sinh \beta \\ - \e ^{i \theta} \sinh \beta & \cosh \beta \end{bmatrix} ,
+\end{equation*}
+and $\Tr (S \varepsilon) = - 2 i \sin \theta \sinh \beta$. Let's try to find more restrictions on $S$:
 \begin{align*}
-    h^{a b} & = ((S^{\dagger})^{-1})^{a c} g_{c d} (S^{-1})^{d b}                                                                                                                         \\
-    h^{a b} & = \frac{1}{2 g^{-1}} \varepsilon ^{a a'} \varepsilon ^{b b'} \partial _{a'} X^{\mu} \partial _{b'} X^{\nu} \left( \frac{1}{8 g} |\Tr (S \varepsilon)|^2 G_{\mu \nu} \right)
+    h^{a b} & = (S^{-1})^{a c} g_{c d} (S^{-1})^{d b}                                                                                                                                       \\
+    h^{a b} & = \frac{1}{2 g^{-1}} \varepsilon ^{a a'} \varepsilon ^{b b'} \partial _{a'} X^{\mu} \partial _{b'} X^{\nu} \left( \frac{1}{8 (- g)} \Tr (S \varepsilon)^2 G_{\mu \nu} \right)
 \end{align*}
 \begin{equation*}
     \Downarrow
 \end{equation*}
 \begin{equation*}
-    ((S^{\dagger})^{-1})^{a c} g_{c d} (S^{-1})^{d b} = \frac{1}{2 g^{-1}} \varepsilon ^{a a'} \varepsilon ^{b b'} \frac{1}{8 g} |\Tr (S \varepsilon)|^2 \partial _{a'} X^{\mu} \partial _{b'} X^{\nu} G_{\mu \nu}
+    (S^{-1})^{a c} g_{c d} (S^{-1})^{d b} = \frac{1}{2 g^{-1}} \varepsilon ^{a a'} \varepsilon ^{b b'} \frac{1}{8 (- g)} \Tr (S \varepsilon)^2 \partial _{a'} X^{\mu} \partial _{b'} X^{\nu} G_{\mu \nu}
 \end{equation*}
 \begin{equation*}
-    ((S^{\dagger})^{-1})^{a c} g_{c d} (S^{-1})^{d b} = \frac{1}{16} |\Tr (S \varepsilon)|^2 \varepsilon ^{a c} \varepsilon ^{b d} g_{c d}
+    (S^{-1})^{a c} g_{c d} (S^{-1})^{d b} = - \frac{1}{16} \Tr (S \varepsilon)^2 \varepsilon ^{a c} \varepsilon ^{b d} g_{c d}
 \end{equation*}
 \begin{equation*}
-    ((S^{\dagger})^{-1})^{a c} g_{c d} (S^{-1})^{d b} = \left( \frac{i}{4} \Tr (S \varepsilon)^{*} \varepsilon ^{a c} \right) g_{c d} \left( \frac{i}{4} \Tr (S \varepsilon) \varepsilon ^{d b} \right)
+    (S^{-1})^{a c} g_{c d} (S^{-1})^{d b} = \left( \frac{i}{4} \Tr (S \varepsilon) \varepsilon ^{a c} \right) g_{c d} \left( \frac{i}{4} \Tr (S \varepsilon) \varepsilon ^{d b} \right)
 \end{equation*}
 \begin{align*}
-    g_{c d} = S^{\dagger} _{c a} \left( \frac{i}{4} \Tr (S \varepsilon)^{*} \varepsilon ^{a c'} \right) g_{c' d'} \left( \frac{i}{4} \Tr (S \varepsilon) \varepsilon ^{d' b} \right) S_{b d}
+    g_{c d} = S_{c a} \left( \frac{i}{4} \Tr (S \varepsilon)^{*} \varepsilon ^{a c'} \right) g_{c' d'} \left( \frac{i}{4} \Tr (S \varepsilon) \varepsilon ^{d' b} \right) S_{b d}
 \end{align*}
 \begin{equation*}
     \Downarrow
 \end{equation*}
 \begin{align*}
-    S^{\dagger} _{c a} \left( \frac{i}{4} \Tr (S \varepsilon)^{*} \varepsilon ^{a c'} \right) & = \delta _{c} ^{c'} \\
-    \left( \frac{i}{4} \Tr (S \varepsilon) \varepsilon ^{d' b} \right) S_{b d}                & = \delta _{d} ^{d'}
+    S_{c a} \left( \frac{i}{4} \Tr (S \varepsilon)^{*} \varepsilon ^{a c'} \right) & = \delta _{c} ^{c'} \\
+    \left( \frac{i}{4} \Tr (S \varepsilon) \varepsilon ^{d' b} \right) S_{b d}     & = \delta _{d} ^{d'}
 \end{align*}
+\begin{equation*}
+    \Downarrow
+\end{equation*}
+\begin{equation*}
+    (S^{-1})^{a b} = \left( \frac{i}{4} \Tr (S \varepsilon) \varepsilon ^{a b} \right) ,
+\end{equation*}
+thus we have that
+\begin{equation*}
+    \begin{bmatrix} \cosh \beta & \e ^{- i \theta} \sinh \beta \\ e ^{i \theta} \sinh \beta & \cosh \beta \end{bmatrix} = \begin{bmatrix} 0 & \frac{1}{2} \sin \theta \sinh \beta \\ - \frac{1}{2} \sin \theta \sinh \beta & 0 \end{bmatrix}
+\end{equation*}
 \begin{equation*}
     \Downarrow
 \end{equation*}
 \begin{align*}
-    (S^{-1})^{a b}             & = \left( \frac{i}{4} \Tr (S \varepsilon) \varepsilon ^{a b} \right)       \\
-    ((S^{-1})^{\dagger})^{a b} & = \left( \frac{i}{4} \Tr (S \varepsilon)^{*} \varepsilon ^{a b} \right) ,
+    \theta & = \frac{n \pi}{2}   \\
+    \beta  & = i \frac{m \pi}{2}
 \end{align*}
-however, since $S \in \mathrm{SU}(1 , 1)$, $S^{-1} = \eta S^{\dagger} \eta$, thus
-\begin{equation*}
-    \left( \frac{i}{4} \Tr (S \varepsilon) \varepsilon ^{a b} \right) = \eta ^{a a'} S^{\dagger} _{a' b'} \eta ^{b' b} .
-\end{equation*}
-Taking the determinant, we get
-\begin{equation*}
-    - \frac{1}{16} (\Tr (S \varepsilon))^2 = 1
-\end{equation*}
-\begin{equation*}
-    (\Tr (S \varepsilon))^2 = - 16
-\end{equation*}
-\begin{equation*}
-    \Tr (S \varepsilon) = \pm 4 i .
-\end{equation*}
-Without loss of generality, we can choose the negative branch $\Tr (S \varepsilon) = - 4 i$, thus leaving us with
-\begin{equation*}
-    \varepsilon ^{a b} = \eta ^{a a'} S^{\dagger} _{a' b'} \eta ^{b' b}
-\end{equation*}
-\begin{equation*}
-    - \varepsilon _{c d} = S^{\dagger} _{c d}
-\end{equation*}
-\begin{equation*}
-    \Downarrow
-\end{equation*}
-\begin{equation*}
-    S_{a b} = \varepsilon _{a b} ...
-\end{equation*}
-this can't be right, since $\Tr (\varepsilon ^2) = - 2$, not $- 4 i$...
-
 
 \newpage
 
