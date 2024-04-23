@@ -357,6 +357,7 @@ from which we can see that the correction factor modifies the speed of propagati
 \begin{equation} \label{eqn:wave-speed-corrected}
 	v = \frac{c}{F^+}.
 \end{equation}
+This is in fact an expected result for a effective theory emerging from a discretised background geometry, see\cite{Bodendorfer-LQG}.
 
 \section{Inverse Metric Polyakov} \label{sec:inverse-metric-Polyakov}
 
@@ -364,7 +365,7 @@ In the same way we considered the quantum geometry inverse metric correction to 
 \begin{multline} \label{eqn:inverse-metric-Polyakov}
 	S_{I A P} = - \frac{T}{2} \int \diff ^2 x \left( \sqrt{- g} - \frac{k \Delta}{2 \sqrt{- g}} \right) \times \\ \times g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} .
 \end{multline}
-The reason for considering this form and not one in which the inverse metric $g^{a b}$ also gets a correction term is that this form of a Polyakov inverse area-corrected action reduces nicely to the Nambu-Goto corrected action(\ref{eqn:modified-NG-action}) when the auxiliary metric $g_{a b}$ coincides with the induced metric $h_{a b} = \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu}$. The equations of motion for the auxiliary metric are completely unchanged by this correction, so they are
+The reason for considering this form and not one in which the inverse metric $g^{a b}$ also gets a correction term is that this form of a Polyakov inverse area-corrected action reduces nicely to the Nambu-Goto corrected action(\ref{eqn:modified-NG-action}) when the auxiliary metric $g_{a b}$ coincides with the induced metric $h_{a b} = \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu}$. Also as we shall see, this action yields the exact same equation of motion as a more rigorous bimetric analysis, see appendix(\ref{app:bimetric-string}). The equations of motion for the auxiliary metric are completely unchanged by this correction, so they are
 \begin{equation} \label{eqn:vary-wrt-g}
 	\frac{\delta S_{I A P}}{\delta g^{c d}} = 0
 \end{equation}
@@ -419,6 +420,7 @@ At first glance it seems problematic that we have a complex conformal factor $\p
 \begin{equation} \label{eqn:X-Klein-Gordon-eqn}
 	\left( \partial _{\sigma} ^2 - \partial _{\tau} ^2 \right) X^{\mu} - \mu ^2 X^{\mu} = 0 .
 \end{equation}
+The modification to the dispersion relation via the mass term is also an expected effect of a discrete background geometry as mentioned in\cite{Bodendorfer-LQG}.
 
 \subsection{Relation With The Nambu-Goto Analysis} \label{sec:relation-with-NG-case}
 
@@ -596,15 +598,84 @@ As usual, by the appearance of the Minkowski metric in the non-zero commutator
 \begin{equation} \label{eqn:ghosts}
 	\Big[ \Hat{a}^{\mu} _{p} , (\Hat{a}^{\nu} _{k})^{\dagger} \Big] = \eta ^{\mu \nu} \delta _{p k} ,
 \end{equation}
-we have ghosts in the theory which must be dealt with. When translating the constraints as quantum operators, we require that they have vanishing matrix elements when sandwiched by physical states $\psi$ and $\phi$:
+we have ghosts in the theory which must be dealt with(\cite{Tong2009Lectures},\cite{Green2012Superstring}). When translating the constraints as quantum operators, we require that they have vanishing matrix elements when sandwiched by physical states $\psi$ and $\phi$:
 \begin{equation} \label{eqn:L-constraint-quantum-1}
 	\bra{\phi} \Hat{L}_{p , k} \ket{\psi} = 0 \, \,
 \end{equation}
 \begin{equation} \label{eqn:L-constraint-quantum-2}
 	\bra{\phi} \Hat{\widetilde{L}}_{p , k} \ket{\psi} = 0 .
 \end{equation}
+\begin{equation} \label{eqn:L-constranit-quantum-sum}
+	\bra{\phi} \sum _{p} \left( \left( \frac{p}{E_{p}} \right) ^2 - 1 \right) \Hat{\widetilde{L}}_{p , - p} \ket{\psi} = 0 .
+\end{equation}
 
-\section{Strings and Quantum Geometry}\label{sec:string-geometry}
+When translating the constraints as quantum operators, for $\Hat{L}_{p , k}$ we have no ambiguities since it's composed only of annihilation operators. As for $\Hat{\widetilde{L}}_{p , k}$, there is an ambiguity when $p = - k$, which manifests in the imposition of this constraint as
+\begin{equation}
+	\bra{\phi} \sum _{p} \left( \left( \left( \frac{p}{E_{p}} \right) ^2 - 1 \right) \Hat{\widetilde{L}}_{p , - p} \right) - a \ket{\psi} = 0 ,
+\end{equation}
+for some constant $a$\cite{Green2012Superstring}. This constant appears in the mass spectrum of the quantum string as in
+\begin{multline}
+	\Hat{M}^2 = \frac{1}{(4 \pi (\alpha ')^2)^2} \Bigg( (2 \pi \alpha ' \mu)^{2} \Hat{x}^{\mu} \Hat{x}_{\mu} - \\
+	- \left( \sum _{n \neq 0} \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) (\Hat{a}^{\mu} _{n})^{\dagger} \Hat{a}^{\nu} _{n} \eta _{\mu \nu} - a \right) \Bigg) .
+\end{multline}
+The commutation algebra of constraints is inherited by the constraint algebra(\ref{eqn:L-bracket-0},\ref{eqn:L-bracket-1},\ref{eqn:L-bracket-2}), namely
+\begin{equation} \label{eqn:L-commutator-0}
+	\left[ \Hat{L}_{n , m} , \Hat{L}_{k , p} \right] = 0
+\end{equation}
+\begin{equation} \label{eqn:L-commutator-1}
+	\left[ \Hat{L}_{n , m} , \Hat{\widetilde{L}}_{k , p} \right] = \Hat{L}_{m , k} \delta _{n , - p} + \Hat{L}_{n , k} \delta _{m , - p}
+\end{equation}
+\begin{equation} \label{eqn:L-commutator-2}
+	\left[ \Hat{\widetilde{L}}_{n , m} , \Hat{\widetilde{L}}_{k , p} \right] = \Hat{\widetilde{L}}_{k , m} \delta _{n , - p} - \Hat{\widetilde{L}}_{n , p} \delta _{- m , k} .
+\end{equation}
+The only commutator with ordering ambiguities is(\ref{eqn:L-commutator-2}) when $m = - k$ and $p = -n$, thus we include anomalous terms\cite{Green2012Superstring}
+\begin{multline} \label{eqn:L-commutator-anomalous}
+	\left[ \Hat{\widetilde{L}}_{n , m} , \Hat{\widetilde{L}}_{k , p} \right] = \Hat{\widetilde{L}}_{k , m} \delta _{n , - p} - \Hat{\widetilde{L}}_{n , p} \delta _{- m , k} + \\
+	+ C_{n} \delta _{n , -p} + D_{k} \delta _{- m , k} .
+\end{multline}
+By noting that $C_{- n} = - C_{n}$ and $D_{- n} = - D_{n}$ and using the Jacobi identity of the commutator, we conclude that $C_{n} = - D_{n} = C_{1} n$, where we can find the value of $C_{1}$ by calculating the vacuum expectation value of the commutator $[\Hat{\widetilde{L}}_{1 , k} , \Hat{\widetilde{L}}_{k , - 1}]$, which yields that $C_{1} = 0$, thus {\it the quantum algebra of our constraints has no anomalies}. This is a very important result, since it doesn't constrain the dimension of the background manifold to any particular value, so our model works just as well for $D = 4$ as for any other value {\it a priori}.
+
+After analysing the mass-shell condition for the $n$-th excited state $\zeta _{\mu} (\Hat{a}^{\mu} _{n})^{\dagger} \ket{0 ; p}$\cite{Green2012Superstring}, under the assumption that the momentum wave-function is given by [justification needed]
+\begin{equation} \label{eqn:p-wave-func}
+	\psi (p) = \frac{\alpha '}{\mu} p^{2} ,
+\end{equation}
+we find that $\zeta _{\mu} p^{\mu} = 0$ and the momentum of this state is given by
+\begin{equation} \label{eqn:nth-vector-mode-momentum}
+	2 (4 \pi (\alpha ')^2)^2 p^2 = \frac{n^2}{n^2 + \mu ^2} - 1 - a .
+\end{equation}
+From this, for the absence of ghosts we then require that
+\begin{equation} \label{eqn:a-condition-no-ghosts}
+	a \geq \frac{d^2}{d^2 + \mu ^2} - 1 .
+\end{equation}
+In the boundary case, the $d$-th ($d = D - 1$) vector state is massless, while the other spin-1 states are massive and the ground state is a tachyon. Doing a similar analysis for the $d$-th spin-2 state $\zeta _{\mu \nu} (\Hat{a}^{\mu} _{d})^{\dagger} (\Hat{a}^{\nu} _{d})^{\dagger} \ket{0 ; p}$ with $\zeta _{\mu \nu} = \zeta _{\nu \mu}$ and $\zeta _{\ \mu} ^{\mu} = 0$ yields $\zeta _{\mu \nu} p^{\mu} = \zeta _{\mu \nu} p^{\nu} = 0$ and
+\begin{equation} \label{eqn:a-conition-massless-spin-2}
+	a = 2 \left( \frac{d^{2}}{d^{2} + \mu ^{2}} - 1 \right)
+\end{equation}
+for it to be massless. However, the quantity in parenthesis is negative, so doubling it makes it less than the minimum condition for the absense of ghosts(\ref{eqn:a-condition-no-ghosts}), thus we can't get massless spin-2 states. This is not really a problem because as pointed out in\cite{Bodendorfer-LQG}, a discrete background geometry modifies the dispersion relation at the effective level, so even tho at the fundamental level gravity would travel at $c$, in the effective limit it would appear \textquotedblleft massive", however with a very small mass. Thus, since we need $a$ to be at least as big as in(\ref{eqn:a-condition-no-ghosts}), we can choose $a > 0$ to also get rid of the ground state tachyon without the need to introduce supersymmetry or other unverified hypothesis.
+
+The most natural value for $a$ is $a = 1$, which comes from the analysis of physical and spurious states\cite{Green2012Superstring} of the form
+\begin{equation} \label{eqn:phys-spurious-state}
+	\ket{\psi _{- 2 , n}} = \sum _{m} \Hat{\widetilde{L}}_{n , m} \ket{\widetilde{\chi}_{- 2 , m}} ,
+\end{equation}
+where $\ket{\widetilde{\chi}_{- 2 , m}}$ satisfies the constraints(\ref{eqn:L-constraint-quantum-1},\ref{eqn:L-constraint-quantum-2}) and also
+\begin{multline} \label{eqn:spurious-basis-condition}
+	\Bigg( \sum _{n} \left( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) \Hat{\widetilde{L}}_{n , - n} \right) - \\
+	- a + 2 - m \Bigg) \ket{\widetilde{\chi}_{- 2 , m}} = 0 .
+\end{multline}
+States of the form(\ref{eqn:phys-spurious-state}) are annihilated by $\Hat{\widetilde{L}}_{p , k}$ for $p \neq - k$, and for these cases we have
+\begin{equation*}
+	\sum _{n} \left( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) \Hat{\widetilde{L}}_{- 1 , - n} \ket{\psi _{- 2 , n}} \right) =
+\end{equation*}
+\begin{multline*}
+	= \sum _{n} \Bigg( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) \Hat{\widetilde{L}}_{- 1 , - n} \times \\
+	\times \sum _{m} \Hat{\widetilde{L}}_{n , m} \ket{\widetilde{\chi}_{- 2 , m}} \Bigg)  =
+\end{multline*}
+\begin{equation} \label{eqn:spurious-annihilation}
+	= \sum _{n} \left( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) \Hat{\widetilde{L}}_{n , - n} \right) \ket{\widetilde{\chi}_{- 2 , 1}} ,
+\end{equation}
+which vanishes for $a = 1$.
+
+\section{Strings and Quantum Geometry} \label{sec:string-geometry}
 
 Uptil now we have studied a phenomenological modification of the string action. However, ultimately all phenomenological ideas must have a grounding in some exact, microscopic description of the system. Further, we have neglected one very important aspect of this whole endeavor, which is the description of the background geometry in the connection formalism and how to couple that to the Bosonic string. In this section we present a possible action in which the bulk geometry is encoded in the string action in terms of a connection living on the worldsheet.
 
