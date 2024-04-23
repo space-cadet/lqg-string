@@ -284,13 +284,9 @@ Presumably the limit $g \ll 1$ corresponds to when the area of the string worlds
 \end{equation}
 This action has, to the best of our knowledge, not been explored in the string theory literature. However, such an inverse area term arises very naturally in the LQG approach and goes by the name of ``inverse triad'' corrections, in the context of the 3D volume of spatial hypersurfaces.
 
-The action \eqref{eqn:modified-NG-action} has some interesting properties. First, on the face of it it does not appear to satisfy diffeomorphism invariance of the string worldsheet because of the second term. Given that we are assuming the existence of a minimum quantum of area, it is obvious that diffeomorphism invariance, at least in the classical sense, will no longer be an exact symmetry of the theory. However, if we look at that expression we see that it can be written as:
-\begin{equation} \label{eqn:modified-NG-action-v2}
-	S'_{NG}[h_{ab}] = -T \int \diff ^2 x \left( \sqrt{- h} - \frac{1}{2} {g \Delta}{\sqrt{- (h^{-1})}} \right),
-\end{equation}
-where $h^{-1}$ is now the determinant of the \emph{inverse} metric $h^{ab}$. So, while the second term is not diffeomorphism invariant \wrt the original metric $h_{ab}$ it is clearly diffeomorphism invariant \wrt the inverse metric $h^{ab}$.
+Although the action\eqref{eqn:modified-NG-action} is clearly not reparameterisation invariant anymore since the second term has a inverse metric determinant, thus under reparameterisation would pick up a squared Jacobian, it is still manifestly Poincaré invariant, since it only contains derivatives of $X^{\mu}$, thus it's variations vanish under global Lorentz transformations and translations. At face value, this action does not appear to satisfy diffeomorphism invariance of the string worldsheet because of the second term. This stems from the fact that we are assuming the existence of a minimum quantum of area, so it is obvious that diffeomorphism invariance, at least in the classical sense, will no longer be an exact symmetry of the theory.
 
-Second, in the expression \eqref{eqn:modified-NG-action} we can see a duality between the first and second terms. If we replace the metric $h_{ab}$ by its inverse $h'_{ab} \equiv h^{ab}$, then the action in terms of $h'_{ab}$ is the same as \eqref{eqn:modified-NG-action}, but with the difference that the factor of $g \Delta/2$ is mapped to $2/(g\Delta)$:
+In the expression\eqref{eqn:modified-NG-action} we can see a duality between the first and second terms. If we replace the metric $h_{ab}$ by its inverse $h'_{ab} \equiv h^{ab}$, then the action in terms of $h'_{ab}$ is the same as \eqref{eqn:modified-NG-action}, but with the difference that the factor of $g \Delta/2$ is mapped to $2/(g\Delta)$:
 \begin{align} \label{eqn:modified-NG-action-v3}
 	S'_{NG}[h'_{ab}] & = -T' \int \diff ^2 x \left( \sqrt{- h'} - \frac{2}{g \Delta} \sqrt{- (h')^{-1}} \right) \nonumber \\
 	                 & = -T' \int \diff ^2 x \left( \sqrt{- h'} - \onehalf {g' \Delta'}\sqrt{- (h')^{-1}} \right),
@@ -365,7 +361,9 @@ In the same way we considered the quantum geometry inverse metric correction to 
 \begin{multline} \label{eqn:inverse-metric-Polyakov}
 	S_{I A P} = - \frac{T}{2} \int \diff ^2 x \left( \sqrt{- g} - \frac{k \Delta}{2 \sqrt{- g}} \right) \times \\ \times g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} .
 \end{multline}
-The reason for considering this form and not one in which the inverse metric $g^{a b}$ also gets a correction term is that this form of a Polyakov inverse area-corrected action reduces nicely to the Nambu-Goto corrected action(\ref{eqn:modified-NG-action}) when the auxiliary metric $g_{a b}$ coincides with the induced metric $h_{a b} = \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu}$. Also as we shall see, this action yields the exact same equation of motion as a more rigorous bimetric analysis, see appendix(\ref{app:bimetric-string}). The equations of motion for the auxiliary metric are completely unchanged by this correction, so they are
+The reason for considering this form and not one in which the inverse metric $g^{a b}$ also gets a correction term is that this form of a Polyakov inverse area-corrected action reduces nicely to the Nambu-Goto corrected action(\ref{eqn:modified-NG-action}) when the auxiliary metric $g_{a b}$ coincides with the induced metric $h_{a b} = \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu}$. Also as we shall see, this action yields the exact same equation of motion as a more rigorous bimetric analysis, see appendix(\ref{app:bimetric-string}). This action has the same properties as\eqref{eqn:modified-NG-action}: it is not reparameterisation invariant but is evidently Poincaré-invariant.
+
+The equations of motion for the auxiliary metric are completely unchanged by this correction, so they are
 \begin{equation} \label{eqn:vary-wrt-g}
 	\frac{\delta S_{I A P}}{\delta g^{c d}} = 0
 \end{equation}
@@ -805,9 +803,9 @@ In the usual formulation of the string action the embedding fields are \emph{not
 
 \section{The Bimetric String}\label{app:bimetric-string}
 
-It would be natural to suspect that the action \eqref{eqn:modified-NG-action-v2} might be related to bimetric gravity in the target space of the string. We can see that this is indeed the case as follows.
+It would be natural to suspect that the action\eqref{eqn:modified-NG-action-v2} might be related to bimetric gravity in the target space of the string. We can see that this is indeed the case as follows.
 
-Consider a string propagating in a target space whose geometry is described by two bulk metrics. There are two ways that a string with two metrics might arise. One possibility is that there are two sets of embedding fields $X^\mu$ and $Y^\mu$. As a result, the induced metrics on the string worldsheet would also be different for both sets of embedding fields. However, in this case, we would not be talking about \emph{one} string but two \emph{different} strings described by the respective embedding functions. One could then proceed along the lines of \eqref{eqn:hassan-bimetric} and introduce a third term for the worldsheet action which describes a coupling between the two sets of embedding fields, of the form:
+There are two ways that a string with two metrics might arise. One possibility is that there are two sets of embedding fields $X^\mu$ and $Y^\mu$. As a result, the induced metrics on the string worldsheet would also be different for both sets of embedding fields. However, in this case, we would not be talking about \emph{one} string but two \emph{different} strings described by the respective embedding functions. One could then proceed along the lines of \eqref{eqn:hassan-bimetric} and introduce a third term for the worldsheet action which describes a coupling between the two sets of embedding fields, of the form:
 \begin{equation}\label{eqn:ws-bimetric-interaction}
 	S_{int} = - T_{eff} \int \diff^2 x\, \Phi(g,h) \Psi(\mb{X}, \mb{Y}).
 \end{equation}
