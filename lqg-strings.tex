@@ -284,7 +284,35 @@ Presumably the limit $g \ll 1$ corresponds to when the area of the string worlds
 \end{equation}
 This action has, to the best of our knowledge, not been explored in the string theory literature. However, such an inverse area term arises very naturally in the LQG approach and goes by the name of ``inverse triad'' corrections, in the context of the 3D volume of spatial hypersurfaces.
 
-Although the action\eqref{eqn:modified-NG-action} is clearly not reparameterisation invariant anymore since the second term has a inverse metric determinant, thus under reparameterisation would pick up a squared Jacobian, it is still manifestly Poincaré invariant, since it only contains derivatives of $X^{\mu}$, thus it's variations vanish under global Lorentz transformations and translations. At face value, this action does not appear to satisfy diffeomorphism invariance of the string worldsheet because of the second term. This stems from the fact that we are assuming the existence of a minimum quantum of area, so it is obvious that diffeomorphism invariance, at least in the classical sense, will no longer be an exact symmetry of the theory.
+The action\eqref{eqn:modified-NG-action} is still manifestly Poincaré invariant, since it only contains derivatives of $X^{\mu}$, thus it's variations vanish under global translations as in
+\begin{equation} \label{eqn:global-inf-transl-NG}
+	X^{\mu} \mapsto X^{\mu} + \epsilon ^{\mu} ,
+\end{equation}
+thus $\delta (\partial _{a} X^{\mu}) = \partial _{a} (\delta X^{\mu}) = \partial _{a} \epsilon ^{\mu} \equiv 0$. As for Lorentz transformations, we have that
+\begin{equation} \label{eqn:global-inf-LT-NG}
+	X^{\mu} \mapsto X^{\mu} + \epsilon ^{\mu \nu} X_{\nu} ,
+\end{equation}
+and since every term in the action is of the form
+\begin{equation} \label{eqn:NG-general-term-form}
+	\partial _{a} X^{\mu} \partial _{b} X^{\nu} \eta _{\mu \nu} ,
+\end{equation}
+with $\epsilon ^{\mu \nu} = - \epsilon ^{\nu \mu}$, we see immediately that the transformation leaves the action unchanged:
+\begin{equation*}
+	\delta (\partial _{a} X^{\mu} \partial _{b} X^{\nu} \eta _{\mu \nu}) =
+\end{equation*}
+\begin{equation*}
+	= (\partial _{a} (\delta X^{\mu}) \partial _{b} X^{\nu} + \partial _{a} X^{\mu} \partial _{b} (\delta X^{\nu})) \eta _{\mu \nu} =
+\end{equation*}
+\begin{equation*}
+	= (\epsilon ^{\mu \rho} \partial _{a} X_{\rho} \partial _{b} X^{\nu} + \partial _{a} X^{\mu} \partial _{b} X_{\rho} \epsilon ^{\nu \rho}) \eta _{\mu \nu} =
+\end{equation*}
+\begin{equation*}
+	= \epsilon _{\nu \mu} \partial _{a} X^{\mu} \partial _{b} X^{\nu} + \epsilon _{\mu \nu} \partial _{a} X^{\mu} \partial _{b} X^{\nu} =
+\end{equation*}
+\begin{equation} \label{eqn:vanishing-inf-LT-NG}
+	= (\epsilon _{\mu \nu} + \epsilon _{\nu \mu}) \partial _{a} X^{\mu} \partial _{b} X^{\nu} \equiv 0
+\end{equation}
+by the anti-symmetry of $\epsilon _{\mu \nu}$. At face value, this action does not appear to satisfy diffeomorphism invariance of the string worldsheet because of the second term. This stems from the fact that we are assuming the existence of a minimum quantum of area, so it is obvious that diffeomorphism invariance, at least in the classical sense, will no longer be an exact symmetry of the theory.
 
 In the expression\eqref{eqn:modified-NG-action} we can see a duality between the first and second terms. If we replace the metric $h_{ab}$ by its inverse $h'_{ab} \equiv h^{ab}$, then the action in terms of $h'_{ab}$ is the same as \eqref{eqn:modified-NG-action}, but with the difference that the factor of $g \Delta/2$ is mapped to $2/(g\Delta)$:
 \begin{align} \label{eqn:modified-NG-action-v3}
@@ -359,9 +387,9 @@ This is in fact an expected result for a effective theory emerging from a discre
 
 In the same way we considered the quantum geometry inverse metric correction to the Nambu-Goto action, it is also natural to consider such correction to the Polyakov string. We start with the action(\ref{eqn:polyakov-gravity}) and proceed with the inverse area correction(\ref{eqn:inverse-metric-correction}), which yields our corrected Polyakov action
 \begin{multline} \label{eqn:inverse-metric-Polyakov}
-	S_{I A P} = - \frac{T}{2} \int \diff ^2 x \left( \sqrt{- g} - \frac{k \Delta}{2 \sqrt{- g}} \right) \times \\ \times g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} .
+	S_{I A P} = - \frac{T}{2} \int \diff ^2 x \left( \sqrt{- g} - \frac{k \Delta}{2 \sqrt{- g}} \right) \times \\ \times g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \eta _{\mu \nu} .
 \end{multline}
-The reason for considering this form and not one in which the inverse metric $g^{a b}$ also gets a correction term is that this form of a Polyakov inverse area-corrected action reduces nicely to the Nambu-Goto corrected action(\ref{eqn:modified-NG-action}) when the auxiliary metric $g_{a b}$ coincides with the induced metric $h_{a b} = \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu}$. Also as we shall see, this action yields the exact same equation of motion as a more rigorous bimetric analysis, see appendix(\ref{app:bimetric-string}). This action has the same properties as\eqref{eqn:modified-NG-action}: it is not reparameterisation invariant but is evidently Poincaré-invariant.
+The reason for considering this form and not one in which the inverse metric $g^{a b}$ also gets a correction term is that this form of a Polyakov inverse area-corrected action reduces nicely to the Nambu-Goto corrected action(\ref{eqn:modified-NG-action}) when the auxiliary metric $g_{a b}$ coincides with the induced metric $h_{a b} = \partial _{a} X^{\mu} \partial _{b} X^{\nu} \eta _{\mu \nu}$. This action has the same properties as\eqref{eqn:modified-NG-action}: it is not reparameterisation invariant but is evidently Poincaré-invariant by the same arguments as before.
 
 The equations of motion for the auxiliary metric are completely unchanged by this correction, so they are
 \begin{equation} \label{eqn:vary-wrt-g}
@@ -369,15 +397,15 @@ The equations of motion for the auxiliary metric are completely unchanged by thi
 \end{equation}
 from which we obtain the stress-energy tensor for the worldsheet:
 \begin{multline} \label{eqn:inverse-area-em-tensor}
-	T_{c d} := \partial _{c} X^{\mu} \partial _{d} X^{\nu} G_{\mu \nu} - \\ - \frac{1}{2} g_{c d} g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} = 0 ,
+	T_{c d} := \partial _{c} X^{\mu} \partial _{d} X^{\nu} \eta _{\mu \nu} - \\ - \frac{1}{2} g_{c d} g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \eta _{\mu \nu} = 0 ,
 \end{multline}
 from which we can extract the metric $g_{c d}$ as
 \begin{equation} \label{eqn:ws-metric}
-	g_{c d} = 2 f \partial _{c} X^{\mu} \partial _{d} X^{\nu} G_{\mu \nu} ,
+	g_{c d} = 2 f \partial _{c} X^{\mu} \partial _{d} X^{\nu} \eta _{\mu \nu} ,
 \end{equation}
 where the function $f$ is given by
 \begin{equation} \label{eqn:inverse-area-f}
-	\frac{1}{f} = g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} .
+	\frac{1}{f} = g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \eta _{\mu \nu} .
 \end{equation}
 
 As for variation w.r.t the embbeding fields $X^{\lambda}$, we have
@@ -386,9 +414,10 @@ As for variation w.r.t the embbeding fields $X^{\lambda}$, we have
 \end{equation}
 
 \begin{multline} \label{eqn:X-eom-inverse-area}
-	F^{-} \sqrt{- g} g^{a b} \partial _{a} \partial _{b} X^{\nu} G_{\lambda \nu} + \partial _{a} \left( F^{-} \sqrt{- g} g^{a b} \right) \partial _{b} X^{\nu} G_{\lambda \nu} = \\ = \frac{1}{2} F^{-} \sqrt{- g} g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \partial _{\lambda} G_{\mu \nu} ,
+	F^{-} \sqrt{- g} g^{a b} \partial _{a} \partial _{b} X^{\nu} \eta _{\lambda \nu} + \\
+	+ \partial _{a} \left( F^{-} \sqrt{- g} g^{a b} \right) \partial _{b} X^{\nu} \eta _{\lambda \nu} = 0 ,
 \end{multline}
-where $F^{-} = 1 - k \Delta / 2 (- g)$. In conformal gauge $g^{a b} = (\phi (x))^{-1} \eta ^{a b}$ and assuming flat background $G_{\mu \nu} = \eta _{\mu \nu}$, eq(\ref{eqn:X-eom-inverse-area}) simplify to
+where $F^{-} = 1 - k \Delta / 2 (- g)$. In conformal gauge $g^{a b} = (\phi (x))^{-1} \eta ^{a b}$, eq(\ref{eqn:X-eom-inverse-area}) simplify to
 \begin{equation} \label{eqn:X-eom-simplified}
 	\eta ^{a b} \partial _{a} \partial _{b} X^{\mu} + \eta ^{a b} \partial _{a} \ln (F^{-}) \partial _{b} X^{\mu} = 0 .
 \end{equation}
@@ -493,7 +522,7 @@ After analysing closer the $n = - p$ constraint(\ref{eqn:"Virasoro"-modes-sum}),
 
 Collecting our results, we have that the solution for our closed string is given by
 \begin{multline} \label{eqn:KG-Polyakov-solution-final}
-	X^{\mu} (\tau , \sigma) = \frac{1}{2 \pi \alpha '} \sum _{p \in \mathbb{Z}} \frac{1}{2 E_{p}} \Big( \alpha ^{\mu} _{p} \e ^{i (- E_{p} \tau + p \sigma)} + \\
+	X^{\mu} (\tau , \sigma) = \frac{1}{2 \pi \alpha '} \sum _{p} \frac{1}{2 E_{p}} \Big( \alpha ^{\mu} _{p} \e ^{i (- E_{p} \tau + p \sigma)} + \\
 	+ (\alpha ^{\mu} _{- p})^{*} \e ^{i (E_{p} \tau + p \sigma)} \Big)
 \end{multline}
 subject to the family of constraints
