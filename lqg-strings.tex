@@ -371,7 +371,7 @@ where the effective mass density and effective tension are given by
 
 Rewriting eq(\ref{eqn:corrected-NG-wave-equation}) in terms of $\sigma$ derivatives and parameterizing $\sigma$ as (let $F^+ = 1 + g \Delta / 2 (- h)$)
 \begin{equation} \label{eqn:sigma-parameterization}
-	\sigma (q) = \frac{1}{T} \int _{0} ^{q} \diff E \frac{1}{(F^+)^2} = \frac{E (q)}{T (F^+)^2} ,
+	\sigma (q) = \frac{1}{T} \int _{0} ^{q} \diff E \frac{1}{(F^+)^2} ,
 \end{equation}
 we find the wave equation
 \begin{equation} \label{eqn:simplified-modified-wave-eqn}
@@ -429,7 +429,7 @@ Equation(\ref{eqn:X-eom-simplified}) seems a bit odd, but we can polish it by ch
 \begin{equation}
 	(E^{2} - p^{2}) X^{\mu} + i (E \partial _{\tau} \ln (F^{-}) - p \partial _{\sigma} \ln (F^{-})) X^{\mu} = 0 ,
 \end{equation}
-from which we can use the freedom in the conformal factor to fix the second term as $- m^2 X^{\mu}$, with $- m^2 = p^2 - E^2$ on-shell, and this in turn implies that the derivatives of $\ln (F^{-})$ are given by
+from which we can use the freedom in the conformal factor to fix the second term as $- \mu ^2 X^{\mu}$, with $- \mu ^2 = p^2 - E^2$ on-shell, and this in turn implies that the derivatives of $\ln (F^{-})$ are given by
 \begin{equation} \label{eqn:derivatives-F-minus}
 	\partial _{\tau} \ln (F^{-}) = i E , \ \partial _{\sigma} \ln (F^{-}) = i p ,
 \end{equation}
@@ -867,24 +867,26 @@ Following the general procedure, given in \cite{Callan1985Strings}, we can coupl
 	S_{P} = -\frac{T}{2} \int \diff^2 x \sqrt{-g} g^{ab} \partial_a X^\mu \partial_b X^\nu G_{\mu\nu},
 \end{equation}
 where $G_{\mu\nu}$ is now the bulk or target space metric. Using this form we can now write down the worldsheet Polyakov bimetric action for two bulk metrics:
-\begin{align}\label{eqn:polyakov-flat}
-	S_{PB} = & -\frac{T}{2} \int \diff^2 x\sqrt{-g} g^{ab} \partial_a X^\mu \partial_b X^\nu G_{\mu\nu} \nonumber \\
-	         & -\frac{T'}{2} \int \diff^2 x \sqrt{-h} h^{ab} \partial_a X^\mu \partial_b X^\nu H_{\mu\nu}.
-\end{align}
+\begin{multline} \label{eqn:bimetric-Polyakov}
+	S_{BP} = -\frac{T}{2} \int \diff^2 x\sqrt{-g} g^{ab} \partial_a X^\mu \partial_b X^\nu G_{\mu\nu} - \\
+	-\frac{T'}{2} \int \diff^2 x \sqrt{-h} h^{ab} \partial_a X^\mu \partial_b X^\nu H_{\mu\nu} + \\
+	+ \int \diff ^2 x \Phi (g , h) \Psi (X) \Theta (G , H) ,
+\end{multline}
+where the last term defines an interaction term $S_{int}$.
 
 \subsection{The Bimetric Polyakov Equations} \label{sec:bimetric-polyakov-eoms}
 
 Following the usual procedure such as the one found in \cite{Tong2009Lectures} with the bulk metric fixed, we find two copies of the string energy-momentum tensor being set to zero, which can be used to find an expression for the induced metrics:
 \begin{equation} \label{eqn:variation-wrt-g}
-	\frac{\delta S_{P B}}{\delta g^{c d}} \overset{!}{=} 0
+	\frac{\delta S_{B P}}{\delta g^{c d}} = 0
 \end{equation}
 \begin{multline} \label{eqn:g-em-tensor}
 	T^{(G)} _{c d} := G_{\mu \nu} \bigg( \partial _{c} X^{\mu} \partial _{d} X^{\nu} - \\
-	- \frac{1}{2} g_{c d} g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \bigg) = 0
+	- \frac{1}{2} g_{c d} g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \bigg) = \frac{2}{T \sqrt{- g}} \frac{\delta S_{int}}{\delta g^{c d}}
 \end{multline}
 
 \begin{equation} \label{eqn:g-expression}
-	g_{c d} = 2 f^{(G)} \partial _{c} X^{\mu} \partial _{d} X^{\nu} G_{\mu \nu} ,
+	g_{c d} = 2 f^{(G)} \left( \partial _{c} X^{\mu} \partial _{d} X^{\nu} G_{\mu \nu} - \frac{2}{T \sqrt{- g}} \frac{\delta S_{int}}{\delta g^{c d}} \right) ,
 \end{equation}
 where the function $f^{(G)}$ is given by
 \begin{equation} \label{eqn:g's-f-function}
@@ -892,24 +894,63 @@ where the function $f^{(G)}$ is given by
 \end{equation}
 and completely analogously for the $H_{\mu \nu}$ metric,
 \begin{equation} \label{eqn:variation-wrt-h}
-	\frac{\delta S_{P B}}{\delta h^{c d}} \overset{!}{=} 0
+	\frac{\delta S_{B P}}{\delta h^{c d}} = 0
 \end{equation}
 \begin{multline} \label{eqn:h-em-tensor}
 	T^{(H)} _{c d} := H_{\mu \nu} \bigg( \partial _{c} X^{\mu} \partial _{d} X^{\mu} - \\
-	- \frac{1}{2} h_{c d} h^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \bigg) = 0
+	- \frac{1}{2} h_{c d} h^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \bigg) = \frac{2}{T' \sqrt{- h}} \frac{\delta S_{int}}{\delta h^{c d}}
 \end{multline}
 \begin{equation} \label{eqn:h-expression}
-	h_{c d} = 2 f^{(H)} \partial _{c} X^{\mu} \partial _{d} X^{\nu} H_{\mu \nu} ,
+	h_{c d} = 2 f^{(H)} \left( \partial _{c} X^{\mu} \partial _{d} X^{\nu} H_{\mu \nu} - \frac{2}{T' \sqrt{- h}} \frac{\delta S_{int}}{\delta h^{c d}} \right) ,
 \end{equation}
 with
 \begin{equation} \label{eqn:h's-f-function}
 	\frac{1}{f^{(H)}} = h^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} H_{\mu \nu} .
 \end{equation}
+If $S_{int} = 0$ and the auxiliary metrics $g_{a b}$ and $h_{a b}$ coincide with the induced metrics from $G_{\mu \nu}$ and $H_{\mu \nu}$, then the action\eqref{eqn:bimetric-Polyakov} reduces to
+\begin{equation} \label{eqn:reduced-bimetric-action}
+	S' _{B P} = - T \int \diff ^2 x \sqrt{- g} - T' \int \diff ^2 x \sqrt{- h} ,
+\end{equation}
+which, if $T' = - T k \Delta / 2$ and $h = g^{-1}$ becomes precisely the Nambu-Goto area corrected action\eqref{eqn:modified-NG-action}. The condition $h = g^{-1}$ can be achieved by
+\begin{equation} \label{eqn:h=SgS}
+	h_{a b} = S_{a c} g^{c d} S_{d b} ,
+\end{equation}
+where $S \in \mathrm{SL}(2 , \mathbb{C})$. The fact that we require $S = S^{\dagger}$ for $h$ to be real and symmetric restricts $S$ to be a boost. By requiring that the induced metric by $H_{\mu \nu}$ be equal to\eqref{eqn:h=SgS}, we get
+\begin{equation} \label{eqn:H-from-SgS}
+	\partial _{a} X^{\mu} \partial _{b} X^{\nu} H_{\mu \nu} = S_{a c} g^{c d} S_{d b}
+\end{equation}
+from which follows
+\begin{equation}
+	H_{\mu \nu} = \frac{1}{8 (- g)} (\Tr (S \varepsilon))^2 G_{\mu \nu} ,
+\end{equation}
+constraining $S$ to necessarily being not symmetric otherwise the trace $\Tr (S \varepsilon)$ vanishes and we would get $H _{\mu \nu} = 0$. In fact, to recover the modified Nambu-Goto action\eqref{eqn:modified-NG-action}, we require $(\Tr (S \varepsilon))^2 = 8$, thus $H_{\mu \nu} = G_{\mu \nu} / (- g)$.
 
 As for the embbeding fields equation, we get a non-homogeneous wave equation for the coupled metric
 \begin{equation} \label{eqn:variation-wrt-X}
-	\frac{\delta S_{P B}}{\delta X^{\lambda}} \overset{!}{=} 0
+	\frac{\delta S_{P B}}{\delta X^{\lambda}} = 0
 \end{equation}
+\begin{equation} \label{eqn:bimetric-X-eom}
+	\partial _{a} \left( F^{a b} _{\mu \lambda} \partial _{b} X^{\mu} \right) = \frac{1}{2} \partial _{\lambda} F^{a b} _{\mu \nu} \partial _{a} X^{\mu} \partial _{b} X^{\nu} ,
+\end{equation}
+where the coupled double-metric $F^{a b} _{\mu \nu}$ is given by
+\begin{equation} \label{eqn:coupled-double-metric}
+	F^{a b} _{\mu \nu} = T \sqrt{- g} g^{a b} G_{\mu \nu} + T' \sqrt{- h} h^{a b} H_{\mu \nu} .
+\end{equation}
+If the conditions for $h = g^{-1}$ are satisfied and $G_{\mu \nu} = \eta _{\mu \nu}$, eq\eqref{eqn:bimetric-X-eom} reduces to
+\begin{multline} \label{eqn:bimetric-X-simplified-1}
+	\partial _{a} \big( \big( \sqrt{- g} g^{a b} - \\
+	- \frac{k \Delta}{2 (- g)} \sqrt{- g}^{-1} (S^{-1})^{a c} g_{c d} (S^{-1})^{d b} \big) \partial _{b} X^{\mu} \big) = 0 ,
+\end{multline}
+which in conformal gauge $g_{a b} = \phi (x) \eta _{a b}$ and with
+\begin{equation} \label{eqn:S-simplification-condition}
+	(S^{-1})^{a c} \eta _{c d} (S^{-1})^{d b} = \eta ^{a b}
+\end{equation}
+simplifies further to
+\begin{equation} \label{eqn:bimetric-eom-simplified}
+	\eta ^{a b} \partial _{a} \partial _{b} X^{\mu} + \eta ^{a b} \partial _{a} \ln (F^{-}) \partial _{b} X^{\mu} = 0 .
+\end{equation}
+This is the exact form derived earlier in\eqref{eqn:X-eom-simplified}, thus leading to the same Klein-Gordon equation.
+
 
 \bibliographystyle{JHEP3}
 
