@@ -1888,7 +1888,40 @@ where $\mc{A}^{I} _{a J} (x) = (A^{\alpha \beta} _{a} (x) T_{\alpha \beta})^{I} 
 \end{equation*}
 where the WS metric can be recast in terms of auxiliary zweibein fields as
 \begin{equation*}
-	S = - \frac{T}{2} \int \diff ^2 x e e^{a} _{i} e^{b i} \mc{D}_{a} X^{I} \mc{D}_{b} X^{J} \eta _{I J} .
+	S = - \frac{T}{2} \int \diff ^2 x e e^{a} _{I'} e^{b} _{J'} \eta ^{I' J'} \mc{D}_{a} X^{I} \mc{D}_{b} X^{J} \eta _{I J} ,
+\end{equation*}
+where
+\begin{equation*}
+	e := \sqrt{- \det (e_{a} ^{I} e_{b} ^{J} \eta _{I J})} = \sqrt{- \frac{1}{2} \varepsilon ^{f f'} \varepsilon ^{g g'} (e^{M} _{f} e^{N} _{g} \eta _{M N}) (e^{M'} _{f'} e^{N'} _{g'} \eta _{M' N'})} .
+\end{equation*}
+
+\subsection{Checking Poincaré Symmetry}
+
+Lorentz symmetry is immediate since for $X^{I} \mapsto X^{I} + \epsilon ^{I J} X_{J}$ we have
+\begin{equation*}
+	\delta (\mc{D}_{a} X^{I} \mc{D}_{b} X^{J} \eta _{I J}) = \left( \mc{D}_{a} \epsilon ^{I K} X_{K} \mc{D}_{b} X^{J} + \mc{D}_{a} X^{I} \mc{D}_{b} \epsilon ^{J K} X_{K} \right) \eta _{I J} =
+\end{equation*}
+\begin{equation*}
+	= \epsilon _{J I} \mc{D}_{a} X^{I} \mc{D}_{b} X^{J} + \epsilon _{I J} \mc{D}_{a} X^{I} \mc{D}_{b} X^{J} = 0 .
+\end{equation*}
+As for translations $X^{I} \mapsto X^{I} + \epsilon ^{I}$, we have
+\begin{equation*}
+	\delta \Lagr = \delta (e e^{a} _{I'} e^{b} _{J'} \eta ^{I' J'} \mc{D}_{a} X^{I} \mc{D}_{b} X^{J} \eta _{I J}) =
+\end{equation*}
+\begin{equation*}
+	= e e^{a} _{I'} e^{b} _{J'} \eta ^{I' J'} (\mc{D}_{a} \epsilon ^{I} \mc{D}_{b} X^{J} + \mc{D}_{a} X^{I} \mc{D}_{b} \epsilon ^{J}) \eta _{I J} =
+\end{equation*}
+\begin{equation*}
+	= e e^{a} _{I'} e^{b} _{J'} \eta ^{I' J'} (k \mc{A}^{I} _{a K} \epsilon^{K} \mc{D}_{b} X^{J} + \mc{D}_{a} X^{I} k \mc{A}^{J} _{b K} \epsilon ^{K}) \eta _{I J} =
+\end{equation*}
+\begin{equation*}
+	= 2 e e^{a} _{I'} e^{b} _{J'} \eta ^{I' J'} k \mc{A}^{I} _{a K} \epsilon ^{K} \mc{D}_{b} X^{J} \eta _{I J} =
+\end{equation*}
+\begin{equation*}
+	= \mc{D}_{b} (2 e e^{a} _{I'} e^{b} _{J'} \eta ^{I' J'} k \mc{A}^{I} _{a K} \epsilon ^{K} X^{J} \eta _{I J}) - X^{J} \mc{D}_{b} (2 e e^{a} _{I'} e^{b} _{J'} \eta ^{I' J'} k \mc{A}^{I} _{a K} \epsilon ^{K} \eta _{I J}) =
+\end{equation*}
+\begin{equation*}
+	= \partial _{b} (2 e e^{a} _{I'} e^{b} _{J'} \eta ^{I' J'} k \mc{A}^{I} _{a K} \epsilon ^{K} X^{J} \eta _{I J}) - X^{J} \mc{D}_{b} (2 e e^{a} _{I'} e^{b} _{J'} \eta ^{I' J'} k \mc{A}^{I} _{a K} \epsilon ^{K} \eta _{I J}) =
 \end{equation*}
 
 \subsection{EoMs}
@@ -1896,18 +1929,17 @@ where the WS metric can be recast in terms of auxiliary zweibein fields as
 \subsubsection{W.r.t $e$}
 
 \begin{align*}
-	\frac{\delta S}{\delta e^{c} _{k}} & = \frac{T}{2} \left( \frac{\partial}{\partial e^{c} _{k}} e e^{a} _{i} e^{b i} + e \frac{\partial}{\partial e^{c} _{k}} (e^{a} _{i} e^{b i}) \right) \mc{D}_{a} X^{I} \mc{D}_{b} X^{J} \eta _{I J} = \\
-	                                   & = T \left( - e e^{k} _{c} e^{a} _{i} e^{b i} + e \delta ^{a} _{c} \delta ^{k} _{i} e^{b i} \right) \mc{D}_{a} X^{I} \mc{D}_{b} X^{J} \eta _{I J} =                                                   \\
-	                                   & = T \left( - e e^{k} _{c} e^{a} _{i} e^{b i} \mc{D}_{a} X^{I} \mc{D}_{b} X^{J} \eta _{I J} + e e^{b k} \mc{D}_{c} X^{I} \mc{D}_{b} X^{J} \eta _{I J} \right) \overset{!}{=} 0
+	\frac{\delta S}{\delta e^{c} _{K}} & \propto \left( \frac{\partial e}{\partial e^{c} _{K}} e^{a} _{I'} e^{b} _{J'} \eta ^{I' J'} + e \frac{\partial}{\partial e^{c} _{K}} (e^{a} _{I'} e^{b} _{J'} \eta ^{I' J'}) \right) \mc{D}_{a} X^{I} \mc{D}_{b} X^{J} \eta _{I J} = \\
+	                                   & = \left( \frac{1}{2 e}  \right) \mc{D}_{a} X^{I} \mc{D}_{b} X^{J} \eta _{I J}
 \end{align*}
 \begin{equation*}
-	T^{k} _{c} := e^{b k} \mc{D}_{c} X^{I} \mc{D}_{b} X^{J} \eta _{I J} - e^{k} _{c} e^{a} _{i} e^{b i} \mc{D}_{a} X^{I} \mc{D}_{b} X^{J} \eta _{I J} = 0
+	T^{k} _{c} :=  = 0
 \end{equation*}
 \begin{equation*}
-	e^{k} _{c} = f e^{b k} \mc{D}_{c} X^{I} \mc{D}_{b} X^{J} \eta _{I J} ,
+	e^{K} _{c} =  ,
 \end{equation*}
 \begin{equation*}
-	\frac{1}{f} = e^{a} _{i} e^{b i} \mc{D}_{a} X^{I} \mc{D}_{b} X^{J} \eta _{I J}
+	\frac{1}{f} =
 \end{equation*}
 
 \subsubsection{W.r.t $A$}
