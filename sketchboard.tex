@@ -1877,11 +1877,16 @@ which vanish if $c = 1$.
 
 \section{Polyakov Action in terms of LQG Variables}
 
-Turn embbeding fields $X^{\mu}$ into vector in the spin-1 representation of $\mathrm{Spin}(d , 1)$, $X^{I}$, and promote partial derivative to covariant derivative $\partial _{a} \mapsto \mc{D}_{a}$ acting as
+Turn embbeding fields $X^{\mu}$ into vector in the spin-1 representation of $\R ^{d + 1} \rtimes \mathrm{Spin}(d , 1) \simeq \mathrm{Spin} (d + 1 , 1)$, $X^{I}$, and promote partial derivative to covariant derivative $\partial _{a} \mapsto \mc{D}_{a}$ acting as
 \begin{equation*}
-	\mc{D}_{a} X^{I} = \partial _{a} X^{I} + i k \mc{A}^{I \ K} _{a J} P_{K} X^{J} ,
+	\mc{D}_{a} X^{I} = \partial _{a} X^{I} + k \mc{A}^{I} _{a J} X^{J} ,
 \end{equation*}
-where $\mc{A}^{I \ K} _{a J} (x) = \mc{A}^{I} _{\ J} (x) \mc{C}^{K} _{a} (x) = (A^{\alpha \beta} (x) M_{\alpha \beta})^{I} _{\ J} (\delta ^{K} _{a} - E^{K} _{a} (x))$ is the WS $\R ^{d + 1} \rtimes \mathrm{Spin}(d , 1)$ connection with $M_{\alpha \beta}$ the generators of Lorentz transformations, $E^{K} _{a} = \partial _{a} X^{K}$ the induced zweibein from the embbeding fields $X^{K}$ and $P_{K} \equiv - i \partial / \partial X^{K}$ the generators of bulk translations, so the action becomes
+where the WS $\R ^{d + 1} \rtimes \mathrm{Spin}(d , 1) \simeq \mathrm{Spin} (d + 1 , 1)$ connection $\mc{A}_{a}$ with $I,J = 0 , ... , d , d + 1$ is given by
+\begin{equation*}
+	\mc{A}_{a} X = \begin{bmatrix} 0                         & \beta ^{0 1} _{a}       & \beta ^{0 2} _{a}   & ... & \beta ^{0 d} _{a}       & p^{0} _{a} / l \\ \beta ^{0 1} _{a} & 0 & - \theta ^{1 2} _{a} & ... & - \theta ^{1 d} _{a} & p^{1} _{a} / l \\ \beta ^{0 2} _{a} & \theta ^{1 2} _{a} & 0 & ... & - \theta ^{2 d} _{a} & p^{2} _{a} / l \\ \vdots & \vdots & \vdots & \ddots & \vdots & \vdots \\ \beta ^{0 d} _{a} & \theta ^{1 d} _{a} & \theta ^{2 d} _{a} & ... & 0 & p^{d} _{a} / l \\
+                - \epsilon p^{0} _{a} / l & \epsilon p^{1} _{a} / l & \epsilon p^{2} _{a} & ... & \epsilon p^{d} _{a} / l & 0\end{bmatrix} \begin{bmatrix} X^{0} \\ X^{1} \\ X^{2} \\ \vdots \\ X^{d} \\ 1 \end{bmatrix} = \left( \beta ^{0 \alpha} _{a} B_{0 \alpha} + \frac{1}{2} \theta ^{\alpha \beta} _{a} J_{\alpha \beta} + \frac{p^{\mu} _{a}}{l} P_{\mu} \right) X ,
+\end{equation*}
+where $\epsilon = \mathrm{sgn} (\Lambda)$, i.e the sign of the background cosmological constant with $\alpha , \beta = 1 , ... , d$ and $\mu = 0,...,d$, so the action becomes
 \begin{equation*}
 	S = - \frac{T}{2} \int \diff ^2 x \sqrt{- g} g^{a b} \mc{D}_{a} X^{I} \mc{D}_{b} X^{J} \eta _{I J} ,
 \end{equation*}
@@ -1894,51 +1899,41 @@ where
 	e := \sqrt{- \det (e_{a} ^{I} e_{b} ^{J} \eta _{I J})} = \sqrt{- \frac{1}{2} \varepsilon ^{f f'} \varepsilon ^{g g'} (e^{M} _{f} e^{N} _{g} \eta _{M N}) (e^{M'} _{f'} e^{N'} _{g'} \eta _{M' N'})} .
 \end{equation*}
 
-\subsection{Checking Poincaré Symmetry}
+\subsection{Checking the derivative}
 
-Lorentz symmetry is immediate since for $X^{I} \mapsto X^{I} + \epsilon ^{I J} X_{J}$ we have
+Since the connection is non-abelian, it should transform as
 \begin{equation*}
-	\delta (\mc{D}_{a} X^{I} \mc{D}_{b} X^{J} \eta _{I J}) = \left( \mc{D}_{a} \epsilon ^{I K} X_{K} \mc{D}_{b} X^{J} + \mc{D}_{a} X^{I} \mc{D}_{b} \epsilon ^{J K} X_{K} \right) \eta _{I J} =
+	\mc{A}' _{a} = \mc{P} \mc{A}_{a} \mc{P}^{-1} - \frac{1}{k} (\partial _{a} \mc{P}) \mc{P}^{-1} ,
+\end{equation*}
+where $\mc{P} = \e ^{\beta ^{0 \alpha} B_{0 \alpha} + \theta ^{\alpha \beta} J_{\alpha \beta} / 2 + p^{\mu} P_{\mu} / l}$. Putting this into a gauge transformed derivative we have
+\begin{equation*}
+	\mc{D}' _{a} X' = \partial _{a} X' + k \mc{A}' _{a} X' =
 \end{equation*}
 \begin{equation*}
-	= \epsilon _{J I} \mc{D}_{a} X^{I} \mc{D}_{b} X^{J} + \epsilon _{I J} \mc{D}_{a} X^{I} \mc{D}_{b} X^{J} = 0 .
-\end{equation*}
-As for translations $X^{I} \mapsto X^{I} + \epsilon ^{I}$, we have
-\begin{equation*}
-	\delta (\mc{D}_{a} X^{I}) = \mc{D}_{a} (\delta X^{I}) =
+	= \partial _{a} (\mc{P} X) + k (\mc{P} \mc{A}_{a} \mc{P}^{-1} - \frac{1}{k} (\partial _{a} \mc{P}) \mc{P}^{-1}) (\mc{P} X) =
 \end{equation*}
 \begin{equation*}
-	= \mc{D}_{a} \epsilon ^{I} =
+	= \partial _{a} \mc{P} X + \mc{P} \partial _{a} X + k \mc{P} \mc{A}_{a} X - \partial _{a} \mc{P} X \equiv \mc{P} \mc{D}_{a} X ,
 \end{equation*}
-\begin{equation*}
-	= \partial _{a} \epsilon ^{I} + i k \mc{A}^{I \ K} _{a J} \partial _{K} \epsilon ^{J} = 0 ,
-\end{equation*}
-so this action has global Poincaré symmetry.
+so this is a proper covariant derivative for the Poincaré group.
 
-Let's now check the transformation properties of our connection. Under a local Poincaré transformation
+\subsection{Checking Poincaré invariance}
+
+Under a global infinitesimal Poincaré transformation $X \mapsto X + (\epsilon ^{\mu \nu} M_{\mu \nu} + \epsilon ^{\mu} P_{\mu}) X$ where $\epsilon ^{\mu \nu} = - \epsilon ^{\nu \mu}$ and $\epsilon ^{\mu}$ are infinitesimal constants and $M_{\mu \nu} = B_{0 \alpha} + J_{\alpha \beta}$ are the generators of Lorentz transformations, the action changes as
 \begin{equation*}
-	X^{I} \mapsto X^{\prime I} = \Lambda ^{I} _{\ J} (x) X^{J} (x) + \epsilon ^{I} (x)
-\end{equation*}
-the regular derivative transforms as
-\begin{equation*}
-	\partial _{a} X^{\prime I} = (\partial _{a} \Lambda ^{I} _{\ J} X^{J} + \Lambda ^{I} _{\ J} \partial _{a} X^{J}) + \partial _{a} \epsilon ^{I} .
-\end{equation*}
-We want the covariant derivative to transform covariantly as in
-\begin{equation*}
-	\mc{D}' _{a} X^{\prime I} = \Lambda ^{I} _{\ J} \mc{D}_{a} X^{J} + \mc{D}_{a} \epsilon ^{I} .
-\end{equation*}
-The transformed covariant derivative is
-\begin{equation*}
-	\mc{D}' _{a} X^{\prime I} = \mc{D}' _{a} (\Lambda ^{I} _{\ J} X^{J} + \epsilon ^{I})=
+	\delta \Lagr = \delta \left( e e^{a} _{I'} e^{b} _{J'} \eta ^{I' J'} \mc{D}_{a} X^{I} \mc{D}_{b} X^{J} \eta _{I J} \right) =
 \end{equation*}
 \begin{equation*}
-	= \mc{D}' _{a} \Lambda ^{I} _{\ J} X^{J} + \Lambda ^{I} _{\ J} \mc{D}' _{a} X^{J} + \mc{D}' _{a} \epsilon ^{I} =
+	= e e^{a} _{I'} e^{b} _{J'} \eta ^{I' J'} \delta \left( \mc{D}_{a} X^{I} \mc{D}_{b} X^{J} \right) \eta _{I J} =
 \end{equation*}
 \begin{equation*}
-	= (\partial _{a} \Lambda ^{I} _{\ J} + i k \mc{A}^{\prime I \ K} _{a I'} P_{K} \Lambda ^{I'} _{\ J} - i k \mc{A}^{\prime  J' \ K} _{a J} P_{K} \Lambda ^{I} _{J'}) X^{J} + \Lambda ^{I} _{\ J} (\partial _{a} X^{J} + i k \mc{A}^{\prime J \ K} _{a J'} P_{K} X^{J'}) + (\partial _{a} \epsilon ^{I} + i k \mc{A}^{\prime I \ K} _{a I'} P_{K} \epsilon ^{I'}) =
+	= e e^{a} _{I'} e^{b} _{J'} \eta ^{I' J'} \left( \mc{D}_{a} ((\epsilon ^{\mu \nu} M_{\mu \nu} + \epsilon ^{\mu} P_{\mu})^{I} _{\ K} X^{K}) \mc{D}_{b} X^{J} + \mc{D}_{a} X^{I} \mc{D}_{b} ((\epsilon ^{\mu \nu} M_{\mu \nu} + \epsilon ^{\mu} P_{\mu})^{J} _{\ K} X^{K}) \right) \eta _{I J} =
 \end{equation*}
 \begin{equation*}
-	= \partial _{a} \Lambda ^{I} _{\ J} X^{J} + \Lambda ^{I} _{\ J} (\partial _{a} X^{J} + i k \mc{A}^{\prime J \ J'} _{a J'}) + \partial _{a} \epsilon ^{I}
+	= e e^{a} _{I'} e^{b} _{J'} \eta ^{I' J'} \left( (\epsilon ^{\mu \nu} M_{\mu \nu} + \epsilon ^{\mu} P_{\mu})^{I} _{\ K} \mc{D}_{a} X^{K} \mc{D}_{b} X^{J} + (\epsilon ^{\mu \nu} M_{\mu \nu} + \epsilon ^{\mu} P_{\mu})^{J} _{\ K} \mc{D}_{a} X^{K} \mc{D}_{b} X^{I} \right) \eta _{I J} =
+\end{equation*}
+\begin{equation*}
+	=
 \end{equation*}
 
 \subsection{EoMs}
