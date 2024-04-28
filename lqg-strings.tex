@@ -178,7 +178,7 @@
 \begin{abstract}
 
 	With the goal of understanding whether or not it is possible to construct a string theory which is consistent with loop quantum gravity (LQG), we study alternate versions of the Nambu-Goto action for a bosonic string. We consider two types of modifications. The first is a phenomenological action based on the observation that LQG tells us that areas of two-surfaces are operators in quantum geometry and are bounded from below. This leads us to a string action which is similar to that of bimetric gravity. We provide formulations of the bimetric string for both the Nambu-Goto (second order) and Polyakov (first order) formulations. We explore the classical solutions of this action and its quantization and relate it to the conventional string solutions.
-
+	
 	The second is an action in which the background geometry is described in terms of the pullback of the connection which describes the bulk geometry to the worldsheet. The resulting action is in the form of a gauged sigma model, where the spacetime co-ordinates are now SO(D,1) vectors. We find that for the particular case of a constant background connection the action reduces to the bimetric action discussed above. We discuss classical solutions and quantization strategies for this action and its implications for the broader program of unifying string theory and loop quantum gravity.
 \end{abstract}
 
@@ -284,37 +284,13 @@ Presumably the limit $g \ll 1$ corresponds to when the area of the string worlds
 \end{equation}
 This action has, to the best of our knowledge, not been explored in the string theory literature. However, such an inverse area term arises very naturally in the LQG approach and goes by the name of ``inverse triad'' corrections, in the context of the 3D volume of spatial hypersurfaces.
 
-The action\eqref{eqn:modified-NG-action} is still manifestly Poincaré invariant, since it only contains derivatives of $X^{\mu}$, thus it's variations vanish under global translations as in
-\begin{equation} \label{eqn:global-inf-transl-NG}
-	X^{\mu} \mapsto X^{\mu} + \epsilon ^{\mu} ,
+The action \eqref{eqn:modified-NG-action} has some interesting properties. First, on the face of it it does not appear to satisfy diffeomorphism invariance of the string worldsheet because of the second term. Given that we are assuming the existence of a minimum quantum of area, it is obvious that diffeomorphism invariance, at least in the classical sense, will no longer be an exact symmetry of the theory. However, if we look at that expression we see that it can be written as:
+\begin{equation} \label{eqn:modified-NG-action-v2}
+	S'_{NG}[h_{ab}] = -T \int \diff ^2 x \left( \sqrt{- h} - \frac{1}{2} {g \Delta}{\sqrt{- (h^{-1})}} \right),
 \end{equation}
-thus $\delta (\partial _{a} X^{\mu}) = \partial _{a} (\delta X^{\mu}) = \partial _{a} \epsilon ^{\mu} \equiv 0$. As for Lorentz transformations, we have that
-\begin{equation} \label{eqn:global-inf-LT-NG}
-	X^{\mu} \mapsto X^{\mu} + \epsilon ^{\mu \nu} X_{\nu} ,
-\end{equation}
-and since every term in the action is of the form
-\begin{equation} \label{eqn:NG-general-term-form}
-	\partial _{a} X^{\mu} \partial _{b} X^{\nu} \eta _{\mu \nu} ,
-\end{equation}
-with $\epsilon ^{\mu \nu} = - \epsilon ^{\nu \mu}$, we see immediately that the transformation leaves the action unchanged:
-\begin{equation*}
-	\delta (\partial _{a} X^{\mu} \partial _{b} X^{\nu} \eta _{\mu \nu}) =
-\end{equation*}
-\begin{equation*}
-	= (\partial _{a} (\delta X^{\mu}) \partial _{b} X^{\nu} + \partial _{a} X^{\mu} \partial _{b} (\delta X^{\nu})) \eta _{\mu \nu} =
-\end{equation*}
-\begin{equation*}
-	= (\epsilon ^{\mu \rho} \partial _{a} X_{\rho} \partial _{b} X^{\nu} + \partial _{a} X^{\mu} \partial _{b} X_{\rho} \epsilon ^{\nu \rho}) \eta _{\mu \nu} =
-\end{equation*}
-\begin{equation*}
-	= \epsilon _{\nu \mu} \partial _{a} X^{\mu} \partial _{b} X^{\nu} + \epsilon _{\mu \nu} \partial _{a} X^{\mu} \partial _{b} X^{\nu} =
-\end{equation*}
-\begin{equation} \label{eqn:vanishing-inf-LT-NG}
-	= (\epsilon _{\mu \nu} + \epsilon _{\nu \mu}) \partial _{a} X^{\mu} \partial _{b} X^{\nu} \equiv 0
-\end{equation}
-by the anti-symmetry of $\epsilon _{\mu \nu}$. At face value, this action does not appear to satisfy diffeomorphism invariance of the string worldsheet because of the second term. This stems from the fact that we are assuming the existence of a minimum quantum of area, so it is obvious that diffeomorphism invariance, at least in the classical sense, will no longer be an exact symmetry of the theory.
+where $h^{-1}$ is now the determinant of the \emph{inverse} metric $h^{ab}$. So, while the second term is not diffeomorphism invariant \wrt the original metric $h_{ab}$ it is clearly diffeomorphism invariant \wrt the inverse metric $h^{ab}$.
 
-In the expression\eqref{eqn:modified-NG-action} we can see a duality between the first and second terms. If we replace the metric $h_{ab}$ by its inverse $h'_{ab} \equiv h^{ab}$, then the action in terms of $h'_{ab}$ is the same as \eqref{eqn:modified-NG-action}, but with the difference that the factor of $g \Delta/2$ is mapped to $2/(g\Delta)$:
+Second, in the expression \eqref{eqn:modified-NG-action} we can see a duality between the first and second terms. If we replace the metric $h_{ab}$ by its inverse $h'_{ab} \equiv h^{ab}$, then the action in terms of $h'_{ab}$ is the same as \eqref{eqn:modified-NG-action}, but with the difference that the factor of $g \Delta/2$ is mapped to $2/(g\Delta)$:
 \begin{align} \label{eqn:modified-NG-action-v3}
 	S'_{NG}[h'_{ab}] & = -T' \int \diff ^2 x \left( \sqrt{- h'} - \frac{2}{g \Delta} \sqrt{- (h')^{-1}} \right) \nonumber \\
 	                 & = -T' \int \diff ^2 x \left( \sqrt{- h'} - \onehalf {g' \Delta'}\sqrt{- (h')^{-1}} \right),
@@ -355,7 +331,7 @@ where
 \end{align}
 and $\PS ^{\tau} _{\mu (N G)}$, $\PS ^{\sigma} _{\mu (N G)}$ are the regular Nambu-Goto world-sheet currents.
 
-In the following we parameterise the string with $\tau = t$ and $\frac{\partial X}{\partial \sigma} \cdot \frac{\partial X}{\partial t}$. The first condition is the most natural since it means that a line of constant $\tau$ is a string as seen by a inertial Lorentz observer, and the second condition is chosen such that the $\sigma$ parameter is parallel to the parameter $s$, which is the length along the string parameter and this implies the string velocity coincides with the tranverse velocity, which is a natural dynamical variable of the string since by construction it is reparameterisation invariant, so it doesn't change even tho our action changes under reparameterisation. From this, we find that the new form for the conserved energy per infinitesimal piece of the string is the regular energy of the Nambu-Goto string times the correction factor
+Using the static gauge $\tau = t$ and the transverse gauge with $\frac{\partial X}{\partial s} \cdot \frac{\partial X}{\partial t} = 0$, where $s$ is the length along the string parameter, we find that the new form for the conserved energy per infinitesimal piece of the string is the regular energy of the Nambu-Goto string times the correction factor
 \begin{equation} \label{eqn:string-energy}
 	E \diff \sigma = T \gamma _{v_{\perp}} \left( 1 + \frac{g \Delta}{2 (- h)} \right) \diff s ,
 \end{equation}
@@ -371,7 +347,7 @@ where the effective mass density and effective tension are given by
 
 Rewriting eq(\ref{eqn:corrected-NG-wave-equation}) in terms of $\sigma$ derivatives and parameterizing $\sigma$ as (let $F^+ = 1 + g \Delta / 2 (- h)$)
 \begin{equation} \label{eqn:sigma-parameterization}
-	\sigma (q) = \frac{1}{T} \int _{0} ^{q} \diff E \frac{1}{(F^+)^2} ,
+	\sigma (q) = \frac{1}{T} \int _{0} ^{q} \diff E \frac{1}{(F^+)^2} = \frac{E (q)}{T (F^+)^2} ,
 \end{equation}
 we find the wave equation
 \begin{equation} \label{eqn:simplified-modified-wave-eqn}
@@ -381,55 +357,50 @@ from which we can see that the correction factor modifies the speed of propagati
 \begin{equation} \label{eqn:wave-speed-corrected}
 	v = \frac{c}{F^+}.
 \end{equation}
-This is in fact an expected result for a effective theory emerging from a discretised background geometry, see\cite{Bodendorfer-LQG}.
 
 \section{Inverse Metric Polyakov} \label{sec:inverse-metric-Polyakov}
 
-In the same way we considered the quantum geometry inverse metric correction to the Nambu-Goto action, it is also natural to consider such correction to the Polyakov string. We start with the action(\ref{eqn:polyakov-gravity}) and proceed with the inverse area correction(\ref{eqn:inverse-metric-correction}), which yields our corrected Polyakov action
+In the same way we considered the quantum geometry inverse metric correction to the Nambu-Goto action, it is also natural to consider such correction to the Polyakov string. we start with the action(\ref{eqn:polyakov-gravity}) and proceed with the inverse area correction(\ref{eqn:inverse-metric-correction}), which yields our corrected Polyakov action
 \begin{multline} \label{eqn:inverse-metric-Polyakov}
-	S_{I A P} = - \frac{T}{2} \int \diff ^2 x \left( \sqrt{- g} - \frac{k \Delta}{2 \sqrt{- g}} \right) \times \\ \times g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \eta _{\mu \nu} .
+	S_{I A P} = - \frac{T}{2} \int \diff ^2 x \left( \sqrt{- g} - \frac{k \Delta}{2 \sqrt{- g}} \right) \times \\ \times g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} .
 \end{multline}
-The reason for considering this form and not one in which the inverse metric $g^{a b}$ also gets a correction term is that this form of a Polyakov inverse area-corrected action reduces nicely to the Nambu-Goto corrected action(\ref{eqn:modified-NG-action}) when the auxiliary metric $g_{a b}$ coincides with the induced metric $h_{a b} = \partial _{a} X^{\mu} \partial _{b} X^{\nu} \eta _{\mu \nu}$. This action has the same properties as\eqref{eqn:modified-NG-action}: it is not reparameterisation invariant but is evidently Poincaré-invariant by the same arguments as before.
-
-The equations of motion for the auxiliary metric are completely unchanged by this correction, so they are
+The equations of motion for the world-sheet metric are completely unchanged by this correction, so they are
 \begin{equation} \label{eqn:vary-wrt-g}
-	\frac{\delta S_{I A P}}{\delta g^{c d}} = 0
+	\frac{\delta S_{I A P}}{\delta g^{c d}} \overset{!}{=} 0
 \end{equation}
 from which we obtain the stress-energy tensor for the worldsheet:
 \begin{multline} \label{eqn:inverse-area-em-tensor}
-	T_{c d} := \partial _{c} X^{\mu} \partial _{d} X^{\nu} \eta _{\mu \nu} - \\ - \frac{1}{2} g_{c d} g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \eta _{\mu \nu} = 0 ,
+	T_{c d} := \partial _{c} X^{\mu} \partial _{d} X^{\nu} G_{\mu \nu} - \\ - \frac{1}{2} g_{c d} g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} = 0 ,
 \end{multline}
 from which we can extract the metric $g_{c d}$ as
 \begin{equation} \label{eqn:ws-metric}
-	g_{c d} = 2 f \partial _{c} X^{\mu} \partial _{d} X^{\nu} \eta _{\mu \nu} ,
+	g_{c d} = 2 f \partial _{c} X^{\mu} \partial _{d} X^{\nu} G_{\mu \nu} ,
 \end{equation}
 where the function $f$ is given by
 \begin{equation} \label{eqn:inverse-area-f}
-	\frac{1}{f} = g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \eta _{\mu \nu} .
+	\frac{1}{f} = g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} .
 \end{equation}
 
 As for variation w.r.t the embbeding fields $X^{\lambda}$, we have
 \begin{equation} \label{eqn:vary-wrt-X}
-	\frac{\delta S_{I A P}}{\delta X^{\lambda}} = 0
+	\frac{\delta S_{I A P}}{\delta X^{\lambda}} \overset{!}{=} 0
 \end{equation}
 
 \begin{multline} \label{eqn:X-eom-inverse-area}
-	F^{-} \sqrt{- g} g^{a b} \partial _{a} \partial _{b} X^{\nu} \eta _{\lambda \nu} + \\
-	+ \partial _{a} \left( F^{-} \sqrt{- g} g^{a b} \right) \partial _{b} X^{\nu} \eta _{\lambda \nu} = 0 ,
+	F^{-} \sqrt{- g} g^{a b} \partial _{a} \partial _{b} X^{\nu} G_{\lambda \nu} + \partial _{a} \left( F^{-} \sqrt{- g} g^{a b} \right) \partial _{b} X^{\nu} G_{\lambda \nu} = \\ = \frac{1}{2} F^{-} \sqrt{- g} g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \partial _{\lambda} G_{\mu \nu} ,
 \end{multline}
-where $F^{-} = 1 - k \Delta / 2 (- g)$. In conformal gauge $g^{a b} = (\phi (x))^{-1} \eta ^{a b}$, eq(\ref{eqn:X-eom-inverse-area}) simplify to
+where $F^{-} = 1 - k \Delta / 2 (- g)$. Using conformal symmetry $g^{a b} = (\phi (x))^{-1} \eta ^{a b}$ and assuming flat background $G_{\mu \nu} = \eta _{\mu \nu}$, eq(\ref{eqn:X-eom-inverse-area}) simplify to
 \begin{equation} \label{eqn:X-eom-simplified}
 	\eta ^{a b} \partial _{a} \partial _{b} X^{\mu} + \eta ^{a b} \partial _{a} \ln (F^{-}) \partial _{b} X^{\mu} = 0 .
 \end{equation}
-The reason we can still use conformal gauge even tho our action no longer has Weyl symmetry is because of a theorem stating that {\it every 2d metric is conformally flat}(theorem 7.2 in\cite{Schottenloher}).
 
 \subsection{Simplifying The Equations of Motion} \label{sec:solving-eoms-inverse-area}
 
-Equation(\ref{eqn:X-eom-simplified}) seems a bit odd, but we can polish it by choosing a plane-wave ansatz for the embedding fields $X^{\mu} = X^{\mu} _{0} \e ^{-i (E \tau - p \sigma)}$ and using it to fix a form for the conformal factor $\phi (x)$ appearing in $F^{-}$. By using the ansatz in eq(\ref{eqn:X-eom-simplified}), it becomes
+Equation(\ref{eqn:X-eom-simplified}) seems a bit odd, but we can polish it by choosing a plane-wave ansatz for the embedding fields $X^{\mu} = X^{\mu} _{0} \e ^{-i (E \tau - p \sigma)}$ and using it to fix a form for the conformal function $\phi (x)$ appearing in $F^{-}$. By using the ansatz in eq(\ref{eqn:X-eom-simplified}), it becomes
 \begin{equation}
 	(E^{2} - p^{2}) X^{\mu} + i (E \partial _{\tau} \ln (F^{-}) - p \partial _{\sigma} \ln (F^{-})) X^{\mu} = 0 ,
 \end{equation}
-from which we can use the freedom in the conformal factor to fix the second term as $- \mu ^2 X^{\mu}$, with $- \mu ^2 = p^2 - E^2$ on-shell, and this in turn implies that the derivatives of $\ln (F^{-})$ are given by
+from which we can use the freedom in the conformal function to fix the second term as $- m^2 X^{\mu}$, with $- m^2 = p^2 - E^2$ on-shell, and this in turn implies that the derivatives of $\ln (F^{-})$ are given by
 \begin{equation} \label{eqn:derivatives-F-minus}
 	\partial _{\tau} \ln (F^{-}) = i E , \ \partial _{\sigma} \ln (F^{-}) = i p ,
 \end{equation}
@@ -444,15 +415,14 @@ thus we have
 \begin{equation} \label{eqn:phi}
 	\phi (\tau , \sigma) = \sqrt{\frac{k \Delta}{2 \left( 1 - A \e ^{i (E \tau + p \sigma + \varphi)} \right)}} .
 \end{equation}
-At first glance it seems problematic that we have a complex conformal factor $\phi (x)$, but the complex structure comes from our ansatz for the embedding fields, and when we choose either the real or imaginary part of the latter it will also pick the respective component of $\phi$. With this choice, we thus turned eq(\ref{eqn:X-eom-simplified}) into a Klein-Gordon equation
+At first glance it seems problematic that we have a complex conformal function $\phi (x)$, but the complex structure comes from our ansatz for the embedding fields, and when we choose either the real or imaginary part of the latter it should also pick the respective component of $\phi$. With this choice, we thus turned eq(\ref{eqn:X-eom-simplified}) into a Klein-Gordon equation
 \begin{equation} \label{eqn:X-Klein-Gordon-eqn}
 	\left( \partial _{\sigma} ^2 - \partial _{\tau} ^2 \right) X^{\mu} - \mu ^2 X^{\mu} = 0 .
 \end{equation}
-The modification to the dispersion relation via the mass term is also an expected effect of a discrete background geometry as mentioned in\cite{Bodendorfer-LQG}.
 
 \subsection{Relation With The Nambu-Goto Analysis} \label{sec:relation-with-NG-case}
 
-At first glance, our recent analysis of the Polyakov string with inverse metric correction seems to not be related to what we found in the analysis of the Nambu-Goto string. However, as pointed out in \cite{Grimshaw2010Homogenization}, wave equations with a variable speed (the result of the Nambu-Goto analysis) can be turned into Klein-Gordon equations (what we just found). While they're work deals only with space-varying wave speed, it is straight forward to generalise the procedure to also include time dependence.
+At first glance, our recent analysis of the Polyakov string with inverse metric correction seems to not be related to what we found in the analysis of the Nambu-Goto string. However, as pointed out in \cite{Grimshaw2010Homogenization}, wave equations with a variable speed (the result of the Nambu-Goto analysis) can be turned into Klein-Gordon equations (what we just found). While they're work deals only with space-varying wave speed, it is straight forward to generalise the procedure to also include time dependence, but ironically enough the calculations lead to the conclusion that the wave speed $v = 1 / F^{+}$ is actually time independent.
 
 Following the procedure found in \cite{Grimshaw2010Homogenization}, we start with eq(\ref{eqn:simplified-modified-wave-eqn}) obtained in sec(\ref{sec:modified-eom}), renaming $\sigma$ as $x$ and dividing by $(F^{+})^2$ such that we have $v^2$ on the second term like the mentioned work, and perform a change of variables $(t , x) \rightarrow (\tau (t , x) , \sigma (t , x))$, where without loss of generality (one needs just to rescale and/or rotate the coordinates) we set
 \begin{multline} \label{eqn:new-coordinates-constraints-quadratic}
@@ -492,218 +462,140 @@ From our analysis of the inverse-area corrected Polyakov action, we got $D$ fini
 	X^{\mu} (\tau , \sigma) = \frac{1}{2 \pi \alpha '} \sum _{p \in \mathbb{Z}} \frac{1}{2 E_{p}} \Big( \alpha ^{\mu} _{p} \e ^{i (- E_{p} \tau + p \sigma)} + \\
 	+ \beta ^{\mu} _{p} \e ^{i (E_{p} \tau + p \sigma)} \Big) ,
 \end{multline}
-with $E_{p} = \sqrt{p^2 + \mu ^2}$ for the closed string. From here on, we shall deal only with closed strings, unless otherwise stated. Following an analogous procedure to the one found in \cite{Tong2009Lectures} and \cite{Green2012Superstring}, reality of $X^{\mu}$ implies $(X^{\mu})^{*} = X^{\mu}$, from which we get
+with $E_{p} = \sqrt{p^2 + \mu ^2}$. From here on, following an analogous procedure to the one found in \cite{Tong2009Lectures}, reality of $X^{\mu}$ implies $(X^{\mu})^{*} = X^{\mu}$, from which we get
 \begin{equation} \label{eqn:reality-consequence}
 	\beta ^{\mu} _{n} = (\alpha ^{\mu} _{- n})^{*} .
 \end{equation}
 
 When looking at the constraints, we see that we can't decouple the exponentials in $\tau$ from any of the sums, thus we get two-index \textquotedblleft Virasoro modes"
 \begin{align}
-	L_{n , p}              & := \alpha ^{\mu} _{n} \alpha ^{\nu} _{p} \eta _{\mu \nu} = 0 , \ \forall \ n , p \in \mathbb{Z} \label{eqn:"Virasoro"-modes-1} \\
-	\widetilde{L} _{n , p} & := \alpha ^{\mu} _{n} (\alpha ^{\nu} _{- p})^{*} \eta _{\mu \nu} = 0 , \ n \neq - p \label{eqn:"Virasoro"-modes-2}
+	L_{n , p}              & := \frac{n - p}{E_{n - p}} \alpha ^{\mu} _{p} \alpha ^{\nu} _{n - p} \eta _{\mu \nu} = 0 \label{eqn:"Virasoro"-modes-1}         \\
+	\widetilde{L} _{n , p} & := \frac{n - p}{E_{n - p}} \alpha ^{\mu} _{p} (\alpha ^{\nu} _{p - n})^{*} \eta _{\mu \nu} = 0 \label{eqn:"Virasoro"-modes-2} .
 \end{align}
-\begin{equation} \label{eqn:"Virasoro"-modes-sum}
-	\sum _{n} \left( \left( \frac{n}{E_{n}} \right) ^2- 1 \right) \widetilde{L}_{n , - n} = 0
-\end{equation}
 
-Before proceeding, we have one more remark: the 0-th term of the solution reads
+Before proceeding to quantization, we have one last remark: the 0-th term of the solution reads
 \begin{equation} \label{eqn:X-sol-0-term}
 	\frac{1}{2 \pi \alpha '} \frac{1}{2 \mu} \left( \alpha ^{\mu} _{0} \e ^{- i \mu \tau} + (\alpha ^{\mu} _{0})^{*} \e ^{i \mu \tau} \right) ,
 \end{equation}
-which is clearly divergent in the $\mu \rightarrow 0$ limit unless $\mathfrak{Re}(\alpha ^{\mu} _{0}) \sim \mu$. Moreover, if we want to recover the classic String Theory expression in this regime, it is not difficult to see that we require
+which is clearly divergent in the $\mu \rightarrow 0$ limit unless $\mathfrak{Re}(\alpha ^{\mu} _{0}) = 0$. Moreover, if we want to recover the classic String Theory expression in this regime, it is not difficult to see that we require
 \begin{equation} \label{eqn:a-p-relation}
-	\alpha ^{\mu} _{0} = 2 \pi \alpha ' \mu x^{\mu} + 4 \pi i (\alpha ')^2 p^{\mu} .
+	\alpha ^{\mu} _{0} = 4 \pi i (\alpha ')^2 p^{\mu} .
+\end{equation}
+Since our Virasoro-like \textquotedblleft modes" are double-indexed without summation, the string rest mass $M^2$ is given only in terms of the 0-th oscillator mode
+\begin{equation} \label{eqn:string-rest-mass}
+	M^2 = - p^{\mu} p_{\mu} = \frac{1}{16 \pi^2 (\alpha ')^{4}} \alpha ^{\mu} _{0} \alpha ^{\nu} _{0} \eta _{\mu \nu} .
 \end{equation}
 
-After analysing closer the $n = - p$ constraint(\ref{eqn:"Virasoro"-modes-sum}), we get the string mass in terms of vibrational modes and center of mass position
-\begin{multline} \label{eqn:string-rest-mass}
-	M^2 = - p^{\mu} p_{\mu} = \frac{1}{(4 \pi (\alpha ')^2)^2} \Bigg( (2 \pi \alpha ' m)^{2} x^{\mu} x_{\mu} - \\
-	- \sum _{n \neq 0} \left( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) a^{\mu} _{n} (a^{\nu} _{n})^{*} \eta _{\mu \nu} \right) \Bigg) .
-\end{multline}
-
-Collecting our results, we have that the solution for our closed string is given by
+Collecting our results, we have that the solution for our string is given by
 \begin{multline} \label{eqn:KG-Polyakov-solution-final}
-	X^{\mu} (\tau , \sigma) = \frac{1}{2 \pi \alpha '} \sum _{p} \frac{1}{2 E_{p}} \Big( \alpha ^{\mu} _{p} \e ^{i (- E_{p} \tau + p \sigma)} + \\
+	X^{\mu} (\tau , \sigma) = \frac{1}{2 \pi \alpha '} \sum _{p \in \mathbb{Z}} \frac{1}{2 E_{p}} \Big( \alpha ^{\mu} _{p} \e ^{i (- E_{p} \tau + p \sigma)} + \\
 	+ (\alpha ^{\mu} _{- p})^{*} \e ^{i (E_{p} \tau + p \sigma)} \Big)
 \end{multline}
-subject to the family of constraints
-\begin{equation} \label{eqn:"Virasoro"-constraints}
+subject to the infinite family of constraints
+\begin{equation}
 	L_{n , p} = \widetilde{L}_{n , p} = 0
-\end{equation}
+\end{equation} \label{eqn:"Virasoro"-constraints}
+and 0-th oscillation mode related to center of mass momentum
 \begin{equation*}
-	\sum _{n} \left( \left( \frac{n}{E_{n}} \right) ^2- 1 \right) \widetilde{L}_{n , - n} = 0
+	\alpha ^{\mu} _{0} = 4 \pi i (\alpha ')^2 p^{\mu} .
 \end{equation*}
-and 0-th oscillator mode related to center of mass position and momentum
-\begin{equation*}
-	\alpha ^{\mu} _{0} = 2 \pi \alpha ' \mu x^{\mu} + 4 \pi i (\alpha ')^2 p^{\mu} .
-\end{equation*}
-One thing to note is that the constraint(\ref{eqn:"Virasoro"-modes-2}) implies we only have $D$ non-zero modes in the solution, since all modes must be mutually orthogonal.
-
-\subsection{The Modes and Constraints Algebra} \label{sec:modes-constraint-algebra}
-
-We start by calculating the momentum canonical to $X^{\mu}$, $\Pi _{\lambda}$:
-\begin{multline} \label{eqn:canonical-momentum}
-	\Pi _{\lambda} = \frac{\partial \Lagr}{\partial (\partial _{\tau} X^{\lambda})} = \\
-	= F^{-} \frac{i}{4 \pi \alpha '} \sum _{n \in \mathbb{Z}} \bigg( - \alpha ^{\nu} _{n} \e ^{i (- E_{n} \tau + n \sigma)} + \\
-	+ (\alpha ^{\nu} _{- n})^{*} \e ^{i (E_{n} \tau + n \sigma)} \bigg) \eta _{\nu \lambda}
-\end{multline}
-and proceed by using the canonical equal-time Poisson bracket between $X^{\mu}$ and $\Pi ^{\nu}$
-\begin{equation} \label{eqn:equal-time-Poisson-bracket}
-	\left\{ X^{\mu} (\tau , \sigma) , \Pi ^{\nu} (\tau , \sigma ') \right\} = \delta (\sigma - \sigma ') \eta ^{\mu \nu}
-\end{equation}
-which, under the assumption of constant conformal factor $\phi$, leads to
-\begin{equation} \label{eqn:modes-bracket-0}
-	\left\{ \alpha ^{\mu} _{k} , \alpha ^{\nu} _{- m} \right\} = \left\{ (\alpha ^{\mu} _{- k})^{*} , (\alpha ^{\nu} _{m})^{*} \right\} = 0
-\end{equation}
-\begin{multline} \label{eqn:modes-bracket-oscillator}
-	\left\{ \alpha ^{\mu} _{k} , (\alpha ^{\nu} _{m})^{*} \right\} = - \left\{ (\alpha ^{\mu} _{- k})^{*} , \alpha ^{\nu} _{- m} \right\} = \\
-	- i \frac{4 \pi (\alpha ')^{2}}{F^{-}} E_{k} \eta ^{\mu \nu} \delta _{k , m} .
-\end{multline}
-This are just rescaled harmonic oscillator Poisson bracket relations, so we define the oscillator modes
-\begin{align}
-	a^{\mu} _{k}       & : = \frac{1}{2 \alpha '} \sqrt{\frac{F^{-}}{\pi}} \frac{1}{\sqrt{E_{k}}} \alpha ^{\mu} _{k} \label{eqn:annihilation-mode}      \\
-	(a^{\mu} _{k})^{*} & : =  \frac{1}{2 \alpha '} \sqrt{\frac{F^{-}}{\pi}} \frac{1}{\sqrt{E_{k}}} (\alpha ^{\mu} _{k})^{*} \label{eqn:creation-mode} ,
-\end{align}
-such that the bracket relations become proper harmonic oscillator bracket relations
-\begin{align}
-	\left\{ a^{\mu} _{k} , (a^{\nu} _{p})^{*} \right\} & = - i \eta ^{\mu \nu} \delta _{k , p} \label{eqn:oscillator-bracket}                   \\
-	\left\{ a^{\mu} _{k} , a^{\nu} _{p} \right\}       & = \left\{ (a^{\mu} _{k})^{*} , (a^{\nu} _{p})^{*} \right\} = 0 \label{eqn:0-bracket} .
-\end{align}
-By analysing the $k = p = 0$ case, we also get the relation for $x^{\mu}$ and $p^{\nu}$
-\begin{align}
-	\left\{ x^{\mu} , x^{\nu} \right\} & = \left\{ p^{\mu} , p^{\nu} \right\} = 0 \label{eqn:x-x-p-p-bracket}       \\
-	\left\{ x^{\mu} , p^{\nu} \right\} & = \frac{1}{4 \pi \alpha ' F^{-}} \eta ^{\mu \nu} \label{eqn:x-p-bracket} ,
-\end{align}
-where by choosing
-\begin{equation} \label{eqn:constant-conformal-factor}
-	\phi = \sqrt{\frac{k \Delta}{2 \left( 1 - \dfrac{1}{4 \pi \alpha '} \right)}}
-\end{equation}
-we can simplify the bracket(\ref{eqn:x-p-bracket}) to the expected
-\begin{equation} \label{eqn:x-p-bracket-normalized}
-	\left\{ x^{\mu} , p^{\nu} \right\} = \eta ^{\mu \nu} .
-\end{equation}
-
-Having the bracket algebra between the expansion modes and redefining the constraints $L_{n , m}$ and $\widetilde{L}_{k , p}$ to be between the normalized modes $a^{\mu} _{n}$ instead of the $\alpha ^{\mu} _{n}$ (we can do this since $E_{n} = \sqrt{n^2 + \mu ^2} \neq 0$), we get the \textquotedblleft Klein-Gordon-Virasoro algebra"
-\begin{align}
-	\left\{ L_{n , m} , L_{k , p} \right\}                         & = 0 \label{eqn:L-bracket-0}                                                                                                      \\
-	\left\{ L_{n , m} , \widetilde{L}_{k , p} \right\}             & = - i \left( L_{m, k} \delta _{n , - p} + L_{n , k} \delta _{m , - p} \right) \label{eqn:L-bracket-1}                            \\
-	\left\{ \widetilde{L}_{n , m} , \widetilde{L}_{k , p} \right\} & = - i \left( \widetilde{L}_{k , m} \delta _{n , - p} - \widetilde{L}_{n , p} \delta _{- m , k} \right) . \label{eqn:L-bracket-2}
-\end{align}
 
 \section{The Quantum Klein-Gordon String} \label{sec:quantum-KG-string}
 
-In the following, we proceed to quantize the Klein-Gordon string via canonical covariant quantization, in a manner much similar to those found in \cite{Tong2009Lectures} and \cite{Green2012Superstring}. We turn the Poisson bracket relations into commutation relations between the now operator variables, $[ , ] = i \{ , \}$, yielding
-\begin{align}
-	\left[ \Hat{X}^{\mu} (\tau , \sigma) , \Hat{\Pi}^{\nu} (\tau , \sigma ') \right] & = i \delta (\sigma - \sigma ') \eta ^{\mu \nu} \label{eqn:commutator-X-Pi}                                      \\
-	\left[ \Hat{X}^{\mu} , \Hat{X}^{\nu} \right]                                     & = \left[ \Hat{\Pi}^{\mu} , \Hat{\Pi}^{\nu} \right] = 0 \label{eqn:commutator-X-X-Pi-Pi}                         \\
-	\left[ \Hat{a}^{\mu} _{n} , \Hat{a}^{\nu} _{m} \right]                           & = \left[ (\Hat{a}^{\mu} _{n})^{\dagger} , (\Hat{a}^{\nu} _{m})^{\dagger} \right] = 0 \label{eqn:commutator-a-a} \\
-	\left[ \Hat{a}^{\mu} _{n} , (\Hat{a}^{\nu} _{m})^{\dagger} \right]               & = \eta ^{\mu \nu} \delta _{n , m} \label{eqn:commutator-a-a*}                                                   \\
-	\left[ \Hat{x}^{\mu} , \Hat{x}^{\nu} \right]                                     & = \left[ \Hat{p}^{\mu} , \Hat{p}^{\nu} \right] = 0 \label{eqn:commutator-x-x-p-p}                               \\
-	\left[ \Hat{x}^{\mu} , \Hat{p}^{\nu} \right]                                     & = i \eta ^{\mu \nu} . \label{eqn:commutator-x-p}
-\end{align}
-
-We define a vacuum state for the string to obey
-\begin{equation} \label{eqn:annihilation-vacuum}
-	\Hat{a}^{\mu} _{p} \ket{0} = 0 , \ \mathrm{for} \ p \neq 0 .
+In the following, we proceed to quantize the Klein-Gordon string via canonical covariant quantization, in a manner much similar to those found in \cite{Tong2009Lectures} and \cite{Green2012Superstring}. To start, we calculate the momentum canonical to the embbeding fields $X^{\mu}$, which reads
+\begin{multline} \label{eqn:canonical-momentum}
+	\Pi _{\mu} (\tau , \sigma) = F^{-} \frac{i}{(4 \pi \alpha ')^2} \sum _{p} \big( - \alpha ^{\nu} _{p} \e ^{i (- E_{p} \tau + p \sigma)} + \\
+	+ (\alpha ^{\nu} _{- p})^{*} \e ^{i (E_{p} \tau + p \sigma)} \big) \eta _{\nu \mu} ,
+\end{multline}
+and then we proceed to turn the equal-time Poisson bracket relations
+\begin{equation} \label{eqn:Poisson-brackets-1}
+	\left\{ X^{\mu} (\tau , \sigma) , \Pi ^{\nu} (\tau , \sigma ') \right\} = \delta (\sigma - \sigma ') \eta ^{\mu \nu}
 \end{equation}
-Since $\Hat{a}^{\mu} _{0}$ contains $\Hat{x}^{\mu}$ and $\Hat{p}^{\mu}$, the vacuum also has extra structure from those
+\begin{equation} \label{eqn:Poisson-brackets-2}
+	\left\{ X^{\mu} (\tau , \sigma) , X^{\nu} (\tau , \sigma ') \right\} = 0 = \left\{ \Pi ^{\mu} (\tau , \sigma) , \Pi ^{\nu} (\tau , \sigma ') \right\}
+\end{equation}
+into equal-time commutation relations between the now operators $\Hat{X}^{\mu}$ and $\Hat{\Pi}^{\nu}$:
+\begin{equation} \label{eqn:canonical-commutator-1}
+	\Big[ \Hat{X}^{\mu} (\tau , \sigma) , \Hat{\Pi}^{\nu} (\tau , \sigma ') \Big] \equiv i \delta (\sigma - \sigma ') \eta ^{\mu \nu}
+\end{equation}
+\begin{equation} \label{eqn:canonical-commutator-2}
+	\Big[ \Hat{X}^{\mu} (\tau , \sigma) , \Hat{X}^{\nu} (\tau , \sigma ') \Big] = 0 = \Big[ \Hat{\Pi}^{\mu} (\tau , \sigma) , \Hat{\Pi}^{\nu} (\tau , \sigma ') \Big] .
+\end{equation}
+From these relations, we get commutation relations for the vibrational modes $\Hat{\alpha}^{\mu} _{p}$ and $(\Hat{\alpha}^{\nu} _{- k})^{\dagger}$:
+\begin{equation} \label{eqn:non-vanishing-commutator}
+	\Big[ \Hat{\alpha}^{\mu} _{p} , (\Hat{\alpha}^{\nu} _{- k})^{\dagger} \Big] = \eta ^{\mu \nu} \delta _{p , - k}
+\end{equation}
+\begin{equation} \label{eqn:vanishing-commutators}
+	\Big[ \Hat{\alpha}^{\mu} _{p} , \Hat{\alpha}^{\nu} _{k} \Big] = 0 = \Big[ (\Hat{\alpha}^{\mu} _{- p})^{\dagger} , (\Hat{\alpha}^{\nu} _{- k})^{\dagger} \Big] ,
+\end{equation}
+which are just harmonic oscillator relations with
 \begin{align}
-	\Hat{x}^{\mu} \ket{0 ; x} & = x^{\mu} \ket{0 ; x} \label{eqn:x-x-rep}                               \\
-	\Hat{p}_{\mu} \ket{0 ; x} & = - i \frac{\partial}{\partial x^{\mu}} \ket{0 ; x} \label{eqn:p-x-rep}
+	\Hat{a}^{\mu} _{p}             & = \Hat{\alpha}^{\mu} _{p} \label{eqn:annihilation-operator}                                       \\
+	(\Hat{a}^{\mu} _{p})^{\dagger} & = (\Hat{\alpha}^{\mu} _{p})^{\dagger} , \ \mathrm{for} \ p \neq 0 . \label{eqn:creation-operator}
 \end{align}
-in position representation and
-\begin{align}
-	\Hat{x}^{\mu} \ket{0 ; p} & = - i \frac{\partial}{\partial p_{\mu}} \ket{0 ; p} \label{eqn:x-p-rep} \\
-	\Hat{p}_{\mu} \ket{0 ; p} & = p_{\mu} \ket{0 ; p} \label{eqn:p-p-rep}
-\end{align}
-in momentum representation. Our Fock space is built from the vacuum state $\ket{0}$ by operating with a sequence of creation operators
+For $p = 0$ we have the center of mass momentum operator $\Hat{p}^{\mu}$. As usual, we define a vacuum state for the string to obey
+\begin{equation} \label{eqn:annihilation-vacuum}
+	\Hat{a}^{\mu} _{p} \ket{0} = 0 , \ \mathrm{for} \ p \neq 0 ,
+\end{equation}
+and for $p = 0$
+\begin{equation} \label{eqn:momentum-vacuum}
+	\Hat{p}^{\mu} \ket{0} = p^{\mu} \ket{0} .
+\end{equation}
+Our Fock space is built from the vacuum state $\ket{0}$ by operating with a sequence of creation operators
 \begin{multline} \label{eqn:general-state}
-	\ket{\psi} = ((\Hat{a}^{\mu _{1}} _{1})^{\dagger})^{n_{\mu _1}} ((\Hat{a}^{\mu _2} _{2})^{\dagger})^{n_{\mu _2}} ... \times \\
-	\times ((\Hat{a}^{\nu _1} _{- 1})^{\dagger})^{n_{\nu _1}} ((\Hat{a}^{\mu _2} _{- 2})^{\dagger})^{n_{\nu _2}} ... \ket{0} .
+	\ket{\psi} = ((a^{\mu _{1}} _{1})^{\dagger})^{n_{\mu _1}} ((a^{\mu _2} _{2})^{\dagger})^{n_{\mu _2}} ... \times \\
+	\times ((a^{\nu _1} _{1})^{\dagger})^{n_{\nu _1}} ((a^{\mu _2} _{2})^{\dagger})^{n_{\nu _2}} ... \ket{0} .
 \end{multline}
 
 As usual, by the appearance of the Minkowski metric in the non-zero commutator
 \begin{equation} \label{eqn:ghosts}
 	\Big[ \Hat{a}^{\mu} _{p} , (\Hat{a}^{\nu} _{k})^{\dagger} \Big] = \eta ^{\mu \nu} \delta _{p k} ,
 \end{equation}
-we have ghosts in the theory which must be dealt with(\cite{Tong2009Lectures},\cite{Green2012Superstring}). When translating the constraints as quantum operators, we require that they have vanishing matrix elements when sandwiched by physical states $\psi$ and $\phi$:
+we have ghosts in the theory which must be dealt with. When translating the constraints as quantum operators, we require that they have vanishing matrix elements when sandwiched by physical states $\psi$ and $\phi$:
 \begin{equation} \label{eqn:L-constraint-quantum-1}
 	\bra{\phi} \Hat{L}_{p , k} \ket{\psi} = 0 \, \,
 \end{equation}
 \begin{equation} \label{eqn:L-constraint-quantum-2}
 	\bra{\phi} \Hat{\widetilde{L}}_{p , k} \ket{\psi} = 0 .
 \end{equation}
-\begin{equation} \label{eqn:L-constranit-quantum-sum}
-	\bra{\phi} \sum _{p} \left( \left( \frac{p}{E_{p}} \right) ^2 - 1 \right) \Hat{\widetilde{L}}_{p , - p} \ket{\psi} = 0 .
+$\Hat{L}_{p , k}$ has no ambiguities since it's composed of only annihilation operators, however, we have an ambiguity for $\Hat{\widetilde{L}}_{p , 0}$. To resolve this issue, we pick
+\begin{equation} \label{eqn:L-normal-ordering}
+	\Hat{\widetilde{L}}_{p , 0} = \frac{- p}{E_{- p}} (\Hat{\alpha}^{\mu} _{p})^{\dagger} \Hat{\alpha}^{\nu} _{p} \eta _{\mu \nu}
 \end{equation}
+with the annihilation operator to the right, which manifests in the imposition of the constraint as
+\begin{equation} \label{eqn:shifted-L-constraint}
+	\bra{\phi} \Hat{\widetilde{L}}_{p , 0} - c_{p} \ket{\psi} = 0 ,
+\end{equation}
+for some sequence $c_{p}$. The reason for it to be a sequence of $p$ and not a constant like in the regular String Theory literature is that in the usual theory, we would have a sum over $p$ and thus it would end up being a constant, but in our analysis we have this extra freedom, which we'll now see ends up being important. Classically, we had eq(\ref{eqn:string-rest-mass}) for the string rest mass, which we can rewrite as
+\begin{equation} \label{eqn:alternative-classical-rest-mass}
+	M^2 = - \frac{1}{(4 \pi (\alpha ')^2)^2} \lim _{n \rightarrow 0} \left( - \frac{E_{p}}{p} \widetilde{L}_{p , 0} \right) ,
+\end{equation}
+from where we can now see that the string mass spectrum will get shifted by
+\begin{equation} \label{eqn:shifted-mass-spectrum}
+	\Hat{M}^2 = - \frac{1}{(4 \pi (\alpha ')^2)^2} \left( (\Hat{\alpha} ^{\mu} _{0})^{\dagger} \Hat{\alpha}^{\nu} _{0} \eta _{\mu \nu} + \lim _{p \rightarrow 0} \frac{E_{p}}{p} c_{p} \right) .
+\end{equation}
+Since $E_{0} = \mu$, it seems like the natural candidate for $c_{p}$ would be some function $f (\mu , p)$ such that
+\begin{equation} \label{eqn:cp-limit}
+	\lim _{p \rightarrow 0} \frac{c_{p}}{p} = \mu
+\end{equation}
+like $c_{p} = \mu p$, $c_{p} = \sin (\mu p)$, $c_{p} = \tan (\mu p)$, etc, making it so the mass spectrum of the string gets shifted by the \textquotedblleft mass" term of the Klein-Gordon equation (\ref{eqn:X-Klein-Gordon-eqn}), $\mu ^2$.
 
-When translating the constraints as quantum operators, for $\Hat{L}_{p , k}$ we have no ambiguities since it's composed only of annihilation operators. As for $\Hat{\widetilde{L}}_{p , k}$, there is an ambiguity when $p = - k$, which manifests in the imposition of this constraint as
-\begin{equation}
-	\bra{\phi} \sum _{p} \left( \left( \left( \frac{p}{E_{p}} \right) ^2 - 1 \right) \Hat{\widetilde{L}}_{p , - p} \right) - a \ket{\psi} = 0 ,
+The \textquotedblleft Virasoro-Klein-Gordon" algebra our constraint modes satisfy is given by
+\begin{equation} \label{eqn:L-commutators-1}
+	\Big[ \Hat{L}_{n , m} , \Hat{L}_{p , k} \Big] = 0
 \end{equation}
-for some constant $a$\cite{Green2012Superstring}. This constant appears in the mass spectrum of the quantum string as in
-\begin{multline}
-	\Hat{M}^2 = \frac{1}{(4 \pi (\alpha ')^2)^2} \Bigg( (2 \pi \alpha ' \mu)^{2} \Hat{x}^{\mu} \Hat{x}_{\mu} - \\
-	- \left( \sum _{n \neq 0} \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) (\Hat{a}^{\mu} _{n})^{\dagger} \Hat{a}^{\nu} _{n} \eta _{\mu \nu} - a \right) \Bigg) .
+\begin{multline} \label{eqn:L-commutators-2}
+	\Big[ \Hat{L}_{n , m} , \Hat{\widetilde{L}}_{p , k} \Big] = \frac{m - n}{E_{m - n}} \Big( \Hat{L}_{n + k - p , n} \delta _{n - m , k} + \\
+	+ \Hat{L}_{n - m + k - p , n - m} \delta _{n , k} \Big)
 \end{multline}
-The commutation algebra of constraints is inherited by the constraint algebra(\ref{eqn:L-bracket-0},\ref{eqn:L-bracket-1},\ref{eqn:L-bracket-2}), namely
-\begin{equation} \label{eqn:L-commutator-0}
-	\left[ \Hat{L}_{n , m} , \Hat{L}_{k , p} \right] = 0
-\end{equation}
-\begin{equation} \label{eqn:L-commutator-1}
-	\left[ \Hat{L}_{n , m} , \Hat{\widetilde{L}}_{k , p} \right] = \Hat{L}_{m , k} \delta _{n , - p} + \Hat{L}_{n , k} \delta _{m , - p}
-\end{equation}
-\begin{equation} \label{eqn:L-commutator-2}
-	\left[ \Hat{\widetilde{L}}_{n , m} , \Hat{\widetilde{L}}_{k , p} \right] = \Hat{\widetilde{L}}_{k , m} \delta _{n , - p} - \Hat{\widetilde{L}}_{n , p} \delta _{- m , k} .
-\end{equation}
-The only commutator with ordering ambiguities is(\ref{eqn:L-commutator-2}) when $m = - k$ and $p = -n$, thus we include anomalous terms\cite{Green2012Superstring}
-\begin{multline} \label{eqn:L-commutator-anomalous}
-	\left[ \Hat{\widetilde{L}}_{n , m} , \Hat{\widetilde{L}}_{k , p} \right] = \Hat{\widetilde{L}}_{k , m} \delta _{n , - p} - \Hat{\widetilde{L}}_{n , p} \delta _{- m , k} + \\
-	+ C_{n} \delta _{n , -p} + D_{k} \delta _{- m , k} .
+\begin{multline} \label{eqn:L-commutators-3}
+	\Big[ \Hat{\widetilde{L}}_{n , m} , \Hat{\widetilde{L}}_{p , k} \Big] = \frac{(m - n)}{E_{m - n}} \frac{(k - p)}{E_{k - p}} \times \\
+	\times \Bigg( \frac{E_{- n}}{(- n)} \Hat{\widetilde{L}}_{k - p - n , k - p} \delta _{n - m , k} + \\
+	+ \frac{E_{- k}}{(- k)} \Hat{\widetilde{L}}_{n - m - k , n - m} \delta _{n , k - p} \Bigg) .
 \end{multline}
-By noting that $C_{- n} = - C_{n}$ and $D_{- n} = - D_{n}$ and using the Jacobi identity of the commutator, we conclude that $C_{n} = - D_{n} = C_{1} n$, where we can find the value of $C_{1}$ by calculating the vacuum expectation value of the commutator $[\Hat{\widetilde{L}}_{1 , k} , \Hat{\widetilde{L}}_{k , - 1}]$, which yields that $C_{1} = 0$, thus {\it the quantum algebra of our constraints has no anomalies}. This is a very important result, since it doesn't constrain the dimension of the background manifold to any particular value, so our model works just as well for $D = 4$ as for any other value {\it a priori}.
+The commutator (\ref{eqn:L-commutators-2}) ends up with only annihilation operators in the R.H.S, so it has no ordering ambiguities, meanwhile the commutator (\ref{eqn:L-commutators-3}) seem like it would have ordering ambiguities for $k - p = 0$ and $n - m = 0$. However it has a $(m - n)(k - p)$ factor multiplying the whole expression, so the commutator is $0$, which can also be seen by setting $n = m$ or $k = p$ on the L.H.S, in which case we get $\Hat{\widetilde{L}}_{n , n}$, which is identically equal to $0$ by the $n - m$ factor in front, thus we would be commuting something with $0$, which has to yield 0 on the R.H.S. As a result, our \textquotedblleft Virasoro-Klein-Gordon" algebra has no anomalous terms.
 
-After analysing the mass-shell condition for the $n$-th excited state $\zeta _{\mu} (\Hat{a}^{\mu} _{n})^{\dagger} \ket{0 ; p}$\cite{Green2012Superstring}, under the assumption that the momentum wave-function is given by [justification needed]
-\begin{equation} \label{eqn:p-wave-func}
-	\psi (p) = \frac{\alpha '}{\mu} p^{2} ,
-\end{equation}
-we find that $\zeta _{\mu} p^{\mu} = 0$ and the momentum of this state is given by
-\begin{equation} \label{eqn:nth-vector-mode-momentum}
-	2 (4 \pi (\alpha ')^2)^2 p^2 = \frac{n^2}{n^2 + \mu ^2} - 1 - a .
-\end{equation}
-From this, for the absence of ghosts we then require that
-\begin{equation} \label{eqn:a-condition-no-ghosts}
-	a \geq \frac{d^2}{d^2 + \mu ^2} - 1 .
-\end{equation}
-In the boundary case, the $d$-th ($d = D - 1$) vector state is massless, while the other spin-1 states are massive and the ground state is a tachyon. Doing a similar analysis for the $d$-th spin-2 state $\zeta _{\mu \nu} (\Hat{a}^{\mu} _{d})^{\dagger} (\Hat{a}^{\nu} _{d})^{\dagger} \ket{0 ; p}$ with $\zeta _{\mu \nu} = \zeta _{\nu \mu}$ and $\zeta _{\ \mu} ^{\mu} = 0$ yields $\zeta _{\mu \nu} p^{\mu} = \zeta _{\mu \nu} p^{\nu} = 0$ and
-\begin{equation} \label{eqn:a-conition-massless-spin-2}
-	a = 2 \left( \frac{d^{2}}{d^{2} + \mu ^{2}} - 1 \right)
-\end{equation}
-for it to be massless. However, the quantity in parenthesis is negative, so doubling it makes it less than the minimum condition for the absense of ghosts(\ref{eqn:a-condition-no-ghosts}), thus we can't get massless spin-2 states. This is not really a problem because as pointed out in\cite{Bodendorfer-LQG}, a discrete background geometry modifies the dispersion relation at the effective level, so even tho at the fundamental level gravity would travel at $c$, in the effective limit it would appear \textquotedblleft massive", however with a very small mass. Thus, since we need $a$ to be at least as big as in(\ref{eqn:a-condition-no-ghosts}), we can choose $a > 0$ to also get rid of the ground state tachyon without the need to introduce supersymmetry or other unverified hypothesis.
-
-The most natural value for $a$ is $a = 1$, which comes from the analysis of physical and spurious states\cite{Green2012Superstring} of the form
-\begin{equation} \label{eqn:phys-spurious-state}
-	\ket{\psi _{- 2 , n}} = \sum _{m} \Hat{\widetilde{L}}_{n , m} \ket{\widetilde{\chi}_{- 2 , m}} ,
-\end{equation}
-where $\ket{\widetilde{\chi}_{- 2 , m}}$ satisfies the constraints(\ref{eqn:L-constraint-quantum-1},\ref{eqn:L-constraint-quantum-2}) and also
-\begin{multline} \label{eqn:spurious-basis-condition}
-	\Bigg( \sum _{n} \left( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) \Hat{\widetilde{L}}_{n , - n} \right) - \\
-	- a + 2 - m \Bigg) \ket{\widetilde{\chi}_{- 2 , m}} = 0 .
-\end{multline}
-States of the form(\ref{eqn:phys-spurious-state}) are annihilated by $\Hat{\widetilde{L}}_{p , k}$ for $p \neq - k$, and for these cases we have
-\begin{equation*}
-	\sum _{n} \left( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) \Hat{\widetilde{L}}_{- 1 , - n} \ket{\psi _{- 2 , n}} \right) =
-\end{equation*}
-\begin{multline*}
-	= \sum _{n} \Bigg( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) \Hat{\widetilde{L}}_{- 1 , - n} \times \\
-	\times \sum _{m} \Hat{\widetilde{L}}_{n , m} \ket{\widetilde{\chi}_{- 2 , m}} \Bigg)  =
-\end{multline*}
-\begin{equation} \label{eqn:spurious-annihilation}
-	= \sum _{n} \left( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) \Hat{\widetilde{L}}_{n , - n} \right) \ket{\widetilde{\chi}_{- 2 , 1}} ,
-\end{equation}
-which vanishes for $a = 1$.
-
-\section{Strings and Quantum Geometry} \label{sec:string-geometry}
+\section{Strings and Quantum Geometry}\label{sec:string-geometry}
 
 Uptil now we have studied a phenomenological modification of the string action. However, ultimately all phenomenological ideas must have a grounding in some exact, microscopic description of the system. Further, we have neglected one very important aspect of this whole endeavor, which is the description of the background geometry in the connection formalism and how to couple that to the Bosonic string. In this section we present a possible action in which the bulk geometry is encoded in the string action in terms of a connection living on the worldsheet.
 
@@ -723,7 +615,7 @@ where the covariant derivative $\mc{D}_a$ is of the form:
 \begin{equation}\label{eqn:covariant-deriv-v1}
 	\mc{D}_a X^\mu(\tau , \sigma) = \partial_a X^\mu + g \mc{A}_{a}^\mu{}_\nu X^\nu,
 \end{equation}
-where $\mc{A}_{a}^\mu{}_\nu$ is the gauge field and $g$ is the gauge coupling. A more experienced researcher would object saying that we know that the $X^\mu$ are spacetime co-ordinates and not vectors transforming
+where $\mc{A}_{a}^\mu{}_\nu$ is the gauge field and $g$ is the gauge coupling. A more experienced researcher would object saying that we know that the $X^\mu$ are spacetime co-ordinates and not vectors transforming 
 
 Let us begin by writing down the action of a string propagating in a background geometry. The background geometry is specified not in terms of a metric, but in terms of a connection $A_\mu^{IJ}$ and vielbein fields $E_\mu^I$. Further, we will require that the bulk connection and the bulk vielbein can be pulled back onto a connection $\mc{A}_{a}^{ij}$ and a dyad $e^a_i$, respectively, living on the string worldsheet $\Sigma$. $X^\mu(\tau , \sigma)$ are the space-time coordinates of a point $(\tau , \sigma)$ on the worldsheet. Now if one takes the sigma model viewpoint then the $X$'s can be viewed as $d+1$ scalar fields living on a $1+1$ worldsheet. But these fields are not really scalars. They are components of a $d+1$ dim vector since they transform with the fundamental representation of $\mathrm{SO}(d,1)$ under global Lorentz transformations acting on the ambient space-time, which we take to be flat for the time being.
 
@@ -748,6 +640,19 @@ This viewpoint on the embedding fields, as elements of the tangent space $T_p(M)
 	S_{S^2} = -\frac{T}{2} \int \diff^2 x \sqrt{-g} g^{ab} \partial_a \theta^\mu \partial_b \theta^\nu G_{\mu\nu},
 \end{equation}
 where $\theta^\mu(\sigma,\tau) \in \{\theta, \phi\}$ are the embedding fields, and $G_{\mu\nu}$ is \emph{a} metric living on $S^2$.
+
+\subsection{The Einstein-Cartan String}\label{sec:cartan-string}
+
+The careful reader will have noticed that there is a serious difficulty in the above argument. The bulk geometry is $d+1$ dimensional, therefore there are $d+1$ embedding fields. We have taken these fields $X^\mu$ and cast them as 
+components of a $SO(d,1)$ vector. Let us pick an arbitrary point $P_0$ on the bulk manifold and call it the ``origin''. At $P_0$ the co-ordinates are all zero $\vec X_0 = (0,0,\ldots,0)$. If we start acting with infinitesimal $SO(d,1)$ transformations on $\vec X_0$, the resulting surface will correspond to a ``constant energy'' hyperboloid in the bulk. This is because $SO(d,1)$ contains only boosts and rotations. We also need translations to generate the entirety of the bulk starting from a single base point.
+
+This is where we run into a problem. There is no way to express translations in $d+1$ dimensions as the action of a $d+1$ dimensional matrix valued group on a point living in $\mbb{R}^{d+1}$. In order to incorporate translations we have to resort to a trick and introduce an extra ``dummy'' dimension for the background manifold. Now we have $d+2$ embedding fields which we can write as:
+\begin{equation}
+	X^A := \{X^0, \vec X, X^r\} = \{X^\mu, X^r\},
+\end{equation}
+where $X^\mu = \{X^0, \vec X\}$ are the fields we had originally and $X^r$ is our new ``dummy'' co-ordinate.
+
+treating the $X$'s as co-ordinates for the bulk background and also as 
 
 \subsection{Two Expressions for Area}\label{eqn:area-formulae}
 
@@ -780,16 +685,16 @@ We take the bulk metric $g_{\mu\nu}$ to be flat. Let $\{\tau,\sigma\} := \{x^0, 
 \begin{equation}
 	\dot X := \left\{\frac{\partial X^\mu}{\partial \tau}\right\}; \quad X' := \left\{\frac{\partial X^\mu}{\partial \sigma}\right\}
 \end{equation}
-we obtain the following form for the determinant of the worldsheet metric (\eqref{eqn:patch-area-v1}) in terms of the embedding fields:
+ we obtain the following form for the determinant of the worldsheet metric (\eqref{eqn:patch-area-v1}) in terms of the embedding fields:
 \begin{align}\label{eqn:area-embedding}
 	\det h & = \begin{vmatrix}
-		           h_{00} &  & h_{01} \\
-		           h_{10} &  & h_{11}
-	           \end{vmatrix} = \begin{vmatrix}
-		                           \dot X^2        &  & \dot X \cdot X' \\
-		                           \dot X \cdot X' &  & X'^2
-	                           \end{vmatrix} \nonumber \\
-	       & = \dot X^2 X'^2 - (\dot X \cdot X')^2
+		h_{00} && h_{01} \\
+		h_{10} && h_{11} 
+	\end{vmatrix} = \begin{vmatrix}
+		\dot X^2 && \dot X \cdot X' \\
+		\dot X \cdot X' && X'^2
+	\end{vmatrix} \nonumber \\
+	& = \dot X^2 X'^2 - (\dot X \cdot X')^2
 \end{align}
 
 \textbf{From Vielbein:}
@@ -801,27 +706,33 @@ We can proceed to obtain the area of a 2-surface from the bulk vielbein as follo
 where $\eta_{ij}$ is the flat $(1+1)$ Minkowski metric. The determinant then becomes:
 \begin{align}\label{eqn:area-vielbein}
 	\det h & = \begin{vmatrix}
-		           h_{00} &  & h_{01} \\
-		           h_{10} &  & h_{11}
-	           \end{vmatrix} = \begin{vmatrix}
-		                           e_x{}^i e_x{}^j & e_x{}^i e_y{}^j \\
-		                           e_y{}^i e_x{}^j & e_y{}^i e_y{}^j
-	                           \end{vmatrix} \eta_{ij} \nonumber        \\
-	       & = \vec e_x{}^2 \vec e_y{}^2 - (\vec e_x \cdot \vec e_y)^2,
+		h_{00} && h_{01} \\
+		h_{10} && h_{11} 
+	\end{vmatrix} = \begin{vmatrix}
+		e_x{}^i e_x{}^j & e_x{}^i e_y{}^j \\
+		e_y{}^i e_x{}^j & e_y{}^i e_y{}^j
+	\end{vmatrix} \eta_{ij} \nonumber \\
+	& = \vec e_x{}^2 \vec e_y{}^2 - (\vec e_x \cdot \vec e_y)^2,
 \end{align}
 where $\vec e_x \cdot \vec e_y = e_x{}^i e_y{}^j \eta_{ij}$. It is clear by comparing the two expressions \eqref{eqn:area-embedding} and \eqref{eqn:area-vielbein} that we have the following correspondence between the vielbein the $X$ derivatives:
 \begin{equation}
 	\vec e_\tau \equiv \frac{\partial \vec X}{\partial \tau}; \quad \vec e_\sigma \equiv \frac{\partial \vec X}{\partial \sigma}.
 \end{equation}
-In other words we can identify the vielbein with the derivatives of the embedding fields. Of course, this is not altogether surprising. If we consider any manifold on which we have some set of fields $\{X^I(x^\mu)\}$, where $I$ is valued in the Lie algebra ${\mc g}$ of some group $\mc G$, as a function of some  ``fiducial'' co-ordinates $\{x^\mu\}$, then we can always define a set of ${\mc g}$ valued vector fields:
+In other words we can identify the vielbein with the derivatives of the embedding fields. Of course, this is not altogether surprising. If we consider any manifold on which we have some set of fields $\{X^I(x^\mu)\}$, where $I$ is valued in the Lie algebra ${\mc g}$ of some group $\mc G$, as a function of some  ``fiducial'' co-ordinates $\{x^\mu\}$, then we can always define a set of ${\mc g}$ valued vector fields: 
 $$
 	e^I_\mu := \frac{\partial X^I}{\partial x^\mu}.
 $$
-In the usual formulation of the string action the embedding fields are \emph{not} Lie-algebra valued but are co-ordinate fields on what is generally taken to be a flat background. In order for this correspondence between vielbein and $X$ derivatives to work we have to view the $X$ fields as taking values in a Lie algebra. But these same $X$ fields \emph{also} serve as local co-ordinates for the bulk. In order for the co-ordinates to change from point to point in the bulk geometry, we must therefore have that the connection $\mc A$ in \eqref{eqn:covariant-deriv-v2} can never vanish completely! If $\mc A$ vanishes then that will imply that the fields $X$ don't change from one point to the next. Thus the amplitude $|\mc A|$ can be arbitrarily small but it can never be zero.
+In the usual formulation of the string action the embedding fields are \emph{not} Lie-algebra valued but are co-ordinate fields on what is generally taken to be a flat background. In order for this correspondence between vielbein and $X$ derivatives to work we have to view the $X$ fields as taking values in a Lie algebra. But these same $X$ fields \emph{also} serve as local co-ordinates for the bulk. In order for the co-ordinates to change from point to point in the bulk geometry, we must therefore require that the connection $\mc A$ in \eqref{eqn:covariant-deriv-v2} can never vanish completely! If $\mc A$ vanishes then that will imply that the fields $X$ don't change from one point to the next and cannot therefore be viewed as co-ordinate functions. Thus the amplitude $|\mc A|$ can be arbitrarily small but it can never be zero.
+
+\subsection{}\label{sec:}
 
 \section{Physical Implications}
 
+
+
 \section{Discussion}
+
+We have presented in this work a possible way to formulate string theory in background independent manner.
 
 \begin{acknowledgments}
 
@@ -833,9 +744,9 @@ In the usual formulation of the string action the embedding fields are \emph{not
 
 \section{The Bimetric String}\label{app:bimetric-string}
 
-It would be natural to suspect that the action\eqref{eqn:modified-NG-action-v2} might be related to bimetric gravity in the target space of the string. We can see that this is indeed the case as follows.
+It would be natural to suspect that the action \eqref{eqn:modified-NG-action-v2} might be related to bimetric gravity in the target space of the string. We can see that this is indeed the case as follows.
 
-There are two ways that a string with two metrics might arise. One possibility is that there are two sets of embedding fields $X^\mu$ and $Y^\mu$. As a result, the induced metrics on the string worldsheet would also be different for both sets of embedding fields. However, in this case, we would not be talking about \emph{one} string but two \emph{different} strings described by the respective embedding functions. One could then proceed along the lines of \eqref{eqn:hassan-bimetric} and introduce a third term for the worldsheet action which describes a coupling between the two sets of embedding fields, of the form:
+Consider a string propagating in a target space whose geometry is described by two bulk metrics. There are two ways that a string with two metrics might arise. One possibility is that there are two sets of embedding fields $X^\mu$ and $Y^\mu$. As a result, the induced metrics on the string worldsheet would also be different for both sets of embedding fields. However, in this case, we would not be talking about \emph{one} string but two \emph{different} strings described by the respective embedding functions. One could then proceed along the lines of \eqref{eqn:hassan-bimetric} and introduce a third term for the worldsheet action which describes a coupling between the two sets of embedding fields, of the form:
 \begin{equation}\label{eqn:ws-bimetric-interaction}
 	S_{int} = - T_{eff} \int \diff^2 x\, \Phi(g,h) \Psi(\mb{X}, \mb{Y}).
 \end{equation}
@@ -867,26 +778,24 @@ Following the general procedure, given in \cite{Callan1985Strings}, we can coupl
 	S_{P} = -\frac{T}{2} \int \diff^2 x \sqrt{-g} g^{ab} \partial_a X^\mu \partial_b X^\nu G_{\mu\nu},
 \end{equation}
 where $G_{\mu\nu}$ is now the bulk or target space metric. Using this form we can now write down the worldsheet Polyakov bimetric action for two bulk metrics:
-\begin{multline} \label{eqn:bimetric-Polyakov}
-	S_{BP} = -\frac{T}{2} \int \diff^2 x\sqrt{-g} g^{ab} \partial_a X^\mu \partial_b X^\nu G_{\mu\nu} - \\
-	-\frac{T'}{2} \int \diff^2 x \sqrt{-h} h^{ab} \partial_a X^\mu \partial_b X^\nu H_{\mu\nu} + \\
-	+ \int \diff ^2 x \Phi (g , h) \Psi (X) \Theta (G , H) ,
-\end{multline}
-where the last term defines an interaction term $S_{int}$.
+\begin{align}\label{eqn:polyakov-flat}
+	S_{PB} = & -\frac{T}{2} \int \diff^2 x\sqrt{-g} g^{ab} \partial_a X^\mu \partial_b X^\nu G_{\mu\nu} \nonumber \\
+	         & -\frac{T'}{2} \int \diff^2 x \sqrt{-h} h^{ab} \partial_a X^\mu \partial_b X^\nu H_{\mu\nu}.
+\end{align}
 
 \subsection{The Bimetric Polyakov Equations} \label{sec:bimetric-polyakov-eoms}
 
 Following the usual procedure such as the one found in \cite{Tong2009Lectures} with the bulk metric fixed, we find two copies of the string energy-momentum tensor being set to zero, which can be used to find an expression for the auxiliary metrics $g_{c d}$ and $h_{c d}$:
 \begin{equation} \label{eqn:variation-wrt-g}
-	\frac{\delta S_{B P}}{\delta g^{c d}} = 0
+	\frac{\delta S_{P B}}{\delta g^{c d}} \overset{!}{=} 0
 \end{equation}
 \begin{multline} \label{eqn:g-em-tensor}
 	T^{(G)} _{c d} := G_{\mu \nu} \bigg( \partial _{c} X^{\mu} \partial _{d} X^{\nu} - \\
-	- \frac{1}{2} g_{c d} g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \bigg) = \frac{2}{T \sqrt{- g}} \frac{\delta S_{int}}{\delta g^{c d}}
+	- \frac{1}{2} g_{c d} g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \bigg) = 0
 \end{multline}
 
 \begin{equation} \label{eqn:g-expression}
-	g_{c d} = 2 f^{(G)} \left( \partial _{c} X^{\mu} \partial _{d} X^{\nu} G_{\mu \nu} - \frac{2}{T \sqrt{- g}} \frac{\delta S_{int}}{\delta g^{c d}} \right) ,
+	g_{c d} = 2 f^{(G)} \partial _{c} X^{\mu} \partial _{d} X^{\nu} G_{\mu \nu} ,
 \end{equation}
 where the function $f^{(G)}$ is given by
 \begin{equation} \label{eqn:g's-f-function}
@@ -894,63 +803,24 @@ where the function $f^{(G)}$ is given by
 \end{equation}
 and completely analogously for the $H_{\mu \nu}$ metric,
 \begin{equation} \label{eqn:variation-wrt-h}
-	\frac{\delta S_{B P}}{\delta h^{c d}} = 0
+	\frac{\delta S_{P B}}{\delta h^{c d}} \overset{!}{=} 0
 \end{equation}
 \begin{multline} \label{eqn:h-em-tensor}
 	T^{(H)} _{c d} := H_{\mu \nu} \bigg( \partial _{c} X^{\mu} \partial _{d} X^{\mu} - \\
-	- \frac{1}{2} h_{c d} h^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \bigg) = \frac{2}{T' \sqrt{- h}} \frac{\delta S_{int}}{\delta h^{c d}}
+	- \frac{1}{2} h_{c d} h^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \bigg) = 0
 \end{multline}
 \begin{equation} \label{eqn:h-expression}
-	h_{c d} = 2 f^{(H)} \left( \partial _{c} X^{\mu} \partial _{d} X^{\nu} H_{\mu \nu} - \frac{2}{T' \sqrt{- h}} \frac{\delta S_{int}}{\delta h^{c d}} \right) ,
+	h_{c d} = 2 f^{(H)} \partial _{c} X^{\mu} \partial _{d} X^{\nu} H_{\mu \nu} ,
 \end{equation}
 with
 \begin{equation} \label{eqn:h's-f-function}
 	\frac{1}{f^{(H)}} = h^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} H_{\mu \nu} .
 \end{equation}
-If $S_{int} = 0$ and the auxiliary metrics $g_{a b}$ and $h_{a b}$ coincide with the induced metrics from $G_{\mu \nu}$ and $H_{\mu \nu}$, then the action\eqref{eqn:bimetric-Polyakov} reduces to
-\begin{equation} \label{eqn:reduced-bimetric-action}
-	S' _{B P} = - T \int \diff ^2 x \sqrt{- g} - T' \int \diff ^2 x \sqrt{- h} ,
-\end{equation}
-which, if $T' = - T k \Delta / 2$ and $h = g^{-1}$ becomes precisely the Nambu-Goto area corrected action\eqref{eqn:modified-NG-action}. The condition $h = g^{-1}$ can be achieved by
-\begin{equation} \label{eqn:h=SgS}
-	h_{a b} = S_{a c} g^{c d} S_{d b} ,
-\end{equation}
-where $S \in \mathrm{SL}(2 , \mathbb{C})$. The fact that we require $S = S^{\dagger}$ for $h$ to be real and symmetric restricts $S$ to be in the boosts sector of $\mathrm{SL}(2 , \mathbb{C})$. By requiring that the induced metric by $H_{\mu \nu}$ be equal to\eqref{eqn:h=SgS}, we get
-\begin{equation} \label{eqn:H-from-SgS}
-	\partial _{a} X^{\mu} \partial _{b} X^{\nu} H_{\mu \nu} = S_{a c} g^{c d} S_{d b}
-\end{equation}
-from which follows
-\begin{equation}
-	H_{\mu \nu} = \frac{1}{8 (- g)} (\Tr (S \varepsilon))^2 G_{\mu \nu} ,
-\end{equation}
-constraining $S$ to necessarily being not symmetric otherwise the trace $\Tr (S \varepsilon)$ vanishes and we would get $H _{\mu \nu} = 0$. In fact, to recover the modified Nambu-Goto action\eqref{eqn:modified-NG-action}, we require $(\Tr (S \varepsilon))^2 = 8$, thus $H_{\mu \nu} = G_{\mu \nu} / (- g)$.
 
 As for the embbeding fields equation, we get a non-homogeneous wave equation for the coupled metric
 \begin{equation} \label{eqn:variation-wrt-X}
-	\frac{\delta S_{P B}}{\delta X^{\lambda}} = 0
+	\frac{\delta S_{P B}}{\delta X^{\lambda}} \overset{!}{=} 0
 \end{equation}
-\begin{equation} \label{eqn:bimetric-X-eom}
-	\partial _{a} \left( F^{a b} _{\mu \lambda} \partial _{b} X^{\mu} \right) = \frac{1}{2} \partial _{\lambda} F^{a b} _{\mu \nu} \partial _{a} X^{\mu} \partial _{b} X^{\nu} ,
-\end{equation}
-where the coupled double-metric $F^{a b} _{\mu \nu}$ is given by
-\begin{equation} \label{eqn:coupled-double-metric}
-	F^{a b} _{\mu \nu} = T \sqrt{- g} g^{a b} G_{\mu \nu} + T' \sqrt{- h} h^{a b} H_{\mu \nu} .
-\end{equation}
-If the conditions for $h = g^{-1}$ are satisfied and $G_{\mu \nu} = \eta _{\mu \nu}$, eq\eqref{eqn:bimetric-X-eom} reduces to
-\begin{multline} \label{eqn:bimetric-X-simplified-1}
-	\partial _{a} \big( \big( \sqrt{- g} g^{a b} - \\
-	- \frac{k \Delta}{2 (- g)} \sqrt{- g}^{-1} (S^{-1})^{a c} g_{c d} (S^{-1})^{d b} \big) \partial _{b} X^{\mu} \big) = 0 ,
-\end{multline}
-which in conformal gauge $g_{a b} = \phi (x) \eta _{a b}$ and with
-\begin{equation} \label{eqn:S-simplification-condition}
-	(S^{-1})^{a c} \eta _{c d} (S^{-1})^{d b} = \eta ^{a b}
-\end{equation}
-simplifies further to
-\begin{equation} \label{eqn:bimetric-eom-simplified}
-	\eta ^{a b} \partial _{a} \partial _{b} X^{\mu} + \eta ^{a b} \partial _{a} \ln (F^{-}) \partial _{b} X^{\mu} = 0 .
-\end{equation}
-This is the exact form derived earlier in\eqref{eqn:X-eom-simplified}, thus leading to the same Klein-Gordon equation.
-
 
 \bibliographystyle{JHEP3}
 
