@@ -1926,8 +1926,9 @@ Since under gauge transformations $\mc{D}_{a} X$ transforms covariantly, the act
 \end{equation*}
 so we promote the killing form $\eta _{I J}$ to a doubly-contravariant form $K_{I J}$ such that $K' _{I J} = (\PS ^{-1})_{\ \ I} ^{M} (\PS ^{-1})_{\ \ J} ^{N} K_{M N}$
 \begin{equation*}
-	S = - \frac{T}{2} \int \diff ^2 x e e^{a} _{I'} e^{b} _{J'} \eta ^{I' J'} \mc{D}_{a} X^{I} \mc{D}_{b} X^{J} K_{I J}
+	S = - \frac{T}{2} \int \diff ^2 x e e^{a} _{I'} e^{b} _{J'} \eta ^{I' J'} \mc{D}_{a} X^{I} \mc{D}_{b} X^{J} K_{I J} .
 \end{equation*}
+Clearly, since $\PS = \PS (x)$, $K$ must also be a WS field $K_{I J} = K_{I J} (x)$.
 
 \subsection{EoMs}
 
@@ -1935,24 +1936,25 @@ so we promote the killing form $\eta _{I J}$ to a doubly-contravariant form $K_{
 
 \begin{align*}
 	\frac{\delta S}{\delta e^{c} _{K}} & \propto \left( \frac{\partial e}{\partial e^{c} _{K}} e^{a} _{I'} e^{b} _{J'} \eta ^{I' J'} + e \frac{\partial}{\partial e^{c} _{K}} (e^{a} _{I'} e^{b} _{J'} \eta ^{I' J'}) \right) \mc{D}_{a} X^{I} \mc{D}_{b} X^{J} \eta _{I J} = \\
-	                                   & = \left( \frac{1}{2 e}  \right) \mc{D}_{a} X^{I} \mc{D}_{b} X^{J} \eta _{I J}
+	                                   & = \left( - e e^{K} _{c} e^{a} _{I'} e^{b} _{J'} \eta ^{I' J'} + 2 e \delta ^{a} _{c} \delta ^{K} _{I'} e^{b} _{J'} \eta ^{I' J'} \right) \mc{D}_{a} X^{I} \mc{D}_{b} X^{J} \eta _{I J} =                                             \\
+	                                   & = - e e^{K} _{c} e^{a} _{I'} e^{b} _{J'} \eta ^{I' J'} \mc{D}_{a} X^{I} \mc{D}_{b} X^{J} \eta _{I J} + 2 e e^{b} _{J'} \eta ^{K J'} \mc{D}_{c} X^{I} \mc{D}_{b} X^{J} \eta _{I J} = 0
 \end{align*}
 \begin{equation*}
-	T^{k} _{c} :=  = 0
+	T^{K} _{c} := 2 e^{b} _{J'} \eta ^{K J'} \mc{D}_{c} X^{I} \mc{D}_{b} X^{J} \eta _{I J} - e^{K} _{c} e^{a} _{I'} e^{b} _{J'} \eta ^{I' J'} \mc{D}_{a} X^{I} \mc{D}_{b} X^{J} \eta _{I J} = 0
 \end{equation*}
 \begin{equation*}
-	e^{K} _{c} =  ,
+	e^{K} _{c} = 2 f e^{b K} \mc{D}_{c} X^{I} \mc{D}_{b} X^{J} \eta _{I J} ,
 \end{equation*}
 \begin{equation*}
-	\frac{1}{f} =
+	\frac{1}{f} = e^{a} _{I'} e^{b} _{J'} \eta ^{I' J'} \mc{D}_{a} X^{I} \mc{D}_{b} X^{J} \eta _{I J}
 \end{equation*}
 
 \subsubsection{W.r.t $A$}
 
 \begin{align*}
-	\frac{\delta S}{\delta \mc{A}^{K L} _{c}} & = \frac{T}{2} \left( e e^{a} _{i} e^{b i} \frac{\partial}{\partial \mc{A}^{K L} _{c}} \left( \mc{D}_{a} X^{I} \mc{D}_{b} X^{J} \right) \eta _{I J} \right) = \\
-	                                          & = T \left( e e^{a} _{i} e^{b i} \delta ^{c} _{a} \delta ^{I} _{[K} \eta _{L] I'} X^{I'} \mc{D}_{b} X^{J} \eta _{I J} \right) =                               \\
-	                                          & = T e e^{c} _{i} e^{b i} \mc{D}_{b} X_{[K} X_{L]} \overset{!}{=} 0
+	\frac{\delta S}{\delta \mc{A}^{K L} _{c}} & = \frac{T}{2} \left( e e^{a} _{I'} e^{b} _{J'} \eta ^{I' J'} \frac{\partial}{\partial \mc{A}^{K L} _{c}} \left( \mc{D}_{a} X^{I} \mc{D}_{b} X^{J} \right) \eta _{I J} \right) = \\
+	                                          & = T \left( e e^{a} _{I'} e^{b} _{J'} \eta ^{I' J'} \delta ^{c} _{a} \delta ^{I} _{[K} \eta _{L] I'} X^{I'} \mc{D}_{b} X^{J} \eta _{I J} \right) =                               \\
+	                                          & = T e e^{c} _{I'} e^{b} _{J'} \eta ^{I' J'} \mc{D}_{b} X_{[K} X_{L]} \overset{!}{=} 0
 \end{align*}
 \begin{equation*}
 	\mc{T}^{I J} _{a} = \mc{D}_{a} X^{[I} X^{J]} = 0
@@ -1961,15 +1963,15 @@ so we promote the killing form $\eta _{I J}$ to a doubly-contravariant form $K_{
 \subsubsection{W.r.t $X$}
 
 \begin{align*}
-	\frac{\delta S}{\delta X^{K}} & = - \frac{T}{2} \left( \partial _{c} \left( e e^{a} _{i} e^{b i} \frac{\partial}{\partial (\partial _{c} X^{K})} \left( \mc{D}_{a} X^{I} \mc{D}_{b} X^{J} \right) \eta _{I J} \right) - e e^{a} _{i} e^{b i} \frac{\partial}{\partial X^{K}} \left( \mc{D}_{a} X^{I} \mc{D}_{b} X^{J} \right) \eta _{I J} \right) = \\
-	                              & = - T \left( \partial _{c} \left( e e^{a} _{i} e^{b i} \delta ^{c} _{a} \delta ^{I} _{K} \mc{D}_{b} X^{J} \eta _{I J} \right) - e e^{a} _{i} e^{b i} k \mc{A}^{I} _{a I'} \delta ^{I'} _{K} \mc{D}_{b} X^{J} \eta _{I J} \right)=                                                                                   \\
-	                              & = - T \left( \partial _{a} \left( e e^{a} _{i} e^{b i} \mc{D}_{b} X^{J} \eta _{K J} \right) - k \mc{A}^{I} _{a K} \left( e e^{a} _{i} e^{b i} \mc{D}_{b} X^{J} \eta _{I J} \right) \right) =                                                                                                                        \\
-	                              & = - T \mc{D}_{a} \left( e e^{a} _{i} e^{b i} \mc{D}_{b} X_{K} \right) \overset{!}{=} 0
+	\frac{\delta S}{\delta X^{K}} & = - \frac{T}{2} \left( \partial _{c} \left( e e^{a} _{I'} e^{b} _{J'} \eta ^{I' J'} \frac{\partial}{\partial (\partial _{c} X^{K})} \left( \mc{D}_{a} X^{I} \mc{D}_{b} X^{J} \right) \eta _{I J} \right) - e e^{a} _{I'} e^{b} _{J'} \eta ^{I' J'} \frac{\partial}{\partial X^{K}} \left( \mc{D}_{a} X^{I} \mc{D}_{b} X^{J} \right) \eta _{I J} \right) = \\
+	                              & = - T \left( \partial _{c} \left( e e^{a} _{I'} e^{b} _{J'} \eta ^{I' J'} \delta ^{c} _{a} \delta ^{I} _{K} \mc{D}_{b} X^{J} \eta _{I J} \right) - e e^{a} _{I'} e^{b} _{J'} \eta ^{I' J'} k \mc{A}^{I} _{a L} \delta ^{I'} _{L} \mc{D}_{b} X^{J} \eta _{I J} \right)=                                                                                    \\
+	                              & = - T \left( \partial _{a} \left( e e^{a} _{I'} e^{b} _{J'} \eta ^{I' J'} \mc{D}_{b} X^{J} \eta _{K J} \right) - k \mc{A}^{I} _{a K} \left( e e^{a} _{I'} e^{b} _{J'} \eta ^{I' J'} \mc{D}_{b} X^{J} \eta _{I J} \right) \right) =                                                                                                                        \\
+	                              & = - T \mc{D}_{a} \left( e e^{a} _{I'} e^{b} _{J'} \eta ^{I' J'} \mc{D}_{b} X_{K} \right) \overset{!}{=} 0
 \end{align*}
 \begin{equation*}
-	\mc{D}_{a} \left( e e^{a} _{i} e^{b i} \mc{D}_{b} X^{I} \right) = 0
+	\mc{D}_{a} \left( e e^{a} _{I'} e^{b} _{J'} \eta ^{I' J'} \mc{D}_{b} X^{I} \right) = 0
 \end{equation*}
-In conformal gauge $e e^{a} _{i} e^{b i} = \eta ^{a b}$, thus
+In conformal gauge $e e^{a} _{I'} e^{b} _{J'} \eta ^{I' J'} = \eta ^{a b}$, thus
 \begin{equation*}
 	\eta ^{a b} \mc{D}_{a} \mc{D}_{b} X^{I} = 0 .
 \end{equation*}
@@ -2071,6 +2073,59 @@ This integral equation is tricky to deal with, but we can turn it into a differe
 This has general solution given by sum of plane waves and exponentials
 \begin{equation*}
 	X^{0} = \sum _{n \neq 0} \frac{1}{n^4} \left( a^{0} _{n} \e ^{i 2 \sqrt{k a} n (\tau + \sigma)} + b^{0} _{n} \e ^{i 2 \sqrt{k a} n (\tau - \sigma)} + c^{0} _{n} \e ^{2 \sqrt{k a} n (\tau + \sigma)} + d^{0} _{n} \e ^{2 \sqrt{k a} n (\tau - \sigma)} \right) .
+\end{equation*}
+
+\newpage
+
+\section{Polyakov-LQG V2}
+
+Same idea as before, but now contract the dyads directly with the $\mc{D}_{a} X^{I}$ factors
+\begin{equation*}
+	S = - \frac{T}{4} \int \diff ^2 x e e^{a} _{I} e^{b} _{J} \mc{D}_{a} X^{I} \mc{D}_{b} X^{J} .
+\end{equation*}
+
+\subsection{EoMs}
+
+\subsubsection{W.r.t $e$}
+
+\begin{align*}
+	\frac{\delta S}{\delta e^{c} _{K}} & \propto \left( \frac{\partial e}{\partial e^{c} _{K}} e^{a} _{I} e^{b} _{J} + e \frac{\partial}{\partial e^{c} _{K}} (e^{a} _{I} e^{b} _{J}) \right) \mc{D}_{a} X^{I} \mc{D}_{b} X^{J} = \\
+	                                   & = \left( - e e^{K} _{c} e^{a} _{I} e^{b} _{J} + 2 e \delta ^{K} _{I} \delta ^{a} _{c} e^{b} _{J} \right) \mc{D}_{a} X^{I} \mc{D}_{b} X^{J} =                                             \\
+	                                   & = - e e^{K} _{c} e^{a} _{I} e^{b} _{J} \mc{D}_{a} X^{I} \mc{D}_{b} X^{J} + 2 e e^{b} _{J} \mc{D}_{c} X^{K} \mc{D}_{b} X^{J} = 0
+\end{align*}
+\begin{equation*}
+	T_{c} ^{K} := 2 e^{b} _{J} \mc{D}_{c} X^{K} \mc{D}_{b} X^{J} - e^{K} _{c} e^{a} _{I} e^{b} _{J} \mc{D}_{a} X^{I}\mc{D}_{b} X^{J} = 0 ,
+\end{equation*}
+\begin{equation*}
+	e^{K} _{c} = 2 f \mc{D}_{c} X^{K} ,
+\end{equation*}
+\begin{equation*}
+	\frac{1}{f} = e^{b} _{J} \mc{D}_{b} X^{J} .
+\end{equation*}
+
+\subsubsection{W.r.t $A$}
+
+\begin{align*}
+	\frac{\delta S}{\delta \mc{A}^{K L} _{c}} & \propto e e^{a} _{I} e^{b} _{J} \frac{\partial}{\partial \mc{A}^{K L} _{c}} (\mc{D}_{a} X^{I} \mc{D}_{b}X^{J}) = \\
+	                                          & = 2 e e^{a} _{I} e^{b} _{J} \delta _{a} ^{c} \delta ^{I} _{[K} \eta _{L] I'} X^{I'} \mc{D}_{b} X^{J} =           \\
+	                                          & = 2 e e^{c} _{[K} X_{L]} e^{b} _{J} \mc{D}_{b} X^{J} = 0
+\end{align*}
+\begin{equation*}
+	\mc{T}^{c} _{K L} := e^{c} _{[K} X_{L]} = 0 .
+\end{equation*}
+
+\subsubsection{W.r.t $X$}
+
+\begin{align*}
+	\frac{\delta S}{\delta X^{K}} & \propto 2 e e^{a} _{I} e^{b} _{J} k \mc{A}^{I} _{a I'} \delta ^{I'} _{K} \mc{D}_{b} X^{J} - 2 \partial _{c} \left( e e^{a} _{I} e^{b} _{J} \delta ^{c} _{a} \delta ^{I} _{K} \mc{D}_{b} X^{J} \right) = \\
+	                              & = 2 e e^{a} _{I} e^{b} _{J} k \mc{A}^{I} _{a K} \mc{D}_{b} X^{J} - 2 \partial _{a} \left( e e^{a} _{K} e^{b} _{J} \mc{D}_{b} X^{J} \right) = 0
+\end{align*}
+\begin{equation*}
+	\mc{D}_{a} \left( e e^{a} _{K} e^{b} _{J} \mc{D}_{b} X^{J} \right) = 0 .
+\end{equation*}
+If conformal gauge makes it so that $e e^{a} _{K} e^{b} _{J} = \eta ^{a b} \eta _{K J}$, this reduces to
+\begin{equation*}
+	\eta ^{a b} \mc{D}_{a} \mc{D}_{b} X^{I} = 0
 \end{equation*}
 
 \end{document}
