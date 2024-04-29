@@ -1892,7 +1892,7 @@ where $\epsilon = \mathrm{sgn} (\Lambda)$, i.e the sign of the background cosmol
 \end{equation*}
 where the metrics can be recast in terms of auxiliary and bulk vielbein fields as in
 \begin{equation*}
-	S = - \frac{T}{2} \int \diff ^2 x e e^{a} _{I'} e^{b} _{J'} \eta ^{I' J'} \mc{D}_{a} X^{I} \mc{D}_{b} X^{J} E_{I} ^{\mu} E_{J} ^{\nu} G_{\mu \nu} ,
+	S = - \frac{T}{2} \int \diff ^2 x e e^{a} _{I'} e^{b} _{J'} \eta ^{I' J'} \mc{D}_{a} X^{I} \mc{D}_{b} X^{J} \eta _{I J} ,
 \end{equation*}
 where
 \begin{equation*}
@@ -1917,23 +1917,16 @@ where $\mc{P} = \e ^{\beta ^{0 \alpha} B_{0 \alpha} + \theta ^{\alpha \beta} J_{
 \end{equation*}
 so this is a proper covariant derivative for the Poincaré group.
 
-\subsection{Checking Poincaré invariance}
-
-Under a global infinitesimal Poincaré transformation $X \mapsto X + (\epsilon ^{\mu \nu} M_{\mu \nu} + \epsilon ^{\mu} P_{\mu}) X$ where $\epsilon ^{\mu \nu} = - \epsilon ^{\nu \mu}$ and $\epsilon ^{\mu}$ are infinitesimal constants and $M_{\mu \nu} = B_{0 \alpha} + J_{\alpha \beta}$ are the generators of Lorentz transformations, the action changes as
+Since under gauge transformations $\mc{D}_{a} X$ transforms covariantly, the action is not invariant under diffeomorphisms. In fact, it transforms as
 \begin{equation*}
-	\delta \Lagr = \delta \left( e e^{a} _{I'} e^{b} _{J'} \eta ^{I' J'} \mc{D}_{a} X^{I} \mc{D}_{b} X^{J} \eta _{I J} \right) =
+	S' = - \frac{T}{2} \int \diff ^2 x e e^{a} _{I'} e^{b} _{J'} \eta ^{I' J'} \mc{D}' _{a} X^{\prime I} \mc{D}' _{b} X^{\prime J} \eta _{I J} =
 \end{equation*}
 \begin{equation*}
-	= e e^{a} _{I'} e^{b} _{J'} \eta ^{I' J'} \delta \left( \mc{D}_{a} X^{I} \mc{D}_{b} X^{J} \right) \eta _{I J} =
+	= - \frac{T}{2} \int \diff ^2 x e e^{a} _{I'} e^{b} _{J'} \eta ^{I' J'} \PS ^{I} _{\ K} \mc{D}_{a} X^{K} \PS ^{J} _{\ L} \mc{D}_{b} X^{L} \eta _{I J} ,
 \end{equation*}
+so we promote the killing form $\eta _{I J}$ to a doubly-contravariant form $K_{I J}$ such that $K' _{I J} = (\PS ^{-1})_{\ \ I} ^{M} (\PS ^{-1})_{\ \ J} ^{N} K_{M N}$
 \begin{equation*}
-	= e e^{a} _{I'} e^{b} _{J'} \eta ^{I' J'} \left( \mc{D}_{a} ((\epsilon ^{\mu \nu} M_{\mu \nu} + \epsilon ^{\mu} P_{\mu})^{I} _{\ K} X^{K}) \mc{D}_{b} X^{J} + \mc{D}_{a} X^{I} \mc{D}_{b} ((\epsilon ^{\mu \nu} M_{\mu \nu} + \epsilon ^{\mu} P_{\mu})^{J} _{\ K} X^{K}) \right) \eta _{I J} =
-\end{equation*}
-\begin{equation*}
-	= e e^{a} _{I'} e^{b} _{J'} \eta ^{I' J'} \left( (\epsilon ^{\mu \nu} M_{\mu \nu} + \epsilon ^{\mu} P_{\mu})^{I} _{\ K} \mc{D}_{a} X^{K} \mc{D}_{b} X^{J} + (\epsilon ^{\mu \nu} M_{\mu \nu} + \epsilon ^{\mu} P_{\mu})^{J} _{\ K} \mc{D}_{a} X^{K} \mc{D}_{b} X^{I} \right) \eta _{I J} =
-\end{equation*}
-\begin{equation*}
-	=
+	S = - \frac{T}{2} \int \diff ^2 x e e^{a} _{I'} e^{b} _{J'} \eta ^{I' J'} \mc{D}_{a} X^{I} \mc{D}_{b} X^{J} K_{I J}
 \end{equation*}
 
 \subsection{EoMs}
