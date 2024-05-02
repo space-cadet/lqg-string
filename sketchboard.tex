@@ -1827,6 +1827,12 @@ which is negative, we can thus choose
 \end{equation*}
 leaving the $d$-th spin-2 state massless, the rest being tachyons... This, however, is if we impose that one spin-2 state have to be massless. Since granular space-time affects wave propagation speed, in the effective limit gravitons might be effectively massive, thus we can get rid of the tachyons by letting $c > 0$ if need be.
 
+The fact that $\zeta _{\mu \nu} = \zeta _{\nu \mu}$ leaves $\zeta _{\mu \nu}$ with $D (D + 1) / 2$ independent components. The traceless condition $\eta ^{\mu \nu} \zeta _{\mu \nu} = 0$ takes out 1 from that, leaving $(D (D + 1) / 2) - 1$ allowed polarizations. Finally, the condition $\zeta _{\mu \nu} p ^{\mu} = 0$ takes $D$ out of those, leaving $(D (D - 1) / 2) - 1$ allowed polarizations.
+\begin{equation*}
+	\frac{D (D - 1)}{2} - 1 = \frac{D^2 - D - 2}{2} = \frac{(D - 2) (D + 1)}{2} .
+\end{equation*}
+This leaves 5 polarizations in $D = 4$. This is the expected 6 from massive gravitons minus one from the traceless condition.
+
 Let's now analyse spurious states to see the conditions to maximize 0-norm states. A physical state $\ket{\phi}$ is a state satisfying the constraints
 \begin{align*}
 	\Hat{L}_{n , m} \ket{\phi}                                                                                                                & = 0 , \ \forall n , m \in \mathbb{Z} \\
@@ -1854,24 +1860,33 @@ To see that this state is indeed orthogonal to $\ket{\phi}$, we perform the inne
 \end{equation*}
 The interesting case is when $\ket{\psi}$ is both physical AND spurious, since by construction those states have 0-norm, being orthogonal to every physical state, including themselves. Such states can be constructed by considering spurious states of the form
 \begin{equation*}
-	\ket{\psi _{- 2 , n}} = \sum _{m} \Hat{\widetilde{L}}_{n , m} \ket{\widetilde{\chi}_{- 2 , m}}
+	\ket{\psi _{1 , n}} = \sum _{m} \Hat{\widetilde{L}}_{n , m} \ket{\widetilde{\chi}_{1 , m}}
 \end{equation*}
-where $\ket{\widetilde{\chi}_{- 2 , m}}$ satisfies
+where $\ket{\widetilde{\chi}_{1 , m}}$ satisfies
 \begin{align*}
-	\Hat{\widetilde{L}}_{k , p} \ket{\widetilde{\chi}_{- 2 , m}}                                                                                                                 & = 0 , \ k \neq - p \\
-	\left( \sum _{n'} \left( \left( \left( \frac{n'}{E_{n'}} \right) ^2 - 1 \right) \Hat{\widetilde{L}}_{n' , - n'} \right) - c + 2 - m \right) \ket{\widetilde{\chi}_{- 2 , m}} & = 0 .
+	\Hat{\widetilde{L}}_{k , p} \ket{\widetilde{\chi}_{1 , m}}                                                                                                                 & = 0 , \ k \neq - p \\
+	\left( \sum _{n'} \left( \left( \left( \frac{n'}{E_{n'}} \right) ^2 - 1 \right) \Hat{\widetilde{L}}_{n' , - n'} \right) - c - 1 - m \right) \ket{\widetilde{\chi}_{1 , m}} & = 0 .
 \end{align*}
 These states are annihilated by $\Hat{\widetilde{L}}_{k , p}$, for $p \neq - n$, and for this case we have that
 \begin{equation*}
-	\sum _{n} \left( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) \Hat{\widetilde{L}}_{- p , - n} \ket{\psi _{- 2 , n}} \right) =
+	\sum _{n} \left( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) \Hat{\widetilde{L}}_{2 , - n} \ket{\psi _{1 , n}} \right) =
 \end{equation*}
 \begin{equation*}
-	= \sum _{n} \left( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) \Hat{\widetilde{L}}_{- 1 , - n} \sum _{m} \Hat{\widetilde{L}}_{n , m} \ket{\widetilde{\chi}_{- 2 , m}} \right)  =
+	= \sum _{n} \left( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) \Hat{\widetilde{L}}_{2 , - n} \sum _{m} \Hat{\widetilde{L}}_{n , m} \ket{\widetilde{\chi}_{1 , m}} \right)  =
 \end{equation*}
 \begin{equation*}
-	= \sum _{n} \left( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) \Hat{\widetilde{L}}_{n , - n} \right) \ket{\widetilde{\chi}_{- 2 , 1}} ,
+	= \sum _{n} \left( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) \Hat{\widetilde{L}}_{n , - n} \right) \ket{\widetilde{\chi}_{1 , - 2}} ,
 \end{equation*}
 which vanish if $c = 1$.
+
+\newpage
+
+\section{Path Integral for the area corrected Polyakov action}
+
+Let's try to construct the transition amplitude for the area corrected string
+\begin{equation*}
+	W [g , X] = \mc{N} \int [\mc{D} g] [\mc{D} X] \e ^{i \frac{T}{2} \int \diff ^2 x \left( \sqrt{- g} - \frac{k \Delta}{2 \sqrt{- g}} \right) g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \eta _{\mu \nu}}
+\end{equation*}
 
 \newpage
 
