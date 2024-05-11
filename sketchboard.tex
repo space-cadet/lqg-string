@@ -833,7 +833,38 @@ Regular string EoM is a wave eqn, so promote to KG eqn from quantum geometry eff
 \end{equation*}
 which can be achieved by the action
 \begin{equation*}
-    S = - \frac{T}{2} \int \diff ^2 x \sqrt{- g} \left( g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \eta _{\mu \nu} + \mu ^2 X^{\mu} X^{\nu} \eta _{\mu \nu}  \right)
+    S = - \frac{T}{2} \int \diff ^2 x \sqrt{- g} \left( g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \eta _{\mu \nu} - \mu ^2 X^{\mu} X^{\nu} \eta _{\mu \nu} \right) .
+\end{equation*}
+This action has manifest Lorentz invariance, but not translation invariance. This is fine since the string is not propagating in a vacuum. It also has WS Weyl symmetry.
+
+\subsection{EoMs}
+
+\begin{align*}
+    \frac{\delta S}{\delta g^{c d}} & \propto \frac{\del \sqrt{- g}}{\del g^{c d}} \left( g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \eta _{\mu \nu} - \mu ^2 X^{\mu} X^{\nu} \eta _{\mu \nu} \right) + \sqrt{- g} \delta ^{a} _{c} \delta ^{b} _{d} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \eta _{\mu \nu} = \\
+                                    & = - \frac{1}{2} \sqrt{- g} g_{c d} \left( g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \eta _{\mu \nu} - \mu ^2 X^{\mu} X^{\nu} \eta _{\mu \nu} \right) + \sqrt{- g} \partial _{c} X^{\mu} \partial _{d} X^{\nu} \eta _{\mu \nu} = 0
+\end{align*}
+\begin{equation*}
+    T_{c d} := \partial _{c} X^{\mu} \partial _{d} X^{\nu} \eta _{\mu \nu} - \frac{1}{2} g_{c d} \left( g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \eta _{\mu \nu} - \mu ^2 X^{\mu} X^{\nu} \eta _{\mu \nu} \right) = 0
+\end{equation*}
+\begin{equation*}
+    g_{c d} = 2 f \partial _{c} X^{\mu} \partial _{d} X^{\nu} \eta _{\mu \nu} ,
+\end{equation*}
+\begin{equation*}
+    \frac{1}{f} = \left( g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \eta _{\mu \nu} - \mu ^2 X^{\mu} X^{\nu} \eta _{\mu \nu} \right)
+\end{equation*}
+
+\begin{align*}
+    \frac{\delta S}{\delta X^{\lambda}} & \propto - 2 \sqrt{- g} \mu ^2 X^{\mu} \delta ^{\nu} _{\lambda} \eta _{\mu \nu} - 2 \del _{c} \left( \sqrt{- g} g^{a b} \delta ^{c} _{a} \delta ^{\mu} _{\lambda} \del _{b} X^{\nu} \eta _{\mu \nu} \right) = \\
+                                        & = - 2 \sqrt{- g} \mu ^2 X^{\mu} \eta _{\lambda} - 2 \del _{a} \left( \sqrt{- g} g^{a b} \del _{b} X^{\mu} \eta _{\mu \lambda} \right) = 0
+\end{align*}
+\begin{equation*}
+    \del _{a} \left( \sqrt{- g} g^{a b} \del _{b} X^{\mu} \right) + \sqrt{- g} \mu ^2 X^{\mu} = 0
+\end{equation*}
+\begin{equation*}
+    \frac{1}{\sqrt{- g}} \del _{a} \left( \sqrt{- g} g^{a b} \del _{b} X^{\mu} \right) + \mu ^2 X^{\mu} = 0
+\end{equation*}
+\begin{equation*}
+    g^{a b} \nabla _{a} \nabla _{b} X^{\mu} + \mu ^2 X^{\mu} = 0
 \end{equation*}
 
 \newpage
@@ -1340,7 +1371,10 @@ where by expanding the first relation we get
     - F^{-} \left\{ (\alpha ^{\mu} _{- k})^{*} , \alpha ^{\nu} _{p} \right\} \e ^{i (E_{k} - E_{p}) \tau} \e ^{i p \sigma '} + F^{-} \left\{ (\alpha ^{\mu} _{- k})^{*} , (\alpha ^{\nu} _{- p})^{*} \right\} \e ^{i (E_{k} + E_{p}) \tau} \e ^{i p \sigma '} \bigg) = \frac{\eta ^{\mu \nu}}{2 \pi} \e ^{- i k \sigma '}
 \end{multline*}
 \begin{equation*}
-    \bigg\downarrow \frac{1}{2 \pi} \int _{0} ^{2 \pi} \diff \sigma ' \e ^{i k \sigma '}
+    \bigg\downarrow \frac{1}{2 \pi} \int _{0} ^{2 \pi} \diff \sigma ' \e ^{i m \sigma '}
+\end{equation*}
+\begin{equation*}
+    \frac{1}{2 \pi} \int _{0} ^{2 \pi} \diff \sigma ' F^{-} \e ^{i (p + m) \sigma '} , \ F^{-} = \left( A_{p} \e ^{i (E_{p} \tau + p \sigma ' + \varphi _{p})} + (A_{- p})^{*} \e ^{i (E_{p} \tau - p \sigma ' + \varphi _{- p})} \right)
 \end{equation*}
 
 
