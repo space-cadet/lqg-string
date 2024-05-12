@@ -936,14 +936,47 @@ Since quantum geometry is expected to violate Lorentz invariance at the Planck s
 \begin{equation*}
     E^{2} = m^{2} + p^{2} + \sum _{n \geq 3} c_{n} \frac{p^{n}}{E_{pl} ^{n - 2}} ,
 \end{equation*}
-where $E_{pl}$ is the Planck energy, we make a correction in Polyakov action in the form
+where $E_{pl}$ is the Planck energy, we make a correction to Polyakov action in the form
 \begin{equation*}
     S = - \frac{T}{2} \int \diff ^2 x \sqrt{- g} \left( g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} \eta _{\mu \nu} - \mu _{0} ^{2} \e ^{- m_{\mu} / T} X^{\mu} X^{\nu} \eta _{\mu \nu} \right)
 \end{equation*}
-where $T$ is the temperature of target-space, $\mu _{0}$ has units of mass (perhaps $\mu _{0} \sim M_{pl}$ or $\mu _{0} ^{2} \sim (\mathrm{quantum \ of \ area})$?) and $m_{0} >> m_{1} >> ... >> m_{D}$. The masses $m_{\mu}$ are constrained by the dispersion relation (in SI units)
+where $T$ is the temperature of target-space, $\mu _{0}$ has units of mass (perhaps $\mu _{0} \sim M_{pl}$ or $\mu _{0} ^{2} \sim (\mathrm{quantum \ of \ area})^{-1}$?) and $m_{0} >> m_{1} >> ... >> m_{D}$. The masses $m_{\mu}$ are constrained by the dispersion relation
 \begin{equation*}
-    E^{2} = (p c)^2 + \sum _{n = 0} ^{D} (m_{n} c^{2})^2 \frac{(p c)^{n}}{E_{pl} ^{n}} .
+    E^{2} = p^2 + \sum _{n = 0} ^{D} m_{n} ^2 \frac{p^{n}}{E_{pl} ^{n}} .
 \end{equation*}
+This action has manifest Lorentz invariance and WS reparameterisation and Weyl invariance. As for translational symmetry, it holds approximately for the fields with $m_{\mu} >> T$.
+
+\subsection{EoMs}
+
+\begin{align*}
+    \frac{\delta S}{\delta g^{c d}} & \propto \frac{\del \sqrt{- g}}{\del g^{c d}} \left( g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} \eta _{\mu \nu} - \mu _{0} ^{2} \e ^{- m_{\mu} / T} X^{\mu} X^{\nu} \eta _{\mu \nu} \right) + \sqrt{- g} \delta ^{a} _{c} \delta ^{b} _{d} \del _{a} X^{\mu} \del _{b} X^{\nu} \eta _{\mu \nu} = \\
+                                    & = - \frac{1}{2} \sqrt{- g} g_{c d} \left( g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} \eta _{\mu \nu} - \mu _{0} ^{2} \e ^{- m_{\mu} / T} X^{\mu} X^{\nu} \eta _{\mu \nu} \right) + \sqrt{- g} \del _{c} X^{\mu} \del _{d} X^{\nu} \eta _{\mu \nu} = 0
+\end{align*}
+\begin{equation*}
+    T_{c d} := \del _{c} X^{\mu} \del _{d} X^{\nu} \eta _{\mu \nu} - \frac{1}{2} g_{c d} \left( g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} \eta _{\mu \nu} - \mu _{0} ^{2} \e ^{- m_{\mu} / T} X^{\mu} X^{\nu} \eta _{\mu \nu} \right) = 0
+\end{equation*}
+\begin{equation*}
+    g_{c d} = 2 f \del _{c} X^{\mu} \del _{d} X^{\nu} \eta _{\mu \nu} ,
+\end{equation*}
+\begin{equation*}
+    \frac{1}{f} = \left( g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} \eta _{\mu \nu} - \mu _{0} ^{2} \e ^{- m_{\mu} / T} X^{\mu} X^{\nu} \eta _{\mu \nu} \right) .
+\end{equation*}
+From this, it is clear that $\e ^{- m_{\mu} / T} X^{\mu} X^{\nu} \eta _{\mu \nu} = 0$, thus the base mass $\mu _{0} ^2$ is a Lagrange multiplier, the auxiliary metric reduces to the induced metric and the action simplify back to regular NG action.
+
+\begin{align*}
+    \frac{\delta S}{\delta X^{\lambda}} & \propto - 2 \sqrt{- g} \mu _{0} ^2 \e ^{- m_{\mu} / T} \delta ^{\mu} _{\lambda} X^{\nu} \eta _{\mu \nu} - 2 \del _{c} \left( \sqrt{- g} g^{a b} \delta ^{c} _{a} \delta ^{\mu} _{\lambda} \del _{b} X^{\nu} \eta _{\mu \nu} \right) = \\
+                                        & = - 2 \left( \del _{a} \left( \sqrt{- g} g^{a b} \del _{b} X^{\nu} \eta _{\lambda \nu} \right) + \sqrt{- g} \mu _{0} ^2 \e ^{- m_{\lambda} / T} X^{\nu} \eta _{\lambda \nu} \right) = 0
+\end{align*}
+\begin{equation*}
+    \del _{a} \left( \sqrt{- g} g^{a b} \del _{b} X^{\mu} \right) + \sqrt{- g} \mu _{0} ^2 \e ^{- m_{\mu} / T} X^{\mu} = 0
+\end{equation*}
+\begin{equation*}
+    \frac{1}{\sqrt{- g}} \del _{a} \left( \sqrt{- g} g^{a b} \del _{b} X^{\mu} \right) + \mu _{0} ^2 \e ^{- m_{\mu} / T} X^{\mu} = 0
+\end{equation*}
+\begin{equation*}
+    g^{a b} \nabla _{a} \nabla _{b} X^{\mu} + \mu _{0} ^2 \e ^{- m_{\mu} / T} X^{\mu} = 0 .
+\end{equation*}
+We see that 2d gravitational field of the WS appears naturally in metric-Christoffel symbols formulation. Perhaps THIS is THE true quantum gravitational field since in high enough energies only $m_{0} , m_{1} >> T$ and thus only $X^{0}$ and $X^{1}$ remain massless, while the others are massive and thus violate Poincaré invariance. To this end, we may postulate that $m_{2} \sim E_{pl}$, such that at $T = T_{pl}$ we have massive $X^{2} , X^{3} , ... , X^{D}$ with (approximately) massless $X^{0}$ and $X^{1}$.
 
 \newpage
 
