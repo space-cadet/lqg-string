@@ -940,7 +940,7 @@ where $E_{pl}$ is the Planck energy, we make a correction to Polyakov action in 
 \begin{equation*}
     S = - \frac{T}{2} \int \diff ^2 x \sqrt{- g} \left( g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} \eta _{\mu \nu} - \mu _{0} ^{2} \e ^{- m_{\mu} / T} X^{\mu} X^{\nu} \eta _{\mu \nu} \right)
 \end{equation*}
-where $T$ is the temperature of target-space, $\mu _{0}$ has units of mass (perhaps $\mu _{0} \sim M_{pl}$ or $\mu _{0} ^{2} \sim (\mathrm{quantum \ of \ area})^{-1}$?) and $m_{0} >> m_{1} >> ... >> m_{d}$. This action has manifest Lorentz invariance and WS reparameterisation and Weyl invariance. As for translational symmetry, it holds approximately for the fields with $m_{\mu} >> T$. The masses $m_{\mu}$ are constrained by the dispersion relations
+where $T$ is the temperature of target-space, $\mu _{0}$ has units of mass (perhaps $\mu _{0} \sim M_{pl}$ or $\mu _{0} ^{2} \sim (\mathrm{quantum \ of \ area})^{-1}$?) and $m_{0} >> m_{1} >> ... >> m_{d}$. This action has manifest WS reparameterisation invariance. As for background Poincaré symmetry and WS Weyl invariance, those hold approximately for the fields with $m_{\mu} >> T$. The masses $m_{\mu}$ are constrained by the dispersion relations
 \begin{equation*}
     \widetilde{E}_{\mu} ^{2} = \widetilde{p}_{\mu} ^2 + \sum _{n = 0} ^{d} m_{n} ^2 \frac{\widetilde{p}_{\mu} ^{n}}{E_{pl} ^{n}}
 \end{equation*}
@@ -977,6 +977,15 @@ From this, it is clear that $\e ^{- m_{\mu} / T} X^{\mu} X^{\nu} \eta _{\mu \nu}
     g^{a b} \nabla _{a} \nabla _{b} X^{\mu} + \mu _{0} ^2 \e ^{- m_{\mu} / T} X^{\mu} = 0 .
 \end{equation*}
 We see that 2d gravitational field of the WS appears naturally in metric-Christoffel symbols formulation. Perhaps THIS is THE true quantum gravitational field since in high enough energies only $m_{0} , m_{1} >> T$ and thus only $X^{0}$ and $X^{1}$ remain massless, while the others are massive and thus violate Poincaré invariance. To this end, we may postulate that $m_{2} \sim E_{pl}$, such that at $T = T_{pl}$ we have massive $X^{2} , X^{3} , ... , X^{d}$ with (approximately) massless $X^{0}$ and $X^{1}$. From that and the modified WS dispersion relations for each $X^{\mu}$ we can get the other masses.
+
+From the $X$ EoM before simplifying, we can use conformal gauge $g_{a b} = \e ^{\phi (x)} \eta _{a b}$ to get a variable-coefficient KG eqn
+\begin{equation*}
+    \eta ^{a b} \del _{a} \del _{b} X^{\mu} + \e ^{\phi (x)} \mu _{0} ^{2} \e ^{- m_{\mu} / T} X^{\mu} = 0
+\end{equation*}
+\begin{equation*}
+    ((\del _{\sigma})^2 - (\del _{\tau})^2) X^{\mu} + \mu _{0} ^{2} \e ^{\phi _{\mu} (x)} X^{\mu} = 0 ,
+\end{equation*}
+where $\phi _{\mu} (x) \equiv \phi (x) - m_{\mu} / T$
 
 \newpage
 
