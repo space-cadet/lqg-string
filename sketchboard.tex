@@ -1375,8 +1375,20 @@ where by expanding the first relation we get
     \bigg\downarrow \frac{1}{2 \pi} \int _{0} ^{2 \pi} \diff \sigma ' \e ^{i m \sigma '}
 \end{equation*}
 \begin{equation*}
-    \frac{1}{2 \pi} \int _{0} ^{2 \pi} \diff \sigma ' F^{-} \e ^{i (p + m) \sigma '} , \ F^{-} = \left( A_{p} \e ^{i (E_{p} \tau + p \sigma ' + \varphi _{p})} + (A_{- p})^{*} \e ^{i (E_{p} \tau - p \sigma ' + \varphi _{- p})} \right)
+    \frac{1}{2 \pi} \int _{0} ^{2 \pi} \diff \sigma ' F^{-} \e ^{i (p + m) \sigma '} , \ F^{-} = \sum _{l} \left( A_{l} \e ^{i (E_{l} \tau + l \sigma ' + \theta _{l})} + (A_{- l})^{*} \e ^{i (- E_{l} \tau + l \sigma ' - \theta _{l})} \right)
 \end{equation*}
+\begin{multline*}
+    \frac{i}{8 \pi ^2 (\alpha ')^2} \sum _{p} \frac{\left( A_{- (p + m)} \e ^{i (E_{p + m} \tau + \theta _{- (p + m)})} + (A_{p + m})^{*} \e ^{i (- E_{p + m} \tau - \theta _{-(p + m)})} \right)}{2 E_{k}} \bigg( - \left\{ \alpha ^{\mu} _{k} , \alpha ^{\nu} _{p} \right\} \e ^{- i (E_{k} + E_{p}) \tau} + \\
+    + \left\{ \alpha ^{\mu} _{k} , (\alpha ^{\nu} _{- p})^{*} \right\} \e ^{- i (E_{k} - E_{p}) \tau} - \left\{ (\alpha ^{\mu} _{- k})^{*} , \alpha ^{\nu} _{p} \right\} \e ^{i (E_{k} - E_{p}) \tau} + \\
+    + \left\{ (\alpha ^{\mu} _{- k})^{*} , (\alpha ^{\nu} _{- p})^{*} \right\} \e ^{i (E_{k} + E_{p}) \tau} \bigg) = \frac{1}{2 \pi} \eta ^{\mu \nu} \delta _{k , m}
+\end{multline*}
+\begin{multline*}
+    \frac{i}{8 \pi ^2 (\alpha ')^2} \sum _{p} \frac{1}{2 E_{k}} \bigg( - A_{- (p + m)} \e ^{i \theta _{- (p + m)}} \left\{ \alpha ^{\mu} _{k} , \alpha ^{\nu} _{p} \right\} \e ^{i (E_{p + m} - E_{k} - E_{p}) \tau} + \\
+    + A_{- (p + m)} \e ^{i \theta _{- (p + m)}} \left\{ \alpha ^{\mu} _{k} , (\alpha ^{\nu} _{- p})^{*} \right\} \e ^{i (E_{p + m} - E_{k} + E_{p}) \tau} - A_{- (p + m)} \e ^{i \theta _{- (p + m)}} \left\{ (\alpha ^{\mu} _{- k})^{*} , \alpha ^{\nu} _{p} \right\} \e ^{i (E_{p + m} + E_{k} - E_{p}) \tau} + \\
+    + A_{- (p + m)} \e ^{i \theta _{- (p + m)}} \left\{ (\alpha ^{\mu} _{- k})^{*} , (\alpha ^{\nu} _{- p})^{*} \right\} \e ^{i (E_{p + m} + E_{k} + E_{p}) \tau} - (A_{p + m})^{*} \e ^{- i \theta _{- (p + m)}} \left\{ \alpha ^{\mu} _{k} , \alpha ^{\nu} _{p} \right\} \e ^{- i (E_{p + m} + E_{k} + E_{p}) \tau} + \\
+    + (A_{p + m})^{*} \e ^{- i \theta _{- (p + m)}} \left\{ \alpha ^{\mu} _{k} , (\alpha ^{\nu} _{- p})^{*} \right\} \e ^{- i (E_{p + m} + E_{k} - E_{p}) \tau} - (A_{p + m})^{*} \e ^{- i \theta _{- (p + m)}} \left\{ (\alpha ^{\mu} _{- k})^{*} , \alpha ^{\nu} _{p} \right\} \e ^{- i (E_{p + m} - E_{k} + E_{p}) \tau} + \\
+    + (A_{p + m})^{*} \e ^{- i \theta _{- (p + m)}} \left\{ (\alpha ^{\mu} _{- k})^{*} , (\alpha ^{\nu} _{- p})^{*} \right\} \e ^{- i (E_{p + m} - E_{k} - E_{p}) \tau} \bigg) = \frac{1}{2 \pi} \eta ^{\mu \nu} \delta _{k , m}
+\end{multline*}
 
 
 \newpage
