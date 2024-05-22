@@ -1390,12 +1390,14 @@ where by expanding the first relation we get
     + (A_{- l})^{*} \left\{ (\alpha ^{\mu} _{- m})^{*} , (\alpha ^{\nu} _{k + l})^{*} \right\} \e ^{i E_{m} \tau} \e ^{i (E_{k + l} - E_{l}) \tau '} \bigg) = \frac{1}{2 \pi} \delta (\tau - \tau ') \delta _{k , m} \eta ^{\mu \nu}
 \end{multline*}
 \begin{equation*}
-    \Bigg\downarrow \frac{1}{2 \pi} \int _{0} ^{2 \pi} \diff \tau '
+    \Bigg\downarrow \frac{1}{2 \pi} \int _{- \tau} ^{\tau} \diff \tau ' \e ^{- i E_{m} \tau '}
 \end{equation*}
 \begin{multline*}
-    \frac{i}{16 \pi ^2 (\alpha ')^2 E_{m}} \sum _{l} \bigg( - A_{l} \left\{ (\alpha ^{\mu} _{- m})^{*} , \alpha ^{\nu} _{- (k + l)} \right\} \e ^{i E_{m} \tau} \delta _{E_{k + l} , E_{l}} + \\
-    + (A_{- l})^{*} \left\{ \alpha ^{\mu} _{m} , (\alpha ^{\nu} _{k + l})^{*} \right\} \e ^{- i E_{m} \tau} \delta _{E_{k + l} , E_{l}} - (A_{- l})^{*} \left\{ (\alpha ^{\mu} _{- m})^{*} , \alpha ^{\nu} _{- (k + l)} \right\} \e ^{i E_{m} \tau} \delta _{E_{k + l} , E_{l}} + \\
-    + (A_{- l})^{*} \left\{ (\alpha ^{\mu} _{- m})^{*} , (\alpha ^{\nu} _{k + l})^{*} \right\} \e ^{i E_{m} \tau} \delta _{E_{k + l} , E_{l}} \bigg) = \frac{1}{2 \pi} \delta _{k , m} \eta ^{\mu \nu}
+    \frac{i}{16 \pi ^2 (\alpha ')^2 E_{m}} \sum _{l} \bigg( - A_{l} \left\{ \alpha ^{\mu} _{m} , \alpha ^{\nu} _{- (k + l)} \right\} \e ^{- i E_{m} \tau} \delta _{E_{k + l} + E_{l} - E_{m} , 0} + A_{l} \left\{ \alpha ^{\mu} _{m} , (\alpha ^{\nu} _{k + l})^{*} \right\} \e ^{- i E_{m} \tau} \delta _{E_{k + l} + E_{l} - E_{m} , 0} - \\
+    - A_{l} \left\{ (\alpha ^{\mu} _{- m})^{*} , \alpha ^{\nu} _{- (k + l)} \right\} \e ^{i E_{m} \tau} \delta _{E_{k + l} - E_{l} - E_{m} , 0} + A_{l} \left\{ (\alpha ^{\mu} _{- m})^{*} , (\alpha ^{\nu} _{k + l})^{*} \right\} \e ^{i E_{m} \tau} \delta _{E_{k + l} + E_{l} - E_{m} , 0} - \\
+    - (A_{- l})^{*} \left\{ \alpha ^{\mu} _{m} , \alpha ^{\nu} _{- (k + l)} \right\} \e ^{- i E_{m} \tau} \delta _{E_{k + l} + E_{l} - E_{m} , 0} + (A_{- l})^{*} \left\{ \alpha ^{\mu} _{m} , (\alpha ^{\nu} _{k + l})^{*} \right\} \e ^{- i E_{m} \tau} \delta _{E_{k + l} - E_{l} - E_{m} , 0} - \\
+    - (A_{- l})^{*} \left\{ (\alpha ^{\mu} _{- m})^{*} , \alpha ^{\nu} _{- (k + l)} \right\} \e ^{i E_{m} \tau} \delta _{E_{k + l} - E_{l} - E_{m} , 0} + \\
+    + (A_{- l})^{*} \left\{ (\alpha ^{\mu} _{- m})^{*} , (\alpha ^{\nu} _{k + l})^{*} \right\} \e ^{i E_{m} \tau} \delta _{E_{k + l} - E_{l} - E_{m} , 0} \bigg) = \frac{1}{(2 \pi)^{2}} \e ^{- i E_{m} \tau} \delta _{k , m} \eta ^{\mu \nu}
 \end{multline*}
 
 \newpage
