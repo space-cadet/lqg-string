@@ -938,7 +938,7 @@ Since quantum geometry is expected to violate Lorentz invariance at the Planck s
 \end{equation*}
 where $E_{pl}$ is the Planck energy, we make a correction to Polyakov action in the form
 \begin{equation*}
-    S = - \frac{1}{4 \pi \alpha '} \int \diff ^2 x \sqrt{- g} \left( g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} \eta _{\mu \nu} - \mu _{0} ^{2} \e ^{- m_{\mu} / T} X^{\mu} X^{\nu} \eta _{\mu \nu} \right)
+    S = - \frac{1}{4 \pi \alpha '} \int \diff ^2 x \sqrt{- g} \left( g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} \eta _{\mu \nu} + \mu _{0} ^{2} \e ^{- m_{\mu} / T} X^{\mu} X^{\nu} \eta _{\mu \nu} \right)
 \end{equation*}
 where $T$ is the temperature of target-space, (in SI units) $\mu _{0} ^2$ has units of inverse area (perhaps $\mu _{0} ^{2} \sim (\mathrm{quantum \ of}$ $\mathrm{area})^{-1}$? Maybe $\mu _{0} ^{2} = \mu ^{2} / (M_{pl} ^{2} A_{j})$, where $A_{j}$ is the quantum of area with spin $j$) and $m_{0} >> m_{1} >> ... >> m_{d}$. This action has manifest WS reparameterisation invariance. As for background Poincaré symmetry and WS Weyl invariance, those hold approximately for the fields with $m_{\mu} >> T$. The masses $m_{\mu}$ are constrained by the dispersion relations
 \begin{equation*}
@@ -949,40 +949,40 @@ where $\alpha = 3 , 4 , ... , d$ and $\widetilde{E}_{\alpha} ^2$ ($\widetilde{p}
 \subsection{EoMs}
 
 \begin{align*}
-    \frac{\delta S}{\delta g^{c d}} & \propto \frac{\del \sqrt{- g}}{\del g^{c d}} \left( g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} \eta _{\mu \nu} - \mu _{0} ^{2} \e ^{- m_{\mu} / T} X^{\mu} X^{\nu} \eta _{\mu \nu} \right) + \sqrt{- g} \delta ^{a} _{c} \delta ^{b} _{d} \del _{a} X^{\mu} \del _{b} X^{\nu} \eta _{\mu \nu} = \\
-                                    & = - \frac{1}{2} \sqrt{- g} g_{c d} \left( g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} \eta _{\mu \nu} - \mu _{0} ^{2} \e ^{- m_{\mu} / T} X^{\mu} X^{\nu} \eta _{\mu \nu} \right) + \sqrt{- g} \del _{c} X^{\mu} \del _{d} X^{\nu} \eta _{\mu \nu} = 0
+    \frac{\delta S}{\delta g^{c d}} & \propto \frac{\del \sqrt{- g}}{\del g^{c d}} \left( g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} \eta _{\mu \nu} + \mu _{0} ^{2} \e ^{- m_{\mu} / T} X^{\mu} X^{\nu} \eta _{\mu \nu} \right) + \sqrt{- g} \delta ^{a} _{c} \delta ^{b} _{d} \del _{a} X^{\mu} \del _{b} X^{\nu} \eta _{\mu \nu} = \\
+                                    & = - \frac{1}{2} \sqrt{- g} g_{c d} \left( g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} \eta _{\mu \nu} + \mu _{0} ^{2} \e ^{- m_{\mu} / T} X^{\mu} X^{\nu} \eta _{\mu \nu} \right) + \sqrt{- g} \del _{c} X^{\mu} \del _{d} X^{\nu} \eta _{\mu \nu} = 0
 \end{align*}
 \begin{equation*}
-    T_{c d} := \del _{c} X^{\mu} \del _{d} X^{\nu} \eta _{\mu \nu} - \frac{1}{2} g_{c d} \left( g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} \eta _{\mu \nu} - \mu _{0} ^{2} \e ^{- m_{\mu} / T} X^{\mu} X^{\nu} \eta _{\mu \nu} \right) = 0
+    T_{c d} := \del _{c} X^{\mu} \del _{d} X^{\nu} \eta _{\mu \nu} - \frac{1}{2} g_{c d} \left( g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} \eta _{\mu \nu} + \mu _{0} ^{2} \e ^{- m_{\mu} / T} X^{\mu} X^{\nu} \eta _{\mu \nu} \right) = 0
 \end{equation*}
 \begin{equation*}
     g_{c d} = 2 f \del _{c} X^{\mu} \del _{d} X^{\nu} \eta _{\mu \nu} ,
 \end{equation*}
 \begin{equation*}
-    \frac{1}{f} = \left( g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} \eta _{\mu \nu} - \mu _{0} ^{2} \e ^{- m_{\mu} / T} X^{\mu} X^{\nu} \eta _{\mu \nu} \right) .
+    \frac{1}{f} = \left( g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} \eta _{\mu \nu} + \mu _{0} ^{2} \e ^{- m_{\mu} / T} X^{\mu} X^{\nu} \eta _{\mu \nu} \right) .
 \end{equation*}
 From this, it is clear that $\e ^{- m_{\mu} / T} X^{\mu} X^{\nu} \eta _{\mu \nu} = 0$, thus the base mass $\mu _{0} ^2$ is a Lagrange multiplier, the auxiliary metric reduces to the induced metric and the action simplify back to regular NG action.
 
 \begin{align*}
-    \frac{\delta S}{\delta X^{\lambda}} & \propto - 2 \sqrt{- g} \mu _{0} ^2 \e ^{- m_{\mu} / T} \delta ^{\mu} _{\lambda} X^{\nu} \eta _{\mu \nu} - 2 \del _{c} \left( \sqrt{- g} g^{a b} \delta ^{c} _{a} \delta ^{\mu} _{\lambda} \del _{b} X^{\nu} \eta _{\mu \nu} \right) = \\
-                                        & = - 2 \left( \del _{a} \left( \sqrt{- g} g^{a b} \del _{b} X^{\nu} \eta _{\lambda \nu} \right) + \sqrt{- g} \mu _{0} ^2 \e ^{- m_{\lambda} / T} X^{\nu} \eta _{\lambda \nu} \right) = 0
+    \frac{\delta S}{\delta X^{\lambda}} & \propto + 2 \sqrt{- g} \mu _{0} ^2 \e ^{- m_{\mu} / T} \delta ^{\mu} _{\lambda} X^{\nu} \eta _{\mu \nu} - 2 \del _{c} \left( \sqrt{- g} g^{a b} \delta ^{c} _{a} \delta ^{\mu} _{\lambda} \del _{b} X^{\nu} \eta _{\mu \nu} \right) = \\
+                                        & = - 2 \left( \del _{a} \left( \sqrt{- g} g^{a b} \del _{b} X^{\nu} \eta _{\lambda \nu} \right) - \sqrt{- g} \mu _{0} ^2 \e ^{- m_{\lambda} / T} X^{\nu} \eta _{\lambda \nu} \right) = 0
 \end{align*}
 \begin{equation*}
-    \del _{a} \left( \sqrt{- g} g^{a b} \del _{b} X^{\mu} \right) + \sqrt{- g} \mu _{0} ^2 \e ^{- m_{\mu} / T} X^{\mu} = 0
+    \del _{a} \left( \sqrt{- g} g^{a b} \del _{b} X^{\mu} \right) - \sqrt{- g} \mu _{0} ^2 \e ^{- m_{\mu} / T} X^{\mu} = 0
 \end{equation*}
 \begin{equation*}
-    \frac{1}{\sqrt{- g}} \del _{a} \left( \sqrt{- g} g^{a b} \del _{b} X^{\mu} \right) + \mu _{0} ^2 \e ^{- m_{\mu} / T} X^{\mu} = 0
+    \frac{1}{\sqrt{- g}} \del _{a} \left( \sqrt{- g} g^{a b} \del _{b} X^{\mu} \right) - \mu _{0} ^2 \e ^{- m_{\mu} / T} X^{\mu} = 0
 \end{equation*}
 \begin{equation*}
-    g^{a b} \nabla _{a} \nabla _{b} X^{\mu} + \mu _{0} ^2 \e ^{- m_{\mu} / T} X^{\mu} = 0 .
+    g^{a b} \nabla _{a} \nabla _{b} X^{\mu} - \mu _{0} ^2 \e ^{- m_{\mu} / T} X^{\mu} = 0 .
 \end{equation*}
 
 From the $X$ EoM before simplifying, we can use conformal gauge $g_{a b} = \e ^{\phi (x)} \eta _{a b}$ to get a variable-coefficient KG eqn
 \begin{equation*}
-    \eta ^{a b} \del _{a} \del _{b} X^{\mu} + \e ^{\phi (x)} \mu _{0} ^{2} \e ^{- m_{\mu} / T} X^{\mu} = 0
+    \eta ^{a b} \del _{a} \del _{b} X^{\mu} - \e ^{\phi (x)} \mu _{0} ^{2} \e ^{- m_{\mu} / T} X^{\mu} = 0
 \end{equation*}
 \begin{equation*}
-    ((\del _{\sigma})^2 - (\del _{\tau})^2) X^{\mu} + \mu _{0} ^{2} \e ^{\phi _{\mu} (x)} X^{\mu} = 0 ,
+    ((\del _{\sigma})^2 - (\del _{\tau})^2) X^{\mu} - \mu _{0} ^{2} \e ^{\phi _{\mu} (x)} X^{\mu} = 0 ,
 \end{equation*}
 where $\phi _{\mu} (x) \equiv \phi (x) - m_{\mu} / T$.
 
