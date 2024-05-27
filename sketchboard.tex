@@ -1342,62 +1342,64 @@ Start by finding the canonical momentum
     = - \frac{1}{4 \pi \alpha '} \left( 1 - \frac{k \Delta}{2 \phi ^2} \right) \eta ^{\tau b} \partial _{b} X^{\nu} \eta _{\lambda \nu} =
 \end{equation*}
 \begin{equation*}
-    = \frac{1}{4 \pi \alpha '} F^{-} \partial _{\tau} X^{\nu} \eta_{\lambda \nu} = F^{-} \frac{i}{4 \pi \alpha '} \sum _{n \in \mathbb{Z}} \left( - \alpha ^{\nu} _{n} \e ^{i (- E_{n} \tau + n \sigma)} + (\alpha ^{\nu} _{- n})^{*} \e ^{i (E_{n} \tau + n \sigma)} \right) \eta _{\nu \lambda} ,
+    = \frac{1}{4 \pi \alpha '} F^{-} \partial _{\tau} X^{\nu} \eta_{\lambda \nu} = F^{-} \frac{i}{(4 \pi \alpha ')^{2}} \sum _{n \in \mathbb{Z}} \left( - \alpha ^{\nu} _{n} \e ^{i (- E_{n} \tau + n \sigma)} + (\alpha ^{\nu} _{- n})^{*} \e ^{i (E_{n} \tau + n \sigma)} \right) \eta _{\nu \lambda} ,
 \end{equation*}
-where $F^{-} = \sum _{l} (A_{l} \e ^{i (E_{l} \tau + l \sigma)} + (A_{- l})^{*} \e ^{i (- E_{l} \tau + l \sigma)})$. We then proceed to the canonical Poisson bracket relations
+where $F^{-} = \sum _{l} (A_{l} \e ^{i (E_{l} \tau + l \sigma)} + (A_{- l})^{*} \e ^{i (- E_{l} \tau + l \sigma)})$. We then proceed to the equal time canonical Poisson bracket relations
 \begin{equation*}
-    \left\{ X^{\mu} (\tau , \sigma) , \Pi ^{\nu} (\tau ' , \sigma ') \right\} = \delta (\tau - \tau ') \delta (\sigma - \sigma ') \eta ^{\mu \nu}
+    \left\{ X^{\mu} (\tau , \sigma) , \Pi ^{\nu} (\tau , \sigma ') \right\} = \delta (\sigma - \sigma ') \eta ^{\mu \nu}
 \end{equation*}
 \begin{equation*}
-    \left\{ X^{\mu} (\tau , \sigma) , X^{\nu} (\tau ' , \sigma ') \right\} = \left\{ \Pi ^{\mu} (\tau , \sigma) , \Pi ^{\nu} (\tau ' , \sigma ') \right\} = 0 ,
+    \left\{ X^{\mu} (\tau , \sigma) , X^{\nu} (\tau , \sigma ') \right\} = \left\{ \Pi ^{\mu} (\tau , \sigma) , \Pi ^{\nu} (\tau , \sigma ') \right\} = 0 ,
 \end{equation*}
 where by expanding the first relation we get
 \begin{multline*}
-    \left\{ X^{\mu} (\tau , \sigma) , \Pi ^{\nu} (\tau ' , \sigma ') \right\} = \bigg\{ \frac{1}{2 \pi \alpha '} \sum _{n \in \mathbb{Z}} \frac{1}{2 E_{n}} \left( \alpha ^{\mu} _{n} \e ^{i (- E_{n} \tau + n \sigma)} + (\alpha ^{\mu} _{- n})^{*} \e ^{i (E_{n} \tau + n \sigma)} \right) , \\
-    F^{-} (\tau ' , \sigma ') \frac{i}{4 \pi \alpha '} \sum _{p \in \mathbb{Z}} \left( - \alpha ^{\nu} _{p} \e ^{i (- E_{p} \tau ' + p \sigma ')} + (\alpha ^{\nu} _{- p})^{*} \e ^{i (E_{p} \tau ' + p \sigma ')} \right) \bigg\} = \delta (\tau - \tau ') \delta (\sigma - \sigma ') \eta ^{\mu \nu}
+    \left\{ X^{\mu} (\tau , \sigma) , \Pi ^{\nu} (\tau , \sigma ') \right\} = \bigg\{ \frac{1}{2 \pi \alpha '} \sum _{n} \frac{1}{2 E_{n}} \left( \alpha ^{\mu} _{n} \e ^{i (- E_{n} \tau + n \sigma)} + (\alpha ^{\mu} _{- n})^{*} \e ^{i (E_{n} \tau + n \sigma)} \right) , \\
+    F^{-} \frac{i}{(4 \pi \alpha ')^2} \sum _{p} \left( - \alpha ^{\nu} _{p} \e ^{i (- E_{p} \tau + p \sigma ')} + (\alpha ^{\nu} _{- p})^{*} \e ^{i (E_{p} \tau + p \sigma ')} \right) \bigg\} = \delta (\sigma - \sigma ') \eta ^{\mu \nu}
 \end{multline*}
 \begin{multline*}
-    \frac{i}{8 \pi ^2 (\alpha ')^2} \sum _{n} \sum _{p} \frac{1}{2 E_{n}} F^{-} (\tau ' , \sigma ') \bigg\{ \left( \alpha ^{\mu} _{n} \e ^{i (- E_{n} \tau + n \sigma)} + (\alpha ^{\mu} _{- n})^{*} \e ^{i (E_{n} \tau + n \sigma)} \right) , \\
-    \left( - \alpha ^{\nu} _{p} \e ^{i (- E_{p} \tau ' + p \sigma ')} + (\alpha ^{\nu} _{- p})^{*} \e ^{i (E_{p} \tau ' + p \sigma ')} \right) \bigg\} = \delta (\tau - \tau ') \delta (\sigma - \sigma ') \eta ^{\mu \nu}
-\end{multline*}
-\begin{multline*}
-    \frac{i}{8 \pi ^2 (\alpha ')^2} \sum _{n} \sum _{p} \frac{F^{-} (\tau ' , \sigma ')}{2 E_{n}} \bigg( - \left\{ \alpha ^{\mu} _{n} , \alpha ^{\nu} _{p} \right\} \e ^{- i E_{n} \tau} \e ^{- i E_{p} \tau '} \e ^{i n \sigma} \e ^{i p \sigma '} + \left\{ \alpha ^{\mu} _{n} , (\alpha ^{\nu} _{- p})^{*} \right\} \e ^{- i E_{n} \tau} \e ^{i E_{p} \tau '} \e ^{i n \sigma} \e ^{i p \sigma '} - \\
-    - \left\{ (\alpha ^{\mu} _{- n})^{*} , \alpha ^{\nu} _{p} \right\} \e ^{i E_{n} \tau} \e ^{- i E_{p} \tau '} \e ^{i n \sigma} \e ^{i p \sigma '} + \left\{ (\alpha ^{\mu} _{- n})^{*} , (\alpha ^{\nu} _{- p})^{*} \right\} \e ^{i E_{n} \tau} \e ^{i E_{p} \tau '} \e ^{i n \sigma} \e ^{i p \sigma '} \bigg) = \delta (\tau - \tau ') \delta (\sigma - \sigma ') \eta ^{\mu \nu}
+    \frac{i}{4 (2 \pi \alpha ')^3} \sum _{n} \frac{1}{2 E_{n}} \sum _{p} \bigg( - F^{-} \left\{ \alpha ^{\mu} _{n} , \alpha ^{\nu} _{p} \right\} \e ^{- i (E_{n} + E_{p}) \tau} \e ^{i n \sigma} \e ^{i p \sigma '} + F^{-} \left\{ \alpha ^{\mu} _{n} , (\alpha ^{\nu} _{- p})^{*} \right\} \e ^{- i (E_{n} - E_{p}) \tau} \e ^{i n \sigma} \e ^{i p \sigma '} - \\
+    - F^{-} \left\{ (\alpha ^{\mu} _{- n})^{*} , \alpha ^{\nu} _{p} \right\} \e ^{i (E_{n} - E_{p}) \tau} \e ^{i n \sigma} \e ^{i p \sigma '} + F^{-} \left\{ (\alpha ^{\mu} _{- n})^{*} , (\alpha ^{\nu} _{- p})^{*} \right\} \e ^{i (E_{n} + E_{p}) \tau} \e ^{i n \sigma} \e ^{i p \sigma '} \bigg) = \delta (\sigma - \sigma ') \eta ^{\mu \nu}
 \end{multline*}
 \begin{equation*}
     \Bigg\downarrow \frac{1}{2 \pi} \int _{0} ^{2 \pi} \diff \sigma \e ^{- i m \sigma}
 \end{equation*}
 \begin{multline*}
-    \frac{i}{8 \pi ^2 (\alpha ')^2} \sum _{p} \frac{F^{-} (\tau ' , \sigma ')}{2 E_{m}} \bigg( - \left\{ \alpha ^{\mu} _{m} , \alpha ^{\nu} _{p} \right\} \e ^{- i E_{m} \tau} \e ^{- i E_{p} \tau '} \e ^{i p \sigma '} + \left\{ \alpha ^{\mu} _{m} , (\alpha ^{\nu} _{- p})^{*} \right\} \e ^{- i E_{m} \tau} \e ^{i E_{p} \tau '} \e ^{i p \sigma '} - \\
-    - \left\{ (\alpha ^{\mu} _{- m})^{*} , \alpha ^{\nu} _{p} \right\} \e ^{i E_{m} \tau} \e ^{- i E_{p} \tau '} \e ^{i p \sigma '} + \left\{ (\alpha ^{\mu} _{- m})^{*} , (\alpha ^{\nu} _{- p})^{*} \right\} \e ^{i E_{m} \tau} \e ^{i E_{p} \tau '} \e ^{i p \sigma '} \bigg) = \frac{1}{2 \pi} \delta (\tau - \tau ') \e ^{- i m \sigma '} \eta ^{\mu \nu}
+    \frac{i}{4 (2 \pi \alpha ')^3} \frac{1}{2 E_{m}} \sum _{p} \bigg( - F^{-} \left\{ \alpha ^{\mu} _{m} , \alpha ^{\nu} _{p} \right\} \e ^{- i (E_{m} + E_{p}) \tau} \e ^{i p \sigma '} + F^{-} \left\{ \alpha ^{\mu} _{m} , (\alpha ^{\nu} _{- p})^{*} \right\} \e ^{- i (E_{m} - E_{p}) \tau} \e ^{i p \sigma '} - \\
+    - F^{-} \left\{ (\alpha ^{\mu} _{- m})^{*} , \alpha ^{\nu} _{p} \right\} \e ^{i (E_{m} - E_{p}) \tau} \e ^{i p \sigma '} + F^{-} \left\{ (\alpha ^{\mu} _{- m})^{*} , (\alpha ^{\nu} _{- p})^{*} \right\} \e ^{i (E_{m} + E_{p}) \tau} \e ^{i p \sigma '} \bigg) = \frac{1}{2 \pi} \e ^{- i m \sigma '} \eta ^{\mu \nu}
 \end{multline*}
 \begin{equation*}
     \Bigg\downarrow \frac{1}{2 \pi} \int _{0} ^{2 \pi} \diff \sigma ' \e ^{i k \sigma '}
 \end{equation*}
 \begin{equation*}
-    \frac{1}{2 \pi} \int _{0} ^{2 \pi} \diff \sigma ' F^{-} \e ^{i (k + p) \sigma '} , \ F^{-} = \sum _{l} \left( A_{l} \e ^{i (E_{l} \tau ' + l \sigma ')} + (A_{- l})^{*} \e ^{i (- E_{l} \tau ' + l \sigma ')} \right)
+    \frac{1}{2 \pi} \int _{0} ^{2 \pi} \diff \sigma ' F^{-} \e ^{i (p + k) \sigma '} , \ F^{-} = \sum _{l} \left( A_{l} \e ^{i (E_{l} \tau + l \sigma ')} + (A_{- l})^{*} \e ^{i (- E_{l} \tau + l \sigma ')} \right)
 \end{equation*}
 \begin{multline*}
-    \frac{i}{16 \pi ^2 (\alpha ')^2 E_{m}} \sum _{l} \left( A_{l} \e ^{i E_{l} \tau '} + (A_{- l})^{*} \e ^{- i E_{l} \tau '} \right) \bigg( - \left\{ \alpha ^{\mu} _{m} , \alpha ^{\nu} _{- (k + l)} \right\} \e ^{- i E_{m} \tau} \e ^{- i E_{k + l} \tau '} + \\
-    + \left\{ \alpha ^{\mu} _{m} , (\alpha ^{\nu} _{k + l})^{*} \right\} \e ^{- i E_{m} \tau} \e ^{i E_{k + l} \tau '} - \left\{ (\alpha ^{\mu} _{- m})^{*} , \alpha ^{\nu} _{- (k + l)} \right\} \e ^{i E_{m} \tau} \e ^{- i E_{k + l} \tau '} + \\
-    + \left\{ (\alpha ^{\mu} _{- m})^{*} , (\alpha ^{\nu} _{k + l})^{*} \right\} \e ^{i E_{m} \tau} \e ^{i E_{k + l} \tau '} \bigg) = \frac{1}{2 \pi} \delta (\tau - \tau ') \delta _{k , m} \eta ^{\mu \nu}
+    \frac{i}{4 (2 \pi \alpha ')^3} \frac{1}{2 E_{m}} \bigg( - \sum _{l} \left( A_{l} \e ^{i E_{l} \tau} + (A_{- l})^{*} \e ^{- i E_{l} \tau} \right) \left\{ \alpha ^{\mu} _{m} , \alpha ^{\nu} _{- (k + l)} \right\} \e ^{- (E_{m} + E_{k + l}) \tau} + \\
+    + \sum _{l} \left( A_{l} \e ^{i E_{l} \tau} + (A_{- l})^{*} \e ^{- i E_{l} \tau} \right) \left\{ \alpha ^{\mu} _{m} , (\alpha ^{\nu} _{k + l})^{*} \right\} \e ^{- i (E_{m} - E_{k + l}) \tau} - \\
+    - \sum _{l} \left( A_{l} \e ^{i E_{l} \tau} + (A_{- l})^{*} \e ^{- i E_{l} \tau} \right) \left\{ (\alpha ^{\mu} _{- m})^{*} , \alpha ^{\nu} _{- (k + l)} \right\} \e ^{i (E_{m} - E_{k + l}) \tau} + \\
+    + \sum _{l} \left( A_{l} \e ^{i E_{l} \tau} + (A_{- l})^{*} \e ^{- i E_{l} \tau} \right) \left\{ (\alpha ^{\mu} _{- m})^{*} , (\alpha ^{\nu} _{k + l})^{*} \right\} \e ^{i (E_{m} + E_{k + l}) \tau} \bigg) = \frac{1}{2 \pi} \delta _{m , k} \eta ^{\mu \nu}
 \end{multline*}
 \begin{multline*}
-    \frac{i}{16 \pi ^2 (\alpha ')^2 E_{m}} \sum _{l} \bigg( - A_{l} \left\{ \alpha ^{\mu} _{m} , \alpha ^{\nu} _{- (k + l)} \right\} \e ^{- i E_{m} \tau} \e ^{- i (E_{k + l} + E_{l}) \tau '} + A_{l} \left\{ \alpha ^{\mu} _{m} , (\alpha ^{\nu} _{k + l})^{*} \right\} \e ^{- i E_{m} \tau} \e ^{i (E_{k + l} + E_{l}) \tau '} - \\
-    - A_{l} \left\{ (\alpha ^{\mu} _{- m})^{*} , \alpha ^{\nu} _{- (k + l)} \right\} \e ^{i E_{m} \tau} \e ^{- i (E_{k + l} - E_{l}) \tau '} + A_{l} \left\{ (\alpha ^{\mu} _{- m})^{*} , (\alpha ^{\nu} _{k + l})^{*} \right\} \e ^{i E_{m} \tau} \e ^{i (E_{k + l} + E_{l}) \tau '} - \\
-    - (A_{- l})^{*} \left\{ \alpha ^{\mu} _{m} , \alpha ^{\nu} _{- (k + l)} \right\} \e ^{- i E_{m} \tau} \e ^{- i (E_{k + l} + E_{l}) \tau '} + (A_{- l})^{*} \left\{ \alpha ^{\mu} _{m} , (\alpha ^{\nu} _{k + l})^{*} \right\} \e ^{- i E_{m} \tau} \e ^{i (E_{k + l} - E_{l}) \tau '} - \\
-    - (A_{- l})^{*} \left\{ (\alpha ^{\mu} _{- m})^{*} , \alpha ^{\nu} _{- (k + l)} \right\} \e ^{i E_{m} \tau} \e ^{- i (E_{k + l} - E_{l}) \tau '} + \\
-    + (A_{- l})^{*} \left\{ (\alpha ^{\mu} _{- m})^{*} , (\alpha ^{\nu} _{k + l})^{*} \right\} \e ^{i E_{m} \tau} \e ^{i (E_{k + l} - E_{l}) \tau '} \bigg) = \frac{1}{2 \pi} \delta (\tau - \tau ') \delta _{k , m} \eta ^{\mu \nu}
+    \frac{i}{4 (2 \pi \alpha ')^3} \frac{1}{2 E_{m}} \sum _{l} \bigg( - A_{l} \left\{ \alpha ^{\mu} _{m} , \alpha ^{\nu} _{- (k + l)} \right\} \e ^{- (E_{m} + E_{k + l} + E_{l}) \tau} - (A_{- l})^{*} \left\{ \alpha ^{\mu} _{m} , \alpha ^{\nu} _{- (k + l)} \right\} \e ^{- (E_{m} + E_{k + l} - E_{l}) \tau} + \\
+    + A_{l} \left\{ \alpha ^{\mu} _{m} , (\alpha ^{\nu} _{k + l})^{*} \right\} \e ^{- i (E_{m} - E_{k + l} + E_{l}) \tau} + (A_{- l})^{*} \left\{ \alpha ^{\mu} _{m} , (\alpha ^{\nu} _{k + l})^{*} \right\} \e ^{- i (E_{m} - E_{k + l} - E_{l}) \tau} - \\
+    - A_{l} \left\{ (\alpha ^{\mu} _{- m})^{*} , \alpha ^{\nu} _{- (k + l)} \right\} \e ^{i (E_{m} - E_{k + l} + E_{l}) \tau} - (A_{- l})^{*} \left\{ (\alpha ^{\mu} _{- m})^{*} , \alpha ^{\nu} _{- (k + l)} \right\} \e ^{i (E_{m} - E_{k + l} - E_{l}) \tau} + \\
+    + A_{l} \left\{ (\alpha ^{\mu} _{- m})^{*} , (\alpha ^{\nu} _{k + l})^{*} \right\} \e ^{i (E_{m} + E_{k + l} + E_{l}) \tau} + (A_{- l})^{*} \left\{ (\alpha ^{\mu} _{- m})^{*} , (\alpha ^{\nu} _{k + l})^{*} \right\} \e ^{i (E_{m} + E_{k + l} - E_{l}) \tau} \bigg) = \frac{1}{2 \pi} \delta _{m , k} \eta ^{\mu \nu} .
+\end{multline*}
+Since the R.H.S don't have $\tau$ dependence, this immediatelly gives us that
+\begin{equation*}
+    \left\{ \alpha ^{\mu} _{m} , \alpha ^{\nu} _{- k} \right\} = 0 = \left\{ (\alpha ^{\mu} _{- m})^{*} , (\alpha ^{\nu} _{k})^{*} \right\} ,
+\end{equation*}
+thus we simplify down to
+\begin{multline*}
+    \frac{i}{4 (2 \pi \alpha ')^3} \frac{1}{2 E_{m}} \sum _{l} \bigg( A_{l} \left\{ \alpha ^{\mu} _{m} , (\alpha ^{\nu} _{k + l})^{*} \right\} \e ^{- i (E_{m} - E_{k + l} + E_{l}) \tau} + (A_{- l})^{*} \left\{ \alpha ^{\mu} _{m} , (\alpha ^{\nu} _{k + l})^{*} \right\} \e ^{- i (E_{m} - E_{k + l} - E_{l}) \tau} - \\
+    - A_{l} \left\{ (\alpha ^{\mu} _{- m})^{*} , \alpha ^{\nu} _{- (k + l)} \right\} \e ^{i (E_{m} - E_{k + l} + E_{l}) \tau} - (A_{- l})^{*} \left\{ (\alpha ^{\mu} _{- m})^{*} , \alpha ^{\nu} _{- (k + l)} \right\} \e ^{i (E_{m} - E_{k + l} - E_{l}) \tau} \bigg) = \frac{1}{2 \pi} \delta _{m , k} \eta ^{\mu \nu} .
 \end{multline*}
 \begin{equation*}
-    \Bigg\downarrow \frac{1}{2 \pi} \int _{- \tau} ^{\tau} \diff \tau ' \e ^{- i E_{m} \tau '}
+    \Bigg\downarrow \frac{1}{2 \pi} \int _{0} ^{2 \pi} \diff \tau
 \end{equation*}
 \begin{multline*}
-    \frac{i}{16 \pi ^2 (\alpha ')^2 E_{m}} \sum _{l} \bigg( - A_{l} \left\{ \alpha ^{\mu} _{m} , \alpha ^{\nu} _{- (k + l)} \right\} \e ^{- i E_{m} \tau} \delta _{E_{k + l} + E_{l} - E_{m} , 0} + A_{l} \left\{ \alpha ^{\mu} _{m} , (\alpha ^{\nu} _{k + l})^{*} \right\} \e ^{- i E_{m} \tau} \delta _{E_{k + l} + E_{l} - E_{m} , 0} - \\
-    - A_{l} \left\{ (\alpha ^{\mu} _{- m})^{*} , \alpha ^{\nu} _{- (k + l)} \right\} \e ^{i E_{m} \tau} \delta _{E_{k + l} - E_{l} - E_{m} , 0} + A_{l} \left\{ (\alpha ^{\mu} _{- m})^{*} , (\alpha ^{\nu} _{k + l})^{*} \right\} \e ^{i E_{m} \tau} \delta _{E_{k + l} + E_{l} - E_{m} , 0} - \\
-    - (A_{- l})^{*} \left\{ \alpha ^{\mu} _{m} , \alpha ^{\nu} _{- (k + l)} \right\} \e ^{- i E_{m} \tau} \delta _{E_{k + l} + E_{l} - E_{m} , 0} + (A_{- l})^{*} \left\{ \alpha ^{\mu} _{m} , (\alpha ^{\nu} _{k + l})^{*} \right\} \e ^{- i E_{m} \tau} \delta _{E_{k + l} - E_{l} - E_{m} , 0} - \\
-    - (A_{- l})^{*} \left\{ (\alpha ^{\mu} _{- m})^{*} , \alpha ^{\nu} _{- (k + l)} \right\} \e ^{i E_{m} \tau} \delta _{E_{k + l} - E_{l} - E_{m} , 0} + \\
-    + (A_{- l})^{*} \left\{ (\alpha ^{\mu} _{- m})^{*} , (\alpha ^{\nu} _{k + l})^{*} \right\} \e ^{i E_{m} \tau} \delta _{E_{k + l} - E_{l} - E_{m} , 0} \bigg) = \frac{1}{(2 \pi)^{2}} \e ^{- i E_{m} \tau} \delta _{k , m} \eta ^{\mu \nu}
+    \frac{i}{4 (2 \pi \alpha ')^3} \frac{1}{2 E_{m}} \sum _{l} \bigg( A_{l} \left\{ \alpha ^{\mu} _{m} , (\alpha ^{\nu} _{k + l})^{*} \right\} \delta _{E_{m} + E_{l} , E_{k + l}} + (A_{- l})^{*} \left\{ \alpha ^{\mu} _{m} , (\alpha ^{\nu} _{k + l})^{*} \right\} \delta _{E_{m} , E_{k + l} + E_{l}} - \\
+    - A_{l} \left\{ (\alpha ^{\mu} _{- m})^{*} , \alpha ^{\nu} _{- (k + l)} \right\} \delta _{E_{m} + E_{l} , E_{k + l}} - (A_{- l})^{*} \left\{ (\alpha ^{\mu} _{- m})^{*} , \alpha ^{\nu} _{- (k + l)} \right\} \delta _{E_{m} , E_{k + l} + E_{l}} \bigg) = \frac{1}{2 \pi} \delta _{m , k} \eta ^{\mu \nu}
 \end{multline*}
 
 \newpage
