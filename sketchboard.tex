@@ -1329,13 +1329,13 @@ where by expanding the first relation at $\tau = 0$ we get
 \end{multline*}
 If we fix the expansion modes of $F^{-}$ to satisfy
 \begin{align*}
-    \mathfrak{Re}(A_{0}) & = (4 \pi)^{2} (\alpha ')^3 \\
+    \mathfrak{Re}(A_{0}) & = - (4 \pi)^{2} (\alpha ')^3 \\
     A_{- m}              & = (A_{m})^{*} ,
 \end{align*}
 we get the desired
 \begin{align*}
-    \left\{ \alpha ^{\mu} _{m} , \alpha ^{\nu} _{l} \right\}       & = 0 = \left\{ (\alpha ^{\mu} _{m})^{*} , (\alpha ^{\nu} _{l})^{*} \right\}                                     \\
-    \left\{ \alpha ^{\mu} _{m} , (\alpha ^{\nu} _{l})^{*} \right\} & = i E_{m} \delta _{m , l} \eta ^{\mu \nu} = - \left\{ (\alpha ^{\mu} _{m})^{*} , \alpha ^{\nu} _{l} \right\} ,
+    \left\{ \alpha ^{\mu} _{m} , \alpha ^{\nu} _{l} \right\}       & = 0 = \left\{ (\alpha ^{\mu} _{m})^{*} , (\alpha ^{\nu} _{l})^{*} \right\}                                       \\
+    \left\{ \alpha ^{\mu} _{m} , (\alpha ^{\nu} _{l})^{*} \right\} & = - i E_{m} \delta _{m , l} \eta ^{\mu \nu} = - \left\{ (\alpha ^{\mu} _{m})^{*} , \alpha ^{\nu} _{l} \right\} ,
 \end{align*}
 thus we rescale the vibrational modes to get harmonic oscillator bracket relations
 \begin{align*}
@@ -1344,14 +1344,22 @@ thus we rescale the vibrational modes to get harmonic oscillator bracket relatio
 \end{align*}
 \begin{align*}
     \left\{ a^{\mu} _{n} , a^{\nu} _{p} \right\}       & = 0 = \left\{ (a^{\mu} _{n})^{*} , (a^{\nu} _{p})^{*} \right\} \\
-    \left\{ a^{\mu} _{n} , (a^{\nu} _{p})^{*} \right\} & = i \delta _{n , p} \eta ^{\mu \nu} .
+    \left\{ a^{\mu} _{n} , (a^{\nu} _{p})^{*} \right\} & = - i \delta _{n , p} \eta ^{\mu \nu} .
 \end{align*}
 This can be used to calculate the bracket relation between $x^{\mu}$ and $p^{\nu}$:
 \begin{equation*}
-    \left\{ \alpha ^{\mu} _{0} , (\alpha ^{\nu} _{0})^{*} \right\} = \left\{ (2 \pi \alpha ' \mu x^{\mu} + i 4 \pi (\alpha ')^2 p^{\mu}) , (2 \pi \alpha ' \mu x^{\nu} - i 4 \pi (\alpha ')^2 p^{\nu}) \right\} = i \mu \eta ^{\mu \nu}
+    \left\{ \alpha ^{\mu} _{0} , (\alpha ^{\nu} _{0})^{*} \right\} = \left\{ (2 \pi \alpha ' \mu x^{\mu} + i 4 \pi (\alpha ')^2 p^{\mu}) , (2 \pi \alpha ' \mu x^{\nu} - i 4 \pi (\alpha ')^2 p^{\nu}) \right\} = - i \mu \eta ^{\mu \nu}
 \end{equation*}
 \begin{equation*}
-    (2 \pi \alpha ' \mu)^2 \left\{ x^{\mu} , x^{\nu} \right\} + (4 \pi (\alpha ')^2)^{2} \left\{ p^{\mu} , p^{\nu} \right\} - i 8 \pi ^2 (\alpha ')^3 \mu \left( \left\{ x^{\mu} , p^{\nu} \right\} - \left\{ p^{\mu} , x^{\nu} \right\} \right) = i \mu \eta ^{\mu \nu}
+    (2 \pi \alpha ' \mu)^2 \left\{ x^{\mu} , x^{\nu} \right\} + (4 \pi (\alpha ')^2)^{2} \left\{ p^{\mu} , p^{\nu} \right\} - i 8 \pi ^2 (\alpha ')^3 \mu \left( \left\{ x^{\mu} , p^{\nu} \right\} - \left\{ p^{\mu} , x^{\nu} \right\} \right) = - i \mu \eta ^{\mu \nu}
+\end{equation*}
+\begin{align*}
+    \left\{ x^{\mu} , x^{\nu} \right\} & = 0 = \left\{ p^{\mu} , p^{\nu} \right\}             \\
+    \left\{ x^{\mu} , p^{\nu} \right\} & = \frac{1}{16 \pi ^2 (\alpha ')^3} \eta ^{\mu \nu} .
+\end{align*}
+This suggests that perhaps for the relation to reduce to the expected value of 1, the slope parameter should be
+\begin{equation*}
+    \alpha ' = \frac{1}{(16 \pi ^2)^{1/3}} .
 \end{equation*}
 
 \newpage
