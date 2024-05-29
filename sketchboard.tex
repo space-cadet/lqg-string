@@ -1300,141 +1300,91 @@ These simplify further by expanding the summation on $a,b$:
 \begin{equation*}
     \partial _{\tau} X^{\mu} \partial _{\tau} X^{\nu} \eta _{\mu \nu} + \partial _{\sigma} X^{\mu} \partial _{\sigma} X^{\nu} \eta _{\mu \nu} = 0 .
 \end{equation*}
-These can be combined by multiplying the previous one by 2 and summing, leaving us with
+These can be combined by multiplying the previous one by 2 and summing/subtracting, leaving us with
 \begin{equation*}
-    (\partial _{\tau} X^{\mu} + \partial _{\sigma} X^{\mu}) (\partial _{\tau} X^{\nu} + \partial _{\sigma} X^{\nu}) \eta _{\mu \nu} = 0 .
+    (\partial _{\tau} X \pm \partial _{\sigma} X)^2 = 0 .
 \end{equation*}
 
 The EoM is just a one-dimensional finite-space Klein-Gordon equation, which has general solution given by Fourier transform
 \begin{equation*}
-    X^{\mu} (\tau , \sigma) = \frac{1}{2 \pi \alpha '} \sum _{n \in \mathbb{Z}} \frac{1}{2 E_{n}} \left( a^{\mu} _{n} \e ^{i (- E_{n} \tau + n \sigma)} + b^{\mu} _{n} \e ^{i (E_{n} \tau + n \sigma)} \right) ,
+    X^{\mu} (\tau , \sigma) = \sum _{n \in \mathbb{Z}} \frac{1}{2 E_{n}} \left( a^{\mu} _{n} \e ^{i (E_{n} \tau - n \sigma)} + b^{\mu} _{n} \e ^{- i (E_{n} \tau - n \sigma)} \right) ,
 \end{equation*}
-with $E_{n} = \sqrt{n^2 + m^2}$. The derivatives are
-\begin{align*}
-    \partial _{\tau} X^{\mu}   & = \frac{i}{4 \pi \alpha '} \sum _{n \in \mathbb{Z}} \left( - a^{\mu} _{n} \e ^{i (- E_{n} \tau + n \sigma)} + b^{\mu} _{n} \e ^{i (E_{n} \tau + n \sigma)} \right)                 \\
-    \partial _{\sigma} X^{\mu} & = \frac{i}{4 \pi \alpha '} \sum _{n \in \mathbb{Z}} \frac{n}{E_{n}} \left( a^{\mu} _{n} \e ^{i (- E_{n} \tau + n \sigma)} + b^{\mu} _{n} \e ^{i (E_{n} \tau + n \sigma)} \right) .
-\end{align*}
+with $E_{n} = \sqrt{n^2 + m^2}$.
 
 Reality of $X^{\mu}$ implies
 \begin{align*}
-    (X^{\mu})^{*} & = \left( \frac{1}{2 \pi \alpha '} \sum _{n \in \mathbb{Z}} \frac{1}{2 E_{n}} \left( a^{\mu} _{n} \e ^{i (- E_{n} \tau + n \sigma)} + b^{\mu} _{n} \e ^{i (E_{n} \tau + n \sigma)} \right) \right) ^{*} =            \\
-                  & = \frac{1}{2 \pi \alpha '} \sum _{n \in \mathbb{Z}} \frac{1}{2 E_{n}} \left( (a^{\mu} _{n})^{*} \e ^{- i (- E_{n} \tau + n \sigma)} + (b^{\mu} _{n})^{*} \e ^{- i (E_{n} \tau + n \sigma)} \right) \equiv X^{\mu} ,
+    (X^{\mu})^{*} & = \left( \sum _{n \in \mathbb{Z}} \frac{1}{2 E_{n}} \left( a^{\mu} _{n} \e ^{i (E_{n} \tau - n \sigma)} + b^{\mu} _{n} \e ^{- i (E_{n} \tau - n \sigma)} \right) \right) ^{*} =        \\
+                  & = \sum _{n \in \mathbb{Z}} \frac{1}{2 E_{n}} \left( (a^{\mu} _{n})^{*} \e ^{- i (E_{n} \tau - n \sigma)} + (b^{\mu} _{n})^{*} \e ^{i (E_{n} \tau - n \sigma)} \right) \equiv X^{\mu} ,
 \end{align*}
 giving us
 \begin{align*}
-    (a^{\mu} _{n})^{*} & = b^{\mu} _{- n}   \\
-    (b^{\mu} _{n})^{*} & = a^{\mu} _{- n} ,
+    (a^{\mu} _{n})^{*} & = b^{\mu} _{n}   \\
+    (b^{\mu} _{n})^{*} & = a^{\mu} _{n} ,
 \end{align*}
-so the solution becomes for closed strings
+thus the solution for closed string becomes
 \begin{equation*}
-    X^{\mu} (\tau , \sigma) = \frac{1}{2 \pi \alpha '} \sum _{n \in \mathbb{Z}} \frac{1}{2 E_{n}} \left( a^{\mu} _{n} \e ^{i (- E_{n} \tau + n \sigma)} + (a^{\mu} _{- n})^{*} \e ^{i (E_{n} \tau + n \sigma)} \right) .
-\end{equation*}
-For open strings with free endpoints B.C we have general solution
-\begin{equation*}
-    X^{\mu} (\tau , \sigma) = \frac{1}{2 \pi \alpha '} \sum _{n \in \mathbb{Z}} \frac{1}{2 E_{n}} \left( a^{\mu} _{n} \e ^{- i E_{n} \tau} + b^{\mu} _{n} \e ^{i E_{n} \tau} \right) \cos (n \sigma) ,
-\end{equation*}
-which reality condition implies $b^{\mu} _{n} = (a^{\mu} _{n})^{*}$, thus open string with free endpoint solution becomes
-\begin{equation*}
-    X^{\mu} (\tau , \sigma) = \frac{1}{2 \pi \alpha '} \sum _{n \in \mathbb{Z}} \frac{1}{2 E_{n}} \left( a^{\mu} _{n} \e ^{- i E_{n} \tau} + (a^{\mu} _{n})^{*} \e ^{i E_{n} \tau} \right) \cos (n \sigma) .
+    X^{\mu} = \sum _{n} \frac{1}{2 E_{n}} \left( a^{\mu} _{n} \e ^{i (E_{n} \tau - n \sigma)} + (a^{\mu} _{n})^{*} \e ^{- i (E_{n} \tau - n \sigma)} \right) .
 \end{equation*}
 
-Analysing the constraints, for the closed string we have that
+Analysing the constraints, for the closed string we have the derivatives
+\begin{align*}
+    \partial _{\tau} X^{\mu}   & = \frac{i}{2} \sum _{n} \left( a^{\mu} _{n} \e ^{i (E_{n} \tau - n \sigma)} - (a^{\mu} _{n})^{*} \e ^{- i (E_{n} \tau - n \sigma)} \right)                     \\
+    \partial _{\sigma} X^{\mu} & = - \frac{i}{2} \sum _{n} \frac{n}{E_{n}} \left( a^{\mu} _{n} \e ^{i (E_{n} \tau - n \sigma)} - (a^{\mu} _{n})^{*} \e ^{- i (E_{n} \tau - n \sigma)} \right) ,
+\end{align*}
 \begin{equation*}
-    \partial _{\tau} X^{\mu} + \partial _{\sigma} X^{\mu} = \frac{i}{4 \pi \alpha '} \sum _{n \in \mathbb{Z}} \left( \left( \frac{n}{E_{n}} - 1 \right) a^{\mu} _{n} \e ^{i (- E_{n} \tau + n \sigma)} + \left( \frac{n}{E_{n}} + 1 \right) b^{\mu} _{n} \e ^{i (E_{n} \tau + n \sigma)} \right) ,
+    \partial _{\tau} X^{\mu} \pm \partial _{\sigma} X^{\mu} = \frac{i}{2} \sum _{n} \left( 1 \mp \frac{n}{E_{n}} \right) \left( a^{\mu} _{n} \e ^{i (E_{n} \tau - n \sigma)} - (a^{\mu} _{n})^{*} \e ^{- i (E_{n} \tau - n \sigma)} \right)
 \end{equation*}
 so the constraint reads
 \begin{multline*}
-    (\partial _{\tau} X + \partial _{\sigma} X)^2 = - \frac{\eta _{\mu \nu}}{(4 \pi \alpha ')^2} \sum _{n} \sum _{p} \bigg( \bigg( \frac{n}{E_{n}} - 1 \bigg) \bigg( \frac{p}{E_{p}} - 1 \bigg) a^{\mu} _{n} a^{\nu} _{p} \e ^{i ( - (E_{n} + E_{p}) \tau + (n + p) \sigma)} + \\
-    + \bigg( \frac{n}{E_{n}} - 1 \bigg) \bigg( \frac{p}{E_{p}} + 1 \bigg) a^{\mu} _{n} (a^{\nu} _{- p})^{*} \e ^{i (- (E_{n} - E_{p}) \tau + (n + p) \sigma)} + \bigg( \frac{n}{E_{n}} + 1 \bigg) \bigg( \frac{p}{E_{p}} - 1 \bigg) (a^{\mu} _{- n})^{*} a^{\nu} _{p} \e ^{i ((E_{n} - E_{p}) \tau + (n + p) \sigma)} + \\
-    + \bigg( \frac{n}{E_{n}} + 1 \bigg) \bigg( \frac{p}{E_{p}} + 1 \bigg) (a^{\mu} _{- n})^{*} (a^{\nu} _{- p})^{*} \e ^{i ((E_{n} + E_{p}) \tau + (n + p) \sigma)} \bigg) \equiv 0 .
+    (\partial _{\tau} X \pm \partial _{\sigma} X)^2 = - \frac{\eta _{\mu \nu}}{4} \sum _{n} \sum _{p} \left( 1 \mp \frac{n}{E_{n}} \right) \left( 1 \mp \frac{p}{E_{p}} \right) \bigg( a^{\mu} _{n} a^{\nu} _{p} \e ^{i (E_{n} + E_{p}) \tau} \e ^{- i (n + p) \sigma} - \\
+    - a^{\mu} _{n} (a^{\nu} _{p})^{*} \e ^{i (E_{n} - E_{p}) \tau} \e ^{- i (n - p) \sigma} - (a^{\mu} _{n})^{*} a^{\nu} _{p} \e ^{- i (E_{n} - E_{p}) \tau} \e ^{i (n - p) \sigma} + (a^{\mu} _{n})^{*} (a^{\nu} _{p})^{*} \e ^{- i (E_{n} + E_{p}) \tau} \e ^{i (n + p) \sigma} \bigg) \equiv 0
 \end{multline*}
-Since the exponentials are all linearly independent and we can't decouple the $\tau$ exponential from any of the sums, we have 3 cases to investigate: $n = p$, $n = - p$ and $n \neq \pm p$. For $n \neq \pm p$, we get
+Since the exponentials are all linearly independent and we can't decouple the $\tau$ exponential from any of the sums, we have 2 cases to investigate: $n = p$ and $n \neq p$. For $n \neq p$, we get
 \begin{align*}
-    L^{1} _{n , p} & := \bigg( \frac{n}{E_{n}} - 1 \bigg) \bigg( \frac{p}{E_{p}} - 1 \bigg) a^{\mu} _{n} a^{\nu} _{p} \eta _{\mu \nu} = 0                   \\
-    L^{2} _{n , p} & := \bigg( \frac{n}{E_{n}} - 1 \bigg) \bigg( \frac{p}{E_{p}} + 1 \bigg) a^{\mu} _{n} (a^{\nu} _{- p})^{*} \eta _{\mu \nu} = 0           \\
-    L^{3} _{n , p} & := \bigg( \frac{n}{E_{n}} + 1 \bigg) \bigg( \frac{p}{E_{p}} - 1 \bigg) (a^{\mu} _{- n})^{*} a^{\nu} _{p} \eta _{\mu \nu} = 0           \\
-    L^{4} _{n , p} & := \bigg( \frac{n}{E_{n}} + 1 \bigg) \bigg( \frac{p}{E_{p}} + 1 \bigg) (a^{\mu} _{- n})^{*} (a^{\nu} _{- p})^{*} \eta _{\mu \nu} = 0 ,
+    L^{1} _{n , p} & := a^{\mu} _{n} a^{\nu} _{p} \eta _{\mu \nu} = 0               \\
+    L^{2} _{n , p} & := a^{\mu} _{n} (a^{\nu} _{p})^{*} \eta _{\mu \nu} = 0         \\
+    L^{3} _{n , p} & := (a^{\mu} _{n})^{*} a^{\nu} _{p} \eta _{\mu \nu} = 0         \\
+    L^{4} _{n , p} & := (a^{\mu} _{n})^{*} (a^{\nu} _{p})^{*} \eta _{\mu \nu} = 0 ,
 \end{align*}
-where $L^{2} _{n , p}$ and $L^{3} _{n , p}$ are just complex conjugates of each other with $n \mapsto - n$ and $p \mapsto - p$, so they are redundant. The same is true for $L^{1} _{n , p}$ and $L^{4} _{n , p}$, so in the end we have
+where $L^{2} _{n , p}$ and $L^{3} _{n , p}$ are just complex conjugates of each other, so they are redundant. The same is true for $L^{1} _{n , p}$ and $L^{4} _{n , p}$, so in the end we have
 \begin{align*}
-    L_{n , p}             & := \bigg( \frac{n}{E_{n}} - 1 \bigg) \bigg( \frac{p}{E_{p}} - 1 \bigg) a^{\mu} _{n} a^{\nu} _{p} \eta _{\mu \nu} = 0           \\
-    \widetilde{L}_{n , p} & := \bigg( \frac{n}{E_{n}} - 1 \bigg) \bigg( \frac{p}{E_{p}} + 1 \bigg) a^{\mu} _{n} (a^{\nu} _{- p})^{*} \eta _{\mu \nu} = 0 .
+    L_{n , p}             & := a^{\mu} _{n} a^{\nu} _{p} \eta _{\mu \nu} = 0         \\
+    \widetilde{L}_{n , p} & := a^{\mu} _{n} (a^{\nu} _{p})^{*} \eta _{\mu \nu} = 0 .
 \end{align*}
-The coefficients of both expressions are actually not necessary, since for them to be $0$ we would need $n \rightarrow \pm \infty$ or $p \rightarrow \pm \infty$, so we can redefine
+For $n = p$, the first and last terms are complex conjugates of each other, while the exponentials in the 2 middle terms are reduced to $1$, so we get
 \begin{align*}
-    L_{n , p}             & := a^{\mu} _{n} a^{\nu} _{p} \eta _{\mu \nu} = 0                          \\
-    \widetilde{L}_{n , p} & := a^{\mu} _{n} (a^{\nu} _{- p})^{*} \eta _{\mu \nu} = 0 , n \neq \pm p .
+    a^{\mu} _{n} a^{\nu} _{n} \eta _{\mu \nu}                                                                        & = 0   \\
+    \sum _{n} \left( \left( 1 \mp \frac{n}{E_{n}} \right) ^2 a^{\mu} _{n} (a^{\nu} _{n})^{*} \eta _{\mu \nu} \right) & = 0 .
 \end{align*}
-For $n = - p$, the first and last terms are complex conjugates of each other with the relabeling $n \mapsto - n$ and $p \mapsto - p$, while the exponentials in the 2 middle terms are reduced to $1$, so we get
+Collecting everything we have
 \begin{align*}
-    \left( \frac{n}{E_{n}} - 1 \right) ^2 a^{\mu} _{n} a^{\nu} _{- n} \eta _{\mu \nu}                                             & = 0   \\
-    \sum _{n} \left( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) a^{\mu} _{n} (a^{\nu} _{n})^{*} \eta _{\mu \nu} \right) & = 0 ,
-\end{align*}
-where in the first equation we can ignore the first factor once more. Finally for $n = p$, we get
-\begin{align*}
-    \left( \frac{n}{E_{n}} - 1 \right) ^2 a^{\mu} _{n} a^{\nu} _{n} \eta _{\mu \nu}                        & = 0   \\
-    \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) a^{\mu} _{n} (a^{\nu} _{- n})^{*} \eta _{\mu \nu} & = 0 ,
-\end{align*}
-where we again ignore the first factor because it's only $0$ at infinity, thus collecting everything we have
-\begin{align*}
-    L_{n , p} := a^{\mu} _{n} a^{\nu} _{p} \eta _{\mu \nu}                                                & = 0 , \ \forall \ n , p \in \mathbb{Z} , \\
-    \widetilde{L}_{n , p} := a^{\mu} _{n} (a^{\nu} _{- p})^{*} \eta _{\mu \nu}                            & = 0 , \ n \neq - p ,                     \\
-    \sum _{n} \left( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) \widetilde{L}_{n , - n} \right) & = 0 .
+    L_{n , p} := a^{\mu} _{n} a^{\nu} _{p} \eta _{\mu \nu}                                                           & = 0 , \ \forall \ n , p \in \mathbb{Z} , \\
+    \widetilde{L}_{n , p} := a^{\mu} _{n} (a^{\nu} _{p})^{*} \eta _{\mu \nu}                                         & = 0 , \ n \neq p ,                       \\
+    \sum _{n} \left( \left( 1 \mp \frac{n}{E_{n}} \right) ^2 a^{\mu} _{n} (a^{\nu} _{n})^{*} \eta _{\mu \nu} \right) & = 0 .
 \end{align*}
 
 One last thing before quantizing: the $n = 0$ term in the solution reads
 \begin{equation*}
     \frac{1}{2 \pi \alpha '} \frac{1}{2 m} \left( a^{\mu} _{0} \e ^{- i m \tau} + (a^{\mu} _{0})^{*} \e ^{i m \tau} \right) ,
 \end{equation*}
-which is divergent in the $m \rightarrow 0$ limit unless $\mathfrak{Re}(a^{\mu} _{0}) \sim m$. Keeping the analogy to the $m \rightarrow 0$ regime, we conclude $a^{\mu} _{0} = 2 \pi \alpha ' m x^{\mu} + 4 \pi i (\alpha ')^2 p^{\mu}$. Since $a^{\mu} _{0}$ includes $p^{\mu}$, we have that
+which is divergent in the $m \rightarrow 0$ limit unless $\mathfrak{Re}(a^{\mu} _{0}) \sim m$. Keeping the analogy to the $m \rightarrow 0$ regime, we conclude $a^{\mu} _{0} = c_{1} m x^{\mu} + i c_{2} p^{\mu}$, where $c_{1}$ and $c_{2}$ are to be determined. We also have that
 \begin{equation*}
-    M^2 = - p^{\mu} p_{\mu} = \frac{1}{16 \pi ^2 (\alpha ')^4} \left( (2 \pi \alpha ')^{2} x^{\mu} x^{\nu} - a^{\mu} _{0} (a^{\nu} _{0})^{*} \right) \eta _{\mu \nu} ,
+    M^2 = - p^{\mu} p_{\mu} = - \frac{1}{(c_{2})^2} (a^{\mu} _{0} (a^{\nu} _{0})^{*} - (c_{1} m)^2 x^{\mu} x^{\nu}) \eta _{\mu \nu} ,
 \end{equation*}
-which after analysing closer the $n = - p$ condition
+which after analysing closer the $n = p$ condition
 \begin{equation*}
-    \sum _{n} \left( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) \widetilde{L}_{n , - n} \right) = 0
-\end{equation*}
-\begin{equation*}
-    \sum _{n \neq 0} \left( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) \widetilde{L}_{n , - n} \right) - \widetilde{L}_{0 , 0} = 0
+    \sum _{n} \left( \left( 1 \mp \frac{n}{E_{n}} \right) ^2 \widetilde{L}_{n , n} \right) = 0
 \end{equation*}
 \begin{equation*}
-    \sum _{n \neq 0} \left( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) \widetilde{L}_{n , - n} \right) = a^{\mu} _{0} (a^{\nu} _{0})^{*} \eta _{\mu \nu} \equiv (4 \pi (\alpha ')^2)^2 p^{\mu} p_{\mu} + (2 \pi \alpha ' m)^{2} x^{\mu} x_{\mu} ,
+    \sum _{n \neq 0} \left( \left( 1 \mp \frac{n}{E_{n}} \right) ^2 \widetilde{L}_{n , n} \right) - \widetilde{L}_{0 , 0} = 0
 \end{equation*}
-we have the string mass in terms of vibrational modes... (and center of mass position?!?)
-\begin{align*}
-    M^2 & = \frac{1}{(4 \pi (\alpha ')^2)^2} \left( (2 \pi \alpha ' m)^{2} x^{\mu} x_{\mu} - \sum _{n \neq 0} \left( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) \widetilde{L}_{n , - n} \right) \right) =                         \\
-        & = \frac{1}{(4 \pi (\alpha ')^2)^2} \left( (2 \pi \alpha ' m)^{2} x^{\mu} x_{\mu} - \sum _{n \neq 0} \left( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) a^{\mu} _{n} (a^{\nu} _{n})^{*} \eta _{\mu \nu} \right) \right) .
-\end{align*}
-
-As for the open string, its derivatives are
-\begin{align*}
-    \partial _{\tau} X^{\mu}   & = \frac{i}{4 \pi \alpha '} \sum _{n} \left( - a^{\mu} _{n} \e ^{- i E_{n} \tau} + (a^{\mu} _{n})^{*} \e ^{i E_{n} \tau} \right) \cos (n \sigma)                 \\
-    \partial _{\sigma} X^{\mu} & = - \frac{1}{4 \pi \alpha '} \sum _{n} \frac{n}{E_{n}} \left( a^{\mu} _{n} \e ^{- i E_{n} \tau} + (a^{\mu} _{n})^{*} \e ^{i E_{n} \tau} \right) \sin (n \sigma)
-\end{align*}
-and the constraint reads
 \begin{equation*}
-    \partial _{\tau} X^{\mu} + \partial _{\sigma} X^{\mu} = \frac{1}{4 \pi \alpha '} \sum _{n} \left( - a^{\mu} _{n} \e ^{- i E_{n} \tau} \left( i \cos (n \sigma) + \frac{n}{E_{n}} \sin (n \sigma) \right) + (a^{\mu} _{n})^{*} \e ^{i E_{n} \tau} \left( i \cos (n \sigma) - \frac{n}{E_{n}} \sin (n \sigma) \right) \right)
+    \sum _{n \neq 0} \left( \left( 1 \mp \frac{n}{E_{n}} \right) ^2 \widetilde{L}_{n , n} \right) = a^{\mu} _{0} (a^{\nu} _{0})^{*} \eta _{\mu \nu} \equiv (c_{1} m)^2 x^{\mu} x_{\mu} + (c_{2})^2 p^{\mu} p_{\mu} ,
 \end{equation*}
-\begin{multline*}
-    (\partial _{\tau} X + \partial _{\sigma} X)^2 = \frac{\eta _{\mu \nu}}{(4 \pi \alpha ')^2} \sum _{n} \sum _{p} \bigg( a^{\mu} _{n} a^{\nu} _{p} \e ^{- i (E_{n} + E_{p}) \tau} \left( i \cos (n \sigma) + \frac{n}{E_{n}} \sin (n \sigma) \right) \left( i \cos (p \sigma) + \frac{p}{E_{p}} \sin (p \sigma) \right) - \\
-    - a^{\mu} _{n} (a^{\nu} _{p})^{*} \e ^{- i (E_{n} - E_{p}) \tau} \left( i \cos (n \sigma) + \frac{n}{E_{n}} \sin (n \sigma) \right) \left( i \cos (p \sigma) - \frac{p}{E_{p}} \sin (p \sigma) \right) - \\
-    - (a^{\mu} _{n})^{*} a^{\nu} _{p} \e ^{i (E_{n} - E_{p}) \tau} \left( i \cos (n \sigma) - \frac{n}{E_{n}} \sin (n \sigma) \right) \left( i \cos (p \sigma) + \frac{p}{E_{p}} \sin (p \sigma) \right) + \\
-    + (a^{\mu} _{n})^{*} (a^{\nu} _{p})^{*} \e ^{i (E_{n} + E_{p}) \tau} \left( i \cos (n \sigma) - \frac{n}{E_{n}} \sin (n \sigma) \right) \left( i \cos (p \sigma) - \frac{p}{E_{p}} \sin (p \sigma) \right) \bigg) = 0 .
-\end{multline*}
-Once more, we see that the middle 2 terms and outer 2 terms are complex conjugate pairs. Unlike the closed string, here all cases lead to
+we have the string mass in terms of vibrational modes and center of mass position
 \begin{align*}
-    L_{n , p} : = a^{\mu} _{n} a^{\nu} _{p} \eta _{\mu \nu}                   & = 0   \\
-    \widetilde{L}_{n , p} : = a^{\mu} _{n} (a^{\nu} _{p})^{*} \eta _{\mu \nu} & = 0 ,
-\end{align*}
-where again to be more in line with ST literature we remap $p \mapsto p - n$
-\begin{align*}
-    L_{n , p} = a^{\mu} _{n} a^{\nu} _{p - n} \eta _{\mu \nu}                   & = 0   \\
-    \widetilde{L}_{n , p} = a^{\mu} _{n} (a^{\nu} _{p - n})^{*} \eta _{\mu \nu} & = 0 .
-\end{align*}
-Since we don't have a summed constraint, the mass of the open string can't be written in terms of vibrational modes, only in terms of the 0-th mode
-\begin{align*}
-    M^2 = - p^{\mu} p_{\mu} & = \frac{1}{(4 \pi (\alpha ')^2 )^2} a^{\mu} _{0} a^{\nu} _{0} \eta _{\mu \nu} = \\
-                            & = \frac{1}{(4 \pi (\alpha ')^2 )^2} L_{0 , 0} \equiv 0
+    M^2 & = - \frac{1}{(c_{2})^2} \left( \sum _{n \neq 0} \left( \left( 1 \mp \frac{n}{E_{n}} \right) ^2 \widetilde{L}_{n , n} \right) - (c_{1} m)^2 x^{\mu} x_{\mu} \right) =                           \\
+        & = - \frac{1}{(c_{2})^2} \left( \sum _{n \neq 0} \left( \left( 1 \mp \frac{n}{E_{n}} \right) ^2 a^{\mu} _{n} (a^{\nu} _{n})^{*} \eta _{\mu \nu} \right) - (c_{1} m)^2 x^{\mu} x_{\mu} \right) .
 \end{align*}
 
 \subsection{The Expansion Modes Algebra}
@@ -1451,114 +1401,109 @@ Start by finding the canonical momentum
     = - \frac{1}{4 \pi \alpha '} \left( 1 - \frac{k \Delta}{2 \phi ^2} \right) \eta ^{\tau b} \partial _{b} X^{\nu} \eta _{\lambda \nu} =
 \end{equation*}
 \begin{equation*}
-    = \frac{1}{4 \pi \alpha '} F^{-} \partial _{\tau} X^{\nu} \eta_{\lambda \nu} = F^{-} \frac{i}{4 \pi \alpha '} \sum _{n \in \mathbb{Z}} \left( - \alpha ^{\nu} _{n} \e ^{i (- E_{n} \tau + n \sigma)} + (\alpha ^{\nu} _{- n})^{*} \e ^{i (E_{n} \tau + n \sigma)} \right) \eta _{\nu \lambda} .
+    = \frac{1}{4 \pi \alpha '} F^{-} \partial _{\tau} X^{\nu} \eta_{\lambda \nu} = F^{-} \frac{i}{8 \pi \alpha '} \sum _{n \in \mathbb{Z}} \left( \alpha ^{\nu} _{n} \e ^{i (E_{n} \tau - n \sigma)} - (\alpha ^{\nu} _{n})^{*} \e ^{- i (E_{n} \tau - n \sigma)} \right) \eta _{\nu \lambda} ,
 \end{equation*}
-We then proceed to the cannonical Poisson bracket relations
+where $F^{-} = \sum _{l} (A_{l} \e ^{i (E_{l} \tau + l \sigma)} + (A_{l})^{*} \e ^{- i (E_{l} \tau + l \sigma)})$. We then proceed to the equal time canonical Poisson bracket relations
 \begin{equation*}
     \left\{ X^{\mu} (\tau , \sigma) , \Pi ^{\nu} (\tau , \sigma ') \right\} = \delta (\sigma - \sigma ') \eta ^{\mu \nu}
 \end{equation*}
 \begin{equation*}
     \left\{ X^{\mu} (\tau , \sigma) , X^{\nu} (\tau , \sigma ') \right\} = \left\{ \Pi ^{\mu} (\tau , \sigma) , \Pi ^{\nu} (\tau , \sigma ') \right\} = 0 ,
 \end{equation*}
-where by expanding the first relation we get
+where by expanding the first relation at $\tau = 0$ we get
 \begin{multline*}
-    \left\{ X^{\mu} (\tau , \sigma) , \Pi ^{\nu} (\tau , \sigma ') \right\} = \bigg\{ \frac{1}{2 \pi \alpha '} \sum _{n \in \mathbb{Z}} \frac{1}{2 E_{n}} \left( \alpha ^{\mu} _{n} \e ^{i (- E_{n} \tau + n \sigma)} + (\alpha ^{\mu} _{- n})^{*} \e ^{i (E_{n} \tau + n \sigma)} \right) , \\
-    F^{-} \frac{i}{4 \pi \alpha '} \sum _{p \in \mathbb{Z}} \left( - \alpha ^{\nu} _{p} \e ^{i (- E_{p} \tau + p \sigma ')} + (\alpha ^{\nu} _{- p})^{*} \e ^{i (E_{p} \tau + p \sigma ')} \right) \bigg\} =
+    \left\{ X^{\mu} (0 , \sigma) , \Pi ^{\nu} (0 , \sigma ') \right\} = \bigg\{ \frac{1}{2} \sum _{n} \frac{1}{E_{n}} \left( \alpha ^{\mu} _{n} \e ^{- i n \sigma} + (\alpha ^{\mu} _{n})^{*} \e ^{i n \sigma} \right) , \\
+    \frac{i}{8 \pi \alpha '} F^{-} (0 , \sigma ') \sum _{p} \left( \alpha ^{\nu} _{p} \e ^{- i p \sigma '} - (\alpha ^{\nu} _{p})^{*} \e ^{i p \sigma '} \right) \bigg\} = \delta (\sigma - \sigma ') \eta ^{\mu \nu}
 \end{multline*}
 \begin{multline*}
-    = \frac{i}{8 \pi ^2 (\alpha ')^2} \sum _{n} \sum _{p} \frac{1}{2 E_{n}} \bigg( - F^{-} \left\{ \alpha ^{\mu} _{n} , \alpha ^{\nu} _{p} \right\} \e ^{- i (E_{n} + E_{p}) \tau} \e ^{i (n \sigma + p \sigma ')} + F^{-} \left\{ \alpha ^{\mu} _{n} , (\alpha ^{\nu} _{- p})^{*} \right\} \e ^{- i (E_{n} - E_{p}) \tau} \e ^{i (n \sigma + p \sigma ')} - \\
-    - F^{-} \left\{ (\alpha ^{\mu} _{- n})^{*} , \alpha ^{\nu} _{p} \right\} \e ^{i (E_{n} - E_{p}) \tau} \e ^{i (n \sigma + p \sigma ')} + F^{-} \left\{ (\alpha ^{\mu} _{- n})^{*} , (\alpha ^{\nu} _{- p})^{*} \right\} \e ^{i (E_{n} + E_{p}) \tau} \e ^{i (n \sigma + p \sigma ')} \bigg) = \delta (\sigma - \sigma ') \eta ^{\mu \nu}
-\end{multline*}
-\begin{equation*}
-    \bigg\downarrow \frac{1}{2 \pi} \int _{0} ^{2 \pi} \diff \sigma \e ^{- i k \sigma}
-\end{equation*}
-\begin{multline*}
-    \frac{i}{8 \pi ^2 (\alpha ')^2} \sum _{n} \sum _{p} \frac{1}{2 E_{n}} \bigg( - F^{-} \left\{ \alpha ^{\mu} _{n} , \alpha ^{\nu} _{p} \right\} \e ^{- i (E_{n} + E_{p}) \tau} \delta _{n , k} \e ^{i p \sigma '} + F^{-} \left\{ \alpha ^{\mu} _{n} , (\alpha ^{\nu} _{- p})^{*} \right\} \e ^{- i (E_{n} - E_{p}) \tau} \delta _{n , k} \e ^{i p \sigma '} - \\
-    - F^{-} \left\{ (\alpha ^{\mu} _{- n})^{*} , \alpha ^{\nu} _{p} \right\} \e ^{i (E_{n} - E_{p}) \tau} \delta _{n , k} \e ^{i p \sigma '} + F^{-} \left\{ (\alpha ^{\mu} _{- n})^{*} , (\alpha ^{\nu} _{- p})^{*} \right\} \e ^{i (E_{n} + E_{p}) \tau} \delta _{n , k} \e ^{i p \sigma '} \bigg) = \frac{\eta ^{\mu \nu}}{2 \pi} \e ^{- i k \sigma '}
-\end{multline*}
-\begin{multline*}
-    \frac{i}{8 \pi ^2 (\alpha ')^2} \sum _{p} \frac{1}{2 E_{k}} \bigg( - F^{-} \left\{ \alpha ^{\mu} _{k} , \alpha ^{\nu} _{p} \right\} \e ^{- i (E_{k} + E_{p}) \tau} \e ^{i p \sigma '} + F^{-} \left\{ \alpha ^{\mu} _{k} , (\alpha ^{\nu} _{- p})^{*} \right\} \e ^{- i (E_{k} - E_{p}) \tau} \e ^{i p \sigma '} - \\
-    - F^{-} \left\{ (\alpha ^{\mu} _{- k})^{*} , \alpha ^{\nu} _{p} \right\} \e ^{i (E_{k} - E_{p}) \tau} \e ^{i p \sigma '} + F^{-} \left\{ (\alpha ^{\mu} _{- k})^{*} , (\alpha ^{\nu} _{- p})^{*} \right\} \e ^{i (E_{k} + E_{p}) \tau} \e ^{i p \sigma '} \bigg) = \frac{\eta ^{\mu \nu}}{2 \pi} \e ^{- i k \sigma '}
+    \frac{i}{16 \pi \alpha '} F^{-} (0 , \sigma ') \sum _{n} \frac{1}{E_{n}} \sum _{p} \bigg( \left\{ \alpha ^{\mu} _{n} , \alpha ^{\nu} _{p} \right\} \e ^{- i n \sigma} \e ^{- i p \sigma '} - \left\{ \alpha ^{\mu} _{n} , (\alpha ^{\nu} _{p})^{*} \right\} \e ^{- i n \sigma} \e ^{i p \sigma '} + \\
+    + \left\{ (\alpha ^{\mu} _{n})^{*} , \alpha ^{\nu} _{p} \right\} \e ^{i n \sigma} \e ^{- i p \sigma '} - \left\{ (\alpha ^{\mu} _{n})^{*} , (\alpha ^{\nu} _{p})^{*} \right\} \e ^{i n \sigma} \e ^{i p \sigma '} \bigg) = \delta (\sigma - \sigma ') \eta ^{\mu \nu}
 \end{multline*}
 \begin{equation*}
-    \bigg\downarrow \frac{1}{2 \pi} \int _{0} ^{2 \pi} \diff \sigma ' \e ^{i m \sigma '}
-\end{equation*}
-\begin{equation*}
-    \frac{1}{2 \pi} \int _{0} ^{2 \pi} \diff \sigma ' F^{-} \e ^{i (p + m) \sigma '} , \ F^{-} = 1 - \frac{k \Delta}{2 \phi ^2} , \ \mathrm{assume} \ \phi = constant
+    \Bigg\downarrow \frac{1}{2 \pi} \int _{0} ^{2 \pi} \diff \sigma \e ^{i m \sigma}
 \end{equation*}
 \begin{multline*}
-    \frac{i}{8 \pi ^2 (\alpha ')^2} \frac{F^{-}}{2 E_{k}} \bigg( - \left\{ \alpha ^{\mu} _{k} , \alpha ^{\nu} _{- m} \right\} \e ^{- i (E_{k} + E_{m}) \tau} + \left\{ \alpha ^{\mu} _{k} , (\alpha ^{\nu} _{m})^{*} \right\} \e ^{- i (E_{k} - E_{m}) \tau} - \\
-    - \left\{ (\alpha ^{\mu} _{- k})^{*} , \alpha ^{\nu} _{- m} \right\} \e ^{i (E_{k} - E_{m}) \tau} + \left\{ (\alpha ^{\mu} _{- k})^{*} , (\alpha ^{\nu} _{m})^{*} \right\} \e ^{i (E_{k} + E_{m}) \tau} \bigg) = \frac{\eta ^{\mu \nu}}{2 \pi} \delta _{m , k} .
+    \frac{i}{16 \pi \alpha '} F^{-} (0 , \sigma ') \frac{1}{E_{m}} \sum _{p} \bigg( \left\{ \alpha ^{\mu} _{m} , \alpha ^{\nu} _{p} \right\} \e ^{- i p \sigma '} - \left\{ \alpha ^{\mu} _{m} , (\alpha ^{\nu} _{p})^{*} \right\} \e ^{i p \sigma '} + \\
+    + \left\{ (\alpha ^{\mu} _{- m})^{*} , \alpha ^{\nu} _{p} \right\} \e ^{- i p \sigma '} - \left\{ (\alpha ^{\mu} _{- m})^{*} , (\alpha ^{\nu} _{p})^{*} \right\} \e ^{i p \sigma '} \bigg) = \frac{1}{2 \pi} \e ^{i m \sigma '} \eta ^{\mu \nu}
 \end{multline*}
-The only way for this to hold is
+\begin{multline*}
+    \frac{i}{8 \alpha ' E_{m}} \sum _{l} \sum _{p} \bigg( \left( A_{l} \e ^{i l \sigma '} + (A_{l})^{*} \e ^{- i l \sigma '} \right) \left\{ \alpha ^{\mu} _{m} , \alpha ^{\nu} _{p} \right\} \e ^{- i p \sigma '} - \\
+    - \left( A_{l} \e ^{i l \sigma '} + (A_{l})^{*} \e ^{- i l \sigma '} \right) \left\{ \alpha ^{\mu} _{m} , (\alpha ^{\nu} _{p})^{*} \right\} \e ^{i p \sigma '} + \\
+    + \left( A_{l} \e ^{i l \sigma '} + (A_{l})^{*} \e ^{- i l \sigma '} \right) \left\{ (\alpha ^{\mu} _{- m})^{*} , \alpha ^{\nu} _{p} \right\} \e ^{- i p \sigma '} - \\
+    - \left( A_{l} \e ^{i l \sigma '} + (A_{l})^{*} \e ^{- i l \sigma '} \right) \left\{ (\alpha ^{\mu} _{- m})^{*} , (\alpha ^{\nu} _{p})^{*} \right\} \e ^{i p \sigma '} \bigg) = \e ^{i m \sigma '} \eta ^{\mu \nu}
+\end{multline*}
+\begin{multline*}
+    \frac{i}{8 \alpha ' E_{m}} \sum _{l} \sum _{p} \bigg( A_{l} \left\{ \alpha ^{\mu} _{m} , \alpha ^{\nu} _{p} \right\} \e ^{i (l - p) \sigma '} + (A_{l})^{*} \left\{ \alpha ^{\mu} _{m} , \alpha ^{\nu} _{p} \right\} \e ^{- i (l + p) \sigma '} - \\
+    - A_{l} \left\{ \alpha ^{\mu} _{m} , (\alpha ^{\nu} _{p})^{*} \right\} \e ^{i (l + p) \sigma '} - (A_{l})^{*} \left\{ \alpha ^{\mu} _{m} , (\alpha ^{\nu} _{p})^{*} \right\} \e ^{i (p - l) \sigma '} + \\
+    + A_{l} \left\{ (\alpha ^{\mu} _{- m})^{*} , \alpha ^{\nu} _{p} \right\} \e ^{i (l - p) \sigma '} + (A_{l})^{*} \left\{ (\alpha ^{\mu} _{- m})^{*} , \alpha ^{\nu} _{p} \right\} \e ^{- i (l + p) \sigma '} - \\
+    - A_{l} \left\{ (\alpha ^{\mu} _{- m})^{*} , (\alpha ^{\nu} _{p})^{*} \right\} \e ^{i (l + p) \sigma '} - (A_{l})^{*} \left\{ (\alpha ^{\mu} _{- m})^{*} , (\alpha ^{\nu} _{p})^{*} \right\} \e ^{i (p - l) \sigma '} \bigg) = \e ^{i m \sigma '} \eta ^{\mu \nu}
+\end{multline*}
+\begin{equation*}
+    \Bigg\downarrow \frac{1}{2 \pi} \int _{0} ^{2 \pi} \diff \sigma '
+\end{equation*}
+\begin{multline*}
+    \frac{i}{8 \alpha ' E_{m}} \sum _{l} \bigg( A_{l} \left\{ \alpha ^{\mu} _{m} , \alpha ^{\nu} _{l} \right\} + (A_{l})^{*} \left\{ \alpha ^{\mu} _{m} , \alpha ^{\nu} _{- l} \right\} - A_{l} \left\{ \alpha ^{\mu} _{m} , (\alpha ^{\nu} _{- l})^{*} \right\} - (A_{l})^{*} \left\{ \alpha ^{\mu} _{m} , (\alpha ^{\nu} _{l})^{*} \right\} + \\
+    + A_{l} \left\{ (\alpha ^{\mu} _{- m})^{*} , \alpha ^{\nu} _{l} \right\} + (A_{l})^{*} \left\{ (\alpha ^{\mu} _{- m})^{*} , \alpha ^{\nu} _{- l} \right\} - A_{l} \left\{ (\alpha ^{\mu} _{- m})^{*} , (\alpha ^{\nu} _{- l})^{*} \right\} - (A_{l})^{*} \left\{ (\alpha ^{\mu} _{- m})^{*} , (\alpha ^{\nu} _{l})^{*} \right\} \bigg) = \delta _{m , 0} \eta ^{\mu \nu} .
+\end{multline*}
+If we fix the expansion modes of $F^{-}$ to satisfy
 \begin{align*}
-    \left\{ \alpha ^{\mu} _{k} , \alpha ^{\nu} _{- m} \right\}     & = \left\{ (\alpha ^{\mu} _{- k})^{*} , (\alpha ^{\nu} _{m})^{*} \right\} = 0                                                                            \\
-    \left\{ \alpha ^{\mu} _{k} , (\alpha ^{\nu} _{m})^{*} \right\} & = - \left\{ (\alpha ^{\mu} _{- k})^{*} , \alpha ^{\nu} _{- m} \right\} = - i \frac{4 \pi (\alpha ')^{2}}{F^{-}} E_{k} \eta ^{\mu \nu} \delta _{k , m} ,
+    \mathfrak{Re}(A_{0}) & = - 8 \alpha '  \\
+    A_{- m}              & = (A_{m})^{*} ,
 \end{align*}
-thus rescaling we get harmonic oscillator bracket relations
+we get the desired
 \begin{align*}
-    a^{\mu} _{k}       & : = \frac{1}{2 \alpha '} \sqrt{\frac{F^{-}}{\pi}} \frac{1}{\sqrt{E_{k}}} \alpha ^{\mu} _{k}        \\
-    (a^{\mu} _{k})^{*} & : =  \frac{1}{2 \alpha '} \sqrt{\frac{F^{-}}{\pi}} \frac{1}{\sqrt{E_{k}}} (\alpha ^{\mu} _{k})^{*}
+    \left\{ \alpha ^{\mu} _{m} , \alpha ^{\nu} _{l} \right\}       & = 0 = \left\{ (\alpha ^{\mu} _{m})^{*} , (\alpha ^{\nu} _{l})^{*} \right\}                                                        \\
+    \left\{ \alpha ^{\mu} _{m} , (\alpha ^{\nu} _{l})^{*} \right\} & = - i E_{m} \delta _{m , l} \eta ^{\mu \nu} = - \left\{ (\alpha ^{\mu} _{m})^{*} , \alpha ^{\nu} _{l} \right\} , \ m , l \geq 0 ,
 \end{align*}
-\begin{equation*}
-    \Downarrow
-\end{equation*}
+where since $\alpha ^{\mu} _{- n} \propto \alpha ^{\mu} _{n}$ the relations for just positive $m , l$ are sufficient. We can rescale the vibrational modes to get harmonic oscillator bracket relations
 \begin{align*}
-    \left\{ a^{\mu} _{k} , (a^{\nu} _{p})^{*} \right\} & = - i \eta ^{\mu \nu} \delta _{k , p}                            \\
-    \left\{ a^{\mu} _{k} , a^{\nu} _{p} \right\}       & = \left\{ (a^{\mu} _{k})^{*} , (a^{\nu} _{p})^{*} \right\} = 0 .
+    a^{\mu} _{n}       & := \frac{1}{\sqrt{E_{n}}} \alpha ^{\mu} _{n}       \\
+    (a^{\mu} _{n})^{*} & := \frac{1}{\sqrt{E_{n}}} (\alpha ^{\mu} _{n})^{*}
 \end{align*}
-For the $k = p = 0$ case, we also get the expected relations for $x^{\mu}$ and $p^{\nu}$:
+\begin{align*}
+    \left\{ a^{\mu} _{n} , a^{\nu} _{p} \right\}       & = 0 = \left\{ (a^{\mu} _{n})^{*} , (a^{\nu} _{p})^{*} \right\} \\
+    \left\{ a^{\mu} _{n} , (a^{\nu} _{p})^{*} \right\} & = - i \delta _{n , p} \eta ^{\mu \nu} .
+\end{align*}
+This can be used to calculate the bracket relation between $x^{\mu}$ and $p^{\nu}$:
 \begin{equation*}
-    \left\{ \alpha ^{\mu} _{0} , (\alpha ^{\nu} _{0})^{*} \right\} = - i \frac{4 \pi (\alpha ')^{2}}{F^{-}} E_{0} \eta ^{\mu \nu}
+    \left\{ \alpha ^{\mu} _{0} , (\alpha ^{\nu} _{0})^{*} \right\} = \left\{ (c_{1} \mu x^{\mu} + i c_{2} p^{\mu}) , (c_{1} \mu x^{\nu} - i c_{2} p^{\nu}) \right\} = - i \mu \eta ^{\mu \nu}
 \end{equation*}
 \begin{equation*}
-    \left\{ 2 \pi \alpha ' \mu x^{\mu} + 4 \pi i (\alpha ')^{2} p^{\mu} , 2 \pi \alpha ' \mu x^{\nu} - 4 \pi i (\alpha ')^{2} p^{\nu} \right\} = - i \frac{4 \pi (\alpha ')^{2}}{F^{-}} \mu \eta ^{\mu \nu}
-\end{equation*}
-\begin{equation*}
-    (2 \pi \alpha ')^{2} \bigg(  \mu ^2 \left\{ x^{\mu} , x^{\nu} \right\} - 2 i \alpha ' \mu \left\{ x^{\mu} , p^{\nu} \right\} + 2 i \alpha ' \mu \left\{ p^{\mu} , x^{\nu} \right\} + (2 \alpha ') \left\{ p^{\mu} , p^{\nu} \right\} \bigg) = - i \frac{4 \pi (\alpha ')^2}{F^{-}} \mu \eta ^{\mu \nu}
-\end{equation*}
-\begin{equation*}
-    \Downarrow
+    (c_{1} \mu)^2 \left\{ x^{\mu} , x^{\nu} \right\} + (c_{2})^{2} \left\{ p^{\mu} , p^{\nu} \right\} - i c_{1} c_{2} \mu \left( \left\{ x^{\mu} , p^{\nu} \right\} - \left\{ p^{\mu} , x^{\nu} \right\} \right) = - i \mu \eta ^{\mu \nu}
 \end{equation*}
 \begin{align*}
-    \left\{ x^{\mu} , x^{\nu} \right\} & = \left\{ p^{\mu} , p^{\nu} \right\} = 0           \\
-    \left\{ x^{\mu} , p^{\nu} \right\} & = \frac{1}{4 \pi \alpha ' F^{-}} \eta ^{\mu \nu} .
+    \left\{ x^{\mu} , x^{\nu} \right\} & = 0 = \left\{ p^{\mu} , p^{\nu} \right\}    \\
+    \left\{ x^{\mu} , p^{\nu} \right\} & = \frac{1}{2 c_{1} c_{2}} \eta ^{\mu \nu} ,
 \end{align*}
-Since $F^{-} = 1 - k \Delta / (2 \phi ^2)$, if we choose
-\begin{equation*}
-    \phi = \sqrt{\frac{k \Delta}{2 \left( 1 - \dfrac{1}{4 \pi \alpha '} \right)}}
-\end{equation*}
-then the bracket relation simplifies to the expected
-\begin{equation*}
-    \left\{ x^{\mu} , p^{\nu} \right\} = \eta ^{\mu \nu} .
-\end{equation*}
+so we get that $c_{2} = 1 / (2 c_{1})$, and the 0-th mode becomes $\alpha ^{\mu} _{0} = c_{1} \mu x^{\mu} + i p^{\mu} / (2 c_{1})$.
 
 \subsection{The Constraint Algebra}
 
-With the bracket relations between the vibrational modes in hand, we can now calculate the algebra generated by the constraints. For simplicity, since $E_{n} = \sqrt{n^2 + \mu ^2} \neq 0$, we can switch the constraints to be between the normalized harmonic oscillator modes $a^{\mu} _{n}$ intead of the $\alpha ^{\mu} _{n}$.
+With the bracket relations between the vibrational modes in hand, we can now calculate the algebra generated by the constraints. For simplicity, since $E_{n} = \sqrt{n^2 + \mu ^2} > 0$, we can focus instead on the algebra of the normalized harmonic oscillator modes $a^{\mu} _{n}$ instead of the expansion modes $\alpha ^{\mu} _{n}$.
 \begin{equation*}
     \left\{ L_{n , m} , L_{k , p} \right\} = \left\{ a^{\mu} _{n} a^{\nu} _{m} \eta _{\mu \nu} , a^{\mu '} _{k} a^{\nu '} _{p} \eta _{\mu ' \nu '} \right\} = 0
 \end{equation*}
 \begin{align*}
-    \left\{ L_{n , m} , \widetilde{L}_{k , p} \right\} & = \left\{ a^{\mu} _{n} a^{\nu} _{m} \eta _{\mu \nu} , a^{\mu '} _{k} (a^{\nu '} _{- p})^{*} \eta _{\mu ' \nu '} \right\} =                                                                                                     \\
-                                                       & = \eta _{\mu \nu} \left( a^{\nu} _{m} \left\{ a^{\mu} _{n} , (a^{\nu '} _{- p})^{*} \right\} a^{\mu '} _{k} + a^{\mu} _{n} \left\{ a^{\nu} _{m} , (a^{\nu '} _{- p})^{*} \right\} a^{\mu '} _{k} \right) \eta _{\mu ' \nu '} = \\
-                                                       & = \eta _{\mu \nu} \left( a^{\nu} _{m}(- i \eta ^{\mu \nu '} \delta _{n , - p}) a^{\mu '} _{k} + a^{\mu} _{n} (- i \eta ^{\nu \nu '} \delta _{m , - p}) a^{\mu '} _{k} \right) \eta _{\mu ' \nu '} =                            \\
-                                                       & = - i \left( a^{\mu} _{m} a^{\nu} _{k} \eta _{\mu \nu} \delta _{n , - p} + a^{\mu} _{n} a^{\nu} _{k} \eta _{\mu \nu} \delta _{m , - p} \right) =                                                                               \\
-                                                       & = - i \left( L_{m, k} \delta _{n , - p} + L_{n , k} \delta _{m , - p} \right)
+    \left\{ L_{n , m} , \widetilde{L}_{k , p} \right\} & = \left\{ a^{\mu} _{n} a^{\nu} _{m} \eta _{\mu \nu} , a^{\mu '} _{k} (a^{\nu '} _{p})^{*} \eta _{\mu ' \nu '} \right\} =                                                                                                   \\
+                                                       & = \eta _{\mu \nu} \left( a^{\nu} _{m} \left\{ a^{\mu} _{n} , (a^{\nu '} _{p})^{*} \right\} a^{\mu '} _{k} + a^{\mu} _{n} \left\{ a^{\nu} _{m} , (a^{\nu '} _{p})^{*} \right\} a^{\mu '} _{k} \right) \eta _{\mu ' \nu '} = \\
+                                                       & = \eta _{\mu \nu} \left( a^{\nu} _{m}(- i \eta ^{\mu \nu '} \delta _{n , p}) a^{\mu '} _{k} + a^{\mu} _{n} (- i \eta ^{\nu \nu '} \delta _{m , p}) a^{\mu '} _{k} \right) \eta _{\mu ' \nu '} =                            \\
+                                                       & = - i \left( a^{\mu} _{m} a^{\nu} _{k} \eta _{\mu \nu} \delta _{n , p} + a^{\mu} _{n} a^{\nu} _{k} \eta _{\mu \nu} \delta _{m , p} \right) =                                                                               \\
+                                                       & = - i \left( L_{m, k} \delta _{n , p} + L_{n , k} \delta _{m , p} \right)
 \end{align*}
 \begin{align*}
-    \left\{ \widetilde{L}_{n , m} , \widetilde{L}_{k , p} \right\} & = \left\{ a^{\mu} _{n} (a^{\nu} _{- m})^{*} \eta _{\mu \nu} , a^{\mu '} _{k} (a^{\nu '} _{- p})^{*} \eta _{\mu ' \nu '} \right\} =                                                                                                             \\
-                                                                   & = \eta _{\mu \nu} \left( (a^{\nu} _{- m})^{*} \left\{ a^{\mu} _{n} , (a^{\nu '} _{- p})^{*} \right\} a^{\mu '} _{k} + a^{\mu} _{n} \left\{ (a^{\nu} _{- m})^{*} , a^{\mu '} _{k} \right\} (a^{\nu '} _{- p})^{*} \right) \eta _{\mu ' \nu '} = \\
-                                                                   & = \eta _{\mu \nu} \left( (a^{\nu} _{- m})^{*} (- i \eta ^{\mu \nu '} \delta _{n , - p}) a^{\mu '} _{k} - a^{\mu} _{n} (- i \eta ^{\nu \mu '} \delta _{- m , k}) (a^{\nu '} _{- p})^{*} \right) \eta _{\mu ' \nu '} =                           \\
-                                                                   & = - i \left( a^{\mu} _{k} (a^{\nu} _{- m})^{*} \eta _{\mu \nu} \delta _{n , - p} - a^{\mu} _{n} (a^{\nu} _{- p})^{*} \eta _{\mu \nu} \delta _{- m , k} \right) =                                                                               \\
-                                                                   & = - i \left( \widetilde{L}_{k , m} \delta _{n , - p} - \widetilde{L}_{n , p} \delta _{- m , k} \right) .
+    \left\{ \widetilde{L}_{n , m} , \widetilde{L}_{k , p} \right\} & = \left\{ a^{\mu} _{n} (a^{\nu} _{m})^{*} \eta _{\mu \nu} , a^{\mu '} _{k} (a^{\nu '} _{p})^{*} \eta _{\mu ' \nu '} \right\} =                                                                                                         \\
+                                                                   & = \eta _{\mu \nu} \left( (a^{\nu} _{m})^{*} \left\{ a^{\mu} _{n} , (a^{\nu '} _{p})^{*} \right\} a^{\mu '} _{k} + a^{\mu} _{n} \left\{ (a^{\nu} _{m})^{*} , a^{\mu '} _{k} \right\} (a^{\nu '} _{p})^{*} \right) \eta _{\mu ' \nu '} = \\
+                                                                   & = \eta _{\mu \nu} \left( (a^{\nu} _{m})^{*} (- i \eta ^{\mu \nu '} \delta _{n , p}) a^{\mu '} _{k} - a^{\mu} _{n} (- i \eta ^{\nu \mu '} \delta _{m , k}) (a^{\nu '} _{p})^{*} \right) \eta _{\mu ' \nu '} =                           \\
+                                                                   & = - i \left( a^{\mu} _{k} (a^{\nu} _{m})^{*} \eta _{\mu \nu} \delta _{n , p} - a^{\mu} _{n} (a^{\nu} _{p})^{*} \eta _{\mu \nu} \delta _{m , k} \right) =                                                                               \\
+                                                                   & = - i \left( \widetilde{L}_{k , m} \delta _{n , p} - \widetilde{L}_{n , p} \delta _{m , k} \right) .
 \end{align*}
+These relations reveal that, in fact, $\alpha ^{\mu} _{- n}$ = $\alpha ^{\mu} _{n}$, since the middle relation is only invariant to $p \mapsto - p$ if the proportionality coeficient is 1.
 
 \newpage
 
 \section{Into the Quantum Realm}
 
-We now proceed to quantize the KG string through canonical quantization. The string $X^{\mu}$ and it's momentum $\Pi ^{\nu}$ are promoted to operators $\Hat{X}^{\mu}$ and $\Hat{\Pi}^{\nu}$, and we turn the Poisson bracket $\{ . , . \}$ into commutator between operators $i \hbar [. , .]$. The equal time bracket relations turn into equal time commutation relations
+We now proceed to quantize the KG string through canonical quantization. The string $X^{\mu}$ and it's momentum $\Pi ^{\nu}$ are promoted to operators $\Hat{X}^{\mu}$ and $\Hat{\Pi}^{\nu}$, and we turn the Poisson bracket $\{ . , . \}$ into commutator between operators $[. , .] = i \hbar \{ . , . \}$. The equal time bracket relations turn into equal time commutation relations
 \begin{align*}
     \left[ \Hat{X}^{\mu} (\tau , \sigma) , \Hat{\Pi}^{\nu} (\tau , \sigma ') \right] & = i \delta (\sigma - \sigma ') \eta ^{\mu \nu}                                       \\
     \left[ \Hat{X}^{\mu} , \Hat{X}^{\nu} \right]                                     & = \left[ \Hat{\Pi}^{\mu} , \Hat{\Pi}^{\nu} \right] = 0                               \\
@@ -1587,7 +1532,7 @@ in momentum representation.
 
 A generic state arises from a sequence of creation operators on the vacuum
 \begin{equation*}
-    ((a^{\mu _{1}} _{1})^{\dagger})^{n_{\mu _1}} ((a^{\mu _2} _{2})^{\dagger})^{n_{\mu _2}} ... ((a^{\nu _1} _{- 1})^{\dagger})^{n_{\nu _1}} ((a^{\mu _2} _{- 2})^{\dagger})^{n_{\nu _2}} ... \ket{0} .
+    ((\Hat{a}^{\mu _{1}} _{1})^{\dagger})^{n_{\mu _1}} ((\Hat{a}^{\mu _2} _{2})^{\dagger})^{n_{\mu _2}} ... ((\Hat{a}^{\nu _1} _{- 1})^{\dagger})^{n_{\nu _1}} ((\Hat{a}^{\nu _2} _{- 2})^{\dagger})^{n_{\nu _2}} ... \ket{0} .
 \end{equation*}
 This (should) give rise to particles.
 
@@ -1598,64 +1543,64 @@ As in regular ST, we have ghosts arising from the Minkowski metric
 
 For constraints, classically we have
 \begin{align*}
-    L_{n , p}             & = a ^{\mu} _{n} a ^{\nu} _{p} \eta _{\mu \nu} = 0         \\
-    \widetilde{L}_{n , p} & = a ^{\mu} _{n} (a ^{\nu} _{- p})^{*} \eta _{\mu \nu} = 0
+    L_{n , p}             & = \alpha ^{\mu} _{n} \alpha ^{\nu} _{p} \eta _{\mu \nu} = 0                    \\
+    \widetilde{L}_{n , p} & = \alpha ^{\mu} _{n} (\alpha ^{\nu} _{p})^{*} \eta _{\mu \nu} = 0 , \ n \neq p
 \end{align*}
 which because of the existence of ghosts we require to have vanishing matrix elements when sandwiched between physical states
 \begin{equation*}
     \bra{\mathrm{phys} '} \Hat{L}_{n , p} \ket{\mathrm{phys}} = 0 = \bra{\mathrm{phys} '} \Hat{\widetilde{L}}_{n , p} \ket{\mathrm{phys}} .
 \end{equation*}
-When translating the constraints into quantum operators, in $L_{n , p}$ we have no ambiguity of ordering since $\Hat{a}$ commutes with itself. As for $\widetilde{L}_{n , p}$, there is an ambiguity for $p = - n \neq 0$, so we pick normal ordering with the annihilation operators moved to the right
+When translating the constraints into quantum operators, in $L_{n , p}$ we have no ambiguity of ordering since $\Hat{a}$ commutes with itself. As for $\widetilde{L}_{n , p}$, there is an ambiguity for $p = n \neq 0$, so we pick normal ordering with the annihilation operators moved to the right
 \begin{equation*}
-    \Hat{\widetilde{L}}_{n , - n} = (\Hat{\alpha} ^{\mu} _{n})^{\dagger} \Hat{\alpha} ^{\nu} _{n} \eta _{\mu \nu} .
+    \Hat{\widetilde{L}}_{n , n} = (\Hat{\alpha} ^{\mu} _{n})^{\dagger} \Hat{\alpha} ^{\nu} _{n} \eta _{\mu \nu} .
 \end{equation*}
 The ambiguity manifests in the imposition of this constraint as
 \begin{equation*}
-    \bra{\mathrm{phys }'} \left( \sum _{n} \left( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) \widetilde{L}_{n , - n} \right) - c \right) \ket{\mathrm{phys}} = 0 ,
+    \bra{\mathrm{phys }'} \left( \sum _{n} \left( \left( 1 \mp \frac{n}{E_{n}} \right) ^2 \Hat{\widetilde{L}}_{n , n} \right) - c \right) \ket{\mathrm{phys}} = 0 ,
 \end{equation*}
 for some costant $c$. Since classically
 \begin{align*}
-    M^2 & = \frac{1}{(4 \pi (\alpha ')^2)^2} \left( (2 \pi \alpha ' \mu)^{2} x^{\mu} x_{\mu} - \sum _{n \neq 0} \left( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) \widetilde{L}_{n , - n} \right) \right) =                         \\
-        & = \frac{1}{(4 \pi (\alpha ')^2)^2} \left( (2 \pi \alpha ' \mu)^{2} x^{\mu} x_{\mu} - \sum _{n \neq 0} \left( \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) a^{\mu} _{n} (a^{\nu} _{n})^{*} \eta _{\mu \nu} \right) \right) .
+    M^2 & = (2 c_{1})^2 \left( (c_{1} \mu)^{2} x^{\mu} x_{\mu} - \sum _{n \neq 0} \left( \left( 1 \mp \frac{n}{E_{n}} \right) ^2 \widetilde{L}_{n , n} \right) \right) =                                       \\
+        & = (2 c_{1})^2 \left( (c_{1} \mu)^{2} x^{\mu} x_{\mu} - \sum _{n \neq 0} \left( \left( 1 \mp \frac{n}{E_{n}} \right) ^2 \alpha ^{\mu} _{n} (\alpha ^{\nu} _{n})^{*} \eta _{\mu \nu} \right) \right) ,
 \end{align*}
-we see that the string mass spectrum will be affected by this costant
+we see that the string mass spectrum will be affected by this constant
 \begin{equation*}
-    \Hat{M}^2 = \frac{1}{(4 \pi (\alpha ')^2)^2} \left( (2 \pi \alpha ' \mu)^{2} \Hat{x}^{\mu} \Hat{x}_{\mu} - \left( \sum _{n \neq 0} \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) (\Hat{a}^{\mu} _{n})^{\dagger} \Hat{a}^{\nu} _{n} \eta _{\mu \nu} - c \right) \right)
+    \Hat{M}^2 = (2 c_{1})^{2} \left( (c_{1} \mu)^{2} \Hat{x}^{\mu} \Hat{x}_{\mu} - \left( \sum _{n \neq 0} \left( \left( 1 \mp \frac{n}{E_{n}} \right) ^2 E_{n} (\Hat{a}^{\mu} _{n})^{\dagger} \Hat{a}^{\nu} _{n} \eta _{\mu \nu} \right) - c \right) \right) .
 \end{equation*}
 
 The commutation relations between the $L$'s are inherited from the bracket relations
 \begin{align*}
-    \left[ \Hat{L}_{n , m} , \Hat{L}_{k , p} \right]                         & = 0                                                                                               \\
-    \left[ \Hat{L}_{n , m} , \Hat{\widetilde{L}}_{k , p} \right]             & = \Hat{L}_{m , k} \delta _{n , - p} + \Hat{L}_{n , k} \delta _{m , - p}                           \\
-    \left[ \Hat{\widetilde{L}}_{n , m} , \Hat{\widetilde{L}}_{k , p} \right] & = \Hat{\widetilde{L}}_{k , m} \delta _{n , - p} - \Hat{\widetilde{L}}_{n , p} \delta _{- m , k} .
+    \left[ \Hat{L}_{n , m} , \Hat{L}_{k , p} \right]                         & = 0                                                                                           \\
+    \left[ \Hat{L}_{n , m} , \Hat{\widetilde{L}}_{k , p} \right]             & = \Hat{L}_{m , k} \delta _{n , p} + \Hat{L}_{n , k} \delta _{m , p}                           \\
+    \left[ \Hat{\widetilde{L}}_{n , m} , \Hat{\widetilde{L}}_{k , p} \right] & = \Hat{\widetilde{L}}_{k , m} \delta _{n , p} - \Hat{\widetilde{L}}_{n , p} \delta _{m , k} .
 \end{align*}
-Since $[\Hat{L}_{n , m} , \Hat{\widetilde{L}}_{p , k}]$ only has annihilation operators, it has no ordering ambiguities. $[\Hat{\widetilde{L}}_{n , m} , \Hat{\widetilde{L}}_{p , k}]$ have ordering ambiguities for $m = - k$ and/or $p = - n$, so we add the anomalous terms
+Since $[\Hat{L}_{n , m} , \Hat{\widetilde{L}}_{p , k}]$ only has annihilation operators, it has no ordering ambiguities. $[\Hat{\widetilde{L}}_{n , m} , \Hat{\widetilde{L}}_{k , p}]$ have ordering ambiguities for $m = k$ and/or $p = n$, so we add the anomalous terms
 \begin{equation*}
-    \left[ \Hat{\widetilde{L}}_{n , m} , \Hat{\widetilde{L}}_{k , p} \right] = \Hat{\widetilde{L}}_{k , m} \delta _{n , - p} - \Hat{\widetilde{L}}_{n , p} \delta _{- m , k} + C_{n} \delta _{n , -p} + D_{k} \delta _{- m , k}
+    \left[ \Hat{\widetilde{L}}_{n , m} , \Hat{\widetilde{L}}_{k , p} \right] = \Hat{\widetilde{L}}_{k , m} \delta _{n , p} - \Hat{\widetilde{L}}_{n , p} \delta _{m , k} + C_{n} \delta _{n , p} + D_{k} \delta _{m , k}
 \end{equation*}
-Clearly, $C_{0} = 0 = D_{0}$, since in these cases the equivalent terms are composed by $\Hat{\widetilde{L}}_{0 , 0} \sim \Hat{x}^{\mu} \Hat{x}_{\mu} + \Hat{p}^{\mu} \Hat{p}_{\mu}$. Also, because of the $\delta$, we also have that $C_{- n} = - C_{n}$ and $D_{- k} = - D_{k}$. We get from the jacobi identity
+Clearly $C_{0} = 0 = D_{0}$, since if all indices are equal the commutator should vanish. Also, by the symmetry of the $L$'s and because of the $\delta$, we also have that $C_{- n} = C_{n}$ and $D_{- k} = D_{k}$. We get from the Jacobi identity
 \begin{equation*}
     \left[ \Hat{\widetilde{L}}_{n , m} , \left[ \Hat{\widetilde{L}}_{k , p} , \Hat{\widetilde{L}}_{r , s} \right] \right] + \left[ \Hat{\widetilde{L}}_{r , s} , \left[ \Hat{\widetilde{L}}_{n , m} , \Hat{\widetilde{L}}_{k , p} \right] \right] + \left[ \Hat{\widetilde{L}}_{k , p} , \left[ \Hat{\widetilde{L}}_{r , s} , \Hat{\widetilde{L}}_{n , m} \right] \right] = 0
 \end{equation*}
 \begin{multline*}
-    \left[ \Hat{\widetilde{L}}_{n , m} , \left( \Hat{\widetilde{L}}_{r , p} \delta _{k , - s} - \Hat{\widetilde{L}}_{k , s} \delta _{- p , r} + C_{k} \delta _{k , - s} + D_{r} \delta _{- p , r} \right) \right] + \\
-    + \left[ \Hat{\widetilde{L}}_{r , s} , \left( \Hat{\widetilde{L}}_{k , m} \delta _{n , - p} - \Hat{\widetilde{L}}_{n , p} \delta _{- m , k} + C_{n} \delta _{n , - p} + D_{k} \delta _{- m , k} \right) \right] + \\
-    + \left[ \Hat{\widetilde{L}}_{k , p} , \left( \Hat{\widetilde{L}}_{n , s} \delta _{r , - m} - \Hat{\widetilde{L}}_{r , m} \delta _{- s , n} + C_{r} \delta _{r , - m} + D_{n} \delta _{- s , n} \right) \right] = 0
+    \left[ \Hat{\widetilde{L}}_{n , m} , \left( \Hat{\widetilde{L}}_{r , p} \delta _{k , s} - \Hat{\widetilde{L}}_{k , s} \delta _{p , r} + C_{k} \delta _{k , s} + D_{r} \delta _{p , r} \right) \right] + \\
+    + \left[ \Hat{\widetilde{L}}_{r , s} , \left( \Hat{\widetilde{L}}_{k , m} \delta _{n , p} - \Hat{\widetilde{L}}_{n , p} \delta _{m , k} + C_{n} \delta _{n , p} + D_{k} \delta _{m , k} \right) \right] + \\
+    + \left[ \Hat{\widetilde{L}}_{k , p} , \left( \Hat{\widetilde{L}}_{n , s} \delta _{r , m} - \Hat{\widetilde{L}}_{r , m} \delta _{s , n} + C_{r} \delta _{r , m} + D_{n} \delta _{s , n} \right) \right] = 0
 \end{multline*}
 \begin{multline*}
-    \left[ \Hat{\widetilde{L}}_{n , m} , \Hat{\widetilde{L}}_{r , p} \right] \delta _{k , - s} - \left[ \Hat{\widetilde{L}}_{n , m} , \Hat{\widetilde{L}}_{k , s} \right] \delta _{- p , r} + \left[ \Hat{\widetilde{L}}_{r , s} , \Hat{\widetilde{L}}_{k , m} \right] \delta _{n , - p} - \\
-    - \left[ \Hat{\widetilde{L}}_{r , s} , \Hat{\widetilde{L}}_{n , p} \right] \delta _{- m , k} + \left[ \Hat{\widetilde{L}}_{k , p} , \Hat{\widetilde{L}}_{n , s} \right] \delta _{r , - m} - \left[ \Hat{\widetilde{L}}_{k , p} , \Hat{\widetilde{L}}_{r , m} \right] \delta _{- s , n} = 0
+    \left[ \Hat{\widetilde{L}}_{n , m} , \Hat{\widetilde{L}}_{r , p} \right] \delta _{k , s} - \left[ \Hat{\widetilde{L}}_{n , m} , \Hat{\widetilde{L}}_{k , s} \right] \delta _{p , r} + \left[ \Hat{\widetilde{L}}_{r , s} , \Hat{\widetilde{L}}_{k , m} \right] \delta _{n , p} - \\
+    - \left[ \Hat{\widetilde{L}}_{r , s} , \Hat{\widetilde{L}}_{n , p} \right] \delta _{m , k} + \left[ \Hat{\widetilde{L}}_{k , p} , \Hat{\widetilde{L}}_{n , s} \right] \delta _{r , m} - \left[ \Hat{\widetilde{L}}_{k , p} , \Hat{\widetilde{L}}_{r , m} \right] \delta _{s , n} = 0
 \end{multline*}
 \begin{multline*}
-    \left( \Hat{\widetilde{L}}_{r , m} \delta _{n , - p} - \Hat{\widetilde{L}}_{n , p} \delta _{- m , r} + C_{n} \delta _{n , - p} + D_{r} \delta _{- m , r} \right) \delta _{k , - s} - \left( \Hat{\widetilde{L}}_{k , m} \delta _{n , - s} - \Hat{\widetilde{L}}_{n , s} \delta _{- m , k} + C_{n} \delta _{n , - s} + D_{k} \delta _{- m , k} \right) \delta _{- p , r} + \\
-    + \left( \Hat{\widetilde{L}}_{k , s} \delta _{r , - m} - \Hat{\widetilde{L}}_{r , m} \delta _{- s , k} + C_{r} \delta _{r , - m} + D_{k} \delta _{- s , k} \right) \delta _{n , - p} - \left( \Hat{\widetilde{L}}_{n , s} \delta _{r , - p} - \Hat{\widetilde{L}}_{r , p} \delta _{- s , n} + C_{r} \delta _{r , - p} + D_{n} \delta _{- s , n} \right) \delta _{- m , k} + \\
-    + \left( \Hat{\widetilde{L}}_{n , p} \delta _{k , - s} - \Hat{\widetilde{L}}_{k , s} \delta _{- p , n} + C_{k} \delta _{k , - s} + D_{n} \delta _{- p , n} \right) \delta _{r , - m} - \left( \Hat{\widetilde{L}}_{r , p} \delta _{k , - m} - \Hat{\widetilde{L}}_{k , m} \delta _{- p , r} + C_{k} \delta _{k , - m} + D_{r} \delta _{- p , r} \right) \delta _{- s , n} = 0 .
+    \left( \Hat{\widetilde{L}}_{r , m} \delta _{n , p} - \Hat{\widetilde{L}}_{n , p} \delta _{m , r} + C_{n} \delta _{n , p} + D_{r} \delta _{m , r} \right) \delta _{k , s} - \left( \Hat{\widetilde{L}}_{k , m} \delta _{n , s} - \Hat{\widetilde{L}}_{n , s} \delta _{m , k} + C_{n} \delta _{n , s} + D_{k} \delta _{m , k} \right) \delta _{p , r} + \\
+    + \left( \Hat{\widetilde{L}}_{k , s} \delta _{r , m} - \Hat{\widetilde{L}}_{r , m} \delta _{s , k} + C_{r} \delta _{r , m} + D_{k} \delta _{s , k} \right) \delta _{n , p} - \left( \Hat{\widetilde{L}}_{n , s} \delta _{r , p} - \Hat{\widetilde{L}}_{r , p} \delta _{s , n} + C_{r} \delta _{r , p} + D_{n} \delta _{s , n} \right) \delta _{m , k} + \\
+    + \left( \Hat{\widetilde{L}}_{n , p} \delta _{k , s} - \Hat{\widetilde{L}}_{k , s} \delta _{p , n} + C_{k} \delta _{k , s} + D_{n} \delta _{p , n} \right) \delta _{r , m} - \left( \Hat{\widetilde{L}}_{r , p} \delta _{k , m} - \Hat{\widetilde{L}}_{k , m} \delta _{p , r} + C_{k} \delta _{k , m} + D_{r} \delta _{p , r} \right) \delta _{s , n} = 0 .
 \end{multline*}
-For $k = - s$, $n = - p$ and $r = - m$
+For $k = s$, $n = p$ and $r = m$,
 \begin{multline*}
-    \left( \Hat{\widetilde{L}}_{r , - r} - \Hat{\widetilde{L}}_{n , - n} + C_{n} + D_{r} \right) - \left( \Hat{\widetilde{L}}_{k , - r} \delta _{p , s} - \Hat{\widetilde{L}}_{n , - k} \delta _{r , k} + C_{n} \delta _{n , k} + D_{k} \delta _{r , k} \right) \delta _{n , m} + \\
-    + \left( \Hat{\widetilde{L}}_{k , - k} - \Hat{\widetilde{L}}_{r , - r} + C_{r} + D_{k} \right) - \left( \Hat{\widetilde{L}}_{n , - k} \delta _{r , n} - \Hat{\widetilde{L}}_{r , - n} \delta _{k , n} + C_{r} \delta _{r , n} + D_{n} \delta _{k , n} \right) \delta _{r , k} + \\
-    + \left( \Hat{\widetilde{L}}_{n , - n} - \Hat{\widetilde{L}}_{k , - k} + C_{k} + D_{n} \right) - \left( \Hat{\widetilde{L}}_{r , - n} \delta _{k , r} - \Hat{\widetilde{L}}_{k , - r} \delta _{n , r} + C_{k} \delta _{k , r} + D_{r} \delta _{n , r} \right) \delta _{k , n} = 0 .
+    \left( \Hat{\widetilde{L}}_{r , r} - \Hat{\widetilde{L}}_{n , n} + C_{n} + D_{r} \right) - \left( \Hat{\widetilde{L}}_{k , r} \delta _{p , s} - \Hat{\widetilde{L}}_{n , k} \delta _{r , k} + C_{n} \delta _{n , k} + D_{k} \delta _{r , k} \right) \delta _{n , m} + \\
+    + \left( \Hat{\widetilde{L}}_{k , k} - \Hat{\widetilde{L}}_{r , r} + C_{r} + D_{k} \right) - \left( \Hat{\widetilde{L}}_{n , k} \delta _{r , n} - \Hat{\widetilde{L}}_{r , n} \delta _{k , n} + C_{r} \delta _{r , n} + D_{n} \delta _{k , n} \right) \delta _{r , k} + \\
+    + \left( \Hat{\widetilde{L}}_{n , n} - \Hat{\widetilde{L}}_{k , k} + C_{k} + D_{n} \right) - \left( \Hat{\widetilde{L}}_{r , n} \delta _{k , r} - \Hat{\widetilde{L}}_{k , r} \delta _{n , r} + C_{k} \delta _{k , r} + D_{r} \delta _{n , r} \right) \delta _{k , n} = 0 .
 \end{multline*}
 Assuming $n \neq m$, $r \neq k$ and $k \neq n$ leaves us with
 \begin{equation*}
@@ -1666,34 +1611,44 @@ which for $n + k + r = 0$ becomes
     C_{n} + C_{k} + C_{- n - k} + D_{n} + D_{k} + D_{- n - k} = 0
 \end{equation*}
 \begin{equation*}
-    C_{n} + C_{k} - C_{n + k} + D_{n} + D_{k} - D_{n + k} = 0 ,
+    C_{n} + C_{k} + C_{n + k} + D_{n} + D_{k} + D_{n + k} = 0 ,
 \end{equation*}
 and now setting $k = 1$ gives
 \begin{equation*}
-    C_{n} - C_{n + 1} + C_{1} + D_{n} - D_{n + 1} + D_{1} = 0
+    C_{n} + C_{n + 1} + C_{1} + D_{n} + D_{n + 1} + D_{1} = 0 .
+\end{equation*}
+Since this is a linear difference eqn, we can define $F_{n} = C_{n} + D_{n}$ and so we have the eqn
+\begin{equation*}
+    F_{n + 1} + F_{n} + F_{1} = 0
+\end{equation*}
+The solution to this difference eqn with $F_{0} = 0$ is
+\begin{equation*}
+    F_{n} = \frac{F_{1}}{2} \cos \left( \frac{n \pi}{2} \right) - \frac{F_{1}}{2} = \frac{F_{1}}{2} \left( \cos \left( \frac{n \pi}{2} \right) - 1 \right) .
+\end{equation*}
+Since $C_{0} = D_{0} = 0$, we conclude that $C_{n}$ and $D_{n}$ are both equal to half $F_{n}$
+\begin{align*}
+    C_{n} & = \frac{F_{1}}{4} \left( \cos \left( \frac{n \pi}{2} \right) - 1 \right) \\
+    D_{n} & = \frac{F_{1}}{4} \left( \cos \left( \frac{n \pi}{2} \right) - 1 \right)
+\end{align*}
+By now, the commutator of $\Hat{\widetilde{L}}$ is
+\begin{equation*}
+    \left[ \Hat{\widetilde{L}}_{n , m} , \Hat{\widetilde{L}}_{k , p} \right] = \Hat{\widetilde{L}}_{k , m} \delta _{n , p} - \Hat{\widetilde{L}}_{n , p} \delta _{m , k} + \frac{F_{1}}{4} \left( \cos \left( \frac{n \pi}{2} \right) - 1 \right) \delta _{n , p} + \frac{F_{1}}{4} \left( \cos \left( \frac{k \pi}{2} \right) - 1 \right) \delta _{m , k} .
+\end{equation*}
+Let's calculate the VEV of this commutator for $m = - k \neq 0$ with $n = p = 1$
+\begin{equation*}
+    \bra{0} \left[ \Hat{\widetilde{L}}_{1 , - k} , \Hat{\widetilde{L}}_{k , 1} \right] \ket{0} =\bra{0} \Hat{\widetilde{L}}_{1 , - k} \Hat{\widetilde{L}}_{k , 1} \ket{0}
 \end{equation*}
 \begin{equation*}
-    C_{n + 1} - C_{n} - C_{1} = - \left( D_{n + 1} - D_{n} - D_{1} \right) ,
-\end{equation*}
-meaning $C_{n}$ and $D_{n}$ are negatives of each other differing by some constant $\beta$, so it suffices to find $C_{n}$ and later determine the constant $\beta$. It is not difficult to see that the solution to this difference eqn is $C_{n} = A n$, so $D_{n} = - A n + \beta$. Since we know $D_{- n} = - D_{n}$, then $\beta = 0$, and $A = C_{1}$. We now need to determine the value of $C_{1}$. By now, the commutator of $\Hat{\widetilde{L}}$ is
-\begin{equation*}
-    \left[ \Hat{\widetilde{L}}_{n , m} , \Hat{\widetilde{L}}_{k , p} \right] = \Hat{\widetilde{L}}_{k , m} \delta _{n , - p} - \Hat{\widetilde{L}}_{n , p} \delta _{- m , k} + C_{1} n \delta _{n , - p} - C_{1} k \delta _{- m , k} .
-\end{equation*}
-Let's calculate the VEV of this commutator for $m = k \neq 0$ with $n = - p = 1$
-\begin{equation*}
-    \bra{0} \left[ \Hat{\widetilde{L}}_{1 , k} , \Hat{\widetilde{L}}_{k , - 1} \right] \ket{0} =\bra{0} \Hat{\widetilde{L}}_{1 , k} \Hat{\widetilde{L}}_{k , - 1} \ket{0}
+    \bra{0} \Hat{\widetilde{L}}_{k , - k} - \frac{F_{1}}{4} \ket{0} = \bra{0} (a^{\mu} _{- k})^{\dagger} a^{\nu} _{1} \eta _{\mu \nu} (a^{\mu'} _{1})^{\dagger} a^{\nu '} _{k} \eta _{\mu ' \nu '} \ket{0}
 \end{equation*}
 \begin{equation*}
-    \bra{0} \Hat{\widetilde{L}}_{k , k} + C_{1} \ket{0} = \bra{0} (a^{\mu} _{- k})^{\dagger} a^{\nu} _{1} \eta _{\mu \nu} (a^{\mu'} _{1})^{\dagger} a^{\nu '} _{k} \eta _{\mu ' \nu '} \ket{0}
+    \bra{0} - \frac{F_{1}}{4} \ket{0} = 0 \iff F_{1} = 0 ,
 \end{equation*}
-\begin{equation*}
-    \bra{0} C_{1} \ket{0} = 0 \iff C_{1} = 0 ,
-\end{equation*}
-so in actuallity the constraint algebra has no anomalies.
+so in actuality, the constraint algebra has no anomalies.
 
 Let us now denote the ground state of momentum $p^{\mu}$ as $\ket{0 ; p}$. The mass-shell condition
 \begin{equation*}
-    \Hat{M}^2 = \frac{1}{(4 \pi (\alpha ')^2)^2} \left( (2 \pi \alpha ' \mu)^{2} \Hat{x}^{\mu} \Hat{x}_{\mu} - \left( \sum _{n \neq 0} \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) (\Hat{a}^{\mu} _{n})^{\dagger} \Hat{a}^{\nu} _{n} \eta _{\mu \nu} - c \right) \right)
+    \Hat{M}^2 = (2 c_{1})^{2} \left( (c_{1} \mu)^{2} \Hat{x}^{\mu} \Hat{x}_{\mu} - \left( \sum _{n \neq 0} \left( \left( 1 \mp \frac{n}{E_{n}} \right) ^2 E_{n} (\Hat{a}^{\mu} _{n})^{\dagger} \Hat{a}^{\nu} _{n} \eta _{\mu \nu} \right) - c \right) \right)
 \end{equation*}
 implies that
 \begin{equation*}
