@@ -864,7 +864,7 @@ leading to
     \left( 1 - \frac{k \Delta}{2 (- g)} \right) \sqrt{- g} g^{a b} \partial _{a} \partial _{b} X^{\nu} G_{\lambda \nu} + \partial _{a} \left( \left( 1 - \frac{k \Delta}{2 (- g)} \right) \sqrt{- g} g^{a b} \right) \partial _{b} X^{\nu} G_{\lambda \nu} = \\
     \frac{1}{2} \left( 1 - \frac{k \Delta}{2 (- g)} \right) \sqrt{- g} g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \partial _{\lambda} G_{\mu \nu} ,
 \end{multline*}
-imposing conformal symmetry $g^{a b} = (\phi (x))^{-1} \eta ^{a b}$ and let $F' = \left( 1 - \frac{k \Delta}{2 \phi ^2} \right)$ leads to
+imposing conformal symmetry $g^{a b} = \e ^{- \phi (x)} \eta ^{a b}$ and let $F' = \left( 1 - \frac{k \Delta}{2 \e ^{2 \phi}} \right)$ leads to
 \begin{equation*}
     \eta ^{a b} \partial _{a} \partial _{b} X^{\nu} G_{\lambda \nu} + \frac{1}{F'} \eta ^{a b} \partial _{a} F' \partial _{b} X^{\nu} G_{\lambda \nu} = \eta ^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \partial _{\lambda} G_{\mu \nu} ,
 \end{equation*}
@@ -913,13 +913,13 @@ use plane-wave ansatz $X^{\mu} = X^{\mu} _{0} \e ^{- i (E \tau - p \sigma)}$
     \Downarrow
 \end{equation*}
 \begin{equation*}
-    F' = A \e ^{i (E \tau + p \sigma + \phi)} , \ A > 0
+    F' = A \e ^{i (E \tau + p \sigma)} , \ A \in \C
 \end{equation*}
 \begin{equation*}
     \Downarrow
 \end{equation*}
 \begin{equation*}
-    \phi (\tau , \sigma) = \sqrt{\frac{k \Delta}{2 \left( 1 - A \e ^{i (E \tau + p \sigma + \phi)} \right)}}
+    \e ^{\phi (x)} = \sqrt{\frac{k \Delta}{2 \left( 1 - A \e ^{i (E \tau + p \sigma)} \right)}}
 \end{equation*}
 \begin{equation*}
     \downarrow
@@ -1307,14 +1307,14 @@ These can be combined by multiplying the previous one by 2 and summing/subtracti
 
 The EoM is just a one-dimensional finite-space Klein-Gordon equation, which has general solution given by Fourier transform
 \begin{equation*}
-    X^{\mu} (\tau , \sigma) = \sum _{n \in \mathbb{Z}} \frac{1}{2 E_{n}} \left( a^{\mu} _{n} \e ^{i (E_{n} \tau - n \sigma)} + b^{\mu} _{n} \e ^{- i (E_{n} \tau - n \sigma)} \right) ,
+    X^{\mu} (\tau , \sigma) = \sqrt{\frac{\alpha '}{2}} \sum _{n \in \mathbb{Z}} \frac{1}{2 E_{n}} \left( a^{\mu} _{n} \e ^{i (E_{n} \tau - n \sigma)} + b^{\mu} _{n} \e ^{- i (E_{n} \tau - n \sigma)} \right) ,
 \end{equation*}
 with $E_{n} = \sqrt{n^2 + m^2}$.
 
 Reality of $X^{\mu}$ implies
 \begin{align*}
-    (X^{\mu})^{*} & = \left( \sum _{n \in \mathbb{Z}} \frac{1}{2 E_{n}} \left( a^{\mu} _{n} \e ^{i (E_{n} \tau - n \sigma)} + b^{\mu} _{n} \e ^{- i (E_{n} \tau - n \sigma)} \right) \right) ^{*} =        \\
-                  & = \sum _{n \in \mathbb{Z}} \frac{1}{2 E_{n}} \left( (a^{\mu} _{n})^{*} \e ^{- i (E_{n} \tau - n \sigma)} + (b^{\mu} _{n})^{*} \e ^{i (E_{n} \tau - n \sigma)} \right) \equiv X^{\mu} ,
+    (X^{\mu})^{*} & = \left( \sqrt{\frac{\alpha '}{2}} \sum _{n \in \mathbb{Z}} \frac{1}{2 E_{n}} \left( a^{\mu} _{n} \e ^{i (E_{n} \tau - n \sigma)} + b^{\mu} _{n} \e ^{- i (E_{n} \tau - n \sigma)} \right) \right) ^{*} =        \\
+                  & = \sqrt{\frac{\alpha '}{2}} \sum _{n \in \mathbb{Z}} \frac{1}{2 E_{n}} \left( (a^{\mu} _{n})^{*} \e ^{- i (E_{n} \tau - n \sigma)} + (b^{\mu} _{n})^{*} \e ^{i (E_{n} \tau - n \sigma)} \right) \equiv X^{\mu} ,
 \end{align*}
 giving us
 \begin{align*}
@@ -1323,20 +1323,20 @@ giving us
 \end{align*}
 thus the solution for closed string becomes
 \begin{equation*}
-    X^{\mu} = \sum _{n} \frac{1}{2 E_{n}} \left( a^{\mu} _{n} \e ^{i (E_{n} \tau - n \sigma)} + (a^{\mu} _{n})^{*} \e ^{- i (E_{n} \tau - n \sigma)} \right) .
+    X^{\mu} = \sqrt{\frac{\alpha '}{2}} \sum _{n} \frac{1}{2 E_{n}} \left( a^{\mu} _{n} \e ^{i (E_{n} \tau - n \sigma)} + (a^{\mu} _{n})^{*} \e ^{- i (E_{n} \tau - n \sigma)} \right) .
 \end{equation*}
 
 Analysing the constraints, for the closed string we have the derivatives
 \begin{align*}
-    \partial _{\tau} X^{\mu}   & = \frac{i}{2} \sum _{n} \left( a^{\mu} _{n} \e ^{i (E_{n} \tau - n \sigma)} - (a^{\mu} _{n})^{*} \e ^{- i (E_{n} \tau - n \sigma)} \right)                     \\
-    \partial _{\sigma} X^{\mu} & = - \frac{i}{2} \sum _{n} \frac{n}{E_{n}} \left( a^{\mu} _{n} \e ^{i (E_{n} \tau - n \sigma)} - (a^{\mu} _{n})^{*} \e ^{- i (E_{n} \tau - n \sigma)} \right) ,
+    \partial _{\tau} X^{\mu}   & = \frac{i}{2} \sqrt{\frac{\alpha '}{2}} \sum _{n} \left( a^{\mu} _{n} \e ^{i (E_{n} \tau - n \sigma)} - (a^{\mu} _{n})^{*} \e ^{- i (E_{n} \tau - n \sigma)} \right)                     \\
+    \partial _{\sigma} X^{\mu} & = - \frac{i}{2} \sqrt{\frac{\alpha '}{2}} \sum _{n} \frac{n}{E_{n}} \left( a^{\mu} _{n} \e ^{i (E_{n} \tau - n \sigma)} - (a^{\mu} _{n})^{*} \e ^{- i (E_{n} \tau - n \sigma)} \right) ,
 \end{align*}
 \begin{equation*}
-    \partial _{\tau} X^{\mu} \pm \partial _{\sigma} X^{\mu} = \frac{i}{2} \sum _{n} \left( 1 \mp \frac{n}{E_{n}} \right) \left( a^{\mu} _{n} \e ^{i (E_{n} \tau - n \sigma)} - (a^{\mu} _{n})^{*} \e ^{- i (E_{n} \tau - n \sigma)} \right)
+    \partial _{\tau} X^{\mu} \pm \partial _{\sigma} X^{\mu} = \frac{i}{2} \sqrt{\frac{\alpha '}{2}} \sum _{n} \left( 1 \mp \frac{n}{E_{n}} \right) \left( a^{\mu} _{n} \e ^{i (E_{n} \tau - n \sigma)} - (a^{\mu} _{n})^{*} \e ^{- i (E_{n} \tau - n \sigma)} \right)
 \end{equation*}
 so the constraint reads
 \begin{multline*}
-    (\partial _{\tau} X \pm \partial _{\sigma} X)^2 = - \frac{\eta _{\mu \nu}}{4} \sum _{n} \sum _{p} \left( 1 \mp \frac{n}{E_{n}} \right) \left( 1 \mp \frac{p}{E_{p}} \right) \bigg( a^{\mu} _{n} a^{\nu} _{p} \e ^{i (E_{n} + E_{p}) \tau} \e ^{- i (n + p) \sigma} - \\
+    (\partial _{\tau} X \pm \partial _{\sigma} X)^2 = - \frac{\eta _{\mu \nu} \alpha '}{8} \sum _{n} \sum _{p} \left( 1 \mp \frac{n}{E_{n}} \right) \left( 1 \mp \frac{p}{E_{p}} \right) \bigg( a^{\mu} _{n} a^{\nu} _{p} \e ^{i (E_{n} + E_{p}) \tau} \e ^{- i (n + p) \sigma} - \\
     - a^{\mu} _{n} (a^{\nu} _{p})^{*} \e ^{i (E_{n} - E_{p}) \tau} \e ^{- i (n - p) \sigma} - (a^{\mu} _{n})^{*} a^{\nu} _{p} \e ^{- i (E_{n} - E_{p}) \tau} \e ^{i (n - p) \sigma} + (a^{\mu} _{n})^{*} (a^{\nu} _{p})^{*} \e ^{- i (E_{n} + E_{p}) \tau} \e ^{i (n + p) \sigma} \bigg) \equiv 0
 \end{multline*}
 Since the exponentials are all linearly independent and we can't decouple the $\tau$ exponential from any of the sums, we have 2 cases to investigate: $n = p$ and $n \neq p$. For $n \neq p$, we get
@@ -1475,7 +1475,7 @@ This can be used to calculate the bracket relation between $x^{\mu}$ and $p^{\nu
     \left\{ x^{\mu} , x^{\nu} \right\} & = 0 = \left\{ p^{\mu} , p^{\nu} \right\}    \\
     \left\{ x^{\mu} , p^{\nu} \right\} & = \frac{1}{2 c_{1} c_{2}} \eta ^{\mu \nu} ,
 \end{align*}
-so we get that $c_{2} = 1 / (2 c_{1})$, and the 0-th mode becomes $\alpha ^{\mu} _{0} = c_{1} \mu x^{\mu} + i p^{\mu} / (2 c_{1})$.
+so we get that $c_{2} = 1 / (2 c_{1})$, and the 0-th mode becomes $\alpha ^{\mu} _{0} = c_{1} \mu x^{\mu} + i p^{\mu} / (2 c_{1})$. Keeping the analogy to the $\mu \rightarrow 0$ limit, we see that $c_{1} = \sqrt{2} / \sqrt{\alpha '}$.
 
 \subsection{The Constraint Algebra}
 
@@ -1560,12 +1560,12 @@ The ambiguity manifests in the imposition of this constraint as
 \end{equation*}
 for some costant $c$. Since classically
 \begin{align*}
-    M^2 & = (2 c_{1})^2 \left( (c_{1} \mu)^{2} x^{\mu} x_{\mu} - \sum _{n \neq 0} \left( \left( 1 \mp \frac{n}{E_{n}} \right) ^2 \widetilde{L}_{n , n} \right) \right) =                                       \\
-        & = (2 c_{1})^2 \left( (c_{1} \mu)^{2} x^{\mu} x_{\mu} - \sum _{n \neq 0} \left( \left( 1 \mp \frac{n}{E_{n}} \right) ^2 \alpha ^{\mu} _{n} (\alpha ^{\nu} _{n})^{*} \eta _{\mu \nu} \right) \right) ,
+    M^2 & = \frac{4}{\alpha '} \left( \frac{2 \mu ^2}{\alpha '} x^{\mu} x_{\mu} - \sum _{n \neq 0} \left( \left( 1 \mp \frac{n}{E_{n}} \right) ^2 \widetilde{L}_{n , n} \right) \right) =                                       \\
+        & = \frac{4}{\alpha '} \left( \frac{2 \mu ^2}{\alpha '} x^{\mu} x_{\mu} - \sum _{n \neq 0} \left( \left( 1 \mp \frac{n}{E_{n}} \right) ^2 \alpha ^{\mu} _{n} (\alpha ^{\nu} _{n})^{*} \eta _{\mu \nu} \right) \right) ,
 \end{align*}
 we see that the string mass spectrum will be affected by this constant
 \begin{equation*}
-    \Hat{M}^2 = (2 c_{1})^{2} \left( (c_{1} \mu)^{2} \Hat{x}^{\mu} \Hat{x}_{\mu} - \left( \sum _{n \neq 0} \left( \left( 1 \mp \frac{n}{E_{n}} \right) ^2 E_{n} (\Hat{a}^{\mu} _{n})^{\dagger} \Hat{a}^{\nu} _{n} \eta _{\mu \nu} \right) - c \right) \right) .
+    \Hat{M}^2 = \frac{4}{\alpha '} \left( \frac{2 \mu ^2}{\alpha '} \Hat{x}^{\mu} \Hat{x}_{\mu} - \left( \sum _{n \neq 0} \left( \left( 1 \mp \frac{n}{E_{n}} \right) ^2 E_{n} (\Hat{a}^{\mu} _{n})^{\dagger} \Hat{a}^{\nu} _{n} \eta _{\mu \nu} \right) - c \right) \right) .
 \end{equation*}
 
 The commutation relations between the $L$'s are inherited from the bracket relations
@@ -1648,25 +1648,25 @@ so in actuality, the constraint algebra has no anomalies.
 
 Let us now denote the ground state of momentum $p^{\mu}$ as $\ket{0 ; p}$. The mass-shell condition
 \begin{equation*}
-    \Hat{M}^2 = (2 c_{1})^{2} \left( (c_{1} \mu)^{2} \Hat{x}^{\mu} \Hat{x}_{\mu} - \left( \sum _{n \neq 0} \left( \left( 1 \mp \frac{n}{E_{n}} \right) ^2 E_{n} (\Hat{a}^{\mu} _{n})^{\dagger} \Hat{a}^{\nu} _{n} \eta _{\mu \nu} \right) - c \right) \right)
+    \Hat{M}^2 = \frac{4}{\alpha '} \left( \frac{2 \mu ^2}{\alpha '} \Hat{x}^{\mu} \Hat{x}_{\mu} - \left( \sum _{n \neq 0} \left( \left( 1 \mp \frac{n}{E_{n}} \right) ^2 E_{n} (\Hat{a}^{\mu} _{n})^{\dagger} \Hat{a}^{\nu} _{n} \eta _{\mu \nu} \right) - c \right) \right)
 \end{equation*}
 implies that
 \begin{equation*}
-    \bra{0 ; p} \Hat{M}^2 \ket{0 ; p} = \frac{1}{(4 \pi (\alpha ')^2)^2} \left( (2 \pi \alpha ' \mu)^{2} \bra{0 ; p} \Hat{x}^{\mu} \Hat{x}_{\mu} \ket{0 ; p} - \left( \sum _{n \neq 0} \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) \bra{0 ; p} (\Hat{a}^{\mu} _{n})^{\dagger} \Hat{a}^{\nu} _{n} \eta _{\mu \nu} \ket{0 ; p} - \bra{0 ; p} c \ket{0 ; p} \right) \right)
+    \bra{0 ; p} \Hat{M}^2 \ket{0 ; p} = \frac{4}{\alpha '} \left( \frac{2 \mu ^2}{\alpha '} \bra{0 ; p} \Hat{x}^{\mu} \Hat{x}_{\mu} \ket{0 ; p} - \left( \sum _{n \neq 0} \left( \left( 1 \mp \frac{n}{E_{n}} \right) ^2 E_{n} \right) \bra{0 ; p} (\Hat{a}^{\mu} _{n})^{\dagger} \Hat{a}^{\nu} _{n} \eta _{\mu \nu} \ket{0 ; p} - \bra{0 ; p} c \ket{0 ; p} \right) \right)
 \end{equation*}
 \begin{equation*}
-    M^2 = \frac{1}{(4 \pi (\alpha ')^2)^2} \left( (2 \pi \alpha ' \mu)^{2} \frac{\partial \psi ^{*} (p)}{\partial p_{\mu}} \frac{\partial \psi (p)}{\partial p^{\mu}} + c \right)
+    M^2 = \frac{4}{\alpha '} \left( \frac{2 \mu ^2}{\alpha '} \frac{\partial \psi ^{*} (p)}{\partial p_{\mu}} \frac{\partial \psi (p)}{\partial p^{\mu}} + c \right)
 \end{equation*}
 \begin{equation*}
-    (4 \pi (\alpha ')^2)^2 p^2 = - \left( (2 \pi \alpha ' \mu)^{2} \left| \frac{\partial \psi (p)}{\partial p} \right| ^2 + c \right)
+    \frac{\alpha '}{4} p^2 = - \left( \frac{2 \mu ^2}{\alpha '} \left| \frac{\partial \psi (p)}{\partial p} \right| ^2 + c \right)
 \end{equation*}
 Now looking at the first excited state $\zeta _{\mu} (\Hat{a}^{\mu} _{1})^{\dagger} \ket{0 ; p}$ with $\zeta _{\mu} = \zeta _{\mu} (p)$ being the polarization covector, the mass-shell now reads
 \begin{multline*}
-    \bra{0 ; p} \Hat{a}^{\mu} _{1} \zeta _{\mu} \Hat{M}^2 \zeta _{\nu} (\Hat{a}^{\nu} _{1})^{\dagger} \ket{0 ; p} = \frac{1}{(4 \pi (\alpha ')^2)^2} \Bigg( (2 \pi \alpha ' \mu)^{2} \bra{0 ; p} \Hat{a}^{\mu} _{1} \zeta _{\mu} \Hat{x}^{\mu '} \Hat{x}_{\mu '} \zeta _{\nu} (\Hat{a}^{\nu} _{1})^{\dagger} \ket{0 ; p} - \\
-    - \left( \sum _{n \neq 0} \left( \left( \frac{n}{E_{n}} \right) ^2 - 1 \right) \bra{0 ; p} \Hat{a}^{\mu} _{1} \zeta _{\mu} (\Hat{a}^{\mu '} _{n})^{\dagger} \Hat{a}^{\nu '} _{n} \eta _{\mu ' \nu '} \zeta _{\nu} (\Hat{a}^{\nu} _{1})^{\dagger} \ket{0 ; p} - \bra{0 ; p} \Hat{a}^{\mu} _{1} \zeta _{\mu} c \zeta _{\nu} (\Hat{a}^{\nu} _{1})^{\dagger} \ket{0 ; p} \right) \Bigg)
+    \bra{0 ; p} \Hat{a}^{\mu} _{1} \zeta _{\mu} \Hat{M}^2 \zeta _{\nu} (\Hat{a}^{\nu} _{1})^{\dagger} \ket{0 ; p} = \frac{4}{\alpha '} \Bigg( \frac{2 \mu ^2}{\alpha '} \bra{0 ; p} \Hat{a}^{\mu} _{1} \zeta _{\mu} \Hat{x}^{\mu '} \Hat{x}_{\mu '} \zeta _{\nu} (\Hat{a}^{\nu} _{1})^{\dagger} \ket{0 ; p} - \\
+    - \left( \sum _{n \neq 0} \left( \left( 1 \mp \frac{n}{E_{n}} \right) ^2 E_{n} \right) \bra{0 ; p} \Hat{a}^{\mu} _{1} \zeta _{\mu} (\Hat{a}^{\mu '} _{n})^{\dagger} \Hat{a}^{\nu '} _{n} \eta _{\mu ' \nu '} \zeta _{\nu} (\Hat{a}^{\nu} _{1})^{\dagger} \ket{0 ; p} - \bra{0 ; p} \Hat{a}^{\mu} _{1} \zeta _{\mu} c \zeta _{\nu} (\Hat{a}^{\nu} _{1})^{\dagger} \ket{0 ; p} \right) \Bigg)
 \end{multline*}
 \begin{equation*}
-    M^2 \zeta ^{\mu} \zeta _{\mu} = \frac{1}{(4 \pi (\alpha ')^2)^2} \left( (2 \pi \alpha ' \mu)^{2} \left| \frac{\partial \psi (p)}{\partial p} \right| ^2 \zeta ^{\mu} \zeta _{\mu} - \left( \frac{1}{1 + \mu ^2} - 1 \right) \zeta ^{\mu} \zeta _{\mu} + c \zeta ^{\mu} \zeta _{\mu} \right)
+    M^2 \zeta ^{\mu} \zeta _{\mu} = \frac{4}{\alpha '} \left( \frac{2 \mu ^2}{\alpha '} \left| \frac{\partial \psi (p)}{\partial p} \right| ^2 \zeta ^{\mu} \zeta _{\mu} - \left( \left( 1 \mp \frac{1}{\sqrt{1 + \mu ^2}} \right) ^2 \sqrt{1 + \mu ^2} \right) \zeta ^{\mu} \zeta _{\mu} + c \zeta ^{\mu} \zeta _{\mu} \right)
 \end{equation*}
 \begin{equation*}
     (4 \pi (\alpha ')^2)^2 p^2 = - \left( (2 \pi \alpha ' \mu)^{2} \left| \frac{\partial \psi (p)}{\partial p} \right| ^2 - \left( \frac{1}{1 + \mu ^2} - 1 \right) + c \right) .
