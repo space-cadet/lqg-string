@@ -751,7 +751,17 @@ which in conformal gauge $g_{a b} = \phi \eta _{a b}$ reduces further
 \begin{equation*}
     \eta ^{a b} \partial _{a} \partial _{b} X^{\mu} + \eta ^{a b} \partial _{a} \ln (F^{-}) \partial _{b} X^{\mu} = 0 .
 \end{equation*}
-This is the exact same equation derived in the next section which leads to the Klein-Gordon eqn.
+This is the exact same equation derived in the next section which leads to the Klein-Gordon eqn. In fact, plugging the condition for $h = g^{-1}$ and $T' = - T k \Delta / 2$ in the action reproduces the action in next section:
+\begin{equation*}
+    S = - \frac{T}{2} \int \diff ^2 x \sqrt{- g} g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} G_{\mu \nu} + \frac{T k \Delta}{4} \int \diff ^2 x \sqrt{- g}^{-1} (i \varepsilon ^{a c}) g_{c d} (i \varepsilon ^{d b}) \del _{a} X^{\mu} \del _{b} X^{\nu} \frac{G_{\mu \nu}}{2 g} =
+\end{equation*}
+\begin{equation*}
+    = - \frac{T}{2} \int \diff ^2 x \left( \sqrt{- g} g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} G_{\mu \nu} - \frac{k \Delta}{2 \sqrt{- g}} g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} G_{\mu \nu} \right) =
+\end{equation*}
+\begin{equation*}
+    = - \frac{T}{2} \int \diff ^2 x \left( \sqrt{- g} - \frac{k \Delta}{2 \sqrt{- g}} \right) g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} G_{\mu \nu} ,
+\end{equation*}
+so the area corrected Polyakov action of next section is just a special case of the bimetric Polyakov action.
 
 \newpage
 
