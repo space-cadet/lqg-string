@@ -60,14 +60,18 @@ S.~F. Hassan, R.~A. Rosen, and A.~{Schmidt-May}, {\it Ghost-free {{Massive
 B.~Zwiebach, {\em A First Course in String Theory}.
 \newblock Cambridge University Press, 2nd~ed., 2009.
 
-\bibitem{Grimshaw2010Homogenization}
-R.~Grimshaw, D.~Pelinovsky, and E.~Pelinovsky, {\it Homogenization of the
-  variable-speed wave equation},  {\em Wave Motion} {\bf 47} (Dec., 2010)
-  496--507.
+\bibitem{Schottenloher}
+M.~Schottenloher, {\em A Mathematical Introduction to Conformal Field Theory}.
+\newblock {Springer Berlin, Heidelberg}, {Berlin}, 2nd edition~ed., 2008.
 
 \bibitem{Tong2009Lectures}
 D.~Tong, {\it Lectures on {{String Theory}}},
   \href{http://arxiv.org/abs/0908.0333}{{\tt arXiv:0908.0333}}.
+
+\bibitem{Grimshaw2010Homogenization}
+R.~Grimshaw, D.~Pelinovsky, and E.~Pelinovsky, {\it Homogenization of the
+  variable-speed wave equation},  {\em Wave Motion} {\bf 47} (Dec., 2010)
+  496--507.
 
 \bibitem{Green2012Superstring}
 M.~B. Green, J.~H. Schwarz, and E.~Witten, {\em Superstring Theory: 25th
