@@ -854,6 +854,56 @@ In the usual formulation of the string action the embedding fields are \emph{not
 
 We have presented in this work a possible way to formulate string theory in background independent manner.
 
+\subsection{Emergent Dimensions and LQG} \label{sec:emergent-dimensions}
+
+The actions \eqref{eqn:modified-NG-action} and \eqref{eqn:inverse-metric-Polyakov} used in sections \ref{sec:modified-ng} and \ref{sec:inverse-metric-Polyakov} have a glaring disadvantage: they do not have WS diffeomorphism invariance, making it so it is not clear what WS parameterization should be used and neither if physical predictions can be extracted from them since it is not obvious that different parameterizations describe the same system. If we want to formulate an effective stringy action that takes LQG quantum geometric effects into consideration and retains WS diffeomorphism invariance while giving similar results to the analysis done in section \ref{sec:inverse-metric-Polyakov}, we arrive at a similar model as \cite{Afshordi-emergent}, with the action being
+\begin{multline} \label{eqn:emergent-dimensions-action}
+	S_{ED} = - \frac{1}{4 \pi \alpha '} \int \diff ^2 x \sqrt{- g} \big( g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} \eta _{\mu \nu} + \\
+	+ \mu _{0} ^2 \e ^{- m_{\mu} / T} X^{\mu} X^{\nu} \eta _{\mu \nu} \big)
+\end{multline}
+where $T$ is the \emph{temperature} of target space and the parameters $m_{\mu}$ satisfy an ordering relation $m_{0} \gg m_{1} \gg ... \gg m_{d}$. This is Afshordi's model \cite{Afshordi-emergent}. Where our approach diverges is that we realize the parameters $m_{\mu}$ are constrained by the modified dispersion relations of each field $X^{\mu}$, since as \cite{Bodendorfer-LQG} points out, LQG quantum geometry breaks Lorentz invariance near the Planck scale through modifying the dispersion relation by constraining the free parameters of the model as
+\begin{equation} \label{eqn:LQG-modified-dispersion-relation}
+	E^2 = m^2 + p^2 + \sum _{n \geq 3} c_{n} \frac{p^n}{E_{pl} ^{n - 2}} ,
+\end{equation}
+so we note that the mass parameters of the fields $X^{\mu}$ will be constrained as
+\begin{equation} \label{eqn:X-masses-constraint}
+	E_{\alpha} ^2 = p_{\alpha} ^2 + \sum _{n = 3} ^{D - 1} \frac{m_{n}}{T} \frac{p_{\alpha} ^{n}}{E_{pl} ^{n - 2}} ,
+\end{equation}
+where $E_{\alpha} ^2$ does not mean $E_{\alpha} E^{\alpha}$, rather it means $(E_{3})^2 , (E_{4})^2 , ... , (E_{D - 1})^2$, \ie, the squared WS energy (and momentum) of each field $X^{\mu}$.
+
+Afshordi's work notes that action \eqref{eqn:emergent-dimensions-action} only has background Poincaré invariance and WS Weyl symmetry for the fields with $m_{\mu} \gg T$, thus the \textquotedblleft emergent spacetime and evolving dimensions" by interpreting the fields with effective mass as being inaccessible due to not obeying Poincaré symmetry. We go one step further and note that since eq \eqref{eqn:X-masses-constraint} leaves $m_{0} , m_{1}$ and $m_{2}$ unconstrained, the related dimensions might be regarded as being \emph{fundamental} and thus the true quantum gravitational field should be $(2 + 1)$-dimensional, thus we postulate that $m_{3} \sim T_{pl}$, which together with the constraints \eqref{eqn:X-masses-constraint} should give us a way to calculate the other mass parameters given the WS energy and momentum of the fields, making it possible to predict in which scales the other dimensions should start to open up.
+
+By analysing the equations of motion for the metric $g_{c d}$ from the action \eqref{eqn:emergent-dimensions-action} we get
+\begin{equation} \label{eqn:emergent-dimensions-g}
+	g_{c d} = 2 f \del _{c} X^{\mu} \del _{d} X^{\nu} \eta _{\mu \nu} ,
+\end{equation}
+with $f$ given by
+\begin{equation} \label{eqn:emergent-dimensions-f}
+	\frac{1}{f} = g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} \eta _{\mu \nu} + \mu _{0} ^{2} \e ^{- m_{\mu} / T} X^{\mu} X^{\nu} \eta _{\mu \nu} ,
+\end{equation}
+from which we see that $\e ^{- m_{\mu} / T} X^{\mu} X^{\nu} \eta _{\mu \nu} = 0$ is actually a constraint and thus the base mass $\mu _{0} ^2$ is a Lagrange multiplier. By dimensional analysis, we see that in SI units $\mu _{0} ^2$ has units of inverse area, so it could be that $\mu _{0} ^2 \sim A_{j} ^{-1}$, where $A_{j}$ is the eigenvalue of the area operator with spin $j$, which depends on where the spin network punctures the WS, thus once more connecting Afshordi's work to LQG quantum geometry.
+
+One could also consider a more general form of action \eqref{eqn:emergent-dimensions-action} by swapping the flat Minkowski metric $\eta _{\mu \nu}$ by a more general curved metric $G_{\mu \nu}$ and considering off-diagonal mass parameters $m_{\mu \nu}$:
+\begin{multline} \label{eqn:emergent-dimensions-curved}
+	S' _{E D} = - \frac{1}{4 \pi \alpha '} \int \diff ^2 x \sqrt{- g} \big( g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} G_{\mu \nu} + \\
+	+ \mu _{0} ^2 \e ^{- m_{\mu \nu} / T} X^{\mu} X^{\nu} G_{\mu \nu} \big) ,
+\end{multline}
+where the mass parameters will be constrained as in
+\begin{equation} \label{eqn:X-masses-constraint-2}
+	E_{\alpha} ^2 = p_{\alpha} ^2 + \sum _{n = 3} ^{D - 1} \frac{m_{n \alpha}}{T} \frac{p_{\alpha} ^n}{E_{pl} ^n} ,
+\end{equation}
+since those are the ones that show up in the $X^{\mu}$ equations of motion
+\begin{multline}
+	g^{a b} \nabla _{a} \nabla _{b} X^{\mu} G_{\mu \lambda} - \mu _{0} ^2 \e ^{- m_{\mu \lambda} / T} X^{\mu} G_{\mu \lambda} = \\
+	= \frac{1}{2} g^{a b} \del_{a} X^{\mu} \del _{b} X^{\nu} \del _{\lambda} G_{\mu \nu} .
+\end{multline}
+
+In section \ref{sec:inverse-metric-Polyakov} we arrived at eq \eqref{eqn:coupling-X-phi} and claimed the coupling between the WS conformal factor $\phi (x)$ and the embedding fields $X^{\mu}$ to be akin to the dilaton field $\Phi (X)$. We now explore this claim: since we're now dealing with emergent dimensions with an action \eqref{eqn:emergent-dimensions-action} that only has Weyl symmetry as an approximate symmetry, we believe that the conformal factor $\phi (x)$ can be viewed as a WS dilaton, which sets the scale of the string dictating which dimensions it can interact with, thus the coupling \textquotedblleft constant" of the masses may be related to the conformal factor
+\begin{equation} \label{eqn:mu0-phi-relation}
+	\mu _{0} ^2 \sim \e ^{- \phi (x)} ,
+\end{equation}
+where the minus sign is due to the fact that the dimensions open up at larger and larger scales, so we require a larger and larger string to interact with each new dimension.
+
 \begin{acknowledgments}
 
 \end{acknowledgments}
@@ -950,16 +1000,16 @@ The condition $h = g^{-1}$ can be achieved by
 \begin{equation} \label{eqn:h=SgS}
 	h_{a b} = S_{a c} g^{c d} S_{d b}
 \end{equation}
-where $S \in \mathrm{SL} (2 , \C)$ with $S^{\dagger} = S$. This implies that
+where $\det (S) = \pm 1$ and $S^{\dagger} = S$. This implies that
 \begin{multline} \label{eqn:SgS-implication}
 	\left( \delta _{a} ^{c'} \delta _{b} ^{d'} H_{\mu \nu} - \frac{1}{2 g} S_{a c} \varepsilon ^{c c'} S_{d b} \varepsilon ^{d d'} G_{\mu \nu} \right) \times \\
 	\times \del _{c'} X^{\mu} \del _{d'} X^{\nu} = 0 ,
 \end{multline}
 which can be achieved by choosing
 \begin{equation} \label{eqn:S=sigma_y}
-	S_{a c} = i \varepsilon _{a c} = - (\sigma _{y})_{a c} ,
+	S_{a c} = i \varepsilon _{a c} = - (\sigma _{y})_{a c}
 \end{equation}
-thus leading us to
+and if the background metrics are related by
 \begin{equation} \label{eqn:H=1/(2g)G}
 	H_{\mu \nu} = \frac{1}{2 g} G_{\mu \nu} .
 \end{equation}
