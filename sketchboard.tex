@@ -1355,15 +1355,15 @@ which after analysing closer the $n = p$ condition
     \sum _{n} \left( \left( 1 \mp \frac{n}{E_{n}} \right) ^2 \widetilde{L}_{n , n} \right) = 0
 \end{equation*}
 \begin{equation*}
-    \sum _{n \neq 0} \left( \left( 1 \mp \frac{n}{E_{n}} \right) ^2 \widetilde{L}_{n , n} \right) - \widetilde{L}_{0 , 0} = 0
+    \sum _{n \neq 0} \left( \left( 1 \mp \frac{n}{E_{n}} \right) ^2 \widetilde{L}_{n , n} \right) + \widetilde{L}_{0 , 0} = 0
 \end{equation*}
 \begin{equation*}
-    \sum _{n \neq 0} \left( \left( 1 \mp \frac{n}{E_{n}} \right) ^2 \widetilde{L}_{n , n} \right) = a^{\mu} _{0} (a^{\nu} _{0})^{*} \eta _{\mu \nu} \equiv (c_{1} m)^2 x^{\mu} x_{\mu} + (c_{2})^2 p^{\mu} p_{\mu} ,
+    \sum _{n \neq 0} \left( \left( 1 \mp \frac{n}{E_{n}} \right) ^2 \widetilde{L}_{n , n} \right) = - a^{\mu} _{0} (a^{\nu} _{0})^{*} \eta _{\mu \nu} \equiv - \left( (c_{1} m)^2 x^{\mu} x_{\mu} + (c_{2})^2 p^{\mu} p_{\mu} \right) ,
 \end{equation*}
 we have the string mass in terms of vibrational modes and center of mass position
 \begin{align*}
-    M^2 & = - \frac{1}{(c_{2})^2} \left( \sum _{n \neq 0} \left( \left( 1 \mp \frac{n}{E_{n}} \right) ^2 \widetilde{L}_{n , n} \right) - (c_{1} m)^2 x^{\mu} x_{\mu} \right) =                           \\
-        & = - \frac{1}{(c_{2})^2} \left( \sum _{n \neq 0} \left( \left( 1 \mp \frac{n}{E_{n}} \right) ^2 a^{\mu} _{n} (a^{\nu} _{n})^{*} \eta _{\mu \nu} \right) - (c_{1} m)^2 x^{\mu} x_{\mu} \right) .
+    M^2 & = \frac{1}{(c_{2})^2} \left( \sum _{n \neq 0} \left( \left( 1 \mp \frac{n}{E_{n}} \right) ^2 \widetilde{L}_{n , n} \right) - (c_{1} m)^2 x^{\mu} x_{\mu} \right) =                           \\
+        & = \frac{1}{(c_{2})^2} \left( \sum _{n \neq 0} \left( \left( 1 \mp \frac{n}{E_{n}} \right) ^2 a^{\mu} _{n} (a^{\nu} _{n})^{*} \eta _{\mu \nu} \right) - (c_{1} m)^2 x^{\mu} x_{\mu} \right) .
 \end{align*}
 
 \subsection{The Expansion Modes Algebra}
@@ -1541,30 +1541,30 @@ When translating the constraints into quantum operators, in $L_{n , p}$ we have 
 \end{equation*}
 The ambiguity manifests in the imposition of this constraint as
 \begin{equation*}
-    \bra{\mathrm{phys }'} \left( \sum _{n} \left( \left( 1 \mp \frac{n}{E_{n}} \right) ^2 \Hat{\widetilde{L}}_{n , n} \right) - c \right) \ket{\mathrm{phys}} = 0 ,
+    \bra{\mathrm{phys }'} \left( \sum _{n \neq 0} \left( \left( 1 \mp \frac{n}{E_{n}} \right) ^2 \Hat{\widetilde{L}}_{n , n} \right) - c \right) \ket{\mathrm{phys}} = 0 ,
 \end{equation*}
 for some costant $c$. Since classically
 \begin{align*}
-    M^2 & = \frac{8}{\alpha '} \left( \frac{2 \mu ^2}{\alpha '} x^{\mu} x_{\mu} - \sum _{n \neq 0} \left( \left( 1 \mp \frac{n}{E_{n}} \right) ^2 \widetilde{L}_{n , n} \right) \right) =                                       \\
-        & = \frac{8}{\alpha '} \left( \frac{2 \mu ^2}{\alpha '} x^{\mu} x_{\mu} - \sum _{n \neq 0} \left( \left( 1 \mp \frac{n}{E_{n}} \right) ^2 \alpha ^{\mu} _{n} (\alpha ^{\nu} _{n})^{*} \eta _{\mu \nu} \right) \right) ,
+    M^2 & = \frac{8}{\alpha '} \left( \sum _{n \neq 0} \left( \left( 1 \mp \frac{n}{E_{n}} \right) ^2 \widetilde{L}_{n , n} \right) - \frac{2 \mu ^2}{\alpha '} x^{\mu} x_{\mu} \right) =                                       \\
+        & = \frac{8}{\alpha '} \left( \sum _{n \neq 0} \left( \left( 1 \mp \frac{n}{E_{n}} \right) ^2 \alpha ^{\mu} _{n} (\alpha ^{\nu} _{n})^{*} \eta _{\mu \nu} \right) - \frac{2 \mu ^2}{\alpha '} x^{\mu} x_{\mu} \right) ,
 \end{align*}
 we see that the string mass spectrum will be affected by this constant
 \begin{equation*}
-    \Hat{M}^2 = \frac{8}{\alpha '} \left( \frac{2 \mu ^2}{\alpha '} \Hat{x}^{\mu} \Hat{x}_{\mu} - \left( \sum _{n \neq 0} \left( \left( 1 \mp \frac{n}{E_{n}} \right) ^2 E_{n} (\Hat{a}^{\mu} _{n})^{\dagger} \Hat{a}^{\nu} _{n} \eta _{\mu \nu} \right) - c \right) \right) .
+    \Hat{M}^2 = \frac{8}{\alpha '} \left( \sum _{n \neq 0} \left( \left( 1 \mp \frac{n}{E_{n}} \right) ^2 E_{n} (\Hat{a}^{\mu} _{n})^{\dagger} \Hat{a}^{\nu} _{n} \eta _{\mu \nu} \right) - c - \frac{2 \mu ^2}{\alpha '} \Hat{x}^{\mu} \Hat{x}_{\mu} \right) .
 \end{equation*}
 By enforcing normal-ordering, we can get the value of this constant:
 \begin{equation*}
     \sum _{n \neq 0} \left( \left( 1 \mp \frac{n}{E_{n}} \right) ^2 E_{n} \Hat{a}^{\mu} _{n} (\Hat{a}^{\nu} _{n})^{\dagger} \eta _{\mu \nu} \right) =
 \end{equation*}
 \begin{equation*}
-    = \sum _{n \neq 0} \left( \left( 1 + \frac{n}{E_{n}} \right) ^2 E_{n} \left( \eta ^{\mu \nu} \delta _{|n| , |n|} - (\Hat{a}^{\mu} _{n})^{\dagger} \Hat{a}^{\nu} _{n} \right) \eta _{\mu \nu} \right)
+    = \sum _{n \neq 0} \left( \left( 1 + \frac{n}{E_{n}} \right) ^2 E_{n} \left( \eta ^{\mu \nu} \delta _{|n| , |n|} + (\Hat{a}^{\mu} _{n})^{\dagger} \Hat{a}^{\nu} _{n} \right) \eta _{\mu \nu} \right)
 \end{equation*}
 \begin{equation*}
-    = - \left( \sum _{n \neq 0} \left( \left( 1 + \frac{n}{E_{n}} \right) ^2 E_{n} (\Hat{a}^{\mu} _{n})^{\dagger} \Hat{a}^{\nu} _{n} \eta _{\mu \nu} \right) - D \sum _{n \neq 0} \left( 1 + \frac{n}{E_{n}} \right) ^2 E_{n} \right)
+    = \sum _{n \neq 0} \left( \left( 1 + \frac{n}{E_{n}} \right) ^2 E_{n} (\Hat{a}^{\mu} _{n})^{\dagger} \Hat{a}^{\nu} _{n} \eta _{\mu \nu} \right) + D \sum _{n \neq 0} \left( 1 + \frac{n}{E_{n}} \right) ^2 E_{n}
 \end{equation*}
 giving us
 \begin{equation*}
-    c = D \sum _{n \neq 0} \left( 1 + \frac{n}{E_{n}} \right) ^2 E_{n} = D \sum _{n > 0} \left( 1 + \frac{n^2}{E_{n} ^2} \right) E_{n} .
+    c = - D \sum _{n \neq 0} \left( 1 + \frac{n}{E_{n}} \right) ^2 E_{n} = - D \sum _{n > 0} \left( 1 + \frac{n^2}{E_{n} ^2} \right) E_{n} .
 \end{equation*}
 
 The commutation relations between the $L$'s are inherited from the bracket relations
@@ -1647,28 +1647,31 @@ so in actuality, the constraint algebra has no anomalies.
 
 Let us now denote the ground state of momentum $p^{\mu}$ as $\ket{0 ; p}$. The mass-shell condition
 \begin{equation*}
-    \Hat{M}^2 = \frac{8}{\alpha '} \left( \frac{2 \mu ^2}{\alpha '} \Hat{x}^{\mu} \Hat{x}_{\mu} - \left( \sum _{n \neq 0} \left( \left( 1 \mp \frac{n}{E_{n}} \right) ^2 E_{n} (\Hat{a}^{\mu} _{n})^{\dagger} \Hat{a}^{\nu} _{n} \eta _{\mu \nu} \right) - c \right) \right)
+    \Hat{M}^2 = - \frac{8}{\alpha '} \left( \frac{2 \mu ^2}{\alpha '} \Hat{x}^{\mu} \Hat{x}_{\mu} - \left( \sum _{n \neq 0} \left( \left( 1 \mp \frac{n}{E_{n}} \right) ^2 E_{n} (\Hat{a}^{\mu} _{n})^{\dagger} \Hat{a}^{\nu} _{n} \eta _{\mu \nu} \right) - c \right) \right)
 \end{equation*}
 implies that
 \begin{equation*}
-    \bra{0 ; p} \Hat{M}^2 \ket{0 ; p} = \frac{8}{\alpha '} \left( \frac{2 \mu ^2}{\alpha '} \bra{0 ; p} \Hat{x}^{\mu} \Hat{x}_{\mu} \ket{0 ; p} - \left( \sum _{n \neq 0} \left( \left( 1 \mp \frac{n}{E_{n}} \right) ^2 E_{n} \right) \bra{0 ; p} (\Hat{a}^{\mu} _{n})^{\dagger} \Hat{a}^{\nu} _{n} \eta _{\mu \nu} \ket{0 ; p} - \bra{0 ; p} c \ket{0 ; p} \right) \right)
+    \bra{0 ; p} \Hat{M}^2 \ket{0 ; p} = - \frac{8}{\alpha '} \left( \frac{2 \mu ^2}{\alpha '} \bra{0 ; p} \Hat{x}^{\mu} \Hat{x}_{\mu} \ket{0 ; p} - \left( \sum _{n \neq 0} \left( \left( 1 \mp \frac{n}{E_{n}} \right) ^2 E_{n} \right) \bra{0 ; p} (\Hat{a}^{\mu} _{n})^{\dagger} \Hat{a}^{\nu} _{n} \eta _{\mu \nu} \ket{0 ; p} - \bra{0 ; p} c \ket{0 ; p} \right) \right)
 \end{equation*}
 \begin{equation*}
-    M^2 = \frac{8}{\alpha '} \left( \frac{2 \mu ^2}{\alpha '} \frac{\partial \psi ^{*} (p)}{\partial p_{\mu}} \frac{\partial \psi (p)}{\partial p^{\mu}} + c \right)
+    M^2 = - \frac{8}{\alpha '} \left( \frac{2 \mu ^2}{\alpha '} \frac{\partial \psi ^{*} (p)}{\partial p_{\mu}} \frac{\partial \psi (p)}{\partial p^{\mu}} + c \right)
 \end{equation*}
 \begin{equation*}
-    \frac{\alpha '}{8} p^2 = - \left( \frac{2 \mu ^2}{\alpha '} \left| \frac{\partial \psi (p)}{\partial p} \right| ^2 + c \right)
+    \frac{\alpha '}{8} p^2 = \left( \frac{2 \mu ^2}{\alpha '} \left| \frac{\partial \psi (p)}{\partial p} \right| ^2 + c \right)
 \end{equation*}
 Now looking at the first excited state $\zeta _{\mu} (\Hat{a}^{\mu} _{1})^{\dagger} \ket{0 ; p}$ with $\zeta _{\mu} = \zeta _{\mu} (p)$ being the polarization covector, the mass-shell now reads
 \begin{multline*}
-    \bra{0 ; p} \Hat{a}^{\mu} _{1} \zeta _{\mu} \Hat{M}^2 \zeta _{\nu} (\Hat{a}^{\nu} _{1})^{\dagger} \ket{0 ; p} = \frac{8}{\alpha '} \Bigg( \frac{2 \mu ^2}{\alpha '} \bra{0 ; p} \Hat{a}^{\mu} _{1} \zeta _{\mu} \Hat{x}^{\mu '} \Hat{x}_{\mu '} \zeta _{\nu} (\Hat{a}^{\nu} _{1})^{\dagger} \ket{0 ; p} - \\
+    \bra{0 ; p} \Hat{a}^{\mu} _{1} \zeta _{\mu} \Hat{M}^2 \zeta _{\nu} (\Hat{a}^{\nu} _{1})^{\dagger} \ket{0 ; p} = - \frac{8}{\alpha '} \Bigg( \frac{2 \mu ^2}{\alpha '} \bra{0 ; p} \Hat{a}^{\mu} _{1} \zeta _{\mu} \Hat{x}^{\mu '} \Hat{x}_{\mu '} \zeta _{\nu} (\Hat{a}^{\nu} _{1})^{\dagger} \ket{0 ; p} - \\
     - \left( \sum _{n \neq 0} \left( \left( 1 \mp \frac{n}{E_{n}} \right) ^2 E_{n} \right) \bra{0 ; p} \Hat{a}^{\mu} _{1} \zeta _{\mu} (\Hat{a}^{\mu '} _{n})^{\dagger} \Hat{a}^{\nu '} _{n} \eta _{\mu ' \nu '} \zeta _{\nu} (\Hat{a}^{\nu} _{1})^{\dagger} \ket{0 ; p} - \bra{0 ; p} \Hat{a}^{\mu} _{1} \zeta _{\mu} c \zeta _{\nu} (\Hat{a}^{\nu} _{1})^{\dagger} \ket{0 ; p} \right) \Bigg)
 \end{multline*}
+\begin{multline*}
+    M^2 \zeta ^{\mu} \zeta _{\mu} = - \frac{8}{\alpha '} \Bigg( \frac{2 \mu ^2}{\alpha '} \left| \frac{\partial \psi (p)}{\partial p} \right| ^2 \zeta ^{\mu} \zeta _{\mu} - \Bigg( \sum _{n \neq 0} \left( \left( 1 + \frac{n}{E_{n}} \right) ^2 E_{n} \right) \bra{0 ; p} \Hat{a}^{\mu} _{1} \zeta _{\mu} (\Hat{a}^{\mu '} _{n})^{\dagger} \eta ^{\nu ' \nu} \delta _{|n| , 1} \eta _{\mu ' \nu '} \zeta _{\nu} \ket{0 ; p} - c \zeta ^{\mu} \zeta _{\mu} \Bigg) \Bigg)
+\end{multline*}
 \begin{equation*}
-    M^2 \zeta ^{\mu} \zeta _{\mu} = \frac{8}{\alpha '} \left( \frac{2 \mu ^2}{\alpha '} \left| \frac{\partial \psi (p)}{\partial p} \right| ^2 \zeta ^{\mu} \zeta _{\mu} - \left( \left( 1 - \frac{1}{\sqrt{1 + \mu ^2}} \right) ^2 + \left( 1 + \frac{1}{\sqrt{1 + \mu ^2}} \right) ^2 \right) \sqrt{1 + \mu ^2} \zeta ^{\mu} \zeta _{\mu} + c \zeta ^{\mu} \zeta _{\mu} \right)
+    M^2 \zeta ^{\mu} \zeta _{\mu} = - \frac{8}{\alpha '} \left( \frac{2 \mu ^2}{\alpha '} \left| \frac{\partial \psi (p)}{\partial p} \right| ^2 \zeta ^{\mu} \zeta _{\mu} - \left( \left( 1 - \frac{1}{\sqrt{1 + \mu ^2}} \right) ^2 + \left( 1 + \frac{1}{\sqrt{1 + \mu ^2}} \right) ^2 \right) \sqrt{1 + \mu ^2} \zeta ^{\mu} \zeta _{\mu} + c \zeta ^{\mu} \zeta _{\mu} \right)
 \end{equation*}
 \begin{equation*}
-    M^2 = \frac{8}{\alpha '} \left( \frac{2 \mu ^2}{\alpha '} \left| \frac{\partial \psi (p)}{\partial p} \right| ^2 - \left( 1 + \frac{1}{1 + \mu ^2} \right) \sqrt{1 + \mu ^2} + c \right)
+    M^2 = - \frac{8}{\alpha '} \left( \frac{2 \mu ^2}{\alpha '} \left| \frac{\partial \psi (p)}{\partial p} \right| ^2 - \left( 1 + \frac{1}{1 + \mu ^2} \right) \sqrt{1 + \mu ^2} + c \right)
 \end{equation*}
 The auxiliary $\bra{0 ; p} \Hat{\widetilde{L}}_{1 , 0} \zeta _{\mu '} (\Hat{a}^{\mu '} _{1})^{\dagger} \ket{0 ; p} = 0$ condition implies
 \begin{equation*}
@@ -1691,46 +1694,63 @@ The auxiliary $\bra{0 ; p} \Hat{\widetilde{L}}_{1 , 0} \zeta _{\mu '} (\Hat{a}^{
 \end{equation*}
 If the momentum wave function is chosen to be (need to justify this)
 \begin{equation*}
-    \psi (p) = - \frac{\alpha '}{8 \mu} p^{\mu} p_{\mu} ,
+    \psi (p) = \frac{\alpha '}{8 \sqrt{2} \mu} p^{\mu} p_{\mu} ,
 \end{equation*}
 we get that $\zeta _{\mu} p^{\mu} = 0$. Using this in the mass-shell condition for the first excited state yields
 \begin{equation*}
-    \frac{\alpha '}{8} p^2 = - \left( \frac{2 \mu ^2}{\alpha '} \frac{(\alpha ')^2}{16 \mu ^2} p^2 - \left( 1 + \frac{1}{1 + \mu ^2} \right) \sqrt{1 + \mu ^2} + c \right)
+    \frac{\alpha '}{8} p^2 = \frac{2 \mu ^2}{\alpha '} \frac{(\alpha ')^2}{32 \mu ^2} p^2 - \left( 1 + \frac{1}{1 + \mu ^2} \right) \sqrt{1 + \mu ^2} + c
 \end{equation*}
 \begin{equation*}
-    \frac{\alpha '}{4} p^2 = \left( 1 + \frac{1}{1 + \mu ^2} \right) \sqrt{1 + \mu ^2} - c ,
+    \frac{\alpha '}{16} p^2 = c - \left( 1 + \frac{1}{1 + \mu ^2} \right) \sqrt{1 + \mu ^2} ,
 \end{equation*}
 and for the ground state
 \begin{equation*}
-    \frac{\alpha '}{4} p^2 = - c .
+    \frac{\alpha '}{16} p^2 = c
+\end{equation*}
+\begin{equation*}
+    \frac{\alpha '}{16} p^2 = - D \sum _{k > 0} \left( 1 + \frac{k^2}{E_{k} ^2} \right) E_{k} .
 \end{equation*}
 In general, the $n$-th excited state will have momentum given by
 \begin{equation*}
-    \frac{\alpha '}{4} p^2 = \left( 1 + \frac{n^2}{n^2 + \mu ^2} \right) \sqrt{n^2 + \mu ^2} - c
+    \frac{\alpha '}{16} p^2 = c - \left( 1 + \frac{n^2}{n^2 + \mu ^2} \right) \sqrt{n^2 + \mu ^2}
 \end{equation*}
 \begin{equation*}
-    \frac{\alpha '}{4} p^2 = \left( 1 + \frac{n^2}{n^2 + \mu ^2} \right) \sqrt{n^2 + \mu ^2} - D \sum _{k > 0} \left( 1 + \frac{k^2}{E_{k} ^2} \right) E_{k}
+    \frac{\alpha '}{16} p^2 = - D \sum _{k > 0} \left( 1 + \frac{k^2}{E_{k} ^2} \right) E_{k} - \left( 1 + \frac{n^2}{n^2 + \mu ^2} \right) \sqrt{n^2 + \mu ^2} .
 \end{equation*}
-The norm of the states is given by $\zeta _{\mu} \zeta ^{\mu}$, thus if we choose $p$ to lie on the $(0 , 1)$-plane, then the $D - 2$ spacelike polarizations normal to that plane clearly have positive norm. If we choose $c$ such that the $n = d$ , $d = (D - 1)$ (we choose this because the solution only has $n = 0 , 1 , 2 , ... , d$ terms by the $\widetilde{L}$ constraints) excited state is a tachyon with $p^2 > 0$, then $p$ can be taken to have no time component and thus $\zeta$ is time-like with negative norm. If $p^2 < 0$, $p$ can be chosen to ONLY have a time component, leaving $\zeta$ spacelike with positive norm again. At last, if $p^2 = 0$, then $\zeta$ is proportional to $p$ with zero norm. Thus, for the absence of ghosts we require
-\begin{equation*}
-    c \geq \left( 1 + \frac{d^2}{d^2 + \mu ^2} \right) \sqrt{d^2 + \mu ^2} .
-\end{equation*}
-In the boundary case, the $d$-th excited vector state is massless and the rest (including the scalar ground state) are regular massive states (no tachyons!). This analysis, however, is to get spin 1 particles from the closed string. The actual massless particle we want from closed strings is a symmetric spin 2 particle, so let's consider now the state $\zeta _{\mu \nu} (\Hat{a}^{\mu} _{d})^{\dagger} (\Hat{a}^{\nu} _{d})^{\dagger} \ket{0 ; p}$ where $\zeta _{\mu \nu} = \zeta _{\nu \mu}$ with $\eta ^{\mu \nu} \zeta _{\mu \nu}$ is the polarization tensor. The mass-shell is
+Since the norm of these states is given by $\zeta ^{\mu} \zeta _{\mu}$ and $\zeta _{\mu} p^{\mu} = 0$, we see that, in fact, we have no negative norm states since the R.H.S of the above equation is always negative, and the ground state scalar is a non-tachyonic massive particle. This analysis, however, is to get spin 1 particles from the closed string. The actual particle we want from closed strings is a symmetric spin 2 particle, so let's consider now the state $\zeta _{\mu \nu} (\Hat{a}^{\mu} _{d})^{\dagger} (\Hat{a}^{\nu} _{d})^{\dagger} \ket{0 ; p}$ where $\zeta _{\mu \nu} = \zeta _{\nu \mu}$ with $\eta ^{\mu \nu} \zeta _{\mu \nu}$ is the polarization tensor. The mass-shell is
 \begin{multline*}
-    \bra{0 ; p} \Hat{a}^{\alpha} _{d} \Hat{a}^{\beta} _{d} \zeta _{\alpha \beta} \Hat{M}^2 \zeta _{\mu \nu} (\Hat{a}^{\mu} _{d})^{\dagger} (\Hat{a}^{\nu} _{d})^{\dagger} \ket{0 ; p} = \frac{8}{\alpha '} \Bigg( \frac{2 \mu ^2}{\alpha '} \bra{0 ; p} \Hat{a}^{\alpha} _{d} \Hat{a}^{\beta} _{d} \zeta _{\alpha \beta} \Hat{x}^{\mu '} \Hat{x}_{\mu '} \zeta _{\mu \nu} (\Hat{a}^{\mu} _{d})^{\dagger} (\Hat{a}^{\nu} _{d})^{\dagger} \ket{0 ; p} - \\
-    - \Bigg( \sum _{n \neq 0} \left( \left( 1 \mp \frac{n}{E_{n}} \right) ^2 E_{n} \right) \bra{0 ; p} \Hat{a}^{\alpha} _{d} \Hat{a}^{\beta} _{d} \zeta _{\alpha \beta} (\Hat{a}^{\mu '} _{n})^{\dagger} \Hat{a}^{\nu '} _{n} \eta _{\mu ' \nu '} \zeta _{\mu \nu} (\Hat{a}^{\mu} _{d})^{\dagger} (\Hat{a}^{\nu} _{d})^{\dagger} \ket{0 ; p} - \bra{0 ; p} \Hat{a}^{\alpha} _{d} \Hat{a}^{\beta} _{d} \zeta _{\alpha \beta} c \zeta _{\mu \nu} (\Hat{a}^{\mu} _{d})^{\dagger} (\Hat{a}^{\nu} _{d})^{\dagger} \ket{0 ; p} \Bigg) \Bigg)
+    \bra{0 ; p} \Hat{a}^{\alpha} _{d} \Hat{a}^{\beta} _{d} \zeta _{\alpha \beta} \Hat{M}^2 \zeta _{\mu \nu} (\Hat{a}^{\mu} _{d})^{\dagger} (\Hat{a}^{\nu} _{d})^{\dagger} \ket{0 ; p} = - \frac{8}{\alpha '} \Bigg( \frac{2 \mu ^2}{\alpha '} \bra{0 ; p} \Hat{a}^{\alpha} _{d} \Hat{a}^{\beta} _{d} \zeta _{\alpha \beta} \Hat{x}^{\mu '} \Hat{x}_{\mu '} \zeta _{\mu \nu} (\Hat{a}^{\mu} _{d})^{\dagger} (\Hat{a}^{\nu} _{d})^{\dagger} \ket{0 ; p} - \\
+    - \Bigg( \sum _{n \neq 0} \left( \left( 1 + \frac{n}{E_{n}} \right) ^2 E_{n} \right) \bra{0 ; p} \Hat{a}^{\alpha} _{d} \Hat{a}^{\beta} _{d} \zeta _{\alpha \beta} (\Hat{a}^{\mu '} _{n})^{\dagger} \Hat{a}^{\nu '} _{n} \eta _{\mu ' \nu '} \zeta _{\mu \nu} (\Hat{a}^{\mu} _{d})^{\dagger} (\Hat{a}^{\nu} _{d})^{\dagger} \ket{0 ; p} - \bra{0 ; p} \Hat{a}^{\alpha} _{d} \Hat{a}^{\beta} _{d} \zeta _{\alpha \beta} c \zeta _{\mu \nu} (\Hat{a}^{\mu} _{d})^{\dagger} (\Hat{a}^{\nu} _{d})^{\dagger} \ket{0 ; p} \Bigg) \Bigg)
 \end{multline*}
 \begin{equation*}
-    M^2 \zeta _{\mu \nu} \zeta ^{\mu \nu} = \frac{8}{\alpha '} \Bigg( \frac{2 \mu ^2}{\alpha '} \left| \frac{\partial \psi (p)}{\partial p} \right| ^2 \zeta _{\mu \nu} \zeta ^{\mu \nu} - \left( 4 \left( \left( 1 - \frac{d}{\sqrt{d^2 + \mu ^2}} \right) ^2 \sqrt{d^2 + \mu ^2} \right) \zeta _{\mu \nu} \zeta ^{\mu \nu} - c \zeta _{\mu \nu} \zeta ^{\mu \nu} \right) \Bigg)
+    \sum _{n \neq 0} \left( \left( 1 + \frac{n}{E_{n}} \right) ^2 E_{n} \right) \bra{0 ; p} \Hat{a}^{\alpha} _{d} \Hat{a}^{\beta} _{d} \zeta _{\alpha \beta} (\Hat{a}^{\mu '} _{n})^{\dagger} \Hat{a}^{\nu '} _{n} \eta _{\mu ' \nu '} \zeta _{\mu \nu} (\Hat{a}^{\mu} _{d})^{\dagger} (\Hat{a}^{\nu} _{d})^{\dagger} \ket{0 ; p} =
 \end{equation*}
 \begin{equation*}
-    \frac{8}{\alpha '} p^2 = - \Bigg( \frac{2 \mu ^2}{\alpha '} \left| \frac{\partial \psi (p)}{\partial p} \right| ^2 - \left( 4 \left( (d^2 + \mu ^2)^{1/4} - (d^2 + \mu ^2)^{- 1/4} \right) - c \right) \Bigg)
+    = \sum _{n \neq 0} \left( \left( 1 + \frac{n}{E_{n}} \right) ^2 E_{n} \right) \bra{0 ; p} \Hat{a}^{\alpha} _{d} \Hat{a}^{\beta} _{d} \zeta _{\alpha \beta} (\Hat{a}^{\mu '} _{n})^{\dagger} \eta _{\mu ' \nu '} \zeta _{\mu \nu} (\eta ^{\nu ' \mu} \delta _{|n| , |d|} + (\Hat{a}^{\mu} _{d})^{\dagger} \Hat{a}^{\nu '} _{n}) (\Hat{a}^{\nu} _{d})^{\dagger} \ket{0 ; p} =
 \end{equation*}
 \begin{equation*}
-    \frac{\alpha '}{4} p^2 = 4 \left( (d^2 + \mu ^2)^{1/4} - (d^2 + \mu ^2)^{- 1/4} \right) - c
+    = 2 \left( \left( 1 + \frac{d^2}{E_{d} ^2} \right) E_{d} \right) \bra{0 ; p} \Hat{a}^{\alpha} _{d} \Hat{a}^{\beta}_{d} \zeta _{\alpha \beta} (\Hat{a}^{\mu} _{d})^{\dagger} (\Hat{a}^{\nu} _{d})^{\dagger} \zeta _{\mu \nu} \ket{0 ; p} =
 \end{equation*}
 \begin{equation*}
-    \frac{\alpha '}{4} p^2 = 8 \sinh ^2 \left( \frac{1}{4} \ln (d^2 + \mu ^2) \right) - c .
+    = 2 \left( \left( 1 + \frac{d^2}{E_{d} ^2} \right) E_{d} \right) \bra{0 ; p} \Hat{a}^{\alpha} _{d} \zeta _{\alpha \beta} (\eta ^{\beta \mu} + (\Hat{a}^{\mu} _{d})^{\dagger} \Hat{a}^{\beta} _{d}) (\Hat{a}^{\nu} _{d})^{\dagger} \zeta _{\mu \nu} \ket{0 ; p} =
+\end{equation*}
+\begin{equation*}
+    = 4 \left( \left( 1 + \frac{d^2}{E_{d} ^2} \right) E_{d} \right) \bra{0 ; p} \Hat{a}^{\alpha} _{d} (\Hat{a}^{\mu})^{\dagger} \zeta _{\alpha \beta} \zeta _{\mu \nu} \eta ^{\beta \nu} \ket{0 ; p} =
+\end{equation*}
+\begin{equation*}
+    = 4 \left( \left( 1 + \frac{d^2}{E_{d} ^2} \right) E_{d} \right) \zeta _{\mu \nu} \zeta ^{\mu \nu}
+\end{equation*}
+\begin{equation*}
+    M^2 \zeta _{\mu \nu} \zeta ^{\mu \nu} = - \frac{8}{\alpha '} \Bigg( \frac{2 \mu ^2}{\alpha '} \left| \frac{\partial \psi (p)}{\partial p} \right| ^2 \zeta _{\mu \nu} \zeta ^{\mu \nu} - \Bigg( 4 \left( \left( 1 + \frac{d^2}{d^2 + \mu ^2} \right) \sqrt{d^2 + \mu ^2} \right) \zeta _{\mu \nu} \zeta ^{\mu \nu} - c \zeta _{\mu \nu} \zeta ^{\mu \nu} \Bigg) \Bigg)
+\end{equation*}
+\begin{equation*}
+    \frac{\alpha '}{8} p^2 = \Bigg( \frac{2 \mu ^2}{\alpha '} \left| \frac{\partial \psi (p)}{\partial p} \right| ^2 - \left( 4 \left( \left( 1 + \frac{d^2}{d^2 + \mu ^2} \right) \sqrt{d^2 + \mu ^2} \right) - c \right) \Bigg)
+\end{equation*}
+\begin{equation*}
+    \frac{\alpha '}{16} p^2 = c - 4 \left( \left( 1 + \frac{d^2}{d^2 + \mu ^2} \right) \sqrt{d^2 + \mu ^2} \right)
+\end{equation*}
+\begin{equation*}
+    \frac{\alpha '}{16} p^2 = - D \sum _{k > 0} \left( 1 + \frac{k^2}{E_{k} ^2} \right) E_{k} - 4 \left( \left( 1 + \frac{d^2}{d^2 + \mu ^2} \right) \sqrt{d^2 + \mu ^2} \right) .
 \end{equation*}
 Using the auxiliary $\bra{0 ; p} \Hat{\widetilde{L}}_{d , 0} \zeta _{\mu \nu} (\Hat{a}^{\mu} _{d})^{\dagger} (\Hat{a}^{\nu} _{d})^{\dagger} \ket{0 ; p} = 0$ condition implies
 \begin{equation*}
@@ -1761,19 +1781,7 @@ implying that
 \begin{equation*}
     \zeta _{\mu \nu} p^{\mu} = \zeta _{\mu \nu} p^{\nu} = 0 .
 \end{equation*}
-Since the norm of the spin-2 states is given by $\zeta ^{\mu \nu} \zeta _{\mu \nu}$, we need those to not be negative. Since $\zeta$ is symmetric and we work in $(- , + , + , ...)$ signature, $\zeta ^{\mu \nu} \zeta _{\mu \nu} \geq 0$ always hold, so we just need to choose $c$ such that we get at leats 1 massless spin-2 state. For that, we see that
-\begin{equation*}
-    c = 8 \sinh ^2 \left( \frac{1}{4} \ln (d^2 + \mu ^2) \right)
-\end{equation*}
-does the trick for the $d$-th state, and since for the non-existence of ghosts in the spin-1 states we required
-\begin{equation*}
-    c \geq 4 \sinh ^2 \left( \frac{1}{4} \ln (d^2 + \mu ^2) \right) ,
-\end{equation*}
-which is smaller than the condition for the spin-2, so we can safely choose
-\begin{equation*}
-    c \equiv 8 \sinh ^2 \left( \frac{1}{4} \ln (d^2 + \mu ^2) \right) ,
-\end{equation*}
-leaving the $d$-th spin-2 state massless, the rest spin-2 and all spin-1 particles being massive.
+Since the norm of the spin-2 states is given by $\zeta ^{\mu \nu} \zeta _{\mu \nu}$, we need those to not be negative. Since $p^2 < 0$ and $\zeta _{\mu \nu} p^{\mu} = 0$,
 
 The fact that $\zeta _{\mu \nu} = \zeta _{\nu \mu}$ leaves $\zeta _{\mu \nu}$ with $D (D + 1) / 2$ independent components. The traceless condition $\eta ^{\mu \nu} \zeta _{\mu \nu} = 0$ takes out 1 from that, leaving $(D (D + 1) / 2) - 1$ allowed polarizations. Finally, the condition $\zeta _{\mu \nu} p ^{\mu} = 0$ takes $D$ out of those, leaving $(D (D - 1) / 2) - 1$ allowed polarizations.
 \begin{equation*}

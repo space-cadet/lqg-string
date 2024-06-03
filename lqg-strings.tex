@@ -511,11 +511,11 @@ This in actuality will differ from the normal ST literature by a factor of $1 / 
 
 Looking closer at our Virasoro-like \textquotedblleft modes", in particular the $n = p$ condition, we get the mass of the string in terms of its vibrational modes and center of mass position
 \begin{multline} \label{eqn:string-rest-mass-classical-1}
-	M^2 = - p^{\mu} p_{\mu} = - \frac{4}{\alpha '} \Bigg( \sum _{n \neq 0} \left( \left( 1 + \frac{n}{E_{n}} \right) ^2 \widetilde{L}_{n , n} \right) - \\
+	M^2 = - p^{\mu} p_{\mu} = \frac{4}{\alpha '} \Bigg( \sum _{n \neq 0} \left( \left( 1 + \frac{n}{E_{n}} \right) ^2 \widetilde{L}_{n , n} \right) - \\
 	- \frac{2 \mu ^2}{\alpha '} x^{\mu} x_{\mu} \Bigg) =
 \end{multline}
 \begin{multline} \label{eqn:string-rest-mass-classical-2}
-	= - \frac{4}{\alpha '} \Bigg( \sum _{n \neq 0} \left( \left( 1 + \frac{n}{E_{n}} \right) ^2 \alpha ^{\mu} _{n} (\alpha ^{\nu} _{n})^{*} \eta _{\mu \nu} \right) - \\
+	= \frac{4}{\alpha '} \Bigg( \sum _{n \neq 0} \left( \left( 1 + \frac{n}{E_{n}} \right) ^2 \alpha ^{\mu} _{n} (\alpha ^{\nu} _{n})^{*} \eta _{\mu \nu} \right) - \\
 	- \frac{2 \mu ^2}{\alpha '} x^{\mu} x_{\mu} \Bigg) .
 \end{multline}
 
@@ -540,7 +540,7 @@ to calculate the bracket relations between the expansion modes $\alpha ^{\mu} _{
 	\left\{ \alpha ^{\mu} _{n} , \alpha ^{\nu} _{p} \right\} = 0 = \left\{ (\alpha ^{\mu} _{n})^{*} , (\alpha ^{\nu} _{p})^{*} \right\}
 \end{equation}
 \begin{equation} \label{eqn:expansion-modes-bracket-1}
-	\left\{ \alpha ^{\mu} _{n} , (\alpha ^{\nu} _{p})^{*} \right\} = - i E_{m} \delta _{|m| , |p|} \eta ^{\mu \nu} = - \left\{ (\alpha ^{\mu} _{n})^{*} , \alpha ^{\nu} _{p} \right\} ,
+	\left\{ \alpha ^{\mu} _{n} , (\alpha ^{\nu} _{p})^{*} \right\} = - i E_{n} \delta _{|n| , |p|} \eta ^{\mu \nu} ,
 \end{equation}
 from which we can normalize the expansion modes to get harmonic oscillator modes and bracket relations
 \begin{align}
@@ -592,7 +592,7 @@ For $p = 0$ we have center of mass position and momentum, so the vacuum has extr
 \end{align}
 in position representation and
 \begin{align}
-	\Hat{x}^{\mu} \ket{0 ; p} & = i \frac{\del}{\del p_{\mu}} \ket{0 ; p} \label{eqn:x-vacuum-p} \\
+	\Hat{x}^{\mu} \ket{0 ; p} & = - i \frac{\del}{\del p_{\mu}} \ket{0 ; p} \label{eqn:x-vacuum-p} \\
 	\Hat{p}_{\mu} \ket{0 ; p} & = p_{\mu} \ket{0 ; p} \label{eqn:p-vacuum-p}
 \end{align}
 in momentum representation.
@@ -629,9 +629,10 @@ for some constant $a$. Classically, we had eq (\ref{eqn:string-rest-mass-classic
 	- \left( \sum _{n \neq 0} \left( \left( 1 + \frac{n}{E_{n}} \right) ^2 E_{n} (\Hat{a}^{\mu} _{n})^{\dagger} \Hat{a}^{\nu} _{n} \eta _{\mu \nu} \right) - a \right) \Bigg) .
 \end{multline}
 This constant can be calculated by imposing normal-ordering on the summed constraint since $n \in (- d , d)$ is finite, and the result is
-\begin{equation}
-	a = D \sum _{n \neq 0} \left( 1 + \frac{n}{E_{n}} \right) ^2 E_{n} .
-\end{equation}
+\begin{multline}
+	a = - D \sum _{n \neq 0} \left( 1 + \frac{n}{E_{n}} \right) ^2 E_{n} = \\
+	= - D \sum _{n > 0} \left( 1 + \frac{n^2}{E_{n} ^2} \right) E_{n} .
+\end{multline}
 
 The commutation relations between the constraints are inherited by the Poisson brackets
 \begin{align}
@@ -666,12 +667,12 @@ Next, by calculating the vacuum expectation value (VEV) of the commutator \eqref
 
 Let us denote the ground state with momentum $p^{\mu}$ by $\ket{0 ; p}$. Then, the mass-shell condition \eqref{eqn:shifted-mass-spectrum} implies that
 \begin{equation} \label{eqn:ground-state-mass-shell}
-	\frac{\alpha '}{8} p^2 = - \left( \frac{2 \mu ^2}{\alpha '} \left| \frac{\partial \psi (p)}{\partial p} \right| ^2 + a \right) .
+	\frac{\alpha '}{8} p^2 = \frac{2 \mu ^2}{\alpha '} \left| \frac{\partial \psi (p)}{\partial p} \right| ^2 + a .
 \end{equation}
-Next we look at the $n$-th excited state $\zeta _{\mu} (\Hat{a}^{\mu} _{d})^{\dagger}$ with $\zeta _{\mu} = \zeta _{\mu} (p)$ being the polarization covector. The mass-shell now reads
+Next we look at the $n$-th excited vector state $\zeta _{\mu} (\Hat{a}^{\mu} _{n})^{\dagger}$ with $\zeta _{\mu} = \zeta _{\mu} (p)$ being the polarization covector. The reason we consider closed string vector states unlike normal String Theory is that in our model, the closed string solution doesn't have independent left and right sectors, thus permitting spin-1 states. We'll discuss these closed string single excitation states in section \ref{sec:discussion}. The mass-shell now reads
 \begin{multline} \label{eqn:nth-state-mass-shell}
-	\frac{\alpha '}{8} M^2 = - \Bigg( \frac{2 \mu ^2}{\alpha '} \left| \frac{\partial \psi (p)}{\partial p} \right| ^2 - \\
-	- 4 \sinh ^2 \left( \frac{1}{4} \ln (n^2 + \mu ^2) \right) + a \Bigg) ,
+	\frac{\alpha '}{8} M^2 = \Bigg( \frac{2 \mu ^2}{\alpha '} \left| \frac{\partial \psi (p)}{\partial p} \right| ^2 - \\
+	- \left( 1 + \frac{n^2}{n^2 + \mu ^2} \right) \sqrt{n^2 + \mu ^2} + a \Bigg) ,
 \end{multline}
 while the auxiliary $\bra{0 ; p} \Hat{\widetilde{L}}_{n , 0} \zeta _{\mu '} (\Hat{a}^{\mu '} _{d})^{\dagger} \ket{0 ; p} = 0$ implies that
 \begin{equation} \label{eqn:zeta-p-psi}
@@ -679,29 +680,40 @@ while the auxiliary $\bra{0 ; p} \Hat{\widetilde{L}}_{n , 0} \zeta _{\mu '} (\Ha
 \end{equation}
 If the momentum wave-function is taken to be
 \begin{equation} \label{eqn:p-wave-function}
-	\psi (p) = - \frac{\alpha '}{8 \mu} p^{\mu} p_{\mu} ,
+	\psi (p) = - \frac{\alpha '}{8 \sqrt{2} \mu} p^{\mu} p_{\mu} ,
 \end{equation}
 eq \eqref{eqn:zeta-p-psi} reduces to $\zeta _{\mu} p^{\mu} = 0$. Putting this back in the mass-shell yields
 \begin{equation} \label{eqn:ground-state-mass-shell-simplified}
-	\frac{\alpha '}{4} p^2 = - a
+	\frac{\alpha '}{16} p^2 = a = - D \sum _{k > 0} \left( 1 + \frac{k^2}{E_{k} ^2} \right) E_{k}
 \end{equation}
 for the ground state and
-\begin{equation} \label{eqn:nth-mass-shell-simplified}
-	\frac{\alpha '}{4} p^2 = 4 \sinh ^2 \left( \frac{1}{4} \ln (n^2 + \mu ^2) \right) - a
+\begin{multline} \label{eqn:nth-mass-shell-simplified}
+	\frac{\alpha '}{16} p^2 = a - \left( 1 + \frac{n^2}{n^2 + \mu ^2} \right) \sqrt{n^2 + \mu ^2} = \\
+	= - D \sum _{k > 0} \left( 1 + \frac{k^2}{E_{k} ^2} \right) E_{k} - \left( 1 + \frac{n^2}{E_{n} ^{2}} \right) E_{n}
+\end{multline}
+for the $n$-th state. The norm of these states is given by $\zeta _{\mu} \zeta ^{\mu}$, and since by eq \eqref{eqn:nth-mass-shell-simplified} we see that $p^2 < 0$, thus $\zeta ^2 > 0$ always holds and we have no ghosts in the closed string spin-1 spectrum. This analysis, however, is for vector states from the closed string. The actual particle we want from the closed string is a symmetric, traceless spin-2 particle, so let's now consider the state $\zeta _{\mu \nu} (\Hat{a}^{\mu} _{n})^{\dagger} (\Hat{a}^{\nu} _{n})^{\dagger} \ket{0 ; p}$ where $\zeta _{\mu \nu}$ is the polarization tensor. The mass-shell reads
+\begin{equation} \label{eqn:nth-spin-2-mass-shell}
+	\frac{\alpha '}{16} p^2 = - D \sum _{k > 0} \left( 1 + \frac{k^2}{E_{k} ^2} \right) E_{k} - 4 \left( 1 + \frac{n^2}{E_{n} ^{2}} \right) E_{n} .
 \end{equation}
-for the $n$-th state. The norm of these states is given by $\zeta _{\mu} \zeta ^{\mu}$, so if we choose $p^{\mu}$ to lie on the $(0 , 1)$-plane, then the $D - 2$ spacelike polarizations normal to said plane have positive norm. If $a$ is chosen such that the $n = d , d = D - 1$ excited state is a tachyon with $p^2 > 0$, then $p^{\mu}$ can be taken to have no time component, leaving $\zeta _{\mu}$ timelike with negative norm. If the choice is made such that $p^2 < 0$, $p^{\mu}$ can be chosen to have only a time component, making $\zeta _{\mu}$ spacelike with positive norm again. At last, if we choose for $p^2 = 0$, then $\zeta _{\mu}$ is proportional to $p^{\mu}$ with 0 norm, so for the absence of ghosts we require that
-\begin{equation} \label{eqn:c-no-ghost-spin-1}
-	a \geq 4 \sinh ^2 \left( \frac{1}{4} \ln (d^2 + \mu ^2) \right) .
+The auxiliary $\bra{0 ; p} \xi _{\alpha} \Hat{a}^{\alpha} _{n} \Hat{\widetilde{L}}_{n , 0} (\Hat{a}^{\mu} _{n})^{\dagger} (\Hat{a}^{\nu} _{n})^{\dagger} \zeta _{\mu \nu} \ket{0 ; p} = 0$ condition where $\xi _{\alpha}$ is a arbitrary polarization for the auxiliary vector excitation implies that
+\begin{equation} \label{eqn:spin-2-zeta-p=0}
+	(\zeta _{\mu \nu} + \zeta _{\nu \mu}) p^{\mu} = 0 .
 \end{equation}
-In the boundary case, the $d$-th excited vector state is massless and all other vector states (plus the ground state) are regular massive particles with $M^2 > 0$. This, however, is to get a massless vector state for the closed string. The actual massless particle we want from the closed string is a symmetric, traceless spin-2 particle, so let's now consider the state $\zeta _{\mu \nu} (\Hat{a}^{\mu} _{d})^{\dagger} (\Hat{a}^{\nu} _{d})^{\dagger} \ket{0 ; p}$ where $\zeta _{\mu \nu}$ is the polarization tensor. The mass-shell reads
-\begin{equation} \label{eqn:dth-spin-2-mass-shell}
-	\frac{\alpha '}{4} p^2 = 8 \sinh ^2 \left( \frac{1}{4} \ln (d^2 + \mu ^2) \right) - a
+We can decompose the polarization into a symmetric traceless part $G_{\mu \nu}$, an anti-symmetric part $B_{\mu \nu}$ and a trace part $\Phi \eta _{\mu \nu}$ given by
+\begin{align}
+	G_{\mu \nu} & = \frac{1}{2} (\zeta _{\mu \nu} + \zeta _{\nu \mu}) - \frac{1}{D} \eta ^{\alpha \beta} \zeta _{\alpha \beta} \eta _{\mu \nu} \label{eqn:G-zeta} \\
+	B_{\mu \nu} & = \frac{1}{2} (\zeta _{\mu \nu} - \zeta _{\nu \mu}) \label{eqn:B-zeta}                                                                          \\
+	\Phi        & = \frac{1}{D} \eta ^{\alpha \beta} \zeta _{\alpha \beta} \label{eqn:Phi-zeta} ,
+\end{align}
+$\zeta _{\mu \nu} = G_{\mu \nu} + B_{\mu \nu} + \Phi \eta _{\mu \nu}$, giving rise to 3 well-known types of background fields: the spacetime metric $G_{\mu \nu}$, Kalb-Ramond 2-form $B_{\mu \nu}$ and dilaton $\Phi$, all of those having squared mass given by eq \eqref{eqn:nth-spin-2-mass-shell}. We thus see that the symmetric part $S_{\mu \nu} = G_{\mu \nu} + \Phi \eta _{\mu \nu}$ of $\zeta _{\mu \nu}$ is orthogonal to the momentum of the string, $S_{\mu \nu} p^{\mu} = 0$, and since $p^2 < 0$, we can choose a reference frame where $p^{\mu} = (p , 0 , ... , 0)$ only has a time component, leaving us with $S_{0 \nu} = 0$, implying that $\zeta _{0 \nu} = - \zeta _{\nu 0}$. This condition guarantees that the timelike components of $\zeta _{\mu \nu}$ have a positive contribution to its square $\zeta ^{\mu \nu} \zeta _{\mu \nu} = \zeta ^{i j} \zeta _{i j} + b , \ b = \zeta ^{0 i} \zeta _{0 i} > 0$, and the remaining part is spacelike thus must also have positive square, so we get that $\zeta ^{\mu \nu} \zeta _{\mu \nu} > 0$, so we are free of ghosts in the spin-2 spectrum.
+
+It seems we're in trouble since eq \eqref{eqn:nth-spin-2-mass-shell} tells us we have no massless 2 excitation states, but in fact, this is not a problem and is actually expected since quantum geometric effects are expected to violate Lorentz invariance near the Planck scale \cite{Bodendorfer-LQG}, making it so massless particles effectively travel slightly slower than $c$, with corrections on the order of $\sim E_{pl} ^{- 4}$.
+
+The fact that $G_{\mu \nu}$ is symmetric, traceless and satisfies $G_{\mu \nu} p^{\mu} = 0$ leaves it with
+\begin{equation} \label{eqn:G-polarizations}
+	\frac{1}{2} D (D - 1) - 1
 \end{equation}
-and the auxiliary $\bra{0 ; p} \Hat{\widetilde{L}}_{d , 0} \zeta _{\mu \nu} (\Hat{a}^{\mu} _{d})^{\dagger} (\Hat{a}^{\nu} _{d})^{\dagger} \ket{0 ; p}$ together with the momentum wave-function \eqref{eqn:p-wave-function} implies
-\begin{equation}
-	\zeta _{\mu \nu} p^{\mu} = 0 .
-\end{equation}
-We can decompose the polarization into a symmetric traceless part $G_{\mu \nu} = G_{\nu \mu} , \eta ^{\mu \nu} G_{\mu \nu} = 0$, a anti-symmetric part $B_{\mu \nu} = - B_{\nu \mu}$ and a trace part $\Phi \eta _{\mu \nu} , \Phi = \eta ^{\alpha \beta} \zeta _{\alpha \beta} / D$, $\zeta _{\mu \nu} = G_{\mu \nu} + B_{\mu \nu} + \Phi \eta _{\mu \nu}$, giving rise to 3 well-knwon types of background fields: the graviton $G_{\mu \nu}$, Kalb-Ramond 2-form $B_{\mu \nu}$ and dilaton $\Phi$.
+possible polarizations, which shows that indeed those polarizations fit nicely in a representation of $\mathrm{SO} (D - 1 , 1)$, \ie the traceless symmetric tensor representation, thus all our excited spin-2 states are consistent with Lorentz symmetry at the macroscopic scale even tho near the Planck scale they deviate a bit by having an effective mass.
 
 \section{Strings and Quantum Geometry}\label{sec:string-geometry}
 
@@ -881,54 +893,89 @@ where now $S'_{int}[g,h,\mb{X}]$ is a term describing the interaction between th
 
 The expression \eqref{eqn:ws-bimetric-action-v2} is not ideal because it does not retain any memory of the form of the bulk metrics unless these are included in the interaction term $S'_{int}$. One way to manifestly exhibit the dependence of the respective worldsheet actions on the two bulk metrics is to work with the Polaykov action.
 
-Following the general procedure, given in \cite{Callan1985Strings}, we can couple the worldsheet to a bulk metric as follows:
+Following the general procedure given in \cite{Callan1985Strings}, we can couple the worldsheet to a bulk metric as follows:
 \begin{equation}\label{eqn:polyakov-curved}
 	S_{P} = -\frac{T}{2} \int \diff^2 x \sqrt{-g} g^{ab} \partial_a X^\mu \partial_b X^\nu G_{\mu\nu},
 \end{equation}
 where $G_{\mu\nu}$ is now the bulk or target space metric. Using this form we can now write down the worldsheet Polyakov bimetric action for two bulk metrics:
 \begin{align}\label{eqn:polyakov-flat}
-	S_{PB} = & -\frac{T}{2} \int \diff^2 x\sqrt{-g} g^{ab} \partial_a X^\mu \partial_b X^\nu G_{\mu\nu} \nonumber \\
-	         & -\frac{T'}{2} \int \diff^2 x \sqrt{-h} h^{ab} \partial_a X^\mu \partial_b X^\nu H_{\mu\nu}.
+	S_{PB} = & -\frac{T}{2} \int \diff^2 x\sqrt{-g} g^{ab} \partial_a X^\mu \partial_b X^\nu G_{\mu\nu} \nonumber     \\
+	         & -\frac{T'}{2} \int \diff^2 x \sqrt{-h} h^{ab} \partial_a X^\mu \partial_b X^\nu H_{\mu\nu} + \nonumber \\
+	         & + S_{int} [g , h , X].
 \end{align}
 
 \subsection{The Bimetric Polyakov Equations} \label{sec:bimetric-polyakov-eoms}
 
-Following the usual procedure such as the one found in \cite{Tong2009Lectures} with the bulk metric fixed, we find two copies of the string energy-momentum tensor being set to zero, which can be used to find an expression for the auxiliary metrics $g_{c d}$ and $h_{c d}$:
+Following the usual procedure such as the one found in \cite{Tong2009Lectures}, we find two copies of the string energy-momentum tensor:
 \begin{equation} \label{eqn:variation-wrt-g}
-	\frac{\delta S_{P B}}{\delta g^{c d}} \overset{!}{=} 0
+	\frac{\delta S_{P B}}{\delta g^{c d}} = 0
 \end{equation}
 \begin{multline} \label{eqn:g-em-tensor}
 	T^{(G)} _{c d} := G_{\mu \nu} \bigg( \partial _{c} X^{\mu} \partial _{d} X^{\nu} - \\
-	- \frac{1}{2} g_{c d} g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \bigg) = 0
+	- \frac{1}{2} g_{c d} g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \bigg) = \frac{2}{T} \frac{\delta S_{int}}{\delta g^{c d}} ,
 \end{multline}
-
+and completely analogous for the $H_{\mu \nu}$ metric,
+\begin{equation} \label{eqn:variation-wrt-h}
+	\frac{\delta S_{P B}}{\delta h^{c d}} = 0
+\end{equation}
+\begin{multline} \label{eqn:h-em-tensor}
+	T^{(H)} _{c d} := H_{\mu \nu} \bigg( \partial _{c} X^{\mu} \partial _{d} X^{\mu} - \\
+	- \frac{1}{2} h_{c d} h^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \bigg) = \frac{2}{T'} \frac{\delta S_{int}}{\delta h^{c d}} .
+\end{multline}
+If we assume no interaction term $S_{int} = 0$, we get the expected expressions for the auxiliary metrics $g_{c d}$ and $h_{c d}$ as in
 \begin{equation} \label{eqn:g-expression}
 	g_{c d} = 2 f^{(G)} \partial _{c} X^{\mu} \partial _{d} X^{\nu} G_{\mu \nu} ,
 \end{equation}
 where the function $f^{(G)}$ is given by
 \begin{equation} \label{eqn:g's-f-function}
-	\frac{1}{f^{(G)}} = g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu},
+	\frac{1}{f^{(G)}} = g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu}
 \end{equation}
-and completely analogously for the $H_{\mu \nu}$ metric,
-\begin{equation} \label{eqn:variation-wrt-h}
-	\frac{\delta S_{P B}}{\delta h^{c d}} \overset{!}{=} 0
-\end{equation}
-\begin{multline} \label{eqn:h-em-tensor}
-	T^{(H)} _{c d} := H_{\mu \nu} \bigg( \partial _{c} X^{\mu} \partial _{d} X^{\mu} - \\
-	- \frac{1}{2} h_{c d} h^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \bigg) = 0
-\end{multline}
+and for $h_{c d}$
 \begin{equation} \label{eqn:h-expression}
 	h_{c d} = 2 f^{(H)} \partial _{c} X^{\mu} \partial _{d} X^{\nu} H_{\mu \nu} ,
 \end{equation}
-with
+with $f^{(H)}$ given by
 \begin{equation} \label{eqn:h's-f-function}
 	\frac{1}{f^{(H)}} = h^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} H_{\mu \nu} .
 \end{equation}
-
-As for the embbeding fields equation, we get a non-homogeneous wave equation for the coupled metric
-\begin{equation} \label{eqn:variation-wrt-X}
-	\frac{\delta S_{P B}}{\delta X^{\lambda}} \overset{!}{=} 0
+If the auxiliary metrics $g_{c d}$ and $h_{c d}$ coincide with the pullback metrics from $G_{\mu \nu}$ and $H_{\mu \nu}$, the action with no interaction reduces to
+\begin{equation} \label{eqn:double-NG-action}
+	S = - T \int \diff ^2 x \sqrt{- g} - T' \int \diff ^2 x \sqrt{- h} ,
 \end{equation}
+and from here we note that if $T' = - T k \Delta / 2$ and $h = g^{-1}$, we recover the Nambu-Goto area-corrected action \eqref{eqn:modified-NG-action}
+\begin{equation} \label{eqn:area-corrected-NG-from-bimetric}
+	S = - T \int \diff ^2 x \left( \sqrt{- g} - \frac{1}{2} \frac{k \Delta}{\sqrt{- g}} \right) .
+\end{equation}
+The condition $h = g^{-1}$ can be achieved by
+\begin{equation} \label{eqn:h=SgS}
+	h_{a b} = S_{a c} g^{c d} S_{d b}
+\end{equation}
+where $S \in \mathrm{SL} (2 , \C)$ with $S^{\dagger} = S$. This implies that
+\begin{multline} \label{eqn:SgS-implication}
+	\left( \delta _{a} ^{c'} \delta _{b} ^{d'} H_{\mu \nu} - \frac{1}{2 g} S_{a c} \varepsilon ^{c c'} S_{d b} \varepsilon ^{d d'} G_{\mu \nu} \right) \times \\
+	\times \del _{c'} X^{\mu} \del _{d'} X^{\nu} = 0 ,
+\end{multline}
+which can be achieved by choosing
+\begin{equation} \label{eqn:S=sigma_y}
+	S_{a c} = i \varepsilon _{a c} = - \sigma _{y} ,
+\end{equation}
+thus leading us to
+\begin{equation} \label{eqn:H=1/(2g)G}
+	H_{\mu \nu} = \frac{1}{2 g} G_{\mu \nu} .
+\end{equation}
+
+As for the embedding fields equation, continuing to assume no interaction term we get a non-homogeneous wave equation for the coupled metric $F^{a b} _{\mu \nu} = T \sqrt{- g} g^{a b} G_{\mu \nu} + T' \sqrt{- h} h^{a b} H_{\mu \nu}$
+\begin{equation} \label{eqn:variation-wrt-X}
+	\frac{\delta S_{P B}}{\delta X^{\lambda}} = 0
+\end{equation}
+\begin{equation} \label{eqn:bimetric-X-eom}
+	\partial _{a} \left( F^{a b} _{\mu \lambda} \partial _{b} X^{\mu} \right) = \frac{1}{2} \partial _{\lambda} F^{a b} _{\mu \nu} \partial _{a} X^{\mu} \partial _{b} X^{\nu} ,
+\end{equation}
+whereby assuming the conditions for $h = g^{-1}$ \eqref{eqn:h=SgS} and \eqref{eqn:S=sigma_y} and flat background $G_{\mu \nu} = \eta _{\mu \nu}$ gets simplified to
+\begin{equation} \label{eqn:bimetric-X-eom-simplified-1}
+	\del _{a} \left( \left( 1 - \frac{k \Delta}{2 (- g)} \right) \sqrt{- g} g^{a b} \del _{b} X^{\mu} \right) = 0 ,
+\end{equation}
+which in conformal gauge $g_{a b} = \e ^{\phi (x)} \eta _{a b}$ simplifies further to eq \eqref{eqn:X-eom-simplified} derived in section \ref{sec:inverse-metric-Polyakov}. In fact, if we plug in the conditions \eqref{eqn:h=SgS} and \eqref{eqn:S=sigma_y} and $T' = - T k \Delta / 2$ into the bimetric Polyakov action \eqref{eqn:polyakov-flat} we recover precisely the action \eqref{eqn:inverse-metric-Polyakov} of section \ref{sec:inverse-metric-Polyakov}, thus showing that the form of area corrected Polyakov action discussed there can be cast as a special case of the interactionless bimetric string.
 
 \bibliographystyle{JHEP3}
 
