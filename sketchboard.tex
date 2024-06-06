@@ -450,11 +450,14 @@ Start from Nambu-Goto action
 \end{equation*}
 and make quantum geometry correction
 \begin{equation*}
-    \sqrt{- h} \rightarrow \sqrt{- (h + g \Delta)} \approx \sqrt{- h} \left( 1 - \frac{g \Delta}{2 (- h)} + \mathcal{O} \left( \frac{g^2}{h^2} \right) \right) ,
+    \sqrt{- h} \rightarrow \sqrt{- (h + g \Delta (x))} \approx \sqrt{- h} \left( 1 - \frac{g \Delta (x)}{2 (- h)} + \mathcal{O} \left( \frac{g^2}{h^2} \right) \right) ,
+\end{equation*}
+\begin{equation*}
+    \Delta (x) \rightarrow \Delta (x ') = J^2 \Delta (x) , \ \Delta = \det (\Delta _{a b})
 \end{equation*}
 leading to modified NG action
 \begin{equation*}
-    S_{M N G} = - T \int \diff ^2 x \left( \sqrt{- h} - \frac{g \Delta}{2 \sqrt{- h}} \right) = S_{N G} + S_{I A}
+    S_{M N G} = - T \int \diff ^2 x \left( \sqrt{- h} - \frac{g \Delta (x)}{2 \sqrt{- h}} \right) = S_{N G} + S_{I A}
 \end{equation*}
 \begin{equation*}
     \downarrow
@@ -464,6 +467,14 @@ leading to modified NG action
 \end{equation*}
 
 \subsubsection{EoMs}
+
+\begin{align*}
+    \frac{\delta S_{M N G}}{\delta \Delta ^{a b}} & = - \frac{T g}{2 \sqrt{- h}} \frac{\del \Delta}{\del \Delta ^{a b}} = \\
+                                                  & = - \frac{T g}{2 \sqrt{- h}} \Delta \Delta _{a b} = 0
+\end{align*}
+\begin{equation*}
+    \frac{g \Delta}{\sqrt{- h}} \Delta _{a b} = 0
+\end{equation*}
 
 Let $\PS ^{\tau} _{\mu} \equiv \partial \Lagr _{M N G} / \partial \Dot{X}^{\mu}$ and $\PS ^{\sigma} _{\mu} \equiv \partial \Lagr _{M N G} / \partial X^{\prime \mu}$
 
@@ -680,37 +691,29 @@ If the auxiliary metrics $g$ and $h$ concide with the induced metrics from $G$ a
 \begin{equation*}
     S = - T \int \diff ^2 x \sqrt{- g} - T' \int \diff ^2 x \sqrt{- h} ,
 \end{equation*}
-where if $T' = - T k \Delta / 2$ and $h = g^{-1}$ we recover the NG area corrected action
+where if $T' = - T k / 2$ and $h = \Delta ^{2} / g$ we recover the NG area corrected action
 \begin{equation*}
     S = - T \int \diff ^2 x \left( \sqrt{- g} - \frac{k \Delta}{2 \sqrt{- g}} \right) .
 \end{equation*}
-The condition $h = g^{-1}$ can be achieved by
+The condition $h = \Delta ^{2} / g$ can be achieved by
 \begin{equation*}
-    h_{a b} = S_{a c} g^{c d} T_{d b} ,
-\end{equation*}
-where $S , T \in \mathrm{SL}(2 , \mathbb{C})$, so we have a gauge freedom in choosing $h_{a b}$. Since we require $[h_{a b}] = [h_{a b}]^{\dagger}$ ($h_{a b}$ must be symmetric and real), this means $[T_{d b}] = [S_{d b}]^{\dagger}$ and also that $[S_{a b}]^{\dagger} = [S_{a b}]$, thus
-\begin{equation*}
-    h_{a b} = S_{a c} g^{c d} S_{d b}.
-\end{equation*}
-This restriction constrains our gauge group to just the boosts part of $\mathrm{SL}(2 , \mathbb{C})$,
-\begin{equation*}
-    S = \e ^{- n^{i} \sigma _{i} \beta} .
+    h_{a b} = \Delta _{a c} \Delta _{b d} g^{c d} .
 \end{equation*}
 This also implies
 \begin{align*}
-    \partial _{a} X^{\mu} \partial _{b} X^{\nu} H_{\mu \nu}                                       & = S_{a c} g^{c d} S_{d b} =                                                                                                                      \\
-                                                                                                  & = S_{a c} \left( \frac{1}{2 g} \varepsilon ^{c c'} \varepsilon ^{d d'} g_{c' d'} \right) S_{d b} =                                               \\
-    \delta _{a} ^{c'} \delta _{b} ^{d'} \partial _{c'} X^{\mu} \partial _{d'} X^{\nu} H_{\mu \nu} & = S_{a c} \left( \frac{1}{2 g} \varepsilon ^{c c'} \varepsilon ^{d d'} \partial _{c'} X^{\mu} \partial _{d'} X^{\nu} G_{\mu \nu} \right) S_{d b}
+    \partial _{a} X^{\mu} \partial _{b} X^{\nu} H_{\mu \nu}                                       & = \Delta _{a c} \Delta _{b d} g^{c d} =                                                                                                                      \\
+                                                                                                  & = \Delta _{a c} \Delta _{b d} \left( \frac{1}{2 g} \varepsilon ^{c c'} \varepsilon ^{d d'} g_{c' d'} \right) =                                               \\
+    \delta _{a} ^{c'} \delta _{b} ^{d'} \partial _{c'} X^{\mu} \partial _{d'} X^{\nu} H_{\mu \nu} & = \Delta _{a c} \Delta _{b d} \left( \frac{1}{2 g} \varepsilon ^{c c'} \varepsilon ^{d d'} \partial _{c'} X^{\mu} \partial _{d'} X^{\nu} G_{\mu \nu} \right)
 \end{align*}
 \begin{equation*}
-    \left( \delta _{a} ^{c'} \delta _{b} ^{d'} H_{\mu \nu} - \frac{1}{2 g} S_{a c} \varepsilon ^{c c'} S_{d b} \varepsilon ^{d d'} G_{\mu \nu} \right) \del _{c'} X^{\mu} \del _{d'} X^{\nu} = 0 .
+    \left( \delta _{a} ^{c'} \delta _{b} ^{d'} H_{\mu \nu} - \frac{1}{2 g} \Delta _{a c} \varepsilon ^{c c'} \Delta _{b d} \varepsilon ^{d d'} G_{\mu \nu} \right) \del _{c'} X^{\mu} \del _{d'} X^{\nu} = 0 .
 \end{equation*}
-One way this can hold is if the expression in parenthesis is equal to 0, which can be achieved if we choose $S = i \varepsilon$, leaving us with
+One way this can hold is if the expression in parenthesis is equal to 0, which can be achieved if $\Delta _{a c} = \sqrt{\Delta} \varepsilon _{a c}$ and also
 \begin{equation*}
-    \delta _{a} ^{c'} \delta _{b} ^{d'} H_{\mu \nu} - \frac{1}{2 g} \delta _{a} ^{c'} \delta _{b} ^{d'} G_{\mu \nu} = 0
+    \delta _{a} ^{c'} \delta _{b} ^{d'} H_{\mu \nu} - \frac{\Delta}{2 g} \delta _{a} ^{c'} \delta _{b} ^{d'} G_{\mu \nu} = 0
 \end{equation*}
 \begin{equation*}
-    H_{\mu \nu} = \frac{1}{2 g} G_{\mu \nu} .
+    H_{\mu \nu} = \frac{\Delta}{2 g} G_{\mu \nu} .
 \end{equation*}
 
 \begin{align*}
@@ -728,9 +731,9 @@ One way this can hold is if the expression in parenthesis is equal to 0, which c
 \begin{equation*}
     F^{a b} _{\mu \nu} = T \sqrt{- g} g^{a b} G_{\mu \nu} + T' \sqrt{- h} h^{a b} H_{\mu \nu} .
 \end{equation*}
-Assuming the condition for $h = g^{-1}$ and flat background $G_{\mu \nu} = \eta _{\mu \nu}$, the EoM reduces to
+Assuming the condition for $h = \Delta ^2 / g$, $T' = - T k / 2$ and flat background $G_{\mu \nu} = \eta _{\mu \nu}$, the EoM reduces to
 \begin{equation*}
-    \partial _{a} \left( \left( \sqrt{- g} g^{a b} - \frac{k \Delta}{4 g} \sqrt{- g}^{-1} (i \varepsilon ^{a c}) g_{c d} (i \varepsilon ^{d b}) \right) \partial _{b} X^{\mu} \right) = 0
+    \partial _{a} \left( \left( \sqrt{- g} g^{a b} - \frac{k \Delta ^2}{4 g} \sqrt{- g}^{-1} (\sqrt{\Delta}^{-1} \varepsilon ^{a c}) (\sqrt{\Delta}^{-1} \varepsilon ^{b d}) g_{c d} \right) \partial _{b} X^{\mu} \right) = 0
 \end{equation*}
 \begin{equation*}
     \del _{a} \left( \left( \sqrt{- g} g^{a b} - \frac{k \Delta}{2 \sqrt{- g}} g^{a b} \right) \del _{b} X^{\mu} \right) = 0
@@ -738,9 +741,9 @@ Assuming the condition for $h = g^{-1}$ and flat background $G_{\mu \nu} = \eta 
 \begin{equation*}
     \del _{a} \left( \left( 1 - \frac{k \Delta}{2 (- g)} \right) \sqrt{- g} g^{a b} \del _{b} X^{\mu} \right) = 0 ,
 \end{equation*}
-which in conformal gauge $g_{a b} = \phi \eta _{a b}$ reduces further
+which in conformal gauge $g_{a b} = \e ^{\phi} \eta _{a b}$ reduces further
 \begin{equation*}
-    \partial _{a} \left( \left( 1 - \frac{k \Delta}{2 \phi ^2} \right) \eta ^{a b} \partial _{b} X^{\mu} \right) = 0
+    \partial _{a} \left( \left( 1 - \frac{k \Delta}{2 \e ^{2 \phi}} \right) \eta ^{a b} \partial _{b} X^{\mu} \right) = 0
 \end{equation*}
 \begin{equation*}
     \eta ^{a b} \partial _{a} \left( F^{-} \partial _{b} X^{\mu} \right) = 0
@@ -751,9 +754,9 @@ which in conformal gauge $g_{a b} = \phi \eta _{a b}$ reduces further
 \begin{equation*}
     \eta ^{a b} \partial _{a} \partial _{b} X^{\mu} + \eta ^{a b} \partial _{a} \ln (F^{-}) \partial _{b} X^{\mu} = 0 .
 \end{equation*}
-This is the exact same equation derived in the next section which leads to the Klein-Gordon eqn. In fact, plugging the condition for $h = g^{-1}$ and $T' = - T k \Delta / 2$ in the action reproduces the action in next section:
+This is the exact same equation derived in the next section which leads to the Klein-Gordon eqn. In fact, plugging the condition for $h = \Delta ^2 / g$ and $T' = - T k / 2$ in the action reproduces the action in next section:
 \begin{equation*}
-    S = - \frac{T}{2} \int \diff ^2 x \sqrt{- g} g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} G_{\mu \nu} + \frac{T k \Delta}{4} \int \diff ^2 x \sqrt{- g}^{-1} (i \varepsilon ^{a c}) g_{c d} (i \varepsilon ^{d b}) \del _{a} X^{\mu} \del _{b} X^{\nu} \frac{G_{\mu \nu}}{2 g} =
+    S = - \frac{T}{2} \int \diff ^2 x \sqrt{- g} g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} G_{\mu \nu} + \frac{T k}{4} \int \diff ^2 x \Delta \sqrt{- g}^{-1} (\sqrt{\Delta}^{-1} \varepsilon ^{a c}) (\sqrt{\Delta}^{-1} \varepsilon ^{b d}) g_{c d} \del _{a} X^{\mu} \del _{b} X^{\nu} \frac{\Delta}{2 g} G_{\mu \nu} =
 \end{equation*}
 \begin{equation*}
     = - \frac{T}{2} \int \diff ^2 x \left( \sqrt{- g} g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} G_{\mu \nu} - \frac{k \Delta}{2 \sqrt{- g}} g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} G_{\mu \nu} \right) =
@@ -773,7 +776,10 @@ Start with Polyakov action
 \end{equation*}
 and make quantum geometry correction
 \begin{equation*}
-    \sqrt{- g} \rightarrow \sqrt{- (g + k \Delta)} \approx \sqrt{- g} \left( 1 + \frac{k \Delta}{2 g} + \mathcal{O} \left( \frac{k^2}{g^2} \right) \right)
+    \sqrt{- g} \rightarrow \sqrt{- (g + k \Delta (x))} \approx \sqrt{- g} \left( 1 + \frac{k \Delta (x)}{2 g} + \mathcal{O} \left( \frac{k^2}{g^2} \right) \right) ,
+\end{equation*}
+\begin{equation*}
+    \Delta (x) \rightarrow \Delta (x') = J^2 \Delta (x) , \ \Delta = \det (\Delta _{a b})
 \end{equation*}
 leading to
 \begin{equation*}
@@ -781,6 +787,14 @@ leading to
 \end{equation*}
 
 \subsection{EoMs}
+
+\begin{align*}
+    \frac{\delta S_{I A P}}{\delta \Delta ^{c d}} & = - \frac{T k}{4 \sqrt{- g}} \frac{\del \Delta}{\del \Delta ^{c d}} g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} G_{\mu \nu} = \\
+                                                  & = - \frac{T k}{4 \sqrt{- g}} \Delta \Delta _{c d} g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} G_{\mu \nu} = 0
+\end{align*}
+\begin{equation*}
+    \frac{k \Delta}{\sqrt{- g}} \Delta _{c d} = 0
+\end{equation*}
 
 \begin{align*}
     \frac{\delta S_{I A P}}{\delta g^{c d}} & = \frac{\partial}{\partial g^{c d}} \left( \sqrt{- g} - \frac{k \Delta}{2 \sqrt{- g}} \right) g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} + \left( \sqrt{- g} - \frac{k \Delta}{2 \sqrt{- g}} \right) \delta ^{a} _{c} \delta ^{b} _{d} \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} = \\
@@ -826,15 +840,24 @@ assuming flat background $G_{\mu \nu} = \eta _{\mu \nu}$
     \eta ^{a b} \partial _{a} \partial _{b} X^{\nu} \eta _{\lambda \nu} + \frac{1}{F'} \eta ^{a b} \partial _{a} F' \partial _{b} X^{\nu} \eta _{\lambda \nu} = 0
 \end{equation*}
 \begin{equation*}
-    \eta ^{a b} \partial _{a} \partial _{b} X^{\mu} + \eta ^{a b} \frac{k \Delta \e ^{- 2 \phi (x)} \partial _{a} \phi (x)}{1 - \dfrac{k \Delta \e ^{- 2 \phi (x)}}{2}} \partial _{b} X^{\mu} = 0
+    \eta ^{a b} \partial _{a} \partial _{b} X^{\mu} + \eta ^{a b} \frac{k \Delta \e ^{- 2 \phi} \partial _{a} \phi}{1 - \dfrac{k \Delta \e ^{- 2 \phi}}{2}} \partial _{b} X^{\mu} - \eta ^{a b} \frac{1}{\left( 1 - \dfrac{k \Delta}{2 \e ^{2 \phi}} \right)} \frac{k \partial _{a} \Delta}{2 \e ^{2 \phi}} \del _{b} X^{\mu} = 0
 \end{equation*}
 \begin{equation*}
-    \eta ^{a b} \partial _{a} \partial _{b} X^{\mu} + \eta ^{a b} \frac{k \Delta \partial _{a} \phi (x)}{\e ^{2 \phi (x)} - \dfrac{k \Delta}{2}} \partial _{b} X^{\mu} = 0
+    \eta ^{a b} \partial _{a} \partial _{b} X^{\mu} + \eta ^{a b} \frac{k \Delta \partial _{a} \phi}{\e ^{2 \phi} - \dfrac{k \Delta}{2}} \partial _{b} X^{\mu} - \eta ^{a b} \frac{\partial _{a} \Delta}{\dfrac{2 \e ^{2 \phi}}{k} - \Delta} \del _{b} X^{\mu} = 0
 \end{equation*}
 \begin{equation*}
-    \eta ^{a b} \partial _{a} \partial _{b} X^{\mu} + 2 \eta ^{a b} \frac{\partial _{a} \phi (x)}{\dfrac{2 \e ^{2 \phi (x)}}{k \Delta} - 1} \partial _{b} X^{\mu} = 0 .
+    \eta ^{a b} \partial _{a} \partial _{b} X^{\mu} + \eta ^{a b} \frac{\left( 2 \del _{a} \phi - \del _{a} \ln (\Delta) \right)}{\dfrac{2 \e ^{2 \phi}}{k \Delta} - 1} \del _{b} X^{\mu} = 0
 \end{equation*}
-This reveals a wave eqn sourced by a coupling between the conformal factor and the tangent vectors to the string, which could hint towards a connection between the conformal factor and the dilaton field... perhaps $\phi (x)$ can be viewed as a \textquotedblleft WS dilaton"? Perhaps, relating to the analysis of emergent dimensions in next section, the conformal factor is a WS dilaton which sets the string scale, which in turn dictates how the extra massive dimensions are hidden since they are inaccessible until they become effectively massless, but the WS still sees them all.
+\begin{equation*}
+    \eta ^{a b} \partial _{a} \partial _{b} X^{\mu} + \eta ^{a b} \frac{\del _{a} \left( 2 \phi - \ln (\Delta) \right)}{\dfrac{2 \e ^{2 \phi}}{k \Delta} - 1} \del _{b} X^{\mu} = 0
+\end{equation*}
+\begin{equation*}
+    \eta ^{a b} \partial _{a} \partial _{b} X^{\mu} + \eta ^{a b} \frac{\del _{a} \left( \ln (\e ^{2 \phi}) - \ln (\Delta) \right)}{\dfrac{2 \e ^{2 \phi}}{k \Delta} - 1} \del _{b} X^{\mu} = 0
+\end{equation*}
+\begin{equation*}
+    \eta ^{a b} \partial _{a} \partial _{b} X^{\mu} + \eta ^{a b} \frac{\del _{a} \ln \left( \e ^{2 \phi} / \Delta \right)}{\dfrac{2 \e ^{2 \phi}}{k \Delta} - 1} \del _{b} X^{\mu} = 0
+\end{equation*}
+This reveals a wave eqn sourced by a coupling between the conformal factor $\phi$, quantum of area field $\Delta$ and the tangent vectors to the string, which could hint towards a connection between the conformal factor and the dilaton field... perhaps $\phi (x)$ can be viewed as a \textquotedblleft WS dilaton"? Perhaps, relating to the analysis of emergent dimensions in next section, the conformal factor is a WS dilaton which sets the string scale, which in turn dictates how the extra massive dimensions are hidden since they are inaccessible until they become effectively massless, but the WS still sees them all.
 
 Going back to the equation before plugging in the definition of $F'$, we can simplify it as
 \begin{equation*}
@@ -898,13 +921,10 @@ gives us a way to relate the mass $m$ directly to the discrete geometry paramete
     \frac{i}{F'} (E \partial _{\tau} F' - p \partial _{\sigma} F') = - m^2
 \end{equation*}
 \begin{equation*}
-    \frac{i k \Delta \e ^{- 2 \phi}}{1 - \dfrac{k \Delta \e ^{- 2 \phi}}{2}} (E \partial _{\tau} \phi - p \partial _{\sigma} \phi) = - m^2
+    \frac{i}{\dfrac{2 \e ^{2 \phi}}{k \Delta} - 1} \left( E \del _{\tau} (2 \phi - \ln (\Delta)) - p \del _{\sigma} (2 \phi - \ln (\Delta)) \right) = - m^2
 \end{equation*}
 \begin{equation*}
-    \frac{2 i}{\dfrac{2 \e ^{2 \phi}}{k \Delta} - 1} (E \partial _{\tau} \phi - p \partial _{\sigma} \phi) = - m^2
-\end{equation*}
-\begin{equation*}
-    m^2 = \frac{2 i}{\dfrac{2 \e ^{2 \phi}}{k \Delta} - 1} (p \partial _{\sigma} \phi - E \partial _{\tau} \phi) .
+    \frac{i}{\dfrac{2 \e ^{2 \phi}}{k \Delta} - 1} \left( p \del _{\sigma} \ln \left( \e^{2 \phi} / \Delta \right) - E \del _{\tau} \ln \left( \e^{2 \phi} / \Delta \right) \right) = m^2 .
 \end{equation*}
 
 \newpage
