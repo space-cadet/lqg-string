@@ -274,27 +274,27 @@ is nothing more than the \emph{area} of the string worldsheet. So when we are co
 \begin{equation*}
 	\sqrt{- h} \rightarrow \sqrt{- (h + g \Delta)}.
 \end{equation*}
-Here, $g = l_{pl}/l_s$, where $l_{pl}$ is the Planck scale, the scale at which quantum geometric effects become important; $l_s$ is the string scale where quantum geometric effects due to area quantization become small; $\Delta$ is a constant which corresponds to the square of the minimal quantum of area. In the limit that $l_s \gg l_{pl}$, $g \ll 1$ and the string action reduces to the conventional Nambu-Goto action with small corrections coming from quantum geometry. In this limit we can expand the integrand as follows:
+Here, $g = l_{pl}/l_s$, where $l_{pl}$ is the Planck scale, the scale at which quantum geometric effects become important; $l_s$ is the string scale where quantum geometric effects due to area quantization become small; $\Delta$ is a scalar density of weight 2 which can be taken to be the determinant of some worldsheet tensor $\Delta _{a b} (x)$ and corresponds to the square of the quantum of area at the point $x$ where the spin foam pierces the WS. In the limit that $l_s \gg l_{pl}$, $g \ll 1$ and the string action reduces to the conventional Nambu-Goto action with small corrections coming from quantum geometry. In this limit we can expand the integrand as follows:
 \begin{equation} \label{eqn:inverse-metric-correction}
 	\sqrt{- (h + g \Delta)} \sim \sqrt{- h}\left(1 - \frac{1}{2} \frac{g \Delta}{(- h)} + \mc{O}(g^2/h^2)\right).
 \end{equation}
-Presumably the limit $g \ll 1$ corresponds to when the area of the string worldsheet is large compared to $\sqrt{h} \gg \Delta$. Thus in this limit $ g^2 \ll 1$ and $ h^2 \gg 1$ because of which we can drop the $\mc{O}(g^2/h^2)$ corrections. The final area corrected Nambu-Goto action becomes:
+Presumably the limit $g \ll 1$ corresponds to when the area of the string worldsheet is large compared to $\Delta$, $h \gg \Delta$. Thus in this limit $ g^2 \ll 1$ and $ h^2 \gg 1$ because of which we can drop the $\mc{O}(g^2/h^2)$ corrections. The final area corrected Nambu-Goto action becomes:
 \begin{equation} \label{eqn:modified-NG-action}
 	S'_{NG} = -T \int \diff ^2 x \left( \sqrt{- h} - \frac{1}{2} \frac{g \Delta}{\sqrt{- h}} \right).
 \end{equation}
-This action has, to the best of our knowledge, not been explored in the string theory literature. However, such an inverse area term arises very naturally in the LQG approach and goes by the name of ``inverse triad'' corrections, in the context of the 3D volume of spatial hypersurfaces.
+This action has, to the best of our knowledge, not been explored in the string theory literature. However, such an inverse determinant term arises very naturally in the LQG approach and goes by the name of ``inverse triad'' corrections, in the context of the 3D volume of spatial hypersurfaces.
 
-The action eq \eqref{eqn:modified-NG-action} has manifest background Poincaré invariance since just like the regular Nambu-Goto action, all its terms are derivatives of $X^{\mu}$ with all indices contracted, thus are Lorentz scalars. It also does not appear to satisfy diffeomorphism invariance of the string worldsheet because of the second term. Given that we are assuming the existence of a minimum quantum of area, it is obvious that diffeomorphism invariance, at least in the classical sense, will no longer be an exact symmetry of the theory. Moreover, if we look at that expression we see that it can be written as:
+The action eq \eqref{eqn:modified-NG-action} has manifest background Poincaré invariance since just like the regular Nambu-Goto action since all its terms are derivatives of $X^{\mu}$ with all Lorentz indices contracted, thus are Lorentz scalars. At first glance it might seem to not be WS reparameterization invariant because of the second term, however, this is corrected by the fact that $\Delta$ is a scalar \emph{density} of weight 2, thus counteracting the inverse metric determinant. Moreover, if we look at that expression we see that it can be written as:
 \begin{equation} \label{eqn:modified-NG-action-v2}
 	S'_{NG}[h_{ab}] = -T \int \diff ^2 x \left( \sqrt{- h} - \frac{1}{2} {g \Delta}{\sqrt{- (h^{-1})}} \right),
 \end{equation}
 where $h^{-1}$ is now the determinant of the \emph{inverse} metric $h^{ab}$. As such, in the expression \eqref{eqn:modified-NG-action} we can see a duality between the first and second terms. If we replace the metric $h_{ab}$ by its inverse $h'_{ab} \equiv h^{ab}$, then the action in terms of $h'_{ab}$ is the same as \eqref{eqn:modified-NG-action}, but with the difference that the factor of $g \Delta/2$ is mapped to $2/(g\Delta)$:
 \begin{align} \label{eqn:modified-NG-action-v3}
-	S'_{NG}[h'_{ab}] & = -T' \int \diff ^2 x \left( \sqrt{- h'} - \frac{2}{g \Delta} \sqrt{- (h')^{-1}} \right) \nonumber \\
-	                 & = -T' \int \diff ^2 x \left( \sqrt{- h'} - \onehalf {g' \Delta'}\sqrt{- (h')^{-1}} \right),
+	S'_{NG}[h'_{ab}] & = -T' \int \diff ^2 x' \left( \sqrt{- h'} - \frac{2}{g \Delta} \sqrt{- (h')^{-1}} \right) \nonumber \\
+	                 & = -T' \int \diff ^2 x' \left( \sqrt{- h'} - \onehalf {g' \Delta'}\sqrt{- (h')^{-1}} \right),
 \end{align}
-which has the same form as the original action \eqref{eqn:modified-NG-action}, as long as make the replacements $T \rightarrow T' = \frac{1}{2} {g \Delta} T $ and $ \frac{1}{2} {g \Delta} \rarrow \frac{1}{2} {g' \Delta'} = \frac{2} {g \Delta}$
-This is a duality between the physics at the Planck scale and the physics at the string scale, \ie between strong coupling ($g \gg 1$) and weak coupling ($g \ll 1$), small quantum of area ($\Delta$) and large quantum of area ($\Delta'$) and between large string tension $T$ and small string tension $T'$.
+which has the same form as the original action \eqref{eqn:modified-NG-action}, as long as make the replacements $T \rightarrow T' = \frac{1}{2} g T $, $ \frac{1}{2} {g \Delta} \rarrow \frac{1}{2} {g' \Delta'} = \frac{2} {g \Delta}$ and $\diff ^2 x \rightarrow \diff ^2 x' = \Delta \diff ^2 x$ (or equivalently $\diff x^{a} \rightarrow \diff x' _{a} = \Delta _{a b} \diff x^{b}$).
+This is a duality between the physics at the Planck scale and the physics at the string scale, \ie between strong coupling ($g' \gg 1$) and weak coupling ($g \ll 1$), small quantum of area ($\Delta$) and large quantum of area ($\Delta'$) and between large string tension $T$ and small string tension $T'$.
 
 Now, one might object and say that having an action which is the sum of Nambu-Goto actions for two different metrics seems strange. However, such actions have been extensively studied under the heading of ``bimetric gravity'', with the earliest work dating as far back as 1940 in two papers \cite{Rosen1940General,Rosen1940aGeneral} by Einstein's future collaborator Nathan Rosen (the `R' in `EPR' and `ER'). In 2010, bimetric gravity gained great popularity due to the seminal paper \cite{de-Rham2011Resummation} which showed that by introducing a second \emph{reference} metric into a model for massive gravity one can get rid of the Boulware-Deser ghost \cite{Boulware1972Can-Gravitation} which otherwise plagues theories with massive gravitons. The \emph{reference} metric introduced in the work \cite{de-Rham2011Resummation} was taken to be a flat metric. However later work \cite{Hassan2012Bimetric,Hassan2012Ghost-Free} showed that the second metric need not be flat and that an action of the following form:
 \begin{align}\label{eqn:hassan-bimetric}
@@ -329,11 +329,11 @@ where
 \end{align}
 and $\PS ^{\tau} _{\mu (N G)}$, $\PS ^{\sigma} _{\mu (N G)}$ are the regular Nambu-Goto world-sheet currents.
 
-In the following, we parametrize the WS using $\tau = t$ and
+In the following, we parametrize the string WS using the static gauge $\tau = t$ and transverse gauge
 \begin{equation} \label{eqn:transverse-'gauge'}
 	\frac{\partial X}{\partial s} \cdot \frac{\partial X}{\partial t} = 0 ,
 \end{equation}
-where $s$ is the length along the string parameter since this gives the motion of the string in terms of transverse velocity, which is a natural dynamical variable of the string given that longitudinal motion does not happen. We find that the new form for the conserved energy per infinitesimal piece of the string is the regular energy of the Nambu-Goto string times the correction factor
+where $s$ is the length along the string parameter since this gives the motion of the string in terms of transverse velocity, which is a natural dynamical variable of the string. We find that the new form for the conserved energy per infinitesimal piece of the string is the regular energy of the Nambu-Goto string times the correction factor
 \begin{equation} \label{eqn:string-energy}
 	E \diff \sigma = T \gamma _{v_{\perp}} \left( 1 + \frac{g \Delta}{2 (- h)} \right) \diff s ,
 \end{equation}
@@ -366,9 +366,9 @@ In the same way we considered the quantum geometry inverse metric correction to 
 \begin{multline} \label{eqn:inverse-metric-Polyakov}
 	S_{I A P} = - \frac{T}{2} \int \diff ^2 x \left( \sqrt{- g} - \frac{k \Delta}{2 \sqrt{- g}} \right) \times \\ \times g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} .
 \end{multline}
-One might think this action is incomplete since we only applied the correction to the determinant and didn't change the inverse metric $g^{a b}$, but there are good reasons for that: the first is that the action in this form, as we shall see, reduces neatly to the area-corrected Nambu-Goto action \eqref{eqn:modified-NG-action}, and the second comes from a more rigorous bimetric Polyakov string analysis which will be done in appendix \ref{app:bimetric-string}, where we show that starting from a bimetric Polyakov string one can derive the action \eqref{eqn:inverse-metric-Polyakov}.
+One might think this action is incomplete since we only applied the correction to the determinant and didn't change the inverse metric $g^{a b}$, however the correction \ref{eqn:inverse-metric-correction} is a correction to the \emph{area} of the WS, not its metric. Moreover, there are other good reasons for this form of the Polyakov action: the first is that the action in this form, as we shall see, reduces neatly to the area-corrected Nambu-Goto action \eqref{eqn:modified-NG-action}, and the second comes from a more rigorous bimetric Polyakov string analysis which will be done in appendix \ref{app:bimetric-string}, where we show that starting from a bimetric Polyakov string one can derive the action \eqref{eqn:inverse-metric-Polyakov}.
 
-This action is even more manifestly background Poincaré invariant, since now the $X^{\mu}$ dependence is explicit with this being a first-order action with $g_{a b}$ and $X^{\mu}$ treated as independent variables. This time, however, not only is WS diffeomorphism invariance destroyed, but so is WS Weyl symmetry, since the second term has inverse determinant multiplied by inverse metric.
+This action is even more manifestly background Poincaré invariant, since now the $X^{\mu}$ dependence is explicit with this being a first-order action with $g_{a b}$ and $X^{\mu}$ treated as independent variables. This time, however, we lose WS Weyl symmetry, since the second term has inverse determinant multiplied by inverse metric.
 
 The equations of motion for the world-sheet metric are completely unchanged by this correction,
 \begin{equation} \label{eqn:vary-wrt-g}
@@ -398,15 +398,15 @@ where
 \begin{equation} \label{eqn:F-minus-def}
 	F^{-} \equiv 1 - \frac{k \Delta}{2 (- g)} .
 \end{equation}
-Since all 2-dimensional metrics are conformally flat \cite{Schottenloher}, we use conformal gauge $g^{a b} = \e ^{- \phi (x)} \eta ^{a b}$ and assume flat background $G_{\mu \nu} = \eta _{\mu \nu}$, to simplify eq (\ref{eqn:X-eom-inverse-area}) into
+Since all 2-dimensional metrics are conformally flat \cite{Schottenloher}, we use conformal gauge $g_{a b} = \e ^{\phi (x)} \eta _{a b}$ and assume flat background $G_{\mu \nu} = \eta _{\mu \nu}$, to simplify eq (\ref{eqn:X-eom-inverse-area}) into
 \begin{equation} \label{eqn:X-eom-simplified}
 	\eta ^{a b} \partial _{a} \partial _{b} X^{\mu} + \frac{1}{F^{-}} \eta ^{a b} \partial _{a} F^{-} \partial _{b} X^{\mu} = 0 .
 \end{equation}
 By expanding the definition of $F^{-}$ we get
 \begin{equation} \label{eqn:coupling-X-phi}
-	\eta ^{a b} \partial _{a} \partial _{b} X^{\mu} + 2 \eta ^{a b} \frac{\partial _{a} \phi (x)}{\dfrac{2 \e ^{2 \phi (x)}}{k \Delta} - 1} \partial _{b} X^{\mu} = 0 ,
+	\eta ^{a b} \partial _{a} \partial _{b} X^{\mu} + \eta ^{a b} \frac{\left( 2 \del _{a} \phi - \del _{a} \ln (\Delta) \right)}{\dfrac{2 \e ^{2 \phi}}{k \Delta} - 1} \del _{b} X^{\mu} = 0 ,
 \end{equation}
-revealing a wave equation sourced by a coupling between the WS conformal factor and the embedding fields much akin to the dilaton field \cite{Tong2009Lectures}. We'll come back to this in \autoref{sec:discussion}.
+revealing a wave equation sourced by a coupling between the WS conformal factor, quantum of area field $\Delta$ and the embedding fields much akin to the dilaton field \cite{Balthazar-t-backgrounds}. We'll come back to this in \autoref{sec:discussion}.
 
 \subsection{Simplifying The Equations of Motion} \label{sec:solving-eoms-inverse-area}
 
@@ -438,9 +438,10 @@ The imposition that
 	i (E \partial _{\tau} \ln (F^{-}) - p \partial _{\sigma} \ln (F^{-})) = - \mu ^2
 \end{equation}
 can be used to find the explicit dependence of $\mu ^2$ with the quantum geometry parameters $k \Delta$ as in
-\begin{equation} \label{eqn:mu-constraint-final}
-	\mu ^2 = \frac{2 i}{\dfrac{2 \e ^{2 \phi}}{k \Delta} - 1} (p \partial _{\sigma} \phi - E \partial _{\tau} \phi) .
-\end{equation}
+\begin{multline} \label{eqn:mu-constraint-final}
+	\mu ^2 = \frac{i}{\dfrac{2 \e ^{2 \phi}}{k \Delta} - 1} \big( p \del _{\sigma} \ln \left( \e^{2 \phi} / \Delta \right) - \\
+	- E \del _{\tau} \ln \left( \e^{2 \phi} / \Delta \right) \big) .
+\end{multline}
 
 \subsection{Relation With The Nambu-Goto Analysis} \label{sec:relation-with-NG-case}
 
@@ -481,7 +482,7 @@ and $\tau (t , x)$ satisfying constraints(\ref{eqn:new-coordinates-constraints-c
 
 In the following, we focus on the analysis of the closed string unless otherwise stated.
 
-From our analysis of the inverse-area corrected Polyakov action, we got $D$ finite-space one-dimensional Klein-Gordon equations (\ref{eqn:X-Klein-Gordon-eqn}), with constraints given by eq\eqref{eqn:inverse-area-em-tensor}. The constraints are nothing new, they're precisely the same as the ones of regular String Theory. What's new in our analysis is the $\mu ^2$ term, which makes it so the solution is given by Fourier transform
+From our analysis of the inverse-area corrected Polyakov action, we got $D$ finite-space one-dimensional Klein-Gordon equations (\ref{eqn:X-Klein-Gordon-eqn}), with constraints given by eq\eqref{eqn:inverse-area-em-tensor}. The constraints are nothing new, they're precisely the same as the ones of regular String Theory. What's new in our analysis is the $\mu ^2$ term, which we will assume to be constant for a first analysis, making it so the solution is given by Fourier transform
 \begin{multline} \label{eqn:KG-Polyakov-solution-initial}
 	X^{\mu} (\tau , \sigma) = \sqrt{\frac{\alpha '}{2}} \sum _{p \in \mathbb{Z}} \frac{1}{2 E_{p}} \bigg( \alpha ^{\mu} _{p} \e ^{i (E_{p} \tau - p \sigma)} + \\
 	+ \beta ^{\mu} _{p} \e ^{- i (E_{p} \tau - p \sigma)} \bigg) ,
@@ -528,7 +529,7 @@ We start by calculating the canonical momentum density conjugate to the fields $
 \end{multline}
 where
 \begin{multline} \label{eqn:F-minus-full-sum}
-	F^{-} = 1 - \frac{k \Delta}{2 \e ^{\phi (x)}} = \\
+	F^{-} = 1 - \frac{k \Delta}{2 \e ^{2 \phi (x)}} = \\
 	= \sum _{l} \left( A_{l} \e ^{i (E_{l} \tau + l \sigma)} + (A_{l})^{*} \e ^{- i (E_{l} \tau + l \sigma)} \right) ,
 \end{multline}
 and then proceed to use the equal-time Poisson bracket relation at $\tau = 0$
@@ -714,6 +715,8 @@ The fact that $G_{\mu \nu}$ is symmetric, traceless and satisfies $G_{\mu \nu} p
 	\frac{1}{2} D (D - 1) - 1
 \end{equation}
 possible polarizations, which shows that indeed those polarizations fit nicely in a representation of $\mathrm{SO} (D - 1 , 1)$, \ie the traceless symmetric tensor representation, thus all our excited spin-2 states are consistent with Lorentz symmetry at the macroscopic scale even tho near the Planck scale they deviate a bit by having an effective mass.
+
+Although our method is quite different from the one in \cite{Thiemann2004The-LQG-String:}, we got similar results: a quantum Virasoro-like algebra with no anomalies, unconstrained background dimensionality $D$ and no negative-norm states in physical processes.
 
 \section{Strings and Quantum Geometry}\label{sec:string-geometry}
 
@@ -1001,27 +1004,28 @@ If the auxiliary metrics $g_{c d}$ and $h_{c d}$ coincide with the pullback metr
 \begin{equation} \label{eqn:double-NG-action}
 	S = - T \int \diff ^2 x \sqrt{- g} - T' \int \diff ^2 x \sqrt{- h} ,
 \end{equation}
-and from here we note that if $T' = - T k \Delta / 2$ and $h = g^{-1}$, we recover the Nambu-Goto area-corrected action \eqref{eqn:modified-NG-action}
+and from here we note that if $T' = - T k / 2$ and $h = \Delta ^2 / g$, we recover the Nambu-Goto area-corrected action \eqref{eqn:modified-NG-action}
 \begin{equation} \label{eqn:area-corrected-NG-from-bimetric}
 	S = - T \int \diff ^2 x \left( \sqrt{- g} - \frac{1}{2} \frac{k \Delta}{\sqrt{- g}} \right) .
 \end{equation}
-The condition $h = g^{-1}$ can be achieved by
+The condition $h = \Delta ^2 / g$ can be achieved by
 \begin{equation} \label{eqn:h=SgS}
-	h_{a b} = S_{a c} g^{c d} S_{d b}
+	h_{a b} = \Delta _{a c} \Delta _{b d} g^{c d} .
 \end{equation}
-where $\det (S) = \pm 1$ and $S^{\dagger} = S$. This implies that
+This implies that
 \begin{multline} \label{eqn:SgS-implication}
-	\left( \delta _{a} ^{c'} \delta _{b} ^{d'} H_{\mu \nu} - \frac{1}{2 g} S_{a c} \varepsilon ^{c c'} S_{d b} \varepsilon ^{d d'} G_{\mu \nu} \right) \times \\
+	\left( \delta _{a} ^{c'} \delta _{b} ^{d'} H_{\mu \nu} - \frac{1}{2 g} \Delta _{a c} \widetilde{\varepsilon} ^{c c'} \Delta _{b d} \widetilde{\varepsilon} ^{d d'} G_{\mu \nu} \right) \times \\
 	\times \del _{c'} X^{\mu} \del _{d'} X^{\nu} = 0 ,
 \end{multline}
-which can be achieved by choosing
+which can be achieved if
 \begin{equation} \label{eqn:S=sigma_y}
-	S_{a c} = i \varepsilon _{a c} = - (\sigma _{y})_{a c}
+	\Delta _{a c} = \sqrt{\Delta} \widetilde{\varepsilon} _{a c}
 \end{equation}
 and if the background metrics are related by
 \begin{equation} \label{eqn:H=1/(2g)G}
-	H_{\mu \nu} = \frac{1}{2 g} G_{\mu \nu} .
+	H_{\mu \nu} = \frac{\Delta}{2 g} G_{\mu \nu} ,
 \end{equation}
+which makes sense since $\Delta _{a b}$ is related to area, so it should be a 2-form.
 
 As for the embedding fields equation, continuing to assume no interaction term we get a non-homogeneous wave equation for the coupled metric $F^{a b} _{\mu \nu} = T \sqrt{- g} g^{a b} G_{\mu \nu} + T' \sqrt{- h} h^{a b} H_{\mu \nu}$
 \begin{equation} \label{eqn:variation-wrt-X}
@@ -1030,11 +1034,11 @@ As for the embedding fields equation, continuing to assume no interaction term w
 \begin{equation} \label{eqn:bimetric-X-eom}
 	\partial _{a} \left( F^{a b} _{\mu \lambda} \partial _{b} X^{\mu} \right) = \frac{1}{2} \partial _{\lambda} F^{a b} _{\mu \nu} \partial _{a} X^{\mu} \partial _{b} X^{\nu} ,
 \end{equation}
-whereby assuming the conditions for $h = g^{-1}$ \eqref{eqn:h=SgS} and \eqref{eqn:S=sigma_y} and flat background $G_{\mu \nu} = \eta _{\mu \nu}$ gets simplified to
+whereby assuming the conditions for $h = \Delta ^2 / g$ \eqref{eqn:h=SgS}, \eqref{eqn:S=sigma_y} and \eqref{eqn:H=1/(2g)G} and flat background $G_{\mu \nu} = \eta _{\mu \nu}$ gets simplified to
 \begin{equation} \label{eqn:bimetric-X-eom-simplified-1}
 	\del _{a} \left( \left( 1 - \frac{k \Delta}{2 (- g)} \right) \sqrt{- g} g^{a b} \del _{b} X^{\mu} \right) = 0 ,
 \end{equation}
-which in conformal gauge $g_{a b} = \e ^{\phi (x)} \eta _{a b}$ simplifies further to eq \eqref{eqn:X-eom-simplified} derived in section \ref{sec:inverse-metric-Polyakov}. In fact, if we plug in the conditions \eqref{eqn:h=SgS} and \eqref{eqn:S=sigma_y} and $T' = - T k \Delta / 2$ into the bimetric Polyakov action \eqref{eqn:polyakov-flat} we recover precisely the action \eqref{eqn:inverse-metric-Polyakov} of section \ref{sec:inverse-metric-Polyakov}, thus showing that the form of area corrected Polyakov action discussed there can be cast as a special case of the interactionless bimetric string.
+which in conformal gauge $g_{a b} = \e ^{\phi (x)} \eta _{a b}$ simplifies further to eq \eqref{eqn:X-eom-simplified} derived in section \ref{sec:inverse-metric-Polyakov}. In fact, if we plug in the conditions \eqref{eqn:h=SgS}, \eqref{eqn:S=sigma_y} and \eqref{eqn:H=1/(2g)G} plus $T' = - T k / 2$ into the bimetric Polyakov action \eqref{eqn:polyakov-flat} we recover precisely the action \eqref{eqn:inverse-metric-Polyakov} of section \ref{sec:inverse-metric-Polyakov}, thus showing that the form of area corrected Polyakov action discussed there can be cast as a special case of the interactionless bimetric string.
 
 \bibliographystyle{JHEP3}
 
