@@ -1809,25 +1809,38 @@ The fact that $\zeta _{\mu \nu} = \zeta _{\nu \mu}$ leaves $\zeta _{\mu \nu}$ wi
 \end{equation*}
 This leaves 5 polarizations in $D = 4$.
 
-\newpage
+We now consider the commutators
+\begin{equation*}
+    \left[ \sum _{n} \Hat{\widetilde{L}}_{n , n} , \Hat{X}^{\mu} \right] = \left[ \sum _{n} (\Hat{\alpha}^{\mu '} _{n})^{\dagger} \Hat{\alpha}^{\nu '} _{n} \eta _{\mu ' \nu '} , \sqrt{\frac{\alpha '}{2}} \sum _{p} \frac{1}{2 E_{p}} \left( \Hat{\alpha}^{\mu} _{p} \e ^{i (E_{p} \tau - p \sigma)} + (\Hat{\alpha}^{\mu} _{p})^{\dagger} \e ^{- i (E_{p} \tau - p \sigma)} \right) \right] =
+\end{equation*}
+\begin{equation*}
+    = \sqrt{\frac{\alpha '}{2}} \sum _{n} \sum _{p} \frac{1}{2 E_{p}} \Bigg( \left[ (\Hat{\alpha}^{\mu '} _{n})^{\dagger} , \Hat{\alpha}^{\mu} _{p} \right] \Hat{\alpha}^{\nu '} _{n} \eta _{\mu ' \nu '} \e ^{i (E_{p} \tau - p \sigma)} + (\Hat{a}^{\mu '} _{n})^{\dagger} \left[ \Hat{\alpha}^{\nu '} _{n} , (\Hat{\alpha}^{\mu} _{p})^{\dagger} \right] \eta _{\mu ' \nu '} \e ^{- i (E_{p} \tau - p \sigma)} \Bigg) =
+\end{equation*}
+\begin{equation*}
+    = \sqrt{\frac{\alpha '}{2}} \sum _{n} \sum _{p} \frac{1}{2 E_{p}} \Bigg( (- E_{p} \eta ^{\mu ' \mu} \delta _{|n| , |p|}) \Hat{\alpha}^{\nu '} _{n} \eta _{\mu ' \nu '} \e ^{i (E_{p} \tau - p \sigma)} + (\Hat{\alpha}^{\mu '} _{n})^{\dagger} (E_{n} \eta ^{\nu ' \mu} \delta _{|n| , |p|}) \eta _{\mu ' \nu '} \e ^{- i (E_{p} \tau - p \sigma)} \Bigg) =
+\end{equation*}
+\begin{equation*}
+    = \sqrt{\frac{\alpha '}{2}} \sum _{p} \Bigg( - \Hat{\alpha}^{\mu} _{p} \e ^{i (E_{p} \tau - p \sigma)} + (\Hat{\alpha}^{\mu} _{p})^{\dagger} \e ^{- i (E_{p} \tau - p \sigma)} \Bigg) = 2 i \del _{\tau} \Hat{X}^{\mu}
+\end{equation*}
+\begin{equation*}
+    \Downarrow
+\end{equation*}
+\begin{equation*}
+    \left[ - \frac{1}{2} \sum _{n} \Hat{\widetilde{L}}_{n , n} , \Hat{X}^{\mu} \right] = - i \del _{\tau} \Hat{X}^{\mu}
+\end{equation*}
 
-\section{Area correction Path Integral}
-
-Build the path integral of the area corrected Polyakov action
 \begin{equation*}
-    Z = \int D[g] D[X] \e ^{- i S} ,
+    \left[ - \frac{1}{2} \sum _{n} \frac{n}{E_{n}} \Hat{\widetilde{L}}_{n , n} , \Hat{X}^{\mu} \right] = i \del _{\sigma} \Hat{X}^{\mu} ,
 \end{equation*}
+thus we see that
 \begin{equation*}
-    S = - \frac{1}{2 \pi \alpha '} \int \diff ^2 x F^{-} \sqrt{- g} g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} \eta _{\mu \nu} ,
+    \Hat{H} = - \frac{1}{2} \sum _{n} \Hat{\widetilde{L}}_{n , n}
 \end{equation*}
+is the WS Hamiltonian generating $\tau$ translations by $\Hat{X}^{\mu} (\tau + \tau _{0} , \sigma) = \e ^{- i \Hat{H} \tau _{0}} \Hat{X}^{\mu} (\tau , \sigma) \e ^{i \Hat{H} \tau _{0}}$ and
 \begin{equation*}
-    F^{-} = 1 - \frac{k \Delta}{2 (- g)} .
+    \Hat{P} = - \frac{1}{2} \sum _{n} \frac{n}{E_{n}} \Hat{\widetilde{L}}_{n , n}
 \end{equation*}
-In conformal gauge and choosing the conformal factor such that the EoM becomes a KG eqn,
-\begin{equation*}
-    F^{-} = \sum _{l} \left( A_{l} \e ^{i (E_{l} \tau + l \sigma)} + (A_{- l})^{*} \e ^{i (- E_{l} \tau + l \sigma)} \right) .
-\end{equation*}
-This will be the gauge chosen for performing the path integral.
+is the generator of $\sigma$ translations by $\Hat{X}^{\mu} (\tau , \sigma + \sigma _{0}) = \e ^{- i \Hat{P} \sigma _{0}} \Hat{X}^{\mu} (\tau , \sigma) \e ^{i \Hat{P} \sigma _{0}}$.
 
 \newpage
 

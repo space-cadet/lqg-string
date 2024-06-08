@@ -666,11 +666,23 @@ and since both $C_{n}$ and $D_{n}$ need to satisfy the initial value of $0$, eac
 \end{equation}
 Next, by calculating the vacuum expectation value (VEV) of the commutator \eqref{eqn:L-commutator-2} with $|m| \neq |k|$ and $n = p = 1$, we find that $F_{1} = 0$, thus both sequences $C_{n} = D_{n} = 0$ vanish and we conclude that the quantum version of our algebra \emph{has no anomalies}. This is a relevant result, since it could mean our model doesn't need a specific number of dimensions to work, which will be explored again later in section \ref{sec:discussion}.
 
+A quick calculation reveals that the WS Hamiltonian and momentum operators are given by
+\begin{align}
+	\Hat{H} & = - \frac{1}{2} \sum _{n} \Hat{\widetilde{L}}_{n , n} \label{eqn:WS-Hamiltonian}              \\
+	\Hat{P} & = - \frac{1}{2} \sum _{n} \frac{n}{E_{n}} \Hat{\widetilde{L}}_{n , n} \label{eqn:WS-momentum}
+\end{align}
+since those generate $\tau$ and $\sigma$ translations respectively
+\begin{align}
+	\left[ \Hat{H} , \Hat{X}^{\mu} \right] & = - i \del _{\tau} \Hat{X}^{\mu} \label{eqn:tau-generator}     \\
+	\left[ \Hat{P} , \Hat{X}^{\mu} \right] & = i \del _{\sigma} \Hat{X}^{\mu} . \label{eqn:sigma-generator}
+\end{align}
+Clearly, $\Hat{P}$ does not necessarily annihilate physical states (see \eqref{eqn:WS-momentum}), thus those are not required to be invariant under rigid rotations of the string. \emph{Physical states for the KG string have non-conserved WS momentum.} Also, we see that there is no level-matching between left and right-moving modes since those are not distinct in our model.
+
 Let us denote the ground state with momentum $p^{\mu}$ by $\ket{0 ; p}$. Then, the mass-shell condition \eqref{eqn:shifted-mass-spectrum} implies that
 \begin{equation} \label{eqn:ground-state-mass-shell}
 	\frac{\alpha '}{8} p^2 = \frac{2 \mu ^2}{\alpha '} \left| \frac{\partial \psi (p)}{\partial p} \right| ^2 + a .
 \end{equation}
-Next we look at the $n$-th excited vector state $\zeta _{\mu} (\Hat{a}^{\mu} _{n})^{\dagger}$ with $\zeta _{\mu} = \zeta _{\mu} (p)$ being the polarization covector. The reason we consider closed string vector states unlike normal String Theory is that in our model, the closed string solution doesn't have independent left and right sectors, thus permitting spin-1 states. We'll discuss these closed string single excitation states in section \ref{sec:discussion}. The mass-shell now reads
+Next we look at the $n$-th excited vector state $\zeta _{\mu} (\Hat{a}^{\mu} _{n})^{\dagger}$ with $\zeta _{\mu} = \zeta _{\mu} (p)$ being the polarization covector. The reason we consider closed string vector states unlike normal String Theory is that in our model, the closed string solution doesn't have distinct left and right sectors, thus permitting spin-1 states. We'll discuss these closed string single excitation states in section \ref{sec:discussion}. The mass-shell now reads
 \begin{multline} \label{eqn:nth-state-mass-shell}
 	\frac{\alpha '}{8} M^2 = \Bigg( \frac{2 \mu ^2}{\alpha '} \left| \frac{\partial \psi (p)}{\partial p} \right| ^2 - \\
 	- \left( 1 + \frac{n^2}{n^2 + \mu ^2} \right) \sqrt{n^2 + \mu ^2} + a \Bigg) ,
@@ -868,7 +880,7 @@ Another candidate for what the vector excitations could relate to is the Ashteka
 
 \subsection{Emergent Dimensions and LQG} \label{sec:emergent-dimensions}
 
-The actions \eqref{eqn:modified-NG-action} and \eqref{eqn:inverse-metric-Polyakov} used in sections \ref{sec:modified-ng} and \ref{sec:inverse-metric-Polyakov} have a glaring disadvantage: they do not have WS diffeomorphism invariance, making it so it is not clear what WS parameterization should be used and neither if physical predictions can be extracted from them since it is not obvious that different parameterizations describe the same system. If we want to formulate an effective stringy action that takes LQG quantum geometric effects into consideration and retains WS diffeomorphism invariance while giving similar results to the analysis done in section \ref{sec:inverse-metric-Polyakov}, we arrive at a similar model as \cite{Afshordi-emergent}, with the action being
+The actions \eqref{eqn:modified-NG-action} and \eqref{eqn:inverse-metric-Polyakov} used in sections \ref{sec:modified-ng} and \ref{sec:inverse-metric-Polyakov} have a clear disadvantage: they lost WS Weyl symmetry, which makes the equations extracted from them have a dependence on the scale factor $\phi (x)$. If we want to formulate an effective stringy action that takes LQG quantum geometric effects into consideration and retains WS Weyl invariance while giving similar results to the analysis done in section \ref{sec:inverse-metric-Polyakov}, we arrive at a similar model as \cite{Afshordi-emergent}, with the action being
 \begin{multline} \label{eqn:emergent-dimensions-action}
 	S_{ED} = - \frac{1}{4 \pi \alpha '} \int \diff ^2 x \sqrt{- g} \big( g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} \eta _{\mu \nu} + \\
 	+ \mu _{0} ^2 \e ^{- m_{\mu} / T} X^{\mu} X^{\nu} \eta _{\mu \nu} \big)
