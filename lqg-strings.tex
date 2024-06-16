@@ -921,7 +921,7 @@ since those are the ones that show up in the $X^{\mu}$ equations of motion
 	g^{a b} \nabla _{a} \nabla _{b} X^{\mu} G_{\mu \lambda} - \mu _{0} ^2 \e ^{- m_{\mu \lambda} / T} X^{\mu} G_{\mu \lambda} = \\
 	= \frac{1}{2} g^{a b} \del_{a} X^{\mu} \del _{b} X^{\nu} \del _{\lambda} G_{\mu \nu} ,
 \end{multline}
-where $\nabla _{a}$ denotes the 2-dimensional covariant derivative with respect to the Levi-Civita connection $\Gamma _{ab} ^{c}$
+where $\nabla _{a}$ denotes the 2-dimensional covariant derivative with respect to the Levi-Civita connection $\Gamma _{a b} ^{c}$.
 
 In section \ref{sec:inverse-metric-Polyakov} we arrived at eq \eqref{eqn:coupling-X-phi} and claimed the coupling between the WS conformal factor $\phi (x)$ and the embedding fields $X^{\mu}$ to be akin to the dilaton field $\Phi (X)$. We now explore this claim: since we're now dealing with emergent dimensions with an action \eqref{eqn:emergent-dimensions-action} that only has Weyl symmetry as an approximate symmetry, we believe that the conformal factor $\phi (x)$ can be viewed as a WS dilaton, which sets the scale of the string dictating which dimensions it can interact with, thus the coupling \textquotedblleft constant" of the masses may be related to the conformal factor
 \begin{equation} \label{eqn:mu0-phi-relation}
@@ -1038,7 +1038,11 @@ and if the background metrics are related by
 \begin{equation} \label{eqn:H=1/(2g)G}
 	H_{\mu \nu} = \frac{\Delta}{2 g} G_{\mu \nu} ,
 \end{equation}
-which makes sense since $\Delta _{a b}$ is related to area, so it should be a 2-form.
+which makes sense since $\Delta _{a b}$ is related to area, so it should be a 2-form. Since $g_{a b}$ is taken to be the pullback of the background metric $G_{\mu \nu}$, $g_{a b} = \del _{a} X^{\mu} \del _{b} X^{\nu} G_{\mu \nu}$, which is a part of the spin-2 spectrum of the closed string, perhaps the quantum area correction field $\Delta _{a b}$ is related to the pullback of the background Kalb-Rammond 2-form, which is the other half of the first excitation of the closed spin-2 spectrum,
+\begin{equation} \label{eqn:Delta-B-relation}
+	\Delta _{a b} \sim \del _{a} X^{\mu} \del _{b} X^{\nu} B_{\mu \nu} ,
+\end{equation}
+thus giving a concrete physical interpretation for the $B_{\mu \nu}$ field as being related directly to quantum geometry.
 
 As for the embedding fields equation, continuing to assume no interaction term we get a non-homogeneous wave equation for the coupled metric $F^{a b} _{\mu \nu} = T \sqrt{- g} g^{a b} G_{\mu \nu} + T' \sqrt{- h} h^{a b} H_{\mu \nu}$
 \begin{equation} \label{eqn:variation-wrt-X}
