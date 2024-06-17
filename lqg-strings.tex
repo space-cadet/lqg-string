@@ -878,76 +878,6 @@ One might point out that the matrix $\mb{R}$ is not symmetric, as one would requ
 	\end{pmatrix}.
 \end{equation}
 
-\subsection{Two Expressions for Area}\label{eqn:area-formulae}
-
-There is another explanation for why it makes sense to promote the $X$'s to local fields. This can be found in terms of the expression for the area of a 2-surface. We have a manifold $\mc M$, within which is embedded a two dimensional submanifold $\mc N$. Let $(\tau,\sigma)$ be the location of a point on the worldsheet and $X^\mu(\tau, \sigma)$ be the location of that same point in terms of co-ordinates on $\mc M$. Then we can define the induced metric on $\mc N$, $h_{ab}$ in terms of the embedding fields and their derivatives:
-
-\begin{equation}\label{eqn:ws-metric}
-	h_{ab} = \frac{\partial X^\mu}{\partial x^a} \frac{\partial X^\nu}{\partial x^b} g_{\mu\nu},
-\end{equation}
-where $g_{\mu\nu}$ is the metric in the ambient space $\mc M$. Now, we can calculate the area of a small patch of $\mc P \in \mc N$ by taking the square root of the determinant of the induced metric $\sqrt{\det(h)}$ and integrating over that patch:
-\begin{equation}\label{eqn:patch-area-v1}
-	A^{(1)}_{\mc P} = \int_{\mc P} d^2 x \, \sqrt{\det(h)}.
-\end{equation}
-This is, of course, the expression for the Nambu-Goto action - modulo some constants - which we all know and love. In LQG we don't have a notion of embedding fields. Since we are dealing with gauge invariant observables constructed from holonomies of a connection along a 1d-curve and the flux of a tetrad across a 2-surface, the embedding co-ordinates of the curves and surface turn to not be needed. When promoting classical observables into quantum operators acting on lines and surfaces the embedding co-ordinates of the lines and surfaces are not relevant as long as we work with gauge invariant quantities.
-
-How then does one define the area of a surface in LQG? It is defined as the magnitude of the area two form. Recall that given a tetradic basis $e_\mu^I$ for a local Lorentz frame whose metric is given by $g_{\mu\nu}$, we can write the metric in terms of the tetrad in the usual manner:
-\begin{equation}\label{eqn:metric-from-tetrad}
-	g_{\mu\nu} = e_\mu^I e_\nu^J \eta_{IJ},
-\end{equation}
-where $\eta_{IJ}$ is the flat Minkowski metric on the ``internal'' flat space. If we consider any two dimensional surface in the local Lorentz frame, then its area can be written in terms of the vielbein as:
-\begin{equation}
-	A^{(2)}_{\mc P} = \int_{\mc P} \Tr (e_\mu \wedge e_\nu) dx^\mu \wedge dx^\nu,
-\end{equation}
-the trace is taken over the ``internal'' Lorentz indices.
-
-Now, if we compare the two expressions \eqref{eqn:ws-metric} and \eqref{eqn:metric-from-tetrad} we notice an obvious parallel between the derivatives $\partial X^\mu/\partial x_a$ of the embedding co-ordinates and the vielbein $e_\mu^I$. This similarity becomes more apparent once we write down the expression for the area of a 2-surface by taking the determinant in \eqref{eqn:patch-area-v1} and comparing that to the expression obtained using frame fields.
-
-\textbf{From Embedding Fields:}
-
-We take the bulk metric $g_{\mu\nu}$ to be flat. Let $\{\tau,\sigma\} := \{x^0, x^1\}$ be the spacetime co-ordinates on the worldsheet. Derivatives of the $X$'s in terms of these co-ordinates can be written as:
-\begin{equation}
-	\dot X := \left\{\frac{\partial X^\mu}{\partial \tau}\right\}; \quad X' := \left\{\frac{\partial X^\mu}{\partial \sigma}\right\}
-\end{equation}
-we obtain the following form for the determinant of the worldsheet metric (\eqref{eqn:patch-area-v1}) in terms of the embedding fields:
-\begin{align}\label{eqn:area-embedding}
-	\det h & = \begin{vmatrix}
-		           h_{00} &  & h_{01} \\
-		           h_{10} &  & h_{11}
-	           \end{vmatrix} = \begin{vmatrix}
-		                           \dot X^2        &  & \dot X \cdot X' \\
-		                           \dot X \cdot X' &  & X'^2
-	                           \end{vmatrix} \nonumber \\
-	       & = \dot X^2 X'^2 - (\dot X \cdot X')^2
-\end{align}
-
-\textbf{From Vielbein:}
-
-We can proceed to obtain the area of a 2-surface from the bulk vielbein as follows. Starting with the bulk vielbein $e_\mu^I$, we perform a local Lorentz transformation such that two ``legs'' of the vielbein are tangent to the worldsheet surface. We then project down the vielbein $e_\mu^I$ to a dyad $e_a^i$ living in the tangent space of the worldsheet, in terms of which the worldsheet metric can be written as:
-\begin{equation}
-	h_{ab} = e_a^i e_b^j \eta_{ij},
-\end{equation}
-where $\eta_{ij}$ is the flat $(1+1)$ Minkowski metric. The determinant then becomes:
-\begin{align}\label{eqn:area-vielbein}
-	\det h & = \begin{vmatrix}
-		           h_{00} &  & h_{01} \\
-		           h_{10} &  & h_{11}
-	           \end{vmatrix} = \begin{vmatrix}
-		                           e_x{}^i e_x{}^j & e_x{}^i e_y{}^j \\
-		                           e_y{}^i e_x{}^j & e_y{}^i e_y{}^j
-	                           \end{vmatrix} \eta_{ij} \nonumber        \\
-	       & = \vec e_x{}^2 \vec e_y{}^2 - (\vec e_x \cdot \vec e_y)^2,
-\end{align}
-where $\vec e_x \cdot \vec e_y = e_x{}^i e_y{}^j \eta_{ij}$. It is clear by comparing the two expressions \eqref{eqn:area-embedding} and \eqref{eqn:area-vielbein} that we have the following correspondence between the vielbein the $X$ derivatives:
-\begin{equation}
-	\vec e_\tau \equiv \frac{\partial \vec X}{\partial \tau}; \quad \vec e_\sigma \equiv \frac{\partial \vec X}{\partial \sigma}.
-\end{equation}
-In other words we can identify the vielbein with the derivatives of the embedding fields. Of course, this is not altogether surprising. If we consider any manifold on which we have some set of fields $\{X^I(x^\mu)\}$, where $I$ is valued in the Lie algebra ${\mc g}$ of some group $\mc G$, as a function of some  ``fiducial'' co-ordinates $\{x^\mu\}$, then we can always define a set of ${\mc g}$ valued vector fields:
-$$
-	e^I_\mu := \frac{\partial X^I}{\partial x^\mu}.
-$$
-In the usual formulation of the string action the embedding fields are \emph{not} Lie-algebra valued but are co-ordinate fields on what is generally taken to be a flat background. In order for this correspondence between vielbein and $X$ derivatives to work we have to view the $X$ fields as taking values in a Lie algebra. But these same $X$ fields \emph{also} serve as local co-ordinates for the bulk. In order for the co-ordinates to change from point to point in the bulk geometry, we must therefore require that the connection $\mc A$ in \eqref{eqn:covariant-deriv-v2} can never vanish completely! If $\mc A$ vanishes then that will imply that the fields $X$ don't change from one point to the next and cannot therefore be viewed as co-ordinate functions. Thus the amplitude $|\mc A|$ can be arbitrarily small but it can never be zero.
-
 \subsection{}\label{sec:}
 
 \section{Physical Implications}
@@ -1024,6 +954,76 @@ where the minus sign is due to the fact that the dimensions open up at larger an
 \appendix
 
 \section{Worldsheet Action in Terms of Transverse Velocity}\label{app:transverse-action}
+
+\subsection{Two Expressions for Area}\label{eqn:area-formulae}
+
+There is another explanation for why it makes sense to promote the $X$'s to local fields. This can be found in terms of the expression for the area of a 2-surface. We have a manifold $\mc M$, within which is embedded a two dimensional submanifold $\mc N$. Let $(\tau,\sigma)$ be the location of a point on the worldsheet and $X^\mu(\tau, \sigma)$ be the location of that same point in terms of co-ordinates on $\mc M$. Then we can define the induced metric on $\mc N$, $h_{ab}$ in terms of the embedding fields and their derivatives:
+
+\begin{equation}\label{eqn:ws-metric}
+	h_{ab} = \frac{\partial X^\mu}{\partial x^a} \frac{\partial X^\nu}{\partial x^b} g_{\mu\nu},
+\end{equation}
+where $g_{\mu\nu}$ is the metric in the ambient space $\mc M$. Now, we can calculate the area of a small patch of $\mc P \in \mc N$ by taking the square root of the determinant of the induced metric $\sqrt{\det(h)}$ and integrating over that patch:
+\begin{equation}\label{eqn:patch-area-v1}
+	A^{(1)}_{\mc P} = \int_{\mc P} d^2 x \, \sqrt{\det(h)}.
+\end{equation}
+This is, of course, the expression for the Nambu-Goto action - modulo some constants - which we all know and love. In LQG we don't have a notion of embedding fields. Since we are dealing with gauge invariant observables constructed from holonomies of a connection along a 1d-curve and the flux of a tetrad across a 2-surface, the embedding co-ordinates of the curves and surface turn to not be needed. When promoting classical observables into quantum operators acting on lines and surfaces the embedding co-ordinates of the lines and surfaces are not relevant as long as we work with gauge invariant quantities.
+
+How then does one define the area of a surface in LQG? It is defined as the magnitude of the area two form. Recall that given a tetradic basis $e_\mu^I$ for a local Lorentz frame whose metric is given by $g_{\mu\nu}$, we can write the metric in terms of the tetrad in the usual manner:
+\begin{equation}\label{eqn:metric-from-tetrad}
+	g_{\mu\nu} = e_\mu^I e_\nu^J \eta_{IJ},
+\end{equation}
+where $\eta_{IJ}$ is the flat Minkowski metric on the ``internal'' flat space. If we consider any two dimensional surface in the local Lorentz frame, then its area can be written in terms of the vielbein as:
+\begin{equation}
+	A^{(2)}_{\mc P} = \int_{\mc P} \Tr (e_\mu \wedge e_\nu) dx^\mu \wedge dx^\nu,
+\end{equation}
+the trace is taken over the ``internal'' Lorentz indices.
+
+Now, if we compare the two expressions \eqref{eqn:ws-metric} and \eqref{eqn:metric-from-tetrad} we notice an obvious parallel between the derivatives $\partial X^\mu/\partial x_a$ of the embedding co-ordinates and the vielbein $e_\mu^I$. This similarity becomes more apparent once we write down the expression for the area of a 2-surface by taking the determinant in \eqref{eqn:patch-area-v1} and comparing that to the expression obtained using frame fields.
+
+\textbf{From Embedding Fields:}
+
+We take the bulk metric $g_{\mu\nu}$ to be flat. Let $\{\tau,\sigma\} := \{x^0, x^1\}$ be the spacetime co-ordinates on the worldsheet. Derivatives of the $X$'s in terms of these co-ordinates can be written as:
+\begin{equation}
+	\dot X := \left\{\frac{\partial X^\mu}{\partial \tau}\right\}; \quad X' := \left\{\frac{\partial X^\mu}{\partial \sigma}\right\}
+\end{equation}
+we obtain the following form for the determinant of the worldsheet metric (\eqref{eqn:patch-area-v1}) in terms of the embedding fields:
+\begin{align}\label{eqn:area-embedding}
+	\det h & = \begin{vmatrix}
+		           h_{00} &  & h_{01} \\
+		           h_{10} &  & h_{11}
+	           \end{vmatrix} = \begin{vmatrix}
+		                           \dot X^2        &  & \dot X \cdot X' \\
+		                           \dot X \cdot X' &  & X'^2
+	                           \end{vmatrix} \nonumber \\
+	       & = \dot X^2 X'^2 - (\dot X \cdot X')^2
+\end{align}
+
+\textbf{From Vielbein:}
+
+We can proceed to obtain the area of a 2-surface from the bulk vielbein as follows. Starting with the bulk vielbein $e_\mu^I$, we perform a local Lorentz transformation such that two ``legs'' of the vielbein are tangent to the worldsheet surface. We then project down the vielbein $e_\mu^I$ to a dyad $e_a^i$ living in the tangent space of the worldsheet, in terms of which the worldsheet metric can be written as:
+\begin{equation}
+	h_{ab} = e_a^i e_b^j \eta_{ij},
+\end{equation}
+where $\eta_{ij}$ is the flat $(1+1)$ Minkowski metric. The determinant then becomes:
+\begin{align}\label{eqn:area-vielbein}
+	\det h & = \begin{vmatrix}
+		           h_{00} &  & h_{01} \\
+		           h_{10} &  & h_{11}
+	           \end{vmatrix} = \begin{vmatrix}
+		                           e_x{}^i e_x{}^j & e_x{}^i e_y{}^j \\
+		                           e_y{}^i e_x{}^j & e_y{}^i e_y{}^j
+	                           \end{vmatrix} \eta_{ij} \nonumber        \\
+	       & = \vec e_x{}^2 \vec e_y{}^2 - (\vec e_x \cdot \vec e_y)^2,
+\end{align}
+where $\vec e_x \cdot \vec e_y = e_x{}^i e_y{}^j \eta_{ij}$. It is clear by comparing the two expressions \eqref{eqn:area-embedding} and \eqref{eqn:area-vielbein} that we have the following correspondence between the vielbein the $X$ derivatives:
+\begin{equation}
+	\vec e_\tau \equiv \frac{\partial \vec X}{\partial \tau}; \quad \vec e_\sigma \equiv \frac{\partial \vec X}{\partial \sigma}.
+\end{equation}
+In other words we can identify the vielbein with the derivatives of the embedding fields. Of course, this is not altogether surprising. If we consider any manifold on which we have some set of fields $\{X^I(x^\mu)\}$, where $I$ is valued in the Lie algebra ${\mc g}$ of some group $\mc G$, as a function of some  ``fiducial'' co-ordinates $\{x^\mu\}$, then we can always define a set of ${\mc g}$ valued vector fields:
+$$
+	e^I_\mu := \frac{\partial X^I}{\partial x^\mu}.
+$$
+In the usual formulation of the string action the embedding fields are \emph{not} Lie-algebra valued but are co-ordinate fields on what is generally taken to be a flat background. In order for this correspondence between vielbein and $X$ derivatives to work we have to view the $X$ fields as taking values in a Lie algebra. But these same $X$ fields \emph{also} serve as local co-ordinates for the bulk. In order for the co-ordinates to change from point to point in the bulk geometry, we must therefore require that the connection $\mc A$ in \eqref{eqn:covariant-deriv-v2} can never vanish completely! If $\mc A$ vanishes then that will imply that the fields $X$ don't change from one point to the next and cannot therefore be viewed as co-ordinate functions. Thus the amplitude $|\mc A|$ can be arbitrarily small but it can never be zero.
 
 \subsection{Modified Nambu Goto Equations of Motion}\label{sec:modified-eom}
 
