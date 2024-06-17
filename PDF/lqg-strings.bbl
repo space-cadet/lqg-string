@@ -56,9 +56,9 @@ S.~F. Hassan, R.~A. Rosen, and A.~{Schmidt-May}, {\it Ghost-free {{Massive
   Physics} {\bf 2012} (Feb., 2012) 26,
   [\href{http://arxiv.org/abs/1109.3230}{{\tt arXiv:1109.3230}}].
 
-\bibitem{Zwiebach2009A-First}
-B.~Zwiebach, {\em A First Course in String Theory}.
-\newblock Cambridge University Press, 2nd~ed., 2009.
+\bibitem{Tong2009Lectures}
+D.~Tong, {\it Lectures on {{String Theory}}},
+  \href{http://arxiv.org/abs/0908.0333}{{\tt arXiv:0908.0333}}.
 
 \bibitem{Schottenloher}
 M.~Schottenloher, {\em A Mathematical Introduction to Conformal Field Theory}.
@@ -72,10 +72,6 @@ D.~K. Bruno~Balthazar, Jinwei~Chu, {\it On time-dependent backgrounds in 1+1
 R.~Grimshaw, D.~Pelinovsky, and E.~Pelinovsky, {\it Homogenization of the
   variable-speed wave equation},  {\em Wave Motion} {\bf 47} (Dec., 2010)
   496--507.
-
-\bibitem{Tong2009Lectures}
-D.~Tong, {\it Lectures on {{String Theory}}},
-  \href{http://arxiv.org/abs/0908.0333}{{\tt arXiv:0908.0333}}.
 
 \bibitem{Green2012Superstring}
 M.~B. Green, J.~H. Schwarz, and E.~Witten, {\em Superstring Theory: 25th
@@ -93,5 +89,9 @@ T.~Thiemann, {\it The {LQG}-string: Loop quantum gravity quantization of string
 \bibitem{Afshordi-emergent}
 D.~S. Niayesh~Afshordi, {\it Emergent spacetime in stochastically evolving
   dimensions}, .
+
+\bibitem{Zwiebach2009A-First}
+B.~Zwiebach, {\em A First Course in String Theory}.
+\newblock Cambridge University Press, 2nd~ed., 2009.
 
 \end{thebibliography}\endgroup
