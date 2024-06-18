@@ -512,11 +512,13 @@ with $E_{p} = \sqrt{p^2 + \mu ^2}$. From here on, following an analogous procedu
 \end{equation}
 
 When looking at the constraints, we see that we can't decouple the exponentials in $\tau$ from any of the sums, thus we get two-indices \textquotedblleft Virasoro modes"
-\begin{align}
-	L_{n , p} := \alpha ^{\mu} _{n} \alpha ^{\nu} _{p} \eta _{\mu \nu}                                                         & = 0 , \ \forall \ n , p \in \mathbb{Z} , \label{eqn:"virasoro"-modes-1} \\
-	\widetilde{L}_{n , p} := \alpha ^{\mu} _{n} (\alpha ^{\nu} _{p})^{*} \eta _{\mu \nu}                                       & = 0 , \ n \neq p , \label{eqn:"virasoro"-modes-2}                       \\
-	\sum _{n} \left( \left( 1 + \frac{n}{E_{n}} \right) ^2 \alpha ^{\mu} _{n} (\alpha ^{\nu} _{n})^{*} \eta _{\mu \nu} \right) & = 0 \label{eqn:"virasoro"-modes-sum} .
-\end{align}
+\begin{subequations}
+	\begin{align}
+		L_{n , p} := \alpha ^{\mu} _{n} \alpha ^{\nu} _{p} \eta _{\mu \nu}                                                         & = 0 , \ \forall \ n , p \in \mathbb{Z} , \label{eqn:"virasoro"-modes-1} \\
+		\widetilde{L}_{n , p} := \alpha ^{\mu} _{n} (\alpha ^{\nu} _{p})^{*} \eta _{\mu \nu}                                       & = 0 , \ n \neq p , \label{eqn:"virasoro"-modes-2}                       \\
+		\sum _{n} \left( \left( 1 + \frac{n}{E_{n}} \right) ^2 \alpha ^{\mu} _{n} (\alpha ^{\nu} _{n})^{*} \eta _{\mu \nu} \right) & = 0 \label{eqn:"virasoro"-modes-sum} .
+	\end{align}
+\end{subequations}
 Constraint \eqref{eqn:"virasoro"-modes-2} implies that we only have $D$ independent expansion modes for each field $X^{\mu}$, which for consistency as we will see later means $\alpha ^{\mu} _{- p} = \alpha ^{\mu} _{p} , \ p \leq d = D - 1$ and $\alpha ^{\mu} _{n} = 0 , \ \forall \ |n| > d$, so we have a truncated solution. This is not surprising, since because space-time is discrete we expect wavelengths smaller than the granular structure to be ruled out.
 
 Before proceeding, we have one remark: the 0-th term of the solution reads
@@ -556,17 +558,19 @@ and then proceed to use the equal-time Poisson bracket relation at $\tau = 0$
 	\left\{ X^{\mu} (0 , \sigma) , \Pi ^{\nu} (0 , \sigma ') \right\} = \delta (\sigma - \sigma ') \eta ^{\mu \nu}
 \end{equation}
 to calculate the bracket relations between the expansion modes $\alpha ^{\mu} _{n}$ and $(\alpha ^{\nu} _{p})^{*}$. After using the freedom we still have in choosing the expansion modes of $F^{-}$ to gauge fix it to satisfy $\mathfrak{Re} (A_{0}) = - 2 \alpha '$ and realizing that $\alpha ^{\mu} _{- n} = \alpha ^{\mu} _{n}$, we get the desired
-\begin{equation} \label{eqn:expansion-modes-bracket-0}
-	\left\{ \alpha ^{\mu} _{n} , \alpha ^{\nu} _{p} \right\} = 0 = \left\{ (\alpha ^{\mu} _{n})^{*} , (\alpha ^{\nu} _{p})^{*} \right\}
-\end{equation}
-\begin{equation} \label{eqn:expansion-modes-bracket-1}
-	\left\{ \alpha ^{\mu} _{n} , (\alpha ^{\nu} _{p})^{*} \right\} = - i E_{n} \delta _{|n| , |p|} \eta ^{\mu \nu} ,
-\end{equation}
+\begin{subequations}
+	\begin{align}
+		\left\{ \alpha ^{\mu} _{n} , \alpha ^{\nu} _{p} \right\}       & = 0 = \left\{ (\alpha ^{\mu} _{n})^{*} , (\alpha ^{\nu} _{p})^{*} \right\} \label{eqn:expansion-modes-bracket-0} \\
+		\left\{ \alpha ^{\mu} _{n} , (\alpha ^{\nu} _{p})^{*} \right\} & = - i E_{n} \delta _{|n| , |p|} \eta ^{\mu \nu} , \label{eqn:expansion-modes-bracket-1}
+	\end{align}
+\end{subequations}
 from which we can normalize the expansion modes to get harmonic oscillator modes and bracket relations
-\begin{align}
-	a^{\mu} _{n}       & := \frac{1}{\sqrt{E_{n}}} \alpha ^{\mu} _{n} \label{eqn:normalized-oscillator-modes}         \\
-	(a^{\mu} _{n})^{*} & := \frac{1}{\sqrt{E_{n}}} (\alpha ^{\mu} _{n})^{*} \label{eqn:normalized-oscillator-modes-*}
-\end{align}
+\begin{subequations}
+	\begin{align}
+		a^{\mu} _{n}       & := \frac{1}{\sqrt{E_{n}}} \alpha ^{\mu} _{n} \label{eqn:normalized-oscillator-modes}         \\
+		(a^{\mu} _{n})^{*} & := \frac{1}{\sqrt{E_{n}}} (\alpha ^{\mu} _{n})^{*} \label{eqn:normalized-oscillator-modes-*}
+	\end{align}
+\end{subequations}
 \begin{equation} \label{eqn:harmonic-bracket-relations}
 	\left\{ a^{\mu} _{n} , (a^{\nu} _{p})^{*} \right\} = - i \delta _{|m| , |l|} \eta ^{\mu \nu} .
 \end{equation}
@@ -579,42 +583,50 @@ The bracket relations for $\alpha ^{\mu} _{0}$ can be used to get the expected b
 \subsection{The \textquotedblleft Virasoro-Klein-Gordon" Algebra}
 
 Having the bracket relations between the vibrational modes of the string, we can now calculate the constraint algebra, which we shall refer to as the Virasoro-Klein-Gordon Algebra. For simplicity, since $E_{n} = \sqrt{n^2 + \mu ^2} > 0$, we shall work with the normalized harmonic oscillator modes $a^{\mu} _{n}$ instead of the expansion modes $\alpha ^{\mu} _{n}$. The algebra is given by
-\begin{equation} \label{eqn:L-brackets-0}
-	\left\{ L_{n , m} , L_{k , p} \right\} = 0
-\end{equation}
-\begin{equation} \label{eqn:L-brackets-1}
-	\left\{ L_{n , m} , \widetilde{L}_{k , p} \right\} = - i \left( L_{m , k} \delta _{|n| , |p|} + L_{n , k} \delta _{|m| , |p|} \right)
-\end{equation}
-\begin{equation} \label{eqn:L-brackets-2}
-	\left\{ \widetilde{L}_{n , m} , \widetilde{L}_{k , p} \right\} = - i \left( \widetilde{L}_{k , m} \delta _{|n| , |p|} - \widetilde{L}_{n , p} \delta _{|m| , |k|} \right) .
-\end{equation}
+\begin{subequations}
+	\begin{equation} \label{eqn:L-brackets-0}
+		\left\{ L_{n , m} , L_{k , p} \right\} = 0
+	\end{equation}
+	\begin{equation} \label{eqn:L-brackets-1}
+		\left\{ L_{n , m} , \widetilde{L}_{k , p} \right\} = - i \left( L_{m , k} \delta _{|n| , |p|} + L_{n , k} \delta _{|m| , |p|} \right)
+	\end{equation}
+	\begin{equation} \label{eqn:L-brackets-2}
+		\left\{ \widetilde{L}_{n , m} , \widetilde{L}_{k , p} \right\} = - i \left( \widetilde{L}_{k , m} \delta _{|n| , |p|} - \widetilde{L}_{n , p} \delta _{|m| , |k|} \right) .
+	\end{equation}
+\end{subequations}
 
 \section{The Quantum Klein-Gordon String} \label{sec:quantum-KG-string}
 
 We now seek to quantize the Klein-Gordon string by means of covariant canonical quantization, in a manner much similar to those found in (\cite{Tong2009Lectures},\cite{Green2012Superstring}). The string coordinates $X^{\mu}$ and it's conjugate momentum $\Pi ^{\nu}$ are turned into operators $\Hat{X}^{\mu}$ and $\Hat{\Pi}^{\nu}$, with the Poisson brackets $\{ . , . \}$ being replaced by commutators $\{ . , . \} \rightarrow - i [ . , . ]$:
-\begin{align}
-	\left[ \Hat{X}^{\mu} (\tau , \sigma) , \Hat{\Pi}^{\nu} (\tau , \sigma ') \right] & = i \delta (\sigma - \sigma ') \eta ^{\mu \nu} \label{eqn:X-P-commutator}                                              \\
-	\left[ \Hat{X}^{\mu} , \Hat{X}^{\nu} \right]                                     & = 0 = \left[ \Hat{\Pi}^{\mu} , \Hat{\Pi}^{\nu} \right] \label{eqn:X-X-P-P-commutators}                                 \\
-	\left[ \Hat{a}^{\mu} _{n} , \Hat{a}^{\nu} _{p} \right]                           & = 0 = \left[ (\Hat{a}^{\mu} _{n})^{\dagger} , (\Hat{a}^{\nu} _{p})^{\dagger} \right] \label{eqn:a-a-a*-a*-commutators} \\
-	\left[ \Hat{a}^{\mu} _{n} , (\Hat{a}^{\nu} _{p})^{\dagger} \right]               & = \delta _{|n| , |p|} \eta ^{\mu \nu} \label{eqn:a-a*-commutator}                                                      \\
-	\left[ \Hat{x}^{\mu} , \Hat{x}^{\nu} \right]                                     & = 0 = \left[ \Hat{p}^{\mu} , \Hat{p}^{\nu} \right] \label{eqn:x-x-p-p-commutators}                                     \\
-	\left[ \Hat{x}^{\mu} , \Hat{p}^{\nu} \right]                                     & = i \eta ^{\mu \nu} \label{eqn:x-p-commutator}
-\end{align}
+\begin{subequations}
+	\begin{align}
+		\left[ \Hat{X}^{\mu} (\tau , \sigma) , \Hat{\Pi}^{\nu} (\tau , \sigma ') \right] & = i \delta (\sigma - \sigma ') \eta ^{\mu \nu} \label{eqn:X-P-commutator}                                              \\
+		\left[ \Hat{X}^{\mu} , \Hat{X}^{\nu} \right]                                     & = 0 = \left[ \Hat{\Pi}^{\mu} , \Hat{\Pi}^{\nu} \right] \label{eqn:X-X-P-P-commutators}                                 \\
+		\left[ \Hat{a}^{\mu} _{n} , \Hat{a}^{\nu} _{p} \right]                           & = 0 = \left[ (\Hat{a}^{\mu} _{n})^{\dagger} , (\Hat{a}^{\nu} _{p})^{\dagger} \right] \label{eqn:a-a-a*-a*-commutators} \\
+		\left[ \Hat{a}^{\mu} _{n} , (\Hat{a}^{\nu} _{p})^{\dagger} \right]               & = \delta _{|n| , |p|} \eta ^{\mu \nu} \label{eqn:a-a*-commutator}                                                      \\
+		\left[ \Hat{x}^{\mu} , \Hat{x}^{\nu} \right]                                     & = 0 = \left[ \Hat{p}^{\mu} , \Hat{p}^{\nu} \right] \label{eqn:x-x-p-p-commutators}                                     \\
+		\left[ \Hat{x}^{\mu} , \Hat{p}^{\nu} \right]                                     & = i \eta ^{\mu \nu} \label{eqn:x-p-commutator}
+	\end{align}
+\end{subequations}
 
 As usual, we define the vacuum state of the string to obey
 \begin{equation} \label{eqn:annihilation-vacuum}
 	\Hat{a}^{\mu} _{p} \ket{0} = 0 , \ \mathrm{for} \ p \neq 0 .
 \end{equation}
 For $p = 0$ we have center of mass position and momentum, so the vacuum has extra structure obeying
-\begin{align}
-	\Hat{x}^{\mu} \ket{0 ; x} & = x^{\mu} \ket{0 ; x} \label{eqn:x-vacuum-x}                       \\
-	\Hat{p}_{\mu} \ket{0 ; 0} & = - i \frac{\del}{\del x^{\mu}} \ket{0 ; x} \label{eqn:p-vacuum-x}
-\end{align}
+\begin{subequations}
+	\begin{align}
+		\Hat{x}^{\mu} \ket{0 ; x} & = x^{\mu} \ket{0 ; x} \label{eqn:x-vacuum-x}                       \\
+		\Hat{p}_{\mu} \ket{0 ; x} & = - i \frac{\del}{\del x^{\mu}} \ket{0 ; x} \label{eqn:p-vacuum-x}
+	\end{align}
+\end{subequations}
 in position representation and
-\begin{align}
-	\Hat{x}^{\mu} \ket{0 ; p} & = - i \frac{\del}{\del p_{\mu}} \ket{0 ; p} \label{eqn:x-vacuum-p} \\
-	\Hat{p}_{\mu} \ket{0 ; p} & = p_{\mu} \ket{0 ; p} \label{eqn:p-vacuum-p}
-\end{align}
+\begin{subequations}
+	\begin{align}
+		\Hat{x}^{\mu} \ket{0 ; p} & = - i \frac{\del}{\del p_{\mu}} \ket{0 ; p} \label{eqn:x-vacuum-p} \\
+		\Hat{p}_{\mu} \ket{0 ; p} & = p_{\mu} \ket{0 ; p} \label{eqn:p-vacuum-p}
+	\end{align}
+\end{subequations}
 in momentum representation.
 
 Our Fock space is built from the vacuum state $\ket{0}$ by operating with a sequence of creation operators
@@ -629,12 +641,14 @@ As usual, the appearance of the Minkowski metric in the non-zero commutator
 brings ghosts into the theory which must be dealt with.
 
 When translating the constraints as quantum operators, we require that they have vanishing matrix elements when sandwiched by physical states $\psi$ and $\phi$:
-\begin{equation} \label{eqn:L-constraint-quantum-1}
-	\bra{\phi} \Hat{L}_{p , k} \ket{\psi} = 0 \, \,
-\end{equation}
-\begin{equation} \label{eqn:L-constraint-quantum-2}
-	\bra{\phi} \Hat{\widetilde{L}}_{p , k} \ket{\psi} = 0 .
-\end{equation}
+\begin{subequations}
+	\begin{equation} \label{eqn:L-constraint-quantum-1}
+		\bra{\phi} \Hat{L}_{p , k} \ket{\psi} = 0 \, \,
+	\end{equation}
+	\begin{equation} \label{eqn:L-constraint-quantum-2}
+		\bra{\phi} \Hat{\widetilde{L}}_{p , k} \ket{\psi} = 0 .
+	\end{equation}
+\end{subequations}
 $\Hat{L}_{p , k}$ has no ambiguities since it's composed of only annihilation operators. As for $\widetilde{L}_{p , k}$, we have an ambiguity for $p = k \neq 0$, so we pick normal ordering with the annihilation operator to the right
 \begin{equation} \label{eqn:L-normal-ordering}
 	\Hat{\widetilde{L}}_{p , p} = (\Hat{\alpha}^{\mu} _{p})^{\dagger} \Hat{\alpha}^{\nu} _{p} \eta _{\mu \nu} .
@@ -655,23 +669,19 @@ This constant can be calculated by imposing normal-ordering on the summed constr
 \end{multline}
 
 The commutation relations between the constraints are inherited by the Poisson brackets
-\begin{align}
-	\left[ \Hat{L}_{n , m} , \Hat{L}_{k , p} \right]                         & = 0 \label{eqn:L-commutator-0}                                                                                                   \\
-	\left[ \Hat{L}_{n , m} , \Hat{\widetilde{L}}_{k , p} \right]             & = \Hat{L}_{m , k} \delta _{|n| , |p|} + \Hat{L}_{n , k} \delta _{|m| , |p|} \label{eqn:L-commutator-1}                           \\
-	\left[ \Hat{\widetilde{L}}_{n , m} , \Hat{\widetilde{L}}_{k , p} \right] & = \Hat{\widetilde{L}}_{k , m} \delta _{|n| , |p|} - \Hat{\widetilde{L}}_{n , p} \delta _{|m| , |k|} \label{eqn:L-commutator-2} .
-\end{align}
+\begin{subequations}
+	\begin{align}
+		\left[ \Hat{L}_{n , m} , \Hat{L}_{k , p} \right]                         & = 0 \label{eqn:L-commutator-0}                                                                                                   \\
+		\left[ \Hat{L}_{n , m} , \Hat{\widetilde{L}}_{k , p} \right]             & = \Hat{L}_{m , k} \delta _{|n| , |p|} + \Hat{L}_{n , k} \delta _{|m| , |p|} \label{eqn:L-commutator-1}                           \\
+		\left[ \Hat{\widetilde{L}}_{n , m} , \Hat{\widetilde{L}}_{k , p} \right] & = \Hat{\widetilde{L}}_{k , m} \delta _{|n| , |p|} - \Hat{\widetilde{L}}_{n , p} \delta _{|m| , |k|} \label{eqn:L-commutator-2} .
+	\end{align}
+\end{subequations}
 The commutator (\ref{eqn:L-commutator-1}) ends up with only annihilation operators in the R.H.S, so it has no ordering ambiguities, meanwhile the commutator (\ref{eqn:L-commutator-2}) have ordering ambiguities for $|m| = |k|$ and/or $|n| = |p|$, so we add the anomalous terms
 \begin{multline} \label{eqn:L-commutator-anomalous-initial}
 	\left[ \Hat{\widetilde{L}}_{n , m} , \Hat{\widetilde{L}}_{k , p} \right] = \Hat{\widetilde{L}}_{k , m} \delta _{|n| , |p|} - \Hat{\widetilde{L}}_{n , p} \delta _{|m| , |k|} + \\
 	+ C_{n} \delta _{|n| , |p|} + D_{k} \delta _{|m| , |k|} .
 \end{multline}
-Clearly, $C_{0} = D_{0} = 0$, since when all indices are $0$ we have only the position and momentum operators, and thus the commutator should vanish identically. Also, because of the symmetry in the indices we have that $C_{- n} = C_{n}$ and $D_{- k} = D_{k}$. Using the Jacobi identity
-\begin{multline} \label{eqn:L-Jacobi-identity}
-	\left[ \Hat{\widetilde{L}}_{n , m} , \left[ \Hat{\widetilde{L}}_{k , p} , \Hat{\widetilde{L}}_{r , s} \right] \right] + \\
-	+ \left[ \Hat{\widetilde{L}}_{r , s} , \left[ \Hat{\widetilde{L}}_{n , m} , \Hat{\widetilde{L}}_{k , p} \right] \right] + \\
-	+ \left[ \Hat{\widetilde{L}}_{k , p} , \left[ \Hat{\widetilde{L}}_{r , s} , \Hat{\widetilde{L}}_{n , m} \right] \right] = 0
-\end{multline}
-we get the difference equation
+Clearly, $C_{0} = D_{0} = 0$, since when all indices are $0$ we have only the position and momentum operators, and thus the commutator should vanish identically. Also, because of the symmetry in the indices we have that $C_{- n} = C_{n}$ and $D_{- k} = D_{k}$. Using the Jacobi identity we get the difference equation
 \begin{equation} \label{eqn:F-difference-eqn}
 	F_{n + 1} + F_{n} + F_{1} = 0
 \end{equation}
@@ -686,15 +696,19 @@ and since both $C_{n}$ and $D_{n}$ need to satisfy the initial value of $0$, eac
 Next, by calculating the vacuum expectation value (VEV) of the commutator \eqref{eqn:L-commutator-2} with $|m| \neq |k|$ and $n = p = 1$, we find that $F_{1} = 0$, thus both sequences $C_{n} = D_{n} = 0$ vanish and we conclude that the quantum version of our algebra \emph{has no anomalies}. This is a relevant result, since it could mean our model doesn't need a specific number of dimensions to work, which will be explored again later in section \ref{sec:discussion}.
 
 A quick calculation reveals that the WS Hamiltonian and momentum operators are given by
-\begin{align}
-	\Hat{H} & = - \frac{1}{2} \sum _{n} \Hat{\widetilde{L}}_{n , n} \label{eqn:WS-Hamiltonian}              \\
-	\Hat{P} & = - \frac{1}{2} \sum _{n} \frac{n}{E_{n}} \Hat{\widetilde{L}}_{n , n} \label{eqn:WS-momentum}
-\end{align}
+\begin{subequations}
+	\begin{align}
+		\Hat{H} & = - \frac{1}{2} \sum _{n} \Hat{\widetilde{L}}_{n , n} \label{eqn:WS-Hamiltonian}              \\
+		\Hat{P} & = - \frac{1}{2} \sum _{n} \frac{n}{E_{n}} \Hat{\widetilde{L}}_{n , n} \label{eqn:WS-momentum}
+	\end{align}
+\end{subequations}
 since those generate $\tau$ and $\sigma$ translations respectively
-\begin{align}
-	\left[ \Hat{H} , \Hat{X}^{\mu} \right] & = - i \del _{\tau} \Hat{X}^{\mu} \label{eqn:tau-generator}     \\
-	\left[ \Hat{P} , \Hat{X}^{\mu} \right] & = i \del _{\sigma} \Hat{X}^{\mu} . \label{eqn:sigma-generator}
-\end{align}
+\begin{subequations}
+	\begin{align}
+		\left[ \Hat{H} , \Hat{X}^{\mu} \right] & = - i \del _{\tau} \Hat{X}^{\mu} \label{eqn:tau-generator}     \\
+		\left[ \Hat{P} , \Hat{X}^{\mu} \right] & = i \del _{\sigma} \Hat{X}^{\mu} . \label{eqn:sigma-generator}
+	\end{align}
+\end{subequations}
 Clearly, $\Hat{P}$ does not necessarily annihilate physical states (see \eqref{eqn:WS-momentum}), thus those are not required to be invariant under rigid rotations of the string. \emph{Physical states for the KG string have non-conserved WS momentum.} Also, we see that there is no level-matching between left and right-moving modes since those are not distinct in our model.
 
 Let us denote the ground state with momentum $p^{\mu}$ by $\ket{0 ; p}$. Then, the mass-shell condition \eqref{eqn:shifted-mass-spectrum} implies that
@@ -732,11 +746,13 @@ The auxiliary $\bra{0 ; p} \xi _{\alpha} \Hat{a}^{\alpha} _{n} \Hat{\widetilde{L
 	(\zeta _{\mu \nu} + \zeta _{\nu \mu}) p^{\mu} = 0 .
 \end{equation}
 We can decompose the polarization into a symmetric traceless part $G_{\mu \nu}$, an anti-symmetric part $B_{\mu \nu}$ and a trace part $\Phi \eta _{\mu \nu}$ given by
-\begin{align}
-	G_{\mu \nu} & = \frac{1}{2} (\zeta _{\mu \nu} + \zeta _{\nu \mu}) - \frac{1}{D} \eta ^{\alpha \beta} \zeta _{\alpha \beta} \eta _{\mu \nu} \label{eqn:G-zeta} \\
-	B_{\mu \nu} & = \frac{1}{2} (\zeta _{\mu \nu} - \zeta _{\nu \mu}) \label{eqn:B-zeta}                                                                          \\
-	\Phi        & = \frac{1}{D} \eta ^{\alpha \beta} \zeta _{\alpha \beta} \label{eqn:Phi-zeta} ,
-\end{align}
+\begin{subequations}
+	\begin{align}
+		G_{\mu \nu} & = \frac{1}{2} (\zeta _{\mu \nu} + \zeta _{\nu \mu}) - \frac{1}{D} \eta ^{\alpha \beta} \zeta _{\alpha \beta} \eta _{\mu \nu} \label{eqn:G-zeta} \\
+		B_{\mu \nu} & = \frac{1}{2} (\zeta _{\mu \nu} - \zeta _{\nu \mu}) \label{eqn:B-zeta}                                                                          \\
+		\Phi        & = \frac{1}{D} \eta ^{\alpha \beta} \zeta _{\alpha \beta} \label{eqn:Phi-zeta} ,
+	\end{align}
+\end{subequations}
 $\zeta _{\mu \nu} = G_{\mu \nu} + B_{\mu \nu} + \Phi \eta _{\mu \nu}$, giving rise to 3 well-known types of background fields: the spacetime metric $G_{\mu \nu}$, Kalb-Ramond 2-form $B_{\mu \nu}$ and dilaton $\Phi$, all of those having squared mass given by eq \eqref{eqn:nth-spin-2-mass-shell}. We thus see that the symmetric part $S_{\mu \nu} = G_{\mu \nu} + \Phi \eta _{\mu \nu}$ of $\zeta _{\mu \nu}$ is orthogonal to the momentum of the string, $S_{\mu \nu} p^{\mu} = 0$, and since $p^2 < 0$, we can choose a reference frame where $p^{\mu} = (p , 0 , ... , 0)$ only has a time component, leaving us with $S_{0 \nu} = 0$, implying that $\zeta _{0 \nu} = - \zeta _{\nu 0}$. This condition guarantees that the timelike components of $\zeta _{\mu \nu}$ have a positive contribution to its square $\zeta ^{\mu \nu} \zeta _{\mu \nu} = \zeta ^{i j} \zeta _{i j} + b , \ b = \zeta ^{0 i} \zeta _{0 i} > 0$, and the remaining part is spacelike thus must also have positive square, so we get that $\zeta ^{\mu \nu} \zeta _{\mu \nu} > 0$, so we are free of ghosts in the spin-2 spectrum.
 
 It seems we're in trouble since eq \eqref{eqn:nth-spin-2-mass-shell} tells us we have no massless 2 excitation states, but in fact, this is not a problem and is actually expected since quantum geometric effects are expected to violate Lorentz invariance near the Planck scale \cite{Bodendorfer-LQG}, making it so massless particles effectively travel slightly slower than $c$, with corrections on the order of $\sim E_{pl} ^{- 4}$.
