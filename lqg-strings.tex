@@ -350,7 +350,7 @@ where $G_{\mu\nu}$ is now the bulk or target space metric. Using this form we ca
 
 \subsection{(Worldsheet) Kalb Ramond and Area Quantization} \label{sec:ws-kalb-ramond}
 
-In the following we will derive the equations of motion for the bimetric Polyakov action and along the way we will discover that the scalar density $\Delta(x)$ can be identified with the antisymmetric tensor $\epsilon_{ac}$ living on the worldsheet. The worldsheet antisymmetric tensor can itself be understood as arising from the pullback of a bulk antisymmetric tensor. Now, in string theory there is already a very important antisymmetric bulk tensor called the Kalb-Ramond field.
+In the following, we will derive the equations of motion for the bimetric Polyakov action and along the way we will discover that the scalar density $\Delta(x)$ can be identified as being the determinant of (a tensor proportional to) the antisymmetric tensor $\widetilde{\varepsilon}_{a c}$ living on the worldsheet. The worldsheet antisymmetric tensor can itself be understood as arising from the pullback of a bulk antisymmetric tensor. Now, in string theory, there is already a very important antisymmetric bulk tensor called the Kalb-Ramond field.
 
 Following the usual procedure such as the one found in \cite{Tong2009Lectures}, we find two copies of the string energy-momentum tensor:
 \begin{equation} \label{eqn:variation-wrt-g}
@@ -407,32 +407,21 @@ which can be achieved if
 \end{equation}
 and if the background metrics are related by
 \begin{equation} \label{eqn:H=1/(2g)G}
-	H_{\mu \nu} = \frac{\Delta}{2 g} G_{\mu \nu} ,
+	H_{\mu \nu} = \frac{\Delta}{2 g} G_{\mu \nu} .
 \end{equation}
-which makes sense since $\Delta _{a b}$ is related to area, so it should be a 2-form.
+This makes sense since $\Delta _{a b}$ is related to area, so it should be a 2-form. Now, since the WS metric $g_{a b}$ is taken as the pullback of the bulk metric $g_{a b} = \del _{a} X^{\mu} \del _{b} X^{\nu} G_{\mu \nu}$, which is part of the closed string spin-2 spectrum, then it would make sense for the WS area 2-form $\Delta _{a b}$ to be (at least related to) the pullback of the Kalb-Ramond field, which is the other half of the closed string rank 2 tensor field excitations,
+\begin{equation} \label{eqn:Delta-B-relation}
+	\Delta _{a b} \sim \del _{a} X^{\mu} \del _{b} X^{\nu} B_{\mu \nu} .
+\end{equation}
 
-As for the embedding fields equation, continuing to assume no interaction term we get a non-homogeneous wave equation for the coupled metric $F^{a b} _{\mu \nu} = T \sqrt{- g} g^{a b} G_{\mu \nu} + T' \sqrt{- h} h^{a b} H_{\mu \nu}$
-\begin{equation} \label{eqn:variation-wrt-X}
-	\frac{\delta S_{P B}}{\delta X^{\lambda}} = 0
-\end{equation}
-\begin{equation} \label{eqn:bimetric-X-eom}
-	\partial _{a} \left( F^{a b} _{\mu \lambda} \partial _{b} X^{\mu} \right) = \frac{1}{2} \partial _{\lambda} F^{a b} _{\mu \nu} \partial _{a} X^{\mu} \partial _{b} X^{\nu} ,
-\end{equation}
-whereby assuming the conditions for $h = \Delta ^2 / g$ \eqref{eqn:h=SgS}, \eqref{eqn:S=sigma_y} and \eqref{eqn:H=1/(2g)G} and flat background $G_{\mu \nu} = \eta _{\mu \nu}$ gets simplified to
-\begin{equation} \label{eqn:bimetric-X-eom-simplified-1}
-	\del _{a} \left( \left( 1 - \frac{k \Delta}{2 (- g)} \right) \sqrt{- g} g^{a b} \del _{b} X^{\mu} \right) = 0 ,
-\end{equation}
-which in conformal gauge $g_{a b} = \e ^{\phi (x)} \eta _{a b}$ simplifies further to eq \eqref{eqn:X-eom-simplified} derived in section \ref{sec:inverse-metric-Polyakov}. In fact, if we plug in the conditions \eqref{eqn:h=SgS}, \eqref{eqn:S=sigma_y} and \eqref{eqn:H=1/(2g)G} plus $T' = - T k / 2$ into the bimetric Polyakov action \eqref{eqn:polyakov-flat} we recover precisely the action \eqref{eqn:inverse-metric-Polyakov} of section \ref{sec:inverse-metric-Polyakov}, thus showing that the form of area corrected Polyakov action discussed there can be cast as a special case of the interactionless bimetric string.
-
-\section{Inverse Metric Polyakov} \label{sec:inverse-metric-Polyakov}
-
-In the same way we considered the quantum geometry inverse metric correction to the Nambu-Goto action, it is also natural to consider such correction to the Polyakov action. We start with the action(\ref{eqn:polyakov-gravity}) and proceed with the inverse area correction(\ref{eqn:inverse-metric-correction}), which yields our corrected Polyakov action
+If we impose the conditions \eqref{eqn:h=SgS}, \eqref{eqn:S=sigma_y} and \eqref{eqn:H=1/(2g)G} plus $T' = - T k / 2$ in the interactionless bimetric Polyakov action \eqref{eqn:polyakov-flat}, we obtain the Polyakov version of the area-corrected action \eqref{eqn:modified-NG-action}:
 \begin{multline} \label{eqn:inverse-metric-Polyakov}
 	S_{I A P} = - \frac{T}{2} \int \diff ^2 x \left( \sqrt{- g} - \frac{k \Delta}{2 \sqrt{- g}} \right) \times \\ \times g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} .
 \end{multline}
-One might think this action is incomplete since we only applied the correction to the determinant and didn't change the inverse metric $g^{a b}$, however the correction \ref{eqn:inverse-metric-correction} is a correction to the \emph{area} of the WS, not its metric. Moreover, there are other good reasons for this form of the Polyakov action: the first is that the action in this form, as we shall see, reduces neatly to the area-corrected Nambu-Goto action \eqref{eqn:modified-NG-action}, and the second comes from a more rigorous bimetric Polyakov string analysis which will be done in appendix \ref{app:bimetric-string}, where we show that starting from a bimetric Polyakov string one can derive the action \eqref{eqn:inverse-metric-Polyakov}.
 
-This action is even more manifestly background Poincaré invariant, since now the $X^{\mu}$ dependence is explicit with this being a first-order action with $g_{a b}$ and $X^{\mu}$ treated as independent variables. This time, however, we lose WS Weyl symmetry, since the second term has inverse determinant multiplied by inverse metric.
+\section{Inverse Metric Polyakov} \label{sec:inverse-metric-Polyakov}
+
+In this section, we explore the action \eqref{eqn:inverse-metric-Polyakov} derived previously. This action is even more manifestly background Poincaré invariant, since now the $X^{\mu}$ dependence is explicit with this being a first-order action with $g_{a b}$ and $X^{\mu}$ treated as independent variables. However, the price to pay is that we don't have WS Weyl symmetry since the second term has inverse determinant multiplied by inverse metric.
 
 The equations of motion for the world-sheet metric are completely unchanged by this correction,
 \begin{equation} \label{eqn:vary-wrt-g}
@@ -448,10 +437,11 @@ from which we can extract the metric $g_{c d}$ as
 \end{equation}
 where the function $f$ is given by
 \begin{equation} \label{eqn:inverse-area-f}
-	\frac{1}{f} = g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} .
+	\frac{1}{f} = g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu}
 \end{equation}
+just like the regular ST literature.
 
-As for variation w.r.t the embbeding fields $X^{\lambda}$, we have
+As for variation \wrt the embbeding fields $X^{\lambda}$, we have
 \begin{equation} \label{eqn:vary-wrt-X}
 	\frac{\delta S_{I A P}}{\delta X^{\lambda}} = 0
 \end{equation}
@@ -474,7 +464,7 @@ revealing a wave equation sourced by a coupling between the WS conformal factor,
 
 \subsection{Simplifying The Equations of Motion} \label{sec:solving-eoms-inverse-area}
 
-Equation(\ref{eqn:X-eom-simplified}) seems a bit odd, but we can polish it by choosing a plane-wave ansatz for the embedding fields $X^{\mu} = X^{\mu} _{0} \e ^{-i (E \tau - p \sigma)}$ and using it to fix a form for the conformal factor $\e ^{\phi (x)}$ appearing in $F^{-}$. By using the ansatz in eq(\ref{eqn:X-eom-simplified}), it becomes
+Equation (\ref{eqn:X-eom-simplified}) seems a bit odd, but we can polish it by choosing a plane-wave ansatz for the embedding fields $X^{\mu} = X^{\mu} _{0} \e ^{-i (E \tau - p \sigma)}$ and using it to fix a form for the conformal factor $\e ^{\phi (x)}$ appearing in $F^{-}$. By using the ansatz in eq (\ref{eqn:X-eom-simplified}), it becomes
 \begin{equation}
 	(E^{2} - p^{2}) X^{\mu} + i (E \partial _{\tau} \ln (F^{-}) - p \partial _{\sigma} \ln (F^{-})) X^{\mu} = 0 ,
 \end{equation}
@@ -493,7 +483,7 @@ thus we have
 \begin{equation} \label{eqn:phi}
 	\e ^{\phi (x)} = \sqrt{\frac{k \Delta}{2 \left( 1 - A \e ^{i (E \tau + p \sigma)} \right)}} .
 \end{equation}
-At first glance, it seems problematic that we have a complex conformal factor, but the complex structure comes from our ansatz for the embedding fields, and when we choose either the real or imaginary part of the latter it should also pick the respective component of $\e ^{\phi}$. With this choice, we thus turned eq(\ref{eqn:X-eom-simplified}) into a Klein-Gordon equation
+At first glance, it seems problematic that we have a complex conformal factor, but the complex structure comes from our ansatz for the embedding fields, and when we choose either the real or imaginary part of the latter it should also pick the respective component of $\e ^{\phi}$. With this choice, we thus turned eq (\ref{eqn:X-eom-simplified}) into a Klein-Gordon equation
 \begin{equation} \label{eqn:X-Klein-Gordon-eqn}
 	\left( \partial _{\sigma} ^2 - \partial _{\tau} ^2 \right) X^{\mu} - \mu ^2 X^{\mu} = 0 .
 \end{equation}
@@ -501,46 +491,11 @@ The imposition that
 \begin{equation} \label{eqn:mu-constraint-1}
 	i (E \partial _{\tau} \ln (F^{-}) - p \partial _{\sigma} \ln (F^{-})) = - \mu ^2
 \end{equation}
-can be used to find the explicit dependence of $\mu ^2$ with the quantum geometry parameters $k \Delta$ as in
+can be used to find the explicit dependence of $\mu ^2$ on the quantum geometry parameters $k \Delta$ as in
 \begin{multline} \label{eqn:mu-constraint-final}
 	\mu ^2 = \frac{i}{\dfrac{2 \e ^{2 \phi}}{k \Delta} - 1} \big( p \del _{\sigma} \ln \left( \e^{2 \phi} / \Delta \right) - \\
 	- E \del _{\tau} \ln \left( \e^{2 \phi} / \Delta \right) \big) .
 \end{multline}
-
-\subsection{Relation With The Nambu-Goto Analysis} \label{sec:relation-with-NG-case}
-
-At first glance, our recent analysis of the Polyakov string with inverse metric correction seems to not be related to what we found in the analysis of the Nambu-Goto string. However, as pointed out in \cite{Grimshaw2010Homogenization}, wave equations with a variable speed (the result of the Nambu-Goto analysis) can be turned into Klein-Gordon equations (what we just found). While their work deals only with space-varying wave speed, it is straightforward to generalise the procedure to also include time dependence.
-
-Following the procedure found in \cite{Grimshaw2010Homogenization}, we start with eq(\ref{eqn:simplified-modified-wave-eqn}) obtained in sec(\ref{sec:modified-eom}), renaming $\sigma$ as $x$ and dividing by $(F^{+})^2$ such that we have $v^2$ on the second term like the mentioned work, and perform a change of variables $(t , x) \rightarrow (\tau (t , x) , \sigma (t , x))$, where without loss of generality (one needs just to rescale and/or rotate the coordinates) we set
-\begin{multline} \label{eqn:new-coordinates-constraints-quadratic}
-	\ \ \ \ \ \ \ \ \ \ (\partial _{t} \sigma)^2 - v^2 (\partial _{x} \sigma)^2 = v^2 (\partial _{x} \tau)^2 - (\partial _{t} \tau)^2 \\
-	\partial _{t} \tau \partial _{t} \sigma = v^2 \partial _{x} \tau \partial _{x} \sigma , \ \ \ \ \ \ \ \ \ \ \ \
-\end{multline}
-or more compactly,
-\begin{multline} \label{eqn:new-coordinates-constraints-compact}
-	\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \partial _{t} \tau = v \partial _{x} \sigma \\
-	\partial _{t} \sigma = v \partial _{x} \tau \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ,
-\end{multline}
-which is equivalent to
-\begin{multline} \label{eqn:new-coordinates-constraints-second-order}
-	\ \ \ \ \ \ \ \ \ \ \ \partial _{t} ^2 \tau - v^2 \partial _{x} ^2 \tau = \partial _{t} v \partial _{x} \sigma + v \partial _{x} v \partial _{x} \tau \\
-	\partial _{t} ^2 \sigma - v^2 \partial _{x} ^2 \sigma = \partial _{t} v \partial _{x} \tau + v \partial _{x} v \partial _{x} \sigma . \ \ \ \ \ \ \
-\end{multline}
-This turns eq(\ref{eqn:simplified-modified-wave-eqn}) into
-\begin{multline} \label{eqn:modified-wave-eqn-new}
-	\partial _{\tau} ^2 X^{\mu} - \partial _{\sigma} ^2 X^{\mu} + \\
-	+ \frac{\partial _{t} v \partial _{x} \sigma + v \partial _{x} v \partial _{x} \tau}{((\partial _{t} \tau)^2 - v^2 (\partial _{x} \tau)^2)} \partial _{\tau} X^{\mu} + \\
-	+ \frac{\partial _{t} v \partial _{x} \tau + v \partial _{x} v \partial _{x} \sigma}{((\partial _{t} \tau)^2 - v^2 (\partial _{x} \tau)^2)} \partial _{\sigma} X^{\mu} = 0 .
-\end{multline}
-Next, we introduce $X^{\mu} = \kappa (\tau , \sigma) W^{\mu} (\tau , \sigma)$ such that terms proportional to first derivatives of $W^{\mu}$ cancel out. This is obtained by choosing $\kappa = v^{1/2}$ and concluding that $v$ only depends on $x$. With this, eq(\ref{eqn:modified-wave-eqn-new}) turns into a Klein-Gordon equation
-\begin{equation}
-	\partial _{\tau} ^2 W^{\mu} - \partial _{\sigma} ^2 W^{\mu} + \mu ^2 W^{\mu} = 0 ,
-\end{equation}
-with \textquotedblleft mass" squared given by
-\begin{equation}
-	\mu ^2 = \frac{(\partial _{x} v)^2 - 2 v \partial _{x} ^2 v}{4 \left( (\partial _{t} \tau)^2 - v^2 (\partial _{x} \tau)^2 \right)}
-\end{equation}
-and $\tau (t , x)$ satisfying constraints(\ref{eqn:new-coordinates-constraints-compact}). This shows that our action(\ref{eqn:inverse-metric-Polyakov}) is indeed in agreement with the inverse area corrected Nambu-Goto action(\ref{eqn:modified-NG-action}).
 
 \subsection{Solving The String Klein-Gordon Equation}
 
@@ -556,7 +511,7 @@ with $E_{p} = \sqrt{p^2 + \mu ^2}$. From here on, following an analogous procedu
 	\beta ^{\mu} _{n} = (\alpha ^{\mu} _{n})^{*} .
 \end{equation}
 
-When looking at the constraints, we see that we can't decouple the exponentials in $\tau$ from any of the sums, thus we get two-index \textquotedblleft Virasoro modes"
+When looking at the constraints, we see that we can't decouple the exponentials in $\tau$ from any of the sums, thus we get two-indices \textquotedblleft Virasoro modes"
 \begin{align}
 	L_{n , p} := \alpha ^{\mu} _{n} \alpha ^{\nu} _{p} \eta _{\mu \nu}                                                         & = 0 , \ \forall \ n , p \in \mathbb{Z} , \label{eqn:"virasoro"-modes-1} \\
 	\widetilde{L}_{n , p} := \alpha ^{\mu} _{n} (\alpha ^{\nu} _{p})^{*} \eta _{\mu \nu}                                       & = 0 , \ n \neq p , \label{eqn:"virasoro"-modes-2}                       \\
@@ -636,7 +591,7 @@ Having the bracket relations between the vibrational modes of the string, we can
 
 \section{The Quantum Klein-Gordon String} \label{sec:quantum-KG-string}
 
-We now seek to quantize the Klein-Gordon string by means of covariant canonical quantization, in a manner much similar to those found in (\cite{Tong2009Lectures},\cite{Green2012Superstring}). The string coordinates $X^{\mu}$ and it's conjugate momentum $\Pi ^{\nu}$ are turned into operators $\Hat{X}^{\mu}$ and $\Hat{\Pi}^{\nu}$, with the Poisson brackets $\{ . , . \}$ being replaced by commutators $[ . , . ] = i \hbar \{ . , . \}$:
+We now seek to quantize the Klein-Gordon string by means of covariant canonical quantization, in a manner much similar to those found in (\cite{Tong2009Lectures},\cite{Green2012Superstring}). The string coordinates $X^{\mu}$ and it's conjugate momentum $\Pi ^{\nu}$ are turned into operators $\Hat{X}^{\mu}$ and $\Hat{\Pi}^{\nu}$, with the Poisson brackets $\{ . , . \}$ being replaced by commutators $\{ . , . \} \rightarrow - i [ . , . ]$:
 \begin{align}
 	\left[ \Hat{X}^{\mu} (\tau , \sigma) , \Hat{\Pi}^{\nu} (\tau , \sigma ') \right] & = i \delta (\sigma - \sigma ') \eta ^{\mu \nu} \label{eqn:X-P-commutator}                                              \\
 	\left[ \Hat{X}^{\mu} , \Hat{X}^{\nu} \right]                                     & = 0 = \left[ \Hat{\Pi}^{\mu} , \Hat{\Pi}^{\nu} \right] \label{eqn:X-X-P-P-commutators}                                 \\
@@ -953,9 +908,7 @@ where the minus sign is due to the fact that the dimensions open up at larger an
 
 \appendix
 
-\section{Worldsheet Action in Terms of Transverse Velocity}\label{app:transverse-action}
-
-\subsection{Two Expressions for Area}\label{eqn:area-formulae}
+\section{Two Expressions for Area}\label{eqn:area-formulae}
 
 There is another explanation for why it makes sense to promote the $X$'s to local fields. This can be found in terms of the expression for the area of a 2-surface. We have a manifold $\mc M$, within which is embedded a two dimensional submanifold $\mc N$. Let $(\tau,\sigma)$ be the location of a point on the worldsheet and $X^\mu(\tau, \sigma)$ be the location of that same point in terms of co-ordinates on $\mc M$. Then we can define the induced metric on $\mc N$, $h_{ab}$ in terms of the embedding fields and their derivatives:
 
@@ -1025,7 +978,7 @@ $$
 $$
 In the usual formulation of the string action the embedding fields are \emph{not} Lie-algebra valued but are co-ordinate fields on what is generally taken to be a flat background. In order for this correspondence between vielbein and $X$ derivatives to work we have to view the $X$ fields as taking values in a Lie algebra. But these same $X$ fields \emph{also} serve as local co-ordinates for the bulk. In order for the co-ordinates to change from point to point in the bulk geometry, we must therefore require that the connection $\mc A$ in \eqref{eqn:covariant-deriv-v2} can never vanish completely! If $\mc A$ vanishes then that will imply that the fields $X$ don't change from one point to the next and cannot therefore be viewed as co-ordinate functions. Thus the amplitude $|\mc A|$ can be arbitrarily small but it can never be zero.
 
-\subsection{Modified Nambu Goto Equations of Motion}\label{sec:modified-eom}
+\section{Modified Nambu Goto Equations of Motion}\label{sec:modified-eom}
 
 Following the procedure done in \cite{Zwiebach2009A-First}, the correction(\ref{eqn:modified-NG-action}) does not change the form of the equations of motion and neither of the boundary conditions, i.e they are still given by
 \begin{equation} \label{eqn:modified-NG-eom}
@@ -1078,6 +1031,41 @@ from which we can see that the correction factor modifies the speed of propagati
 \begin{equation} \label{eqn:wave-speed-corrected}
 	v = \frac{c}{F^+}.
 \end{equation}
+
+\section{Relating Nambu-Goto and Polyakov analysis} \label{sec:relation-with-NG-case}
+
+At first glance, our analysis of the Polyakov string with inverse metric correction seems to not be related to what we found in the analysis of the Nambu-Goto string. However, as pointed out in \cite{Grimshaw2010Homogenization}, wave equations with a variable speed (the result of the Nambu-Goto analysis) can be turned into Klein-Gordon equations (what we found in section \ref{sec:inverse-metric-Polyakov}). While their work deals only with space-varying wave speed, it is straightforward to generalise the procedure to also include time dependence.
+
+Following the procedure found in \cite{Grimshaw2010Homogenization}, we start with eq (\ref{eqn:simplified-modified-wave-eqn}) obtained in section \ref{sec:modified-eom}, renaming $\sigma$ as $x$ and dividing by $(F^{+})^2$ such that we have $v^2$ on the second term like the mentioned work, and perform a change of variables $(t , x) \rightarrow (\tau (t , x) , \sigma (t , x))$, where without loss of generality (one needs just to rescale and/or rotate the coordinates) we set
+\begin{multline} \label{eqn:new-coordinates-constraints-quadratic}
+	\ \ \ \ \ \ \ \ \ \ (\partial _{t} \sigma)^2 - v^2 (\partial _{x} \sigma)^2 = v^2 (\partial _{x} \tau)^2 - (\partial _{t} \tau)^2 \\
+	\partial _{t} \tau \partial _{t} \sigma = v^2 \partial _{x} \tau \partial _{x} \sigma , \ \ \ \ \ \ \ \ \ \ \ \
+\end{multline}
+or more compactly,
+\begin{multline} \label{eqn:new-coordinates-constraints-compact}
+	\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \partial _{t} \tau = v \partial _{x} \sigma \\
+	\partial _{t} \sigma = v \partial _{x} \tau \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ,
+\end{multline}
+which is equivalent to
+\begin{multline} \label{eqn:new-coordinates-constraints-second-order}
+	\ \ \ \ \ \ \ \ \ \ \ \partial _{t} ^2 \tau - v^2 \partial _{x} ^2 \tau = \partial _{t} v \partial _{x} \sigma + v \partial _{x} v \partial _{x} \tau \\
+	\partial _{t} ^2 \sigma - v^2 \partial _{x} ^2 \sigma = \partial _{t} v \partial _{x} \tau + v \partial _{x} v \partial _{x} \sigma . \ \ \ \ \ \ \
+\end{multline}
+This turns eq (\ref{eqn:simplified-modified-wave-eqn}) into
+\begin{multline} \label{eqn:modified-wave-eqn-new}
+	\partial _{\tau} ^2 X^{\mu} - \partial _{\sigma} ^2 X^{\mu} + \\
+	+ \frac{\partial _{t} v \partial _{x} \sigma + v \partial _{x} v \partial _{x} \tau}{((\partial _{t} \tau)^2 - v^2 (\partial _{x} \tau)^2)} \partial _{\tau} X^{\mu} + \\
+	+ \frac{\partial _{t} v \partial _{x} \tau + v \partial _{x} v \partial _{x} \sigma}{((\partial _{t} \tau)^2 - v^2 (\partial _{x} \tau)^2)} \partial _{\sigma} X^{\mu} = 0 .
+\end{multline}
+Next, we introduce $X^{\mu} = \kappa (\tau , \sigma) W^{\mu} (\tau , \sigma)$ such that terms proportional to first derivatives of $W^{\mu}$ cancel out. This is obtained by choosing $\kappa = v^{1/2}$ and concluding that $v$ only depends on $x$. With this, eq (\ref{eqn:modified-wave-eqn-new}) turns into a Klein-Gordon equation
+\begin{equation}
+	\partial _{\tau} ^2 W^{\mu} - \partial _{\sigma} ^2 W^{\mu} + \mu ^2 W^{\mu} = 0 ,
+\end{equation}
+with \textquotedblleft mass" squared given by
+\begin{equation}
+	\mu ^2 = \frac{(\partial _{x} v)^2 - 2 v \partial _{x} ^2 v}{4 \left( (\partial _{t} \tau)^2 - v^2 (\partial _{x} \tau)^2 \right)}
+\end{equation}
+and $\tau (t , x)$ satisfying constraints (\ref{eqn:new-coordinates-constraints-compact}). This shows that our analysis of the action (\ref{eqn:inverse-metric-Polyakov}) is indeed in agreement with the analysis of the inverse area corrected Nambu-Goto action (\ref{eqn:modified-NG-action}).
 
 \bibliographystyle{JHEP3}
 
