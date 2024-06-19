@@ -1844,6 +1844,63 @@ is the generator of $\sigma$ translations by $\Hat{X}^{\mu} (\tau , \sigma + \si
 
 \newpage
 
+\section{WS Kalb-Ramond}
+
+Considering the more complete action
+\begin{equation*}
+    S = - \frac{1}{4 \pi \alpha '} \int \diff ^2 x \left( \sqrt{- g} - \frac{1}{2} \frac{k \Delta}{\sqrt{- g}} \right) \left( g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} G_{\mu \nu} - \widetilde{\varepsilon}^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} B_{\mu \nu} \right) =
+\end{equation*}
+\begin{equation*}
+    = - \frac{1}{4 \pi \alpha '} \int \diff ^2 x \left( \sqrt{- g} - \frac{1}{2} \frac{k \Delta}{\sqrt{- g}} \right) \left( g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} G_{\mu \nu} - \sqrt{\Delta} \Delta ^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} B_{\mu \nu} \right) .
+\end{equation*}
+
+\begin{align*}
+    \frac{\delta S}{\delta \Delta ^{c d}} & \propto - \frac{1}{2} \frac{k}{\sqrt{- g}} \Delta \Delta _{c d} \left( g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} G_{\mu \nu} - \sqrt{\Delta} \Delta ^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} B_{\mu \nu} \right) -                                                                           \\
+                                          & - \left( \sqrt{- g} - \frac{1}{2} \frac{k \Delta}{\sqrt{- g}} \right) \left( \frac{1}{2} \sqrt{\Delta} \Delta _{c d} \Delta ^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} B_{\mu \nu} + \sqrt{\Delta} \delta ^{a} _{c} \delta ^{b} _{d} \del _{a} X^{\mu} \del _{b} X^{\nu} B_{\mu \nu} \right) = 0
+\end{align*}
+\begin{multline*}
+    \frac{k}{2} \sqrt{\Delta} \Delta _{c d} \left( g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} G_{\mu \nu} - \sqrt{\Delta} \Delta ^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} B_{\mu \nu} \right) - \\
+    - \left( g + \frac{k \Delta}{2} \right) \left( \frac{1}{2} \Delta _{c d} \Delta ^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} B_{\mu \nu} + \del _{c} X^{\mu} \del _{d} X^{\nu} B_{\mu \nu} \right) = 0
+\end{multline*}
+\begin{equation*}
+    \Delta _{c d} \left( \frac{k \sqrt{\Delta}}{2} g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} G_{\mu \nu} - \left( g + \frac{3 k \Delta}{4} \right) \Delta ^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} B_{\mu \nu} \right) - \left( g + \frac{k \Delta}{2} \right) \del _{c} X^{\mu} \del _{d} X^{\nu} B_{\mu \nu} = 0
+\end{equation*}
+\begin{equation*}
+    \Delta _{c d} = \widetilde{f} \del _{c} X^{\mu} \del _{d} X^{\nu} B_{\mu \nu} ,
+\end{equation*}
+\begin{equation*}
+    \frac{1}{\widetilde{f}} = \frac{1}{g + \dfrac{k \Delta}{2}} \left( \frac{k \sqrt{\Delta}}{2} g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} G_{\mu \nu} - \left( g + \frac{3 k \Delta}{4} \right) \Delta ^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} B_{\mu \nu} \right) ,
+\end{equation*}
+if $g_{a b} = \del _{a} X^{\mu} \del _{b} X^{\nu} G_{\mu \nu}$ then
+\begin{equation*}
+    \frac{1}{\widetilde{f}} = \frac{1}{g + \dfrac{k \Delta}{2}} \left( {k \sqrt{\Delta}} - \left( g + \frac{3 k \Delta}{4} \right) \Delta ^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} B_{\mu \nu} \right)
+\end{equation*}
+\begin{equation*}
+    \frac{1}{\widetilde{f}} = \frac{1}{g + \dfrac{k \Delta}{2}} \left( {k \sqrt{\Delta}} - \left( g + \frac{3 k \Delta}{4} \right) \Delta ^{a b} \frac{1}{\widetilde{f}} \Delta _{a b} \right)
+\end{equation*}
+\begin{equation*}
+    \frac{1}{\widetilde{f}} \left( g + \frac{k \Delta}{2} \right) - \frac{1}{\widetilde{f}} \left( 2 g + \frac{3 k \Delta}{2} \right) = k \sqrt{\Delta}
+\end{equation*}
+\begin{equation*}
+    - \frac{1}{\widetilde{f}} \left( g + k \Delta \right) = k \sqrt{\Delta}
+\end{equation*}
+\begin{equation*}
+    \frac{1}{\widetilde{f}} = - \frac{k \sqrt{\Delta}}{g + k \Delta}
+\end{equation*}
+\begin{equation*}
+    \widetilde{f} = - \frac{g + k \Delta}{k \sqrt{\Delta}} .
+\end{equation*}
+From this, one can see that the pullback of the Kalb-Ramond field is
+\begin{equation*}
+    b_{a b} = \del _{a} X^{\mu} \del _{b} X^{\nu} B_{\mu \nu} = - \frac{k \Delta}{g + k \Delta} \widetilde{\varepsilon}_{a b} = - \frac{1}{\dfrac{g}{k \Delta} + 1} \widetilde{\varepsilon}_{a b} ,
+\end{equation*}
+and also that
+\begin{equation*}
+    \Delta _{a b} = \sqrt{\Delta} \widetilde{\varepsilon}_{a b} = - \sqrt{\Delta} \left( \frac{g}{k \Delta} + 1 \right) b_{a b}
+\end{equation*}
+
+\newpage
+
 \section{Polyakov Action in terms of LQG Variables}
 
 Turn embbeding fields $X^{\mu}$ into vector in the spin-1 representation of $\R ^{d + 1} \rtimes \mathrm{Spin}(d , 1)$, $X^{I}$, and promote partial derivative to covariant derivative $\partial _{a} \mapsto \mc{D}_{a}$ acting as
