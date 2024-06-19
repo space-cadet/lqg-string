@@ -421,7 +421,14 @@ If we impose the conditions \eqref{eqn:h=SgS}, \eqref{eqn:S=sigma_y} and \eqref{
 
 \section{Inverse Metric Polyakov} \label{sec:inverse-metric-Polyakov}
 
-In this section, we explore the action \eqref{eqn:inverse-metric-Polyakov} derived previously. This action is even more manifestly background Poincaré invariant, since now the $X^{\mu}$ dependence is explicit with this being a first-order action with $g_{a b}$ and $X^{\mu}$ treated as independent variables. However, the price to pay is that we don't have WS Weyl symmetry since the second term has inverse determinant multiplied by inverse metric.
+In this section, we explore the action \eqref{eqn:inverse-metric-Polyakov} derived previously. This action is even more manifestly background Poincaré invariant, since now the $X^{\mu}$ dependence is explicit with this being a first-order action with $g_{a b}$ and $X^{\mu}$ treated as independent variables. This action at first glance does not have WS Weyl invariance since the second term has inverse determinant multiplied by inverse metric, however, if one wishes to restore Weyl symmetry one just needs to require that under a Weyl transformation, the $\Delta _{a b}$ field also transforms like the metric \ie
+\begin{subequations}
+	\begin{align}
+		g_{a b}       & \rightarrow \Lambda (x) g_{a b} \label{eqn:g-Weyl-transform}             \\
+		\Delta _{a b} & \rightarrow \Lambda (x) \Delta _{a b} , \label{eqn:Delta-Weyl-transform}
+	\end{align}
+\end{subequations}
+however, we will not work under this assumption, since we expect that Weyl symmetry is broken near the Planck scale due to the discreteness of space-time.
 
 The equations of motion for the world-sheet metric are completely unchanged by this correction,
 \begin{equation} \label{eqn:vary-wrt-g}
@@ -859,6 +866,8 @@ One might point out that the matrix $\mb{R}$ is not symmetric, as one would requ
 
 We have presented in this work a possible way to formulate string theory in background independent manner.
 
+\subsection{Closed String Spin-1 States} \label{sec:spin-1-states}
+
 In section \ref{sec:quantum-KG-string} we saw that our model allows closed string spin-1 excitations at the first level, which is due to our solution not having independent left and right sectors. Closed string excitations are usually related to the gravitational field and background spacetime itself, so what could the first level vector states of the closed string relate to? Well, in section \ref{sec:gauging-lt} we discussed about a possible formulation of ST in terms of a Lorentz connection $\mc{A}_{\mu}$, which is an ingredient in describing the gravitational field in tetrad-connection \cite{Bodendorfer-LQG} formulation, and so this seems to be the natural candidate as to what the first level vector excitation of the closed string could be,
 \begin{equation} \label{eqn:connection-string-vector-excitation}
 	\mc{A}_{\mu} \sim \eta _{\mu \nu} (\Hat{a}^{\nu} _{1})^{\dagger} \ket{0} .
@@ -905,7 +914,7 @@ or equivalently that the relation between $\Delta _{a b}$ and $b_{a b}$ is
 
 \subsection{Emergent Dimensions and LQG} \label{sec:emergent-dimensions}
 
-The actions \eqref{eqn:modified-NG-action} and \eqref{eqn:inverse-metric-Polyakov} used in sections \ref{sec:modified-ng} and \ref{sec:inverse-metric-Polyakov} have a clear disadvantage: they lost WS Weyl symmetry, which makes the equations extracted from them have a dependence on the scale factor $\phi (x)$. If we want to formulate an effective stringy action that takes LQG quantum geometric effects into consideration and retains WS Weyl invariance while giving similar results to the analysis done in section \ref{sec:inverse-metric-Polyakov}, we arrive at a similar model as \cite{Afshordi-emergent}, with the action being
+There is another alternative to incorporate LQG quantum-geometric effects into the string action and get something conceptually similar to what we had in section \ref{sec:inverse-metric-Polyakov}: Afshordi's \textquotedblleft emergent dimension" \cite{Afshordi-emergent} model, with the action being
 \begin{multline} \label{eqn:emergent-dimensions-action}
 	S_{ED} = - \frac{1}{4 \pi \alpha '} \int \diff ^2 x \sqrt{- g} \big( g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} \eta _{\mu \nu} + \\
 	+ \mu _{0} ^2 \e ^{- m_{\mu} / T} X^{\mu} X^{\nu} \eta _{\mu \nu} \big)
