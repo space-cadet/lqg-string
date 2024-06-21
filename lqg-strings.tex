@@ -200,7 +200,7 @@ Traditionally, there are two ways in which a classical theory can be quantized. 
 
 The Hamiltonian approach, on the other hand, involves making a choice of a spacelike surface $\Sigma_t$ and a corresponding timelike vector $t^\mu$, normal to $\Sigma_t$ (here $t$ is a continuous parameter which labels the family of surfaces). This approach, therefore, necessarily does not respect spacetime covariance since it involves making a specific choice of the foliation of the background into spacelike surfaces. Loop quantum gravity is built upon this approach to quantization.
 
-In the decades prior to the advent of string theory a great deal of effort was put into attempting to quantize gravity via both the Lagrangian and Hamiltonian approaches. The Hamiltonian approach involves, as stated earlier, a choice of the foliation of the background geometry into a collection of spacelike surfaces $\Sigma_t$. Central to this approach was the ADM (Arnowitt-Deser-Misner) formalism which allows one to construct a Hamiltonian $H_{GR}$ for general relativity starting from the Einstein-Hilbert action $S_{EH}$. The resulting phase is co-ordinatized by a configuration variable which is the 3-metric $h_{ab}$ of the ``leaves'' $\Sigma_t$ of the foliation and a momentum variable which is a function of a the extrinsic curvature $k_{ab}$ of the leaves\footnote{Our notational convention is the following. Lowercase Greek letters from the middle of the alphabet $\mu, \nu, \ldots$ are spacetime indices which run from $(0 \ldots 3)$, whereas lowercase Roman letters $a,b,\ldots$ are spatial indices for quantities which live solely on the surfaces $\Sigma_t$ and take values in $(1,2,3)$}. The gravity Hamiltonian turns out to be a sum of two constraints known as the diffeomorphism (or ``momentum'') constraint $H_{diff}$ and the Hamiltonian constraint $H_{ham}$:
+In the decades prior to the advent of string theory a great deal of effort was put into attempting to quantize gravity via both the Lagrangian and Hamiltonian approaches. The Hamiltonian approach involves, as stated earlier, a choice of the foliation of the background geometry into a collection of spacelike surfaces $\Sigma_t$. Central to this approach was the ADM (Arnowitt-Deser-Misner) formalism which allows one to construct a Hamiltonian $H_{GR}$ for general relativity starting from the Einstein-Hilbert action $S_{EH}$. The resulting phase space is co-ordinatized by a configuration variable which is the 3-metric $h_{ab}$ of the ``leaves'' $\Sigma_t$ of the foliation and a momentum variable which is a function of a the extrinsic curvature $k_{ab}$ of the leaves\footnote{Our notational convention is the following. Lowercase Greek letters from the middle of the alphabet $\mu, \nu, \ldots$ are spacetime indices which run from $(0 \ldots 3)$, whereas lowercase Roman letters $a,b,\ldots$ are spatial indices for quantities which live solely on the surfaces $\Sigma_t$ and take values in $(1,2,3)$}. The gravity Hamiltonian turns out to be a sum of two constraints known as the diffeomorphism (or ``momentum'') constraint $H_{diff}$ and the Hamiltonian constraint $H_{ham}$:
 \begin{equation}
 	H_{GR} = H_{diff} + H_{ham},
 \end{equation}
@@ -444,7 +444,7 @@ By expanding the definition of $F^{-}$ we get
 \begin{equation} \label{eqn:coupling-X-phi}
 	\eta ^{a b} \partial _{a} \partial _{b} X^{\mu} + \eta ^{a b} \frac{\left( 2 \del _{a} \phi - \del _{a} \ln (\Delta) \right)}{\dfrac{2 \e ^{2 \phi}}{k \Delta} - 1} \del _{b} X^{\mu} = 0 ,
 \end{equation}
-revealing a wave equation sourced by a coupling between the WS conformal factor, quantum of area field $\Delta$ and the embedding fields much akin to the dilaton field \cite{Balthazar-t-backgrounds}. We'll come back to this in \autoref{sec:discussion}.
+revealing a wave equation sourced by a coupling between the WS conformal factor, quantum of area field $\Delta$ and the embedding fields much akin to the dilaton field \cite{Balthazar-t-backgrounds}. We'll come back to this in \autoref{sec:emergent-dimensions}.
 
 \subsection{Simplifying The Equations of Motion} \label{sec:solving-eoms-inverse-area}
 
@@ -749,6 +749,56 @@ possible polarizations, which shows that indeed those polarizations fit nicely i
 
 Although our method is quite different from the one in \cite{Thiemann2004The-LQG-String:}, we got similar results: a quantum Virasoro-like algebra with no anomalies, unconstrained background dimensionality $D$ and no negative-norm states in physical processes.
 
+\section{Emergent Dimensions and LQG} \label{sec:emergent-dimensions}
+
+There is another alternative to incorporate LQG quantum-geometric effects into the string action and get something conceptually similar to what we had in section \ref{sec:inverse-metric-Polyakov}: Afshordi's \textquotedblleft emergent dimension" \cite{Afshordi-emergent} model, with the action being
+\begin{multline} \label{eqn:emergent-dimensions-action}
+	S_{ED} = - \frac{1}{4 \pi \alpha '} \int \diff ^2 x \sqrt{- g} \big( g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} \eta _{\mu \nu} + \\
+	+ \mu _{0} ^2 \e ^{- m_{\mu} / T} X^{\mu} X^{\nu} \eta _{\mu \nu} \big)
+\end{multline}
+where $T$ is the \emph{temperature} of target space and the parameters $m_{\mu}$ satisfy an ordering relation $m_{0} \gg m_{1} \gg ... \gg m_{d}$. This is Afshordi's model \cite{Afshordi-emergent}. Where our approach diverges is that we realize the parameters $m_{\mu}$ are constrained by the modified dispersion relations of each field $X^{\mu}$, since as \cite{Bodendorfer-LQG} points out, LQG quantum geometry breaks Lorentz invariance near the Planck scale through modifying the dispersion relation by constraining the free parameters of the model as
+\begin{equation} \label{eqn:LQG-modified-dispersion-relation}
+	E^2 = m^2 + p^2 + \sum _{n \geq 3} c_{n} \frac{p^n}{E_{pl} ^{n - 2}} ,
+\end{equation}
+so we note that the mass parameters of the fields $X^{\mu}$ will be constrained as
+\begin{equation} \label{eqn:X-masses-constraint}
+	E_{\alpha} ^2 = p_{\alpha} ^2 + \sum _{n = 3} ^{D - 1} \frac{m_{n}}{T} \frac{p_{\alpha} ^{n}}{E_{pl} ^{n - 2}} ,
+\end{equation}
+where $E_{\alpha} ^2$ does not mean $E_{\alpha} E^{\alpha}$, rather it means $(E_{3})^2 , (E_{4})^2 , ... , (E_{D - 1})^2$, \ie, the squared WS energy (and momentum) of each field $X^{\mu}$.
+
+Afshordi's work notes that action \eqref{eqn:emergent-dimensions-action} only has background Poincaré invariance and WS Weyl symmetry for the fields with $m_{\mu} \gg T$, thus the \textquotedblleft emergent spacetime and evolving dimensions" by interpreting the fields with effective mass as being inaccessible due to not obeying Poincaré symmetry. We go one step further and note that since eq \eqref{eqn:X-masses-constraint} leaves $m_{0} , m_{1}$ and $m_{2}$ unconstrained, the related dimensions might be regarded as being \emph{fundamental} and thus the true quantum gravitational field should be $(2 + 1)$-dimensional, thus we postulate that $m_{3} \sim T_{pl}$, which together with the constraints \eqref{eqn:X-masses-constraint} should give us a way to calculate the other mass parameters given the WS energy and momentum of the fields, making it possible to predict in which scales the other dimensions should start to open up.
+
+By analysing the equations of motion for the metric $g_{c d}$ from the action \eqref{eqn:emergent-dimensions-action} we get
+\begin{equation} \label{eqn:emergent-dimensions-g}
+	g_{c d} = 2 f \del _{c} X^{\mu} \del _{d} X^{\nu} \eta _{\mu \nu} ,
+\end{equation}
+with $f$ given by
+\begin{equation} \label{eqn:emergent-dimensions-f}
+	\frac{1}{f} = g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} \eta _{\mu \nu} + \mu _{0} ^{2} \e ^{- m_{\mu} / T} X^{\mu} X^{\nu} \eta _{\mu \nu} ,
+\end{equation}
+from which we see that $\e ^{- m_{\mu} / T} X^{\mu} X^{\nu} \eta _{\mu \nu} = 0$ is actually a constraint and thus the base mass $\mu _{0} ^2$ is a Lagrange multiplier. By dimensional analysis, we see that in SI units $\mu _{0} ^2$ has units of inverse area, so it could be that $\mu _{0} ^2 \sim A_{j} ^{-1}$, where $A_{j}$ is the eigenvalue of the area operator with spin $j$, which depends on where the spin network punctures the WS, thus once more connecting Afshordi's work to LQG quantum geometry.
+
+One could also consider a more general form of action \eqref{eqn:emergent-dimensions-action} by swapping the flat Minkowski metric $\eta _{\mu \nu}$ by a more general curved metric $G_{\mu \nu}$ and considering off-diagonal mass parameters $m_{\mu \nu}$:
+\begin{multline} \label{eqn:emergent-dimensions-curved}
+	S' _{E D} = - \frac{1}{4 \pi \alpha '} \int \diff ^2 x \sqrt{- g} \big( g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} G_{\mu \nu} + \\
+	+ \mu _{0} ^2 \e ^{- m_{\mu \nu} / T} X^{\mu} X^{\nu} G_{\mu \nu} \big) ,
+\end{multline}
+where the mass parameters will be constrained as in
+\begin{equation} \label{eqn:X-masses-constraint-2}
+	E_{\alpha} ^2 = p_{\alpha} ^2 + \sum _{n = 3} ^{D - 1} \frac{m_{n \alpha}}{T} \frac{p_{\alpha} ^n}{E_{pl} ^n} ,
+\end{equation}
+since those are the ones that show up in the $X^{\mu}$ equations of motion
+\begin{multline}
+	g^{a b} \nabla _{a} \nabla _{b} X^{\mu} G_{\mu \lambda} - \mu _{0} ^2 \e ^{- m_{\mu \lambda} / T} X^{\mu} G_{\mu \lambda} = \\
+	= \frac{1}{2} g^{a b} \del_{a} X^{\mu} \del _{b} X^{\nu} \del _{\lambda} G_{\mu \nu} .
+\end{multline}
+
+In section \ref{sec:inverse-metric-Polyakov} we arrived at eq \eqref{eqn:coupling-X-phi} and claimed the coupling between the WS conformal factor $\phi (x)$ and the embedding fields $X^{\mu}$ to be akin to the dilaton field $\Phi (X)$. We now explore this claim: since we're now dealing with emergent dimensions with an action \eqref{eqn:emergent-dimensions-action} that only has Weyl symmetry as an approximate symmetry, we believe that the conformal factor $\phi (x)$ can be viewed as a WS dilaton, which sets the scale of the string dictating which dimensions it can interact with, thus the coupling \textquotedblleft constant" of the masses may be related to the conformal factor
+\begin{equation} \label{eqn:mu0-phi-relation}
+	\mu _{0} ^2 \sim \e ^{- \phi (x)} ,
+\end{equation}
+where the minus sign is due to the fact that the dimensions open up at larger and larger scales, so we require a larger and larger string to interact with each new dimension.
+
 \section{Holography From Classical Strings}\label{sec:holographic-strings}
 
 Uptil now we have studied a phenomenological modification of the string action. However, ultimately all phenomenological ideas must have a grounding in some exact, microscopic description of the system. Further, we have neglected one very important aspect of this whole endeavor, which is the description of the background geometry in the connection formalism and how to couple that geometry to the geometry of the string worldsheet. In this section we present a possible action for the bosonic string in which the effect of the bulk geometry on the worldsheet is encoded in the string action in terms of a connection which lives on the worldsheet, but takes values in the Lie algebra of the gauge group which is being used to describe the bulk geometry.  We will explore the natural consequences which follow from considering the symmetries of such an action.
@@ -769,11 +819,11 @@ where $\mc{A}_{a}^\mu{}_\nu$ is the gauge field and $g$ is the gauge coupling. A
 
 Our goal is to write down the action of a string propagating in a background geometry. One might argue that the expression \eqref{eqn:polyakov-gravity}, where we replace the bulk Minkowski tensor $\eta_{\mu\nu}$ with an arbitrary tensor $G_{\mu\nu}$ which tells us what the components of the bulk metric are at that point on the worldsheet. However, we view this approach as unsatisfactory, not the least because it does not allow us to make contact of the string action with a background geometry specified in terms of connection variables instead of metric ones. An astute reader might correctly object saying that we can simply replace $G_{\mu\nu}$ in \eqref{eqn:polyakov-gravity} with $\tilde E_\mu^I \tilde E_\nu^J \eta_{IJ}$ (here $\eta_{IJ}$ is now the Minkowski metric in locally flat co-ordinates). This, however, leaves open the question of what role the bulk connection should play in this picture.
 
-Further, we can ask what is the physical effect of having a non-trivial connection in the bulk in terms of the local geometry. The bulk connection tells us how the vielbein transforms from point to point and thus effectively measures how much the bulk metric changes from point to point. So, for instance, the connection which describes the geometry around a Kerr black hole also encodes how the local tetrad frame rotates as one moves around the axisymmetric axis of the black hole. All of these considerations lead us to the premise that if one wishes to describes the bulk geometry in terms of connection variables, then it is only natural to describe the worldsheet geometry in terms of connection variables and to use the tools that come along with having a gauge connection to understand how the worldsheet geometry can couple to the bulk geometry.	
+Further, we can ask what is the physical effect of having a non-trivial connection in the bulk in terms of the local geometry. The bulk connection tells us how the vielbein transforms from point to point and thus effectively measures how much the bulk metric changes from point to point. So, for instance, the connection which describes the geometry around a Kerr black hole also encodes how the local tetrad frame rotates as one moves around the axisymmetric axis of the black hole. All of these considerations lead us to the premise that if one wishes to describes the bulk geometry in terms of connection variables, then it is only natural to describe the worldsheet geometry in terms of connection variables and to use the tools that come along with having a gauge connection to understand how the worldsheet geometry can couple to the bulk geometry.
 
 Therefore, now we will require that the bulk connection and the bulk vielbein can be pulled back onto a connection $\mc{A}_{a}^{ij}$ and a dyad $e^a_i$, respectively, living on the string worldsheet $\Sigma$. $X^\mu(\tau , \sigma)$ are the space-time coordinates of a point $(\tau , \sigma)$ on the worldsheet. Now if one adopts the ``sigma model'' point of view then the $X$'s can be viewed as $d+1$ scalar fields living on a $1+1$ worldsheet. But we know that these fields are not a collection of $d+1$ independent scalars. They are components of a $d+1$ dim vector since they transform with the fundamental representation of $\mathrm{SO}(d,1)$ under global Lorentz transformations acting on the ambient space-time. However, the symmetries of a flat background include not only Lorentz transformations bulk also translations. The string action is required to be invariant under both of these:
 \begin{align*}
-	X^\mu & \rarrow X^\mu + \delta X^\mu; \quad \delta X^\mu \in \mbb{R}^{3,1} \\
+	X^\mu & \rarrow X^\mu + \delta X^\mu; \quad \delta X^\mu \in \mbb{R}^{3,1}            \\
 	X^\mu & \rarrow \Lambda^\mu{}_\nu X^\mu; \quad \Lambda^\mu{}_\nu \in \mathrm{SO}(3,1)
 \end{align*}
 where $\delta X^\mu$ is some arbitrary vector in Minkowski space. The semidirect product of $\mbb{R}^{3,1}$ with $\mathrm{SO}(3,1)$ is $\mbb{P}^{3,1}$, the Poincaré group in $3+1$ dimensions. Of course, these are good symmetries only if our background is flat. An arbitrarily curved background can have one or more Killing vectors depending on how much symmetry the geometry has, but \emph{in general} even that need not be the case. The best one can hope for is some notion of local flatness is some finite subregion of the background manifold. Moreoever the entire purpose of this work to try and understand how to write down a string action in an \emph{arbitrarily curved} background, assuming that such a thing is even possible.
@@ -854,7 +904,7 @@ We have presented in this work a possible way to formulate string theory in back
 
 \subsection{Closed String Spin-1 States} \label{sec:spin-1-states}
 
-In section \ref{sec:quantum-KG-string} we saw that our model allows closed string spin-1 excitations at the first level, which is due to our solution not having independent left and right sectors. Closed string excitations are usually related to the gravitational field and background spacetime itself, so what could the first level vector states of the closed string relate to? Well, in section \ref{sec:gauging-lt} we discussed about a possible formulation of ST in terms of a Lorentz connection $\mc{A}_{\mu}$, which is an ingredient in describing the gravitational field in tetrad-connection \cite{Bodendorfer-LQG} formulation, and so this seems to be the natural candidate as to what the first level vector excitation of the closed string could be,
+In section \ref{sec:quantum-kg-string} we saw that our area-corrected model allows closed string spin-1 excitations, which is due to our solution not having distinct left and right sectors and the physical states not being invariant under rigid rotations of the string. Closed string excitations are usually related to the gravitational field and background spacetime itself, so what could the vector states of the closed string relate to? Well, in section \ref{sec:gauging-lt} we discussed a possible formulation of ST in terms of a Poincaré connection $\mc{A}_{\mu}$, which is an ingredient in describing the gravitational field in tetrad-connection \cite{Bodendorfer-LQG} formulation, and so this seems to be the natural candidate as to what the first level vector excitation of the closed string could be,
 \begin{equation} \label{eqn:connection-string-vector-excitation}
 	\mc{A}_{\mu} \sim \eta _{\mu \nu} (\Hat{a}^{\nu} _{1})^{\dagger} \ket{0} .
 \end{equation}
@@ -898,58 +948,8 @@ or equivalently that the relation between $\Delta _{a b}$ and $b_{a b}$ is
 	\Delta _{a b} = \sqrt{\Delta} \widetilde{\varepsilon}_{a b} = - \sqrt{\Delta} \left( \frac{g}{k \Delta} + 1 \right) b_{a b} .
 \end{equation}
 
-\subsection{Emergent Dimensions and LQG} \label{sec:emergent-dimensions}
-
-There is another alternative to incorporate LQG quantum-geometric effects into the string action and get something conceptually similar to what we had in section \ref{sec:inverse-metric-Polyakov}: Afshordi's \textquotedblleft emergent dimension" \cite{Afshordi-emergent} model, with the action being
-\begin{multline} \label{eqn:emergent-dimensions-action}
-	S_{ED} = - \frac{1}{4 \pi \alpha '} \int \diff ^2 x \sqrt{- g} \big( g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} \eta _{\mu \nu} + \\
-	+ \mu _{0} ^2 \e ^{- m_{\mu} / T} X^{\mu} X^{\nu} \eta _{\mu \nu} \big)
-\end{multline}
-where $T$ is the \emph{temperature} of target space and the parameters $m_{\mu}$ satisfy an ordering relation $m_{0} \gg m_{1} \gg ... \gg m_{d}$. This is Afshordi's model \cite{Afshordi-emergent}. Where our approach diverges is that we realize the parameters $m_{\mu}$ are constrained by the modified dispersion relations of each field $X^{\mu}$, since as \cite{Bodendorfer-LQG} points out, LQG quantum geometry breaks Lorentz invariance near the Planck scale through modifying the dispersion relation by constraining the free parameters of the model as
-\begin{equation} \label{eqn:LQG-modified-dispersion-relation}
-	E^2 = m^2 + p^2 + \sum _{n \geq 3} c_{n} \frac{p^n}{E_{pl} ^{n - 2}} ,
-\end{equation}
-so we note that the mass parameters of the fields $X^{\mu}$ will be constrained as
-\begin{equation} \label{eqn:X-masses-constraint}
-	E_{\alpha} ^2 = p_{\alpha} ^2 + \sum _{n = 3} ^{D - 1} \frac{m_{n}}{T} \frac{p_{\alpha} ^{n}}{E_{pl} ^{n - 2}} ,
-\end{equation}
-where $E_{\alpha} ^2$ does not mean $E_{\alpha} E^{\alpha}$, rather it means $(E_{3})^2 , (E_{4})^2 , ... , (E_{D - 1})^2$, \ie, the squared WS energy (and momentum) of each field $X^{\mu}$.
-
-Afshordi's work notes that action \eqref{eqn:emergent-dimensions-action} only has background Poincaré invariance and WS Weyl symmetry for the fields with $m_{\mu} \gg T$, thus the \textquotedblleft emergent spacetime and evolving dimensions" by interpreting the fields with effective mass as being inaccessible due to not obeying Poincaré symmetry. We go one step further and note that since eq \eqref{eqn:X-masses-constraint} leaves $m_{0} , m_{1}$ and $m_{2}$ unconstrained, the related dimensions might be regarded as being \emph{fundamental} and thus the true quantum gravitational field should be $(2 + 1)$-dimensional, thus we postulate that $m_{3} \sim T_{pl}$, which together with the constraints \eqref{eqn:X-masses-constraint} should give us a way to calculate the other mass parameters given the WS energy and momentum of the fields, making it possible to predict in which scales the other dimensions should start to open up.
-
-By analysing the equations of motion for the metric $g_{c d}$ from the action \eqref{eqn:emergent-dimensions-action} we get
-\begin{equation} \label{eqn:emergent-dimensions-g}
-	g_{c d} = 2 f \del _{c} X^{\mu} \del _{d} X^{\nu} \eta _{\mu \nu} ,
-\end{equation}
-with $f$ given by
-\begin{equation} \label{eqn:emergent-dimensions-f}
-	\frac{1}{f} = g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} \eta _{\mu \nu} + \mu _{0} ^{2} \e ^{- m_{\mu} / T} X^{\mu} X^{\nu} \eta _{\mu \nu} ,
-\end{equation}
-from which we see that $\e ^{- m_{\mu} / T} X^{\mu} X^{\nu} \eta _{\mu \nu} = 0$ is actually a constraint and thus the base mass $\mu _{0} ^2$ is a Lagrange multiplier. By dimensional analysis, we see that in SI units $\mu _{0} ^2$ has units of inverse area, so it could be that $\mu _{0} ^2 \sim A_{j} ^{-1}$, where $A_{j}$ is the eigenvalue of the area operator with spin $j$, which depends on where the spin network punctures the WS, thus once more connecting Afshordi's work to LQG quantum geometry.
-
-One could also consider a more general form of action \eqref{eqn:emergent-dimensions-action} by swapping the flat Minkowski metric $\eta _{\mu \nu}$ by a more general curved metric $G_{\mu \nu}$ and considering off-diagonal mass parameters $m_{\mu \nu}$:
-\begin{multline} \label{eqn:emergent-dimensions-curved}
-	S' _{E D} = - \frac{1}{4 \pi \alpha '} \int \diff ^2 x \sqrt{- g} \big( g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} G_{\mu \nu} + \\
-	+ \mu _{0} ^2 \e ^{- m_{\mu \nu} / T} X^{\mu} X^{\nu} G_{\mu \nu} \big) ,
-\end{multline}
-where the mass parameters will be constrained as in
-\begin{equation} \label{eqn:X-masses-constraint-2}
-	E_{\alpha} ^2 = p_{\alpha} ^2 + \sum _{n = 3} ^{D - 1} \frac{m_{n \alpha}}{T} \frac{p_{\alpha} ^n}{E_{pl} ^n} ,
-\end{equation}
-since those are the ones that show up in the $X^{\mu}$ equations of motion
-\begin{multline}
-	g^{a b} \nabla _{a} \nabla _{b} X^{\mu} G_{\mu \lambda} - \mu _{0} ^2 \e ^{- m_{\mu \lambda} / T} X^{\mu} G_{\mu \lambda} = \\
-	= \frac{1}{2} g^{a b} \del_{a} X^{\mu} \del _{b} X^{\nu} \del _{\lambda} G_{\mu \nu} .
-\end{multline}
-
-In section \ref{sec:inverse-metric-Polyakov} we arrived at eq \eqref{eqn:coupling-X-phi} and claimed the coupling between the WS conformal factor $\phi (x)$ and the embedding fields $X^{\mu}$ to be akin to the dilaton field $\Phi (X)$. We now explore this claim: since we're now dealing with emergent dimensions with an action \eqref{eqn:emergent-dimensions-action} that only has Weyl symmetry as an approximate symmetry, we believe that the conformal factor $\phi (x)$ can be viewed as a WS dilaton, which sets the scale of the string dictating which dimensions it can interact with, thus the coupling \textquotedblleft constant" of the masses may be related to the conformal factor
-\begin{equation} \label{eqn:mu0-phi-relation}
-	\mu _{0} ^2 \sim \e ^{- \phi (x)} ,
-\end{equation}
-where the minus sign is due to the fact that the dimensions open up at larger and larger scales, so we require a larger and larger string to interact with each new dimension.
-
 \begin{acknowledgments}
-DV would like to thank Thomas van Riet for going over an early draft of this work and for his valuable comments. DV and LdS would both like to thank David Schmitt for his very valuable observations regarding the nature of the $\Delta$ field and its relation to the Kalb-Ramond field. Finally we would like to humbly dedicate this work to the memory of the victims of the genocide in Gaza.
+	DV would like to thank Thomas van Riet for going over an early draft of this work and for his valuable comments. DV and LdS would both like to thank David Schmidtt for his very valuable observations regarding the nature of the $\Delta$ field and its relation to the Kalb-Ramond field. Finally, we would like to humbly dedicate this work to the memory of the victims of the genocide in Gaza.
 \end{acknowledgments}
 
 \appendix
