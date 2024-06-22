@@ -625,14 +625,14 @@ For $p = 0$ we have center of mass position and momentum, so the vacuum has extr
 		\Hat{p}_{\mu} \ket{0 ; x} & = - i \frac{\del}{\del x^{\mu}} \ket{0 ; x} \label{eqn:p-vacuum-x}
 	\end{align}
 \end{subequations}
-in position representation and
+in position representation $\ket{0 ; x} \equiv \ket{0} \otimes \psi (x)$ and
 \begin{subequations}
 	\begin{align}
 		\Hat{x}^{\mu} \ket{0 ; p} & = - i \frac{\del}{\del p_{\mu}} \ket{0 ; p} \label{eqn:x-vacuum-p} \\
 		\Hat{p}_{\mu} \ket{0 ; p} & = p_{\mu} \ket{0 ; p} \label{eqn:p-vacuum-p}
 	\end{align}
 \end{subequations}
-in momentum representation.
+in momentum representation $\ket{0 ; p} \equiv \ket{0} \otimes \psi (p)$.
 
 Our Fock space is built from the vacuum state $\ket{0}$ by operating with a sequence of creation operators
 \begin{equation} \label{eqn:general-state}
@@ -645,7 +645,7 @@ As usual, the appearance of the Minkowski metric in the non-zero commutator
 \end{equation}
 brings ghosts into the theory which must be dealt with.
 
-When translating the constraints as quantum operators, we require that they have vanishing matrix elements when sandwiched by physical states $\psi$ and $\phi$:
+When translating the constraints as quantum operators, we impose them strongly, requiring that they have vanishing matrix elements when sandwiched by physical states $\psi$ and $\phi$ since said constraints are not self-adjoint:
 \begin{subequations}
 	\begin{equation} \label{eqn:L-constraint-quantum-1}
 		\bra{\phi} \Hat{L}_{p , k} \ket{\psi} = 0 \, \,
@@ -662,7 +662,7 @@ This ambiguity manifests in the imposition of the constraint as
 \begin{equation} \label{eqn:shifted-L-constraint}
 	\bra{\phi} \left( \sum _{n \neq 0} \left( \left( 1 + \frac{n}{E_{n}} \right) ^2 \Hat{\widetilde{L}}_{n , n} \right) - a \right) \ket{\psi} = 0 ,
 \end{equation}
-for some constant $a$. Classically, we had eq (\ref{eqn:string-rest-mass-classical-1}) for the string rest mass, from which we can now see that the string mass spectrum will get shifted by
+for some constant $a$. Classically, we had eq (\ref{eqn:string-rest-mass-classical-1}) for the string rest mass, from which we can now see that the string mass spectrum will get shifted by this constant
 \begin{multline} \label{eqn:shifted-mass-spectrum}
 	\Hat{M}^2 = \frac{8}{\alpha '} \Bigg( \frac{2 \mu ^2}{\alpha '} \Hat{x}^{\mu} \Hat{x}_{\mu} - \\
 	- \left( \sum _{n \neq 0} \left( \left( 1 + \frac{n}{E_{n}} \right) ^2 E_{n} (\Hat{a}^{\mu} _{n})^{\dagger} \Hat{a}^{\nu} _{n} \eta _{\mu \nu} \right) - a \right) \Bigg) .
@@ -670,8 +670,21 @@ for some constant $a$. Classically, we had eq (\ref{eqn:string-rest-mass-classic
 This constant can be calculated by imposing normal-ordering on the summed constraint since $n \in (- d , d)$ is finite, and the result is
 \begin{multline}
 	a = - D \sum _{n \neq 0} \left( 1 + \frac{n}{E_{n}} \right) ^2 E_{n} = \\
-	= - D \sum _{n > 0} \left( 1 + \frac{n^2}{E_{n} ^2} \right) E_{n} .
+	= - D \sum _{n > 0} \left( 1 + \frac{n^2}{E_{n} ^2} \right) E_{n} ,
 \end{multline}
+which is easily computable given a value for $\mu$. Below we provide a table with the value of $a$ for different spacetime dimensionalities $D$ and mass parameters $\mu$.
+\begin{table}[h] \label{tab:normal-ordering-constant}
+	\begin{tabular}{|l|l|l|l|l|l|}
+		\hline
+		        & $\mu = 1$ & $\mu = 2$ & $\mu = 3$ & $\mu = 4$ & $\mu = 5$ \\ \hline
+		$D = 2$ & $-4.24$   & $-5.37$   & $-6.96$   & $-8.73$   & $-10.59$  \\ \hline
+		$D = 3$ & $-18.44$  & $-20.78$  & $-24.58$  & $-29.20$  & $-34.27$  \\ \hline
+		$D = 4$ & $-48.62$  & $-52.11$  & $-58.23$  & $-66.13$  & $-75.19$  \\ \hline
+		$D = 5$ & $-100.79$ & $-105.39$ & $-113.79$ & $-125.09$ & $-138.49$ \\ \hline
+		$D = 6$ & $-180.96$ & $-186.63$ & $-197.25$ & $-211.95$ & $-229.84$ \\ \hline
+	\end{tabular}
+	\caption{values of $a$ for different spacetime dimensionalities and mass parameters. Visibly, the dependence in $D$ is much stronger than the dependence in $\mu$.}
+\end{table}
 
 The commutation relations between the constraints are inherited by the Poisson brackets
 \begin{subequations}
@@ -698,7 +711,7 @@ and since both $C_{n}$ and $D_{n}$ need to satisfy the initial value of $0$, eac
 \begin{equation} \label{eqn:C-D-sequences}
 	C_{n} = D_{n} = \frac{F_{n}}{2} = \frac{F_{1}}{4} \left( \cos \left( \frac{n \pi}{2} \right) - 1 \right) .
 \end{equation}
-Next, by calculating the vacuum expectation value (VEV) of the commutator \eqref{eqn:L-commutator-2} with $|m| \neq |k|$ and $n = p = 1$, we find that $F_{1} = 0$, thus both sequences $C_{n} = D_{n} = 0$ vanish and we conclude that the quantum version of our algebra \emph{has no anomalies}. This is a relevant result, since it could mean our model doesn't need a specific number of dimensions to work, which will be explored again later in section \ref{sec:discussion}.
+Next, by calculating the vacuum expectation value (VEV) of the commutator \eqref{eqn:L-commutator-2} with $|m| \neq |k|$ and $n = p = 1$, we find that $F_{1} = 0$, thus both sequences $C_{n} = D_{n} = 0$ vanish and we conclude that the quantum version of our algebra \emph{has no anomalies}. This is a relevant result, since it could mean our model doesn't need a specific number of dimensions to work, which will be explored again later in section \ref{sec:emergent-dimensions}.
 
 A quick calculation reveals that the WS Hamiltonian and momentum operators are given by
 \begin{subequations}
