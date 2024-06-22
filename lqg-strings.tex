@@ -257,15 +257,15 @@ In a very real sense string theory is a quantum theory of geometry. After all, t
 \begin{equation}\label{eqn:ng-action}
 	S_{NG} = -T \int \diff ^2 x \sqrt{- \det h}
 \end{equation}
-is nothing more than the \emph{area} of the string worldsheet. So when we are constructing the quantum theory of the string we are constructing a theory in which the fundamental excitations are geometric in nature. What we would like to do is to modify the string action in a way which incorporates the insight from LQG that at the Planck scale there is a minimum quantum of area. One simple way in which to do this is to modify the integrand in \eqref{eqn:ng-action} as follows:
-\begin{equation*}
-	\sqrt{- h} \rightarrow \sqrt{- (h + k \Delta)}.
-\end{equation*}
+is nothing more than the \emph{area} of the string worldsheet. So when we are constructing the quantum theory of the string we are constructing a theory in which the fundamental excitations are geometric in nature. What we would like to do is to modify the string action in a way which incorporates the insight from LQG that at the Planck scale there is a minimum quantum of area. One simple way in which to do this is to modify the action \eqref{eqn:ng-action} as follows:
+\begin{equation} \label{eqn:NG-area-corrected}
+	S_{M N G} = - T \int \diff ^2 x \sqrt{- (h + k \Delta)}.
+\end{equation}
 Here, $k = l_{pl} / l_s$, where $l_{pl}$ is the Planck scale, the scale at which quantum geometric effects become important; $l_s$ is the string scale where quantum geometric effects due to area quantization become small; $\Delta$ is a scalar density of weight 2 which can be taken to be the determinant of some worldsheet tensor $\Delta _{a b} (x)$ and corresponds to the square of the quantum of area at the point $x$ where the spin foam pierces the WS. In the limit that $l_s \gg l_{pl}$, $k \ll 1$ and the string action reduces to the conventional Nambu-Goto action with small corrections coming from quantum geometry. In this limit we can expand the integrand as follows:
 \begin{equation} \label{eqn:inverse-metric-correction}
-	\sqrt{- (h + g \Delta)} \sim \sqrt{- h}\left(1 - \frac{1}{2} \frac{k \Delta}{(- h)} + \mc{O}(k^2/h^2)\right).
+	\sqrt{- (h + k \Delta)} \sim \sqrt{- h}\left(1 - \frac{1}{2} \frac{k \Delta}{(- h)} + \mc{O}(k^2/h^2)\right).
 \end{equation}
-Presumably the limit $k \ll 1$ corresponds to when the area of the string worldsheet is large compared to $\Delta$, $h \gg \Delta$. Thus in this limit $ k^2 \ll 1$ and $ h^2 \gg 1$ because of which we can drop the $\mc{O}(g^2/h^2)$ corrections. The final area corrected Nambu-Goto action becomes:
+Presumably the limit $k \ll 1$ corresponds to when the area of the string worldsheet is large compared to $\Delta$, $h \gg \Delta$. Thus in this limit $ k^2 \ll 1$ and $ h^2 \gg 1$ because of which we can drop the $\mc{O}(k^2/h^2)$ corrections. The final area corrected Nambu-Goto action becomes:
 \begin{equation} \label{eqn:modified-NG-action}
 	S'_{NG} = -T \int \diff ^2 x \left( \sqrt{- h} - \frac{1}{2} \frac{k \Delta}{\sqrt{- h}} \right).
 \end{equation}
@@ -894,7 +894,7 @@ Further, we can ask what is the physical effect of having a non-trivial connecti
 Therefore, now we will require that the bulk connection and the bulk vielbein can be pulled back onto a connection $\mc{A}_{a}^{ij}$ and a dyad $e^a_i$, respectively, living on the string worldsheet $\Sigma$. $X^\mu(\tau , \sigma)$ are the space-time coordinates of a point $(\tau , \sigma)$ on the worldsheet. Now if one adopts the ``sigma model'' point of view then the $X$'s can be viewed as $d+1$ scalar fields living on a $1+1$ worldsheet. But we know that these fields are not a collection of $d+1$ independent scalars. They are components of a $d+1$ dim vector since they transform with the fundamental representation of $\mathrm{SO}(d,1)$ under global Lorentz transformations acting on the ambient space-time. However, the symmetries of a flat background include not only Lorentz transformations bulk also translations. The string action is required to be invariant under both of these:
 \begin{subequations}\label{eqn:poincare-symmetries}
 	\begin{align}
-		X^\mu & \rarrow X^\mu + \delta X^\mu; \quad \delta X^\mu \in \mbb{R}^{3,1} \\
+		X^\mu & \rarrow X^\mu + \delta X^\mu; \quad \delta X^\mu \in \mbb{R}^{3,1}            \\
 		X^\mu & \rarrow \Lambda^\mu{}_\nu X^\mu; \quad \Lambda^\mu{}_\nu \in \mathrm{SO}(3,1)
 	\end{align}
 \end{subequations}
@@ -987,8 +987,23 @@ Another candidate for what the vector excitations could relate to is the Ashteka
 	\widetilde{E}^{\mu} _{I} \sim (\Hat{a}^{\mu} _{I})^{\dagger} \ket{0} .
 \end{equation}
 
+\subsection{Is the Area-Corrected Nambu-Goto Action a Born-Infeld Model?} \label{sec:area-corrected-BI}
+
+The Nambu-Goto area-corrected action before approximations \eqref{eqn:NG-area-corrected} has a structure strikingly similar to the Born-Infeld model
+\begin{equation} \label{eqn:BI-action}
+	S_{B I} = - T \int \diff ^p x \sqrt{- \det (\gamma _{a b} + 2 \pi \alpha ' F_{a b})} ,
+\end{equation}
+with $T$ being the tension of the $p$-brane, $\gamma _{a b}$ is the pullback metric of said brane, $F_{a b}$ is the pullback of the field strength of the gauge field and $2 \pi \alpha '$ the inverse tension of the string. Remarkably, if one considers a $(1 + 1)$-dimensional Born-Infeld action with $2 \pi \alpha ' F_{a b} = \sqrt{k} \Delta _{a b}$, it can be shown that
+\begin{equation} \label{eqn:area-corrected-NG-BI-equivalence}
+	\det (h_{a b} + \sqrt{k} \Delta _{a b}) \equiv h + k \Delta ,
+\end{equation}
+thus the action \eqref{eqn:NG-area-corrected} can be recast as a Born-Infeld model for the string with $k$ playing the role of inverse tension squared and $\Delta _{a b}$ the role of the pullback of a field strength. Since we explored the relation between $\Delta _{a b}$ and the Kalb-Ramond field $B_{\mu \nu}$ in \autoref{sec:WS-Kalb-Ramond-QoA}, this could mean that the Kalb-Ramond 2-form is exact, $B = \diff A$, and thus its exterior derivative, which gives the torsion of the background spacetime \cite{Tong2009Lectures}, vanishes $\diff B = \diff (\diff A) = 0$. Also, we have a direct relation between string tension and scale
+\begin{equation} \label{eqn:k-T}
+	\frac{l_p}{l_s} = k \sim (2 \pi \alpha ')^2 = \frac{1}{T^2} .
+\end{equation}
+
 \begin{acknowledgments}
-	DV would like to thank Thomas van Riet for going over an early draft of this work and for his valuable comments. DV and LdS would both like to thank David Schmidtt for his very valuable observations regarding the nature of the $\Delta$ field and its relation to the Kalb-Ramond field. Finally, we would like to humbly dedicate this work to the memory of the victims of the genocide in Gaza.
+	DV would like to thank Thomas van Riet for going over an early draft of this work and for his valuable comments. DV and LdS would both like to thank David Schmidtt for his very valuable observations regarding the nature of the $\Delta$ field and its relation to the Kalb-Ramond field, and also the equivalence of the area corrected action with a Born-Infeld model in the worldsheet. Finally, we would like to humbly dedicate this work to the memory of the victims of the genocide in Gaza.
 \end{acknowledgments}
 
 \appendix
