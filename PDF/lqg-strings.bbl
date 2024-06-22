@@ -177,6 +177,26 @@ M.~Schottenloher, {\em A Mathematical Introduction to Conformal Field Theory}.
 D.~K. Bruno~Balthazar, Jinwei~Chu, {\it On time-dependent backgrounds in 1+1
   dimensional string theory}, .
 
+\bibitem{Bergshoeff1987BornInfeld}
+E.~Bergshoeff, E.~Sezgin, C.~N. Pope, and P.~K. Townsend, {\it The
+  {{Born-Infeld}} action from conformal invariance of the open superstring},
+  {\em Physics Letters B} {\bf 188} (Apr., 1987) 70--74.
+
+\bibitem{Leigh1989Dirac-Born-Infeld}
+R.~G. Leigh, {\it Dirac-{{Born-Infeld Action}} from {{Dirichlet Sigma Model}}},
+   {\em Modern Physics Letters A} {\bf 04} (Dec., 1989) 2767--2772.
+
+\bibitem{Metsaev1987Borninfeld}
+R.~R. Metsaev, M.~A. Rahmanov, and A.~A. Tseytlin, {\it The born-infeld action
+  as the effective action in the open superstring theory},  {\em Physics
+  Letters B} {\bf 193} (July, 1987) 207--212.
+
+\bibitem{Tseytlin1996Self-Duality}
+A.~A. Tseytlin, {\it Self-duality of {{Born-Infeld}} action and {{Dirichlet}}
+  3-brane of type {{IIB}} superstring theory},  {\em Nuclear Physics B} {\bf
+  469} (June, 1996) 51--67, [\href{http://arxiv.org/abs/hep-th/9602064}{{\tt
+  hep-th/9602064}}].
+
 \bibitem{Green2012Superstring}
 M.~B. Green, J.~H. Schwarz, and E.~Witten, {\em Superstring Theory: 25th
   Anniversary Edition}.
@@ -199,9 +219,14 @@ E.~A. Bergshoeff, S.~{de Haan}, O.~Hohm, W.~Merbis, and P.~K. Townsend, {\it
   Zwei-{{Dreibein Gravity}}},  {\em Physical Review Letters} {\bf 111} (Sept.,
   2013) 111102, [\href{http://arxiv.org/abs/1307.2774}{{\tt arXiv:1307.2774}}].
 
-\bibitem{Witten:1988hc}
-E.~Witten, {\it {(2+1)-Dimensional Gravity as an Exactly Soluble System}},
-  {\em Nucl. Phys. B} {\bf 311} (1988) 46.
+\bibitem{Blais2013A-new-quantization}
+T.~Blais, {\it A new quantization condition for parity-violating
+  three-dimensional gravity},  Master's thesis, McGill U., 4, 2013.
+
+\bibitem{Carlip2003Quantum}
+S.~Carlip, {\em Quantum gravity in 2+1 dimensions}.
+\newblock Cambridge Monographs on Mathematical Physics. Cambridge University
+  Press, 12, 2003.
 
 \bibitem{Dai1989New-Connections}
 {\relax JIN}.~DAI, R.~LEIGH, and {\relax JOSEPH}.~POLCHINSKI, {\it New

@@ -503,6 +503,21 @@ or equivalently that the relation between $\Delta _{a b}$ and $b_{a b}$ is
 \end{equation}
 We thus see that the pullback of the Kalb-Ramond field is actually a tensor \emph{density} of weight $- 1$, since the coefficient in eq \eqref{eqn:WS-b-field} is a true scalar and the Levi-Civita symbol is itself a density.
 
+\subsection{Area-Corrected Nambu-Goto Action and Born-Infeld Electrodynamics} \label{sec:area-corrected-BI}
+
+The Nambu-Goto area-corrected action before approximations \eqref{eqn:NG-area-corrected} has a structure strikingly similar to the Born-Infeld model \cite{Bergshoeff1987BornInfeld,Leigh1989Dirac-Born-Infeld,Metsaev1987Borninfeld,Tseytlin1996Self-Duality}, which arises in the string theory description of gauge fields living on D-branes:
+\begin{equation} \label{eqn:BI-action}
+	S_{B I} = - T \int \diff ^p x \sqrt{- \det (\gamma _{a b} + 2 \pi \alpha ' F_{a b})} ,
+\end{equation}
+with $T$ being the tension of the $p$-brane, $\gamma _{a b}$ is the pullback metric of said brane, $F_{a b}$ is the pullback of the field strength of the gauge field and $2 \pi \alpha '$ the inverse tension of the string. Remarkably, if one considers a $(1 + 1)$-dimensional Born-Infeld action with $2 \pi \alpha ' F_{a b} = \sqrt{k} \Delta _{a b}$, it can be shown that
+\begin{equation} \label{eqn:area-corrected-NG-BI-equivalence}
+	\det (h_{a b} + \sqrt{k} \Delta _{a b}) \equiv h + k \Delta ,
+\end{equation}
+thus the action \eqref{eqn:NG-area-corrected} can be recast as a Born-Infeld model for the string with $k$ playing the role of inverse tension squared and $\Delta _{a b}$ the role of the pullback of a field strength. Since we explored the relation between $\Delta _{a b}$ and the Kalb-Ramond field $B_{\mu \nu}$ in \autoref{sec:WS-Kalb-Ramond-QoA}, this could mean that the Kalb-Ramond 2-form is exact, $B = \diff A$, and thus its exterior derivative, which gives the torsion of the background spacetime \cite{Tong2009Lectures}, vanishes $\diff B = \diff (\diff A) = 0$. Also, we have a direct relation between string tension and scale
+\begin{equation} \label{eqn:k-T}
+	\frac{l_p}{l_s} = k \sim (2 \pi \alpha ')^2 = \frac{1}{T^2} .
+\end{equation}
+
 \subsection{Simplifying The Equations of Motion} \label{sec:solving-eoms-inverse-area}
 
 Equation (\ref{eqn:X-eom-simplified}) seems a bit odd, but we can polish it by choosing a plane-wave ansatz for the embedding fields $X^{\mu} = X^{\mu} _{0} \e ^{-i (E \tau - p \sigma)}$ and using it to fix a form for the conformal factor $\e ^{\phi (x)}$ appearing in $F^{-}$. By using the ansatz in eq (\ref{eqn:X-eom-simplified}), it becomes
@@ -836,7 +851,7 @@ so we note that the mass parameters of the fields $X^{\mu}$ will be constrained 
 \end{equation}
 where $E_{\alpha} ^2$ does not mean $E_{\alpha} E^{\alpha}$, rather it means $(E_{3})^2 , (E_{4})^2 , ... , (E_{D - 1})^2$, \ie, the squared WS energy (and momentum) of each field $X^{\mu}$.
 
-Afshordi's work notes that the action \eqref{eqn:emergent-dimensions-action} only has background Poincaré invariance and WS Weyl symmetry as approximate symmetries for the fields with $m_{\mu} \gg T$, thus the \textquotedblleft emergent spacetime and evolving dimensions" by interpreting the fields with effective mass as being inaccessible due to not obeying Poincaré symmetry. We go one step further and note that since eq \eqref{eqn:X-masses-constraint} leaves $m_{0} , m_{1}$ and $m_{2}$ unconstrained, the related dimensions might be regarded as being \emph{fundamental} and thus the true quantum gravitational field should be $(2 + 1)$-dimensional, in agreement with \cite{t-Hooft1993Dimensional}. $(2 + 1)$-dimensional gravity has already been successfully quantized before (\cite{Bergshoeff2013ZweiDreibein},\cite{Blais:2013sdr},\cite{Witten:1988hc},\cite{Carlip:1998uc}). We thus postulate that $m_{3} \sim T_{pl}$, which together with the constraints \eqref{eqn:X-masses-constraint} should give us a way to calculate the other mass parameters given the WS energy and momentum of the fields, making it possible to predict in which scales the other dimensions should start to open up.
+Afshordi's work notes that the action \eqref{eqn:emergent-dimensions-action} only has background Poincaré invariance and WS Weyl symmetry as approximate symmetries for the fields with $m_{\mu} \gg T$, thus the \textquotedblleft emergent spacetime and evolving dimensions" by interpreting the fields with effective mass as being inaccessible due to not obeying Poincaré symmetry. We go one step further and note that since eq \eqref{eqn:X-masses-constraint} leaves $m_{0} , m_{1}$ and $m_{2}$ unconstrained, the related dimensions might be regarded as being \emph{fundamental} and thus the true quantum gravitational field should be $(2 + 1)$-dimensional, in agreement with \cite{t-Hooft1993Dimensional}. $(2 + 1)$-dimensional gravity has already been successfully quantized before (\cite{Bergshoeff2013ZweiDreibein},\cite{Blais2013A-new-quantization},\cite{Witten1998Anti},\cite{Carlip2003Quantum}). We thus postulate that $m_{3} \sim T_{pl}$, which together with the constraints \eqref{eqn:X-masses-constraint} should give us a way to calculate the other mass parameters given the WS energy and momentum of the fields, making it possible to predict in which scales the other dimensions should start to open up.
 
 By analysing the equations of motion for the metric $g_{c d}$ from the action \eqref{eqn:emergent-dimensions-action} we get
 \begin{equation} \label{eqn:emergent-dimensions-g}
@@ -1015,21 +1030,6 @@ In section \ref{sec:quantum-kg-string} we saw that our area-corrected model allo
 Another candidate for what the vector excitations could relate to is the Ashtekar electric fields $\widetilde{E}^{\mu} _{I}$,
 \begin{equation} \label{eqn:AEF-string-vector-excitation}
 	\widetilde{E}^{\mu} _{I} \sim (\Hat{a}^{\mu} _{I})^{\dagger} \ket{0} .
-\end{equation}
-
-\subsection{Is the Area-Corrected Nambu-Goto Action a Born-Infeld Model?} \label{sec:area-corrected-BI}
-
-The Nambu-Goto area-corrected action before approximations \eqref{eqn:NG-area-corrected} has a structure strikingly similar to the Born-Infeld model
-\begin{equation} \label{eqn:BI-action}
-	S_{B I} = - T \int \diff ^p x \sqrt{- \det (\gamma _{a b} + 2 \pi \alpha ' F_{a b})} ,
-\end{equation}
-with $T$ being the tension of the $p$-brane, $\gamma _{a b}$ is the pullback metric of said brane, $F_{a b}$ is the pullback of the field strength of the gauge field and $2 \pi \alpha '$ the inverse tension of the string. Remarkably, if one considers a $(1 + 1)$-dimensional Born-Infeld action with $2 \pi \alpha ' F_{a b} = \sqrt{k} \Delta _{a b}$, it can be shown that
-\begin{equation} \label{eqn:area-corrected-NG-BI-equivalence}
-	\det (h_{a b} + \sqrt{k} \Delta _{a b}) \equiv h + k \Delta ,
-\end{equation}
-thus the action \eqref{eqn:NG-area-corrected} can be recast as a Born-Infeld model for the string with $k$ playing the role of inverse tension squared and $\Delta _{a b}$ the role of the pullback of a field strength. Since we explored the relation between $\Delta _{a b}$ and the Kalb-Ramond field $B_{\mu \nu}$ in \autoref{sec:WS-Kalb-Ramond-QoA}, this could mean that the Kalb-Ramond 2-form is exact, $B = \diff A$, and thus its exterior derivative, which gives the torsion of the background spacetime \cite{Tong2009Lectures}, vanishes $\diff B = \diff (\diff A) = 0$. Also, we have a direct relation between string tension and scale
-\begin{equation} \label{eqn:k-T}
-	\frac{l_p}{l_s} = k \sim (2 \pi \alpha ')^2 = \frac{1}{T^2} .
 \end{equation}
 
 \begin{acknowledgments}
