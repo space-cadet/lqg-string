@@ -243,7 +243,7 @@ Before proceeding let us state our ``central dogma''. We take as physically well
 
 The following is the outline of the paper. In \autoref{sec:modified-ng} we recall the Nambu-Goto action and suggest a simple modification which incorporates our central dogma, which is that \emph{there must exist a smallest possible area $\Delta$ which is physically measurable.} \footnote{In recent work \cite{Borissova2024From} a very similar expression to ours for the modified Nambu-Goto action has been arrived at by considering a version of LQG called ``area metric gravity''.} We show that this action can be expanded in terms of a small coupling constant $k = l_{pl} / l_s$ where the Planck length - the length at which quantum geometric effects become important - $l_{pl}$ is much smaller than the string scale $l_s$ and therefore $k \ll 1$. We point out that the lowest order correction to the NG action can be interpreted in the context of bimetric gravity. In \autoref{sec:bimetric-string} we expand upon this observation and suggest a new action for the ``bimetric string'', along the lines of bimetric gravity. We find both, the Nambu-Goto and the Polaykov forms of this action. Furthermore, we show that the phenomenological correction $\Delta$ introduced earlier is related to the pullback of the Kalb-Ramond field $B_{\mu \nu}$ into the worldsheet.
 
-In \autoref{sec:inverse-metric-Polyakov} we explore the Polyakov version of the modified NG action derived from the bimetric analysis and point out its consequences for the equations of motion. Furthermore, we solve the string equations of motion for a particular case of constant-coefficient to find the fundamental modes and derive the Poisson bracket algebra for the modes and constraints. In \autoref{sec:quantum-kg-string} we follow the route of canonical covariant quantization for the solution previously found and discuss the consequences of our area-corrected model regarding the dimensionality of the background spacetime and the presence of negative-norm states (ghosts) in the physical excitations.
+In \autoref{sec:inverse-metric-Polyakov} we explore the Polyakov version of the modified string action derived from the bimetric analysis and point out its consequences for the equations of motion. We also take a glance at the explicit expression for the $\Delta _{a b}$ field by considering the (area-corrected) string coupled to the Kalb-Ramond field. Furthermore, we solve the string equations of motion for a particular case of constant-coefficient to find the fundamental modes and derive the Poisson bracket algebra for the modes and constraints. In \autoref{sec:quantum-kg-string} we follow the route of canonical covariant quantization for the solution previously found and discuss the consequences of our area-corrected model regarding the dimensionality of the background spacetime and the presence of negative-norm states (ghosts) in the physical excitations.
 
 In \autoref{sec:emergent-dimensions} we complement Afshordi's work \cite{Afshordi-emergent} with insights from LQG, showing that LQG quantum geometry naturally constrains most of the free parameters of said model, leading to a more concrete theory. We also suggest a possible consequence for the parameters that remain unconstrained and a generalization of the model.
 
@@ -466,6 +466,42 @@ By expanding the definition of $F^{-}$ we get
 	\eta ^{a b} \partial _{a} \partial _{b} X^{\mu} + \eta ^{a b} \frac{\left( 2 \del _{a} \phi - \del _{a} \ln (\Delta) \right)}{\dfrac{2 \e ^{2 \phi}}{k \Delta} - 1} \del _{b} X^{\mu} = 0 ,
 \end{equation}
 revealing a wave equation sourced by a coupling between the WS conformal factor, quantum of area field $\Delta$ and the embedding fields much akin to the dilaton field \cite{Balthazar-t-backgrounds}. We'll come back to this in \autoref{sec:emergent-dimensions}.
+
+\subsection{Worldsheet Kalb-Ramond field and Quantum of Area} \label{sec:WS-Kalb-Ramond-QoA}
+
+If one were to calculate the equations of motion for the quantum of area field $\Delta _{a b}$ in the actions \eqref{eqn:modified-NG-action} and \eqref{eqn:inverse-metric-Polyakov} explored before, one would end up concluding that either $\Delta _{a b} = 0$ or it's determinant $\Delta = 0$ vanish. This happens because, as we explored in section \ref{sec:ws-kalb-ramond}, $\Delta _{a b}$ is actually related to the pullback of the Kalb-Ramond field $B_{\mu \nu}$, but those actions were actions for the free string, not coupled to said field. The more complete picture would be thus to consider the (area-corrected) string now coupled to the Kalb-Ramond field \cite{Tong2009Lectures}
+\begin{multline} \label{eqn:area-corrected-K-R-action}
+	S = - \frac{1}{4 \pi \alpha '} \int \diff ^2 x \left( \sqrt{- g} - \frac{1}{2} \frac{k \Delta}{\sqrt{- g}} \right) \times \\
+	\times \Big( g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} G_{\mu \nu} - \varepsilon ^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} B_{\mu \nu} \Big) ,
+\end{multline}
+where  we can rewrite $\varepsilon ^{a b}$ in terms of $\Delta ^{a b}$ as
+\begin{multline} \label{eqn:area-corrected-K-R-action-v2}
+	S = - \frac{1}{4 \pi \alpha '} \int \diff ^2 x \left( \sqrt{- g} - \frac{1}{2} \frac{k \Delta}{\sqrt{- g}} \right) \times \\
+	\times \Big( g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} G_{\mu \nu} - \\
+	- \sqrt{\Delta} \Delta ^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} B_{\mu \nu} \Big) .
+\end{multline}
+By varying this action \wrt $\Delta ^{c d}$ we get
+\begin{equation} \label{eqn:Delta-pullback}
+	\Delta _{c d} = \widetilde{f} \del _{c} X^{\mu} \del _{d} X^{\nu} B_{\mu \nu}
+\end{equation}
+with $\widetilde{f}$ given by
+\begin{multline} \label{eqn:1/f-tilde}
+	\frac{1}{\widetilde{f}} = \frac{1}{g + \dfrac{k \Delta}{2}} \Bigg( \frac{k \sqrt{\Delta}}{2} g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} G_{\mu \nu} - \\
+	- \left( g + \frac{3 k \Delta}{4} \right) \Delta ^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} B_{\mu \nu} \Bigg) ,
+\end{multline}
+where if we take $g_{a b} = \del _{a} X^{\mu} \del _{b} X^{\nu} G_{\mu \nu}$ and $\del _{a} X^{\mu} \del _{b} X^{\nu} B_{\mu \nu} = \Delta _{a b} / \widetilde{f}$ this simplifies to
+\begin{equation} \label{eqn:f-tilde}
+	\widetilde{f} = - \frac{g + k \Delta}{k \sqrt{\Delta}} ,
+\end{equation}
+from which it is easy to see that the pullback of the Kalb-Ramond field $b_{a b} := \del _{a} X^{\mu} \del _{b} X^{\nu} B_{\mu \nu}$ is given by
+\begin{equation} \label{eqn:WS-b-field}
+	b_{a b} = - \frac{1}{\dfrac{g}{k \Delta} + 1} \varepsilon _{a b} ,
+\end{equation}
+or equivalently that the relation between $\Delta _{a b}$ and $b_{a b}$ is
+\begin{equation} \label{eqn:Delta-b-relation}
+	\Delta _{a b} = \sqrt{\Delta} \varepsilon _{a b} = - \sqrt{\Delta} \left( \frac{g}{k \Delta} + 1 \right) b_{a b} .
+\end{equation}
+We thus see that the pullback of the Kalb-Ramond field is actually a tensor \emph{density} of weight $- 1$, since the coefficient in eq \eqref{eqn:WS-b-field} is a true scalar and the Levi-Civita symbol is itself a density.
 
 \subsection{Simplifying The Equations of Motion} \label{sec:solving-eoms-inverse-area}
 
@@ -945,41 +981,6 @@ In section \ref{sec:quantum-kg-string} we saw that our area-corrected model allo
 Another candidate for what the vector excitations could relate to is the Ashtekar electric fields $\widetilde{E}^{\mu} _{I}$,
 \begin{equation} \label{eqn:AEF-string-vector-excitation}
 	\widetilde{E}^{\mu} _{I} \sim (\Hat{a}^{\mu} _{I})^{\dagger} \ket{0} .
-\end{equation}
-
-\subsection{Worldsheet Kalb-Ramond field and Quantum of Area} \label{sec:WS-Kalb-Ramond-QoA}
-
-If one were to calculate the equations of motion for the quantum of area field $\Delta _{a b}$ in the actions \eqref{eqn:modified-NG-action} and \eqref{eqn:inverse-metric-Polyakov} explored in sections \ref{sec:modified-ng} and \ref{sec:inverse-metric-Polyakov}, one would end up concluding that either $\Delta _{a b} = 0$ or it's determinant $\Delta = 0$ vanish. This happens because, as we explored in section \ref{sec:ws-kalb-ramond}, $\Delta _{a b}$ is actually related to the pullback of the Kalb-Ramond field $B_{\mu \nu}$, but those actions were actions for the free string, not coupled to said field. The more complete picture would be thus to consider the string now coupled to the Kalb-Ramond field \cite{Tong2009Lectures}
-\begin{multline} \label{eqn:area-corrected-K-R-action}
-	S = - \frac{1}{4 \pi \alpha '} \int \diff ^2 x \left( \sqrt{- g} - \frac{1}{2} \frac{k \Delta}{\sqrt{- g}} \right) \times \\
-	\times \Big( g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} G_{\mu \nu} - \widetilde{\varepsilon}^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} B_{\mu \nu} \Big) ,
-\end{multline}
-where we can rewrite $\widetilde{\varepsilon}^{a b}$ in terms of $\Delta ^{a b}$ as
-\begin{multline} \label{eqn:area-corrected-K-R-action-v2}
-	S = - \frac{1}{4 \pi \alpha '} \int \diff ^2 x \left( \sqrt{- g} - \frac{1}{2} \frac{k \Delta}{\sqrt{- g}} \right) \times \\
-	\times \Big( g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} G_{\mu \nu} - \\
-	- \sqrt{\Delta} \Delta ^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} B_{\mu \nu} \Big) .
-\end{multline}
-By varying this action \wrt $\Delta ^{c d}$ we get
-\begin{equation} \label{}
-	\Delta _{c d} = \widetilde{f} \del _{c} X^{\mu} \del _{d} X^{\nu} B_{\mu \nu}
-\end{equation}
-with $\widetilde{f}$ given by
-\begin{multline} \label{eqn:1/f-tilde}
-	\frac{1}{\widetilde{f}} = \frac{1}{g + \dfrac{k \Delta}{2}} \Bigg( \frac{k \sqrt{\Delta}}{2} g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} G_{\mu \nu} - \\
-	- \left( g + \frac{3 k \Delta}{4} \right) \Delta ^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} B_{\mu \nu} \Bigg) ,
-\end{multline}
-where if we take $g_{a b} = \del _{a} X^{\mu} \del _{b} X^{\nu} G_{\mu \nu}$ and $\del _{a} X^{\mu} \del _{b} X^{\nu} B_{\mu \nu} = \Delta _{a b} / \widetilde{f}$ this simplifies to
-\begin{equation} \label{eqn:f-tilde}
-	\widetilde{f} = - \frac{g + k \Delta}{k \sqrt{\Delta}} ,
-\end{equation}
-from which it is easy to see that the pullback of the Kalb-Ramond field $b_{a b} := \del _{a} X^{\mu} \del _{b} X^{\nu} B_{\mu \nu}$ is given by
-\begin{equation} \label{eqn:WS-b-field}
-	b_{a b} = - \frac{1}{\dfrac{g}{k \Delta} + 1} \widetilde{\varepsilon}_{a b} ,
-\end{equation}
-or equivalently that the relation between $\Delta _{a b}$ and $b_{a b}$ is
-\begin{equation} \label{eqn:Delta-b-relation}
-	\Delta _{a b} = \sqrt{\Delta} \widetilde{\varepsilon}_{a b} = - \sqrt{\Delta} \left( \frac{g}{k \Delta} + 1 \right) b_{a b} .
 \end{equation}
 
 \begin{acknowledgments}
