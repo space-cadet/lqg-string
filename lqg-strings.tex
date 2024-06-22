@@ -49,7 +49,7 @@
 % Mar 25, 2023
 % Added parskip package for spacing between paragraphs.
 \usepackage{parskip}
-% \setlength{\parindent}{15pt}
+\setlength{\parindent}{15pt}
 
 % Nov 20, 2023
 % Added package mciteplus to collapse multiple papers into one item in bibliography.
@@ -473,7 +473,7 @@ Equation (\ref{eqn:X-eom-simplified}) seems a bit odd, but we can polish it by c
 \begin{equation}
 	(E^{2} - p^{2}) X^{\mu} + i (E \partial _{\tau} \ln (F^{-}) - p \partial _{\sigma} \ln (F^{-})) X^{\mu} = 0 ,
 \end{equation}
-from which we can use the freedom in the conformal factor to fix the second term as $- m^2 X^{\mu}$, with $- m^2 = p^2 - E^2$ on-shell and this, in turn, implies that the derivatives of $\ln (F^{-})$ are given by
+from which we can use the freedom in the conformal factor to fix the second term as $- \mu ^2 X^{\mu}$, with $- \mu ^2 = p^2 - E^2$ on-shell and this, in turn, implies that the derivatives of $\ln (F^{-})$ are given by
 \begin{equation} \label{eqn:derivatives-F-minus}
 	\partial _{\tau} \ln (F^{-}) = i E , \ \partial _{\sigma} \ln (F^{-}) = i p ,
 \end{equation}
@@ -488,7 +488,7 @@ thus we have
 \begin{equation} \label{eqn:phi}
 	\e ^{\phi (x)} = \sqrt{\frac{k \Delta}{2 \left( 1 - A \e ^{i (E \tau + p \sigma)} \right)}} .
 \end{equation}
-At first glance, it seems problematic that we have a complex conformal factor, but the complex structure comes from our ansatz for the embedding fields, and when we choose either the real or imaginary part of the latter it should also pick the respective component of $\e ^{\phi}$. With this choice, we thus turned eq (\ref{eqn:X-eom-simplified}) into a Klein-Gordon equation
+It may seem problematic to have a complex conformal factor, but the complex structure comes from our ansatz for the embedding fields, and when we choose either the real or imaginary part of the latter it should also pick the respective component of $\e ^{\phi}$. With this choice, we thus turned eq (\ref{eqn:X-eom-simplified}) into a Klein-Gordon equation
 \begin{equation} \label{eqn:X-Klein-Gordon-eqn}
 	\left( \partial _{\sigma} ^2 - \partial _{\tau} ^2 \right) X^{\mu} - \mu ^2 X^{\mu} = 0 .
 \end{equation}
@@ -496,7 +496,7 @@ The imposition that
 \begin{equation} \label{eqn:mu-constraint-1}
 	i (E \partial _{\tau} \ln (F^{-}) - p \partial _{\sigma} \ln (F^{-})) = - \mu ^2
 \end{equation}
-can be used to find the explicit dependence of $\mu ^2$ on the quantum geometry parameters $k \Delta$ as in
+can be used to find the explicit dependence of $\mu ^2$ on the quantum geometry parameters $k \Delta$ as
 \begin{multline} \label{eqn:mu-constraint-final}
 	\mu ^2 = \frac{i}{\dfrac{2 \e ^{2 \phi}}{k \Delta} - 1} \big( p \del _{\sigma} \ln \left( \e^{2 \phi} / \Delta \right) - \\
 	- E \del _{\tau} \ln \left( \e^{2 \phi} / \Delta \right) \big) .
@@ -506,7 +506,7 @@ can be used to find the explicit dependence of $\mu ^2$ on the quantum geometry 
 
 In the following, we focus on the analysis of the closed string unless otherwise stated.
 
-From our analysis of the inverse-area corrected Polyakov action, we got $D$ finite-space one-dimensional Klein-Gordon equations (\ref{eqn:X-Klein-Gordon-eqn}), with constraints given by eq\eqref{eqn:inverse-area-em-tensor}. The constraints are nothing new, they're precisely the same as the ones of regular String Theory. What's new in our analysis is the $\mu ^2$ term, which we will assume to be constant for a first analysis, making it so the solution is given by Fourier transform
+From our analysis of the inverse-area corrected Polyakov action, we got $D$ finite-space one-dimensional Klein-Gordon equations (\ref{eqn:X-Klein-Gordon-eqn}), with constraints given by eq \eqref{eqn:inverse-area-em-tensor}. The constraints are nothing new, they're the same as the ones of regular String Theory. What's new in our analysis is the $\mu ^2$ term, which we take as being constant for a first analysis, making it so the solution is given by Fourier transform
 \begin{multline} \label{eqn:KG-Polyakov-solution-initial}
 	X^{\mu} (\tau , \sigma) = \sqrt{\frac{\alpha '}{2}} \sum _{p \in \mathbb{Z}} \frac{1}{2 E_{p}} \bigg( \alpha ^{\mu} _{p} \e ^{i (E_{p} \tau - p \sigma)} + \\
 	+ \beta ^{\mu} _{p} \e ^{- i (E_{p} \tau - p \sigma)} \bigg) ,
@@ -536,7 +536,7 @@ which is clearly divergent in the $\mu \rightarrow 0$ limit unless $\mathfrak{Re
 \end{equation}
 This in actuality will differ from the normal ST literature by a factor of $1 / 2$ in the momentum term, but this is needed for the Poisson brackets to give the expected results.
 
-Looking closer at our Virasoro-like \textquotedblleft modes", in particular the $n = p$ condition, we get the mass of the string in terms of its vibrational modes and center of mass position
+Looking closer at our constraints \textquotedblleft modes", in particular the $n = p$ condition, we get the mass of the string in terms of its vibrational modes and center of mass position
 \begin{multline} \label{eqn:string-rest-mass-classical-1}
 	M^2 = - p^{\mu} p_{\mu} = \frac{4}{\alpha '} \Bigg( \sum _{n \neq 0} \left( \left( 1 + \frac{n}{E_{n}} \right) ^2 \widetilde{L}_{n , n} \right) - \\
 	- \frac{2 \mu ^2}{\alpha '} x^{\mu} x_{\mu} \Bigg) =
@@ -562,7 +562,7 @@ and then proceed to use the equal-time Poisson bracket relation at $\tau = 0$
 \begin{equation} \label{eqn:canonical-bracket-relation}
 	\left\{ X^{\mu} (0 , \sigma) , \Pi ^{\nu} (0 , \sigma ') \right\} = \delta (\sigma - \sigma ') \eta ^{\mu \nu}
 \end{equation}
-to calculate the bracket relations between the expansion modes $\alpha ^{\mu} _{n}$ and $(\alpha ^{\nu} _{p})^{*}$. After using the freedom we still have in choosing the expansion modes of $F^{-}$ to gauge fix it to satisfy $\mathfrak{Re} (A_{0}) = - 2 \alpha '$ and realizing that $\alpha ^{\mu} _{- n} = \alpha ^{\mu} _{n}$, we get the desired
+to calculate the bracket relations between the expansion modes $\alpha ^{\mu} _{n}$ and $(\alpha ^{\nu} _{p})^{*}$. After using the freedom we still have in choosing the expansion modes of $F^{-}$ to gauge fix it to satisfy $\mathfrak{Re} (A_{0}) = - 2 \alpha '$ and realizing that $\alpha ^{\mu} _{- n} = \alpha ^{\mu} _{n}$, we get the expected
 \begin{subequations}
 	\begin{align}
 		\left\{ \alpha ^{\mu} _{n} , \alpha ^{\nu} _{p} \right\}       & = 0 = \left\{ (\alpha ^{\mu} _{n})^{*} , (\alpha ^{\nu} _{p})^{*} \right\} \label{eqn:expansion-modes-bracket-0} \\
@@ -577,7 +577,7 @@ from which we can normalize the expansion modes to get harmonic oscillator modes
 	\end{align}
 \end{subequations}
 \begin{equation} \label{eqn:harmonic-bracket-relations}
-	\left\{ a^{\mu} _{n} , (a^{\nu} _{p})^{*} \right\} = - i \delta _{|m| , |l|} \eta ^{\mu \nu} .
+	\left\{ a^{\mu} _{n} , (a^{\nu} _{p})^{*} \right\} = - i \delta _{|n| , |p|} \eta ^{\mu \nu} .
 \end{equation}
 The bracket relations for $\alpha ^{\mu} _{0}$ can be used to get the expected bracket relations between $x^{\mu}$ and $p^{\nu}$
 \begin{align}
@@ -587,7 +587,7 @@ The bracket relations for $\alpha ^{\mu} _{0}$ can be used to get the expected b
 
 \subsection{The \textquotedblleft Virasoro-Klein-Gordon" Algebra}
 
-Having the bracket relations between the vibrational modes of the string, we can now calculate the constraint algebra, which we shall refer to as the Virasoro-Klein-Gordon Algebra. For simplicity, since $E_{n} = \sqrt{n^2 + \mu ^2} > 0$, we shall work with the normalized harmonic oscillator modes $a^{\mu} _{n}$ instead of the expansion modes $\alpha ^{\mu} _{n}$. The algebra is given by
+Having the bracket relations between the vibrational modes of the string, we can now calculate the constraints algebra, which we shall refer to as the Virasoro-Klein-Gordon Algebra. For simplicity, since $E_{n} = \sqrt{n^2 + \mu ^2} > 0$, we shall work with the normalized harmonic oscillator modes $a^{\mu} _{n}$ instead of the expansion modes $\alpha ^{\mu} _{n}$. Then, the algebra in terms of said normalized modes is given by
 \begin{subequations}
 	\begin{equation} \label{eqn:L-brackets-0}
 		\left\{ L_{n , m} , L_{k , p} \right\} = 0
