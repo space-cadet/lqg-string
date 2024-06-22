@@ -259,31 +259,42 @@ In a very real sense string theory is a quantum theory of geometry. After all, t
 \end{equation}
 is nothing more than the \emph{area} of the string worldsheet. So when we are constructing the quantum theory of the string we are constructing a theory in which the fundamental excitations are geometric in nature. What we would like to do is to modify the string action in a way which incorporates the insight from LQG that at the Planck scale there is a minimum quantum of area. One simple way in which to do this is to modify the integrand in \eqref{eqn:ng-action} as follows:
 \begin{equation*}
-	\sqrt{- h} \rightarrow \sqrt{- (h + g \Delta)}.
+	\sqrt{- h} \rightarrow \sqrt{- (h + k \Delta)}.
 \end{equation*}
-Here, $g = l_{pl}/l_s$, where $l_{pl}$ is the Planck scale, the scale at which quantum geometric effects become important; $l_s$ is the string scale where quantum geometric effects due to area quantization become small; $\Delta$ is a scalar density of weight 2 which can be taken to be the determinant of some worldsheet tensor $\Delta _{a b} (x)$ and corresponds to the square of the quantum of area at the point $x$ where the spin foam pierces the WS. In the limit that $l_s \gg l_{pl}$, $g \ll 1$ and the string action reduces to the conventional Nambu-Goto action with small corrections coming from quantum geometry. In this limit we can expand the integrand as follows:
+Here, $k = l_{pl} / l_s$, where $l_{pl}$ is the Planck scale, the scale at which quantum geometric effects become important; $l_s$ is the string scale where quantum geometric effects due to area quantization become small; $\Delta$ is a scalar density of weight 2 which can be taken to be the determinant of some worldsheet tensor $\Delta _{a b} (x)$ and corresponds to the square of the quantum of area at the point $x$ where the spin foam pierces the WS. In the limit that $l_s \gg l_{pl}$, $k \ll 1$ and the string action reduces to the conventional Nambu-Goto action with small corrections coming from quantum geometry. In this limit we can expand the integrand as follows:
 \begin{equation} \label{eqn:inverse-metric-correction}
-	\sqrt{- (h + g \Delta)} \sim \sqrt{- h}\left(1 - \frac{1}{2} \frac{g \Delta}{(- h)} + \mc{O}(g^2/h^2)\right).
+	\sqrt{- (h + g \Delta)} \sim \sqrt{- h}\left(1 - \frac{1}{2} \frac{k \Delta}{(- h)} + \mc{O}(k^2/h^2)\right).
 \end{equation}
-Presumably the limit $g \ll 1$ corresponds to when the area of the string worldsheet is large compared to $\Delta$, $h \gg \Delta$. Thus in this limit $ g^2 \ll 1$ and $ h^2 \gg 1$ because of which we can drop the $\mc{O}(g^2/h^2)$ corrections. The final area corrected Nambu-Goto action becomes:
+Presumably the limit $k \ll 1$ corresponds to when the area of the string worldsheet is large compared to $\Delta$, $h \gg \Delta$. Thus in this limit $ k^2 \ll 1$ and $ h^2 \gg 1$ because of which we can drop the $\mc{O}(g^2/h^2)$ corrections. The final area corrected Nambu-Goto action becomes:
 \begin{equation} \label{eqn:modified-NG-action}
-	S'_{NG} = -T \int \diff ^2 x \left( \sqrt{- h} - \frac{1}{2} \frac{g \Delta}{\sqrt{- h}} \right).
+	S'_{NG} = -T \int \diff ^2 x \left( \sqrt{- h} - \frac{1}{2} \frac{k \Delta}{\sqrt{- h}} \right).
 \end{equation}
 This action has, to the best of our knowledge, not been explored in the string theory literature. However, such an inverse determinant term arises very naturally in the LQG approach and goes by the name of ``inverse triad'' corrections, in the context of the 3D volume of spatial hypersurfaces.
 
 The action eq \eqref{eqn:modified-NG-action} has manifest background Poincaré invariance since just like the regular Nambu-Goto action since all its terms are derivatives of $X^{\mu}$ with all Lorentz indices contracted, thus are Lorentz scalars. At first glance it might seem to not be WS reparameterization invariant because of the second term, however, this is corrected by the fact that $\Delta$ is a scalar \emph{density} of weight 2, thus counteracting the inverse metric determinant. Moreover, if we look at that expression we see that it can be written as:
 \begin{equation} \label{eqn:modified-NG-action-v2}
-	S'_{NG}[h_{ab}] = -T \int \diff ^2 x \left( \sqrt{- h} - \frac{1}{2} {g \Delta}{\sqrt{- (h^{-1})}} \right),
+	S'_{NG}[h_{ab}] = -T \int \diff ^2 x \left( \sqrt{- h} - \frac{1}{2} {k \Delta}{\sqrt{- (h^{-1})}} \right),
 \end{equation}
-where $h^{-1}$ is now the determinant of the \emph{inverse} metric $h^{ab}$. As such, in the expression \eqref{eqn:modified-NG-action} we can see a duality between the first and second terms. If we replace the metric $h_{ab}$ by its inverse $h'_{ab} \equiv h^{ab}$, then the action in terms of $h'_{ab}$ is the same as \eqref{eqn:modified-NG-action}, but with the difference that the factor of $g \Delta/2$ is mapped to $2/(g\Delta)$:
+where $h^{-1}$ is now the determinant of the \emph{inverse} metric $h^{ab}$. As such, in the expression \eqref{eqn:modified-NG-action} we can see a duality between the first and second terms. If we replace the metric $h_{ab}$ by its inverse $h'_{ab} \equiv h^{ab}$, then the action in terms of $h'_{ab}$ is the same as \eqref{eqn:modified-NG-action}, but with the difference that the factor of $k \Delta / 2$ is mapped to $2 / (k \Delta)$:
 \begin{align} \label{eqn:modified-NG-action-v3}
-	S'_{NG}[h'_{ab}] & = -T' \int \diff ^2 x' \left( \sqrt{- h'} - \frac{2}{g \Delta} \sqrt{- (h')^{-1}} \right) \nonumber \\
-	                 & = -T' \int \diff ^2 x' \left( \sqrt{- h'} - \onehalf {g' \Delta'}\sqrt{- (h')^{-1}} \right),
+	S'_{NG}[h'_{ab}] & = -T' \int \diff ^2 x' \left( \sqrt{- h'} - \frac{2}{k \Delta} \sqrt{- (h')^{-1}} \right) \nonumber \\
+	                 & = -T' \int \diff ^2 x' \left( \sqrt{- h'} - \onehalf {k' \Delta'}\sqrt{- (h')^{-1}} \right),
 \end{align}
-which has the same form as the original action \eqref{eqn:modified-NG-action}, as long as make the replacements $T \rightarrow T' = \frac{1}{2} g T $, $ \frac{1}{2} {g \Delta} \rarrow \frac{1}{2} {g' \Delta'} = \frac{2} {g \Delta}$ and $\diff ^2 x \rightarrow \diff ^2 x' = \Delta \diff ^2 x$ (or equivalently $\diff x^{a} \rightarrow \diff x' _{a} = \Delta _{a b} \diff x^{b}$).
-This is a duality between the physics at the Planck scale and the physics at the string scale, \ie between strong coupling ($g' \gg 1$) and weak coupling ($g \ll 1$), small quantum of area ($\Delta$) and large quantum of area ($\Delta'$) and between large string tension $T$ and small string tension $T'$.
+which has the same form as the original action \eqref{eqn:modified-NG-action}, as long as we make the replacements
+\begin{subequations}
+	\begin{equation} \label{eqn:T'}
+		T \rightarrow T' = \frac{1}{2} k T
+	\end{equation}
+	\begin{equation} \label{eqn:k-Delta}
+		\frac{1}{2} {k \Delta} \rarrow \frac{1}{2} {k' \Delta'} = \frac{2} {k \Delta}
+	\end{equation}
+	\begin{equation} \label{eqn:d2x}
+		\diff ^2 x \rightarrow \diff ^2 x' = \Delta \diff ^2 x
+	\end{equation}
+\end{subequations}
+(or equivalently $\diff x^{a} \rightarrow \diff x' _{a} = \Delta _{a b} \diff x^{b}$). This is a duality between the physics at the Planck scale and the physics at the string scale, \ie between strong coupling ($k' \gg 1$) and weak coupling ($k \ll 1$), small quantum of area ($\Delta$) and large quantum of area ($\Delta'$) and between large string tension $T$ and small string tension $T'$.
 
-Now, one might object and say that having an action which is the sum of Nambu-Goto actions for two different metrics seems strange. However, such actions have been extensively studied under the heading of ``bimetric gravity'', with the earliest work dating as far back as 1940 in two papers \cite{Rosen1940General,Rosen1940aGeneral} by Einstein's future collaborator Nathan Rosen (the `R' in `EPR' and `ER'). In 2010, bimetric gravity gained great popularity due to the seminal paper \cite{de-Rham2011Resummation} which showed that by introducing a second \emph{reference} metric into a model for massive gravity one can get rid of the Boulware-Deser ghost \cite{Boulware1972Can-Gravitation} which otherwise plagues theories with massive gravitons. The \emph{reference} metric introduced in the work \cite{de-Rham2011Resummation} was taken to be a flat metric. However later work \cite{Hassan2012Bimetric,Hassan2012Ghost-Free} showed that the second metric need not be flat and that an action of the following form:
+Now, one might object and say that having an action which is the sum of two Nambu-Goto actions seems strange. However, similar actions have been extensively studied under the heading of ``bimetric gravity'', with the earliest work dating as far back as 1940 in two papers \cite{Rosen1940General,Rosen1940aGeneral} by Einstein's future collaborator Nathan Rosen (the `R' in `EPR' and `ER'). In 2010, bimetric gravity gained great popularity due to the seminal paper \cite{de-Rham2011Resummation} which showed that by introducing a second \emph{reference} metric into a model for massive gravity one can get rid of the Boulware-Deser ghost \cite{Boulware1972Can-Gravitation} which otherwise plagues theories with massive gravitons. The \emph{reference} metric introduced in the work \cite{de-Rham2011Resummation} was taken to be a flat metric. However later work \cite{Hassan2012Bimetric,Hassan2012Ghost-Free} showed that the second metric need not be flat and that an action of the following form:
 \begin{align}\label{eqn:hassan-bimetric}
 	S & = M_g^2 \int \diff^4 x \sqrt{-g} R^{(g)} + M_f^2 \int \diff^4 x \sqrt{-f} R^{(f)} \nonumber \\
 	  & + 2 m^2 M^2_{eff} \int \diff^4 x \sqrt{-g}\sum_{n=0}^{4}\beta_n e_n (\sqrt{g^{-1} f}),
