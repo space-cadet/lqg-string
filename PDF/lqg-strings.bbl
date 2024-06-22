@@ -1,5 +1,27 @@
 \providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{10}
 
+\bibitem{Polchinski1998String}
+J.~Polchinski, {\em String {{Theory}}: {{Volume}} 1: {{An Introduction}} to the
+  {{Bosonic String}}}, vol.~1 of {\em Cambridge {{Monographs}} on
+  {{Mathematical Physics}}}.
+\newblock {Cambridge University Press}, {Cambridge}, 1998.
+
+\bibitem{Polchinski2007String}
+J.~Polchinski, {\em String {{Theory}}: {{Volume}} 2: {{Superstring}} Theory and
+  Beyond}.
+\newblock Cambridge {{Monographs}} on {{Mathematical Physics}}. {Cambridge
+  University Press}, Dec., 2007.
+
+\bibitem{Rovelli1998Loop}
+C.~Rovelli, {\it Loop {{Quantum Gravity}}},  {\em Living Reviews in Relativity}
+  {\bf 1} (Dec., 1998) [\href{http://arxiv.org/abs/gr-qc/9710008}{{\tt
+  gr-qc/9710008}}].
+
+\bibitem{Rovelli2015Covariant}
+C.~Rovelli and F.~Vidotto, {\em Covariant Loop Quantum Gravity: {{An}}
+  Elementary Introduction to Quantum Gravity and Spinfoam Theory}.
+\newblock Cambridge University Press, Cambridge, 2015.
+
 \bibitem{Rovelli1993Area}
 C.~Rovelli, {\it Area is the length of ashtekar's triad field}, .
 
@@ -177,18 +199,23 @@ E.~A. Bergshoeff, S.~{de Haan}, O.~Hohm, W.~Merbis, and P.~K. Townsend, {\it
   Zwei-{{Dreibein Gravity}}},  {\em Physical Review Letters} {\bf 111} (Sept.,
   2013) 111102, [\href{http://arxiv.org/abs/1307.2774}{{\tt arXiv:1307.2774}}].
 
-\bibitem{Blais:2013sdr}
-T.~Blais, {\it A new quantization condition for parity-violating
-  three-dimensional gravity},  Master's thesis, McGill U., 4, 2013.
-
 \bibitem{Witten:1988hc}
 E.~Witten, {\it {(2+1)-Dimensional Gravity as an Exactly Soluble System}},
   {\em Nucl. Phys. B} {\bf 311} (1988) 46.
 
-\bibitem{Carlip:1998uc}
-S.~Carlip, {\em Quantum gravity in 2+1 dimensions}.
-\newblock Cambridge Monographs on Mathematical Physics. Cambridge University
-  Press, 12, 2003.
+\bibitem{Dai1989New-Connections}
+{\relax JIN}.~DAI, R.~LEIGH, and {\relax JOSEPH}.~POLCHINSKI, {\it New
+  {{Connections Between String Theories}}},  {\em Modern Physics Letters A}
+  {\bf 04} (1989), no.~21 2073--2083.
+
+\bibitem{Polchinski1995Dirichlet-Branes}
+J.~Polchinski, {\it Dirichlet branes and {{Ramond-Ramond}} charges},  {\em
+  Physical Review Letters} {\bf 75} (Nov., 1995) 4724--4727,
+  [\href{http://arxiv.org/abs/hep-th/9510017}{{\tt hep-th/9510017}}].
+
+\bibitem{Horava1989Background}
+P.~Ho{\v r}ava, {\it Background duality of open-string models},  {\em Physics
+  Letters B} {\bf 231} (Nov., 1989) 251--257.
 
 \bibitem{Friedan1985Nonlinear}
 D.~H. Friedan, {\it Nonlinear {{Models}} in {{Two}} + {{Epsilon Dimensions}}},

@@ -192,9 +192,9 @@
 
 ``Quantum gravity'' refers to the broad enterprise dedicated to finding a complete, consistent theory in which quantum mechanics coexists peacefully with general relativity. There are two major approaches to quantum gravity which are widely recognized for their success in describing various aspects of physics at the Planck scale. We discuss each in turn below giving a bird's eye view of research spanning a period of nearly sixty years.
 
-The first of these is \emph{string theory}, the quantum theory of a one dimensional object which is said to contain within it a complete description of all particles, forces and their interactions, including gravity. However, where precisely in the vast space of effective field theories which can possibly arise as in the low energy limit of a conjectured ``M-Theory'', our Universe with its collection of particles, forces and coupling constants, exists, is still a matter of vigorous debate.
+The first of these is \emph{string theory} \cite{Polchinski1998String,Polchinski2007String}, the quantum theory of a one dimensional object which is said to contain within it a complete description of all particles, forces and their interactions, including gravity. However, where precisely in the vast space of effective field theories which can possibly arise as in the low energy limit of a conjectured ``M-Theory'', our Universe with its collection of particles, forces and coupling constants, exists, is still a matter of vigorous debate.
 
-The second approach is called \emph{loop quantum gravity} or ``LQG'' for short. LQG is ostensibly meant to be a theory of ``pure quantum gravity'', that is gravity without any matter. Matter can always be ``added'' in by hand into the framework but is not present to begin with. LQG is also built upon a rigorous mathematical framework which applies the well-established Dirac procedure of quantization to canonical (ADM) Einstein gravity, and this is crucial, written in terms of Ashtekar variables which is a connection based approach as opposed to the conventional metric formalism. LQG has concrete predictions such as discreteness of physical areas \cite{Rovelli1993Area,Rovelli1994Discreteness}, and also has rigorous mathematical results which reproduce the black hole entropy formulae for Einstein gravity \cite{Rovelli1996Black}. Moreoever it allows us to construct a non-perturbative framework for quantum geometry which makes it possible to probe regimes which do not appear to be accessible via string theory.
+The second approach is called \emph{loop quantum gravity} or ``LQG'' for short \cite{Rovelli1998Loop,Rovelli2015Covariant}. LQG is ostensibly meant to be a theory of ``pure quantum gravity'', that is gravity without any matter. Matter can always be ``added'' in by hand into the framework but is not present to begin with. LQG is also built upon a rigorous mathematical framework which applies the well-established Dirac procedure of quantization to canonical (ADM) Einstein gravity, and this is crucial, written in terms of Ashtekar variables which is a connection based approach as opposed to the conventional metric formalism. LQG has concrete predictions such as discreteness of physical areas \cite{Rovelli1993Area,Rovelli1994Discreteness}, and also has rigorous mathematical results which reproduce the black hole entropy formulae for Einstein gravity \cite{Rovelli1996Black}. Moreoever it allows us to construct a non-perturbative framework for quantum geometry which makes it possible to probe regimes which do not appear to be accessible via string theory.
 
 Traditionally, there are two ways in which a classical theory can be quantized. These are the Hamiltonian and Lagrangian approaches. The Lagrangian or path integral approach follows the prescription first suggested by Dirac and then made concrete by Feynman. There one views the classical action associated to a given evolution as corresponding to a \emph{phase angle} which determines the complex weight of the associated evolution. This approach respects spacetime covariance since here the central object is the action which is invariant under spacetime transformations by construction. String theory is an example of such a formalism.
 
@@ -889,7 +889,7 @@ where $\mc{A}_{a}^\mu{}_\nu$ is the gauge field and $g$ is the gauge coupling. A
 
 Our goal is to write down the action of a string propagating in a background geometry. One might argue that the expression \eqref{eqn:polyakov-gravity}, where we replace the bulk Minkowski tensor $\eta_{\mu\nu}$ with an arbitrary tensor $G_{\mu\nu}$ which tells us what the components of the bulk metric are at that point on the worldsheet. However, we view this approach as unsatisfactory, not the least because it does not allow us to make contact of the string action with a background geometry specified in terms of connection variables instead of metric ones. An astute reader might correctly object saying that we can simply replace $G_{\mu\nu}$ in \eqref{eqn:polyakov-gravity} with $\tilde E_\mu^I \tilde E_\nu^J \eta_{IJ}$ (here $\eta_{IJ}$ is now the Minkowski metric in locally flat co-ordinates). This, however, leaves open the question of what role the bulk connection should play in this picture.
 
-Further, we can ask what is the physical effect of having a non-trivial connection in the bulk in terms of the local geometry. The bulk connection tells us how the vielbein transforms from point to point and thus effectively measures how much the bulk metric changes from point to point. So, for instance, the connection which describes the geometry around a Kerr black hole also encodes how the local tetrad frame rotates as one moves around the axisymmetric axis of the black hole. All of these considerations lead us to the premise that if one wishes to describes the bulk geometry in terms of connection variables, then it is only natural to describe the worldsheet geometry in terms of connection variables and to use the tools that come along with having a gauge connection to understand how the worldsheet geometry can couple to the bulk geometry.
+Further, we can ask what is the physical effect of having a non-trivial connection in the bulk in terms of the local geometry. The bulk connection tells us how the vielbein transforms from point to point and thus effectively measures how much the bulk metric changes from point to point. So, for instance, the connection which describes the geometry around a Kerr black hole also encodes how the local tetrad frame rotates as one moves around the axisymmetric axis of the black hole. All of these considerations lead us to the premise that \emph{if one wishes to describes the bulk geometry in terms of connection variables, then it is only natural to describe the worldsheet geometry in terms of connection variables} and to use the tools that come along with having a gauge connection to understand how the worldsheet geometry can couple to the bulk geometry.
 
 Therefore, now we will require that the bulk connection and the bulk vielbein can be pulled back onto a connection $\mc{A}_{a}^{ij}$ and a dyad $e^a_i$, respectively, living on the string worldsheet $\Sigma$. $X^\mu(\tau , \sigma)$ are the space-time coordinates of a point $(\tau , \sigma)$ on the worldsheet. Now if one adopts the ``sigma model'' point of view then the $X$'s can be viewed as $d+1$ scalar fields living on a $1+1$ worldsheet. But we know that these fields are not a collection of $d+1$ independent scalars. They are components of a $d+1$ dim vector since they transform with the fundamental representation of $\mathrm{SO}(d,1)$ under global Lorentz transformations acting on the ambient space-time. However, the symmetries of a flat background include not only Lorentz transformations bulk also translations. The string action is required to be invariant under both of these:
 \begin{subequations}\label{eqn:poincare-symmetries}
@@ -898,7 +898,7 @@ Therefore, now we will require that the bulk connection and the bulk vielbein ca
 		X^\mu & \rarrow \Lambda^\mu{}_\nu X^\mu; \quad \Lambda^\mu{}_\nu \in \mathrm{SO}(3,1)
 	\end{align}
 \end{subequations}
-where $\delta X^\mu$ is some arbitrary vector in Minkowski space. The semidirect product of $\mbb{R}^{3,1}$ with $\mathrm{SO}(3,1)$ is $\mbb{P}^{3,1}$, the Poincaré group in $3+1$ dimensions. Of course, these are good symmetries only if our background is flat. An arbitrarily curved background can have one or more Killing vectors depending on how much symmetry the geometry has, but \emph{in general} even that need not be the case. The best one can hope for is some notion of local flatness is some finite subregion of the background manifold. Moreoever the entire purpose of this work to try and understand how to write down a string action in an \emph{arbitrarily curved} background, assuming that such a thing is even possible.
+where $\delta X^\mu$ is some arbitrary vector in Minkowski space. The semidirect product of $\mbb{R}^{3,1}$ with $\mathrm{SO}(3,1)$ is $ISO^{3,1}$, the Poincaré group in $3+1$ dimensions. Of course, these are good symmetries only if our background is flat. An arbitrarily curved background can have one or more Killing vectors depending on how much symmetry the geometry has, but \emph{in general} even that need not be the case. The best one can hope for is some notion of local flatness is some finite subregion of the background manifold. Moreoever the entire purpose of this work to try and understand how to write down a string action in an \emph{arbitrarily curved} background, assuming that such a thing is even possible.
 
 Even in an arbitrarily curved background, however, symmetry still plays a very important role. Even if we have discarded \emph{global} symmetries, that still leaves us with \emph{local} symmetries in the form of diffeomorphisms under which the action must remain invariant. If, in addition, we have fields such as a gauge connection and an associated vielbein living in the background, then we also have to take local gauge transformations of these objects into account.
 
@@ -906,21 +906,19 @@ However, diffeomorphisms and gauge transformations are not independent of each o
 
 We will assume henceforth that the Poincaré group is the gauge group which must be promoted from being a \emph{global} symmetry to being a \emph{local} symmetry of the background spacetime.
 
-
-
 \subsection{Gauging Lorentz Transformations}\label{sec:gauging-lt}
 
 Instead of viewing the $X$'s as elements of a Minkowski space, we think of them as elements of the tangent space $T_p (M)$ at a given point $p$ of the background manifold $M$.
-When we travel along some path $\mc{C} \subset M$ from point $p$ to point $p'$, the local Lorentz frames at the two points are, in general, related by an element of $g(p,p') \in \mathrm{SO}(d,1)$. This group element arises from taking the holonomy of a $\mf{so}(d,1)$ Lie algebra valued connection living on $M$, along a the path $\mc{C}$.
 
-Let us remind ourselves what we're trying to do here. We want a gauge field, which lives on the background geometry and which encodes the background geometry, to somehow make an appearance in the action of a bosonic string. There is an obvious connection $\mc{A}_a^{IJ}$ living on the worldsheet which is the pullback from $M$ to $\Sigma$ of the connection $A_{\mu}^{IJ}$.
+% When we travel along some path $\mc{C} \subset M$ from point $p$ to point $p'$, the local Lorentz frames at the two points are, in general, related by an element of $g(p,p') \in SO(d,1)$. This group element arises from taking the holonomy of a $\mf{so}(d,1)$ Lie algebra valued connection living on $M$, along a the path $\mc{C}$.
 
-The end result is that we now have with a gauge field $\mc{A}_a^{IJ}(\tau , \sigma)$ living on the worldsheet $\Sigma$. Here the lower index $a$ is the worldsheet index and $I , J$ labels the generators of the Lie algebra $\mf{so}(d,1)$. Remember this is a gauge field which is now living on the worldsheet. The consequence for the string action is that in order for the action to be invariant under local gauge transformations of $\mc{A}$, we have to replace the ordinary derivatives of $X^\mu$ with the gauge covariant derivative $\partial_a X^\mu \rightarrow \mc{D}_a X^\mu$, which is defined as:
+% Let us remind ourselves what we're trying to do here. We want a gauge field, which lives on the background geometry and which encodes the background geometry, to somehow make an appearance in the action of a bosonic string. There is an obvious connection $\mc{A}_a^{IJ}$ living on the worldsheet which is the pullback from $M$ to $\Sigma$ of the connection $A_{\mu}^{IJ}$.
 
-\begin{equation}\label{eqn:covariant-deriv-v2}
-	\mc{D}_a X^I(\tau , \sigma) = \partial_a X^I + k \mc{A}_{a J}^{I} X^J,
-\end{equation}
-where $\mc{A}_a^{I J}$ is a field living on $\Sigma$ which takes values in the Lie algebra $\mf{so}(d,1)$. We should therefore think of the embedding fields as $d+1$ dimensional vectors living in the fundamental representation of $\mathrm{SO}(d,1)$.
+% The end result is that we now have a gauge field $\mc{A}_a^{IJ}(\tau , \sigma)$ living on the worldsheet $\Sigma$. Here the lower index $a$ is the worldsheet index and $I , J$ labels the generators of the Lie algebra $\mf{so}(d,1)$. Remember this is a gauge field which is now living on the worldsheet. The consequence for the string action is that in order for the action to be invariant under local gauge transformations of $\mc{A}$, we have to replace the ordinary derivatives of $X^\mu$ with the gauge covariant derivative $\partial_a X^\mu \rightarrow \mc{D}_a X^\mu$, which is defined as:
+% \begin{equation}\label{eqn:covariant-deriv-v2}
+% 	\mc{D}_a X^I(\tau , \sigma) = \partial_a X^I + k \mc{A}_{a J}^{I} X^J,
+% \end{equation}
+% where $\mc{A}_a^{I J}$ is a field living on $\Sigma$ which takes values in the Lie algebra $\mf{so}(d,1)$. We should therefore think of the embedding fields as $d+1$ dimensional vectors living in the fundamental representation of $\mathrm{SO}(d,1)$.
 
 This viewpoint on the embedding fields, as elements of the tangent space $T_p(M)$, might appear to be at odds with their prescribed usage as co-ordinate functions on $M$. However, some reflection shows that this is not the case. For instance, one can take the embedding manifold to be a two-dimensional sphere $S^2$. Then the co-ordinates of a point on the string worldsheet $\Sigma$ can be expressed in terms of the polar and azimuthal angles $\theta$ and $\phi$. The action for this system would be:
 \begin{equation}\label{eqn:s2-string}
@@ -928,12 +926,9 @@ This viewpoint on the embedding fields, as elements of the tangent space $T_p(M)
 \end{equation}
 where $\theta^\mu(\sigma,\tau) \in \{\theta, \phi\}$ are the embedding fields, and $G_{\mu\nu}$ is \emph{a} metric living on $S^2$.
 
-\subsection{The Einstein-Cartan String}\label{sec:cartan-string}
+There is a difficulty in the above argument. The bulk geometry is $d+1$ dimensional, therefore there are $d+1$ embedding fields. We have taken these fields $X^\mu$ and cast them as components of a $\mf{so}(d,1)$ vector. Let us pick an arbitrary point $P_0$ on the bulk manifold and call it the ``origin''. At $P_0$ the co-ordinates are all zero $\vec X_0 = (0,0,\ldots,0)$. If we start acting with infinitesimal $\mf{iso}(d,1)$ transformations on $\vec X_0$, the resulting surface will correspond to a ``constant energy'' hyperboloid in the bulk. This is because $SO(d,1)$ contains only boosts and rotations. We also need translations to generate the entirety of the bulk starting from a single base point.
 
-The careful reader will have noticed that there is a serious difficulty in the above argument. The bulk geometry is $d+1$ dimensional, therefore there are $d+1$ embedding fields. We have taken these fields $X^\mu$ and cast them as
-components of a $SO(d,1)$ vector. Let us pick an arbitrary point $P_0$ on the bulk manifold and call it the ``origin''. At $P_0$ the co-ordinates are all zero $\vec X_0 = (0,0,\ldots,0)$. If we start acting with infinitesimal $SO(d,1)$ transformations on $\vec X_0$, the resulting surface will correspond to a ``constant energy'' hyperboloid in the bulk. This is because $SO(d,1)$ contains only boosts and rotations. We also need translations to generate the entirety of the bulk starting from a single base point.
-
-This is where we run into a problem. There is no way to express translations in $d+1$ dimensions as the action of a $d+1$ dimensional matrix valued group on a point living in $\mbb{R}^{d+1}$. In order to incorporate translations we have to resort to a trick and introduce an extra ``dummy'' dimension for the background manifold. Now we have $d+2$ embedding fields which we can write as:
+This is where we run into a problem. There is no way to express infinitesimal translations in $d+1$ dimensions as the action of a $d+1$ dimensional matrix valued group on a point living in $\mbb{R}^{d+1}$. In order to incorporate translations we have to resort to a trick and introduce an extra ``dummy'' dimension for the background manifold. Now we have $d+2$ embedding fields which we can write as:
 \begin{equation}
 	X^A := \{X^0, \vec X, X^r\} = \{X^\mu, X^r\},
 \end{equation}
@@ -941,30 +936,52 @@ where $X^\mu = \{X^0, \vec X\}$ are the fields we had originally and $X^r$ is ou
 
 \subsection{Gauging Translations}\label{sec:translation_gauge}
 
-There is a very generic way in which one can introduce translations in the form of matrix valued transformations acting on vector (or one-form) objects [ref wikipedia]. For instance if we have a vector $\vec{x} = (x,y)$, rotations are given by $2 \times 2$ matrices. Now we add a dummy $'r'$ co-ordinate to our vector and set it equal to one, so our new vector is of the form: $\vec{X} = (x,y,r=1)$. Now the matrices which act on this vector will be three dimensional. One such matrix has the form:
+If one wants to treat the $X$'s as elements of a vector which transforms under both translations and rotations as in \eqref{eqn:poincare-symmetries}, we must extend the number of spacetime dimensions by one, introducing an ``auxiliary'' dimension whose value is initially set to be $X^r = 1$. Thus we have:
 \begin{equation}
-	\mb{R} = \begin{pmatrix}
-		a & b & t_x \\
-		c & d & t_y \\
-		0 & 0 & 1
-	\end{pmatrix}.
-\end{equation}
-Here the left upper diagonal $2\times 2$ block corresponds to the usual 2d rotations, while the new off-diagonal elements $(t_x, t_y)$ parametrize the amount we wish to displace our original vector $(x,y)$. Under the action of $\mb{R}$ (with the rotation component fixed to be identity), our vector becomes:
-\begin{equation}\label{eqn:affine-transform}
-	\mb{R} \vec X = \begin{pmatrix}
-		x + t_x \\
-		y + t_y \\
+	\begin{pmatrix}
+		X^\mu \\
 		1
-	\end{pmatrix}.
+	\end{pmatrix} \rarrow \begin{pmatrix}
+							X'^\mu \\
+							1
+						  \end{pmatrix} = \begin{pmatrix}
+											\Lambda^\mu{}_\mu & \delta X^\mu \\
+											0  & 1
+						  				  \end{pmatrix} \begin{pmatrix}
+											X^\mu \\
+											1
+										  \end{pmatrix}
 \end{equation}
-One might point out that the matrix $\mb{R}$ is not symmetric, as one would require of an orthogonal transformation. If we make $\mb{R}$ symmetric, then under the above transformation the third (projective) component of the 3-vector will no longer be equal to one.
-\begin{equation}\label{eqn:affine-transform}
-	\mb{R} \vec X = \begin{pmatrix}
-		x + t_x \\
-		y + t_y \\
-		x t_x + y t_y + 1
-	\end{pmatrix}.
-\end{equation}
+Now, one might be inclined to treat the new co-ordinate $X^r$ as purely an auxiliary variable which will not affect the physics. However, if we stare at the expression $X^r = 1$ for a moment, we will realise that this expression is the same form as the Dirichlet boundary condition for the end-points of a string. And, from what we know about strings with Dirichlet boundary conditions is that the constraint surface on which the end-points live will end up behaving like a dynamical object or ``D-brane'' \cite{Dai1989New-Connections,Polchinski1995Dirichlet-Branes,Horava1989Background}. In our case we now have a new enlarged bulk $\mb{M}$ with $d+1$ space dimensions - treating the auxiliary variable as a co-ordinate which can vary - and one time dimensions, or $d+2$ dimensions in total. If we fix $X^r = 1$, that leaves us with a $d+1$ submanifold $\mb{\Gamma} \in \mb{M}$ on which the string end-point is free to move.
+
+However, in our case, the condition $X^r = 1$ is much stronger than the Dirichlet boundary condition, because it applies not only to the end-points of the string, but to every point of the worldsheet. In other words, the \emph{entire} string worldsheet is confined to move only along the $d+1$ dimensional submanifold $\mb{\Gamma}$. Now, one can ask what should the form of the action for a string moving in this enlarged bulk look like? Well, it will be of the same form \eqref{eqn:polyakov-gauged}, only now the worldsheet connection is an $\mf{iso}(d,1)$ valued one-form, with the embedding fields the enlarged $d+2$ dimensional set.
+
+
+
+% instance if we have a vector $\vec{x} = (x,y)$, rotations are given by $2 \times 2$ matrices. Now we add a dummy $'r'$ co-ordinate to our vector and set it equal to one, so our new vector is of the form: $\vec{X} = (x,y,r=1)$. Now the matrices which act on this vector will be three dimensional. One such matrix has the form:
+% \begin{equation}
+% 	\mb{R} = \begin{pmatrix}
+% 		a & b & t_x \\
+% 		c & d & t_y \\
+% 		0 & 0 & 1
+% 	\end{pmatrix}.
+% \end{equation}
+% Here the left upper diagonal $2\times 2$ block corresponds to the usual 2d rotations, while the new off-diagonal elements $(t_x, t_y)$ parametrize the amount we wish to displace our original vector $(x,y)$. Under the action of $\mb{R}$ (with the rotation component fixed to be identity), our vector becomes:
+% \begin{equation}\label{eqn:affine-transform}
+% 	\mb{R} \vec X = \begin{pmatrix}
+% 		x + t_x \\
+% 		y + t_y \\
+% 		1
+% 	\end{pmatrix}.
+% \end{equation}
+% One might point out that the matrix $\mb{R}$ is not symmetric, as one would require of an orthogonal transformation. If we make $\mb{R}$ symmetric, then under the above transformation the third (projective) component of the 3-vector will no longer be equal to one.
+% \begin{equation}\label{eqn:affine-transform}
+% 	\mb{R} \vec X = \begin{pmatrix}
+% 		x + t_x \\
+% 		y + t_y \\
+% 		x t_x + y t_y + 1
+% 	\end{pmatrix}.
+% \end{equation}
 
 \subsection{}\label{sec:}
 
