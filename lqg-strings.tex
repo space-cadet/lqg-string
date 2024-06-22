@@ -283,7 +283,7 @@ where $h^{-1}$ is now the determinant of the \emph{inverse} metric $h^{ab}$. As 
 which has the same form as the original action \eqref{eqn:modified-NG-action}, as long as we make the replacements
 \begin{subequations}
 	\begin{equation} \label{eqn:T'}
-		T \rightarrow T' = \frac{1}{2} k T
+		T \rightarrow T' = - \frac{1}{2} k T
 	\end{equation}
 	\begin{equation} \label{eqn:k-Delta}
 		\frac{1}{2} {k \Delta} \rarrow \frac{1}{2} {k' \Delta'} = \frac{2} {k \Delta}
@@ -308,7 +308,7 @@ where $g_{\mu\nu}$ and $f_{\mu\nu}$ are \emph{arbitrary} metrics, $M_g^2, M_f^2$
 
 It would be natural to suspect that the action \eqref{eqn:modified-NG-action-v2} might be related to bimetric gravity in the target space of the string. We can see that this is indeed the case as follows.
 
-Consider a string propagating in a target space whose geometry is described by two bulk metrics. There are two ways that a string with two metrics might arise. One possibility is that there are two sets of embedding fields $X^\mu$ and $Y^\mu$. As a result, the induced metrics on the string worldsheet would also be different for both sets of embedding fields. However, in this case, we would not be talking about \emph{one} string but two \emph{different} strings described by the respective embedding functions. One could then proceed along the lines of \eqref{eqn:hassan-bimetric} and introduce a third term for the worldsheet action which describes a coupling between the two sets of embedding fields, of the form:
+There are two ways that a string with two metrics might arise. One possibility is that there are two sets of embedding fields $X^\mu$ and $Y^\mu$. As a result, the induced metrics on the string worldsheet would also be different for both sets of embedding fields. However, in this case, we would not be talking about \emph{one} string but two \emph{different} strings described by the respective embedding functions. One could then proceed along the lines of \eqref{eqn:hassan-bimetric} and introduce a third term for the worldsheet action which describes a coupling between the two sets of embedding fields, of the form:
 \begin{equation}\label{eqn:ws-bimetric-interaction}
 	S_{int} = - T_{eff} \int \diff^2 x\, \Phi(g,h) \Psi(\mb{X}, \mb{Y}).
 \end{equation}
@@ -348,7 +348,7 @@ where $G_{\mu\nu}$ is now the bulk or target space metric. Using this form we ca
 
 \subsection{(Worldsheet) Kalb Ramond and Area Quantization} \label{sec:ws-kalb-ramond}
 
-In the following, we will derive the equations of motion for the bimetric Polyakov action and along the way we will discover that the scalar density $\Delta(x)$ can be identified as being the determinant of (a tensor proportional to) the antisymmetric tensor $\widetilde{\varepsilon}_{a c}$ living on the worldsheet. The worldsheet antisymmetric tensor can itself be understood as arising from the pullback of a bulk antisymmetric tensor. Now, in string theory, there is already a very important antisymmetric bulk tensor called the Kalb-Ramond field.
+In the following, we will derive the equations of motion for the bimetric Polyakov action and along the way we will discover that the scalar density $\Delta(x)$ can be identified as being the determinant of (a tensor proportional to) the antisymmetric symbol $\varepsilon _{a c}$ living on the worldsheet. The worldsheet antisymmetric symbol can itself be understood as arising from the pullback of a bulk antisymmetric tensor. Now, in string theory, there is already a very important antisymmetric background tensor: the Kalb-Ramond field.
 
 Following the usual procedure such as the one found in \cite{Tong2009Lectures}, we find two copies of the string energy-momentum tensor:
 \begin{equation} \label{eqn:variation-wrt-g}
@@ -394,16 +394,16 @@ The condition $h = \Delta ^2 / g$ can be achieved by
 \begin{equation} \label{eqn:h=SgS}
 	h_{a b} = \Delta _{a c} \Delta _{b d} g^{c d} .
 \end{equation}
-This implies that
+By writing the inverse metric $g^{a b}$ in terms of Levi-Civita symbols $g^{a b} = \varepsilon ^{a c} \varepsilon ^{b d} g_{c d} / 2 g$, this implies that
 \begin{multline} \label{eqn:SgS-implication}
-	\left( \delta _{a} ^{c'} \delta _{b} ^{d'} H_{\mu \nu} - \frac{1}{2 g} \Delta _{a c} \widetilde{\varepsilon} ^{c c'} \Delta _{b d} \widetilde{\varepsilon} ^{d d'} G_{\mu \nu} \right) \times \\
+	\left( \delta _{a} ^{c'} \delta _{b} ^{d'} H_{\mu \nu} - \frac{1}{2 g} \Delta _{a c} \varepsilon ^{c c'} \Delta _{b d} \varepsilon ^{d d'} G_{\mu \nu} \right) \times \\
 	\times \del _{c'} X^{\mu} \del _{d'} X^{\nu} = 0 ,
 \end{multline}
-which can be achieved if
+which can be achieved if the expression in parenthesis vanishes. For this end, the most natural possibility is
 \begin{equation} \label{eqn:S=sigma_y}
-	\Delta _{a c} = \sqrt{\Delta} \widetilde{\varepsilon} _{a c}
+	\Delta _{a c} = \sqrt{\Delta} \varepsilon _{a c}
 \end{equation}
-and if the background metrics are related by
+since we must have that $\det (\Delta _{a b}) = \Delta$ and $\Delta _{a c} \varepsilon ^{c c'} \sim \delta ^{c'} _{a}$, and also if the background metrics are related by
 \begin{equation} \label{eqn:H=1/(2g)G}
 	H_{\mu \nu} = \frac{\Delta}{2 g} G_{\mu \nu} .
 \end{equation}
@@ -444,7 +444,7 @@ where the function $f$ is given by
 \begin{equation} \label{eqn:inverse-area-f}
 	\frac{1}{f} = g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu}
 \end{equation}
-just like the regular ST literature.
+just like the regular ST literature, thus the constraints are unchanged by our correction.
 
 As for variation \wrt the embbeding fields $X^{\lambda}$, we have
 \begin{equation} \label{eqn:vary-wrt-X}
