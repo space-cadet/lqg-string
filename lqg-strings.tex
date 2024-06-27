@@ -1,6 +1,6 @@
 \RequirePackage{snapshot}
 \RequirePackage[final]{graphicx}
-\documentclass[twocolumn,draft,aps,prd,10pt,nofootinbib,nobibnotes]{revtex4-2}
+\documentclass[twocolumn,aps,prd,10pt,nofootinbib,nobibnotes]{revtex4-2}
 
 % revtex4 imports the natbib package which conflicts with biblatex. To remedy the resulting name conflicts the following recipe is taken from https://tex.stackexchange.com/a/37077
 % Start of 'ignore natbib' hack
@@ -32,6 +32,12 @@
 \usepackage{amsmath,amssymb,amsfonts,amsthm}
 %\usepackage[sort&compress,numbers]{natbib}
 %\usepackage[english]{babel}
+
+% Added Jun 27, 2024 for section wise equation numbering
+\usepackage{amsmath}
+\numberwithin{equation}{section}
+\renewcommand{\thesection}{\arabic{section}}
+%
 
 \usepackage{enumerate}
 \usepackage{enumitem}
@@ -97,6 +103,7 @@
 
 \newcommand{\M}{\mathcal{M}}
 \newcommand{\N}{\mathcal{N}}
+\newcommand{\ep}{\epsilon}
 % \newcommand{\H}{\mathcal{H}}
 
 \newcommand{\bz}{\mathbf{z}}
@@ -457,7 +464,7 @@ where
 \begin{equation} \label{eqn:F-minus-def}
 	F^{-} \equiv 1 - \frac{k \Delta}{2 (- g)} .
 \end{equation}
-Since all 2-dimensional metrics are conformally flat \cite{Schottenloher}, we use conformal gauge $g_{a b} = \e ^{\phi (x)} \eta _{a b}$ and assume flat background $G_{\mu \nu} = \eta _{\mu \nu}$, to simplify eq (\ref{eqn:X-eom-inverse-area}) into
+Since all 2-dimensional metrics are conformally flat \cite{Schottenloher2008A-Mathematical}, we use conformal gauge $g_{a b} = \e ^{\phi (x)} \eta _{a b}$ and assume flat background $G_{\mu \nu} = \eta _{\mu \nu}$, to simplify eq (\ref{eqn:X-eom-inverse-area}) into
 \begin{equation} \label{eqn:X-eom-simplified}
 	\eta ^{a b} \partial _{a} \partial _{b} X^{\mu} + \frac{1}{F^{-}} \eta ^{a b} \partial _{a} F^{-} \partial _{b} X^{\mu} = 0 .
 \end{equation}
@@ -943,13 +950,13 @@ where $\theta^\mu(\sigma,\tau) \in \{\theta, \phi\}$ are the embedding fields, a
 
 There is a difficulty in the above argument. The bulk geometry is $d+1$ dimensional, therefore there are $d+1$ embedding fields. We have taken these fields $X^\mu$ and cast them as components of a $\mf{so}(d,1)$ vector. Let us pick an arbitrary point $P_0$ on the bulk manifold and call it the ``origin''. At $P_0$ the co-ordinates are all zero $\vec X_0 = (0,0,\ldots,0)$. If we start acting with infinitesimal $\mf{iso}(d,1)$ transformations on $\vec X_0$, the resulting surface will correspond to a ``constant energy'' hyperboloid in the bulk. This is because $SO(d,1)$ contains only boosts and rotations. We also need translations to generate the entirety of the bulk starting from a single base point.
 
+\subsection{Gauging Translations}\label{sec:translation_gauge}
+
 This is where we run into a problem. There is no way to express infinitesimal translations in $d+1$ dimensions as the action of a $d+1$ dimensional matrix-valued group on a point living in $\mbb{R}^{d+1}$. In order to incorporate translations we have to resort to a trick and introduce an extra ``dummy'' dimension for the background manifold. Now we have $d+2$ embedding fields which we can write as:
-\begin{equation}
+\begin{equation}\label{eqn:enlarged-Xs}
 	X^A := \{X^0, \vec X, X^r\} = \{X^\mu, X^r\},
 \end{equation}
 where $X^\mu = \{X^0, \vec X\}$ are the fields we had originally and $X^r$ is our new ``dummy'' co-ordinate. As we will see this dimension will turn out to have a very important physical interpretation in the context of Einstein-Cartan geometry.
-
-\subsection{Gauging Translations}\label{sec:translation_gauge}
 
 If one wants to treat the $X$'s as elements of a vector which transforms under both translations and rotations as in \eqref{eqn:poincare-symmetries}, we must extend the number of spacetime dimensions by one, introducing an ``auxiliary'' dimension whose value is initially set to be $X^r = 1$. Thus we have:
 \begin{equation}
@@ -969,12 +976,43 @@ If one wants to treat the $X$'s as elements of a vector which transforms under b
 \end{equation}
 Now, one might be inclined to treat the new co-ordinate $X^r$ as purely an auxiliary variable which will not affect the physics. However, if we stare at the expression $X^r = 1$ for a moment, we will realise that this expression is the same form as the Dirichlet boundary condition for the end-points of a string. And, from what we know about strings with Dirichlet boundary conditions is that the constraint surface on which the end-points live will end up behaving like a dynamical object or ``D-brane'' \cite{Dai1989New-Connections,Polchinski1995Dirichlet-Branes,Horava1989Background}. In our case we now have a new enlarged bulk $\mb{M}$ with $d+1$ space dimensions - treating the auxiliary variable as a co-ordinate which can vary - and one time dimensions, or $d+2$ dimensions in total. If we fix $X^r = 1$, that leaves us with a $d+1$ submanifold $\mb{\Gamma} \in \mb{M}$ on which the string end-point is free to move.
 
-However, in our case, the condition $X^r = 1$ is much stronger than the Dirichlet boundary condition, because it applies not only to the end-points of the string, but to every point of the worldsheet. In other words, the \emph{entire} string worldsheet is confined to move only along the $d+1$ dimensional submanifold $\mb{\Gamma}$. Now, one can ask what should the form of the action for a string moving in this enlarged bulk look like? Well, it will be of the same form \eqref{eqn:polyakov-gauged}, only now the worldsheet connection is an $\mf{iso}(d,1)$ valued one-form, with the embedding fields the enlarged $d+2$ dimensional set.
+However, in our case, the condition $X^r = 1$ is much stronger than the Dirichlet boundary condition, because it applies not only to the end-points of the string, but to every point of the worldsheet. In other words, the \emph{entire} string worldsheet is confined to move only along the $d+1$ dimensional submanifold $\mb{\Gamma}$. Now, one can ask what should the form of the action for a string moving in this enlarged bulk look like? Well, it will be of the same form \eqref{eqn:polyakov-gauged}, only now the worldsheet connection is an $\mf{iso}(d,1)$ valued one-form, with the embedding fields living in the enlarged $d+2$ dimensional set.
+
+\subsection{The Einstein-Cartan String}\label{sec:einstein-cartan-string}
+
+It is useful to see the explicit form of a $\mf{iso}(3,1)$ gauge connection. The elements of the Lie algeba of $\mf{iso}(3,1)$ have the following form \cite{Wise2010MacDowell-Mansouri}
+\begin{align}\label{eqn:poincare-lie-algeba}
+	T^A{}_B & := \begin{pmatrix}
+		0 & b^1 & b^2 & b^3 & p^0/l \\
+		b^1 & 0 & j^3 & -j^2 & p^1/l \\
+		b^2 & -j^3 & 0 & j^1 & p^2/l \\
+		b^3 & j^2 & -j^1 & 0 & p^3/l \\
+		-\ep p^0/l & -\ep p^1/l & -\ep p^2/l & -\ep p^3/l & 0
+	\end{pmatrix} \nonumber \\
+	& = j^i J_i + b^i B_i + \frac{1}{l}p^a P_a,
+\end{align} 
+where $J_i, B_i$ are the generators of rotations and boosts respectively. $P_a := (P_0, P_i)$ are the generators of translations. The parameter $\ep$ takes values in $\{-1,0,1\}$. Strictly speaking the above expression corresponds to an $\mf{iso}(3,1)$ Lie algebra generator only when $\ep = 0$. $l$ is a length scale which must be introduced so that the components of the ``vector'' $(p^0, p^i)$ can be viewed as components of a translation vector along the $3+1$ dimensional geometry $\mb{\Gamma}$. Similarly the boosts and rotations describe
+where $J_i, B_i$ are the generators of rotations and boosts respectively. $P_a := (P_0, P_i)$ are the generators of translations. The parameter $\ep$ takes values in $\{-1,0,1\}$. 
+
+Strictly speaking the above expression corresponds to an $\mf{iso}(3,1)$ Lie algebra generator only when $\ep = 0$. $l$ is a length scale which must be introduced so that the components $(p^0, p^i)$ can be viewed as components of a ``translation vector'' living in the tangent space of the $3+1$ dimensional geometry $\mb{\Gamma}$. Similarly the boosts and rotations generators are for objects living in $\mb{\Gamma}$.
+
+Let us write down the gauged Polyakov action for the Poincaré lie algebra valued connection $\mc{A}_a$ whose components are given in \eqref{eqn:poincare-lie-algeba}:
+\begin{equation}\label{eqn:poincare-polyakov}
+	S'_{P} = -\frac{T}{2} \int \diff^2 x \sqrt{-g} g^{ab} \mc{D}_a X^A \mc{D}_b X^B \eta_{AB},
+\end{equation}
+where now the $X^A = \{X^\mu, X^r\}$ (as mentioned previously in \eqref{eqn:enlarged-Xs}) and $\eta_{AB}$ is the flat metric on the $d+2$ enlarged bulk manifold $\mb{M}$ and the covariant derivative is of the form defined in \eqref{eqn:covariant-deriv-v1}, but only now acting on $X^A$ instead of on $X^\mu$:
+\begin{equation}\label{eqn:covariant-deriv-v2}
+	\mc{D}_a X^A(\tau , \sigma) = \partial_a X^A + k \mc{A}_{a}^A{}_B X^B.
+\end{equation}
+Now, we will expand out the action \eqref{eqn:poincare-polyakov} and express it in terms of the $X^\mu$ and $X^r$ separately. It is clear that the resulting expression will be sum of three terms:
+\begin{align}
+	S'_{P} & = -\frac{T}{2} \int \diff^2 x \sqrt{-g} g^{ab} \left( \mc{D}_a X^\mu \mc{D}_b X^\nu \eta_{\mu\nu} + \right. \nonumber \\
+	& \left. \mc{D}_a X^\mu \mc{D}_b X^r \eta_{\mu r} + \mc{D}_a X^r \mc{D}_b X^r \eta_{rr} \right)
+\end{align}
 
 \textbf{todo:}
 
 \begin{itemize}
-	\item Describe iso(d,1) connection decomposition into Lorentz piece and translation piece using \cite{Wise2010MacDowell-Mansouri} as reference.
 	\item Explain why deSitter, anti-deSitter and flat space are the only consistent solutions for the enlarged bulk geometry.
 	\item Recall once again the steps which led us here.
 \end{itemize}
