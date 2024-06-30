@@ -175,7 +175,7 @@
 
 \author{Deepak Vaid}
 \email{dvaid79@gmail.com}
-\affiliation{National Institute of Technology, Karnataka, India}
+\affiliation{}
 \author{Luigi Teixeira de Sousa}
 \email{luigi.tiraque@gmail.com}
 \affiliation{Universidade Federal de São Carlos, Brasil}
@@ -186,7 +186,7 @@
 
 	With the goal of understanding whether or not it is possible to construct a string theory which is consistent with loop quantum gravity (LQG), we study alternate versions of the Nambu-Goto action for a bosonic string. We consider two types of modifications. The first is a phenomenological action based on the observation that LQG tells us that areas of two-surfaces are operators in quantum geometry and are bounded from below. This leads us to a string action which is similar to that of bimetric gravity. We provide formulations of the bimetric string for both the Nambu-Goto (second order) and Polyakov (first order) formulations. We explore the classical solutions of this action and its quantization and relate it to the conventional string solutions.
 
-	The second is an action in which the background geometry is described in terms of the pullback of the connection which describes the bulk geometry to the worldsheet. The resulting action is in the form of a gauged sigma model, where the spacetime co-ordinates are now SO(D,1) vectors. We find that for the particular case of a constant background connection the action reduces to the bimetric action discussed above. We discuss classical solutions and quantization strategies for this action and its implications for the broader program of unifying string theory and loop quantum gravity.
+	The second is an action in which the background geometry is described in terms of the pullback of the connection which describes the bulk geometry to the worldsheet. The resulting action is in the form of a gauged sigma model, where the spacetime co-ordinates are now vectors which transform under $ISO(D,1)$. We find that for the particular case of a constant background connection the action reduces to the bimetric action discussed above. We discuss classical solutions and quantization strategies for this action and its implications for the broader program of unifying string theory and loop quantum gravity.
 \end{abstract}
 
 \maketitle
@@ -268,7 +268,7 @@ is nothing more than the \emph{area} of the string worldsheet. So when we are co
 \begin{equation} \label{eqn:NG-area-corrected}
 	S_{M N G} = - T \int \diff ^2 x \sqrt{- (h + k \Delta)}.
 \end{equation}
-Here, $k = l_{pl} / l_s$, where $l_{pl}$ is the Planck scale, the scale at which quantum geometric effects become important; $l_s$ is the string scale where quantum geometric effects due to area quantization become small; $\Delta$ is a scalar density of weight 2 which can be taken to be the determinant of some worldsheet tensor $\Delta _{a b} (x)$ and corresponds to the square of the quantum of area at the point $x$ where the spin foam pierces the WS. In the limit that $l_s \gg l_{pl}$, $k \ll 1$ and the string action reduces to the conventional Nambu-Goto action with small corrections coming from quantum geometry. In this limit we can expand the integrand as follows:
+Here, $k = l_{pl} / l_s$, where $l_{pl}$ is the Planck scale, the scale at which quantum geometric effects become important; $l_s$ is the string scale where quantum geometric effects due to area quantization become small; $\Delta$ is a scalar density of weight 2 which can be taken to be the determinant of an antisymmetric worldsheet tensor $\Delta _{a b} (x)$ and corresponds to the square of the quantum of area at the point $x$ where the edges of the bulk spin network state pierce the WS and endow it with quanta of area as described in the previous section. In the limit that $l_s \gg l_{pl}$, $k \ll 1$ and the string action reduces to the conventional Nambu-Goto action with small corrections coming from quantum geometry. In this limit we can expand the integrand as follows:
 \begin{equation} \label{eqn:inverse-metric-correction}
 	\sqrt{- (h + k \Delta)} \sim \sqrt{- h}\left(1 - \frac{1}{2} \frac{k \Delta}{(- h)} + \mc{O}(k^2/h^2)\right).
 \end{equation}
@@ -1050,12 +1050,14 @@ What our discussion in this section shows, however, is that such a classical des
 
 \section{Discussion} \label{sec:discussion}
 
-We have presented in this work a possible way to formulate string theory in background independent manner.
+In this article we have presented a phenomenological modification of the Nambu-Goto action, inspired on the one hand, by the central result of loop quantum gravity, according to which area and other geometric observables are quantized at the Planck scale. In particular the spectrum of the area operator is discrete and the smallest eigenvalue is non-zero (of the order $l_{pl}^2 \sim 10^{-68}\,\text{m}^2$). On the other hand we also took as a working hypothesis the statement that string theory, or some suitable version of it, provides the correct description of the low energy physics of the world around us. We then searched for the way in which both of these paradigms can be incorporated into a single theoretical model. The form of the action shown in \eqref{eqn:NG-area-corrected} appears, at least superficially
+
+Let us recall the steps which have led us here. Our original motivation was to continue to expand on the work which was started by one of us several years ago \cite{Vaid2017Connecting} and ask whether it is possible to construct an alternative to the usual action for the bosonic string in which the 2d geometry of the string worldsheet is coupled to the bulk geometry, not through the bulk metric $G_{\mu\nu}$, but through the pullback of a bulk connection to the worldsheet. This allows us to define a covariant derivative on the worldsheet which acts on the embedding co-ordinate fields $X^\mu$
 
 \textbf{Steps which led us here}
 
 \begin{itemize}
-	\item We adopt the central result of LQG which is quantization of area
+	\item We adopt the central result of LQG which is quantization of area. 
 	\item We seek to describe the behavior of a string in an arbitrarily curved background geometry.
 	\item Connection variables are used in LQG to describe geometry. So we should search for non-metrical description of coupling string geometry to bulk.
 	\item For arbitrarily curved bulk geometry, global Poincare symmetry of embedding fields is meaningless.
