@@ -1050,20 +1050,45 @@ What our discussion in this section shows, however, is that such a classical des
 
 \section{Discussion} \label{sec:discussion}
 
-In this article we have presented a phenomenological modification of the Nambu-Goto action, inspired on the one hand, by the central result of loop quantum gravity, according to which area and other geometric observables are quantized at the Planck scale. In particular the spectrum of the area operator is discrete and the smallest eigenvalue is non-zero (of the order $l_{pl}^2 \sim 10^{-68}\,\text{m}^2$). On the other hand we also took as a working hypothesis the statement that string theory, or some suitable version of it, provides the correct description of the low energy physics of the world around us. We then searched for the way in which both of these paradigms can be incorporated into a single theoretical model. The form of the action shown in \eqref{eqn:ng-area-corrected} appears, at least superficially, as the simplest possible modification of the Nambu-Goto action which incorporates a minimum eigenvalue for the area. This value is encoded in the modulus of the $\Delta(x)$ field. In the process we introduced a new coupling parameter $ k = l_{pl}/l_s$ which is the ratio of the string scale to the Planck scale.
+In this article we have presented a phenomenological modification of the Nambu-Goto action \emph{inspired by the central result of loop quantum gravity, according to which area and other geometric observables are quantized at the Planck scale}. In particular the spectrum of the area operator is discrete and the smallest eigenvalue is non-zero (of the order $l_{pl}^2 \sim 10^{-68}\,\text{m}^2$). On the other hand we also took as a working hypothesis the statement that string theory, or some suitable version of it, provides the correct description of the low energy physics of the world around us. We then searched for the way in which both of these paradigms can be incorporated into a single theoretical model. The form of the action shown in \eqref{eqn:ng-area-corrected} appears, at least superficially, as the simplest possible modification of the Nambu-Goto action which incorporates a minimum eigenvalue for the area. This value is encoded in the modulus of the $\Delta(x)$ field. In the process we introduced a new coupling parameter $ k = l_{pl}/l_s$ which is the ratio of the string scale to the Planck scale.
 
 Assuming that $l_{pl} \ll l_s$, we have $k \ll 1$ and consequently \eqref{eqn:ng-area-corrected} can be expanded as a power series in $k$. Keeping only the term linear in $k$, we obtain an action which is the sum of two copies of the Nambu-Goto action, one for the original metric $h_{ab}$ and the second for the inverse metric $h^{ab}$. We then pointed out the similarity between this expression and previous studies of \emph{bimetric gravity} \cite{Hassan2012Bimetric}. We also want to point that though the possible relationship between string theory and bimetric gravity has been investigated before by \cite{Lust2021Extracting,Yan2021Strings}, these authors have looked at bimetric gravity in the \emph{bulk} geometry rather than a bimetric action for the worldshee, itself, of the type given in \eqref{eqn:modified-ng-action-v2}.
 
 The bimetric viewpoint for the area-corrected Nambu-Goto action is more than just an interesting curiosity. This perspective allows us to construct the Polyakov action for the bimetric string in \eqref{eqn:polyakov-bimetric}. Of course, one would expect that the (area-corrected) Polaykov and Nambu-Goto formulations should be physically equivalent. Imposing this requirement leads us to the conclusion that the object $\Delta$ in \eqref{eqn:ng-area-corrected} must be worldsheet two-form (antisymmetric tensor) corresponding to the pullback of the \emph{bulk} Kalb-Ramond field. All of this eventually leads us to recognise the relation of our proposed action \eqref{eqn:ng-area-corrected} to the Born-Infeld action \eqref{eqn:BI-action} which arises when one studies the dynamics of D-branes in string theory.
 
-Let us make one crucial observation here. In the expression \eqref{eqn:ng-area-corrected} we originally took $\Delta$ to a constant representing the smallest quantum of area. It is only \emph{later}, by demanding consistency of the area-corrected Nambu-Goto and Polaykov actions that we realise that $\Delta \equiv \Delta_{ab}(x) $ is in fact an antisymmetric worldsheet two-form.
+Let us make one crucial observation here. In the expression \eqref{eqn:ng-area-corrected} we originally took $\Delta$ to a constant representing the smallest quantum of area. It is only \emph{later}, by demanding consistency of the area-corrected Nambu-Goto and Polaykov actions that we realise that $\Delta \equiv \Delta_{ab}(x) $ is in fact an antisymmetric worldsheet two-form!
 
-Let us recall the steps which have led us here. Our original motivation was to continue to expand on the work which was started by one of us several years ago \cite{Vaid2017Connecting} and ask whether it is possible to construct an alternative to the usual action for the bosonic string in which the 2d geometry of the string worldsheet is coupled to the bulk geometry, not through the bulk metric $G_{\mu\nu}$, but through the pullback of a bulk connection to the worldsheet. This allows us to define a covariant derivative on the worldsheet which acts on the embedding co-ordinate fields $X^\mu$
+\subsection{Strings = Matter \& Loops = Gravity}\label{eqn:strings-loops}
+
+We would also like to inform the discussion by pointing out some complementary aspects of the historical development of both string theory and loop quantum gravity which should already have been a hint many years ago that the two would eventually turn out to be intimately related.
+
+String theory arose from attempts to understand the Regge slope behavior of high energy scattering. Tullio Regge \cite{Regge1959Introduction,Chew1962S-Matrix,Chew1961Principle} had predicted in 1959 that when considering high energy scattering the mass squared $M^2$ and angular momentum $J$ of mesonic and hadronic resonances satisfy a linear relationship\footnote{Though a more complete analysis of recent experimental data \cite{Tang2000Properties,Chen2018Concavity} shows that the trajectories actually turn out to be nonlinear and intersecting.} of the form:
+\begin{equation}\label{eqn:regge-slope}
+	J = \alpha(0) + \alpha' M^2,
+\end{equation}
+where $\alpha'$ is generally referred to as the ``Regge slope''. One such trajectory is shown in \autoref{fig:chew-frautschi-plot-p2}.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=0.35]{chew-frautschi-plot-p2.png}
+	\caption{A Chew-Frautchi plot of $M^2$ vs $\alpha(M^2) \sim J$  for several high energy resonances. Figure courtesy \cite{Desgrolard2001Exchange-Degenerate} \todo{Pending permission from authors.}}.
+	\label{fig:chew-frautschi-plot-p2}
+\end{figure}
+In 1968, Gabriele Veneziano discovered \cite{Veneziano1968Construction} an explicit analytic expression for the scattering amplitude which exhibited Regge behavior and satisfied certain consistency conditions known as ``crossing symmetry''. Soon after works by Nambu \cite{Nambu1969Quark}, Nielsen \cite{Nielsen1970An-Almost} and Susskind \cite{Susskind1970Dual} proposed a string like model for Regge behavior.
+
+What this very brief history of the early years of string theory tells us is that the theory arose from trying to understand particle scattering. This, in part, explains why string theorists didn't pay much attention to the question of background independence of string theory during its early decades. For particle physicists the flat Minkowski background was a given - the entire machinery of Feynman diagrams and perturbation theory was built with the implicit assumption of a flat background manifold. The ``string'' in the first conception was solely meant to be a description of bound states of mesons and hadrons. From the abstract of Susskind's 1970 paper \cite{Susskind1970Dual} we quote
+
+\begin{quote}
+	\emph{A theory of mesons is based on the experimentally observed linear level spacing of hadron excitations. The theory uses a model for the internal structure of mesons consisting of a system of harmonic vibrations. Roughly speaking, a meson is described by the degrees of freedom of a four-dimensional rubber band with a quark pair embedded in it.}
+\end{quote}
+
+It was realized only later \cite{Scherk1974bDual} that excitations of the string included a spin-2 object which could be identified with a graviton.
+
+In stark contrast to this perspective, loop quantum gravity arose from the desire of relativists to quantize gravity in a manifestly background independent manner.
 
 \textbf{Steps which led us here}
 
 \begin{itemize}
-	\item We adopt the central result of LQG which is quantization of area. 
 	\item We seek to describe the behavior of a string in an arbitrarily curved background geometry.
 	\item Connection variables are used in LQG to describe geometry. So we should search for non-metrical description of coupling string geometry to bulk.
 	\item For arbitrarily curved bulk geometry, global Poincare symmetry of embedding fields is meaningless.
@@ -1081,28 +1106,6 @@ Another candidate for what the vector excitations could relate to is the Ashteka
 \begin{equation} \label{eqn:AEF-string-vector-excitation}
 	\widetilde{E}^{\mu} _{I} \sim (\Hat{a}^{\mu} _{I})^{\dagger} \ket{0} .
 \end{equation}
-
-\subsection{Strings = Matter \& Loops = Gravity}\label{eqn:strings-loops}
-
-We want to conclude this discussion by pointing out some complementary aspects of the historical development of both string theory and loop quantum gravity which should already have been a hint many years ago that the two would eventually turn out to be intimately related.
-
-String theory arose from attempts to understand the Regge slope behavior of high energy scattering. Tullio Regge \cite{Regge1959Introduction,Chew1962S-Matrix,Chew1961Principle} had predicted in 1959 that when considering high energy scattering the mass squared $M^2$ and angular momentum $J$ of mesonic and hadronic resonances satisfy a linear relationship\footnote{Though a more complete analysis of recent experimental data \cite{Tang2000Properties,Chen2018Concavity} shows that the trajectories actually turn out to be nonlinear and intersecting.} of the form:
-\begin{equation}\label{eqn:regge-slope}
-	J = \alpha(0) + \alpha' M^2,
-\end{equation}
-where $\alpha'$ is generally referred to as the ``Regge slope''. One such trajectory is shown in \autoref{fig:chew-frautschi-plot-p2}.
-
-\begin{figure}[htbp]
-	\centering
-	\includegraphics[scale=0.35]{chew-frautschi-plot-p2.png}
-	\caption{A Chew-Frautchi plot of $M^2$ vs $\alpha(M^2) \sim J$  for several high energy resonances. Figure courtesy \cite{Desgrolard2001Exchange-Degenerate} \todo{Pending permission from authors.}}.
-	\label{fig:chew-frautschi-plot-p2}
-\end{figure}
-In 1968, Gabriele Veneziano discovered \cite{Veneziano1968Construction} an explicit analytic expression for the scattering amplitude which exhibited Regge behavior and satisfied certain consistency conditions known as ``crossing symmetry''. Soon after works by Nambu \cite{Nambu1969Quark}, Nielsen \cite{Nielsen1970An-Almost} and Susskind \cite{Susskind1970Dual} proposed a string like model for Regge behavior.
-
-What this very brief history of the early years of string theory tells us is that the theory arose from trying to understand particle scattering. This, in part, explains why string theorists didn't pay much attention to the question of background independence of string theory during its early decades. For particle physicists the flat Minkowski background was a given and so it was natural for them to begin to quantize the string by assuming the flat Minkowski metric for the bulk geometry.
-
-In stark contrast to this perspective, loop quantum gravity arose from the desire of relativists to quantize gravity in a manifestly background independent manner.
 
 \begin{acknowledgments}
 	DV would like to thank Thomas van Riet for going over an early draft of this work and for his valuable comments. DV and LdS would both like to thank David Schmidtt for his very valuable observations regarding the nature of the $\Delta$ field and its relation to the Kalb-Ramond field, and also the equivalence of the area corrected action with a Born-Infeld model in the worldsheet. Finally, we would like to humbly dedicate this work to the memory of the victims of the genocide in Gaza.

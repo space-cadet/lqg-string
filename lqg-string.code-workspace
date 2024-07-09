@@ -14,6 +14,7 @@
 		"latex-workshop.view.pdf.color.dark.pageColorsForeground": "#FFFFFF",
 		"latex-workshop.view.pdf.color.dark.backgroundColor": "#171717",
 		"latex-workshop.codespaces.portforwarding.openDelay": 20000,
-		"liveServer.settings.multiRootWorkspaceName": "lqg-string"
+		"liveServer.settings.multiRootWorkspaceName": "lqg-string",
+		"editor.fontSize": 16
 	}
 }
