@@ -1,6 +1,6 @@
 \RequireVersions{
-  *{application}{pdfTeX}  {0000/00/00 v1.40.25}
-  *{format} {LaTeX2e}     {2023-06-01 v2.e}
+  *{application}{pdfTeX}  {0000/00/00 v1.40.24}
+  *{format} {LaTeX2e}     {2023-11-01 v2.e}
   *{package}{snapshot}    {2020/06/17 v2.14}
   *{package}{graphicx}    {2021/09/16 v1.2d}
   *{package}{keyval}      {2022/05/29 v1.15}
@@ -23,15 +23,15 @@
   *{package}{amssymb}     {2013/01/14 v3.01}
   *{package}{amsfonts}    {2013/01/14 v3.01}
   *{package}{amsthm}      {2020/05/29 v2.20.6}
-  *{package}{enumerate}   {2015/07/23 v3.00}
+  *{package}{enumerate}   {2023/07/04 v3.00}
   *{package}{enumitem}    {2019/06/20 v3.9}
   *{package}{epsfig}      {2017/06/25 v1.7b}
   *{package}{latexsym}    {1998/08/17 v2.2e}
-  *{package}{xcolor}      {2022/06/12 v2.14}
+  *{package}{xcolor}      {2023/11/15 v3.01}
   *{file}   {color.cfg}   {2016/01/02 v1.6}
   *{file}   {mathcolor.ltx}{0000/00/00 v0.0}
   *{package}{mathrsfs}    {1996/01/01 v1.0}
-  *{package}{todonotes}   {2023/01/31 v0.0}
+  *{package}{todonotes}   {2024/01/05 v0.0}
   *{package}{ifthen}      {2022/04/13 v1.1d}
   *{package}{xkeyval}     {2022/06/16 v2.9}
   *{file}   {xkeyval.tex} {2014/12/03 v2.7a}
@@ -54,30 +54,29 @@
   *{file}   {pgfmath.code.tex}{0000/00/00 v0.0}
   *{file}   {pgffor.code.tex}{0000/00/00 v0.0}
   *{file}   {tikz.code.tex}{0000/00/00 v0.0}
-  *{package}{calc}        {2017/05/25 v4.3}
-  *{package}{hyperref}    {2023-07-08 v7.01b}
-  *{package}{ltxcmds}     {2020-05-10 v1.25}
+  *{package}{calc}        {2023/07/08 v4.3}
+  *{package}{hyperref}    {2024-01-20 v7.01h}
   *{package}{iftex}       {2022/02/03 v1.0f}
-  *{package}{pdftexcmds}  {2020-06-27 v0.33}
-  *{package}{infwarerr}   {2019/12/03 v1.5}
   *{package}{kvsetkeys}   {2022-10-05 v1.19}
   *{package}{kvdefinekeys}{2019-12-19 v1.6}
   *{package}{pdfescape}   {2019/12/09 v1.15}
+  *{package}{ltxcmds}     {2023-12-04 v1.26}
+  *{package}{pdftexcmds}  {2020-06-27 v0.33}
+  *{package}{infwarerr}   {2019/12/03 v1.5}
   *{package}{hycolor}     {2020-01-27 v1.10}
-  *{package}{letltxmacro} {2019/12/03 v1.6}
   *{package}{auxhook}     {2019-12-17 v1.6}
-  *{package}{nameref}     {2023-08-07 v2.53}
+  *{package}{nameref}     {2023-11-26 v2.56}
   *{package}{refcount}    {2019/12/15 v3.6}
   *{package}{gettitlestring}{2019/12/15 v1.6}
   *{package}{kvoptions}   {2022-06-15 v3.15}
   *{package}{etoolbox}    {2020/10/05 v2.5k}
-  *{file}   {pd1enc.def}  {2023-07-08 v7.01b}
+  *{file}   {pd1enc.def}  {2024-01-20 v7.01h}
   *{package}{intcalc}     {2019/12/15 v1.3}
-  *{file}   {puenc.def}   {2023-07-08 v7.01b}
+  *{file}   {puenc.def}   {2024-01-20 v7.01h}
   *{package}{bitset}      {2019/12/09 v1.3}
   *{package}{bigintcalc}  {2019/12/15 v1.5}
   *{package}{atbegshi-ltx}{2021/01/10 v1.0c}
-  *{file}   {hpdftex.def} {2023-07-08 v7.01b}
+  *{file}   {hpdftex.def} {2024-01-20 v7.01h}
   *{package}{atveryend-ltx}{2020/08/19 v1.0a}
   *{package}{rerunfilecheck}{2022-07-10 v1.10}
   *{package}{uniquecounter}{2019/12/15 v1.4}
@@ -85,7 +84,7 @@
   *{package}{mciteplus}   {2013/09/13 v1.2}
   *{package}{comment}     {0000/00/00 v0.0}
   *{package}{bbold}       {1994/04/06 v0.0}
-  *{file}   {l3backend-pdftex.def}{2023-04-19 v3}
+  *{file}   {l3backend-pdftex.def}{2024-01-04 v3}
   *{file}   {umsa.fd}     {2013/01/14 v3.01}
   *{file}   {umsb.fd}     {2013/01/14 v3.01}
   *{file}   {ulasy.fd}    {1998/08/17 v2.2e}
@@ -98,6 +97,5 @@
   *{file}   {epstopdf-sys.cfg}{2021/03/18 v2.0}
   *{file}   {lqg-strings.out}{0000/00/00 v0.0}
   *{file}   {lqg-strings.out}{0000/00/00 v0.0}
-  *{file}   {figures/chew-frautschi-plot-p2.png}{0000/00/00 v0.0}
   *{file}   {lqg-strings.bbl}{0000/00/00 v0.0}
 }

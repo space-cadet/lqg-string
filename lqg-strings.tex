@@ -983,39 +983,31 @@ However, in our case, the condition $X^r = 1$ is much stronger than the Dirichle
 It is useful to see the explicit form of a $\mf{iso}(3,1)$ gauge connection. The elements of the Lie algeba of $\mf{iso}(3,1)$ have the following form \cite{Wise2010MacDowell-Mansouri}
 \begin{align}\label{eqn:poincare-lie-algeba}
 	T^A{}_B & := \begin{pmatrix}
-		             0          & b^1        & b^2        & b^3        & p^0/l \\
-		             b^1        & 0          & j^3        & -j^2       & p^1/l \\
-		             b^2        & -j^3       & 0          & j^1        & p^2/l \\
-		             b^3        & j^2        & -j^1       & 0          & p^3/l \\
-		             -\ep p^0/l & -\ep p^1/l & -\ep p^2/l & -\ep p^3/l & 0
-	             \end{pmatrix} \nonumber \\
-	        & = j^i J_i + b^i B_i + \frac{1}{l}p^a P_a,
-\end{align}
+		0 & b^1 & b^2 & b^3 & p^0/l \\
+		b^1 & 0 & j^3 & -j^2 & p^1/l \\
+		b^2 & -j^3 & 0 & j^1 & p^2/l \\
+		b^3 & j^2 & -j^1 & 0 & p^3/l \\
+		-\ep p^0/l & -\ep p^1/l & -\ep p^2/l & -\ep p^3/l & 0
+	\end{pmatrix} \nonumber \\
+	& = j^i J_i + b^i B_i + \frac{1}{l}p^a P_a,
+\end{align} 
 where $J_i, B_i$ are the generators of rotations and boosts respectively. $P_a := (P_0, P_i)$ are the generators of translations. The parameter $\ep$ takes values in $\{-1,0,1\}$. Strictly speaking the above expression corresponds to an $\mf{iso}(3,1)$ Lie algebra generator only when $\ep = 0$. $l$ is a length scale which must be introduced so that the components of the ``vector'' $(p^0, p^i)$ can be viewed as components of a translation vector along the $3+1$ dimensional geometry $\mb{\Gamma}$. Similarly the boosts and rotations describe
-where $J_i, B_i$ are the generators of rotations and boosts respectively. $P_a := (P_0, P_i)$ are the generators of translations. The parameter $\ep$ takes values in $\{-1,0,1\}$.
+where $J_i, B_i$ are the generators of rotations and boosts respectively. $P_a := (P_0, P_i)$ are the generators of translations. The parameter $\ep$ takes values in $\{-1,0,1\}$. 
 
 Strictly speaking the above expression corresponds to an $\mf{iso}(3,1)$ Lie algebra generator only when $\ep = 0$. The case when $\ep = \pm 1$ will be motivated and discussed later. $l$ is a length scale which must be introduced so that the components $(p^0, p^i)$ can be viewed as components of a ``translation vector'' living in the tangent space of the $3+1$ dimensional geometry $\mb{\Gamma}$. Similarly the boosts and rotations generators are for objects living in $\mb{\Gamma}$.
 
 Let us write down the gauged Polyakov action for the Poincaré lie algebra valued connection $\mc{A}_a$ whose components are given in \eqref{eqn:poincare-lie-algeba}:
 \begin{equation}\label{eqn:poincare-polyakov}
-	S'_{P} = -\frac{T}{2} \int \diff^2 x \sqrt{-g} g^{ab} \mc{D}_a X^A \mc{D}_b X^B G_{AB},
+	S'_{P} = -\frac{T}{2} \int \diff^2 x \sqrt{-g} g^{ab} \mc{D}_a X^A \mc{D}_b X^B \eta_{AB},
 \end{equation}
-where now the $X^A = \{X^\mu, X^r\}$ (as mentioned previously in \eqref{eqn:enlarged-Xs}) and $G_{AB}$ is the expanded metric on the $d+2$ enlarged bulk manifold $\mb{M}$ and the covariant derivative is of the form defined in \eqref{eqn:covariant-deriv-v1}, but only now acting on $X^A$ instead of on $X^\mu$:
+where now the $X^A = \{X^\mu, X^r\}$ (as mentioned previously in \eqref{eqn:enlarged-Xs}) and $\eta_{AB}$ is the flat metric on the $d+2$ enlarged bulk manifold $\mb{M}$ and the covariant derivative is of the form defined in \eqref{eqn:covariant-deriv-v1}, but only now acting on $X^A$ instead of on $X^\mu$:
 \begin{equation}\label{eqn:covariant-deriv-v2}
 	\mc{D}_a X^A(\tau , \sigma) = \partial_a X^A + k \mc{A}_{a}^A{}_B X^B.
 \end{equation}
 Now, we will expand out the action \eqref{eqn:poincare-polyakov} and express it in terms of the $X^\mu$ and $X^r$ separately. It is clear that the resulting expression will be sum of three terms, with the first term being the (gauged) Polyakov action for the string on $\mb{\Gamma}$, terms describing the coupling of the string on $\mb{\Gamma}$ with fluctuations along the extra dimensions $X^r$ and finally a Polyakov like term for the lone extra dimension. We can write this schematically as:
 \begin{equation}\label{eqn:poincare-polyakov-decomp}
-	S'_P[X^A] = S_P[X^\mu] + S_{int}[X^\mu, X^r] + S_P[X^r] ,
+	S'_P[X^A] = S_P[X^\mu] + S_{int}[X^\mu, X^r] + S_P[X^r].
 \end{equation}
-or more explicitly as
-\begin{multline} \label{eqn:poincare-polyakov-decomp-explicit}
-	S' _{P} [X^{\mu} , X^{r}] = -\frac{T}{2} \int \diff ^2 x \sqrt{- g} g^{a b} \mc{D}_{a} X^{\mu} \mc{D}_{b} X^{\nu} \eta _{\mu \nu} - \\
-	- T \int \diff ^2 x \sqrt{- g} g^{a b} \mc{D}_{a} X^{\mu} \mc{D}_{b} X^{r} G_{\mu r} - \\
-	- \frac{T}{2} \int \diff ^2 x \sqrt{- g} g^{a b} \mc{D}_{a} X^{r} \mc{D}_{b} X^{r} G_{r r} ,
-\end{multline}
-where we can see a natural decomposition of the expanded bulk metric $G_{A B}$ as a $(d+1)$-dimensional tensor $\eta _{\mu \nu}$, a $(d+1)$-dimensional vector $V_{\mu} = G_{\mu r}$ and a scalar $V = G_{r r}$, akin to the ADM decomposition of the metric in standard GR literature.
-
 One can now argue along the same lines as the original arguments which led to the discovery of D-branes \cite{Dai1989New-Connections,Polchinski1995Dirichlet-Branes,Horava1989Background} to say that the extra dimension $X^r$ will become dynamical in the full theory even though it began life only as a classical constraint on the string worldsheet's location. This will imply that while most of the time the string will remain confined to $\mb{\Gamma}$, fluctuations along $X^r$ can cause the string to leave the ``brane'' and venture out into the bulk $\mb{M}$. If this is truly the case then the geometry of the enlarged bulk $\mb{M}$ will be essential for a description of the full string dynamics.
 
 This is where the non-zero value of $\ep$ mentioned in \eqref{eqn:poincare-lie-algeba} come into play. It turns out that for $\ep = +1$ ($\ep = -1$) the connection in \eqref{eqn:poincare-lie-algeba} describes a $\mf{so}(4,1)$ ($\mf{so}(3,2)$) connection respectively. These describe the symmetries of (asymptotically) deSitter and anti-deSitter spacetimes respectively. The length scale $l$ determines the value of the effective cosmological constant in the dS (adS) geometries:
@@ -1065,34 +1057,6 @@ Assuming that $l_{pl} \ll l_s$, we have $k \ll 1$ and consequently \eqref{eqn:ng
 The bimetric viewpoint for the area-corrected Nambu-Goto action is more than just an interesting curiosity. This perspective allows us to construct the Polyakov action for the bimetric string in \eqref{eqn:polyakov-bimetric}. Of course, one would expect that the (area-corrected) Polaykov and Nambu-Goto formulations should be physically equivalent. Imposing this requirement leads us to the conclusion that the object $\Delta$ in \eqref{eqn:ng-area-corrected} must be worldsheet two-form (antisymmetric tensor) corresponding to the pullback of the \emph{bulk} Kalb-Ramond field. All of this eventually leads us to recognise the relation of our proposed action \eqref{eqn:ng-area-corrected} to the Born-Infeld action \eqref{eqn:BI-action} which arises when one studies the dynamics of D-branes in string theory.
 
 Let us make one crucial observation here. In the expression \eqref{eqn:ng-area-corrected} we originally took $\Delta$ to a constant representing the smallest quantum of area. It is only \emph{later}, by demanding consistency of the area-corrected Nambu-Goto and Polaykov actions that we realise that $\Delta \equiv \Delta_{ab}(x) $ is in fact an antisymmetric worldsheet two-form!
-
-\subsection{Strings = Matter \& Loops = Gravity}\label{eqn:strings-loops}
-
-We would also like to inform the discussion by pointing out some complementary aspects of the historical development of both string theory and loop quantum gravity which should already have been a hint many years ago that the two would eventually turn out to be intimately related.
-
-String theory arose from attempts to understand the Regge slope behavior of high energy scattering. Tullio Regge \cite{Regge1959Introduction,Chew1962S-Matrix,Chew1961Principle} had predicted in 1959 that when considering high energy scattering the mass squared $M^2$ and angular momentum $J$ of mesonic and hadronic resonances satisfy a linear relationship\footnote{Though a more complete analysis of recent experimental data \cite{Tang2000Properties,Chen2018Concavity} shows that the trajectories actually turn out to be nonlinear and intersecting.} of the form:
-\begin{equation}\label{eqn:regge-slope}
-	J = \alpha(0) + \alpha' M^2,
-\end{equation}
-where $\alpha'$ is generally referred to as the ``Regge slope''. One such trajectory is shown in \autoref{fig:chew-frautschi-plot-p2}.
-
-\begin{figure}[htbp]
-	\centering
-	\includegraphics[scale=0.35]{chew-frautschi-plot-p2.png}
-	\caption{A Chew-Frautchi plot of $M^2$ vs $\alpha(M^2) \sim J$  for several high energy resonances. Figure courtesy \cite{Desgrolard2001Exchange-Degenerate} \todo{Pending permission from authors.}}.
-	\label{fig:chew-frautschi-plot-p2}
-\end{figure}
-In 1968, Gabriele Veneziano discovered \cite{Veneziano1968Construction} an explicit analytic expression for the scattering amplitude which exhibited Regge behavior and satisfied certain consistency conditions known as ``crossing symmetry''. Soon after works by Nambu \cite{Nambu1969Quark}, Nielsen \cite{Nielsen1970An-Almost} and Susskind \cite{Susskind1970Dual} proposed a string like model for Regge behavior.
-
-What this very brief history of the early years of string theory tells us is that the theory arose from trying to understand particle scattering. This, in part, explains why string theorists didn't pay much attention to the question of background independence of string theory during its early decades. For particle physicists the flat Minkowski background was a given - the entire machinery of Feynman diagrams and perturbation theory was built with the implicit assumption of a flat background manifold. The ``string'' in the first conception was solely meant to be a description of bound states of mesons and hadrons. From the abstract of Susskind's 1970 paper \cite{Susskind1970Dual} we quote
-
-\begin{quote}
-	\emph{A theory of mesons is based on the experimentally observed linear level spacing of hadron excitations. The theory uses a model for the internal structure of mesons consisting of a system of harmonic vibrations. Roughly speaking, a meson is described by the degrees of freedom of a four-dimensional rubber band with a quark pair embedded in it.}
-\end{quote}
-
-It was realized only later \cite{Scherk1974bDual} that excitations of the string included a spin-2 object which could be identified with a graviton.
-
-In stark contrast to this perspective, loop quantum gravity arose from the desire of relativists to quantize gravity in a manifestly background independent manner.
 
 \textbf{Steps which led us here}
 
