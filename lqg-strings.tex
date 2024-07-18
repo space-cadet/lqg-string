@@ -226,7 +226,25 @@ and the self-dual part of the $\sltwoc$ spin-connection
 \end{equation}
 Ashtekar realized that the constraints of general relativity, when expressed in terms of these ``new variables'', simplified drastically and became polynomial functions of the tetrad and connection variables. It was quickly realized by various researchers that the resulting theory could be quantized using the same methods used to quantize Yang-Mills gauge theory \cite{Ashtekar1992Weaving,Ashtekar2004Background} and that the diffeomorphism constraint could be solved exactly in terms of so-called \emph{spin-network} states \cite{Rovelli1988Knot,Rovelli1990Loop,Ashtekar1992Gravitons}.
 
-Following this, work by Rovelli and Smolin \cite{Rovelli1993Area,Rovelli1994Discreteness} demonstrated a remarkable feature of this theory, which came to be known as ``Loop Quantum Gravity'', was that one could construct quantum operators for geometric quantities such as areas of two dimensional surfaces and volumes of three dimensional regions. Moreover, these operators could be diagonlized exactly in the spin-network basis and a discrete spectrum for quantum of area and quantum of volume could be derived. This was the first time that physicists had discovered the ``atoms of space'' or the ``quanta of geometry'' in the true sense of the expression, in a theory of quantum gravity. One of the early triumphs of this formalism, which has unfortunately not received enough attention over the years by the larger high energy theory community, was the calculation of the entropy of a Schwarzschild black hole \cite{Rovelli1996Black} in a fully quantum mechanical framework and showing that it matched the expected expression $S \sim A/4$ for the Bekenstein-Hawking entropy.
+Following this, work by Rovelli and Smolin \cite{Rovelli1993Area,Rovelli1994Discreteness} demonstrated a remarkable feature of this theory, which came to be known as ``Loop Quantum Gravity'', was that one could construct quantum operators for geometric quantities such as areas of two-dimensional surfaces and volumes of three-dimensional regions. Moreover, these operators could be diagonalized exactly in the spin-network basis and a discrete spectrum for quantum of area and quantum of volume could be derived. This was the first time that physicists had discovered the ``atoms of space'' or the ``quanta of geometry'' in the true sense of the expression, in a theory of quantum gravity. One of the early triumphs of this formalism, which has unfortunately not received enough attention over the years by the larger high energy theory community, was the calculation of the entropy of a Schwarzschild black hole \cite{Rovelli1996Black} in a fully quantum mechanical framework and showing that it matched the expected expression $S \sim A/4$ for the Bekenstein-Hawking entropy.
+
+One key feature of the discreteness of spacetime itself is that the Ashtekar connection $A^{i} _{a}$ \footnote{Here, the index convention followed is that lowercase $i , j , k$ refer to 3-dimensional flat internal ($\mf{su}(2)$) indices and lowercase $a , b , c$ refer to 3-dimensional curved spacetime indices} can no longer be a continuous function of spacetime, rather it becomes a \emph{distribution}, assuming a constant value on one patch of space, then another value at another patch, etc \cite{Bodendorfer-LQG,Rovelli2015Covariant}. The consequence of this non-continuous distributional nature of the connection is that the triad (or Ashtekar electric field) operator, which formally would be
+\begin{equation} \label{eqn:triad-operator}
+	\Hat{\widetilde{E}}{}^{a} _{i} = - 8 \pi i \hbar G \frac{\delta}{\delta A^{i} _{a}}
+\end{equation}
+becomes ill-defined since $A^{i} _{a}$ is non-continuous (in particular, at the edges of a polyhedra it changes abruptly), so the triad needs to be \emph{smeared} over a surface where $A^{i} _{a}$ is constant
+\begin{equation} \label{eqn:triad-flux-operator}
+	\Hat{E}_{i} (S) = - 8 \pi i \hbar G \int _{S} \diff S_{a}  \frac{\delta}{\delta A^{i} _{a}} ,
+\end{equation}
+where $\diff S_{a} = \diff \sigma ^{b} \wedge \diff \sigma ^{c} \varepsilon _{a b c}$. This naturally leads to the \emph{area operator} of said surface
+\begin{equation} \label{eqn:area-operator}
+	\Hat{A} (S) = - 8 \pi i l_{pl} ^2 \beta \int _{S} \sqrt{\diff S_{a} \diff S_{b} \frac{\delta}{\delta A^{i} _{a}} \frac{\delta}{\delta A_{b i}}} .
+\end{equation}
+Notably, since $A^{i} _{a}$ is a $\mf{su}(2)$-valued connection, in the basis which diagonalises the area operator (the \emph{spin network} basis \cite{Bodendorfer-LQG}) $\ket{\Tr (h^{(j)} _{c} (A))}$, the eigenvalues of the area operator are just proportional to \emph{angular momentum} eigenvalues
+\begin{equation} \label{eqn:area-eigenvalues}
+	\Hat{A} \ket{\Tr (h^{(j)} _{c} (A))} = 8 \pi l_{pl} ^2 \beta \sqrt{j (j + 1)} \ket{\Tr (h^{(j)} _{c} (A))} ,
+\end{equation}
+with $j$ being the representation label of $\mf{su}(2)$ along the spin network edge piercing the surface under consideration. Thus, spin network edges carry angular momenta.
 
 One of the primary criticisms of string theory is its apparent lack of ``background independence''. This is more general than the principle of \emph{general covariance} which states that physics should be independent of the choice of co-ordinates. Background independence is the statement that any \emph{quantum} theory of gravity should provide a description of physics which is independent, not only of the choice of co-ordinates, but also of the choice of background manifold on which those co-ordinates live. Such a theory should provide a description not only of classical spacetimes, but also of fluctuating, semiclassical geometries and those in the deep quantum regime which do not have any sensible description in terms of any Riemannian geometry. On the face of it, string theory, at least in its conventional form, does not satisfy this principle. The great virtue of LQG on the other hand, is that it respects background independence by construction and proceeds to quantize gravity while ensuring that (a notion of) background independence forms the core of the quantum theory.
 
@@ -364,7 +382,7 @@ Following the usual procedure such as the one found in \cite{Tong2009Lectures}, 
 \end{equation}
 \begin{multline} \label{eqn:g-em-tensor}
 	T^{(G)} _{c d} := G_{\mu \nu} \bigg( \partial _{c} X^{\mu} \partial _{d} X^{\nu} - \\
-	- \frac{1}{2} g_{c d} g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \bigg) + \frac{2}{T} \frac{\delta S_{int}}{\delta g^{c d}} ,
+	- \frac{1}{2} g_{c d} g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \bigg) = \frac{2}{T} \frac{\delta S_{int}}{\delta g^{c d}} ,
 \end{multline}
 and completely analogous for the $H_{\mu \nu}$ metric,
 \begin{equation} \label{eqn:variation-wrt-h}
@@ -372,7 +390,7 @@ and completely analogous for the $H_{\mu \nu}$ metric,
 \end{equation}
 \begin{multline} \label{eqn:h-em-tensor}
 	T^{(H)} _{c d} := H_{\mu \nu} \bigg( \partial _{c} X^{\mu} \partial _{d} X^{\mu} - \\
-	- \frac{1}{2} h_{c d} h^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \bigg) + \frac{2}{T'} \frac{\delta S_{int}}{\delta h^{c d}} .
+	- \frac{1}{2} h_{c d} h^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \bigg) = \frac{2}{T'} \frac{\delta S_{int}}{\delta h^{c d}} .
 \end{multline}
 If we assume no interaction term $S_{int} = 0$, we get the expected expressions for the auxiliary metrics $g_{c d}$ and $h_{c d}$ as in
 \begin{equation} \label{eqn:g-expression}
@@ -398,7 +416,7 @@ and from here we note that if $T' = - T k / 2$ and $h = \Delta ^2 / g$, we recov
 \begin{equation} \label{eqn:area-corrected-ng-from-bimetric}
 	S = - T \int \diff ^2 x \left( \sqrt{- g} - \frac{1}{2} \frac{k \Delta}{\sqrt{- g}} \right) .
 \end{equation}
-The condition $h = \Delta ^2 / g$ can be achieved if there exists a matrix $\Delta_{ab}$, such that:
+The condition $h = \Delta ^2 / g$ can be achieved by
 \begin{equation} \label{eqn:h=SgS}
 	h_{a b} = \Delta _{a c} \Delta _{b d} g^{c d} .
 \end{equation}
@@ -445,14 +463,14 @@ which leads to the stress-energy tensor for the worldsheet:
 	T_{c d} := \partial _{c} X^{\mu} \partial _{d} X^{\nu} G_{\mu \nu} - \\ - \frac{1}{2} g_{c d} g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} = 0 ,
 \end{multline}
 from which we can extract the metric $g_{c d}$ as
-\begin{equation} \label{eqn:ws-metric-v2}
+\begin{equation} \label{eqn:ws-metric}
 	g_{c d} = 2 f \partial _{c} X^{\mu} \partial _{d} X^{\nu} G_{\mu \nu} ,
 \end{equation}
 where the function $f$ is given by
 \begin{equation} \label{eqn:inverse-area-f}
 	\frac{1}{f} = g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu}
 \end{equation}
-just like the regular string theory literature, thus the constraints are unchanged by our correction.
+just like the regular ST literature, thus the constraints are unchanged by our correction.
 
 As for variation \wrt the embbeding fields $X^{\lambda}$, we have
 \begin{equation} \label{eqn:vary-wrt-X}
@@ -473,11 +491,11 @@ By expanding the definition of $F^{-}$ we get
 \begin{equation} \label{eqn:coupling-X-phi}
 	\eta ^{a b} \partial _{a} \partial _{b} X^{\mu} + \eta ^{a b} \frac{\left( 2 \del _{a} \phi - \del _{a} \ln (\Delta) \right)}{\dfrac{2 \e ^{2 \phi}}{k \Delta} - 1} \del _{b} X^{\mu} = 0 ,
 \end{equation}
-revealing a wave equation sourced by a coupling between the WS conformal factor, quantum of area field $\Delta$ and the embedding fields much akin to the dilaton field \cite{Balthazar-t-backgrounds}. We will come back to this fact in \autoref{sec:emergent-dimensions}.
+revealing a wave equation sourced by a coupling between the WS conformal factor, quantum of area field $\Delta$ and the embedding fields much akin to the dilaton field \cite{Balthazar-t-backgrounds}. We'll come back to this in \autoref{sec:emergent-dimensions}.
 
 \subsection{Worldsheet Kalb-Ramond field and Quantum of Area} \label{sec:WS-Kalb-Ramond-QoA}
 
-If one were to calculate the equations of motion for the quantum of area field $\Delta _{a b}$ in the actions \eqref{eqn:modified-ng-action} and \eqref{eqn:inverse-metric-Polyakov} explored before, one would end up concluding that either $\Delta _{a b} = 0$ or it's determinant $\Delta = 0$ vanish. This happens because, as we explored in section \autoref{sec:ws-kalb-ramond}, $\Delta _{a b}$ is actually related to the pullback of the Kalb-Ramond field $B_{\mu \nu}$, but those actions were actions for without any coupling to an antisymmetric bulk tensor. The more complete picture would be thus to consider the (area-corrected) string now explicitly coupled to a bulk Kalb-Ramond field \cite{Tong2009Lectures}
+If one were to calculate the equations of motion for the quantum of area field $\Delta _{a b}$ in the actions \eqref{eqn:modified-ng-action} and \eqref{eqn:inverse-metric-Polyakov} explored before, one would end up concluding that either $\Delta _{a b} = 0$ or it's determinant $\Delta = 0$ vanish. This happens because, as we explored in section \ref{sec:ws-kalb-ramond}, $\Delta _{a b}$ is actually related to the pullback of the Kalb-Ramond field $B_{\mu \nu}$, but those actions were actions for the free string, not coupled to said field. The more complete picture would be thus to consider the (area-corrected) string now coupled to the Kalb-Ramond field \cite{Tong2009Lectures}
 \begin{multline} \label{eqn:area-corrected-K-R-action}
 	S = - \frac{1}{4 \pi \alpha '} \int \diff ^2 x \left( \sqrt{- g} - \frac{1}{2} \frac{k \Delta}{\sqrt{- g}} \right) \times \\
 	\times \Big( g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} G_{\mu \nu} - \varepsilon ^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} B_{\mu \nu} \Big) ,
@@ -593,7 +611,7 @@ which is clearly divergent in the $\mu \rightarrow 0$ limit unless $\mathfrak{Re
 \begin{equation} \label{eqn:a-p-relation}
 	\alpha ^{\mu} _{0} = \sqrt{\frac{2}{\alpha '}} \mu x^{\mu} + i \frac{1}{2} \sqrt{\frac{\alpha '}{2}} p^{\mu} .
 \end{equation}
-This in actuality will differ from the normal string theory literature by a factor of $1 / 2$ in the momentum term, but this is needed for the Poisson brackets to give the expected results.
+This in actuality will differ from the normal ST literature by a factor of $1 / 2$ in the momentum term, but this is needed for the Poisson brackets to give the expected results.
 
 Looking closer at our constraints \textquotedblleft modes", in particular the $n = p$ condition, we get the mass of the string in terms of its vibrational modes and center of mass position
 \begin{multline} \label{eqn:string-rest-mass-classical-1}
@@ -661,7 +679,7 @@ Having the bracket relations between the vibrational modes of the string, we can
 
 \section{The Quantum Klein-Gordon String} \label{sec:quantum-kg-string}
 
-We now seek to quantize the Klein-Gordon string by means of covariant canonical quantization, in a manner much similar to those found in (\cite{Tong2009Lectures},\cite{Green2012Superstring}). The string coordinates $X^{\mu}$ and it's conjugate momentum $\Pi ^{\nu}$ are turned into operators $\Hat{X}^{\mu}$ and $\Hat{\Pi}^{\nu}$, with the Poisson brackets $\{ . , . \}$ being replaced by commutators $\{ . , . \} \rightarrow - i [ . , . ]$:
+We now seek to quantize the Klein-Gordon string by means of covariant quantization, in a manner much similar to those found in \cite{Tong2009Lectures,Green2012Superstring}. The string coordinates $X^{\mu}$ and it's conjugate momentum $\Pi ^{\nu}$ are turned into operators $\Hat{X}^{\mu}$ and $\Hat{\Pi}^{\nu}$, with the Poisson brackets $\{ . , . \}$ being replaced by commutators $\{ . , . \} \rightarrow - i [ . , . ]$:
 \begin{subequations}
 	\begin{align}
 		\left[ \Hat{X}^{\mu} (\tau , \sigma) , \Hat{\Pi}^{\nu} (\tau , \sigma ') \right] & = i \delta (\sigma - \sigma ') \eta ^{\mu \nu} \label{eqn:X-P-commutator}                                              \\
@@ -742,7 +760,7 @@ which is easily computable given a value for $\mu$. Below we provide a table wit
 		$D = 5$ & $-100.79$ & $-105.39$ & $-113.79$ & $-125.09$ & $-138.49$ \\ \hline
 		$D = 6$ & $-180.96$ & $-186.63$ & $-197.25$ & $-211.95$ & $-229.84$ \\ \hline
 	\end{tabular}
-	\caption{values of $a$ for different spacetime dimensionalities and mass parameters. Visibly, the dependence on $D$ is much stronger than the dependence on $\mu$.}
+	\caption{values of $a$ for different spacetime dimensionalities and mass parameters. Visibly, the dependence in $D$ is much stronger than the dependence in $\mu$.}
 \end{table}
 
 The commutation relations between the constraints are inherited by the Poisson brackets
@@ -844,12 +862,12 @@ Although our method is quite different from the one in \cite{Thiemann2004The-LQG
 
 \section{Emergent Dimensions and LQG} \label{sec:emergent-dimensions}
 
-There is another alternative to incorporate LQG quantum-geometric effects into the string action and get something conceptually similar to what we had in section \ref{sec:inverse-metric-Polyakov}: Afshordi's \textquotedblleft emergent dimension" \cite{Afshordi2014Emergent} model, with the action being
+There is another alternative to incorporate LQG quantum-geometric effects into the string action and get something conceptually similar to what we had in section \ref{sec:inverse-metric-Polyakov}: Afshordi's \textquotedblleft emergent dimension" \cite{Afshordi2014emergent} model, with the action being
 \begin{multline} \label{eqn:emergent-dimensions-action}
 	S_{ED} = - \frac{1}{4 \pi \alpha '} \int \diff ^2 x \sqrt{- g} \big( g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} \eta _{\mu \nu} + \\
 	+ \mu _{0} ^2 \e ^{- m_{\mu} / T} X^{\mu} X^{\nu} \eta _{\mu \nu} \big)
 \end{multline}
-where $T$ is the \emph{temperature} of target space and the parameters $m_{\mu}$ satisfy an ordering relation $m_{0} \gg m_{1} \gg ... \gg m_{d}$. This is Afshordi's model \cite{Afshordi2014Emergent}. Where our approach diverges is that we realize the parameters $m_{\mu}$ are constrained by the modified dispersion relations of each field $X^{\mu}$, since as \cite{Bodendorfer-LQG} points out, LQG quantum geometry breaks Lorentz invariance near the Planck scale through modifying the dispersion relation by constraining the free parameters of the model as
+where $T$ is the \emph{temperature} of target space and the parameters $m_{\mu}$ satisfy an ordering relation $m_{0} \gg m_{1} \gg ... \gg m_{d}$. This is Afshordi's model \cite{Afshordi2014emergent}. Where our approach diverges is that we realize the parameters $m_{\mu}$ are constrained by the modified dispersion relations of each field $X^{\mu}$, since as \cite{Bodendorfer-LQG} points out, LQG quantum geometry breaks Lorentz invariance near the Planck scale through modifying the dispersion relation by constraining the free parameters of the model as
 \begin{equation} \label{eqn:LQG-modified-dispersion-relation}
 	E^2 = m^2 + p^2 + \sum _{n \geq 3} c_{n} \frac{p^n}{E_{pl} ^{n - 2}} ,
 \end{equation}
@@ -984,16 +1002,16 @@ However, in our case, the condition $X^r = 1$ is much stronger than the Dirichle
 It is useful to see the explicit form of a $\mf{iso}(3,1)$ gauge connection. The elements of the Lie algeba of $\mf{iso}(3,1)$ have the following form \cite{Wise2010MacDowell-Mansouri}
 \begin{align}\label{eqn:poincare-lie-algeba}
 	T^A{}_B & := \begin{pmatrix}
-		0 & b^1 & b^2 & b^3 & p^0/l \\
-		b^1 & 0 & j^3 & -j^2 & p^1/l \\
-		b^2 & -j^3 & 0 & j^1 & p^2/l \\
-		b^3 & j^2 & -j^1 & 0 & p^3/l \\
-		-\ep p^0/l & -\ep p^1/l & -\ep p^2/l & -\ep p^3/l & 0
-	\end{pmatrix} \nonumber \\
-	& = j^i J_i + b^i B_i + \frac{1}{l}p^a P_a,
-\end{align} 
+		             0          & b^1        & b^2        & b^3        & p^0/l \\
+		             b^1        & 0          & j^3        & -j^2       & p^1/l \\
+		             b^2        & -j^3       & 0          & j^1        & p^2/l \\
+		             b^3        & j^2        & -j^1       & 0          & p^3/l \\
+		             -\ep p^0/l & -\ep p^1/l & -\ep p^2/l & -\ep p^3/l & 0
+	             \end{pmatrix} \nonumber \\
+	        & = j^i J_i + b^i B_i + \frac{1}{l}p^a P_a,
+\end{align}
 where $J_i, B_i$ are the generators of rotations and boosts respectively. $P_a := (P_0, P_i)$ are the generators of translations. The parameter $\ep$ takes values in $\{-1,0,1\}$. Strictly speaking the above expression corresponds to an $\mf{iso}(3,1)$ Lie algebra generator only when $\ep = 0$. $l$ is a length scale which must be introduced so that the components of the ``vector'' $(p^0, p^i)$ can be viewed as components of a translation vector along the $3+1$ dimensional geometry $\mb{\Gamma}$. Similarly the boosts and rotations describe
-where $J_i, B_i$ are the generators of rotations and boosts respectively. $P_a := (P_0, P_i)$ are the generators of translations. The parameter $\ep$ takes values in $\{-1,0,1\}$. 
+where $J_i, B_i$ are the generators of rotations and boosts respectively. $P_a := (P_0, P_i)$ are the generators of translations. The parameter $\ep$ takes values in $\{-1,0,1\}$.
 
 Strictly speaking the above expression corresponds to an $\mf{iso}(3,1)$ Lie algebra generator only when $\ep = 0$. The case when $\ep = \pm 1$ will be motivated and discussed later. $l$ is a length scale which must be introduced so that the components $(p^0, p^i)$ can be viewed as components of a ``translation vector'' living in the tangent space of the $3+1$ dimensional geometry $\mb{\Gamma}$. Similarly the boosts and rotations generators are for objects living in $\mb{\Gamma}$.
 
@@ -1065,11 +1083,11 @@ Assuming that $l_{pl} \ll l_s$, we have $k \ll 1$ and consequently \eqref{eqn:ng
 
 The bimetric viewpoint for the area-corrected Nambu-Goto action is more than just an interesting curiosity. This perspective allows us to construct the Polyakov action for the bimetric string in \eqref{eqn:polyakov-bimetric}. Of course, one would expect that the (area-corrected) Polaykov and Nambu-Goto formulations should be physically equivalent. Imposing this requirement leads us to the conclusion that the object $\Delta$ in \eqref{eqn:ng-area-corrected} must be worldsheet two-form (antisymmetric tensor) corresponding to the pullback of the \emph{bulk} Kalb-Ramond field. All of this eventually leads us to recognise the relation of our proposed action \eqref{eqn:ng-area-corrected} to the Born-Infeld action \eqref{eqn:BI-action} which arises when one studies the dynamics of D-branes in string theory.
 
-Let us make one crucial observation here. In the expression \eqref{eqn:ng-area-corrected} we originally took $\Delta$ to a constant representing the smallest quantum of area. It is only \emph{later}, in \autoref{sec:inverse-metric-Polyakov}, by demanding consistency of the area-corrected Nambu-Goto and Polaykov actions that we realise that $\Delta \equiv \Delta_{ab}(x) $ is in fact an antisymmetric worldsheet two-form \eqref{eqn:Delta-b-relation}!
+Let us make one crucial observation here. In the expression \eqref{eqn:ng-area-corrected} we originally took $\Delta$ to a constant representing the smallest quantum of area. It is only \emph{later}, by demanding consistency of the area-corrected Nambu-Goto and Polaykov actions that we realise that $\Delta \equiv \Delta_{ab}(x) $ is in fact an antisymmetric worldsheet two-form!
 
-We then proceeded to explore the equations of motion in \autoref{sec:quantum-kg-string} resulting from the Polyakov form of the area-corrected string action . We found that the constraint algebra must be modified due to the existence of a minimal area and the resulting modification gives us \emph{two-index} Virasoro generators. We found the algebra of generators to be anomaly free implying that the area-corrected string action is consistent in any number of spacetime dimensions.
+After exploring the equations of motion of the area corrected string, we found that said equations can be recast as a set of Klein-Gordon equations, which for a first analysis we assumed to have constant coefficient $\mu$, however that need not be the case. The solution of these equations and their consequences for the constraints lead us to a modified \textquotedblleft Virasoro-Klein-Gordon" algebra, where the algebra modes have two indices, which in turn resulted in a truncated solution. This also had the effect of not having distinct left and right moving modes, thus there was no level-matching prohibiting spin-1 states for the closed string, which we postulated to maybe be related to the Ashtekar variables of the background geometry. The quantisation of the KG string and the Virasoro-Klein-Gordon algebra presented an anomaly-free algebra, no restrictions on the background dimensionality and no massless spin-1 or spin-2 excitations at the effective level and no negative-norm states in physical processes, with the usual $G_{\mu \nu} , B_{\mu \nu} , \Phi$ fields as part of the spin-2 spectrum.
 
-We then explored the possible relation between our model and the ``emergent dimensions'' model put forward by Afshordi in \cite{Afshordi2014Emergent} in \autoref{sec:emergent-dimensions}.
+We also briefly explored an alternative approach to incorporate LQG quantum geometric effects into String Theory by considering Afshordi's Emergent Spacetime and Evolving Dimensions model with some key insights from LQG complementing said model, creating a more concrete picture of the mechanism behind the emerging dimensions and how ultimately spacetime (and thus the true quantum gravitational field) might be actually $(2+1)$-dimensional at the Planck scale.
 
 Ultimately one cannot be satisfied with the heuristic action of the form \eqref{eqn:ng-area-corrected}. Therefore in \autoref{sec:holographic-strings} we attempt to build, from the ground up, a modified string action which incorporates the following chain of thought. We seek to describe the behavior of a string in an arbitrarily curved background geometry at a \emph{classical} level. For this an action of the form \eqref{eqn:polyakov-curved} is unsuitable because that action treats the bulk metric as non-dynamical variables. Connection variables are used in LQG to describe the geometry of a manifold. The coupling of the string worldsheet to the bulk geometry should reflect this fact. This leads us to an action of the form \eqref{eqn:poincare-polyakov}. This action no longer possess the global Poincaré symmetry of the original Polyakov action. However it is invariant under \emph{local} Poincaré gauge transformations.
 
@@ -1085,7 +1103,7 @@ This suggests that it might make greater sense to use Poincaré spin foams rathe
 
 \subsection{Closed String Spin-1 States} \label{sec:spin-1-states}
 
-In section \ref{sec:quantum-kg-string} we saw that our area-corrected model allows closed string spin-1 excitations, which is due to our solution not having distinct left and right sectors and the physical states not being invariant under rigid rotations of the string. Closed string excitations are usually related to the gravitational field and background spacetime itself, so what could the vector states of the closed string relate to? Well, in section \ref{sec:gauging-lt} we discussed a possible formulation of string theory in terms of a Poincaré connection $\mc{A}_{\mu}$, which is an ingredient in describing the gravitational field in tetrad-connection \cite{Bodendorfer-LQG} formulation, and so this seems to be the natural candidate as to what the first level vector excitation of the closed string could be,
+In section \ref{sec:quantum-kg-string} we saw that our area-corrected model allows closed string spin-1 excitations, which is due to our solution not having distinct left and right sectors and the physical states not being invariant under rigid rotations of the string. Closed string excitations are usually related to the gravitational field and background spacetime itself, so what could the vector states of the closed string relate to? Well, in section \ref{sec:gauging-lt} we discussed a possible formulation of ST in terms of a Poincaré connection $\mc{A}_{\mu}$, which is an ingredient in describing the gravitational field in tetrad-connection \cite{Bodendorfer-LQG} formulation, and so this seems to be the natural candidate as to what the first level vector excitation of the closed string could be,
 \begin{equation} \label{eqn:connection-string-vector-excitation}
 	\mc{A}_{\mu} \sim \eta _{\mu \nu} (\Hat{a}^{\nu} _{1})^{\dagger} \ket{0} .
 \end{equation}
