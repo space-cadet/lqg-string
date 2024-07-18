@@ -1,32 +1,136 @@
 \providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{10}
 
-\bibitem{Jacobson1995Thermodynamics}
-T.~Jacobson, {\it Thermodynamics of spacetime:{{The Einstein}} equation of
-  state},  {\em Physical Review Letters} {\bf 75} (June, 1995).
+\bibitem{Polchinski1998String}
+J.~Polchinski, {\em String {{Theory}}: {{Volume}} 1: {{An Introduction}} to the
+  {{Bosonic String}}}, vol.~1 of {\em Cambridge {{Monographs}} on
+  {{Mathematical Physics}}}.
+\newblock {Cambridge University Press}, {Cambridge}, 1998.
 
-\bibitem{Friedan1985Nonlinear}
-D.~H. Friedan, {\it Nonlinear {{Models}} in {{Two}} + {{Epsilon Dimensions}}},
-  {\em Annals Phys.} {\bf 163} (1985) 318.
+\bibitem{Polchinski2007String}
+J.~Polchinski, {\em String {{Theory}}: {{Volume}} 2: {{Superstring}} Theory and
+  Beyond}.
+\newblock Cambridge {{Monographs}} on {{Mathematical Physics}}. {Cambridge
+  University Press}, Dec., 2007.
 
-\bibitem{Callan1989Sigma}
-C.~G. Callan, Jr. and L.~Thorlacius, {\it Sigma {{Models}} and {{String
-  Theory}}},  in {\em Theoretical {{Advanced Study Institute}} in {{Elementary
-  Particle Physics}}: {{Particles}}, {{Strings}} and {{Supernovae}} ({{TASI}}
-  88)}, Mar., 1989.
+\bibitem{Rovelli1998Loop}
+C.~Rovelli, {\it Loop {{Quantum Gravity}}},  {\em Living Reviews in Relativity}
+  {\bf 1} (Dec., 1998) [\href{http://arxiv.org/abs/gr-qc/9710008}{{\tt
+  gr-qc/9710008}}].
 
-\bibitem{Callan1985Strings}
-C.~G. Callan, D.~Friedan, E.~J. Martinec, and M.~J. Perry, {\it Strings in
-  background fields},  {\em Nuclear Physics, Section B} {\bf 262} (1985), no.~4
-  593--609.
+\bibitem{Rovelli2015Covariant}
+C.~Rovelli and F.~Vidotto, {\em Covariant Loop Quantum Gravity: {{An}}
+  Elementary Introduction to Quantum Gravity and Spinfoam Theory}.
+\newblock Cambridge University Press, Cambridge, 2015.
 
-\bibitem{Polchinski1998aString}
-J.~Polchinski, {\em String Theory (Cambridge Monographs on Mathematical
-  Physics) (Volume 1)}.
-\newblock Cambridge University Press, 1~ed., Oct., 1998.
+\bibitem{Rovelli1993Area}
+C.~Rovelli, {\it Area is the length of ashtekar's triad field}, .
 
-\bibitem{Tong2010Lectures}
-D.~Tong, {\it {Lectures on String Theory}},
-  \href{http://arxiv.org/abs/0908.0333}{{\tt arXiv:0908.0333}}.
+\bibitem{Rovelli1994Discreteness}
+C.~Rovelli and L.~Smolin, {\it Discreteness of area and volume in quantum
+  gravity},  \href{http://arxiv.org/abs/gr-qc/9411005}{{\tt gr-qc/9411005}}.
+
+\bibitem{Rovelli1996Black}
+C.~Rovelli, {\it Black {{Hole Entropy}} from {{Loop Quantum Gravity}}.},  {\em
+  Physical review letters} {\bf 77} (Mar., 1996) 3288--3291,
+  [\href{http://arxiv.org/abs/gr-qc/9603063}{{\tt gr-qc/9603063}}].
+
+\bibitem{Ashketar1986New}
+A.~Ashtekar, {\it New variables for classical and quantum gravity},  {\em
+  Physical Review Letters} {\bf 57} (Nov., 1986) 2244--2247.
+
+\bibitem{Ashtekar1987New}
+A.~Ashtekar, {\it New {{Hamiltonian}} formulation of general relativity},  {\em
+  Physical Review D} {\bf 36} (Sept., 1987) 1587--1602.
+
+\bibitem{Ashtekar1992Weaving}
+A.~Ashtekar, C.~Rovelli, and L.~Smolin, {\it Weaving a classical metric with
+  quantum threads}, .
+
+\bibitem{Ashtekar2004Background}
+A.~Ashtekar and J.~Lewandowski, {\it Background independent quantum gravity: a
+  status report}, .
+
+\bibitem{Rovelli1988Knot}
+C.~Rovelli and L.~Smolin, {\it Knot theory and quantum gravity},  {\em Physical
+  Review Letters} {\bf 61} (Sept., 1988) 1155--1158.
+
+\bibitem{Rovelli1990Loop}
+C.~Rovelli and L.~Smolin, {\it Loop space representation of quantum general
+  relativity},  {\em Nuclear Physics, Section B} {\bf 331} (Feb., 1990)
+  80--152.
+
+\bibitem{Ashtekar1992Gravitons}
+A.~Ashtekar, C.~Rovelli, and L.~Smolin, {\it Gravitons and {{Loops}}},  {\em
+  Physical Review D} {\bf 44} (Feb., 1992) 1740--1755.
+
+\bibitem{Maldacena1998The-Large}
+J.~Maldacena, {\it The large {{N Limit}} of superconformal field theories and
+  supergravity},  {\em Advances in Theoretical and Mathematical Physics} {\bf
+  2} (Jan., 1998) 231--252, [\href{http://arxiv.org/abs/hep-th/9711200}{{\tt
+  hep-th/9711200}}].
+
+\bibitem{Witten1998Anti}
+E.~Witten, {\it Anti de sitter space and holography},  {\em Advances in
+  Theoretical and Mathematical Physics} {\bf 2} (Apr., 1998) 253--290,
+  [\href{http://arxiv.org/abs/hep-th/9802150}{{\tt hep-th/9802150}}].
+
+\bibitem{Aharony1999Large}
+O.~Aharony, S.~S. Gubser, J.~Maldacena, H.~Ooguri, and Y.~Oz, {\it Large {{N
+  Field Theories}}, {{String Theory}} and {{Gravity}}},  {\em Physics Reports}
+  {\bf 323} (1999), no.~3-4 261,
+  [\href{http://arxiv.org/abs/hep-th/9905111}{{\tt hep-th/9905111}}].
+
+\bibitem{Gubser1998Gauge}
+S.~S. Gubser, I.~R. Klebanov, and A.~M. Polyakov, {\it Gauge {{Theory
+  Correlators}} from {{Non-Critical String Theory}}},  {\em Phys. Lett.} {\bf
+  B428} (Mar., 1998) 105--114,
+  [\href{http://arxiv.org/abs/hep-th/9802109v2}{{\tt hep-th/9802109v2}}].
+
+\bibitem{Bardeen1999The-Extreme}
+J.~Bardeen and G.~T. Horowitz, {\it The {{Extreme Kerr Throat Geometry}}: {{A
+  Vacuum Analog}} of {{AdS}}\_2 x {{S}}{\textasciicircum}2},  {\em Physical
+  Review D - Particles, Fields, Gravitation and Cosmology} {\bf 60} (May, 1999)
+  104030, [\href{http://arxiv.org/abs/hep-th/9905099}{{\tt hep-th/9905099}}].
+
+\bibitem{Guica2009The-Kerr/CFT}
+M.~Guica, T.~Hartman, W.~Song, and A.~Strominger, {\it The {{Kerr}}/{{CFT
+  Correspondence}}},  {\em Physical Review D} {\bf 80} (Dec., 2009) 124008,
+  [\href{http://arxiv.org/abs/0809.4266}{{\tt arXiv:0809.4266}}].
+
+\bibitem{Hartnoll2016Holographic}
+S.~A. Hartnoll, A.~Lucas, and S.~Sachdev, {\em Holographic Quantum Matter}.
+\newblock Dec., 2016.
+
+\bibitem{Sachdev2010Strange}
+S.~Sachdev, {\it Strange metals and the {{AdS}}/{{CFT}} correspondence},
+  \href{http://arxiv.org/abs/1010.0682}{{\tt arXiv:1010.0682}}.
+
+\bibitem{Sachdev2015Bekenstein-Hawking}
+S.~Sachdev, {\it Bekenstein-hawking entropy and strange metals},  {\em Physical
+  Review X} {\bf 5} (Aug., 2015) [\href{http://arxiv.org/abs/1506.05111}{{\tt
+  arXiv:1506.05111}}].
+
+\bibitem{Almheiri2014Bulk}
+A.~Almheiri, X.~Dong, and D.~Harlow, {\it Bulk {{Locality}} and {{Quantum Error
+  Correction}} in {{AdS}} / {{CFT}}},  {\em Journal of High Energy Physics}
+  {\bf 2015} (2014), no.~4 [\href{http://arxiv.org/abs/1411.7041v2}{{\tt
+  arXiv:1411.7041v2}}].
+
+\bibitem{Pastawski2015Holographic}
+F.~Pastawski, B.~Yoshida, D.~Harlow, and J.~Preskill, {\it Holographic quantum
+  error-correcting codes: Toy models for the bulk/boundary correspondence},
+  {\em Journal of High Energy Physics} {\bf 2015} (2015), no.~6 149,
+  [\href{http://arxiv.org/abs/1503.06237}{{\tt arXiv:1503.06237}}].
+
+\bibitem{Borissova2024From}
+J.~Borissova and P.-M. Ho, {\it From area metric backgrounds to cosmological
+  constant and corrections to the {{Polyakov}} action},  Apr., 2024.
+
+\bibitem{Afshordi2014emergent}
+N.~Afshordi and D.~Stojkovic, {\it Emergent spacetime in stochastically
+  evolving dimensions},  {\em Physics Letters, Section B: Nuclear, Elementary
+  Particle and High-Energy Physics} {\bf 739} (May, 2014) 117--124,
+  [\href{http://arxiv.org/abs/1405.3297}{{\tt arXiv:1405.3297}}].
 
 \bibitem{Rosen1940General}
 N.~Rosen, {\it General {{Relativity}} and {{Flat Space}}. {{I}}},  {\em
@@ -56,6 +160,132 @@ S.~F. Hassan, R.~A. Rosen, and A.~{Schmidt-May}, {\it Ghost-free {{Massive
   Physics} {\bf 2012} (Feb., 2012) 26,
   [\href{http://arxiv.org/abs/1109.3230}{{\tt arXiv:1109.3230}}].
 
+\bibitem{Callan1985Strings}
+C.~G. Callan, D.~Friedan, E.~J. Martinec, and M.~J. Perry, {\it Strings in
+  background fields},  {\em Nuclear Physics, Section B} {\bf 262} (1985), no.~4
+  593--609.
+
+\bibitem{Tong2009Lectures}
+D.~Tong, {\it Lectures on {{String Theory}}},
+  \href{http://arxiv.org/abs/0908.0333}{{\tt arXiv:0908.0333}}.
+
+\bibitem{Schottenloher2008A-Mathematical}
+M.~Schottenloher, {\em A Mathematical Introduction to Conformal Field Theory}.
+\newblock {Springer Berlin, Heidelberg}, {Berlin}, 2nd edition~ed., 2008.
+
+\bibitem{Balthazar-t-backgrounds}
+D.~K. Bruno~Balthazar, Jinwei~Chu, {\it On time-dependent backgrounds in 1+1
+  dimensional string theory}, .
+
+\bibitem{Bergshoeff1987BornInfeld}
+E.~Bergshoeff, E.~Sezgin, C.~N. Pope, and P.~K. Townsend, {\it The
+  {{Born-Infeld}} action from conformal invariance of the open superstring},
+  {\em Physics Letters B} {\bf 188} (Apr., 1987) 70--74.
+
+\bibitem{Leigh1989Dirac-Born-Infeld}
+R.~G. Leigh, {\it Dirac-{{Born-Infeld Action}} from {{Dirichlet Sigma Model}}},
+   {\em Modern Physics Letters A} {\bf 04} (Dec., 1989) 2767--2772.
+
+\bibitem{Metsaev1987Borninfeld}
+R.~R. Metsaev, M.~A. Rahmanov, and A.~A. Tseytlin, {\it The born-infeld action
+  as the effective action in the open superstring theory},  {\em Physics
+  Letters B} {\bf 193} (July, 1987) 207--212.
+
+\bibitem{Tseytlin1996Self-Duality}
+A.~A. Tseytlin, {\it Self-duality of {{Born-Infeld}} action and {{Dirichlet}}
+  3-brane of type {{IIB}} superstring theory},  {\em Nuclear Physics B} {\bf
+  469} (June, 1996) 51--67, [\href{http://arxiv.org/abs/hep-th/9602064}{{\tt
+  hep-th/9602064}}].
+
+\bibitem{Green2012Superstring}
+M.~B. Green, J.~H. Schwarz, and E.~Witten, {\em Superstring Theory: 25th
+  Anniversary Edition}.
+\newblock Cambridge Monographs on Mathematical Physics. Cambridge University
+  Press, 2012.
+
+\bibitem{Bodendorfer-LQG}
+N.~Bodendorfer, {\it An elementary introduction to loop quantum gravity}, .
+
+\bibitem{Thiemann2004The-LQG-String:}
+T.~Thiemann, {\it The {LQG}-string: Loop quantum gravity quantization of string
+  theory i. flat target space},  Jan., 2004.
+
+\bibitem{t-Hooft1993Dimensional}
+G.~'t~Hooft, {\it Dimensional {{Reduction}} in {{Quantum Gravity}}},
+  \href{http://arxiv.org/abs/gr-qc/9310026}{{\tt gr-qc/9310026}}.
+
+\bibitem{Bergshoeff2013ZweiDreibein}
+E.~A. Bergshoeff, S.~{de Haan}, O.~Hohm, W.~Merbis, and P.~K. Townsend, {\it
+  Zwei-{{Dreibein Gravity}}},  {\em Physical Review Letters} {\bf 111} (Sept.,
+  2013) 111102, [\href{http://arxiv.org/abs/1307.2774}{{\tt arXiv:1307.2774}}].
+
+\bibitem{Blais2013A-new-quantization}
+T.~Blais, {\it A new quantization condition for parity-violating
+  three-dimensional gravity},  Master's thesis, McGill U., 4, 2013.
+
+\bibitem{Carlip2003Quantum}
+S.~Carlip, {\em Quantum gravity in 2+1 dimensions}.
+\newblock Cambridge Monographs on Mathematical Physics. Cambridge University
+  Press, 12, 2003.
+
+\bibitem{Dai1989New-Connections}
+{\relax JIN}.~DAI, R.~LEIGH, and {\relax JOSEPH}.~POLCHINSKI, {\it New
+  {{Connections Between String Theories}}},  {\em Modern Physics Letters A}
+  {\bf 04} (1989), no.~21 2073--2083.
+
+\bibitem{Polchinski1995Dirichlet-Branes}
+J.~Polchinski, {\it Dirichlet branes and {{Ramond-Ramond}} charges},  {\em
+  Physical Review Letters} {\bf 75} (Nov., 1995) 4724--4727,
+  [\href{http://arxiv.org/abs/hep-th/9510017}{{\tt hep-th/9510017}}].
+
+\bibitem{Horava1989Background}
+P.~Ho{\v r}ava, {\it Background duality of open-string models},  {\em Physics
+  Letters B} {\bf 231} (Nov., 1989) 251--257.
+
+\bibitem{Wise2010MacDowell-Mansouri}
+D.~K. Wise, {\it {{MacDowell}}-{{Mansouri Gravity}} and {{Cartan Geometry}}},
+  {\em Classical and Quantum Gravity} {\bf 27} (2010), no.~15 155010,
+  [\href{http://arxiv.org/abs/gr-qc/0611154}{{\tt gr-qc/0611154}}].
+
+\bibitem{Lust2021Extracting}
+D.~Lust, C.~Markou, P.~Mazloumi, and S.~Stieberger, {\it Extracting
+  {{Bigravity}} from {{String Theory}}},  {\em Journal of High Energy Physics}
+  {\bf 2021} (Dec., 2021) 220, [\href{http://arxiv.org/abs/2106.04614}{{\tt
+  arXiv:2106.04614}}].
+
+\bibitem{Yan2021Strings}
+Z.~Yan, {\it Strings in {{Bimetric Spacetimes}}},  {\em Journal of High Energy
+  Physics} {\bf 2021} (Sept., 2021) 164,
+  [\href{http://arxiv.org/abs/2105.00011}{{\tt arXiv:2105.00011}}].
+
+\bibitem{Hehl2023Four}
+F.~W. Hehl, {\it Four {{Lectures}} on {{Poincar{\'e}}} {{Gauge Field Theory}}},
+   Mar., 2023.
+
+\bibitem{Altaisky2024Poincare}
+M.~V. Altaisky, {\it Poincar{\'e} group spin networks},  {\em International
+  Journal of Theoretical Physics} {\bf 63} (June, 2024) 145,
+  [\href{http://arxiv.org/abs/2311.06328}{{\tt arXiv:2311.06328}}].
+
+\bibitem{Friedan1985Nonlinear}
+D.~H. Friedan, {\it Nonlinear {{Models}} in {{Two}} + {{Epsilon Dimensions}}},
+  {\em Annals Phys.} {\bf 163} (1985) 318.
+
+\bibitem{Callan1989Sigma}
+C.~G. Callan, Jr. and L.~Thorlacius, {\it Sigma {{Models}} and {{String
+  Theory}}},  in {\em Theoretical {{Advanced Study Institute}} in {{Elementary
+  Particle Physics}}: {{Particles}}, {{Strings}} and {{Supernovae}} ({{TASI}}
+  88)}, Mar., 1989.
+
+\bibitem{Polchinski1998aString}
+J.~Polchinski, {\em String Theory (Cambridge Monographs on Mathematical
+  Physics) (Volume 1)}.
+\newblock Cambridge University Press, 1~ed., Oct., 1998.
+
+\bibitem{Tong2010Lectures}
+D.~Tong, {\it {Lectures on String Theory}},
+  \href{http://arxiv.org/abs/0908.0333}{{\tt arXiv:0908.0333}}.
+
 \bibitem{Zwiebach2009A-First}
 B.~Zwiebach, {\em A First Course in String Theory}.
 \newblock Cambridge University Press, 2nd~ed., 2009.
@@ -64,15 +294,5 @@ B.~Zwiebach, {\em A First Course in String Theory}.
 R.~Grimshaw, D.~Pelinovsky, and E.~Pelinovsky, {\it Homogenization of the
   variable-speed wave equation},  {\em Wave Motion} {\bf 47} (Dec., 2010)
   496--507.
-
-\bibitem{Tong2009Lectures}
-D.~Tong, {\it Lectures on {{String Theory}}},
-  \href{http://arxiv.org/abs/0908.0333}{{\tt arXiv:0908.0333}}.
-
-\bibitem{Green2012Superstring}
-M.~B. Green, J.~H. Schwarz, and E.~Witten, {\em Superstring Theory: 25th
-  Anniversary Edition}.
-\newblock Cambridge Monographs on Mathematical Physics. Cambridge University
-  Press, 2012.
 
 \end{thebibliography}\endgroup
