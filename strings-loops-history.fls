@@ -1,0 +1,7 @@
+PWD /Volumes/Data/owncloud/root/research/articles/lqg-string
+INPUT /Users/deepak/Library/Application Support/MiKTeX/texmfs/data/miktex/data/le/pdftex/latex.fmt
+INPUT strings-loops-history.tex
+OUTPUT strings-loops-history.log
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmbx10.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmti10.tfm
+OUTPUT strings-loops-history.dvi
