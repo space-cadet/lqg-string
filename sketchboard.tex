@@ -2160,4 +2160,80 @@ If conformal gauge makes it so that $e e^{a} _{K} e^{b} _{J} = \eta ^{a b} \eta 
     \eta ^{a b} \mc{D}_{a} \mc{D}_{b} X^{I} = 0
 \end{equation*}
 
+\newpage
+
+\section{Gauged Polyakov}
+
+Turn embbeding fields $X^{\mu}$ into vectors in fundamental representation of gauge group $\mc{G}$, whose generators are
+\begin{equation*}
+    T = \begin{bmatrix} 0 & \beta ^{1} & \beta ^{2} & \beta ^{3} & p^{0} / l \\ \beta ^{1} & 0 & \theta ^{3} & - \theta ^{2} & p^{1} / l \\ \beta ^{2} & - \theta ^{3} & 0 & \theta ^{1} & p^{2} / l \\ \beta ^{3} & \theta ^{2} & - \theta ^{1} & 0 & p^{3} / l \\ \epsilon p^{0} / l & - \epsilon p^{1} / l & - \epsilon p^{2} / l & - \epsilon p^{3} / l & 0 \end{bmatrix} ,
+\end{equation*}
+where $\epsilon$ is the sign of the cosmological constant and if $\epsilon = - 1 \implies \mc{G} = \mathrm{SO} (3 , 2)$, $\epsilon = 0 \implies \mc{G} = \mathrm{ISO} (3 , 1)$ and $\epsilon = + 1 \implies \mc{G} = \mathrm{SO} (4 , 1)$. Thus, partial derivatives becomes covariant derivatives $\partial _{a} \rightarrow \mc{D}_{a}$,
+\begin{equation*}
+    \mc{D}_{a} X^{A} = \partial _{a} X^{A} + k \mc{A}^{A} _{a B} X^{B} ,
+\end{equation*}
+with $X^{A} = (X^{\mu} , X^{r})$ and action thus becomes
+\begin{equation*}
+    S = - \frac{T}{2} \int \diff ^2 x \sqrt{- g} g^{a b} \mc{D}_{a} X^{A} \mc{D}_{b} X^{B} G_{A B} ,
+\end{equation*}
+where $G_{A B}$ is the expanded metric, which we'll assume to be
+\begin{equation*}
+    [G_{A B}] = \begin{bmatrix} [\eta _{\mu \nu}] & [G_{\mu r}] \\ [G_{\mu r}]^{T} & G_{r r} \end{bmatrix} ,
+\end{equation*}
+thus separating the action into $S = S [X^{\mu}] + S_{int} [X^{\mu} , X^{r}] + S [X^{r}]$
+\begin{align*}
+    S [X^{\mu}] & = - \frac{T}{2} \int \diff ^2 x \sqrt{- g} g^{a b} \mc{D}_{a} X^{\mu} \mc{D}_{b} X^{\nu} \eta _{\mu \nu} \\
+    S_{int} [X^{\mu} , X^{r}] & = - T \int \diff ^2 x \sqrt{- g} g^{a b} \mc{D}_{a} X^{\mu} \mc{D}_{b} X^{r} G_{\mu r} \\
+    S [X^{r}] & = - \frac{T}{2} \int \diff ^2 x \sqrt{- g} g^{a b} \mc{D}_{a} X^{r} \mc{D}_{b} X^{r} G_{r r} .
+\end{align*}
+
+\subsection{EoMs}
+
+\subsubsection{W.r.t $g$}
+
+\begin{align*}
+    \frac{\delta S}{\delta g^{c d}} & = - \frac{T}{2} \frac{\delta}{\delta g^{c d}} (\sqrt{- g} g^{a b} \mc{D}_{a} X^{A} \mc{D}_{b} X^{B} G_{A B}) = \\
+    & = - \frac{T}{2} \left( \frac{\del \sqrt{- g}}{\del g^{c d}} g^{a b} + \sqrt{- g} \frac{\del g^{a b}}{\del g^{c d}} \right) \mc{D}_{a} X^{A} \mc{D}_{b} X^{B} G_{A B} = \\
+    & = - \frac{T}{2} \left( - \frac{1}{2} \sqrt{- g} g_{c d} g^{a b} + \sqrt{- g} \delta ^{a} _{(c} \delta ^{b} _{d)} \right) \mc{D}_{a} X^{A} \mc{D}_{b} X^{B} G_{A B} = 0
+\end{align*}
+\begin{equation*}
+    g_{c d} = 2 f \mc{D}_{c} X^{A} \mc{D}_{d} X^{B} G_{A B} ,
+\end{equation*}
+\begin{equation*}
+    \frac{1}{f} = g^{a b} \mc{D}_{a} X^{A} \mc{D}_{b} X^{B} G_{A B}
+\end{equation*}
+
+\subsubsection{W.r.t $\mc{A}$}
+
+\begin{align*}
+    \frac{\delta S}{\delta \mc{A}^{C D} _{c}} & = - \frac{T}{2} \frac{\delta}{\delta \mc{A}^{C D} _{c}} (\sqrt{- g} g^{a b} \mc{D}_{a} X^{A} \mc{D}_{b} X^{B} G_{A B}) = \\
+    & = - T \sqrt{- g} g^{a b} \frac{\del}{\del \mc{A}^{C D} _{c}} \mc{D}_{a} X^{A} \mc{D}_{b} X^{B} G_{A B} = \\
+    & = - T \sqrt{- g} g^{a b} (k \delta ^{c} _{a} \delta ^{A} _{[C} \delta ^{A'} _{D]} X_{A'}) \mc{D}_{b} X^{B} G_{A B} = \\
+    & = - T k \sqrt{- g} g^{c b} \mc{D}_{b} X^{B} G_{B [C} X_{D]} = 0
+\end{align*}
+\begin{equation*}
+    \sigma _{c} ^{C D} = \mc{D}_{c} X^{[C} X^{D]} = 0
+\end{equation*}
+
+\subsubsection{W.r.t $X$}
+
+\begin{align*}
+    \frac{\delta S}{\delta X^{C}} & = - \frac{T}{2} \frac{\delta}{\delta X^{C}} (\sqrt{- g} g^{a b} \mc{D}_{a} X^{A} \mc{D}_{b} X^{B} G_{A B}) = \\
+    & = T (\mc{D}_{c} (\sqrt{- g} g^{a b} \delta _{a} ^{c} \delta ^{A} _{C} \mc{D}_{b} X^{B} G_{A B}) - \sqrt{- g} g^{a b} \mc{D}_{a} X^{A} \mc{D}_{b} X^{B} \del _{C} G_{A B}) = \\
+    & = T (\mc{D}_{a} (\sqrt{- g} g^{a b} \mc{D}_{b} X^{B} G_{B C}) - \sqrt{- g} g^{a b} \mc{D}_{a} X^{A} \mc{D}_{b} X^{B} \del _{C} G_{A B}) = 0
+\end{align*}
+\begin{equation*}
+    \mc{D}_{a} (\sqrt{- g} g^{a b} \mc{D}_{b} X^{B} G_{B C}) = \sqrt{- g} g^{a b} \mc{D}_{a} X^{A} \mc{D}_{b} X^{B} \del _{C} G_{A B} .
+\end{equation*}
+In conformal gauge $g^{a b} = \e ^{- \phi} \eta ^{a b}$ and assuming $G_{A B} = \eta ' _{A B}$, where
+\begin{equation*}
+    [\eta ' _{A B}] = \begin{bmatrix} [\eta _{\mu \nu}] & 0 \\ 0 & \epsilon \end{bmatrix}
+\end{equation*}
+\begin{equation*}
+    \eta ^{a b} \mc{D}_{a} (\mc{D}_{b} X^{B} G_{B C}) = 0
+\end{equation*}
+\begin{equation*}
+    \eta ^{a b} \mc{D}_{a} \mc{D}_{b} X^{A} = 0
+\end{equation*}
+
 \end{document}
