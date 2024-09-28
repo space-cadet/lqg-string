@@ -2292,46 +2292,68 @@ To produce this geometry, the bulk connection can be taken as
 where $n_{a} ^{I}$ is some family of diff functions on the WS (dyad, but not the covariant dyad $e^{A} _{a} = \mc{D}_{a} X^{A}$. Covariant dyad $e^{A} _{a}$ generates covariant WS metric $e^{A} _{a} e^{B} _{b} G_{A B} = g_{a b} = \mc{D}_{a} X^{A} \mc{D}_{b} X^{B} G_{A B}$ whilst this family of functions generates induced metric $n^{I} _{a} n^{J} _{b} \eta _{I J} = \gamma _{a b} = \del _{a} X^{\mu} \del _{b} X^{\nu} G_{\mu \nu}$). For $\epsilon = - 1$ (flat adS background) we have thus
 \begin{equation*}
     \mc{A}_{a} X = 
-    \begin{bmatrix} X^{0} + n^{0} _{a} X^{r} \\
-                    X^{1} + n^{1} _{a} X^{r} \\
-                    X^{2} + n^{2} _{a} X^{r} \\
-                    X^{3} + n^{3} _{a} X^{r} \\
-                    X^{r} - (n^{0} _{a} X^{0} - \sum _{i = 1} ^{3} n^{i} _{a} X^{i}) \end{bmatrix}
+    \begin{bmatrix} n^{0} _{a} X^{r} \\
+                    n^{1} _{a} X^{r} \\
+                    n^{2} _{a} X^{r} \\
+                    n^{3} _{a} X^{r} \\
+                    n^{\mu} _{a} X_{\mu} \end{bmatrix}
 \end{equation*}
 \begin{equation*}
-    \mc{A}_{a} \del _{b} X = \begin{bmatrix} \del _{b} X^{0} + n^{0} _{a} \del _{b} X^{r} \\
-        \del _{b} X^{1} + n^{1} _{a} \del _{b} X^{r} \\
-        \del _{b} X^{2} + n^{2} _{a} \del _{b} X^{r} \\
-        \del _{b} X^{3} + n^{3} _{a} \del _{b} X^{r} \\
-        \del _{b} X^{r} - (n^{0} _{a} \del _{b} X^{0} - \sum _{i = 1} ^{3} n^{i} _{a} \del _{b} X^{i}) \end{bmatrix}
+    \mc{A}_{a} \del _{b} X = \begin{bmatrix} n^{0} _{a} \del _{b} X^{r} \\
+        n^{1} _{a} \del _{b} X^{r} \\
+        n^{2} _{a} \del _{b} X^{r} \\
+        n^{3} _{a} \del _{b} X^{r} \\
+        n^{\mu} _{a} \del _{b} X_{\mu} \end{bmatrix} = 
+        \begin{bmatrix} n^{0} _{a} \del _{b} X^{r} \\
+            n^{1} _{a} \del _{b} X^{r} \\
+            n^{2} _{a} \del _{b} X^{r} \\
+            n^{3} _{a} \del _{b} X^{r} \\
+            n^{\mu} _{a} n^{\nu} _{b} \eta _{\mu \nu} \end{bmatrix}
 \end{equation*}
 \begin{equation*}
-    \del _{a} \mc{A}_{b} X = \begin{bmatrix} X^{0} + \del _{a} n^{0} _{b} X^{r} \\
-        X^{1} + \del _{a} n^{1} _{b} X^{r} \\
-        X^{2} + \del _{a} n^{2} _{b} X^{r} \\
-        X^{3} + \del _{a} n^{3} _{b} X^{r} \\
-        X^{r} - (\del _{a} n^{0} _{b} X^{0} - \sum _{i = 1} ^{3} \del _{a} n^{i} _{b} X^{i}) \end{bmatrix}
+    \del _{a} \mc{A}_{b} X = \begin{bmatrix} \del _{a} n^{0} _{b} X^{r} \\
+        \del _{a} n^{1} _{b} X^{r} \\
+        \del _{a} n^{2} _{b} X^{r} \\
+        \del _{a} n^{3} _{b} X^{r} \\
+        \del _{a} n^{\mu} _{b} X_{\mu} \end{bmatrix}
 \end{equation*}
 \begin{equation*}
-    \mc{A}_{a} \mc{A}_{b} X = \mc{A}_{a} \begin{bmatrix} X^{0} + n^{0} _{b} X^{r} \\
-        X^{1} + n^{1} _{b} X^{r} \\
-        X^{2} + n^{2} _{b} X^{r} \\
-        X^{3} + n^{3} _{b} X^{r} \\
-        X^{r} - (n^{0} _{b} X^{0} - \sum _{i = 1} ^{3} n^{i} _{b} X^{i}) \end{bmatrix} =
+    \mc{A}_{a} \mc{A}_{b} X = \mc{A}_{a} \begin{bmatrix} n^{0} _{b} X^{r} \\
+        n^{1} _{b} X^{r} \\
+        n^{2} _{b} X^{r} \\
+        n^{3} _{b} X^{r} \\
+        n^{\mu} _{b} X_{\mu} \end{bmatrix} = \begin{bmatrix} n^{0} _{a} n^{\mu} _{b} X_{\mu} \\
+            n^{1} _{a} n^{\mu} _{b} X_{\mu} \\
+            n^{2} _{a} n^{\mu} _{b} X_{\mu} \\
+            n^{3} _{a} n^{\mu} _{b} X_{\mu} \\
+            n^{\mu} _{a} n^{\nu} _{b} \eta _{\mu \nu} X^{r} \end{bmatrix}
 \end{equation*}
 \begin{equation*}
-    = \begin{bmatrix} X^{0} + n^{0} _{b} X^{r} + n^{0} _{a} (X^{r} - (n^{0} _{b} X^{0} - \sum _{i = 1} ^{3} n^{i} _{b} X^{i})) \\
-        X^{1} + n^{1} _{b} X^{r} + n^{1} _{a} (X^{r} - (n^{0} _{b} X^{0} - \sum _{i = 1} ^{3} n^{i} _{b} X^{i})) \\
-        X^{2} + n^{2} _{b} X^{r} + n^{2} _{a} (X^{r} - (n^{0} _{b} X^{0} - \sum _{i = 1} ^{3} n^{i} _{b} X^{i})) \\
-        X^{3} + n^{3} _{b} X^{r} + n^{3} _{a} (X^{r} - (n^{0} _{b} X^{0} - \sum _{i = 1} ^{3} n^{i} _{b} X^{i})) \\
-        X^{r} - (n^{0} _{b} X^{0} - \sum _{i = 1} ^{3} n^{i} _{b} X^{i}) - (n^{0} _{a} (X^{0} + n^{0} _{b} X^{r}) - \sum _{i = 1} ^{3} n^{i} _{a} (X^{i} + n^{i} _{b} X^{r})) \end{bmatrix} =
+    \downarrow
 \end{equation*}
 \begin{equation*}
-    = \begin{bmatrix} X^{\prime 0} _{b} + n^{0} _{a} X^{\prime r} _{b} \\
-        X^{\prime 1} _{b} + n^{1} _{a} X^{\prime r} _{b} \\
-        X^{\prime 2} _{b} + n^{2} _{a} X^{\prime r} _{b} \\
-        X^{\prime 3} _{b} + n^{3} _{a} X^{\prime r} _{b} \\
-        X^{\prime r} _{b} - (n^{0} _{a} X^{\prime 0} _{b} - \sum _{i = 1} ^{3} n^{i} _{a} X^{\prime i} _{b}) \end{bmatrix} , \ X^{\prime \mu} _{b} = X^{\mu} + n^{\mu} _{b} X^{r} , \ X^{\prime r} _{b} = X^{r} - (n^{0} _{b} X^{0} - \sum _{i = 1} ^{3} n^{i} _{b} X^{i})
+    \eta ^{a b} (\del _{a} \del _{b} X^{\mu} + 2 k \del _{a} X^{\mu} \del _{b} X^{r} + k \del_{a} \del_{b} X^{\mu} X^{r} + k^2 \del _{a} X^{\mu} \del _{b} X^{\nu} X_{\nu}) = 0
+\end{equation*}
+\begin{equation*}
+    \eta ^{a b} (\del _{a} \del _{b} X^{r} + 2 k \del _{a} X^{\mu} \del _{b} X_{\mu} + k \del _{a} \del _{b} X^{\mu} X_{\mu} + k^2 \del _{a} X^{\mu} \del _{b} X_{\mu} X^{r}) = 0
+\end{equation*}
+\begin{equation*}
+    \downarrow \del _{a} X^{\mu} \del _{b} X_{\mu} = \gamma _{a b} = \e ^{\varphi (x)} \eta _{a b}
+\end{equation*}
+\begin{equation*}
+    \eta ^{a b} ((1 + k X^{r}) \del _{a} \del _{b} X^{\mu} + k (2 \del _{b} X^{r} + k \del _{b} X^{\nu} X_{\nu}) \del _{a} X^{\mu}) = 0
+\end{equation*}
+\begin{equation*}
+    \eta ^{a b} \del _{a} \del _{b} X^{r} + 4 k \e ^{\varphi} + k \eta ^{a b} \del _{a} \del _{b} X^{\mu} X_{\mu} + 2 k^2 \e ^{\varphi} X^{r} = 0
+\end{equation*}
+\begin{equation*}
+    \downarrow
+\end{equation*}
+\begin{equation*}
+    \eta ^{a b} \left( \del _{a} \del _{b} X^{\mu} + \frac{k}{1 + k X^{r}} (2 \del _{a} X^{r} + k \del _{a} X^{\nu} X_{\nu}) \del _{b} X^{\mu} \right) = 0
+\end{equation*}
+\begin{equation*}
+    \eta ^{a b} \del _{a} \del _{b} X^{r} + 2 k^2 \e ^{\varphi} X^{r} + 4 k \e ^{\varphi} - \frac{k^2 \eta ^{a b}}{1 + k X^{r}} (2 \del _{a} X^{r} + k \del _{a} X^{\nu} X_{\nu}) \del _{b} X^{\mu} X_{\mu} = 0
 \end{equation*}
 
 \end{document}
