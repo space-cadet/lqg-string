@@ -2172,19 +2172,27 @@ where $\epsilon$ is the sign of the cosmological constant and if $\epsilon = - 1
 \begin{equation*}
     \mc{D}_{a} X^{A} = \partial _{a} X^{A} + k \mc{A}^{A} _{a B} X^{B} ,
 \end{equation*}
-with $X^{A} = (X^{\mu} , X^{r})$ and action thus becomes
+with $X^{A} = (X^{\mu} , X^{r})$. Connection is thus
+\begin{equation*}
+    \mc{A}_{a} = \partial _{a} X^{\mu} \mc{A}_{\mu} = \partial _{a} X^{\mu} \begin{bmatrix} 0 & \omega ^{0 1} _{\mu} & \omega ^{0 2} _{\mu} & \omega ^{0 3} _{\mu} & E^{0} _{\mu} \\
+        \omega ^{0 1} _{\mu} & 0 & \omega ^{1 2} _{\mu} & - \omega ^{1 3} _{\mu} & E^{1} _{\mu} \\
+        \omega ^{0 2} _{\mu} & - \omega ^{1 2} _{\mu} & 0 & \omega ^{2 3} _{\mu} & E^{2} _{\mu} \\
+        \omega ^{0 3} _{\mu} & \omega ^{1 3} _{\mu} & - \omega ^{2 3} _{\mu} & 0 & E^{3} _{\mu} \\
+                          \epsilon E^{0} _{\mu} & - \epsilon E^{1} _{\mu} & - \epsilon E^{2} _{\mu} & - \epsilon E^{3} _{\mu} & 0 \end{bmatrix} ,
+\end{equation*}
+where $\omega ^{I J} _{\mu}$ is the bulk spin connection and $E^{I} _{\mu}$ is the bulk vierbein. Action thus becomes
 \begin{equation*}
     S = - \frac{T}{2} \int \diff ^2 x \sqrt{- g} g^{a b} \mc{D}_{a} X^{A} \mc{D}_{b} X^{B} G_{A B} ,
 \end{equation*}
-where $G_{A B}$ is the expanded metric, which we'll assume to be
+where $G_{A B}$ is the expanded metric, which we'll separate as
 \begin{equation*}
-    [G_{A B}] = \begin{bmatrix} [\eta _{\mu \nu}] & [G_{\mu r}] \\ [G_{\mu r}]^{T} & G_{r r} \end{bmatrix} ,
+    [G_{A B}] = \begin{bmatrix} [G_{\mu \nu}] & [G_{\mu r}] \\ [G_{\mu r}]^{T} & G_{r r} \end{bmatrix} ,
 \end{equation*}
-thus separating the action into $S = S [X^{\mu}] + S_{int} [X^{\mu} , X^{r}] + S [X^{r}]$
+with $G_{\mu r} = \epsilon V_{\mu}$ and $G_{r r} = \epsilon V$, where $V_{\mu}$ is a vector analogous to the shift vector and $V$ is a function analogous to the lapse function. This separates the action into $S = S [X^{\mu}] + S_{int} [X^{\mu} , X^{r}] + S [X^{r}]$
 \begin{align*}
-    S [X^{\mu}] & = - \frac{T}{2} \int \diff ^2 x \sqrt{- g} g^{a b} \mc{D}_{a} X^{\mu} \mc{D}_{b} X^{\nu} \eta _{\mu \nu} \\
-    S_{int} [X^{\mu} , X^{r}] & = - T \int \diff ^2 x \sqrt{- g} g^{a b} \mc{D}_{a} X^{\mu} \mc{D}_{b} X^{r} G_{\mu r} \\
-    S [X^{r}] & = - \frac{T}{2} \int \diff ^2 x \sqrt{- g} g^{a b} \mc{D}_{a} X^{r} \mc{D}_{b} X^{r} G_{r r} .
+    S [X^{\mu}] & = - \frac{T}{2} \int \diff ^2 x \sqrt{- g} g^{a b} \mc{D}_{a} X^{\mu} \mc{D}_{b} X^{\nu} G_{\mu \nu} \\
+    S_{int} [X^{\mu} , X^{r}] & = - \epsilon T \int \diff ^2 x \sqrt{- g} g^{a b} \mc{D}_{a} X^{\mu} \mc{D}_{b} X^{r} V_{\mu} \\
+    S [X^{r}] & = - \epsilon \frac{T}{2} \int \diff ^2 x \sqrt{- g} g^{a b} \mc{D}_{a} X^{r} \mc{D}_{b} X^{r} V .
 \end{align*}
 
 \subsection{EoMs}
@@ -2225,7 +2233,7 @@ thus separating the action into $S = S [X^{\mu}] + S_{int} [X^{\mu} , X^{r}] + S
 \begin{equation*}
     \mc{D}_{a} (\sqrt{- g} g^{a b} \mc{D}_{b} X^{B} G_{B C}) = \sqrt{- g} g^{a b} \mc{D}_{a} X^{A} \mc{D}_{b} X^{B} \del _{C} G_{A B} .
 \end{equation*}
-In conformal gauge $g^{a b} = \e ^{- \phi} \eta ^{a b}$ and assuming $G_{A B} = \eta ' _{A B}$, where
+In conformal gauge $g^{a b} = \e ^{- \phi} \eta ^{a b}$ and assuming $G_{A B} = \eta ' _{A B}$, where (with $\epsilon \neq 0$. For $\epsilon = 0$, this collapses the EoM back into normal wave eqns for $X^{\mu}$, thus restoring regular ST)
 \begin{equation*}
     [\eta ' _{A B}] = \begin{bmatrix} [\eta _{\mu \nu}] & 0 \\ 0 & \epsilon \end{bmatrix}
 \end{equation*}
@@ -2233,7 +2241,119 @@ In conformal gauge $g^{a b} = \e ^{- \phi} \eta ^{a b}$ and assuming $G_{A B} = 
     \eta ^{a b} \mc{D}_{a} (\mc{D}_{b} X^{B} G_{B C}) = 0
 \end{equation*}
 \begin{equation*}
-    \eta ^{a b} \mc{D}_{a} \mc{D}_{b} X^{A} = 0
+    \eta ^{a b} \mc{D}_{a} \mc{D}_{b} X^{A} = 0 .
+\end{equation*}
+\begin{equation*}
+    \eta ^{a b} \mc{D}_{a} (\del _{b} X^{A} + k \mc{A}^{A} _{b C} X^{C}) = 0
+\end{equation*}
+\begin{equation*}
+    \eta ^{a b} ((\del _{a} \del _{b} X^{A} + k \mc{A}^{A} _{a C} \del _{b} X^{C}) + k \mc{D}_{a} [\mc{A}^{A} _{b C} X^{C}]) = 0
+\end{equation*}
+\begin{equation*}
+    \eta ^{a b} ((\del _{a} \del _{b} X^{A} + k \mc{A}^{A} _{a C} \del _{b} X^{C}) + k (\mc{D}_{a} \mc{A}^{A} _{b C} X^{C} + \mc{A}^{A} _{b C} \mc{D}_{a} X^{C})) = 0
+\end{equation*}
+\begin{equation*}
+    \eta ^{a b} ((\del _{a} \del _{b} X^{A} + k \mc{A}^{A} _{a C} \del _{b} X^{C}) + k ((\del _{a} \mc{A}^{A} _{b C} + k \mc{A}^{A} _{a D} \mc{A}^{D} _{b C} - k \mc{A}^{D} _{a C} \mc{A}^{A} _{b D}) X^{C} + \mc{A}^{A} _{b C} (\del _{a} X^{C} + k \mc{A}^{C} _{a D} X^{D}))) = 0
+\end{equation*}
+\begin{equation*}
+    \eta ^{a b} (\del _{a} \del _{b} X^{A} + 2 k \mc{A}^{A} _{a C} \del _{b} X^{C} + k \del _{a} \mc{A}^{A} _{b C} X^{C} + k^2 \mc{A}^{A} _{a D} \mc{A}^{D} _{b C} X^{C}) = 0
+\end{equation*}
+To produce this geometry, the bulk connection can be taken as
+\begin{equation*}
+    \mc{A}_{\mu} = 
+    \begin{bmatrix} 0 & 0 & 0 & 0 & \delta ^{0} _{\mu} \\ 
+                    0 & 0 & 0 & 0 & \delta ^{1} _{\mu} \\
+                    0 & 0 & 0 & 0 & \delta ^{2} _{\mu} \\
+                    0 & 0 & 0 & 0 & \delta ^{3} _{\mu} \\
+                    \epsilon \delta ^{0} _{\mu} & - \epsilon \delta ^{1} _{\mu} & - \epsilon \delta ^{2} _{\mu} & - \epsilon \delta ^{3} _{\mu} & 0 \end{bmatrix}
+\end{equation*}
+\begin{equation*}
+    \downarrow
+\end{equation*}
+\begin{equation*}
+    \mc{A}_{a} = \partial _{a} X^{\mu} \mc{A}_{\mu} = 
+    \begin{bmatrix} 0 & 0 & 0 & 0 & \del _{a} X^{0} \\ 
+                    0 & 0 & 0 & 0 & \del _{a} X^{1} \\
+                    0 & 0 & 0 & 0 & \del _{a} X^{2} \\
+                    0 & 0 & 0 & 0 & \del _{a} X^{3} \\
+                    \epsilon \del _{a} X^{0} & - \epsilon \del _{a} X^{1} & - \epsilon \del _{a} X^{2} & - \epsilon \del _{a} X^{3} & 0 \end{bmatrix}
+\end{equation*}
+\begin{equation*}
+    \downarrow
+\end{equation*}
+\begin{equation*}
+    \mc{A}_{a} = 
+    \begin{bmatrix} 0 & 0 & 0 & 0 & n_{a} ^{0} \\ 
+                    0 & 0 & 0 & 0 & n_{a} ^{1} \\
+                    0 & 0 & 0 & 0 & n_{a} ^{2} \\
+                    0 & 0 & 0 & 0 & n_{a} ^{3} \\
+                    \epsilon n_{a} ^{0} & - \epsilon n_{a} ^{1} & - \epsilon n_{a} ^{2} & - \epsilon n_{a} ^{3} & 0 \end{bmatrix} ,
+\end{equation*}
+where $n_{a} ^{I}$ is some family of diff functions on the WS (dyad, but not the covariant dyad $e^{A} _{a} = \mc{D}_{a} X^{A}$. Covariant dyad $e^{A} _{a}$ generates covariant WS metric $e^{A} _{a} e^{B} _{b} G_{A B} = g_{a b} = \mc{D}_{a} X^{A} \mc{D}_{b} X^{B} G_{A B}$ whilst this family of functions generates induced metric $n^{I} _{a} n^{J} _{b} \eta _{I J} = \gamma _{a b} = \del _{a} X^{\mu} \del _{b} X^{\nu} G_{\mu \nu}$). For $\epsilon = - 1$ (flat adS background) we have thus
+\begin{equation*}
+    \mc{A}_{a} X = 
+    \begin{bmatrix} n^{0} _{a} X^{r} \\
+                    n^{1} _{a} X^{r} \\
+                    n^{2} _{a} X^{r} \\
+                    n^{3} _{a} X^{r} \\
+                    n^{\mu} _{a} X_{\mu} \end{bmatrix}
+\end{equation*}
+\begin{equation*}
+    \mc{A}_{a} \del _{b} X = \begin{bmatrix} n^{0} _{a} \del _{b} X^{r} \\
+        n^{1} _{a} \del _{b} X^{r} \\
+        n^{2} _{a} \del _{b} X^{r} \\
+        n^{3} _{a} \del _{b} X^{r} \\
+        n^{\mu} _{a} \del _{b} X_{\mu} \end{bmatrix} = 
+        \begin{bmatrix} n^{0} _{a} \del _{b} X^{r} \\
+            n^{1} _{a} \del _{b} X^{r} \\
+            n^{2} _{a} \del _{b} X^{r} \\
+            n^{3} _{a} \del _{b} X^{r} \\
+            n^{\mu} _{a} n^{\nu} _{b} \eta _{\mu \nu} \end{bmatrix}
+\end{equation*}
+\begin{equation*}
+    \del _{a} \mc{A}_{b} X = \begin{bmatrix} \del _{a} n^{0} _{b} X^{r} \\
+        \del _{a} n^{1} _{b} X^{r} \\
+        \del _{a} n^{2} _{b} X^{r} \\
+        \del _{a} n^{3} _{b} X^{r} \\
+        \del _{a} n^{\mu} _{b} X_{\mu} \end{bmatrix}
+\end{equation*}
+\begin{equation*}
+    \mc{A}_{a} \mc{A}_{b} X = \mc{A}_{a} \begin{bmatrix} n^{0} _{b} X^{r} \\
+        n^{1} _{b} X^{r} \\
+        n^{2} _{b} X^{r} \\
+        n^{3} _{b} X^{r} \\
+        n^{\mu} _{b} X_{\mu} \end{bmatrix} = \begin{bmatrix} n^{0} _{a} n^{\mu} _{b} X_{\mu} \\
+            n^{1} _{a} n^{\mu} _{b} X_{\mu} \\
+            n^{2} _{a} n^{\mu} _{b} X_{\mu} \\
+            n^{3} _{a} n^{\mu} _{b} X_{\mu} \\
+            n^{\mu} _{a} n^{\nu} _{b} \eta _{\mu \nu} X^{r} \end{bmatrix}
+\end{equation*}
+\begin{equation*}
+    \downarrow
+\end{equation*}
+\begin{equation*}
+    \eta ^{a b} (\del _{a} \del _{b} X^{\mu} + 2 k \del _{a} X^{\mu} \del _{b} X^{r} + k \del_{a} \del_{b} X^{\mu} X^{r} + k^2 \del _{a} X^{\mu} \del _{b} X^{\nu} X_{\nu}) = 0
+\end{equation*}
+\begin{equation*}
+    \eta ^{a b} (\del _{a} \del _{b} X^{r} + 2 k \del _{a} X^{\mu} \del _{b} X_{\mu} + k \del _{a} \del _{b} X^{\mu} X_{\mu} + k^2 \del _{a} X^{\mu} \del _{b} X_{\mu} X^{r}) = 0
+\end{equation*}
+\begin{equation*}
+    \downarrow \del _{a} X^{\mu} \del _{b} X_{\mu} = \gamma _{a b} = \e ^{\varphi (x)} \eta _{a b}
+\end{equation*}
+\begin{equation*}
+    \eta ^{a b} ((1 + k X^{r}) \del _{a} \del _{b} X^{\mu} + k (2 \del _{b} X^{r} + k \del _{b} X^{\nu} X_{\nu}) \del _{a} X^{\mu}) = 0
+\end{equation*}
+\begin{equation*}
+    \eta ^{a b} \del _{a} \del _{b} X^{r} + 4 k \e ^{\varphi} + k \eta ^{a b} \del _{a} \del _{b} X^{\mu} X_{\mu} + 2 k^2 \e ^{\varphi} X^{r} = 0
+\end{equation*}
+\begin{equation*}
+    \downarrow
+\end{equation*}
+\begin{equation*}
+    \eta ^{a b} \left( \del _{a} \del _{b} X^{\mu} + \frac{k}{1 + k X^{r}} (2 \del _{a} X^{r} + k \del _{a} X^{\nu} X_{\nu}) \del _{b} X^{\mu} \right) = 0
+\end{equation*}
+\begin{equation*}
+    \eta ^{a b} \del _{a} \del _{b} X^{r} + 2 k^2 \e ^{\varphi} X^{r} + 4 k \e ^{\varphi} - \frac{k^2 \eta ^{a b}}{1 + k X^{r}} (2 \del _{a} X^{r} + k \del _{a} X^{\nu} X_{\nu}) \del _{b} X^{\mu} X_{\mu} = 0
 \end{equation*}
 
 \end{document}
