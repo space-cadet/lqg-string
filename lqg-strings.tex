@@ -232,15 +232,22 @@ and these are, in turn, functionals on the phase space of general relativity wri
 \begin{equation}
 	H_{GR} \ket{\Psi_{phys}} \equiv 0
 \end{equation}
-While this procedure is straightforward in principle, in practice it was impossible to implement in the quantum theory due to the highly complicated non-polynomial dependence of the diffeomorphism and Hamiltonian constraints on the configuration and momentum variables. This unfortunate state of affairs persisted until the late 1980s when Abhay Ashtekar \cite{Ashketar1986New,Ashtekar1987New} recast general relativity as a theory of a densitized Minkowski tetrad
-\begin{equation} \label{eqn:densitized-tetrad}
-	\widetilde{E}^{\mu} _I = \frac{1}{\sqrt{- g}} e^{\mu} _I
-\end{equation}
-and the self-dual part of the $\sltwoc$ spin-connection
+While this procedure is straightforward in principle, in practice it was impossible to implement in the quantum theory due to the highly complicated non-polynomial dependence of the diffeomorphism and Hamiltonian constraints on the configuration and momentum variables. This unfortunate state of affairs persisted until the late 1980s when Abhay Ashtekar \cite{Ashketar1986New,Ashtekar1987New} recast general relativity as a BF theory of a dualised $\mathfrak{sl} (2 , \C)$ connection (which becomes the self-dual part of said connection in the case of $\beta = i$)
 \begin{equation} \label{eqn:self-dual-spin-connection}
-	A_{\mu} ^{I J} = \omega ^{I J} _{\mu} - \frac{i}{2} \varepsilon ^{I J} _{\ \ K L} \omega ^{K L} _{\mu} .
+	A_{\mu} ^{I J} = \omega ^{I J} _{\mu} - \frac{\beta}{2} \varepsilon ^{I J} _{\ \ K L} \omega ^{K L} _{\mu}
 \end{equation}
-Ashtekar realized that the constraints of general relativity, when expressed in terms of these ``new variables'', simplified drastically and became polynomial functions of the tetrad and connection variables. It was quickly realized by various researchers that the resulting theory could be quantized using the same methods used to quantize Yang-Mills gauge theory \cite{Ashtekar1992Weaving,Ashtekar2004Background} and that the diffeomorphism constraint could be solved exactly in terms of so-called \emph{spin-network} states \cite{Rovelli1988Knot,Rovelli1990Loop,Ashtekar1992Gravitons}.
+and its conjugate momenta
+\begin{equation} \label{eqn:densitized-tetrad}
+	B^{I J} _{\mu \nu} = \left( \delta ^{I} _{K} \delta ^{J} _{L} + \frac{1}{2 \beta} \varepsilon ^{I J} _{\ \ K L} \right) e^{K} _{[ \mu} e^{L} _{\nu ]} ,
+\end{equation}
+which when restricted to a 3-dimensional hypersurface where $* (e \wedge e) = 0$ reduces to
+\begin{equation} \label{eqn:Ashtekar-connection-canonical}
+	A^{i} _{a} = \omega ^{i} _{a} + \beta K^{i} _{a}
+\end{equation}
+\begin{equation} \label{eqn:Ashtekar-E-field-canonical}
+	E^{a} _{i} = \sqrt{q} e^{a} _{i} = \frac{1}{2} \varepsilon ^{a b c} \varepsilon _{i j k} e^{j} _{b} e^{k} _{c} ,
+\end{equation}
+with $K^{i} _{a}$ being the triad version of the extrinsic curvature $K_{a b} = \frac{1}{2} \mathcal{L}_{n} q_{a b}$ and $q$ the 3-metric. Ashtekar realized that the constraints of general relativity, when expressed in terms of these ``new variables'', simplified drastically and became polynomial functions of the tetrad and connection variables. It was quickly realized by various researchers that the resulting theory could be quantized using the same methods used to quantize Yang-Mills gauge theory \cite{Ashtekar1992Weaving,Ashtekar2004Background} and that the diffeomorphism constraint could be solved exactly in terms of so-called \emph{spin-network} states \cite{Rovelli1988Knot,Rovelli1990Loop,Ashtekar1992Gravitons}.
 
 Following this, work by Rovelli and Smolin \cite{Rovelli1993Area,Rovelli1994Discreteness} demonstrated a remarkable feature of this theory, which came to be known as ``Loop Quantum Gravity'', was that one could construct quantum operators for geometric quantities such as areas of two-dimensional surfaces and volumes of three-dimensional regions. Moreover, these operators could be diagonalized exactly in the spin-network basis and a discrete spectrum for quantum of area and quantum of volume could be derived. This was the first time that physicists had discovered the ``atoms of space'' or the ``quanta of geometry'' in the true sense of the expression, in a theory of quantum gravity. One of the early triumphs of this formalism, which has unfortunately not received enough attention over the years by the larger high energy theory community, was the calculation of the entropy of a Schwarzschild black hole \cite{Rovelli1996Black} in a fully quantum mechanical framework and showing that it matched the expected expression $S \sim A/4$ for the Bekenstein-Hawking entropy.
 
