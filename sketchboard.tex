@@ -2360,7 +2360,56 @@ Assuming $|X^{I}| \ll 1$ leads to
     \eta ^{a b} \del _{a} \del _{b} X^{\mu} = 0
 \end{equation*}
 \begin{equation*}
-    \eta ^{a b} \del _{a} \del _{b} X^{r} + 2 k^{2} e^{\varphi} X^{r} = - 4 k e^{\varphi}
+    \eta ^{a b} \del _{a} \del _{b} X^{r} + 2 k^{2} e^{\varphi} X^{r} = - 4 k e^{\varphi} .
 \end{equation*}
+Renaming the coupling constant $k$ to $\mu$ for reasons which will become apparent, we write the solution for $X^{r}$ in terms of a Green's function satisfying
+\begin{equation*}
+    X^{r} (x) = - 4 \mu \int \diff ^{2} x' G (x ; x') \e ^{\varphi (x')} ,
+\end{equation*}
+\begin{equation*}
+    (\partial _{\sigma} ^{2} - \partial _{\tau} ^{2} + 2 \mu ^2 \e ^{\varphi}) G (x ; x') = \delta ^{2} (x , x') .
+\end{equation*}
+For the homogenous case $x \neq x'$, we can try to separate variables by assuming $G (x ; x') = X (\sigma , \sigma ') . T (\tau , \tau ')$ and dividing by $X.T$ leading to
+\begin{equation*}
+    \frac{X^{\prime \prime}}{X} - \frac{\ddot{T}}{T} + 2 \mu ^2 \e ^{\varphi} = 0 .
+\end{equation*}
+To proceed with separation of variables, we must assume $\e ^{\varphi} = f (\sigma) + g (\tau)$, which there is a special case which yields known solutions: let $\e ^{\varphi} = \omega ^2 \tau ^2 / 2 - k^2 \sigma ^2 / 2$, then
+\begin{equation*}
+    \left( \frac{X^{\prime \prime}}{X} - \mu ^2 k^2 \sigma ^2 \right) - \left( \frac{\ddot{T}}{T} - \mu ^2 \omega ^2 \tau ^2 \right) = 0 ,
+\end{equation*}
+and so if we let the quantities in parenthesis equal some constant $- \lambda$, we get 2 harmonic oscillator Schrodinger equations
+\begin{align*}
+    X^{\prime \prime} - \mu ^2 k^2 \sigma ^2 X & = - \lambda X \\
+    \ddot{T} - \mu ^2 \omega ^2 \tau ^2 T & = - \lambda T ,
+\end{align*}
+where we identify $\lambda = 2 \mu E = \mu k (2n + 1) = \mu \omega (2 n + 1)$, with regular dispersion relation
+\begin{equation*}
+    \omega = c k  .
+\end{equation*}
+The normalized eigenfunctions for this pair of equations are well known,
+\begin{align*}
+    X_{n} (\sigma) & = \frac{1}{\sqrt{2^{n} n!}} \left( \frac{\mu k}{\pi} \right) ^{1/4} \e ^{- \mu k \sigma ^2 / 2} H_{n} (\sqrt{\mu k} \sigma) \\
+    T_{m} (\tau) & = \frac{1}{\sqrt{2^{m} m!}} \left( \frac{\mu \omega}{\pi} \right) ^{1/4} \e ^{- \mu \omega \tau ^2 / 2} H_{m} (\sqrt{\mu \omega} \tau) ,
+\end{align*}
+with $H_{n} (x)$ being the usual Hermite polynomials
+\begin{equation*}
+    H_{n} (x) = (-1)^{n} \e^{x^{2}} \frac{\diff ^{n}}{\diff x^{n}} \left[ \e ^{- x^{2}} \right] .
+\end{equation*}
+As such, by the Spectral Theorem our separated spatial and temporal Green's functions are
+\begin{align*}
+    X (\sigma , \sigma ') & = \sum _{n \geq 0} \frac{- 1}{\mu k (2n + 1)} X_{n} (\sigma) X_{n} (\sigma ') \\
+    T (\tau , \tau ') & = \sum _{m \geq 0} \frac{- 1}{\mu \omega (2m + 1)} T_{m} (\tau) T_{m} (\tau ') ,
+\end{align*}
+since $X_{n}$ and $T_{m}$ are self-adjoint (both are real-valued), thus our Green's function is
+\begin{align*}
+    G (x ; x') & = T (\tau , \tau ') . X (\sigma , \sigma ') = \\
+    & = \sum _{m \geq 0} \sum _{n \geq 0} \frac{T_{m} (\tau) T_{m} (\tau ')}{\mu \omega (2m + 1)} \frac{X_{n} (\sigma) X_{n} (\sigma ')}{\mu k (2n + 1)} ,
+\end{align*}
+giving our solution for $X^{r}$:
+\begin{align*}
+    X^{r} & = - 4 \mu \int \diff ^{2} x' G (x ; x') \e ^{\varphi (x')} = \\
+    & = \boxed{- 4 \mu \sum _{m \geq 0} \sum _{n \geq 0} \frac{T_{m} (\tau)}{\mu \omega (2m + 1)} \frac{X_{n} (\sigma)}{\mu k (2n + 1)} \int \diff ^{2} x' T_{m} (\tau ') X_{n} (\sigma ') \left( \frac{\omega ^2 \tau ^{\prime 2}}{2} - \frac{k^2 \sigma ^{\prime 2}}{2} \right)} .
+\end{align*}
+Due to the fact that our source function is not written as a linear combination of our eigenfunctions, none of the terms of this sum are trivially 0, thus we must calculate the solution numerically by truncating at some desired point.
 
 \end{document}
