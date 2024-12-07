@@ -937,7 +937,7 @@ If one was to ask a beginning graduate student as to how one can incorporate a g
 \end{equation}
 where the covariant derivative $D_a$ is of the form:
 \begin{equation}\label{eqn:covariant-deriv-v1}
-	D_a X^\mu(\tau , \sigma) = \partial_a X^\mu + k \mc{A}_{a}^\mu{}_\nu X^\nu,
+	D_a X^\mu(\tau , \sigma) = \partial_a X^\mu + \mu \mc{A}_{a}^\mu{}_\nu X^\nu,
 \end{equation}
 where $\mc{A}_{a}^\mu{}_\nu$ is the gauge field and $k$ is the gauge coupling. A more experienced researcher would object saying that we know that the $X^\mu$ are spacetime co-ordinates and not vectors transforming under the gauge group $\mc G$. But we will see that this is not a problem. In fact, in order to be able to couple the string to an \emph{arbitrarily} curved geometry we will find that we \emph{require} the $X^\mu$ to transform as vectors under the action of some \emph{local} gauge field.
 
@@ -1019,7 +1019,7 @@ It is useful to see the explicit form of a $\mf{iso}(3,1)$ gauge connection. The
 		             b^1        & 0          & j^3        & -j^2       & p^1/l \\
 		             b^2        & -j^3       & 0          & j^1        & p^2/l \\
 		             b^3        & j^2        & -j^1       & 0          & p^3/l \\
-		             -\ep p^0/l & -\ep p^1/l & -\ep p^2/l & -\ep p^3/l & 0
+		             \ep p^0/l & -\ep p^1/l & -\ep p^2/l & -\ep p^3/l & 0
 	             \end{pmatrix} \nonumber \\
 	        & = j^i J_i + b^i B_i + \frac{1}{l}p^a P_a,
 \end{align}
@@ -1034,7 +1034,7 @@ Let us write down the gauged Polyakov action for the Poincaré lie algebra value
 \end{equation}
 where now the $X^A = \{X^\mu, X^r\}$ (as mentioned previously in \eqref{eqn:enlarged-Xs}) and $G_{AB}$ is the expanded metric on the $d+2$ enlarged bulk manifold $\mb{M}$ and the covariant derivative is of the form defined in \eqref{eqn:covariant-deriv-v1}, but only now acting on $X^A$ instead of on $X^\mu$:
 \begin{equation}\label{eqn:covariant-deriv-v2}
-	\mc{D}_a X^A(\tau , \sigma) = \partial_a X^A + k \mc{A}_{a}^A{}_B X^B.
+	\mc{D}_a X^A(\tau , \sigma) = \partial_a X^A + \mu \mc{A}_{a}^A{}_B X^B.
 \end{equation}
 Now, we will expand out the action \eqref{eqn:poincare-polyakov} and express it in terms of the $X^\mu$ and $X^r$ separately. It is clear that the resulting expression will be sum of three terms, with the first term being the (gauged) Polyakov action for the string on $\mb{\Gamma}$, terms describing the coupling of the string on $\mb{\Gamma}$ with fluctuations along the extra dimensions $X^r$ and finally a Polyakov like term for the lone extra dimension. We can write this schematically as:
 \begin{equation}\label{eqn:poincare-polyakov-decomp}
@@ -1057,6 +1057,99 @@ This is where the non-zero value of $\ep$ mentioned in \eqref{eqn:poincare-lie-a
 One might ask what is the motivation for introducing dS (adS) geometries into the discussion. The main motivation of course is the Maldacena or adS/CFT correspondence. The adS spacetime is usually understood to arise as a consequence of non-perturbative effects which nobody really has a proper understanding of as yet. One might hope that for a correspondence which has passed all possible checks uptil now, there should be some way to realise it in the classical theory also.
 
 What our discussion in this section shows, however, is that such a classical description is possible if we switch from the metric based approach to the connection based one for describing the background geometry and its coupling to the string worldsheet.
+
+\subsection{Gauged Polyakov Equations of Motion}
+
+By varying the action \eqref{eqn:poincare-polyakov}, we get two sets of constraints from the variation of $g_{a b}$ and $A_{a} ^{A B}$, namely the vanishing of the worldsheet energy-momentum and spin-linear-momentum tensors $T_{a b}$ and $\sigma _{a} ^{A B}$
+\begin{multline} \label{eqn:gauged-WS-EM-tensor}
+	T_{a b} : = \mc{D}_{a} X^{A} \mc{D}_{b} X^{B} G_{A B} - \\
+	- g_{a b} g^{c d} \mc{D}_{c} X^{A} \mc{D}_{d} X^{B} G_{A B} = 0
+\end{multline}
+\begin{equation}
+	\sigma ^{A B} _{a} : = \mc{D}_{a} X^{[A} X^{B]} = 0 .
+\end{equation}
+The former allows us to solve for the worldsheet \textquotedblleft covariant metric" $g_{a b}$ as
+\begin{equation} \label{eqn:gauged-WS-metric}
+	g_{a b} = 2 f \mc{D}_{a} X^{A} \mc{D}_{b} X^{B} G_{A B}
+\end{equation}
+where
+\begin{equation} \label{eqn:gauged-f-metric}
+	\frac{1}{f} = g^{a b} \mc{D}_{a} X^{A} \mc{D}_{b} X^{B} G_{A B} ,
+\end{equation}
+while the latter should allow one to solve for $\mc{A}_{a}$ in terms of $X^{A}$.
+
+The variation of the action \wrt $X^{A}$ results in the equation of motion of the embbeding fields
+\begin{multline} \label{eqn:gauged-X-EoM}
+	\mc{D}_{a} [\sqrt{- g} g^{a b} \mc{D}_{b} X^{B} G_{B C}] = \\
+	= \sqrt{g} g^{a b} \mc{D}_{a} X^{A} \mc{D}_{b} X^{B} \partial _{C} G_{A B} ,
+\end{multline}
+which in worldsheet \textquotedblleft covariant conformal gauge" $g^{a b} = \e ^{- \phi} \eta ^{a b}$ and for flat background geometry $G_{A B} = \eta ' _{A B}$ with
+\begin{equation} \label{eqn:flat-bulk-metric}
+	[\eta ' _{A B}] = \begin{bmatrix} [\eta _{\mu \nu}] & 0 \\ 0 & \epsilon \end{bmatrix}
+\end{equation}
+simplifies to
+\begin{equation}
+	\eta ^{a b} \mc{D}_{a} \mc{D}_{b} X^{A} \eta ' _{A B} = 0 .
+\end{equation}
+From here on, we'll work on the case of $\ep = - 1$ (adS background), for which the above equation can be expanded as
+\begin{multline} \label{eqn:expanded-gauged-X-EoM}
+	\eta ^{a b} \big( \del _{a} \del _{b} X^{A} + 2 \mu A^{A} _{a B} \del _{b} X^{B} + \\
+	+ \mu \del _{a} A^{A} _{b B} X^{B} + \mu ^2 A^{A} _{a B} A^{B} _{b C} X^{C} \big) = 0 .
+\end{multline}
+To produce the desired bulk geometry, the background connection can be taken as
+\begin{equation} \label{eqn:adS-bulk-connection}
+	\mc{A}_{\mu} = \begin{bmatrix} 0 & 0 & 0 & 0 & \delta ^{0} _{\mu} \\ 0 & 0 & 0 & 0 & \delta ^{1} _{\mu} \\ 0 & 0 & 0 & 0 & \delta ^{2} _{\mu} \\ 0 & 0 & 0 & 0 & \delta ^{3} _{\mu} \\ - \delta ^{0} _{\mu} & \delta ^{1} _{\mu} & \delta ^{2} _{\mu} & \delta ^{3} _{\mu} & 0 \end{bmatrix} ,
+\end{equation}
+from which the pulledback connection $\mc{A}_{a} = \del _{a} X^{\mu} \mc{A}_{\mu}$ is thus
+\begin{equation} \label{eqn:adS-WS-connection}
+	\mc{A}_{a} = \begin{bmatrix} 0 & 0 & 0 & 0 & \del _{a} X^{0} \\ 0 & 0 & 0 & 0 & \del _{a} X^{1} \\ 0 & 0 & 0 & 0 & \del _{a} X^{2} \\ 0 & 0 & 0 & 0 & \del _{a} X^{3} \\ - \del _{a} X^{0} & \del _{a} X^{1} & \del _{a} X^{2} & \del _{a} X^{3} & 0 \end{bmatrix} ,
+\end{equation}
+whereby imposing conformal gauge on the induced metric $\gamma _{a b} = \del _{a} X^{\mu} \del _{b} X^{\nu} \eta _{\mu \nu} = \e ^{\varphi} \eta _{a b}$ we can separate equations for the Minkowski sector $X^{\mu}$ and for the holographic dimension $X^{r}$:
+\begin{multline} \label{eqn:Minkowski-sector-EoM}
+	\eta ^{a b} \del _{a} \del _{b} X^{\mu} + \\
+	+ \frac{\mu \eta ^{a b}}{1 + \mu X^{r}} \left( 2 \del _{a} X^{r} + k \del _{a} X^{\nu} X_{\nu} \right) \del _{b} X^{\mu} = 0
+\end{multline}
+\begin{multline} \label{eqn:holographic-dim-EoM}
+	\eta ^{a b} \del _{a} \del _{b} X^{r} + 2 \mu ^2 \e ^{\varphi} X^{r} + 4 \mu \e ^{\varphi} - \\
+	- \frac{\mu ^2 \eta ^{a b}}{1 + \mu X^{r}} \left( 2 \del _{a} X^{r} + \mu \del _{a} X^{\nu} X_{\nu} \right) \del _{b} X^{\mu} X_{\mu} = 0 .
+\end{multline}
+Assuming the perturbations on the string are small $|X^{A}| \ll 1$, we get a massive simplification
+\begin{equation} \label{eqn:simplified-Minkowski-EoM}
+	\eta ^{a b} \del _{a} \del _{b} X^{\mu} = 0
+\end{equation}
+\begin{equation} \label{eqn:simplified-holographic-EoM}
+	\eta ^{a b} \del _{a} \del _{b} X^{r} + 2 \mu ^2 \e ^{\varphi} X^{r} = - 4 \mu \e ^{\varphi} .
+\end{equation}
+Thus, the Minkowski sector behaves like regular ST for small perturbations, and for the holographic dimension we can solve using a Green's function
+\begin{equation} \label{eqn:Xr-GF}
+	X^{r} (x) = - 4 \mu \int \diff ^2 x' G (x ; x') \e ^{\varphi (x')} ,
+\end{equation}
+with the Green's function satisfying
+\begin{equation} \label{eqn:Greens-function}
+	(\del _{\sigma} ^2 - \del _{\tau} ^2 + 2 \mu ^2 \e ^{\varphi}) G (x ; x') = \delta ^2 (x , x') .
+\end{equation}
+To find this Green's function, we must fix the conformal factor to be of the form $\e ^{\varphi} = f (\tau) - g (\sigma)$, thus allowing us to separate variables in the homogeneous case of eq \eqref{eqn:Greens-function} into
+\begin{equation} \label{eqn:Green-X}
+	X^{\prime \prime} - 2 \mu ^2 g (\sigma) X = - \lambda X
+\end{equation}
+\begin{equation} \label{eqn:Green-T}
+	\ddot{T} - 2 \mu ^2 f (\tau) T = - \lambda T .
+\end{equation}
+These are Schrodinger's equations for potentials given by $\mu f (\tau)$ and $\mu g (\sigma)$, as such if we assume that $f$ and $g$ are harmonic oscillator potentials $f (\tau) = \omega ^2 \tau ^2 / 2$ and $g (\sigma) = k^2 \sigma ^2 / 2$ we can find known solutions for separation constant $\lambda = 2 \mu E = \mu k (2n + 1) = \mu \omega (2n + 1)$, so by the Spectral Theorem our separated spatial and temporal Green's functions are
+\begin{equation} \label{eqn:X-function}
+	X (\sigma , \sigma ') = \sum _{n \geq 0} - \frac{X_{n} (\sigma) X_{n} (\sigma ')}{\mu k (2 n + 1)}
+\end{equation}
+\begin{equation} \label{eqn:T-function}
+	T (\tau , \tau ') = \sum _{m \geq 0} - \frac{T_{m} (\tau) T_{m} (\tau ')}{\mu \omega (2 m + 1)} ,
+\end{equation}
+where $X_{n}$ and $T_{m}$ are harmonic oscillator eigenfunctions. With this, the full Green's function $G = T.X$ and the solution for $X^{r}$ are thus
+\begin{equation} \label{eqn:G-function}
+	G (x ; x') = \sum _{m \geq 0} \sum _{n \geq 0} \frac{T_{m} (\tau) T_{m} (\tau ')}{\mu \omega (2 m + 1)} \frac{X_{n} (\sigma) X_{n} (\sigma ')}{\mu k (2 n + 1)}
+\end{equation}
+\begin{multline} \label{eqn:Xr-solution}
+	X^{r} (x) = - 4 \mu \sum _{m \geq 0} \sum _{n \geq 0} \frac{T_{m} (\tau)}{\mu \omega (2 m + 1)} \frac{X_{n} (\sigma)}{\mu k (2 n + 1)} \times \\
+	\times \int \diff ^2 x' T_{m} (\tau ') X_{n} (\sigma ') \left( \frac{\omega ^2 \tau ^{\prime 2}}{2} - \frac{k^2 \sigma ^{\prime 2}}{2} \right) .
+\end{multline}
 
 % \begin{align}
 % 	S'_{P} & = -\frac{T}{2} \int \diff^2 x \sqrt{-g} g^{ab} \left( \mc{D}_a X^\mu \mc{D}_b X^\nu \eta_{\mu\nu} + \right. \nonumber \\
@@ -1120,7 +1213,7 @@ In section \ref{sec:quantum-kg-string} we saw that our area-corrected model allo
 \begin{equation} \label{eqn:connection-string-vector-excitation}
 	\mc{A}_{\mu} \sim \eta _{\mu \nu} (\Hat{a}^{\nu} _{1})^{\dagger} \ket{0} .
 \end{equation}
-Another candidate for what the vector excitations could relate to is the Ashtekar electric fields $\widetilde{E}^{\mu} _{I}$,
+Another candidate for what the vector excitations could relate to is the Ashtekar electric field $\widetilde{E}^{\mu} _{I}$,
 \begin{equation} \label{eqn:AEF-string-vector-excitation}
 	\widetilde{E}^{\mu} _{I} \sim (\Hat{a}^{\mu} _{I})^{\dagger} \ket{0} .
 \end{equation}
