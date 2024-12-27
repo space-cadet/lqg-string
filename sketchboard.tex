@@ -2364,7 +2364,7 @@ Assuming $|X^{I}| \ll 1$ leads to
 \end{equation*}
 Renaming the coupling constant $k$ to $\mu$ since $2 \mu ^2 \e ^{\varphi}$ is sort of like a mass term, we write the solution for $X^{r}$ as a perturbation around the homogenous wave eqn solution using the 1d wave eqn Green's function
 \begin{equation*}
-    X^{r} (x) = X^{r} _{0} (x) - 2 \mu \int \diff ^{2} x' G (x ; x') \e ^{\varphi (x')} (2 + \mu X^{r} (x')) ,
+    X^{r} (x) = X^{r} _{0} (x) - 2 \mu \int \diff ^{2} x' G (x ; x') \e ^{\varphi (x')} (2 + \mu X^{r} (x')) = X^{r} _{0} + \delta X^{r} ,
 \end{equation*}
 \begin{equation*}
     (\partial _{\sigma} ^{2} - \partial _{\tau} ^{2}) X^{r} _{0} = 0
@@ -2380,14 +2380,8 @@ This can be used to build a iterative recursion for $X^{r}$
     \downarrow
 \end{equation*}
 \begin{equation*}
-    X^{r} (x) = X^{r} _{0} (x) + \sum _{k \geq 1} (- 2 \mu)^{k} \int (\diff ^2 x')^{k} (G' \e ^{\varphi '})^{k} (2 + \mu X^{r} _{0} (x^{(k)})) ,
+    X^{r} (x) = X^{r} _{0} (x) + \sum _{k \geq 1} (- 2)^{k} (\mu)^{2k - 1} \int \prod _{n = 1} ^{k} \diff ^2 x^{(n)} G (x^{(n - 1)} ; x^{(n)}) \e ^{\varphi (x^{(n)})} (2 + \mu X^{r} _{0} (x^{(k)})) ,
 \end{equation*}
-where
-\begin{equation*}
-    \int (\diff ^2 x')^{k} = \int \diff ^2 x^{(1)} \int \diff ^2 x^{(2)} ... \int \diff ^2 x^{(k)}
-\end{equation*}
-\begin{equation*}
-    (G' \e ^{\varphi '})^{k} = G (x ; x^{(1)}) \e ^{\varphi (x^{(1)})} G (x^{(1)} ; x^{(2)}) \e ^{\varphi (x^{(2)})} ... G (x^{(k-1)} ; x^{(k)}) \e ^{\varphi (x^{(k)})} .
-\end{equation*}
+with $x^{(0)} \equiv x$. The wave eqn Green's function $G (x ; x') = \frac{1}{2} \Theta (\tau - \tau ' - |\sigma - \sigma '|)$ just enforces causality on the integrals, thus the perturbation term $\delta X^{r}$ is a series of repeated integrals of a solution to the homogenous wave eqn times the conformal factor $e^{\varphi}$ induced from the 4d sector, with causality enforced.
 
 \end{document}
