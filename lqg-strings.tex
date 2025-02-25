@@ -1100,11 +1100,7 @@ To produce the desired bulk geometry, the background connection can be taken as
 \begin{equation} \label{eqn:adS-bulk-connection}
 	\mc{A}_{\mu} = \begin{bmatrix} 0 & 0 & 0 & 0 & \delta ^{0} _{\mu} \\ 0 & 0 & 0 & 0 & \delta ^{1} _{\mu} \\ 0 & 0 & 0 & 0 & \delta ^{2} _{\mu} \\ 0 & 0 & 0 & 0 & \delta ^{3} _{\mu} \\ - \delta ^{0} _{\mu} & \delta ^{1} _{\mu} & \delta ^{2} _{\mu} & \delta ^{3} _{\mu} & 0 \end{bmatrix} ,
 \end{equation}
-from which the pulledback connection $\mc{A}_{a} = \del _{a} X^{\mu} \mc{A}_{\mu}$ is thus
-\begin{equation} \label{eqn:adS-WS-connection}
-	\mc{A}_{a} = \begin{bmatrix} 0 & 0 & 0 & 0 & \del _{a} X^{0} \\ 0 & 0 & 0 & 0 & \del _{a} X^{1} \\ 0 & 0 & 0 & 0 & \del _{a} X^{2} \\ 0 & 0 & 0 & 0 & \del _{a} X^{3} \\ - \del _{a} X^{0} & \del _{a} X^{1} & \del _{a} X^{2} & \del _{a} X^{3} & 0 \end{bmatrix} ,
-\end{equation}
-whereby imposing conformal gauge on the induced metric $\gamma _{a b} = \del _{a} X^{\mu} \del _{b} X^{\nu} \eta _{\mu \nu} = \e ^{\varphi} \eta _{a b}$ we can separate equations for the Minkowski sector $X^{\mu}$ and for the holographic dimension $X^{r}$:
+from which the pulledback connection is $\mc{A}_{a} = \del _{a} X^{\mu} \mc{A}_{\mu}$, whereby imposing conformal gauge on the induced metric $\gamma _{a b} = \del _{a} X^{\mu} \del _{b} X^{\nu} \eta _{\mu \nu} = \e ^{\varphi} \eta _{a b}$ we can separate equations for the Minkowski sector $X^{\mu}$ and for the holographic dimension $X^{r}$:
 \begin{multline} \label{eqn:Minkowski-sector-EoM}
 	\eta ^{a b} \del _{a} \del _{b} X^{\mu} + \\
 	+ \frac{\mu \eta ^{a b}}{1 + \mu X^{r}} \left( 2 \del _{a} X^{r} + k \del _{a} X^{\nu} X_{\nu} \right) \del _{b} X^{\mu} = 0
@@ -1120,36 +1116,23 @@ Assuming the perturbations on the string are small $|X^{A}| \ll 1$, we get a mas
 \begin{equation} \label{eqn:simplified-holographic-EoM}
 	\eta ^{a b} \del _{a} \del _{b} X^{r} + 2 \mu ^2 \e ^{\varphi} X^{r} = - 4 \mu \e ^{\varphi} .
 \end{equation}
-Thus, the Minkowski sector behaves like regular ST for small perturbations, and for the holographic dimension we can solve using a Green's function
-\begin{equation} \label{eqn:Xr-GF}
-	X^{r} (x) = - 4 \mu \int \diff ^2 x' G (x ; x') \e ^{\varphi (x')} ,
-\end{equation}
-with the Green's function satisfying
-\begin{equation} \label{eqn:Greens-function}
-	(\del _{\sigma} ^2 - \del _{\tau} ^2 + 2 \mu ^2 \e ^{\varphi}) G (x ; x') = \delta ^2 (x , x') .
-\end{equation}
-To find this Green's function, we must fix the conformal factor to be of the form $\e ^{\varphi} = f (\tau) - g (\sigma)$, thus allowing us to separate variables in the homogeneous case of eq \eqref{eqn:Greens-function} into
-\begin{equation} \label{eqn:Green-X}
-	X^{\prime \prime} - 2 \mu ^2 g (\sigma) X = - \lambda X
-\end{equation}
-\begin{equation} \label{eqn:Green-T}
-	\ddot{T} - 2 \mu ^2 f (\tau) T = - \lambda T .
-\end{equation}
-These are Schrodinger's equations for potentials given by $\mu f (\tau)$ and $\mu g (\sigma)$, as such if we assume that $f$ and $g$ are harmonic oscillator potentials $f (\tau) = \omega ^2 \tau ^2 / 2$ and $g (\sigma) = k^2 \sigma ^2 / 2$ we can find known solutions for separation constant $\lambda = 2 \mu E = \mu k (2n + 1) = \mu \omega (2n + 1)$, so by the Spectral Theorem our separated spatial and temporal Green's functions are
-\begin{equation} \label{eqn:X-function}
-	X (\sigma , \sigma ') = \sum _{n \geq 0} - \frac{X_{n} (\sigma) X_{n} (\sigma ')}{\mu k (2 n + 1)}
-\end{equation}
-\begin{equation} \label{eqn:T-function}
-	T (\tau , \tau ') = \sum _{m \geq 0} - \frac{T_{m} (\tau) T_{m} (\tau ')}{\mu \omega (2 m + 1)} ,
-\end{equation}
-where $X_{n}$ and $T_{m}$ are harmonic oscillator eigenfunctions. With this, the full Green's function $G = T.X$ and the solution for $X^{r}$ are thus
-\begin{equation} \label{eqn:G-function}
-	G (x ; x') = \sum _{m \geq 0} \sum _{n \geq 0} \frac{T_{m} (\tau) T_{m} (\tau ')}{\mu \omega (2 m + 1)} \frac{X_{n} (\sigma) X_{n} (\sigma ')}{\mu k (2 n + 1)}
-\end{equation}
-\begin{multline} \label{eqn:Xr-solution}
-	X^{r} (x) = - 4 \mu \sum _{m \geq 0} \sum _{n \geq 0} \frac{T_{m} (\tau)}{\mu \omega (2 m + 1)} \frac{X_{n} (\sigma)}{\mu k (2 n + 1)} \times \\
-	\times \int \diff ^2 x' T_{m} (\tau ') X_{n} (\sigma ') \left( \frac{\omega ^2 \tau ^{\prime 2}}{2} - \frac{k^2 \sigma ^{\prime 2}}{2} \right) .
+Thus, the Minkowski sector behaves like regular ST for small perturbations, while the holographic coordinate $X^{r}$ follows a variable-mass Klein-Gordon equation with source. Now it should be clear why the choice of $\mu$ for the coupling constant, since in \eqref{eqn:simplified-holographic-EoM} it appears (together with the conformal factor) as a mass term for our perturbation. Eq \eqref{eqn:simplified-holographic-EoM} can be solved using the 1d wave equation Green's function to build a perturbation around the homogenous wave equation solution
+\begin{multline} \label{eqn:holo-sol-implicit}
+	X^{r} (x) = X^{r} _{0} (x) - \\ - 2 \mu \int \diff ^2 x' G (x ; x') \e ^{\varphi (x')} (2 + \mu X^{r} (x')) = \\ = X^{r} _{0} (x) + \delta X^{r} (x),
 \end{multline}
+where $X^{r} _{0}$ is a solution for the homogenous wave equation
+\begin{equation} \label{eqn:homo-wave-eqn}
+	(\partial _{\sigma} ^{2} - \del _{\tau} ^{2}) X^{r} _{0} = 0
+\end{equation}
+and $G (x ; x') = \frac{1}{2} \Theta (\tau - \tau ' - |\sigma - \sigma '|)$ its Green's function
+\begin{equation} \label{eqn:homo-wave-eqn-GF}
+	(\partial _{\sigma} ^{2} - \del _{\tau} ^{2}) G (x ; x') = \delta ^{2} (x ; x') .
+\end{equation}
+From \eqref{eqn:holo-sol-implicit}, a recursion can be built, leading to a more explicit form
+\begin{multline}
+	X^{r} (x) = X^{r} _{0} (x) + \\ + \sum _{k \geq 1} (- 2)^{k} (\mu)^{2 k -1} \int \prod _{n = 1} ^{k} \diff ^{2} x^{(n)} G (x^{(n - 1)} ; x^{(n)}) \e ^{\varphi (x^{(n)})} \times \\ \times (2 + \mu X^{r} _{0} (x^{(k)})) ,
+\end{multline}
+with $x^{(0)} \equiv x$.
 
 % \begin{align}
 % 	S'_{P} & = -\frac{T}{2} \int \diff^2 x \sqrt{-g} g^{ab} \left( \mc{D}_a X^\mu \mc{D}_b X^\nu \eta_{\mu\nu} + \right. \nonumber \\
@@ -1213,9 +1196,9 @@ In section \ref{sec:quantum-kg-string} we saw that our area-corrected model allo
 \begin{equation} \label{eqn:connection-string-vector-excitation}
 	\mc{A}_{\mu} \sim \eta _{\mu \nu} (\Hat{a}^{\nu} _{1})^{\dagger} \ket{0} .
 \end{equation}
-Another candidate for what the vector excitations could relate to is the Ashtekar electric field $\widetilde{E}^{\mu} _{I}$,
+Another candidate for what the vector excitations could relate to is the $D = 3 + 1$ Ashtekar electric field $\widetilde{E}^{a} _{i}$,
 \begin{equation} \label{eqn:AEF-string-vector-excitation}
-	\widetilde{E}^{\mu} _{I} \sim (\Hat{a}^{\mu} _{I})^{\dagger} \ket{0} .
+	\widetilde{E}^{a} _{i} \sim (\Hat{a}^{a} _{i})^{\dagger} \ket{0} .
 \end{equation}
 
 \begin{acknowledgments}
