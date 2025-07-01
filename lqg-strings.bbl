@@ -34,6 +34,16 @@ C.~Rovelli, {\it Black {{Hole Entropy}} from {{Loop Quantum Gravity}}.},  {\em
   Physical review letters} {\bf 77} (Mar., 1996) 3288--3291,
   [\href{http://arxiv.org/abs/gr-qc/9603063}{{\tt gr-qc/9603063}}].
 
+\bibitem{Borissova2024From}
+J.~Borissova and P.-M. Ho, {\it From area metric backgrounds to cosmological
+  constant and corrections to the {{Polyakov}} action},  Apr., 2024.
+
+\bibitem{Afshordi2014Emergent}
+N.~Afshordi and D.~Stojkovic, {\it Emergent spacetime in stochastically
+  evolving dimensions},  {\em Physics Letters, Section B: Nuclear, Elementary
+  Particle and High-Energy Physics} {\bf 739} (May, 2014) 117--124,
+  [\href{http://arxiv.org/abs/1405.3297}{{\tt arXiv:1405.3297}}].
+
 \bibitem{Ashketar1986New}
 A.~Ashtekar, {\it New variables for classical and quantum gravity},  {\em
   Physical Review Letters} {\bf 57} (Nov., 1986) 2244--2247.
@@ -65,6 +75,31 @@ A.~Ashtekar, C.~Rovelli, and L.~Smolin, {\it Gravitons and {{Loops}}},  {\em
 
 \bibitem{Bodendorfer-LQG}
 N.~Bodendorfer, {\it An elementary introduction to loop quantum gravity}, .
+
+\bibitem{Hohm2017Background}
+O.~Hohm, {\it On {{Background Independence}} and {{Duality Invariance}} in
+  {{String Theory}}},  {\em Physical Review Letters} {\bf 118} (Mar., 2017)
+  131601, [\href{http://arxiv.org/abs/1612.03966}{{\tt arXiv:1612.03966}}].
+
+\bibitem{Hohm2018Background}
+O.~Hohm, {\it On {{Background Independence}} in {{String Theory}}},  {\em
+  International Journal of Modern Physics D} {\bf 27} (Oct., 2018) 1847026,
+  [\href{http://arxiv.org/abs/1806.08704}{{\tt arXiv:1806.08704}}].
+
+\bibitem{Maccaferri2024String}
+C.~Maccaferri, {\it String {{Field Theory}}},
+\newblock Apr., 2024.
+\newblock \href{http://arxiv.org/abs/2308.00875}{{\tt arXiv:2308.00875}}.
+
+\bibitem{Sen1994Quantum}
+A.~Sen and B.~Zwiebach, {\it Quantum {{Background Independence}} of {{Closed
+  String Field Theory}}},  {\em Nuclear Physics B} {\bf 423} (July, 1994)
+  580--630, [\href{http://arxiv.org/abs/hep-th/9311009}{{\tt hep-th/9311009}}].
+
+\bibitem{Read2023Background}
+J.~Read and J.~Read, {\em Background {{Independence}} in {{Classical}} and
+  {{Quantum Gravity}}}.
+\newblock Oxford University Press, Oxford, New York, Nov., 2023.
 
 \bibitem{Maldacena1998The-Large}
 J.~Maldacena, {\it The large {{N Limit}} of superconformal field theories and
@@ -124,16 +159,6 @@ F.~Pastawski, B.~Yoshida, D.~Harlow, and J.~Preskill, {\it Holographic quantum
   error-correcting codes: Toy models for the bulk/boundary correspondence},
   {\em Journal of High Energy Physics} {\bf 2015} (2015), no.~6 149,
   [\href{http://arxiv.org/abs/1503.06237}{{\tt arXiv:1503.06237}}].
-
-\bibitem{Borissova2024From}
-J.~Borissova and P.-M. Ho, {\it From area metric backgrounds to cosmological
-  constant and corrections to the {{Polyakov}} action},  Apr., 2024.
-
-\bibitem{Afshordi2014Emergent}
-N.~Afshordi and D.~Stojkovic, {\it Emergent spacetime in stochastically
-  evolving dimensions},  {\em Physics Letters, Section B: Nuclear, Elementary
-  Particle and High-Energy Physics} {\bf 739} (May, 2014) 117--124,
-  [\href{http://arxiv.org/abs/1405.3297}{{\tt arXiv:1405.3297}}].
 
 \bibitem{Rosen1940General}
 N.~Rosen, {\it General {{Relativity}} and {{Flat Space}}. {{I}}},  {\em

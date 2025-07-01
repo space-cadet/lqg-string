@@ -8,4 +8,5 @@
 **/*.dep
 **/*.fdb_latexmk
 **/*.fls
+**/*.dvi
 **/*.synctex.gz
