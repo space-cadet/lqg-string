@@ -1,17 +1,11 @@
 
-.DS_Store
-lqg-strings.aux
-lqg-strings.blg
-lqg-strings.log
-lqg-strings.out
-lqg-strings.toc
-lqg-strings.dep
-PDF/lqg-strings.aux
-PDF/lqg-strings.fdb_latexmk
-PDF/lqg-strings.fls
-PDF/lqg-strings.log
-PDF/lqg-strings.synctex.gz
-PDF/lqg-strings.toc
-PDF/lqg-strings.dep
-PDF/lqg-strings.toc
-*.synctex.gz
+**/.DS_Store
+**/*.aux
+**/*.blg
+**/*.log
+**/*.out
+**/*.toc
+**/*.dep
+**/*.fdb_latexmk
+**/*.fls
+**/*.synctex.gz
