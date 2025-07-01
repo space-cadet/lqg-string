@@ -1,28 +1,62 @@
-\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{1}
+\begin{thebibliography}{}
 
-\bibitem{Hohm2017Background}
-O.~Hohm, {\it On {{Background Independence}} and {{Duality Invariance}} in
-  {{String Theory}}},  {\em Physical Review Letters} {\bf 118} (Mar., 2017)
-  131601, [\href{http://arxiv.org/abs/1612.03966}{{\tt arXiv:1612.03966}}].
+\bibitem[Amati et~al., 1989]{Amati1989Canb}
+Amati, D., Ciafaloni, M., and Veneziano, G. (1989).
+\newblock Can spacetime be probed below the string size?
+\newblock {\em Physics Letters B}, 216(1):41--47.
 
-\bibitem{Hohm2018Background}
-O.~Hohm, {\it On {{Background Independence}} in {{String Theory}}},  {\em
-  International Journal of Modern Physics D} {\bf 27} (Oct., 2018) 1847026,
-  [\href{http://arxiv.org/abs/1806.08704}{{\tt arXiv:1806.08704}}].
+\bibitem[Chang et~al., 2011]{Chang2011Minimal}
+Chang, L.~N., Lewis, Z., Minic, D., and Takeuchi, T. (2011).
+\newblock On the {{Minimal Length Uncertainty Relation}} and the
+  {{Foundations}} of {{String Theory}}.
+\newblock {\em Advances in High Energy Physics}, 2011:1--30.
 
-\bibitem{Maccaferri2024String}
-C.~Maccaferri, {\it String {{Field Theory}}},
-\newblock Apr., 2024.
-\newblock \href{http://arxiv.org/abs/2308.00875}{{\tt arXiv:2308.00875}}.
+\bibitem[Gross and Mende, 1987]{Gross1987Highenergy}
+Gross, D.~J. and Mende, P.~F. (1987).
+\newblock The high-energy behavior of string scattering amplitudes.
+\newblock {\em Physics Letters B}, 197(1):129--134.
 
-\bibitem{Sen1994Quantum}
-A.~Sen and B.~Zwiebach, {\it Quantum {{Background Independence}} of {{Closed
-  String Field Theory}}},  {\em Nuclear Physics B} {\bf 423} (July, 1994)
-  580--630, [\href{http://arxiv.org/abs/hep-th/9311009}{{\tt hep-th/9311009}}].
+\bibitem[Gross and Mende, 1988]{Gross1988String}
+Gross, D.~J. and Mende, P.~F. (1988).
+\newblock String {{Theory Beyond}} the {{Planck Scale}}.
+\newblock {\em Nucl. Phys. B}, 303:407--454.
 
-\bibitem{Read2023Background}
-J.~Read and J.~Read, {\em Background {{Independence}} in {{Classical}} and
-  {{Quantum Gravity}}}.
-\newblock Oxford University Press, Oxford, New York, Nov., 2023.
+\bibitem[Hohm, 2017]{Hohm2017Background}
+Hohm, O. (2017).
+\newblock On {{Background Independence}} and {{Duality Invariance}} in {{String
+  Theory}}.
+\newblock {\em Physical Review Letters}, 118(13):131601.
 
-\end{thebibliography}\endgroup
+\bibitem[Hohm, 2018]{Hohm2018Background}
+Hohm, O. (2018).
+\newblock On {{Background Independence}} in {{String Theory}}.
+\newblock {\em International Journal of Modern Physics D}, 27(14):1847026.
+
+\bibitem[Maccaferri, 2024]{Maccaferri2024String}
+Maccaferri, C. (2024).
+\newblock String {{Field Theory}}.
+
+\bibitem[Read and Read, 2023]{Read2023Background}
+Read, J. and Read, J. (2023).
+\newblock {\em Background {{Independence}} in {{Classical}} and {{Quantum
+  Gravity}}}.
+\newblock Oxford University Press, Oxford, New York.
+
+\bibitem[Sen and Zwiebach, 1994]{Sen1994Quantum}
+Sen, A. and Zwiebach, B. (1994).
+\newblock Quantum {{Background Independence}} of {{Closed String Field
+  Theory}}.
+\newblock {\em Nuclear Physics B}, 423(2-3):580--630.
+
+\bibitem[Yoneya, 1989]{Yoneya1989Interpretation}
+Yoneya, T. (1989).
+\newblock On the {{Interpretation}} of {{Minimal Length}} in {{String
+  Theories}}.
+\newblock {\em Mod. Phys. Lett. A}, 4:1587.
+
+\bibitem[Yoneya, 2000]{Yoneya2000String}
+Yoneya, T. (2000).
+\newblock String {{Theory}} and the {{Space-Time Uncertainty Principle}}.
+\newblock {\em Progress of Theoretical Physics}, 103(6):1081--1125.
+
+\end{thebibliography}

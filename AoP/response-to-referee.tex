@@ -1,4 +1,5 @@
 \documentclass{article}
+\usepackage[square,comma]{natbib}
 \def\lettertitle{Author Response to Reviews of}
 \def\papertitle{A Loop Quantum Gravity Inspired Action for the Bosonic String and Emergent Dimensions at Large Scales}
 \def\authors{Deepak Vaid and Luigi Teixeira de Sousa}
@@ -15,15 +16,22 @@ We thank the referee for their thorough and constructive review of our manuscrip
 
 \RC The introduction contrasts string theory and LQG, highlighting their respective strengths and limitations. The discussion of background independence in string theory could benefit from references to more recent critiques or developments such as recent advances in non-perturbative string theory.
 
-\AR We have added the following two footnotes with references to recent critiques of string theory's background independence \cite{Hohm2017Background,Hohm2018Background} and recent advances in non-perturbative string theory \cite{Maccaferri2024String,Sen1994Quantum}:
+\AR We have added the following two footnotes with references to recent critiques of string theory's background independence \citep{Hohm2017Background,Hohm2018Background} and recent advances in non-perturbative string theory \citep{Maccaferri2024String,Sen1994Quantum}:
 
-\emph{Recent work has highlighted fundamental challenges to achieving manifest background independence in string theory. Hohm has shown that there exists a fundamental conflict between manifest background independence and duality invariance when higher-derivative corrections are included \cite{Hohm2017Background,Hohm2018Background}.}
+\emph{Recent work has highlighted fundamental challenges to achieving manifest background independence in string theory. Hohm has shown that there exists a fundamental conflict between manifest background independence and duality invariance when higher-derivative corrections are included \citep{Hohm2017Background,Hohm2018Background}.}
 
-\emph{Developments in string field theory continue to address these foundational issues \cite{Maccaferri2024String,Sen1994Quantum} primarily in the framework of string field theory. For an overview of the general concept of background independence in quantum gravity see \cite{Read2023Background}.}
+\emph{Developments in string field theory continue to address these foundational issues \citep{Maccaferri2024String,Sen1994Quantum} primarily in the framework of string field theory. For an overview of the general concept of background independence in quantum gravity see \citep{Read2023Background}.}
 
 \RC The "central dogma" (minimal area $\Delta$) is well-motivated from LQG but could be better contextualized within existing string theory literature, where minimal length scales are discussed. The paper's goals are clearly stated, but the transition to the modified Nambu-Goto action feels abrupt, a smoother connection between LQG's area quantization and the string action would improve this.
 
-\AR 
+\AR We have added the following paragraphs, including the new references \citep{Amati1989Canb,Chang2011Minimal,Gross1987Highenergy,Gross1988String,Yoneya1989Interpretation,Yoneya2000String}, after the central dogma statement, in order to make the transition between LQG's area quantization and the modified Nambu-Goto action smoother and to include a comparison with previous minimal length proposals in string theory:
+
+\emph{The key insight is to translate this fundamental discreteness of area from spacetime geometry to the worldsheet of the string itself. In LQG, the eigenvalues of the area operator are discrete, meaning physical areas can only take values from a quantized spectrum with minimum eigenvalue $\Delta$. For a string worldsheet, this suggests that the total worldsheet area $\mathcal{A} = \int d^2\sigma \sqrt{-h}$ cannot be arbitrarily small but must satisfy $\mathcal{A} \geq \Delta$.}
+
+\emph{Rather than imposing this constraint externally, we incorporate it directly into the action by modifying the area element itself. The natural way to ensure the worldsheet area respects LQG's minimal area is to replace the standard area element $\sqrt{-h}$ with $\sqrt{-(h+k\Delta)}$ where $k = l_{pl}/l_s$ is the ratio of Planck to string scales. This modification has several appealing features: it reduces to the standard Nambu-Goto action when $k \to 0$, it ensures the worldsheet area can never become arbitrarily small, and it provides a concrete mechanism to incorporate LQG's geometric quantization into string theory.}
+
+\emph{This approach differs from previous minimal length proposals in string theory \citep{Amati1989Canb,Chang2011Minimal,Gross1987Highenergy,Gross1988String,Yoneya1989Interpretation,Yoneya2000String} in that it specifically targets area rather than length, reflecting LQG's emphasis on area as the fundamental geometric observable.}
+
 
 \subsection{Section 2 - Part (a): Action Justification}
 
@@ -151,7 +159,7 @@ We confirm that we will submit the following files with our revision:
     \item Highlights file (3-5 bullet points, maximum 85 characters each)
 \end{itemize}
 
-\bibliographystyle{JHEP3}
+\bibliographystyle{apalike}
 
 \bibliography{../lqg-strings.bib}
 
