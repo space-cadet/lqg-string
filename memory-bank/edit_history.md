@@ -1,11 +1,17 @@
 # Edit History
 
 _Created: 2025-07-01_
-_Last Updated: 2025-07-02 11:37:00 IST_
+_Last Updated: 2025-07-02 12:42:07 IST_
 
 ### 2025-07-02
 
+#### 12:42 - T2: Sections 3-4 Reviewer Responses Complete
+
+- Updated `AoP/response-to-referee.tex` - Added complete responses for Section 3(a-c) and Section 4(a-b) reviewer comments
+- Modified `lqg-strings.tex` - Added Boulware-Deser ghost limitation paragraph in Section 3; expanded coupling explanation after equation 4.10 for dilaton-like behavior; removed exactness discussion from Section 4.2 as tangential to main argument
+
 #### 11:37 - T2: Section 2 Responses Complete
+
 - Updated `AoP/response-to-referee.tex` - Added responses for Section 2(a) action justification with ansatz acknowledgment, 2(b) expansion parameter validity with LQG emergence picture, 2(c) duality interpretation connecting to T/S-duality structure
 - Updated `lqg-strings.tex` - Added paragraph after S_MNG equation explaining ansatz nature and post-hoc validation through Kalb-Ramond connection
 - Updated `tasks/T2.md` - Marked Section 2 progress step 4 as in-progress with completed subsections

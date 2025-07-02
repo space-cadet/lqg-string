@@ -5,11 +5,20 @@ Amati, D., Ciafaloni, M., and Veneziano, G. (1989).
 \newblock Can spacetime be probed below the string size?
 \newblock {\em Physics Letters B}, 216(1):41--47.
 
+\bibitem[Bruno~Balthazar, 2023]{Balthazar-t-backgrounds}
+Bruno~Balthazar, Jinwei~Chu, D.~K. (2023).
+\newblock On time-dependent backgrounds in 1+1 dimensional string theory.
+
 \bibitem[Chang et~al., 2011]{Chang2011Minimal}
 Chang, L.~N., Lewis, Z., Minic, D., and Takeuchi, T. (2011).
 \newblock On the {{Minimal Length Uncertainty Relation}} and the
   {{Foundations}} of {{String Theory}}.
 \newblock {\em Advances in High Energy Physics}, 2011:1--30.
+
+\bibitem[{de Rham} et~al., 2011]{de-Rham2011Resummation}
+{de Rham}, C., Gabadadze, G., and Tolley, A.~J. (2011).
+\newblock Resummation of {{Massive Gravity}}.
+\newblock {\em Physical Review Letters}, 106(23):231101.
 
 \bibitem[Gross and Mende, 1987]{Gross1987Highenergy}
 Gross, D.~J. and Mende, P.~F. (1987).
@@ -20,6 +29,11 @@ Gross, D.~J. and Mende, P.~F. (1987).
 Gross, D.~J. and Mende, P.~F. (1988).
 \newblock String {{Theory Beyond}} the {{Planck Scale}}.
 \newblock {\em Nucl. Phys. B}, 303:407--454.
+
+\bibitem[Hassan and Rosen, 2012]{Hassan2012Bimetric}
+Hassan, S.~F. and Rosen, R.~A. (2012).
+\newblock Bimetric {{Gravity}} from {{Ghost-free Massive Gravity}}.
+\newblock {\em Journal of High Energy Physics}, 2012(2):126.
 
 \bibitem[Hohm, 2017]{Hohm2017Background}
 Hohm, O. (2017).
@@ -47,6 +61,10 @@ Sen, A. and Zwiebach, B. (1994).
 \newblock Quantum {{Background Independence}} of {{Closed String Field
   Theory}}.
 \newblock {\em Nuclear Physics B}, 423(2-3):580--630.
+
+\bibitem[Tong, 2009]{Tong2009Lectures}
+Tong, D. (2009).
+\newblock Lectures on {{String Theory}}.
 
 \bibitem[Yoneya, 1989]{Yoneya1989Interpretation}
 Yoneya, T. (1989).
