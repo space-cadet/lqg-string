@@ -25,6 +25,7 @@ _Last Updated: 2025-07-05 22:36:14 IST_
 
 **Files**: `lqg-strings.tex`, `AoP/` directory, reviewer response document
 **Notes**: Sections 1-7 responses complete. Discussion section improvements and general proofreading remaining.
+**Notes**: Sections 1-7 responses complete. Discussion section improvements and general proofreading remaining.
 
 ## Completed Tasks
 
