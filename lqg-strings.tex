@@ -904,6 +904,8 @@ It is important to clarify what we mean by ``no anomalies'' in this context. Thi
 
 This differs fundamentally from standard string theory, where anomaly cancellation requires critical dimensions ($D = 26$ for bosonic strings) to ensure vanishing of the central charge from an infinite sum over modes. Our finite sum naturally avoids this constraint, permitting unconstrained background dimensionality $D$. However, this result applies specifically to our truncated model in the regime where $k \ll 1$, where the smooth worldsheet approximation remains valid. In the full quantum gravitational regime where $k \sim 1$, the discrete structure of the underlying spin network becomes manifest and a more comprehensive analysis would be required.
 
+Additionally, our anomaly-freedom and ghost-freedom analysis is limited to the tree-level constraints; quantum loop corrections and the full quantum effective action may introduce subtleties not captured in this treatment.
+
 The mode truncation is a key assumption that requires validation. While we do not have a rigorous derivation from first principles, the physical motivation comes from LQG's discrete structure: high-frequency modes corresponding to sub-Planckian physics should be suppressed when the spin network discreteness becomes relevant. The parameter $\mu$ in \eqref{eqn:mu-constraint-1} provides an effective energy cutoff, with modes $|n| > d \approx \mu$ being suppressed.
 
 This approach shares similarities with other discrete quantum gravity approaches like causal dynamical triangulation and spin foam models, which also impose natural cutoffs. However, a complete justification would require deriving this truncation directly from LQG's canonical quantization procedure, which remains an open question for future work.
@@ -1093,8 +1095,10 @@ One can now argue along the same lines as the original arguments which led to th
 
 This is where the non-zero value of $\ep$ mentioned in \eqref{eqn:poincare-lie-algeba} come into play. It turns out that for $\ep = +1$ ($\ep = -1$) the connection in \eqref{eqn:poincare-lie-algeba} describes a $\mf{so}(4,1)$ ($\mf{so}(3,2)$) connection respectively. These describe the symmetries of (asymptotically) deSitter and anti-deSitter spacetimes respectively. The length scale $l$ determines the value of the effective cosmological constant in the dS (adS) geometries:
 \begin{equation}\label{eqn:cosmological-constant}
-	\lambda = \frac{3 \ep}{l^2}.
+	\Lambda = \frac{3 \ep}{l^2}.
 \end{equation}
+Given the observed cosmological constant $\Lambda \approx 1.47 \times 10^{-52} \text{m}^{-2}$ \cite{Collaboration2020Planck}, eq \eqref{eqn:cosmological-constant} implies that $l \approx 1.4 \times 10^{26} \text{m}$. This happens to coincide with the scale of the cosmological horizon \cite{Peebles2003Cosmological}. This would suggest that the scale of the emergent dimension $X^r$ is of the order of the cosmological horizon. Of course, this is a very naive ``back of the envelope'' calculation and would require further investigation to place on a firmer footing.
+
 One might ask what is the motivation for introducing dS (adS) geometries into the discussion. The main motivation of course is the Maldacena or adS/CFT correspondence. The adS spacetime is usually understood to arise as a consequence of non-perturbative effects which nobody really has a proper understanding of as yet. One might hope that for a correspondence which has passed all possible checks uptil now, there should be some way to realise it in the classical theory also.
 
 What our discussion in this section shows, however, is that such a classical description is possible if we switch from the metric based approach to the connection based one for describing the background geometry and its coupling to the string worldsheet.
@@ -1247,6 +1251,14 @@ Another candidate for what the vector excitations could relate to is the $D = 3 
 \begin{equation} \label{eqn:AEF-string-vector-excitation}
 	\widetilde{E}^{a} _{i} \sim (\Hat{a}^{a} _{i})^{\dagger} \ket{0} .
 \end{equation}
+
+\subsection{Open Questions and Future Directions}\label{sec:open-questions}
+
+While our work establishes a promising framework for incorporating LQG insights into string theory, several fundamental questions remain open. Building on the pioneering work of Smolin \cite{Smolin1998Strings} and Markopoulou \cite{Markopoulou1997Causal}, a more complete framework is needed to show how smooth worldsheet geometries emerge from the discrete, punctured surfaces of spin networks in Loop Quantum Gravity. Our earlier work \cite{Vaid2017Connecting} established that the Nambu-Goto action can be viewed as the expectation value of the LQG area operator, but the detailed emergence mechanism requires further development.
+
+The physical interpretation of the emergent holographic dimension $X^r$ also requires further study. Understanding the physical nature of this dimension and its emergence mechanism represents a key theoretical challenge, though the connection to Afshordi's model provides important guidance.
+
+Perhaps most significantly, the relationship between our modified constraint algebra and the fundamental structure of spacetime at the Planck scale requires clarification. Do the two-index Virasoro generators correspond to a deeper geometric principle? Can they be understood by some suitable deformation of the Virasoro algebra to incorporate the cutoff of the sum over Virasoro modes?
 
 \begin{acknowledgments}
 	DV would like to thank Thomas van Riet for going over an early draft of this work and for his valuable comments. DV and LdS would both like to thank David Schmidtt for his very valuable observations regarding the nature of the $\Delta$ field and its relation to the Kalb-Ramond field, and also the equivalence of the area corrected action with a Born-Infeld model in the worldsheet. Finally, we would like to humbly dedicate this work to the memory of the victims of the genocide in Gaza.
