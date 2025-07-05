@@ -1,7 +1,16 @@
 # Edit History
 
 _Created: 2025-07-01_
-_Last Updated: 2025-07-02 12:42:07 IST_
+_Last Updated: 2025-07-05 21:17:37 IST_
+
+### 2025-07-05
+
+#### 21:17 - T2: Section 5 Responses Complete
+
+- Updated `lqg-strings.tex` - Added two clarification paragraphs after "no negative-norm states in physical processes" explaining anomaly absence refers to finite mode truncation; added mode truncation physical motivation from LQG discreteness; added Table 1 context explanation showing how parameter values affect string spectrum
+- Updated `AoP/response-to-referee.tex` - Completed Section 5(a) anomaly-free claims response, Section 5(b) mode truncation validation response, Section 5(c) Table 1 context response
+- Updated `tasks/T2.md` - Marked Section 5 quantization step 7 as complete, updated progress to Section 6
+- Updated `session_cache.md` - Updated current session progress and status
 
 ### 2025-07-02
 

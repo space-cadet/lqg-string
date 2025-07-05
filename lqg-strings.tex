@@ -793,6 +793,16 @@ which is easily computable given a value for $\mu$. Below we provide a table wit
 	\caption{values of $a$ for different spacetime dimensionalities and mass parameters. Visibly, the dependence in $D$ is much stronger than the dependence in $\mu$.}
 \end{table}
 
+This table shows that $a$ becomes more negative as either the spacetime dimension $D$ or the mass parameter $\mu$ increases. This means:
+
+\begin{itemize}
+	\item Higher dimensions lead to more massive ground states
+	\item Larger $\mu$ (stronger discreteness effects) also increases ground state masses
+	\item The spectrum becomes increasingly separated from the massless limit
+\end{itemize}
+
+For example, in $D=2$ with $\mu=1$, $a=-4.24$ gives a relatively light spectrum, while $D=3$ with $\mu=5$ yields $a=-34.27$, producing much heavier states. This demonstrates how LQG's discreteness parameter $\mu$ and the background dimensionality jointly control the departure from standard string theory's massless spectrum, with stronger quantum geometric effects pushing all states away from the massless limit expected in conventional string theory.
+
 The commutation relations between the constraints are inherited by the Poisson brackets
 \begin{subequations}
 	\begin{align}
@@ -888,7 +898,15 @@ The fact that $G_{\mu \nu}$ is symmetric, traceless and satisfies $G_{\mu \nu} p
 \end{equation}
 possible polarizations, which shows that indeed those polarizations fit nicely in a representation of $\mathrm{SO} (D - 1 , 1)$, \ie the traceless symmetric tensor representation, thus all our excited spin-2 states are consistent with Lorentz symmetry at the macroscopic scale even tho near the Planck scale they deviate a bit by having an effective mass.
 
-Although our method is quite different from the one in \cite{Thiemann2004The-LQG-String:}, we got similar results: a quantum Virasoro-like algebra with no anomalies, unconstrained background dimensionality $D$ and no negative-norm states in physical processes.
+Although our method is quite different from the one in \cite{Thiemann2004The-LQG-String:}, we get similar results: a quantum Virasoro-like algebra with no anomalies, unconstrained background dimensionality $D$ and no negative-norm states in physical processes.
+
+It is important to clarify what we mean by ``no anomalies'' in this context. This refers specifically to the absence of central charge anomalies in our modified Virasoro-like algebra, which arises due to the finite mode truncation imposed by LQG's discreteness. This discreteness is encoded in the paramter $\mu$ in \eqref{eqn:mu-constraint-1}, which is a cutoff parameter that controls the maximum number of modes we consider in the action.
+
+This differs fundamentally from standard string theory, where anomaly cancellation requires critical dimensions ($D = 26$ for bosonic strings) to ensure vanishing of the central charge from an infinite sum over modes. Our finite sum naturally avoids this constraint, permitting unconstrained background dimensionality $D$. However, this result applies specifically to our truncated model in the regime where $k \ll 1$, where the smooth worldsheet approximation remains valid. In the full quantum gravitational regime where $k \sim 1$, the discrete structure of the underlying spin network becomes manifest and a more comprehensive analysis would be required.
+
+The mode truncation is a key assumption that requires validation. While we do not have a rigorous derivation from first principles, the physical motivation comes from LQG's discrete structure: high-frequency modes corresponding to sub-Planckian physics should be suppressed when the spin network discreteness becomes relevant. The parameter $\mu$ in \eqref{eqn:mu-constraint-1} provides an effective energy cutoff, with modes $|n| > d \approx \mu$ being suppressed.
+
+This approach shares similarities with other discrete quantum gravity approaches like causal dynamical triangulation and spin foam models, which also impose natural cutoffs. However, a complete justification would require deriving this truncation directly from LQG's canonical quantization procedure, which remains an open question for future work.
 
 \section{Emergent Dimensions and LQG} \label{sec:emergent-dimensions}
 

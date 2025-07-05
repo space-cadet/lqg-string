@@ -104,19 +104,37 @@ to:
 
 \RC The covariant quantization procedure seems correct, but the absence of anomalies (Sec. 5.12) is a significant claim that deserves more discussion. How does this compare to standard string theory?
 
-\AR 
+\AR We have added the following two paragraphs at the end of Section 5, after the sentence ``... and no negative-norm states in physical processes.'':
+
+\emph{It is important to clarify what we mean by ``no anomalies'' in this context. This refers specifically to the absence of central charge anomalies in our modified Virasoro-like algebra, which arises due to the finite mode truncation imposed by LQG's discreteness. This discreteness is encoded in the paramter $\mu$ in (4.27), which is a cutoff parameter that controls the maximum number of modes we consider in the action.}
+
+\emph{This differs fundamentally from standard string theory, where anomaly cancellation requires critical dimensions ($D = 26$ for bosonic strings) to ensure vanishing of the central charge from an infinite sum over modes. Our finite sum naturally avoids this constraint, permitting unconstrained background dimensionality $D$. However, this result applies specifically to our truncated model in the regime where $k \ll 1$, where the smooth worldsheet approximation remains valid. In the full quantum gravitational regime where $k \sim 1$, the discrete structure of the underlying spin network becomes manifest and a more comprehensive analysis would be required.}
 
 \subsection{Section 5 - Part (b): Mode Truncation}
 
 \RC The truncation of modes $\alpha_\mu^\nu =0$ for $|n|>d$ due to discreteness needs validation—does this align with other approaches to quantum gravity?
 
-\AR 
+\AR We have added the following two paragraphs to clarify the issues regarding mode truncation and comparison with other quantum gravity approaches:
+
+\emph{The mode truncation is a key assumption that requires validation. While we do not have a rigorous derivation from first principles, the physical motivation comes from LQG's discrete structure: high-frequency modes corresponding to sub-Planckian physics should be suppressed when the spin network discreteness becomes relevant. The parameter $\mu$ in (4.27) provides an effective energy cutoff, with modes $|n| > d \approx \mu$ being suppressed.}
+
+\emph{This approach shares similarities with other discrete quantum gravity approaches like causal dynamical triangulation and spin foam models, which also impose natural cutoffs. However, a complete justification would require deriving this truncation directly from LQG's canonical quantization procedure, which remains an open question for future work.}
 
 \subsection{Section 5 - Part (c): Table 1 Context}
 
 \RC Table 1 (values of $a$ for different $D$ and $\mu$) lacks context. A brief explanation of how these values affect the string spectrum would help.
 
-\AR 
+\AR We have added the following clarifying paragraph right after the table in the text:
+
+\emph{This table shows that $a$ becomes more negative as either the spacetime dimension $D$ or the mass parameter $\mu$ increases. This means:}
+
+\begin{itemize}
+	\item \emph{Higher dimensions lead to more massive ground states}
+	\item \emph{Larger $\mu$ (stronger discreteness effects) also increases ground state masses}
+	\item \emph{The spectrum becomes increasingly separated from the massless limit}
+\end{itemize}
+
+\emph{For example, in $D=2$ with $\mu=1$, $a=-4.24$ gives a relatively light spectrum, while $D=3$ with $\mu=5$ yields $a=-34.27$, producing much heavier states. This demonstrates how LQG's discreteness parameter $\mu$ and the background dimensionality jointly control the departure from standard string theory's massless spectrum, with stronger quantum geometric effects pushing all states away from the massless limit expected in conventional string theory.}
 
 \subsection{Section 6 - Part (a): Afshordi Model Connection}
 
