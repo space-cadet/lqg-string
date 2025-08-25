@@ -1,13 +1,25 @@
 # Task Registry
 
-_Last Updated: 2025-07-06 23:48:07 IST_
+_Last Updated: 2025-08-25 23:31:33 IST_
 
 ## Active Tasks
 
 | ID  | Title | Status | Priority | Started | Dependencies |
 | --- | ----- | ------ | -------- | ------- | ------------ |
+| T4  | AOP Final Minor Revisions | 🔄 | HIGH | 2025-08-25 | - |
 
 ## Task Details
+
+### T4: AOP Final Minor Revisions
+**Description**: Address minor corrections requested by reviewer for final acceptance of AOP manuscript 81029
+**Status**: 🔄 **Last**: 2025-08-25 22:43:05 IST
+**Criteria**: 
+- Fix all typos and formatting errors
+- Add requested clarifications and discussions
+- Complete missing bibliography citations
+- Submit revised manuscript within two weeks
+**Files**: `lqg-strings.tex`, response document
+**Notes**: Manuscript conditionally accepted - only minor revisions required for final publication
 
 ## Completed Tasks
 

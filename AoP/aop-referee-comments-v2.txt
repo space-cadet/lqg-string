@@ -1,0 +1,83 @@
+De: Annals of Physics <em@editorialmanager.com>
+Date: seg, 18 de ago de 2025 07:52
+Subject: AOP 81029R1
+To: Lin Teixeira de Sousa <luigi.tiraque@gmail.com>
+
+Ms. AOP 81029R1
+Title: A Loop Quantum Gravity Inspired Action for the Bosonic String and Emergent Dimensions at Large Scales
+Corresponding Author: Mx. Lin Teixeira de Sousa
+Annals of Physics
+
+Dear Dr. Teixeira de Sousa:
+
+I am pleased to inform that I am willing to accept your paper, referenced above, for publication
+
+However, the referees have suggested some minor changes that we would like you to address before the paper is sent to the production office for further processing. Please reply with your response to the referee comments and submit your revised manuscript within two weeks to avoid any delay in processing the manuscript. You will be notified when the paper is sent to the production office.
+
+Please carefully address the issues raised in the comments.
+
+a) outline each change made (point by point) as raised in the reviewer's comments
+
+AND/OR
+
+b) provide a suitable rebuttal to each reviewer comment
+not addressed
+
+To submit your revision, please do the following:
+
+1. Go to: http://editorialmanager.com/aop/
+
+2. Enter your login details
+
+3. Click [Author Login]
+
+This takes you to the Author Main Menu.
+
+4. Click [Submissions Needing Revision]
+
+Research Elements (optional)
+This journal encourages you to share research objects - including your raw data, methods, protocols, software, hardware and more – which support your original research article in a Research Elements journal. Research Elements are open access, multidisciplinary, peer-reviewed journals which make the objects associated with your research more discoverable, trustworthy and promote replicability and reproducibility. As open access journals, there may be an Article Publishing Charge if your paper is accepted for publication. Find out more about the Research Elements journals at https://www.elsevier.com/authors/tools-and-resources/research-elements-journals?dgcid=ec_em_research_elements_email.
+
+I look forward to receiving your revised manuscript.
+
+Yours sincerely,
+
+prof Robert de Mello Koch
+Co-Editor
+Annals of Physics
+
+Reviewer's comments:
+
+Reviewer #1: General Assessment:
+The revised manuscript has significantly improved in clarity and responsiveness to previous comments. The theoretical framework is now better motivated, and the connections between Loop Quantum Gravity (LQG) and string theory are more clearly articulated. The paper is now suitable for publication, pending minor revisions.
+
+Typos and Minor Corrections:
+Page 40: "Polaykov" should be corrected to "Polyakov."
+Page 41: "difence" should be corrected to "difference."
+Page 43: "high energy high-energy" contains a repetition; please remove one instance.
+Page 44: "Presumably the limit" appears to be an incomplete sentence or editing artifact and should be removed.
+
+Clarifications and Enhancements:
+The discussion on the duality between \h\_{ab} and \h^{ab} (Section 2) is now clearer, but a brief mention of how this duality might manifest in observable string dynamics (e.g., through measurable spectra or scattering amplitudes) would provide an wider physical interpretation.
+The connection to the Kalb-Ramond field (Section 3.2) is well-justified, but a brief comment on whether this implies any constraints on the Kalb-Ramond field's dynamics (e.g., torsionless backgrounds) would be insightful.
+
+Open Questions and Future Directions (Section 8.C):
+The discussion on emergent dimensions and their cosmological implications (Section 6) is somewhat speculative. A brief acknowledgment of the phenomenological challenges (e.g., observational constraints on extra dimensions) would provide more support.
+The suggestion of a (2+1)-dimensional fundamental spacetime (Section 6) requires more evidence or references to support this claim. You might provide references to recent work on lower-dimensional gravity or holography that could bolster this argument.
+
+Technical Details:
+The derivation of the relation between \Delta\_{ab} and the Kalb-Ramond field (Eq. 3.21) is now clearer, but a step-by-step derivation in an appendix or supplementary material would provide reproducibility.
+
+Cosmological Implications (Section 7):
+The interpretation of the emergent dimension \X^r as a "scaling dimension" is compelling. However, the link to the cosmological horizon scale (Page 30) is tentative. A brief discussion of how this might align or conflict with current cosmological data would be valuable.
+
+References:
+Ensure all citations are complete and consistent (e.g., some references in the text are missing from the bibliography).
+
+Final Recommendation:
+The manuscript is now well-structured and addresses the reviewers' concerns effectively. With the minor corrections and clarifications noted above, it is ready for publication.
+Additional Minor Typos in the Attached PDF:
+Page 40: "Luigi :::" appears to be an editing artifact and should be removed.
+Page 41: "Polyakov" is misspelled as "Polaykov."
+Page 43: "su(2)" is inconsistently formatted (sometimes with and sometimes without math mode).
+It looks like all cross references in the text were not generated, make sure they get properly displayed.

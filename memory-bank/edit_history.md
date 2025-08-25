@@ -1,11 +1,22 @@
 # Edit History
 
 _Created: 2025-07-01_
-_Last Updated: 2025-07-06 23:48:07 IST_
+_Last Updated: 2025-08-25 23:31:33 IST_
+
+### 2025-08-25
+
+#### 23:31 - T4: AOP Final Minor Revisions Session Management
+
+- Created `memory-bank/tasks/T4.md` - Detailed task file for AOP final minor revisions with reviewer checklist
+- Updated `memory-bank/tasks.md` - Added T4 to active tasks registry with HIGH priority
+- Updated `memory-bank/session_cache.md` - Set T4 as current focus task
+- Updated `memory-bank/activeContext.md` - Changed context to final manuscript revisions
+- Created `memory-bank/sessions/2025-08-25-night.md` - Session documentation with progress and next steps
 
 ### 2025-07-06
 
 #### 23:48 - T3: COMPLETED - AOP Manuscript Resubmission and Name Change
+
 - Created `AoP/resubmit-cover-letter.tex` - Professional cover letter with optimized single-page formatting
 - Created `memory-bank/tasks/T3.md` - Complete task documentation for resubmission process
 - Updated `memory-bank/tasks.md` - Added T3 to completed tasks registry
