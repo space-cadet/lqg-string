@@ -1439,6 +1439,43 @@ with \textquotedblleft mass" squared given by
 \end{equation}
 and $\tau (t, x)$ satisfying constraints (\ref{eqn:new-coordinates-constraints-compact}). This shows that our analysis of the action (\ref{eqn:inverse-metric-Polyakov}) is indeed in agreement with the analysis of the inverse area corrected Nambu-Goto action (\ref{eqn:modified-ng-action}).
 
+\section{Relation between Kalb-Ramond field and Quantum of Area 2-form} \label{sec:KR-QA}
+
+We start from the action in \eqref{eqn:area-corrected-K-R-action-v2} which describes the area-corrected string coupled to the Kalb-Ramond field, where the Levi-Civita tensor $\varepsilon ^{a b}$ has been written in terms of the quantum of area 2-form $\Delta _{a b}$ by dividing and multiplying by $\sqrt{\Delta}$. Varying this action \wrt \ $\Delta ^{c d}$ yields
+\begin{multline} \label{eqn:var-act-AC-KR}
+	\frac{\delta S}{\delta \Delta ^{c d}} = - \frac{1}{4 \pi \alpha '} \Bigg( - \frac{1}{2} \frac{k}{\sqrt{- g}} \Delta \Delta _{c d} \bigg( g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} G_{\mu \nu} - \\
+	- \sqrt{\Delta} \Delta ^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} B_{\mu \nu} \bigg) - \\
+	- \bigg( \sqrt{- g} - \frac{1}{2} \frac{k \Delta}{\sqrt{- g}} \bigg) \bigg( \frac{1}{2} \sqrt{\Delta} \Delta _{c d} \Delta ^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} B_{\mu \nu} + \\
+	+ \sqrt{\Delta} \delta ^{a} _{c} \delta ^{b} _{d} \del _{a} X^{\mu} \del _{b} X^{\nu} B_{\mu \nu} \bigg) \Bigg) ,
+\end{multline}
+which when required to vanish can be rearrenged into
+\begin{multline} \label{eqn:eqn:var-act-AC-KR-rear}
+	\Delta _{c d} \Bigg( \frac{k \sqrt{\Delta}}{2} g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} G_{\mu \nu} - \\
+	- \bigg( g + \frac{3 k \Delta}{4} \bigg) \Delta ^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} B_{\mu \nu} \Bigg) - \\
+	- \bigg( g + \frac{k \Delta}{2} \bigg) \del _{c} X^{\mu} \del _{d} X^{\nu} B_{\mu \nu} = 0 .
+\end{multline}
+From here, the quantum of area field $\Delta _{c d}$ can be directly related to the pullback of the Klab-Ramond 2-form $\del _{c} X^{\mu} \del _{d} X^{\nu} B_{\mu \nu}$ as in
+\begin{equation} \label{eqn:QA-pullKR}
+	\Delta _{c d} = \widetilde{f} \del _{c} X^{\mu} \del _{d} X^{\nu} B_{\mu \nu} ,
+\end{equation}
+where the function $\widetilde{f}$ is given by a contribution from the pullback of the metric and from the Kalb-Ramond field
+\begin{multline} \label{eqn:1/f-KR}
+	\frac{1}{\widetilde{f}} = \frac{1}{g + \dfrac{k \Delta}{2}} \Bigg( \frac{k \Delta}{2} g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} G_{\mu \nu} - \\
+	- \bigg( g + \frac{3 k \Delta}{4} \bigg) \Delta ^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} B_{\mu \nu} \Bigg) .
+\end{multline}
+When the equation of motion for the metric $g_{a b}$ is satisfied i.e if $g_{a b} = \del _{a} X^{\mu} \del _{b} X^{\nu} G_{\mu \nu}$, then \eqref{eqn:1/f-KR} simplifies to
+\begin{equation} \label{eqn:1/f-KR-simp}
+	\frac{1}{\widetilde{f}} = - \frac{k \sqrt{\Delta}}{g + k \Delta}
+\end{equation}
+or alternatively
+\begin{equation} \label{eqn:f-KR-simp}
+	\widetilde{f} = - \frac{g + k \Delta}{k \sqrt{\Delta}} = - \sqrt{\Delta} \left( \frac{g}{k \Delta} + 1 \right) .
+\end{equation}
+Finally, we can then write the quantum of area 2-form $\Delta _{a b}$ in terms of the pullback of the Kalb-Ramond field $b_{a b} = \del _{a} X^{\mu} \del _{b} X^{\nu} B_{\mu \nu}$ as
+\begin{equation} \label{eqn:QA-KR-fin}
+	\Delta _{a b} = - \sqrt{\Delta} \left( \frac{g}{k \Delta} + 1 \right) b_{a b} .
+\end{equation}
+
 \bibliographystyle{JHEP3}
 
 \bibliography{lqg-strings.bib}
