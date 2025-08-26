@@ -405,7 +405,7 @@ Following the usual procedure such as the one found in \cite{Tong2009Lectures}, 
 	T^{(G)} _{c d} := G_{\mu \nu} \bigg( \partial _{c} X^{\mu} \partial _{d} X^{\nu} - \\
 	- \frac{1}{2} g_{c d} g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \bigg) = \frac{2}{T} \frac{\delta S_{int}}{\delta g^{c d}},
 \end{multline}
-and completely analogous for the $H_{\mu \nu}$ metric,
+and completely analogously for the $H_{\mu \nu}$ metric,
 \begin{equation} \label{eqn:variation-wrt-h}
 	\frac{\delta S_{P B}}{\delta h^{c d}} = 0
 \end{equation}
@@ -439,9 +439,10 @@ and from here we note that if $T' = - T k / 2$ and $h = \Delta ^2 / g$, we recov
 \end{equation}
 The condition $h = \Delta ^2 / g$ can be achieved by
 \begin{equation} \label{eqn:h=SgS}
-	h_{a b} = \Delta _{a c} \Delta _{b d} g^{c d} .
+	h_{a b} = \Delta _{a c} \Delta _{b d} g^{c d}.
 \end{equation}
-By writing the inverse metric $g^{a b}$ in terms of Levi-Civita symbols $g^{a b} = \varepsilon ^{a c} \varepsilon ^{b d} g_{c d} / 2 g$, this implies that
+Taking the determinant of both sides of the above equation gives us $h = \Delta ^2 / g$.
+By writing the inverse metric $g^{a b}$ in terms of Levi-Civita symbols $g^{a b} = \varepsilon ^{a c} \varepsilon ^{b d} g_{c d} / 2 g$\footnote{This expression for the inverse of a metric is probably not familiar to many people, but its correctness can be checked by contracting both sides of the expression with $g_{ab}$ and seeing that the resulting expression is the much better known expression for the determinant $g \equiv \det{g_{ab}}$}, this implies that
 \begin{multline} \label{eqn:SgS-implication}
 	\left( \delta _{a} ^{c'} \delta _{b} ^{d'} H_{\mu \nu} - \frac{1}{2 g} \Delta _{a c} \varepsilon ^{c c'} \Delta _{b d} \varepsilon ^{d d'} G_{\mu \nu} \right) \times \\
 	\times \del _{c'} X^{\mu} \del _{d'} X^{\nu} = 0,
@@ -1448,13 +1449,13 @@ We start from the action in \eqref{eqn:area-corrected-K-R-action-v2} which descr
 	- \bigg( \sqrt{- g} - \frac{1}{2} \frac{k \Delta}{\sqrt{- g}} \bigg) \bigg( \frac{1}{2} \sqrt{\Delta} \Delta _{c d} \Delta ^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} B_{\mu \nu} + \\
 	+ \sqrt{\Delta} \delta ^{a} _{c} \delta ^{b} _{d} \del _{a} X^{\mu} \del _{b} X^{\nu} B_{\mu \nu} \bigg) \Bigg) ,
 \end{multline}
-which when required to vanish can be rearrenged into
+which when required to vanish can be rearranged into
 \begin{multline} \label{eqn:eqn:var-act-AC-KR-rear}
 	\Delta _{c d} \Bigg( \frac{k \sqrt{\Delta}}{2} g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} G_{\mu \nu} - \\
 	- \bigg( g + \frac{3 k \Delta}{4} \bigg) \Delta ^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} B_{\mu \nu} \Bigg) - \\
 	- \bigg( g + \frac{k \Delta}{2} \bigg) \del _{c} X^{\mu} \del _{d} X^{\nu} B_{\mu \nu} = 0 .
 \end{multline}
-From here, the quantum of area field $\Delta _{c d}$ can be directly related to the pullback of the Klab-Ramond 2-form $\del _{c} X^{\mu} \del _{d} X^{\nu} B_{\mu \nu}$ as in
+From here, the quantum of area field $\Delta _{c d}$ can be directly related to the pullback of the Kalb-Ramond 2-form $\del _{c} X^{\mu} \del _{d} X^{\nu} B_{\mu \nu}$ as in
 \begin{equation} \label{eqn:QA-pullKR}
 	\Delta _{c d} = \widetilde{f} \del _{c} X^{\mu} \del _{d} X^{\nu} B_{\mu \nu} ,
 \end{equation}
