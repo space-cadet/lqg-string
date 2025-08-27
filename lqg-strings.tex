@@ -444,7 +444,7 @@ The condition $h = \Delta ^2 / g$ can be achieved by
 Taking the determinant of both sides of the above equation gives us $h = \Delta ^2 / g$.
 By writing the inverse metric $g^{a b}$ in terms of Levi-Civita symbols $g^{a b} = \varepsilon ^{a c} \varepsilon ^{b d} g_{c d} / 2 g$\footnote{This expression for the inverse of a metric is probably not familiar to many people, but its correctness can be checked by contracting both sides of the expression with $g_{ab}$ and seeing that the resulting expression is the much better known expression for the determinant $g \equiv \det{g_{ab}}$}, this implies that
 \begin{multline} \label{eqn:SgS-implication}
-	\left( \delta _{a} ^{c'} \delta _{b} ^{d'} H_{\mu \nu} - \frac{1}{2 g} \Delta _{a c} \varepsilon ^{c c'} \Delta _{b d} \varepsilon ^{d d'} G_{\mu \nu} \right) \times \\
+	\left( f^{(H)} \delta _{a} ^{c'} \delta _{b} ^{d'} H_{\mu \nu} - \frac{1}{2 g} f^{(G)} \Delta _{a c} \varepsilon ^{c c'} \Delta _{b d} \varepsilon ^{d d'} G_{\mu \nu} \right) \times \\
 	\times \del _{c'} X^{\mu} \del _{d'} X^{\nu} = 0,
 \end{multline}
 which can be achieved if the expression in parenthesis vanishes. For this end, the most natural possibility is
@@ -453,7 +453,7 @@ which can be achieved if the expression in parenthesis vanishes. For this end, t
 \end{equation}
 since we must have that $\det (\Delta _{a b}) = \Delta$ and $\Delta _{a c} \varepsilon ^{c c'} \sim \delta ^{c'} _{a}$, and also if the background metrics are related by
 \begin{equation} \label{eqn:H=1/(2g)G}
-	H_{\mu \nu} = \frac{\Delta}{2 g} G_{\mu \nu} .
+	H_{\mu \nu} = \frac{f^{(G)}}{f^{(H)}} \frac{\Delta}{2 g} G_{\mu \nu} .
 \end{equation}
 This makes sense since $\Delta _{a b}$ is related to area, so it should be a 2-form. Now, since the WS metric $g_{a b}$ is taken as the pullback of the bulk metric $g_{a b} = \del _{a} X^{\mu} \del _{b} X^{\nu} G_{\mu \nu}$, which is part of the closed string spin-2 spectrum, then it would make sense for the WS area 2-form $\Delta _{a b}$ to be (at least related to) the pullback of the Kalb-Ramond field, which is the other half of the closed string rank 2 tensor field excitations,
 \begin{equation} \label{eqn:Delta-B-relation}
@@ -516,7 +516,7 @@ revealing a wave equation sourced by a coupling between the WS conformal factor,
 
 \subsection{Worldsheet Kalb-Ramond field and Quantum of Area} \label{sec:WS-Kalb-Ramond-QoA}
 
-If one were to calculate the equations of motion for the quantum of area field $\Delta _{a b}$ in the actions \eqref{eqn:modified-ng-action} and \eqref{eqn:inverse-metric-Polyakov} explored before, one would end up concluding that either $\Delta _{a b} = 0$ or it's determinant $\Delta = 0$ vanish. This happens because, as we explored in section \ref{sec:ws-kalb-ramond}, $\Delta _{a b}$ is actually related to the pullback of the Kalb-Ramond field $B_{\mu \nu}$, but those actions were actions for the free string, not coupled to said field. The more complete picture would be thus to consider the (area-corrected) string now coupled to the Kalb-Ramond field \cite{Tong2009Lectures}
+If one were to calculate the equations of motion for the quantum of area field $\Delta _{a b}$ in the actions \eqref{eqn:modified-ng-action} and \eqref{eqn:inverse-metric-Polyakov} explored before, one would end up concluding that either $\Delta _{a b} = 0$ or it's determinant $\Delta = 0$ vanish. This happens because, as we explored in section \ref{sec:ws-kalb-ramond}, $\Delta _{a b}$ should be related to the pullback of the Kalb-Ramond field $B_{\mu \nu}$, but the actions discussed were actions for the free string, not coupled to said field. The more complete picture would be thus to consider the (area-corrected) string now coupled to the Kalb-Ramond field \cite{Tong2009Lectures}, since this represents the more general and complete diffeomorphism invariant action in $1+1$ dimensions:
 \begin{multline} \label{eqn:area-corrected-K-R-action}
 	S = - \frac{1}{4 \pi \alpha '} \int \diff ^2 x \left( \sqrt{- g} - \frac{1}{2} \frac{k \Delta}{\sqrt{- g}} \right) \times \\
 	\times \Big( g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} G_{\mu \nu} - \varepsilon ^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} B_{\mu \nu} \Big),
@@ -540,7 +540,7 @@ where if we take $g_{a b} = \del _{a} X^{\mu} \del _{b} X^{\nu} G_{\mu \nu}$ and
 \begin{equation} \label{eqn:f-tilde}
 	\widetilde{f} = - \frac{g + k \Delta}{k \sqrt{\Delta}},
 \end{equation}
-from which it is easy to see that the pullback of the Kalb-Ramond field $b_{a b} := \del _{a} X^{\mu} \del _{b} X^{\nu} B_{\mu \nu}$ is given by
+from which we can find the pullback of the Kalb-Ramond field $b_{a b} := \del _{a} X^{\mu} \del _{b} X^{\nu} B_{\mu \nu}$ given in terms of the worldsheet metric $g$ and the quantum of area density $\Delta$ 
 \begin{equation} \label{eqn:WS-b-field}
 	b_{a b} = - \frac{1}{\dfrac{g}{k \Delta} + 1} \varepsilon _{a b},
 \end{equation}
@@ -1442,7 +1442,7 @@ and $\tau (t, x)$ satisfying constraints (\ref{eqn:new-coordinates-constraints-c
 
 \section{Relation between Kalb-Ramond field and Quantum of Area 2-form} \label{sec:KR-QA}
 
-We start from the action in \eqref{eqn:area-corrected-K-R-action-v2} which describes the area-corrected string coupled to the Kalb-Ramond field, where the Levi-Civita tensor $\varepsilon ^{a b}$ has been written in terms of the quantum of area 2-form $\Delta _{a b}$ by dividing and multiplying by $\sqrt{\Delta}$. Varying this action \wrt \ $\Delta ^{c d}$ yields
+We start from the action in \eqref{eqn:area-corrected-K-R-action-v2} which describes the area-corrected string coupled to the Kalb-Ramond field, since this is the most generic and complete 2-dimensional action with worldsheet diffeomorphism invariance and bulk global Lorentz symmetry, with the correction to the worldsheet geometry due to quantum geometry proposed by our central dogma. The Levi-Civita tensor $\varepsilon ^{a b}$ has been written in terms of the quantum of area 2-form $\Delta _{a b}$ by dividing and multiplying by $\sqrt{\Delta}$. Varying this action \wrt \ $\Delta ^{c d}$ yields
 \begin{multline} \label{eqn:var-act-AC-KR}
 	\frac{\delta S}{\delta \Delta ^{c d}} = - \frac{1}{4 \pi \alpha '} \Bigg( - \frac{1}{2} \frac{k}{\sqrt{- g}} \Delta \Delta _{c d} \bigg( g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} G_{\mu \nu} - \\
 	- \sqrt{\Delta} \Delta ^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} B_{\mu \nu} \bigg) - \\
