@@ -4,9 +4,6 @@
       "path": "."
     },
     {
-      "path": "../unifying"
-    },
-    {
       "path": "../templates/referee_response_letter"
     }
   ],

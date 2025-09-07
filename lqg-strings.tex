@@ -157,7 +157,7 @@
 \newcommand{\PS}{\mathcal{P}}
 %%% END Custom commands %%%
 
-\graphicspath{{figures/}}
+% \graphicspath{{figures/}}
 
 %opening
 \begin{document}
@@ -438,7 +438,7 @@ and from here we note that if $T' = - T k / 2$ and $h = \Delta ^2 / g$, we recov
 	S = - T \int \diff ^2 x \left( \sqrt{- g} - \frac{1}{2} \frac{k \Delta}{\sqrt{- g}} \right) .
 \end{equation}
 The condition $h = \Delta ^2 / g$ can be achieved by
-\begin{equation} \label{eqn:h=SgS}
+\begin{equation} \label{eqn:h-delta-relation}
 	h_{a b} = \Delta _{a c} \Delta _{b d} g^{c d}.
 \end{equation}
 Taking the determinant of both sides of the above equation gives us $h = \Delta ^2 / g$.
@@ -448,18 +448,18 @@ By writing the inverse metric $g^{a b}$ in terms of Levi-Civita symbols $g^{a b}
 	\times \del _{c'} X^{\mu} \del _{d'} X^{\nu} = 0,
 \end{multline}
 which can be achieved if the expression in parenthesis vanishes. For this end, the most natural possibility is
-\begin{equation} \label{eqn:S=sigma_y}
+\begin{equation} \label{eqn:delta-epsilon-relation}
 	\Delta _{a c} = \sqrt{\Delta} \varepsilon _{a c}
 \end{equation}
 since we must have that $\det (\Delta _{a b}) = \Delta$ and $\Delta _{a c} \varepsilon ^{c c'} \sim \delta ^{c'} _{a}$, and also if the background metrics are related by
-\begin{equation} \label{eqn:H=1/(2g)G}
-	H_{\mu \nu} = \frac{f^{(G)}}{f^{(H)}} \frac{\Delta}{2 g} G_{\mu \nu} .
+\begin{equation} \label{eqn:H-G-relation}
+	H_{\mu \nu} = \frac{\Delta}{2 g} G_{\mu \nu} .
 \end{equation}
 This makes sense since $\Delta _{a b}$ is related to area, so it should be a 2-form. Now, since the WS metric $g_{a b}$ is taken as the pullback of the bulk metric $g_{a b} = \del _{a} X^{\mu} \del _{b} X^{\nu} G_{\mu \nu}$, which is part of the closed string spin-2 spectrum, then it would make sense for the WS area 2-form $\Delta _{a b}$ to be (at least related to) the pullback of the Kalb-Ramond field, which is the other half of the closed string rank 2 tensor field excitations,
 \begin{equation} \label{eqn:Delta-B-relation}
 	\Delta _{a b} \sim \del _{a} X^{\mu} \del _{b} X^{\nu} B_{\mu \nu} .
 \end{equation}
-If we impose the conditions \eqref{eqn:h=SgS}, \eqref{eqn:S=sigma_y} and \eqref{eqn:H=1/(2g)G} plus $T' = - T k / 2$ in the interactionless bimetric Polyakov action \eqref{eqn:polyakov-bimetric}, we obtain the Polyakov version of the area-corrected action \eqref{eqn:modified-ng-action}:
+If we impose the conditions \eqref{eqn:h-delta-relation}, \eqref{eqn:delta-epsilon-relation} and \eqref{eqn:H-G-relation} plus $T' = - T k / 2$ in the interactionless bimetric Polyakov action \eqref{eqn:polyakov-bimetric}, we obtain the Polyakov version of the area-corrected action \eqref{eqn:modified-ng-action}:
 \begin{multline} \label{eqn:inverse-metric-Polyakov}
 	S_{I A P} = - \frac{T}{2} \int \diff ^2 x \left( \sqrt{- g} - \frac{k \Delta}{2 \sqrt{- g}} \right) \times \\ \times g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} .
 \end{multline}
@@ -1442,7 +1442,33 @@ and $\tau (t, x)$ satisfying constraints (\ref{eqn:new-coordinates-constraints-c
 
 \section{Relation between Kalb-Ramond field and Quantum of Area 2-form} \label{sec:KR-QA}
 
-We start from the action in \eqref{eqn:area-corrected-K-R-action-v2} which describes the area-corrected string coupled to the Kalb-Ramond field, since this is the most generic and complete 2-dimensional action with worldsheet diffeomorphism invariance and bulk global Lorentz symmetry, with the correction to the worldsheet geometry due to quantum geometry proposed by our central dogma. The Levi-Civita tensor $\varepsilon ^{a b}$ has been written in terms of the quantum of area 2-form $\Delta _{a b}$ by dividing and multiplying by $\sqrt{\Delta}$. Varying this action \wrt \ $\Delta ^{c d}$ yields
+To see how the area 2-form $\Delta _{ab}$ is related to the Kalb-Ramond field we have to go back to \autoref{sec:ws-kalb-ramond} where we looked at the case of the bimetric string action \eqref{eqn:polyakov-bimetric}. We saw that the bimetric Polyakov action can be expressed, quite obviously, as a bimetric Nambu-Goto action \eqref{eqn:double-ng-action}, which we reproduce below for convenience:
+\begin{equation}
+	S = - T \int \diff ^2 x \sqrt{- g} - T' \int \diff ^2 x \sqrt{- h}.
+\end{equation}
+From here if we make the mapping $T' = - T k / 2$ and $h = \Delta ^2 / g$, we recover the Nambu-Goto area-corrected action \eqref{eqn:modified-ng-action}
+\begin{equation}
+	S = - T \int \diff ^2 x \left( \sqrt{- g} - \frac{1}{2} \frac{k \Delta}{\sqrt{- g}} \right) .
+\end{equation}
+Now, as noted in the main text, the condition $h = \Delta^2/g$ can be achieved if the following holds true \eqref{eqn:h-delta-relation}:
+\begin{equation*}
+	h_{ab} = \Delta_{ac} \Delta_{bd} g^{cd},
+\end{equation*}
+where $g^{cd}$ is the inverse of $g_{ab}$. Now, let us assume that $\Delta_{ab}$ can be written as \eqref{eqn:delta-epsilon-relation}:
+\begin{equation*}
+	\Delta_{ab} = \sqrt{\Delta} \epsilon_{ab}.
+\end{equation*}
+Now, we recall that the inverse of a $2\times 2$ matrix can be written using the total-antisymmetric symbol as:
+\begin{equation}
+	g^{ab} = \frac{1}{2g} \epsilon^{ac} \epsilon^{bd} g_{cd},
+\end{equation}
+where $g = \det{g_{ab}}$. Inserting this identity into \eqref{eqn:h-delta-relation}, and using the expression for the the determinant of a matrix in terms of product of epsilon symbols:
+\begin{equation*}
+	g = \det{g_{ab}} = \onehalf \epsilon^{ac} \epsilon^{bd} g_{cd},
+\end{equation*}
+we find that $h = \Delta^2/g$, where $\Delta = \det{\Delta_{ab}}$. What this tells us is that it is natural to identify $\Delta_{ab}$ with the totally anti-symmetric tensor on the worldsheet. Now a two-dimensional manifold can only have one, upto conformal transformations, anti-symmetric tensor and if we require that this tensor be derived from the embedding of the string into the ambient manifold then it makes sense that one should identify $\Delta_{ab}$ with the pullback to the worldsheet of the bulk Kalb-Ramond field $B_{\mu\nu}$.
+
+For a more formal derivation of this fact we start from the action in \eqref{eqn:area-corrected-K-R-action-v2} which describes the area-corrected string coupled to the Kalb-Ramond field, where the Levi-Civita tensor $\varepsilon ^{a b}$ has been written in terms of the quantum of area 2-form $\Delta _{a b}$ by dividing and multiplying by $\sqrt{\Delta}$. Varying this action \wrt \ $\Delta ^{c d}$ yields
 \begin{multline} \label{eqn:var-act-AC-KR}
 	\frac{\delta S}{\delta \Delta ^{c d}} = - \frac{1}{4 \pi \alpha '} \Bigg( - \frac{1}{2} \frac{k}{\sqrt{- g}} \Delta \Delta _{c d} \bigg( g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} G_{\mu \nu} - \\
 	- \sqrt{\Delta} \Delta ^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} B_{\mu \nu} \bigg) - \\

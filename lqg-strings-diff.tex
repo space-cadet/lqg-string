@@ -1,7 +1,7 @@
 \RequirePackage{snapshot}
 %DIF LATEXDIFF DIFFERENCE FILE
 %DIF DEL lqg-strings-aop-v1.tex   Sun Jul  6 11:08:34 2025
-%DIF ADD lqg-strings.tex          Sun Jul  6 21:08:19 2025
+%DIF ADD lqg-strings.tex          Sun Sep  7 22:16:58 2025
 \RequirePackage[final]{graphicx}
 \documentclass[twocolumn,aps,prd,10pt,nofootinbib,nobibnotes]{revtex4-2}
 
@@ -183,7 +183,11 @@
 \newcommand{\PS}{\mathcal{P}}
 %%% END Custom commands %%%
 
-\graphicspath{{figures/}}
+%DIF 168c160
+%DIF < \graphicspath{{figures/}}
+%DIF -------
+% \graphicspath{{figures/}} %DIF > 
+%DIF -------
 
 %opening
 %DIF PREAMBLE EXTENSION ADDED BY LATEXDIFF
@@ -470,7 +474,7 @@ which has the same form as the original action \eqref{eqn:modified-ng-action}, a
 }
 
 \DIFadd{This duality is reminiscent of, but also distinct from, the T and S dualities in string theory. In T-duality the behavior of a string compactified on a circle of radius $R$ is related to the behavior of a string compactified on a circle of radius $\alpha'/R$. In S-duality the physics at strong string coupling $g_s \gg 1$ can be mapped to the physics at weak string coupling $g_s \ll 1$. In our case, the duality is between a description of physics at }\DIFaddend large string tension $T$ and small \DIFaddbegin \DIFadd{worldsheet areas $h_{ab}$ and a description of physics at small }\DIFaddend string tension $T'$ \DIFdelbegin \DIFdel{.
-}\DIFdelend \DIFaddbegin \DIFadd{and large worldsheet areas $h'_{ab} = (h_{ab})^{-1}$. This appears to have features of both T-duality and S-duality, in that the area inversion is reminiscent of T-duality and the string tension inversion is reminiscent of S-duality's strong-weak coupling correspondence.
+}\DIFdelend \DIFaddbegin \DIFadd{and large worldsheet areas $h'_{ab} = (h_{ab})^{-1}$. This appears to have features of both T-duality and S-duality, in that the area inversion is reminiscent of T-duality and the string tension inversion is reminiscent of S-duality's strong-weak coupling correspondence. Physically, one way in which this duality could manifest in the real world is in the mass spectrum of string excitations which when computed in the strong-coupling regime should exhibit a precise correspondence with spectra in the weak-coupling limit under the transformation rules \eqref{eqn:T'}-\eqref{eqn:d2x}, while worldsheet correlation functions should satisfy similar duality relations, potentially providing calculable predictions for string phenomenology at both energy scales.
 }\DIFaddend 
 
 Now, one might object and say that having an action which is the sum of two Nambu-Goto actions seems strange. However, similar actions have been extensively studied under the heading of ``bimetric gravity'', with the earliest work dating as far back as 1940 in two papers \cite{Rosen1940General,Rosen1940aGeneral} by Einstein's future collaborator Nathan Rosen (the `R' in `EPR' and `ER'). In 2010, bimetric gravity gained great popularity due to the seminal paper \cite{de-Rham2011Resummation} which showed that by introducing a second \emph{reference} metric into a model for massive gravity one can get rid of the Boulware-Deser ghost \cite{Boulware1972Can-Gravitation} which otherwise plagues theories with massive gravitons. The \emph{reference} metric introduced in the work \cite{de-Rham2011Resummation} was taken to be a flat metric. However later work \cite{Hassan2012Bimetric,Hassan2012Ghost-Free} showed that the second metric need not be flat and that an action of the following form:
@@ -540,7 +544,7 @@ Following the usual procedure such as the one found in \cite{Tong2009Lectures}, 
 	T^{(G)} _{c d} := G_{\mu \nu} \bigg( \partial _{c} X^{\mu} \partial _{d} X^{\nu} - \\
 	- \frac{1}{2} g_{c d} g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} \bigg) = \frac{2}{T} \frac{\delta S_{int}}{\delta g^{c d}},
 \end{multline}
-and completely analogous for the $H_{\mu \nu}$ metric,
+and completely \DIFdelbegin \DIFdel{analogous }\DIFdelend \DIFaddbegin \DIFadd{analogously }\DIFaddend for the $H_{\mu \nu}$ metric,
 \begin{equation} \label{eqn:variation-wrt-h}
 	\frac{\delta S_{P B}}{\delta h^{c d}} = 0
 \end{equation}
@@ -573,21 +577,28 @@ and from here we note that if $T' = - T k / 2$ and $h = \Delta ^2 / g$, we recov
 	S = - T \int \diff ^2 x \left( \sqrt{- g} - \frac{1}{2} \frac{k \Delta}{\sqrt{- g}} \right) .
 \end{equation}
 The condition $h = \Delta ^2 / g$ can be achieved by
-\begin{equation} \label{eqn:h=SgS}
-	h_{a b} = \Delta _{a c} \Delta _{b d} g^{c d} .
+\begin{equation} \DIFdelbegin %DIFDELCMD < \label{eqn:h=SgS}
+%DIFDELCMD < 	%%%
+\DIFdelend \DIFaddbegin \label{eqn:h-delta-relation}
+	\DIFaddend h_{a b} = \Delta _{a c} \Delta _{b d} g^{c d}.
 \end{equation}
-By writing the inverse metric $g^{a b}$ in terms of Levi-Civita symbols $g^{a b} = \varepsilon ^{a c} \varepsilon ^{b d} g_{c d} / 2 g$, this implies that
+\DIFaddbegin \DIFadd{Taking the determinant of both sides of the above equation gives us $h = \Delta ^2 / g$.
+}\DIFaddend By writing the inverse metric $g^{a b}$ in terms of Levi-Civita symbols $g^{a b} = \varepsilon ^{a c} \varepsilon ^{b d} g_{c d} / 2 g$\DIFaddbegin \footnote{\DIFadd{This expression for the inverse of a metric is probably not familiar to many people, but its correctness can be checked by contracting both sides of the expression with $g_{ab}$ and seeing that the resulting expression is the much better known expression for the determinant $g \equiv \det{g_{ab}}$}}\DIFaddend , this implies that
 \begin{multline} \label{eqn:SgS-implication}
 	\left( \delta _{a} ^{c'} \delta _{b} ^{d'} H_{\mu \nu} - \frac{1}{2 g} \Delta _{a c} \varepsilon ^{c c'} \Delta _{b d} \varepsilon ^{d d'} G_{\mu \nu} \right) \times \\
 	\times \del _{c'} X^{\mu} \del _{d'} X^{\nu} = 0,
 \end{multline}
 which can be achieved if the expression in parenthesis vanishes. For this end, the most natural possibility is
-\begin{equation} \label{eqn:S=sigma_y}
-	\Delta _{a c} = \sqrt{\Delta} \varepsilon _{a c}
+\begin{equation} \DIFdelbegin %DIFDELCMD < \label{eqn:S=sigma_y}
+%DIFDELCMD < 	%%%
+\DIFdelend \DIFaddbegin \label{eqn:delta-epsilon-relation}
+	\DIFaddend \Delta _{a c} = \sqrt{\Delta} \varepsilon _{a c}
 \end{equation}
 since we must have that $\det (\Delta _{a b}) = \Delta$ and $\Delta _{a c} \varepsilon ^{c c'} \sim \delta ^{c'} _{a}$, and also if the background metrics are related by
-\begin{equation} \label{eqn:H=1/(2g)G}
-	H_{\mu \nu} = \frac{\Delta}{2 g} G_{\mu \nu} .
+\begin{equation} \DIFdelbegin %DIFDELCMD < \label{eqn:H=1/(2g)G}
+%DIFDELCMD < 	%%%
+\DIFdelend \DIFaddbegin \label{eqn:H-G-relation}
+	\DIFaddend H_{\mu \nu} = \frac{\Delta}{2 g} G_{\mu \nu} .
 \end{equation}
 This makes sense since $\Delta _{a b}$ is related to area, so it should be a 2-form. Now, since the WS metric $g_{a b}$ is taken as the pullback of the bulk metric $g_{a b} = \del _{a} X^{\mu} \del _{b} X^{\nu} G_{\mu \nu}$, which is part of the closed string spin-2 spectrum, then it would make sense for the WS area 2-form $\Delta _{a b}$ to be (at least related to) the pullback of the Kalb-Ramond field, which is the other half of the closed string rank 2 tensor field excitations,
 \begin{equation} \label{eqn:Delta-B-relation}
@@ -596,7 +607,7 @@ This makes sense since $\Delta _{a b}$ is related to area, so it should be a 2-f
 \DIFdelbegin %DIFDELCMD < 
 
 %DIFDELCMD < %%%
-\DIFdelend If we impose the conditions \eqref{eqn:h=SgS}, \eqref{eqn:S=sigma_y} and \eqref{eqn:H=1/(2g)G} plus $T' = - T k / 2$ in the interactionless bimetric Polyakov action \eqref{eqn:polyakov-bimetric}, we obtain the Polyakov version of the area-corrected action \eqref{eqn:modified-ng-action}:
+\DIFdelend If we impose the conditions \DIFdelbegin \DIFdel{\eqref{eqn:h=SgS}, \eqref{eqn:S=sigma_y} and \eqref{eqn:H=1/(2g)G} }\DIFdelend \DIFaddbegin \DIFadd{\eqref{eqn:h-delta-relation}, \eqref{eqn:delta-epsilon-relation} and \eqref{eqn:H-G-relation} }\DIFaddend plus $T' = - T k / 2$ in the interactionless bimetric Polyakov action \eqref{eqn:polyakov-bimetric}, we obtain the Polyakov version of the area-corrected action \eqref{eqn:modified-ng-action}:
 \begin{multline} \label{eqn:inverse-metric-Polyakov}
 	S_{I A P} = - \frac{T}{2} \int \diff ^2 x \left( \sqrt{- g} - \frac{k \Delta}{2 \sqrt{- g}} \right) \times \\ \times g^{a b} \partial _{a} X^{\mu} \partial _{b} X^{\nu} G_{\mu \nu} .
 \end{multline}
@@ -687,7 +698,10 @@ or equivalently that the relation between $\Delta _{a b}$ and $b_{a b}$ is
 \end{equation}
 We thus see that the pullback of the Kalb-Ramond field is actually a tensor \emph{density} of weight $- 1$, since the coefficient in eq \eqref{eqn:WS-b-field} is a true scalar and the Levi-Civita symbol is itself a density.
 
-\subsection{Area-Corrected Nambu-Goto Action and Born-Infeld Electrodynamics} \label{sec:area-corrected-BI}
+\DIFaddbegin \DIFadd{This pullback relationship would suggest a restriction on the allowed bulk configurations. Since the worldsheet area spectrum is discrete due to the underlying LQG quantization, the Kalb-Ramond field strength must be correspondingly quantized. This is analogous to flux quantization in the quantum Hall effect, where the magnetic flux through the 2D electron system is constrained to be integer multiples of $h/e$. In our case, the integrated field strength $\int H_{\mu \nu \rho}$ over appropriate 3-cycles in the bulk should be quantized in units related to the fundamental area quantum $\Delta$, restricting the allowed background field configurations to those compatible with the discrete worldsheet area spectrum.
+}
+
+\DIFaddend \subsection{Area-Corrected Nambu-Goto Action and Born-Infeld Electrodynamics} \label{sec:area-corrected-BI}
 
 The Nambu-Goto area-corrected action before approximations \eqref{eqn:ng-area-corrected} has a structure strikingly similar to the Born-Infeld model \cite{Bergshoeff1987BornInfeld,Leigh1989Dirac-Born-Infeld,Metsaev1987Borninfeld,Tseytlin1996Self-Duality}, which arises in the string theory description of gauge fields living on D-branes:
 \begin{equation} \label{eqn:BI-action}
@@ -1069,7 +1083,7 @@ so we note that the mass parameters of the fields $X^{\mu}$ will be constrained 
 \end{equation}
 where $E_{\alpha} ^2$ does not mean $E_{\alpha} E^{\alpha}$, rather it means \DIFdelbegin \DIFdel{$(E_{3})^2 , (E_{4})^2 , ... , (E_{D - 1})^2$, \ie}\DIFdelend \DIFaddbegin \DIFadd{$(E_{3})^2, (E_{4})^2, ..., (E_{D - 1})^2$, \ie~}\DIFaddend , the squared WS energy (and momentum) of each field $X^{\mu}$.
 
-Afshordi's work notes that the action \eqref{eqn:emergent-dimensions-action} only has background Poincaré invariance and WS Weyl symmetry as approximate symmetries for the fields with $m_{\mu} \gg T$, thus the \textquotedblleft emergent spacetime and evolving dimensions" by interpreting the fields with effective mass as being inaccessible due to not obeying Poincaré symmetry. We go one step further and note that since eq \eqref{eqn:X-masses-constraint} leaves \DIFdelbegin \DIFdel{$m_{0} , m_{1}$ }\DIFdelend \DIFaddbegin \DIFadd{$m_{0}, m_{1}$ }\DIFaddend and $m_{2}$ unconstrained, the related dimensions might be regarded as being \emph{fundamental} and thus the true quantum gravitational field should be $(2 + 1)$-dimensional, in agreement with \cite{t-Hooft1993Dimensional}. $(2 + 1)$-dimensional gravity has already been successfully quantized before (\DIFdelbegin \DIFdel{\mbox{%DIFAUXCMD
+Afshordi's work notes that the action \eqref{eqn:emergent-dimensions-action} only has background Poincaré invariance and WS Weyl symmetry as approximate symmetries for the fields with $m_{\mu} \gg T$, thus the \textquotedblleft emergent spacetime and evolving dimensions" by interpreting the fields with effective mass as being inaccessible due to not obeying Poincaré symmetry. We go one step further and note that since eq \eqref{eqn:X-masses-constraint} leaves \DIFdelbegin \DIFdel{$m_{0} , m_{1}$ }\DIFdelend \DIFaddbegin \DIFadd{$m_{0}, m_{1}$ }\DIFaddend and $m_{2}$ unconstrained, the related dimensions might be regarded as being \emph{fundamental}\DIFaddbegin \footnote{\DIFadd{Of course, the notion of what is ``fundamental'' is relative. After all, this is a phenomenological model and a very crude one at that. Moreover if holography is correct then it stands to reason that our $3+1$ dimensional bulk geometry has an equivalent description in terms of a theory living on a $2 + 1$ dimensional  ``boundary''. And if one takes the argument to its logical limit then there is no reason }\emph{\DIFadd{not}} \DIFadd{to reduce further from $2+1$ $\rightarrow$ $1+1$ $\rightarrow$ $0+1$ dimensions. In fact, this is what proponents of matrix models would argue that }\emph{\DIFadd{is}} \DIFadd{the ``correct'' picture.}} \DIFaddend and thus the true quantum gravitational field should be $(2 + 1)$-dimensional, in agreement with \cite{t-Hooft1993Dimensional}. $(2 + 1)$-dimensional gravity has already been successfully quantized before (\DIFdelbegin \DIFdel{\mbox{%DIFAUXCMD
 \cite{Bergshoeff2013ZweiDreibein}}\hskip0pt%DIFAUXCMD
 }\DIFdelend \DIFaddbegin \DIFadd{\mbox{%DIFAUXCMD
 \cite{Bergshoeff2013Zwei-Dreibein}}\hskip0pt%DIFAUXCMD
@@ -1112,7 +1126,10 @@ In section \ref{sec:inverse-metric-Polyakov} we arrived at eq \eqref{eqn:couplin
 \end{equation}
 where the minus sign is due to the fact that the dimensions open up at larger and larger scales, so we require a larger and larger string to interact with each new dimension.
 
-\section{Holography From Classical Strings}\label{sec:holographic-strings}
+\DIFaddbegin \DIFadd{Of course the phenomenological realization of emergent dimensions faces significant observational constraints. Current precision tests of general relativity, including lunar laser ranging experiments and binary pulsar observations, constrain deviations from Einstein's theory at scales larger than $\sim 10^{-4}$ m, while accelerator experiments at the LHC probe physics down to $\sim 10^{-19}$ m without detecting signatures of extra dimensions. The emergent dimension $X^r$ would have to behave in such a way that it either affects the physics at very high energies or at very large scales, perhaps at galactic or cosmological scales where precise observations do not yet exist.
+}
+
+\DIFaddend \section{Holography From Classical Strings}\label{sec:holographic-strings}
 
 Until now we have studied a phenomenological modification of the string action. However, ultimately all phenomenological ideas must have a grounding in some exact, microscopic description of the system. Further, we have neglected one very important aspect of this whole endeavor, which is the description of the background geometry in the connection formalism and how to couple that geometry to the geometry of the string worldsheet. In this section, we present a possible action for the bosonic string in which the effect of the bulk geometry on the worldsheet is encoded in the string action in terms of a connection which lives on the worldsheet but takes values in the Lie algebra of the gauge group which is being used to describe the bulk geometry.  We will explore the natural consequences which follow from considering the symmetries of such an action.
 
@@ -1656,6 +1673,72 @@ with \textquotedblleft mass" squared given by
 	\mu ^2 = \frac{(\partial _{x} v)^2 - 2 v \partial _{x} ^2 v}{4 \left( (\partial _{t} \tau)^2 - v^2 (\partial _{x} \tau)^2 \right)}
 \end{equation}
 and \DIFdelbegin \DIFdel{$\tau (t , x)$ }\DIFdelend \DIFaddbegin \DIFadd{$\tau (t, x)$ }\DIFaddend satisfying constraints (\ref{eqn:new-coordinates-constraints-compact}). This shows that our analysis of the action (\ref{eqn:inverse-metric-Polyakov}) is indeed in agreement with the analysis of the inverse area corrected Nambu-Goto action (\ref{eqn:modified-ng-action}).
+\DIFaddbegin 
+
+\section{\DIFadd{Relation between Kalb-Ramond field and Quantum of Area 2-form}} \label{sec:KR-QA}
+
+\DIFadd{To see how the area 2-form $\Delta _{ab}$ is related to the Kalb-Ramond field we have to go back to }\autoref{sec:ws-kalb-ramond} \DIFadd{where we looked at the case of the bimetric string action \eqref{eqn:polyakov-bimetric}. We saw that the bimetric Polyakov action can be expressed, quite obviously, as a bimetric Nambu-Goto action \eqref{eqn:double-ng-action}, which we reproduce below for convenience:
+}\begin{equation}
+	\DIFadd{S = - T \int \diff ^2 x \sqrt{- g} - T' \int \diff ^2 x \sqrt{- h}.
+}\end{equation}
+\DIFadd{From here if we make the mapping $T' = - T k / 2$ and $h = \Delta ^2 / g$, we recover the Nambu-Goto area-corrected action \eqref{eqn:modified-ng-action}
+}\begin{equation}
+	\DIFadd{S = - T \int \diff ^2 x \left( \sqrt{- g} - \frac{1}{2} \frac{k \Delta}{\sqrt{- g}} \right) .
+}\end{equation}
+\DIFadd{Now, as noted in the main text, the condition $h = \Delta^2/g$ can be achieved if the following holds true \eqref{eqn:h-delta-relation}:
+}\begin{equation*}
+	\DIFadd{h_{ab} = \Delta_{ac} \Delta_{bd} g^{cd},
+}\end{equation*}
+\DIFadd{where $g^{cd}$ is the inverse of $g_{ab}$. Now, let us assume that $\Delta_{ab}$ can be written as \eqref{eqn:delta-epsilon-relation}:
+}\begin{equation*}
+	\DIFadd{\Delta_{ab} = \sqrt{\Delta} \epsilon_{ab}.
+}\end{equation*}
+\DIFadd{Now, we recall that the inverse of a $2\times 2$ matrix can be written using the total-antisymmetric symbol as:
+}\begin{equation}
+	\DIFadd{g^{ab} = \frac{1}{2g} \epsilon^{ac} \epsilon^{bd} g_{cd},
+}\end{equation}
+\DIFadd{where $g = \det{g_{ab}}$. Inserting this identity into \eqref{eqn:h-delta-relation}, and using the expression for the the determinant of a matrix in terms of product of epsilon symbols:
+}\begin{equation*}
+	\DIFadd{g = \det{g_{ab}} = \onehalf \epsilon^{ac} \epsilon^{bd} g_{cd},
+}\end{equation*}
+\DIFadd{we find that $h = \Delta^2/g$, where $\Delta = \det{\Delta_{ab}}$. What this tells us is that it is natural to identify $\Delta_{ab}$ with the totally anti-symmetric tensor on the worldsheet. Now a two-dimensional manifold can only have one, upto conformal transformations, anti-symmetric tensor and if we require that this tensor be derived from the embedding of the string into the ambient manifold then it makes sense that one should identify $\Delta_{ab}$ with the pullback to the worldsheet of the bulk Kalb-Ramond field $B_{\mu\nu}$.
+}
+
+\DIFadd{For a more formal derivation of this fact we start from the action in \eqref{eqn:area-corrected-K-R-action-v2} which describes the area-corrected string coupled to the Kalb-Ramond field, where the Levi-Civita tensor $\varepsilon ^{a b}$ has been written in terms of the quantum of area 2-form $\Delta _{a b}$ by dividing and multiplying by $\sqrt{\Delta}$. Varying this action \wrt \ $\Delta ^{c d}$ yields
+}\begin{multline} \DIFadd{\label{eqn:var-act-AC-KR}
+	\frac{\delta S}{\delta \Delta ^{c d}} = - \frac{1}{4 \pi \alpha '} \Bigg( - \frac{1}{2} \frac{k}{\sqrt{- g}} \Delta \Delta _{c d} \bigg( g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} G_{\mu \nu} - }\\
+	\DIFadd{- \sqrt{\Delta} \Delta ^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} B_{\mu \nu} \bigg) - }\\
+	\DIFadd{- \bigg( \sqrt{- g} - \frac{1}{2} \frac{k \Delta}{\sqrt{- g}} \bigg) \bigg( \frac{1}{2} \sqrt{\Delta} \Delta _{c d} \Delta ^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} B_{\mu \nu} + }\\
+	\DIFadd{+ \sqrt{\Delta} \delta ^{a} _{c} \delta ^{b} _{d} \del _{a} X^{\mu} \del _{b} X^{\nu} B_{\mu \nu} \bigg) \Bigg) ,
+}\end{multline}
+\DIFadd{which when required to vanish can be rearranged into
+}\begin{multline} \DIFadd{\label{eqn:eqn:var-act-AC-KR-rear}
+	\Delta _{c d} \Bigg( \frac{k \sqrt{\Delta}}{2} g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} G_{\mu \nu} - }\\
+	\DIFadd{- \bigg( g + \frac{3 k \Delta}{4} \bigg) \Delta ^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} B_{\mu \nu} \Bigg) - }\\
+	\DIFadd{- \bigg( g + \frac{k \Delta}{2} \bigg) \del _{c} X^{\mu} \del _{d} X^{\nu} B_{\mu \nu} = 0 .
+}\end{multline}
+\DIFadd{From here, the quantum of area field $\Delta _{c d}$ can be directly related to the pullback of the Kalb-Ramond 2-form $\del _{c} X^{\mu} \del _{d} X^{\nu} B_{\mu \nu}$ as in
+}\begin{equation} \DIFadd{\label{eqn:QA-pullKR}
+	\Delta _{c d} = \widetilde{f} \del _{c} X^{\mu} \del _{d} X^{\nu} B_{\mu \nu} ,
+}\end{equation}
+\DIFadd{where the function $\widetilde{f}$ is given by a contribution from the pullback of the metric and from the Kalb-Ramond field
+}\begin{multline} \DIFadd{\label{eqn:1/f-KR}
+	\frac{1}{\widetilde{f}} = \frac{1}{g + \dfrac{k \Delta}{2}} \Bigg( \frac{k \Delta}{2} g^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} G_{\mu \nu} - }\\
+	\DIFadd{- \bigg( g + \frac{3 k \Delta}{4} \bigg) \Delta ^{a b} \del _{a} X^{\mu} \del _{b} X^{\nu} B_{\mu \nu} \Bigg) .
+}\end{multline}
+\DIFadd{When the equation of motion for the metric $g_{a b}$ is satisfied i.e if $g_{a b} = \del _{a} X^{\mu} \del _{b} X^{\nu} G_{\mu \nu}$, then \eqref{eqn:1/f-KR} simplifies to
+}\begin{equation} \DIFadd{\label{eqn:1/f-KR-simp}
+	\frac{1}{\widetilde{f}} = - \frac{k \sqrt{\Delta}}{g + k \Delta}
+}\end{equation}
+\DIFadd{or alternatively
+}\begin{equation} \DIFadd{\label{eqn:f-KR-simp}
+	\widetilde{f} = - \frac{g + k \Delta}{k \sqrt{\Delta}} = - \sqrt{\Delta} \left( \frac{g}{k \Delta} + 1 \right) .
+}\end{equation}
+\DIFadd{Finally, we can then write the quantum of area 2-form $\Delta _{a b}$ in terms of the pullback of the Kalb-Ramond field $b_{a b} = \del _{a} X^{\mu} \del _{b} X^{\nu} B_{\mu \nu}$ as
+}\begin{equation} \DIFadd{\label{eqn:QA-KR-fin}
+	\Delta _{a b} = - \sqrt{\Delta} \left( \frac{g}{k \Delta} + 1 \right) b_{a b} .
+}\end{equation}
+\DIFaddend 
 
 \bibliographystyle{JHEP3}
 

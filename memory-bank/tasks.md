@@ -1,33 +1,34 @@
 # Task Registry
 
-_Last Updated: 2025-08-25 23:31:33 IST_
+_Last Updated: 2025-09-07 22:55:53 IST_
 
 ## Active Tasks
 
-| ID  | Title | Status | Priority | Started | Dependencies |
-| --- | ----- | ------ | -------- | ------- | ------------ |
-| T4  | AOP Final Minor Revisions | 🔄 | HIGH | 2025-08-25 | - |
-
-## Task Details
-
-### T4: AOP Final Minor Revisions
-**Description**: Address minor corrections requested by reviewer for final acceptance of AOP manuscript 81029
-**Status**: 🔄 **Last**: 2025-08-25 22:43:05 IST
-**Criteria**: 
-- Fix all typos and formatting errors
-- Add requested clarifications and discussions
-- Complete missing bibliography citations
-- Submit revised manuscript within two weeks
-**Files**: `lqg-strings.tex`, response document
-**Notes**: Manuscript conditionally accepted - only minor revisions required for final publication
+No active tasks.
 
 ## Completed Tasks
 
-| ID  | Title                                      | Completed               |
-| --- | ------------------------------------------ | ----------------------- |
-| T1  | Initialize Memory Bank System              | 2025-07-01              |
-| T2  | Address AOP Reviewer Comments              | 2025-07-06 00:35:34 IST |
-| T3  | AOP Manuscript Resubmission and Name Change| 2025-07-06 23:48:07 IST |
+| ID  | Title                                       | Completed               |
+| --- | ------------------------------------------- | ----------------------- |
+| T1  | Initialize Memory Bank System               | 2025-07-01              |
+| T2  | Address AOP Reviewer Comments               | 2025-07-06 00:35:34 IST |
+| T3  | AOP Manuscript Resubmission and Name Change | 2025-07-06 23:48:07 IST |
+| T4  | AOP Final Minor Revisions                   | 2025-09-07 22:55:53 IST |
+
+## Task Details
+
+### T4: AOP Final Minor Revisions (COMPLETED)
+
+**Description**: Address minor corrections requested by reviewer for final acceptance of AOP manuscript 81029
+**Status**: ✅ **Completed**: 2025-09-07 22:55:53 IST
+**Criteria**: ✅ ALL COMPLETED
+
+- ✅ Fix all typos and formatting errors
+- ✅ Add requested clarifications and discussions
+- ✅ Complete missing bibliography citations
+- ✅ Submit revised manuscript within deadline
+  **Files**: `lqg-strings.tex`, `AoP/response-to-referee-r2.tex`, `AoP/resubmit-cover-letter-r2.tex`
+  **Final Notes**: Manuscript submitted successfully with enhanced Kalb-Ramond field derivation and all referee clarifications addressed.
 
 ### T2: Address AOP Reviewer Comments (COMPLETED)
 
