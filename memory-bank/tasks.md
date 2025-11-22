@@ -1,6 +1,6 @@
 # Task Registry
 
-_Last Updated: 2025-09-07 22:55:53 IST_
+_Last Updated: 2025-11-22 16:30:00 IST_
 
 ## Active Tasks
 
@@ -14,8 +14,21 @@ No active tasks.
 | T2  | Address AOP Reviewer Comments               | 2025-07-06 00:35:34 IST |
 | T3  | AOP Manuscript Resubmission and Name Change | 2025-07-06 23:48:07 IST |
 | T4  | AOP Final Minor Revisions                   | 2025-09-07 22:55:53 IST |
+| T5  | Merge area_correction branch                | 2025-11-22 16:27:00 IST |
 
 ## Task Details
+
+### T5: Merge area_correction branch (COMPLETED)
+
+**Description**: Merge the area_correction branch into main
+**Status**: ✅ **Completed**: 2025-11-22 16:27:00 IST
+**Criteria**: ✅ ALL COMPLETED
+
+- ✅ Check for conflicts
+- ✅ Create PR #1
+
+**Files**: `tasks/T5.md`
+**Final Notes**: PR #1 created successfully.
 
 ### T4: AOP Final Minor Revisions (COMPLETED)
 
